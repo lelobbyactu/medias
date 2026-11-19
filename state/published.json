@@ -1,0 +1,16 @@
+{
+  "_doc": "Journal partagé des posts du Lobby (lu et mis à jour par toutes les tâches automatiques). Un objet par post, du plus ancien au plus récent. status: en_cours (réservé, montage/publication en cours) | publie | echec | abandonne. Garder les 200 derniers.",
+  "posts": [
+    {
+      "id": "0004-19_11_2026-Clips",
+      "status": "publie",
+      "type": "reel",
+      "published_at_utc": "2026-11-19T12:39:28Z",
+      "topic": "Domingo sème les flics en jet-ski (GTA 6)",
+      "origin": "DomingoTV",
+      "source_tweet": "",
+      "instagram": "https://www.instagram.com/reel/Df7Gdi2HUTs/",
+      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709861317720411413"
+    }
+  ]
+}
