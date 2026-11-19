@@ -26,12 +26,15 @@
     },
     {
       "id": "0006-19_11_2026-Clips",
-      "status": "en_cours",
+      "status": "publie",
       "type": "reel",
       "topic": "Joueur de GTA 6 tué par un oiseau en roulant (WASTED)",
       "origin": "pilardarkflatt",
       "source_tweet": "https://x.com/pilardarkflatt/status/2123142871373271551",
-      "reserved_at_utc": "2026-11-19T17:16:04Z"
+      "reserved_at_utc": "2026-11-19T17:16:04Z",
+      "published_at_utc": "2026-11-19T17:31:24Z",
+      "instagram": "https://www.instagram.com/reel/Df7nzYijCpd/",
+      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709936384496225554"
     }
   ]
 }
