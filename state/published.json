@@ -38,12 +38,15 @@
     },
     {
       "id": "0007-19_11_2026-Clips",
-      "status": "en_cours",
+      "status": "publie",
       "type": "reel",
       "topic": "Domingo démasque une arnaque à l'assurance de piéton (GTA 6)",
       "origin": "DomingoTV",
       "source_tweet": "https://x.com/DomingoTV/status/2123479327354552517",
-      "reserved_at_utc": "2026-11-19T19:17:17Z"
+      "reserved_at_utc": "2026-11-19T19:17:17Z",
+      "published_at_utc": "2026-11-19T19:18:05Z",
+      "instagram": "media_id 18065106014739055 (Zernio post 6aff4b642e2650430f05f841)",
+      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709963980361714964"
     }
   ]
 }
