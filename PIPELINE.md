@@ -43,6 +43,7 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 **Avant d'écrire** : regarder le clip (extraire ~6 images avec ffmpeg et les lire) et comprendre pourquoi le tweet buzze (Apify, seulement sur le clip retenu : `searchTerms: ["conversation_id:<id du tweet> filter:replies"]`, `queryType` Top, `maxItems` 25 → moment cité, émotion).
 **Titre** (écrit en français, lignes séparées par `|`, un mot ou groupe entre `*étoiles*` = surligneur jaune, 2 à 4 lignes, ~14 caractères par ligne) :
 - il nomme **l'élément le plus visuel ou surprenant** du clip (ex. « Domingo sème les flics en *jet-ski* » plutôt que « … dans GTA 6 ») ;
+- **il raconte l'histoire / la chute du clip, pas l'action mécanique** (retour du propriétaire sur le 0005 : « Gotaga appuie sur triangle pour mettre son clignotant » = titre plat ; mieux : « Gotaga se prend le *prank* du triangle sur GTA » ou « Gotaga se fait pranker par son chat »). Se demander : « qu'est-ce qui rend ce clip drôle, absurde ou surprenant ? » et le dire avec le nom du streamer + ce qui lui arrive (victime + twist). Un titre qui se contente de décrire ce qu'on voit à l'écran est refusé ;
 - accrocheur voire putaclic, **jamais mensonger** : le clip doit tenir la promesse du titre ;
 - formules : le détail absurde · la curiosité (« Il a trouvé LA technique pour… ») · le contraste (« 1re mission de GTA 6, et il finit en jet-ski ») · la réaction ; une action forte/interdite + un top streamer connu + GTA 6 = combo qui marche ;
 - si le texte du tweet d'origine est déjà très bon, le reprendre tel quel ;
@@ -52,8 +53,10 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 
 ## 6. Juge indépendant (obligatoire avant le montage)
 Préparer **3 combos** (clip + titre + description + 1 ligne « pourquoi ça marche »), puis lancer un sous-agent au **contexte vierge** (outil Agent, type general-purpose ; il n'a pas écrit les propositions) avec : les combos, les liens des clips, la grille ci-dessous et les critères du propriétaire. Il renvoie un classement court et un verdict (retenu / rien). Si l'outil Agent est indisponible, faire la passe seul, en se mettant à la place d'un relecteur sévère.
-**Grille /10** : accroche titre + sujet 0-4 · hype/nom connu 0-3 · clarté en 2 s 0-1 · description conforme 0-1 · fraîcheur/valeur d'actu 0-1. **Éliminatoire** : titre qui ne tient pas la promesse, exclusion du §4, doublon. **Seuil de publication : 7/10.** Sinon : ne rien publier (ou une seconde chance avec un autre clip, une seule fois).
+**Grille /10** : accroche titre + sujet 0-4 · hype/nom connu 0-3 · clarté en 2 s 0-1 · description conforme 0-1 · fraîcheur/valeur d'actu 0-1. **Éliminatoire** : titre qui ne tient pas la promesse, titre plat qui décrit seulement l'action au lieu de raconter la chute (voir §5), exclusion du §4, doublon. **Seuil de publication : 7/10.** Sinon : ne rien publier (ou une seconde chance avec un autre clip, une seule fois).
 **Critères du propriétaire** : aller à l'essentiel (pourquoi ça marche, pas la description de tous les plans) · **le combo sujet + titre prime sur la qualité du clip** (ex. « Je vole la PS5 de Gotaga pour GTA VI » : action forte et interdite, top streamer, sujet le plus hype, on veut voir la fin) · fraîcheur et stat sur le sujet hype · une actu chiffrée se fait en image, pas en reel.
+
+**Retours validés par le propriétaire sur les posts publiés** : 0004 (Domingo, jet-ski) et 0005 (Gotaga, clignotant) : clip et montage « nickel » ; seul le titre du 0005 était plat (voir §5). Continuer sur ce niveau de clip et de montage.
 
 ## 7. Montage (une commande)
 1. Télécharger le clip : `curl -sSfL --retry 3 -A "Mozilla/5.0" -o /tmp/clip.mp4 "<url mp4>"`. Vérifier avec `ffprobe`.
