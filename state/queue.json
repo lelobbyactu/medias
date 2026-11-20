@@ -1,4 +1,101 @@
 {
-  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
-  "candidates": []
+ "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
+ "candidates": [
+  {
+   "id": "c-20261120-1400-gta6-album",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA VI : l'album officiel est disponible (34 titres, Travis Scott, Future, etc.)",
+   "topic_key": "gta6-album-sortie",
+   "origin": "RockstarGames",
+   "source_tweet": "https://x.com/RockstarGames/status/2123778388296888354",
+   "primary_source": "@RockstarGames (annonce officielle)",
+   "source_time_utc": "2026-11-20T14:00:00Z",
+   "expires_at_utc": "2026-11-20T20:00:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "RockstarGames",
+    "JVCom",
+    "Platinside"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "L'album GTA VI sort aujourd'hui (streaming + vinyle/CD) : gros noms US, titres de la radio VCRR, spoilers pour ceux qui n'ont pas fini le jeu.",
+   "titles": [
+    "L'*album* de GTA 6 est sorti",
+    "34 titres, Travis Scott, Future : l'*album* GTA 6 est là"
+   ],
+   "checks": [
+    "https://www.gematsu.com/2026/09/grand-theft-auto-vi-the-album-announced",
+    "https://www.psu.com/news/grand-theft-auto-vi-the-album-features-34-tracks-from-genre-defying-roster-of-the-most-exciting-artists-in-the-world/",
+    "https://djmag.com/news/full-gta-vi-album-tracklist-revealed-featuring-justice-arca-fcukers-more"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Carrousel : recouper nb de titres/artistes avec la page officielle Rockstar avant montage. Pas un 'simple pub' : sortie officielle."
+  },
+  {
+   "id": "c-20261120-1459-kc-reapered",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Karmine Corp se sépare du head coach LoL Reapered (finale EWC, MSI et Worlds sous sa direction)",
+   "topic_key": "kc-reapered-depart",
+   "origin": "KarmineCorp",
+   "source_tweet": "https://x.com/KarmineCorp/status/2123763405337358506",
+   "primary_source": "@KarmineCorp (communiqué officiel)",
+   "source_time_utc": "2026-11-20T13:00:28Z",
+   "expires_at_utc": "2026-11-20T19:00:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "KarmineCorp",
+    "Sheep_Esports"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Le coach coréen du meilleur bilan de l'histoire de KC s'en va : le public KC réagit fort.",
+   "titles": [
+    "La Karmine Corp *vire* son coach Reapered",
+    "Reapered *quitte* KC après la saison de l'histoire"
+   ],
+   "checks": [
+    "https://x.com/Sheep_Esports/status/2123766739590914174"
+   ],
+   "photo_needed": "reapered",
+   "status": "en_attente",
+   "note": "Pas de photo de Reapered dans assets/photos et pas de key art KC : non publiable en carrousel tant que ça manque. Recouper avec 2 médias esport (Sheep, Dot Esports, Dexerto) avant montage."
+  },
+  {
+   "id": "c-20261120-1411-gotaga-lucia-couples",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga joue Lucia sur GTA 6, un appel de 'Jason' arrive : « des couples vont sauter avec GTA 6 »",
+   "topic_key": "gotaga-gta6-couples-lucia",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123781276515922093",
+   "primary_source": "https://x.com/GotagaTV/status/2123781276515922093",
+   "source_time_utc": "2026-11-20T14:11:28Z",
+   "expires_at_utc": "2026-11-21T14:11:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123781109041225728/vid/avc1/1280x720/H2XUIazCKO1TEWOH.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga (face-cam) promène Lucia en tenue d'été pendant que sa copine/un appel arrive : blague sur GTA 6 qui peut faire sauter les couples. 22 s, 16:9, audio non écouté.",
+   "titles": [
+    "Gotaga : « GTA 6 va faire *sauter* des couples »",
+    "Gotaga *se fait appeler* en pleine balade avec Lucia"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7)."
+  }
+ ]
 }
