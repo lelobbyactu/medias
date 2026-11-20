@@ -1,6 +1,6 @@
-# Le Lobby (@lelobbyactu) — pipeline autonome v1 (19 nov. 2026)
+# Le Lobby (@lelobbyactu) — pipeline autonome v2 (20 nov. 2026 : carrousels d'actu en automatique)
 
-Média français d'actu créateurs / gaming. Instagram + TikTok (Zernio). Cible 14-30 ans, joueurs mainstream (GTA 6 = sujet n°1 du moment, Fortnite, CoD, EA FC, Minecraft, streamers FR).
+Média français d'actu créateurs / gaming. Instagram + TikTok (Zernio). Cible 14-30 ans, joueurs mainstream. **Le Lobby ne fait pas que du GTA 6** (sujet n°1 du moment, donc fréquent) : actu Twitch et streamers FR, grosses vidéos YouTube et projets de youtubeurs, mises à jour Fortnite, sorties et annonces d'autres jeux mainstream (CoD, EA FC, Minecraft, Nintendo…), dramas d'internet connus en France.
 Ce fichier est la référence des tâches planifiées : **veille → sélection → juge → montage → publication → journal, sans validation humaine, ordinateur du propriétaire éteint**.
 
 ## 0. Règles générales
@@ -24,7 +24,9 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 
 ## 3. Formats (DA v0.6)
 - **Reel « clip + gros titre » = format prioritaire.** Un clip intéressant repéré sur X = on poste CE clip en reel (Instagram + TikTok), jamais un carrousel qui le raconte.
-- **Posts image / carrousels : PAS en mode automatique pour l'instant** (gabarit non automatisé, risque de qualité). Si une actu chiffrée/creusée mérite un post image, l'écrire dans le rapport final (« À TRAITER EN POST IMAGE : … ») et ne rien publier.
+- **Carrousel d'actu = autorisé en automatique depuis le 20 nov.** (validé par Alix après les posts 0008 et 0009) pour une info **pertinente et creusée** : chiffre, record, annonce officielle, sortie, grosse mise à jour, projet d'un créateur, drama vérifié. Une actu chiffrée (stat, note, record) se fait en carrousel, pas en reel. Règles §4bis, montage §7bis. Toujours jugé par le juge indépendant (§6).
+- **Arbitrage** : une actu fraîche et forte (score ≥ 7) passe avant un clip de gameplay ; viser au moins 1 post d'actu par jour quand l'actu le permet, sans jamais forcer un sujet faible.
+- « Reel informatif » (trailer officiel + titre + contexte à l'écran) : pas encore en automatique.
 - Aucun élément décoratif hors DA, aucune image IA, aucune voix IA, aucune musique ajoutée (le son du clip reste).
 
 ## 4. Choisir un clip (tous les critères sont obligatoires)
@@ -33,11 +35,21 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 - Vidéo native X avec MP4 (`media[].videoVariants`, prendre la plus grande variante ≤ 1920 px de large) ; `allowDownload` ≠ false ; durée de la source 8 à 120 s (on coupe à 15-60 s utiles, **90 s maximum**).
 - Fraîcheur : **actu/news = moins de 6 h** après la source officielle (règle du propriétaire) ; **clip de gameplay/stream sans valeur d'actu = moins de 24 h** (choix du 19 nov., à ajuster) ; un clip plus vieux ne passe que s'il est viral et que le sujet reste chaud (GTA 6) : maximum 48 h.
 - **Créditer le créateur d'origine**, pas le relais : remonter via `media[].expandedUrl` / `sourceUser` / tweet cité jusqu'au compte qui a posté le clip en premier (streamer, joueur). Crédit à l'écran = `x.com/<compte d'origine>` (ou `twitch.tv/<chaîne>` si la chaîne est identifiable et sûre). Les relais (LaTwitchance, TopDeTwitch, Riyadinhoo, Kulturlesite, Dexerto…) servent à repérer, jamais de source.
-- Sujet : GTA 6 en priorité, streamers/YouTubeurs FR connus, jeux mainstream, dramas d'internet connus.
+- Sujet : streamers/YouTubeurs **connus en France** et actu JV internationale (GTA 6 en tête en ce moment, mais aussi Fortnite, CoD, EA FC, Minecraft…), dramas d'internet connus.
+- **Clip d'un inconnu étranger** (ex. 0006, l'oiseau, clip probablement portugais sans streamer connu : jugé drôle mais peu pertinent par Alix) : seulement en dernier recours (tâche créneau, aucun meilleur candidat), visuel sans parole, et jamais deux fois de suite.
 - Se comprend en 2 secondes (moment visuel, drôle, absurde, spectaculaire) ; audio français ou sans parole de préférence (anglais OK si le visuel parle).
 - Jamais publié (vérifier `state/published.json` : tweet, origine, sujet).
 **Exclusions (éliminatoires)** : politique/candidats, religion, faits divers, accusations pénales ou harcèlement visant des personnes réelles, décès/tragédies, mineurs identifiables, nudité, violence réelle/gore, giveaways/arnaques/promos/placements de produit/contenu sponsorisé, propos haineux ou insultes lourdes dans l'audio, médias de presse et chaînes TV (AJ+…), extraits de films/séries/sport pro/musique à droits évidents, compte qui interdit le téléchargement, leaks non confirmés (🟠/🔴).
 **Score /10** : accroche visuelle/surprise 0-4 · hype du sujet et nom connu 0-3 · traction (likes et vues par rapport aux abonnés, vitesse) 0-2 · fraîcheur 0-1.
+
+## 4bis. Choisir une actu pour un carrousel (tous les critères sont obligatoires)
+- **Pertinence** : le public FR en parle ou va en parler (chiffre spectaculaire, record, annonce officielle, sortie, grosse MAJ, projet de créateur, drama vérifié). Pas d'anecdote, pas de simple pub d'éditeur, pas de promo/bon plan.
+- **Fraîcheur** : moins de 6 h après la source primaire (règle d'Alix).
+- **Vérification** : remonter à la source primaire (éditeur, plateforme, cabinet de données, créateur) et **recouper avec au moins 2 médias fiables** (Deadline, Variety, IGN, GameSpot, Dexerto, Gamekult, jeuxvideo.com, Insider Gaming…) via WebSearch/WebFetch. Les relais X (Kulturlesite_, riyadinhoo_, FrenchRapUS, gaak_fr…) ne sont jamais la source. Un chiffre estimé est présenté comme tel (« estimation Sensor Tower, non confirmé par Take-Two »). Aucun chiffre sans source.
+- **Visuel officiel obligatoire** : `assets/keyart/<jeu>.jpg` s'il existe (gta6.jpg), sinon l'image officielle de la page du jeu ou de l'éditeur (balise `og:image`, kit presse, compte X officiel). Ajouter au dépôt toute nouvelle key art récupérée (`assets/keyart/<jeu>.jpg`). **Jamais de photo d'une personne réelle trouvée sur le web** : un sujet centré sur une personne n'est faisable en carrousel que si sa photo est dans `assets/photos/` (fournie par Alix) ; sinon, le noter dans le rapport (« À TRAITER, photo manquante ») et ne pas publier.
+- **Exclusions** : celles du §4 (politique, faits divers, accusations, leaks 🟠/🔴 non confirmés, piratage…).
+- Ne pas refaire un sujet déjà publié (journal `topic`), sauf vrai fait nouveau (ex. chiffres officiels après une estimation).
+- **Score /10** : force de l'info (chiffre, record, nouveauté) 0-4 · hype du sujet et noms connus 0-3 · fraîcheur 0-2 · visuel officiel fort 0-1.
 
 ## 5. Titre, description, hashtags (règles validées)
 **Avant d'écrire** : regarder le clip (extraire ~6 images avec ffmpeg et les lire) et comprendre pourquoi le tweet buzze (Apify, seulement sur le clip retenu : `searchTerms: ["conversation_id:<id du tweet> filter:replies"]`, `queryType` Top, `maxItems` 25 → moment cité, émotion).
@@ -49,20 +61,27 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 - si le texte du tweet d'origine est déjà très bon, le reprendre tel quel ;
 - **jamais le nombre de vues** ; garder « leak », skin, battle pass, stream.
 **Description (légende)** : **courte, simple, sans répéter le contenu.** 1re phrase très catchy (la seule visible avant « plus »). Sur un clip, une petite phrase suffit (ex. « Les braquages dans GTA 6 sont vraiment dingues ! »). Info en plus absente du reel (contexte, précision) : 1-2 phrases max. Option : une question courte qui fait commenter (inspirée des réponses au tweet). Ligne finale de crédit : `Clip : @<compte d'origine> (x.com/<compte>)`. Tutoiement, 2 emojis maximum, pas de majuscules criardes, pas de « : ≈ », aucune info non vérifiée, pas de chiffre sans source.
+**Carrousel** (DA v0.6, modèle = posts 0008 et 0009) : 4 à 6 slides, **une slide = une idée**, cover avec titre court + chiffre ou nom connu surligné, puis slides de chiffres (comparaison, évolution, record), **toujours remettre en contexte** (ce qu'on savait avant, comparaison qui parle : GTA 5, ancien record…), au plus un encadré « Notre avis » (prise de position franche, séparée des faits), source sur chaque slide, slide finale « Abonne-toi » (ajoutée automatiquement). Textes courts (2 lignes idéalement). Description du carrousel = mêmes règles qu'au-dessus (accroche + question, ex. « 24 millions de joueurs en un jour. Rien n'a jamais fait ça 🤯 / Tu l'as pris sur PS5 ou Xbox ? »), sans répéter les slides.
 **Hashtags : 5 maximum**, les plus recherchés en lien avec le post : sujet principal (#gta6 en premier sur tout post GTA, + #gtavi) · créateur cité (#squeezie, #michou, #domingo…) · contexte (#ps5, #gameplay) · tag FR (#jeuxvideo, #twitchfr). Jamais #reels, #explore, #fyp.
 
 ## 6. Juge indépendant (obligatoire avant le montage)
-Préparer **3 combos** (clip + titre + description + 1 ligne « pourquoi ça marche »), puis lancer un sous-agent au **contexte vierge** (outil Agent, type general-purpose ; il n'a pas écrit les propositions) avec : les combos, les liens des clips, la grille ci-dessous et les critères du propriétaire. Il renvoie un classement court et un verdict (retenu / rien). Si l'outil Agent est indisponible, faire la passe seul, en se mettant à la place d'un relecteur sévère.
-**Grille /10** : accroche titre + sujet 0-4 · hype/nom connu 0-3 · clarté en 2 s 0-1 · description conforme 0-1 · fraîcheur/valeur d'actu 0-1. **Éliminatoire** : titre qui ne tient pas la promesse, titre plat qui décrit seulement l'action au lieu de raconter la chute (voir §5), exclusion du §4, doublon. **Seuil de publication : 7/10.** Sinon : ne rien publier (ou une seconde chance avec un autre clip, une seule fois).
+Préparer **3 combos** (clip + titre + description + 1 ligne « pourquoi ça marche » ; pour un carrousel : sujet + titre de cover + plan des slides + description + sources), puis lancer un sous-agent au **contexte vierge** (outil Agent, type general-purpose ; il n'a pas écrit les propositions) avec : les combos, les liens des clips, la grille ci-dessous et les critères du propriétaire. Il renvoie un classement court et un verdict (retenu / rien). Si l'outil Agent est indisponible, faire la passe seul, en se mettant à la place d'un relecteur sévère.
+**Grille /10** : accroche titre + sujet 0-4 · hype/nom connu 0-3 · clarté en 2 s 0-1 · description conforme 0-1 · fraîcheur/valeur d'actu 0-1. **Éliminatoire** : titre qui ne tient pas la promesse, titre plat qui décrit seulement l'action au lieu de raconter la chute (voir §5), exclusion du §4, doublon. **Grille carrousel /10** : pertinence et force de l'info 0-3 · titre de cover qui accroche 0-2 · fiabilité (source primaire + 2 médias, estimation signalée) 0-2 · contexte et clarté (une idée par slide) 0-2 · fraîcheur 0-1. **Éliminatoire** : chiffre non sourcé ou non recoupé, info de plus de 6 h, sujet faible ou anecdotique, photo de personne non fournie par Alix, exclusion du §4.
+**Seuil de publication : 7/10.** Sinon : ne rien publier (ou une seconde chance avec un autre clip, une seule fois).
 **Critères du propriétaire** : aller à l'essentiel (pourquoi ça marche, pas la description de tous les plans) · **le combo sujet + titre prime sur la qualité du clip** (ex. « Je vole la PS5 de Gotaga pour GTA VI » : action forte et interdite, top streamer, sujet le plus hype, on veut voir la fin) · fraîcheur et stat sur le sujet hype · une actu chiffrée se fait en image, pas en reel.
 
-**Retours validés par le propriétaire sur les posts publiés** : 0004 (Domingo, jet-ski) et 0005 (Gotaga, clignotant) : clip et montage « nickel » ; seul le titre du 0005 était plat (voir §5). Continuer sur ce niveau de clip et de montage.
+**Retours validés par le propriétaire sur les posts publiés** : 0004 à 0007 : clips et montage bons (« la session s'est très bien passée ») ; titre du 0005 plat (voir §5) ; 0006 (l'oiseau) drôle mais peu pertinent (inconnu étranger, voir §4). Carrousels 0008 (24,6 M de ventes) et 0009 (records internet) : « très bien, très pertinents », modèle à suivre (gabarit à peaufiner plus tard avec Alix).
 
 ## 7. Montage (une commande)
 1. Télécharger le clip : `curl -sSfL --retry 3 -A "Mozilla/5.0" -o /tmp/clip.mp4 "<url mp4>"`. Vérifier avec `ffprobe`.
 2. Numéro : `NNNN` = dernier numéro du journal + 1 (4 chiffres) ; nom du post `NNNN-JJ_MM_AAAA-Clips` (date du jour, Paris).
 3. `python3 scripts/make_reel.py --video /tmp/clip.mp4 --post <nom> --title "Ligne 1|Ligne 2 *mot*" --credit-label CLIP --credit "x.com/<origine>" [--start S --end E]` (couper les temps morts, garder le meilleur moment, 15-60 s ; le script choisit la mise en page selon le format du clip).
 4. **Relire visuellement** : `Read` sur `posts/<nom>/<nom>_cover.jpg` → titre entier visible, rien de coupé ni qui chevauche, surligneur sur un seul groupe, crédit lisible. Un problème → corriger le titre (plus court) et relancer, une fois. Vérifier la durée, la présence du son, la taille (< 100 Mo).
+
+## 7bis. Montage d'un carrousel (une commande)
+1. Écrire la spec JSON (modèle complet : `scripts/exemple_carousel.json` = post 0008) dans `/tmp/spec.json` : `post` (`NNNN-JJ_MM_AAAA-<Catégorie>` : Chiffres, Actu, Streamers, Esport, Leak…), `rubrique`, `image`, `image_credit`, `slides` (types cover, split, bars, versus, cards, text ; doc en tête du script).
+2. `python3 scripts/make_carousel.py --spec /tmp/spec.json` → `posts/<nom>/<nom>_01.jpg`… + une planche de contrôle.
+3. **Relire visuellement** la planche (`Read`) : rien de coupé, rien qui chevauche le pied de page, un seul surligneur par titre, chiffres justes. Un message « ATTENTION … déborde » = raccourcir le texte et relancer (une fois).
 
 ## 8. Publication
 1. **Réserver** : ajouter dans `state/published.json` `{id, status:"en_cours", type:"reel", topic, origin, source_tweet, reserved_at_utc}`, `git pull --rebase`, commit, push. Si un conflit montre qu'un autre post a été réservé pendant ce temps pour le même sujet, abandonner.
@@ -77,9 +96,10 @@ platforms: [
  {"platform":"tiktok","accountId":"6afdabc00ebbceefd4b2d727"}]
 tiktok_settings: {"privacyLevel":"PUBLIC_TO_EVERYONE","allowComment":true,"allowDuet":true,"allowStitch":true,"commercialContentType":"none","contentPreviewConfirmed":true,"expressConsentGiven":true}
 ```
+   **Carrousel** : `media_items` = la liste des JPG dans l'ordre (`{"type":"image","url":"<url raw>"}`), `platforms` = Instagram et TikTok sans `platformSpecificData`, `tiktok_settings` = `{"privacyLevel":"PUBLIC_TO_EVERYONE","allowComment":true,"commercialContentType":"none","contentPreviewConfirmed":true,"expressConsentGiven":true,"mediaType":"photo","photoCoverIndex":0}` (testé le 20 nov. avec le 0008). Dans le journal, `type: "carrousel"`.
    (Si `validate_post` refuse un champ, retirer ce champ et revalider ; ne jamais publier sans validation.)
 4. Vérifier avec `posts_get` / la réponse (statut `published`, `platformPostUrl`). Une plateforme en échec : `posts_retry` une fois ; si ça échoue encore, noter `echec` pour cette plateforme (l'autre reste publiée).
 5. **Journal** : passer l'entrée à `publie` (+ `published_at_utc`, `instagram`, `tiktok`), `git pull --rebase`, commit, push. Si la publication a échoué partout : `echec` + raison.
 
 ## 9. Rapport final (court, en français)
-Publié : titre, liens IG/TikTok, score du juge — ou « RAS depuis HH:MM (Paris) » + 1 ligne sur pourquoi (aucun candidat ≥ seuil, espacement, quota, réseau…). Ajouter « À TRAITER EN POST IMAGE : … » et « Sources à ajouter : … » si utile. Anomalie (réseau bloqué, Zernio en erreur, TikTok à reconnecter) : la mettre en première ligne.
+Publié : titre, liens IG/TikTok, score du juge — ou « RAS depuis HH:MM (Paris) » + 1 ligne sur pourquoi (aucun candidat ≥ seuil, espacement, quota, réseau…). Ajouter « Actus écartées : … » (avec la raison : photo manquante, non recoupée, trop vieille…) et « Sources à ajouter : … » si utile. Anomalie (réseau bloqué, Zernio en erreur, TikTok à reconnecter) : la mettre en première ligne.

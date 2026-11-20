@@ -1,0 +1,24 @@
+{
+  "post": "0008-20_11_2026-Chiffres",
+  "rubrique": "chiffres",
+  "image": "assets/keyart/gta6.jpg",
+  "image_credit": "Rockstar Games",
+  "slides": [
+    {"type": "cover", "title": "GTA 6 :|*24,6 millions*|en un jour", "sub": "2,36 milliards de dollars de ventes, précommandes comprises.",
+     "source": ["Source", "Sensor Tower, estimation · non confirmé par Take-Two"]},
+    {"type": "split", "kicker": "PS5 ou Xbox ?", "title": "La PS5 garde *3 copies sur 4*", "share": 75,
+     "left": {"short": "PS5", "value": "18,44 M", "label": "copies sur PS5"}, "right": {"short": "Xbox", "value": "6,15 M", "label": "sur Xbox Series"},
+     "note": "Exactement la même répartition qu'au moment des précommandes.", "source": ["Source", "Sensor Tower, estimation · non confirmé par Take-Two"]},
+    {"type": "bars", "kicker": "La dernière ligne droite", "title": "*+14 millions* en 8 jours",
+     "bars": [{"label": "Précommandes au 11 novembre", "value": "10,31 M", "num": 10.31},
+              {"label": "Précommandes au 16 novembre", "value": "17,07 M", "num": 17.07},
+              {"label": "Jour de sortie, 19 novembre", "value": "24,59 M", "num": 24.59, "hot": true}],
+     "note": "Il y a une semaine, on en était à 10 millions. Le chiffre a plus que doublé depuis.", "source": ["Source", "Sensor Tower, estimations successives"]},
+    {"type": "versus", "kicker": "Le match des records", "title": "GTA 5 vs GTA 6",
+     "left": {"kicker": "GTA 5 · 2013", "value": "816 M$", "label": "le premier jour, chiffre officiel de Take-Two"},
+     "right": {"kicker": "GTA 6 · 2026", "value": "2,36 Md$", "label": "en un jour, précommandes comprises"},
+     "note": "Take-Two, la maison mère de Rockstar, promet ses chiffres officiels **très bientôt**.",
+     "avis": "Le plus gros lancement de l'histoire du divertissement. Et de loin.", "source": ["Sources", "Take-Two 2013, Sensor Tower"]},
+    {"type": "subscribe", "line": "Chaque jour, l'actu GTA 6 qui compte : chiffres, streamers, leaks."}
+  ]
+}
