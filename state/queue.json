@@ -52,7 +52,8 @@
    "score": 6,
    "mentions": [
     "KarmineCorp",
-    "Sheep_Esports"
+    "Sheep_Esports",
+    "KametoTV"
    ],
    "media_url": "",
    "media_repo_path": "",
@@ -144,7 +145,9 @@
    "fiabilite": "🟡",
    "score": 6,
    "mentions": [
-    "Kulturlesite_"
+    "Kulturlesite_",
+    "riyadinhoo_",
+    "FrenchRapUS"
    ],
    "media_url": "assets/keyart/gta6.jpg",
    "media_repo_path": "",
@@ -156,7 +159,7 @@
    "checks": [],
    "photo_needed": "theweeknd",
    "status": "en_attente",
-   "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication."
+   "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication. | 16:20 : 3 comptes (Kulturlesite_, riyadinhoo_, FrenchRapUS ; ce dernier à 26k vues, sensationnaliste). Pas encore 5."
   },
   {
    "id": "c-20261120-1503-gotaga-gta6-motocross",
@@ -186,6 +189,67 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
+  },
+  {
+   "id": "c-20261120-1535-nico-papa-ou-tes-200k",
+   "added_at_utc": "2026-11-20T16:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Le documentaire de Nico « Papa où t'es ? » dépasse 200 000 entrées au cinéma : docu français le plus vu en salles en 2026",
+   "topic_key": "nico-papa-ou-tes-200k-entrees",
+   "origin": "ShadesFrance (relais) : source primaire à confirmer (Nico / Pathé / box-office)",
+   "source_tweet": "https://x.com/ShadesFrance/status/2123802413555499227",
+   "primary_source": "Nico (Nicolas Trouvé) ou distributeur Pathé : à retrouver avant montage",
+   "source_time_utc": "2026-11-20T15:35:28Z",
+   "expires_at_utc": "2026-11-20T21:35:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "ShadesFrance"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un projet de créateur (Nico, ex Dakar-Paris en stop) qui cartonne au cinéma : record de docu FR 2026, projection prévue à l'Assemblée.",
+   "titles": [
+    "Le docu de *Nico* dépasse 200 000 entrées au cinéma",
+    "*Nico* bat le record du docu français le plus vu en salles en 2026"
+   ],
+   "checks": [
+    "https://www.pathe.fr/films/papa-ou-t-es-55275",
+    "https://gensdinternet.fr/2026/08/31/avec-son-documentaire-nicolas-trouve-veut-raconter-lhistoire-de-plein-denfants-places/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Photo assets/photos/photo-nico-la.jpg à utiliser (vérifier que c'est bien Nico/Nicolas Trouvé). Chiffre 200 000 non recoupé : trouver 2 médias (box-office, CNews exclu ; Allociné, CBO, Le Film français) ou le tweet de Nico/Pathé. Sujet : ne pas parler de politique (projection Assemblée = mention neutre au plus), ne rien dire sur les enfants placés au-delà du sujet du film."
+  },
+  {
+   "id": "c-20261120-1606-gotaga-gta6-jason-aura",
+   "added_at_utc": "2026-11-20T16:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga : « la perte d'aura de Jason » sur GTA 6 (puis « le six-pack de Jason est trop sensible »)",
+   "topic_key": "gotaga-gta6-jason-aura",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123810307361694104",
+   "primary_source": "https://x.com/GotagaTV/status/2123810307361694104",
+   "source_time_utc": "2026-11-20T16:06:50Z",
+   "expires_at_utc": "2026-11-21T16:06:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123810240772579328/vid/avc1/1920x1080/mRuQL1LJG3IYE8dy.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga se moque de Jason (héros de GTA 6) qui perd son « aura » : 15 s, 1080p, téléchargeable.",
+   "titles": [
+    "Gotaga se moque de la *perte d'aura* de Jason dans GTA 6",
+    "Jason (GTA 6) *perd son aura* en direct chez Gotaga"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Traction faible (16 likes, 2,5k vues à 8 min) ; gag exact non vu, regarder le clip avant de choisir le titre. Même live que les 2 autres clips Gotaga de la file : en prendre un seul."
   }
  ]
 }
