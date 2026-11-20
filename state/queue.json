@@ -159,7 +159,7 @@
    ],
    "checks": [],
    "photo_needed": "theweeknd",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication. | 16:20 : 3 comptes (Kulturlesite_, riyadinhoo_, FrenchRapUS ; ce dernier à 26k vues, sensationnaliste). Pas encore 5."
   },
   {
@@ -281,32 +281,35 @@
     "https://www.dexerto.com/gta/gta-6-players-report-game-breaking-crashes-on-ps5-and-xbox-3430090/"
    ],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Une seule source média (Dexerto, auteur James Busby) : recouper avec 2 médias (IGN, GameSpot, VGC, Insider Gaming…) avant carrousel, sinon écarter. Présenter comme « signalements de joueurs », pas comme un bug généralisé. Vérifier au créneau si Rockstar a annoncé un patch."
   },
   {
    "id": "c-20261120-1630-fortnite-overwatch-wave2",
    "added_at_utc": "2026-11-20T16:50:00Z",
    "found_by": "veille-int",
-   "type": "actu",
-   "topic": "Fortnite x Overwatch vague 2 : Widowmaker (la Française) et Kiriko dans la boutique ce soir (leak, non confirmé par Epic)",
+   "type": "clip",
+   "topic": "Fortnite x Overwatch vague 2 : trailer officiel de Widowmaker (la Française) et Kiriko, dans la boutique ce soir",
    "topic_key": "fortnite-overwatch-wave2-widowmaker-kiriko",
    "origin": "ShiinaBR",
-   "source_tweet": "https://x.com/ShiinaBR/status/2123816302892679300",
+   "source_tweet": "https://x.com/HYPEX/status/2123869583333544163",
    "primary_source": "Leak ShiinaBR / HYPEX / Jorge_Most (18 nov.) ; confirmation officielle Epic/Fortnite attendue au reset de la boutique (00:00 UTC = 01 h Paris)",
-   "source_time_utc": "2026-11-20T16:30:39Z",
+   "source_time_utc": "2026-11-20T20:02:22Z",
    "expires_at_utc": "2026-11-21T00:30:00Z",
-   "fiabilite": "🟠",
-   "score": 6,
+   "fiabilite": "🟢",
+   "score": 7,
    "mentions": [
+    "FN_Assist",
+    "HYPEX",
+    "OWCavalry",
     "ShiinaBR"
    ],
-   "media_url": "",
-   "media_repo_path": "",
+   "media_url": "https://video.twimg.com/amplify_video/2123869515855298560/vid/avc1/1080x1920/XfLjCGiSv05IvQjH.mp4?tag=29",
+   "media_repo_path": "queue/c-20261120-1630-fortnite-overwatch-wave2.mp4",
    "angle": "Widowmaker = Amélie Lacroix, assassin française d'Overwatch : 2 skins, 2 pickaxes, 1 emote, 1 paire de kicks ; première vague en mai (D.Va, Genji, Tracer, Mercy).",
    "titles": [
-    "Widowmaker, la *Française* d'Overwatch, arrive sur Fortnite",
-    "Fortnite : *Widowmaker* et Kiriko débarquent ce soir"
+    "Widowmaker, la *Française* d'Overwatch, débarque sur Fortnite ce soir",
+    "Fortnite : *Widowmaker* et Kiriko arrivent dans la boutique"
    ],
    "checks": [
     "https://www.talkesport.com/news/fortnite/fortnite-overwatch-kiriko-widowmaker-release-date/",
@@ -314,7 +317,7 @@
    ],
    "photo_needed": "",
    "status": "en_attente",
-   "note": "Leak vieux de 2 jours (18 nov.), pas hot. Ne publier qu'avec « non confirmé par Epic » (🟠) ou, mieux, après confirmation officielle (tweet @Fortnite) : alors 🟢. Visuel officiel Epic à trouver (aucun keyart Fortnite/Overwatch en dépôt) : sinon ne pas publier. Créneau 21 h Paris idéal (drop ~1 h du matin)."
+   "note": "MAJ veille-int 20:45 UTC : le leak est confirmé par un trailer de sortie officiel (relayé par HYPEX 20:02 UTC, vidéo 9:16 de 20 s, 1080x1920, ~12 Mo, téléchargée dans queue/). Drop dans la boutique à 00:00 UTC (01 h Paris). Reel d'éditeur 🟢 : créditer Fortnite / Epic Games (vérifier le tweet @Fortnite d'origine si possible) ; titre « histoire » à soigner. Pas de keyart nécessaire pour un reel. Idéal pour le créneau 21 h Paris (ou 8 h demain, mais le drop aura eu lieu)."
   },
   {
    "id": "c-20261120-1716-domingo-gta6-fusillade-police",
