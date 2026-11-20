@@ -124,14 +124,20 @@
   },
   {
    "id": "0013-20_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Fortnite x Overwatch : Widowmaker (la Française) et Kiriko arrivent dans la boutique, trailer officiel",
    "origin": "FortniteFR",
    "source_tweet": "https://x.com/FortniteFR/status/2123869261903151164",
    "reserved_at_utc": "2026-11-20T21:14:40Z",
    "hot": true,
-   "hot_reason": "5_comptes"
+   "hot_reason": "5_comptes",
+   "published_at_utc": "2026-11-20T21:16:37Z",
+   "instagram": "https://www.instagram.com/reel/Df-mXEsglMl/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710365408380931329",
+   "zernio_post_id": "6b00b889ea9ebdc846e28d86",
+   "judge_score": 8,
+   "note": "actu brûlante 5_comptes (FortniteFR, FN_Assist, HYPEX, OWCavalry, ShiinaBR), trailer officiel @FortniteFR, juge 8/10 combo A"
   }
  ]
 }
