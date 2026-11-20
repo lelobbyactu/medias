@@ -75,6 +75,16 @@
    "instagram": "https://www.instagram.com/reel/Df9gZl7lRYo/",
    "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710207974463081749",
    "zernio_post_id": "6b002945df961bee738476ed"
+  },
+  {
+   "id": "0010-20_11_2026-Actu",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "L'album officiel de GTA VI est disponible (34 titres, Travis Scott, Dua Lipa, Cardi B)",
+   "origin": "RockstarGames",
+   "source_tweet": "https://x.com/RockstarGames/status/2123778388296888354",
+   "reserved_at_utc": "2026-11-20T16:59:34Z",
+   "slot": "18h"
   }
  ]
 }
