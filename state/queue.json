@@ -314,6 +314,58 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Leak vieux de 2 jours (18 nov.), pas hot. Ne publier qu'avec « non confirmé par Epic » (🟠) ou, mieux, après confirmation officielle (tweet @Fortnite) : alors 🟢. Visuel officiel Epic à trouver (aucun keyart Fortnite/Overwatch en dépôt) : sinon ne pas publier. Créneau 21 h Paris idéal (drop ~1 h du matin)."
+  },
+  {
+   "id": "c-20261120-1716-domingo-gta6-fusillade-police",
+   "added_at_utc": "2026-11-20T17:16:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo en fusillade contre la police sur GTA 6 (clip de 90 s, facecam)",
+   "topic_key": "domingo-gta6-fusillade-police-90s",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123812665411932307",
+   "primary_source": "https://x.com/DomingoTV/status/2123812665411932307",
+   "source_time_utc": "2026-11-20T16:16:12Z",
+   "expires_at_utc": "2026-11-21T16:16:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123812504111374336/vid/avc1/1280x720/Bh8YvgGlhmoe8Pvi.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Domingo (facecam) dans une longue course-poursuite/fusillade avec la police de GTA 6 ; tweet « La scène est DINGUE » (68 likes, 7,3 k vues) ; chute exacte non identifiée, à visionner en entier avant montage",
+   "titles": [],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "90 s (limite). Moment fort à trouver ; si pas de chute claire, écarter. Domingo déjà publié 0004 et 0007."
+  },
+  {
+   "id": "c-20261120-1716-gta6-premiere-personne-glitch",
+   "added_at_utc": "2026-11-20T17:16:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 jouable entièrement à la première personne grâce à un glitch (à pied, au volant, armes OK, PS5 et Xbox)",
+   "topic_key": "gta6-glitch-premiere-personne",
+   "origin": "DexertoFR (relais ; joueur d'origine à identifier)",
+   "source_tweet": "https://x.com/DexertoFR/status/2123808931403162008",
+   "primary_source": "à identifier (Dexerto / joueur)",
+   "source_time_utc": "2026-11-20T16:01:22Z",
+   "expires_at_utc": "2026-11-20T22:01:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "DexertoFR"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Rockstar avait exclu le mode première personne au lancement ; un glitch le débloque entièrement (2 photos dans le tweet Dexerto)",
+   "titles": [],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé."
   }
  ]
 }
