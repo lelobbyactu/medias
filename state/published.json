@@ -105,6 +105,17 @@
    "zernio_post_id": "6b00a585b65189c0789c31a3",
    "slot": "21h",
    "note": "créneau 21h, sujet de la file, juge indépendant 8/10 (combo A, description corrigée)"
+  },
+  {
+   "id": "0012-20_11_2026-Chiffres",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "GTA VI : 3,79 Md$ de ventes day one annoncés par Take-Two (32,5 M d'unités pre-release, Metacritic 99)",
+   "origin": "Rockstar Games / Take-Two",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2123861687585628179",
+   "reserved_at_utc": "2026-11-20T20:15:19Z",
+   "hot": true,
+   "hot_reason": "5_comptes"
   }
  ]
 }
