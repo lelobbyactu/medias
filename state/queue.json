@@ -128,7 +128,7 @@
     "https://x.com/Gamekult/status/2123793395760124264"
    ],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Recoupement à faire au créneau : 2 médias fiables (web search ne remonte pas encore l'info) ; visuel officiel Ubisoft/AC Black Flag Resynced à trouver (pas de keyart en dépôt). Sujet moyen, ne passer que si le créneau est faible."
   },
   {
@@ -372,7 +372,7 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé. | 20:40 Paris : InsiderGamingIG a aussi publié un guide « First-Person Glitch » (18:24 UTC) : 2 comptes."
   },
   {
@@ -595,6 +595,36 @@
    "hot": true,
    "note": "actu brûlante 5_comptes",
    "post_id": "0012-20_11_2026-Chiffres"
+  },
+  {
+   "id": "c-20261120-2141-kameto-gta6-pnj-police",
+   "added_at_utc": "2026-11-20T22:14:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Kameto en fuite face à la police sur GTA 6 : un PNJ vient vraiment l'aider quand il lui demande",
+   "topic_key": "kameto-gta6-pnj-aide-police",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2123894402032742608",
+   "primary_source": "@KametoTV (clip de son live)",
+   "source_time_utc": "2026-11-20T21:41:00Z",
+   "expires_at_utc": "2026-11-21T21:41:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "KametoTV",
+    "Actu2Twitch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123894147085930496/vid/avc1/1280x720/BZz_p01pb9H7G8YJ.mp4?tag=14",
+   "media_repo_path": "queue/c-20261120-2141-kameto-gta6-pnj-police.mp4",
+   "angle": "Top streamer FR + GTA 6 + police : en pleine intervention, un PNJ répond vraiment à sa demande d'aide et lui facilite la fuite (44 s, 228 likes en 30 min, 16:9 avec facecam).",
+   "titles": [
+    "Kameto demande de l'aide à un *PNJ*|et il vient vraiment l'aider",
+    "Kameto échappe à la *police*|grâce à un PNJ qui passe par hasard"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Même streamer que le 0009 (publié 11h Paris) : à espacer si un autre clip Kameto est sorti récemment. Pas de réponses récupérées (scraper vide)."
   }
  ]
 }
