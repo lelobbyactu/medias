@@ -356,7 +356,8 @@
       "fiabilite": "🟡",
       "score": 6,
       "mentions": [
-        "DexertoFR"
+        "DexertoFR",
+        "InsiderGamingIG"
       ],
       "media_url": "assets/keyart/gta6.jpg",
       "media_repo_path": "",
@@ -365,7 +366,7 @@
       "checks": [],
       "photo_needed": "",
       "status": "en_attente",
-      "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé."
+      "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé. | 20:40 Paris : InsiderGamingIG a aussi publié un guide « First-Person Glitch » (18:24 UTC) : 2 comptes."
     },
     {
       "id": "c-20261120-1722-domingo-gta6-voiture-arbre",
@@ -453,6 +454,38 @@
       "photo_needed": "",
       "status": "en_attente",
       "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
+    },
+    {
+      "id": "c-20261120-1630-zelnick-gta7-propos",
+      "added_at_utc": "2026-11-20T18:50:00Z",
+      "found_by": "veille-int",
+      "type": "actu",
+      "topic": "Le PDG de Take-Two Strauss Zelnick, interrogé sur GTA 7 au lendemain du lancement : « on vient de lancer GTA 6 le 19 novembre… et vous parlez de GTA 7 »",
+      "topic_key": "zelnick-gta7-lancement-gta6",
+      "origin": "Dexerto (relais, ne pas créditer)",
+      "source_tweet": "https://x.com/Dexerto/status/2123816257136865791",
+      "primary_source": "Interview de Strauss Zelnick (média/émission non identifié) : à retrouver",
+      "source_time_utc": "2026-11-20T16:30:28Z",
+      "expires_at_utc": "2026-11-20T22:30:00Z",
+      "fiabilite": "🟡",
+      "score": 6,
+      "mentions": [
+        "Dexerto"
+      ],
+      "media_url": "assets/keyart/gta6.jpg",
+      "media_repo_path": "",
+      "angle": "Zelnick esquive la question GTA 7 (monde entier ?) et laisse entendre que les prochains jeux Rockstar seront plus rapides à faire ; tweet Dexerto à 935 k vues / 67 k likes en 2 h.",
+      "titles": [
+        "Take-Two : « Vous parlez déjà de *GTA 7* ? »",
+        "Le patron de Take-Two *recadre* la question sur GTA 7"
+      ],
+      "checks": [
+        "https://insider-gaming.com/take-two-ceo-gta-7-development/ (propos antérieurs de Zelnick à IGN, ne contient pas cette citation)",
+        "https://www.dexerto.com/gta/rockstar-promises-next-games-wont-take-as-long-as-gta-6-to-make-3418766/ (14 oct., propos de Rockstar via Bloomberg, pas de Zelnick)"
+      ],
+      "photo_needed": "",
+      "status": "en_attente",
+      "note": "Citation vue uniquement dans le tweet Dexerto ; interview d'origine et date non retrouvées (recoupement web : rien de ce jour). Ne publier que si interview primaire + 1 autre média retrouvés ; vidéo = probable extrait presse (ne pas reposter, exclusion §4). Pas de photo Zelnick : keyart GTA 6 seulement."
     }
   ]
 }
