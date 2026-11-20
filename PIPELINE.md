@@ -1,4 +1,4 @@
-# Le Lobby (@lelobbyactu) — pipeline autonome v2 (20 nov. 2026 : carrousels d'actu en automatique)
+# Le Lobby (@lelobbyactu) — pipeline autonome v3 (20 nov. 2026 : file d'attente + créneaux fixes + actu brûlante)
 
 Média français d'actu créateurs / gaming. Instagram + TikTok (Zernio). Cible 14-30 ans, joueurs mainstream. **Le Lobby ne fait pas que du GTA 6** (sujet n°1 du moment, donc fréquent) : actu Twitch et streamers FR, grosses vidéos YouTube et projets de youtubeurs, mises à jour Fortnite, sorties et annonces d'autres jeux mainstream (CoD, EA FC, Minecraft, Nintendo…), dramas d'internet connus en France.
 Ce fichier est la référence des tâches planifiées : **veille → sélection → juge → montage → publication → journal, sans validation humaine, ordinateur du propriétaire éteint**.
@@ -12,15 +12,57 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 ## 1. Démarrage de chaque exécution
 1. Réseau : `curl -s -o /dev/null -w "%{http_code}" https://video.twimg.com/` → `400` = OK. Autre (000, 403 du proxy) = ne rien publier, le dire en une ligne dans le rapport.
 2. Dépôt : outil `add_repo` (owner lelobbyactu, repo medias, access push), puis UN SEUL clone : `git clone --depth 1 https://github.com/lelobbyactu/medias /home/claude/medias` (timeout 10 min ; si 429, attendre 5 s et réessayer une fois). `register_repo_root` si demandé.
-3. Lire `state/published.json`. Calculer (heure de Paris, Europe/Paris) : nombre de posts `publie` ou `en_cours` sur les dernières 24 h, heure du dernier, et ce qui est déjà couvert (`source_tweet`, `origin`, `topic`). Un post `en_cours` de moins de 30 min = occupé par une autre tâche (ne pas le doubler).
+3. Lire `state/published.json` et `state/queue.json`. Calculer (heure de Paris, Europe/Paris) : nombre de posts `publie` ou `en_cours` **depuis minuit (heure de Paris)**, heure du dernier, et ce qui est déjà couvert (`source_tweet`, `origin`, `topic`). Un post `en_cours` de moins de 30 min = occupé par une autre tâche (ne pas le doubler).
 4. Installer au besoin : `pip list | grep -i playwright` (sinon `pip install --break-system-packages playwright`) ; `google-chrome` doit exister (`/usr/bin/google-chrome`), sinon `playwright install chromium`.
 
-## 2. Rythme (heure de Paris)
-- Fenêtre de diffusion : **11 h 30 → 23 h 30**. Hors fenêtre : publier seulement une actu officielle/fiable (🟢/🟡) de score ≥ 8.
-- **Max 4 posts / 24 h glissantes.** Espacement minimum **90 min** entre deux publications (45 min si score ≥ 9).
-- Objectif ≈ 3 posts/jour : un dans chacune des plages 12 h-14 h 30, 17 h 30-20 h, 20 h 30-23 h 30.
-- Tâche « créneau » : si aucun post depuis plus de 2 h 30 et la fenêtre est ouverte, publier le meilleur candidat disponible (score ≥ 6) même sans actu ; sinon RAS.
-- Tâches « veille » : publier seulement un candidat de score ≥ 7.
+## 2. Rythme (heure de Paris) — décision d'Alix du 20 nov. 2026
+- **Les tâches de veille ne publient plus (sauf actu brûlante, §2ter) : elles remplissent la file d'attente (§2bis).**
+- **4 créneaux de publication par jour : 8 h, 12 h, 18 h, 21 h** (tâche « créneau » lancée à 7 h 51, 11 h 51, 17 h 51, 20 h 51). Un post par créneau : le meilleur sujet valable de la file, sinon une recherche de secours.
+- **Actu brûlante (§2ter) : publiée tout de suite par la veille, à toute heure, sans tenir compte des créneaux ni de l'espacement.**
+- **Plafond absolu : 7 posts par jour (de minuit à minuit, heure de Paris), actus brûlantes comprises.** Au 7e post `publie`/`en_cours` de la journée, plus rien n'est publié jusqu'à minuit (les sujets restent dans la file tant qu'ils n'ont pas expiré).
+- Créneau : si un post a été publié dans les 45 min précédentes (souvent une actu brûlante), le créneau répond RAS (ce post compte comme le post du créneau).
+- **Mix (règle d'originalité d'Instagram)** : au moins 60 % de contenus produits par le Lobby (carrousels d'actu, reels informatifs) sur la journée. Au créneau, si 2 des 3 derniers posts sont des clips, un carrousel d'actu de score ≥ 7 passe avant n'importe quel clip. Un clip n'est jamais posté brut : titre « histoire » DA, mise en page `make_reel.py`, crédit du créateur.
+
+## 2bis. File d'attente `state/queue.json`
+**But** : ne plus perdre un bon sujet repéré par la veille entre deux publications.
+
+**Veille → file (à chaque run de veille)**
+1. Pour chaque sujet trié (§4 clip, §4bis actu) de **score ≥ 6** et non couvert (journal + file), ajouter une entrée `en_attente` :
+```
+{"id":"c-AAAAMMJJ-HHMM-<slug court>", "added_at_utc":"...", "found_by":"veille-fr|veille-int",
+ "type":"clip|actu", "topic":"phrase courte", "topic_key":"slug-du-sujet (ex. gta6-ventes-sensor-tower)",
+ "origin":"compte d'origine à créditer", "source_tweet":"url", "primary_source":"url ou compte officiel",
+ "source_time_utc":"heure du post d'origine", "expires_at_utc":"source + 6 h (actu) ou + 24 h (clip)",
+ "fiabilite":"🟢|🟡|🟠", "score":7, "mentions":["compte1","compte2"],
+ "media_url":"mp4 ou visuel officiel", "media_repo_path":"queue/<id>.mp4 (si téléchargé)",
+ "angle":"pourquoi ça buzze en 1 phrase", "titles":["proposition 1","proposition 2"],
+ "checks":["urls de recoupement (actu)"], "photo_needed":"pseudo si photo manquante, sinon vide",
+ "status":"en_attente", "note":""}
+```
+2. **Clip de score ≥ 7** : télécharger tout de suite le MP4 (§7.1) dans `queue/<id>.mp4` (si < 100 Mo) pour ne pas le perdre si le tweet disparaît.
+3. **Même sujet déjà dans la file** (même `topic_key`, ou même tweet/clip d'origine) : ne pas créer de doublon ; ajouter les nouveaux auteurs à `mentions`, mettre à jour le score si une info nouvelle le justifie. Si `mentions` atteint 5 comptes différents → actu brûlante (§2ter).
+4. **Ménage** à chaque run : entrée `en_attente` dont `expires_at_utc` est passé → `expire` ; entrée `pris` depuis plus de 45 min sans post correspondant dans le journal → `en_attente` ; supprimer les entrées closes de plus de 48 h et leur fichier `queue/<id>.*` (`git rm`). Garder 300 entrées max.
+5. Écriture : `git pull --rebase`, commit « queue: +N », push. En cas de conflit sur le JSON : `git rebase --abort`, `git fetch --depth 1 origin main && git reset --hard origin/main`, réappliquer ses ajouts sur la version fraîche, réessayer (3 fois max).
+
+**Créneau → publication (tâche « créneau »)**
+1. Ménage (point 4 ci-dessus), puis vérifier le plafond de 7/jour et la règle des 45 min (§2).
+2. Classer les entrées `en_attente` non expirées : **score + bonus fraîcheur** (+1 si source < 2 h, 0 si 2–4 h, −1 si plus vieux), puis règle du mix (§2). Écarter ce qui est déjà couvert par le journal et les actus dont la photo manque (`photo_needed`).
+3. Revérifier le meilleur (clip toujours en ligne ou MP4 dans `queue/`, actu toujours fraîche, pas de démenti), le passer en `pris` (pull/commit/push), puis juge §6 (3 combos) → montage §7/§7bis → publication §8. Le juge refuse → `ecarte` + raison, et passer au suivant (2 essais max par créneau).
+4. **File vide ou rien ≥ seuil** : recherche de secours (actu web récente, puis clips via Apify Top) comme décrit dans la tâche ; score ≥ 6.
+5. Après publication : entrée `publie` + `post_id`.
+
+## 2ter. Actu brûlante (publication immédiate par la veille)
+**C'est une actu brûlante si l'un de ces cas est vrai** (décision d'Alix du 20 nov. 2026) :
+- **Leak** sur un sujet hype (GTA 6, Fortnite, CoD, Nintendo, PlayStation, Xbox, grosse licence) venant d'un insider reconnu (Tom Henderson, billbil-kun, NateTheHate, HYPEX, ShiinaBR…) ou de fichiers/datamine vérifiables ;
+- **Embrouille entre influenceurs/streamers connus en France** (clash public, réponses entre eux, live de clarification) ;
+- **Même news postée par au moins 5 comptes différents suivis par la veille** (dans le run ou cumulés dans `mentions` de la file, sur moins de 6 h).
+
+**Règles**
+- Publication **tout de suite**, à toute heure, **sans tenir compte des créneaux, de l'espacement ni du nombre de posts du jour, sauf le plafond de 7 posts/jour (§2)**. Toujours vérifier qu'aucun post `en_cours` ne traite le même sujet.
+- Format : reel si un clip/trailer montable existe (ex. extrait du live de l'embrouille), sinon carrousel. Juge §6 obligatoire, mais en version rapide (2 combos suffisent), seuil 7/10.
+- **Leak** : le mot « LEAK » visible dans le titre de cover, « non confirmé par <éditeur> » sur une slide ou dans la description, insider crédité comme source ; jamais de fichiers piratés, de build volé ou de contenu sous NDA diffusé (on raconte le leak, on ne le redistribue pas) ; leak 🔴 (compte connu pour inventer, démenti officiel) = non.
+- **Embrouille** : on raconte uniquement ce que les personnes concernées ont dit publiquement elles-mêmes (tweets, lives, vidéos), en citant qui dit quoi, sans prendre parti dans le titre. **Toujours exclu** : accusations pénales, harcèlement, violences, affaires sexuelles, vie privée/famille, mineurs. Dans ces cas, ne pas publier et le signaler dans le rapport.
+- Journal : `"hot": true` et la raison (`leak`, `embrouille`, `5_comptes`). Si le sujet était dans la file, le passer en `publie`.
 
 ## 3. Formats (DA v0.6)
 - **Reel « clip + gros titre » = format prioritaire.** Un clip intéressant repéré sur X = on poste CE clip en reel (Instagram + TikTok), jamais un carrousel qui le raconte.
@@ -39,7 +81,7 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 - **Clip d'un inconnu étranger** (ex. 0006, l'oiseau, clip probablement portugais sans streamer connu : jugé drôle mais peu pertinent par Alix) : seulement en dernier recours (tâche créneau, aucun meilleur candidat), visuel sans parole, et jamais deux fois de suite.
 - Se comprend en 2 secondes (moment visuel, drôle, absurde, spectaculaire) ; audio français ou sans parole de préférence (anglais OK si le visuel parle).
 - Jamais publié (vérifier `state/published.json` : tweet, origine, sujet).
-**Exclusions (éliminatoires)** : politique/candidats, religion, faits divers, accusations pénales ou harcèlement visant des personnes réelles, décès/tragédies, mineurs identifiables, nudité, violence réelle/gore, giveaways/arnaques/promos/placements de produit/contenu sponsorisé, propos haineux ou insultes lourdes dans l'audio, médias de presse et chaînes TV (AJ+…), extraits de films/séries/sport pro/musique à droits évidents, compte qui interdit le téléchargement, leaks non confirmés (🟠/🔴).
+**Exclusions (éliminatoires)** : politique/candidats, religion, faits divers, accusations pénales ou harcèlement visant des personnes réelles, décès/tragédies, mineurs identifiables, nudité, violence réelle/gore, giveaways/arnaques/promos/placements de produit/contenu sponsorisé, propos haineux ou insultes lourdes dans l'audio, médias de presse et chaînes TV (AJ+…), extraits de films/séries/sport pro/musique à droits évidents, compte qui interdit le téléchargement, leaks non confirmés (🟠/🔴) **sauf actu brûlante « leak » traitée selon §2ter**.
 **Score /10** : accroche visuelle/surprise 0-4 · hype du sujet et nom connu 0-3 · traction (likes et vues par rapport aux abonnés, vitesse) 0-2 · fraîcheur 0-1.
 
 ## 4bis. Choisir une actu pour un carrousel (tous les critères sont obligatoires)
@@ -47,7 +89,7 @@ Ce fichier est la référence des tâches planifiées : **veille → sélection 
 - **Fraîcheur** : moins de 6 h après la source primaire (règle d'Alix).
 - **Vérification** : remonter à la source primaire (éditeur, plateforme, cabinet de données, créateur) et **recouper avec au moins 2 médias fiables** (Deadline, Variety, IGN, GameSpot, Dexerto, Gamekult, jeuxvideo.com, Insider Gaming…) via WebSearch/WebFetch. Les relais X (Kulturlesite_, riyadinhoo_, FrenchRapUS, gaak_fr…) ne sont jamais la source. Un chiffre estimé est présenté comme tel (« estimation Sensor Tower, non confirmé par Take-Two »). Aucun chiffre sans source.
 - **Visuel officiel obligatoire** : `assets/keyart/<jeu>.jpg` s'il existe (gta6.jpg), sinon l'image officielle de la page du jeu ou de l'éditeur (balise `og:image`, kit presse, compte X officiel). Ajouter au dépôt toute nouvelle key art récupérée (`assets/keyart/<jeu>.jpg`). **Jamais de photo d'une personne réelle trouvée sur le web** : un sujet centré sur une personne n'est faisable en carrousel que si sa photo est dans `assets/photos/` (fournie par Alix) ; sinon, le noter dans le rapport (« À TRAITER, photo manquante ») et ne pas publier.
-- **Exclusions** : celles du §4 (politique, faits divers, accusations, leaks 🟠/🔴 non confirmés, piratage…).
+- **Exclusions** : celles du §4 (politique, faits divers, accusations, leaks 🟠/🔴 non confirmés hors §2ter, piratage…). Un leak ou une embrouille ne passe que par la voie « actu brûlante » (§2ter) : pas besoin des 2 médias de recoupement pour un leak (il est présenté comme non confirmé), mais l'insider doit être identifié et crédité.
 - Ne pas refaire un sujet déjà publié (journal `topic`), sauf vrai fait nouveau (ex. chiffres officiels après une estimation).
 - **Score /10** : force de l'info (chiffre, record, nouveauté) 0-4 · hype du sujet et noms connus 0-3 · fraîcheur 0-2 · visuel officiel fort 0-1.
 
@@ -99,7 +141,7 @@ tiktok_settings: {"privacyLevel":"PUBLIC_TO_EVERYONE","allowComment":true,"allow
    **Carrousel** : `media_items` = la liste des JPG dans l'ordre (`{"type":"image","url":"<url raw>"}`), `platforms` = Instagram et TikTok sans `platformSpecificData`, `tiktok_settings` = `{"privacyLevel":"PUBLIC_TO_EVERYONE","allowComment":true,"commercialContentType":"none","contentPreviewConfirmed":true,"expressConsentGiven":true,"mediaType":"photo","photoCoverIndex":0}` (testé le 20 nov. avec le 0008). Dans le journal, `type: "carrousel"`.
    (Si `validate_post` refuse un champ, retirer ce champ et revalider ; ne jamais publier sans validation.)
 4. Vérifier avec `posts_get` / la réponse (statut `published`, `platformPostUrl`). Une plateforme en échec : `posts_retry` une fois ; si ça échoue encore, noter `echec` pour cette plateforme (l'autre reste publiée).
-5. **Journal** : passer l'entrée à `publie` (+ `published_at_utc`, `instagram`, `tiktok`), `git pull --rebase`, commit, push. Si la publication a échoué partout : `echec` + raison.
+5. **Journal** : passer l'entrée à `publie` (+ `published_at_utc`, `instagram`, `tiktok`, `slot` = « 08h|12h|18h|21h » ou `hot: true` + raison), et dans `state/queue.json` passer le sujet en `publie` (+ `post_id`), `git pull --rebase`, commit, push. Si la publication a échoué partout : `echec` + raison, et remettre le sujet de la file en `en_attente` s'il n'a pas expiré.
 
 ## 9. Rapport final (court, en français)
-Publié : titre, liens IG/TikTok, score du juge — ou « RAS depuis HH:MM (Paris) » + 1 ligne sur pourquoi (aucun candidat ≥ seuil, espacement, quota, réseau…). Ajouter « Actus écartées : … » (avec la raison : photo manquante, non recoupée, trop vieille…) et « Sources à ajouter : … » si utile. Anomalie (réseau bloqué, Zernio en erreur, TikTok à reconnecter) : la mettre en première ligne.
+Veille : « File : +N ajoutés (meilleur : <sujet>, score), M expirés » ; actu brûlante publiée le cas échéant. Créneau : publié : titre, liens IG/TikTok, score du juge, sujet pris dans la file ou en secours — ou « RAS depuis HH:MM (Paris) » + 1 ligne sur pourquoi (aucun candidat ≥ seuil, espacement, quota, réseau…). Ajouter « Actus écartées : … » (avec la raison : photo manquante, non recoupée, trop vieille…) et « Sources à ajouter : … » si utile. Anomalie (réseau bloqué, Zernio en erreur, TikTok à reconnecter) : la mettre en première ligne.
