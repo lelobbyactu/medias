@@ -93,12 +93,18 @@
   },
   {
    "id": "0011-20_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Domingo encastre sa voiture dans un palmier et vole celle des PNJ (GTA 6)",
    "origin": "DomingoTV",
    "source_tweet": "https://x.com/DomingoTV/status/2123829232833036466",
-   "reserved_at_utc": "2026-11-20T19:54:27Z"
+   "reserved_at_utc": "2026-11-20T19:54:27Z",
+   "published_at_utc": "2026-11-20T19:55:28Z",
+   "instagram": "https://www.instagram.com/reel/Df-dErjFfTg/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710344515453750580",
+   "zernio_post_id": "6b00a585b65189c0789c31a3",
+   "slot": "21h",
+   "note": "créneau 21h, sujet de la file, juge indépendant 8/10 (combo A, description corrigée)"
   }
  ]
 }
