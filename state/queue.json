@@ -551,6 +551,42 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score 6 : écouter l'audio et vérifier la chute avant titre ; image très sombre (vérifier la luminosité du reel). 4e clip Domingo de la file : ne pas en publier deux de suite."
+  },
+  {
+   "id": "c-20261120-2013-gta6-3-79-md",
+   "added_at_utc": "2026-11-20T20:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA VI : chiffres officiels, 3,79 Md$ de ventes day one et 32,5 M d'unités (record du divertissement)",
+   "topic_key": "gta6-chiffres-officiels-3-79md",
+   "origin": "Rockstar Games / Take-Two",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2123861687585628179",
+   "primary_source": "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-$3.79-Billion-in-Day-One-Retail-Sales",
+   "source_time_utc": "2026-11-20T19:20:00Z",
+   "expires_at_utc": "2026-11-21T01:20:00Z",
+   "fiabilite": "🟢",
+   "score": 9,
+   "mentions": [
+    "FrenchRapUS",
+    "ShadesFrance",
+    "Kulturlesite_",
+    "Rockstar_Mag",
+    "RockstarNewsFRA"
+   ],
+   "media_url": "",
+   "angle": "Chiffres officiels bien au-dessus des estimations (2,36 Md$ / 24,6 M) : plus gros lancement de l'histoire du divertissement",
+   "titles": [
+    "GTA 6 : *3,79 Md$* en un jour",
+    "GTA 6 pulvérise *tous les records*"
+   ],
+   "checks": [
+    "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-earned-usd3-79-billion-on-launch-day/",
+    "https://seekingalpha.com/news/4675294-take-two-says-gta-vi-posts-record-379b-in-day-one-sales"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "hot": true,
+   "note": "actu brûlante 5_comptes"
   }
  ]
 }
