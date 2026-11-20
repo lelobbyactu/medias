@@ -302,7 +302,8 @@
     "FN_Assist",
     "HYPEX",
     "OWCavalry",
-    "ShiinaBR"
+    "ShiinaBR",
+    "FortniteFR"
    ],
    "media_url": "https://video.twimg.com/amplify_video/2123869515855298560/vid/avc1/1080x1920/XfLjCGiSv05IvQjH.mp4?tag=29",
    "media_repo_path": "queue/c-20261120-1630-fortnite-overwatch-wave2.mp4",
@@ -316,8 +317,9 @@
     "https://x.com/ShiinaBR/status/2123054307616686544"
    ],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "MAJ veille-int 20:45 UTC : le leak est confirmé par un trailer de sortie officiel (relayé par HYPEX 20:02 UTC, vidéo 9:16 de 20 s, 1080x1920, ~12 Mo, téléchargée dans queue/). Drop dans la boutique à 00:00 UTC (01 h Paris). Reel d'éditeur 🟢 : créditer Fortnite / Epic Games (vérifier le tweet @Fortnite d'origine si possible) ; titre « histoire » à soigner. Pas de keyart nécessaire pour un reel. Idéal pour le créneau 21 h Paris (ou 8 h demain, mais le drop aura eu lieu)."
+   "status": "pris",
+   "note": "MAJ veille-int 20:45 UTC : le leak est confirmé par un trailer de sortie officiel (relayé par HYPEX 20:02 UTC, vidéo 9:16 de 20 s, 1080x1920, ~12 Mo, téléchargée dans queue/). Drop dans la boutique à 00:00 UTC (01 h Paris). Reel d'éditeur 🟢 : créditer Fortnite / Epic Games (vérifier le tweet @Fortnite d'origine si possible) ; titre « histoire » à soigner. Pas de keyart nécessaire pour un reel. Idéal pour le créneau 21 h Paris (ou 8 h demain, mais le drop aura eu lieu). | veille-fr 21:13Z : @FortniteFR (officiel) poste le trailer 9:16 à 20:01Z, 5 comptes cumulés = actu brûlante 5_comptes, pris par la veille-fr (juge 8/10, combo A).",
+   "hot": true
   },
   {
    "id": "c-20261120-1716-domingo-gta6-fusillade-police",
@@ -509,7 +511,8 @@
    "score": 7,
    "mentions": [
     "FrenchRapUS",
-    "Kulturlesite_"
+    "Kulturlesite_",
+    "riyadinhoo_"
    ],
    "media_url": "assets/keyart/gta6.jpg",
    "media_repo_path": "",
