@@ -50,12 +50,16 @@
     },
     {
       "id": "0008-20_11_2026-Chiffres",
-      "status": "en_cours",
+      "status": "publie",
       "type": "carrousel",
       "topic": "GTA 6 : 24,6 millions de copies et 2,36 Md$ en un jour (Sensor Tower)",
       "origin": "Sensor Tower",
       "source_tweet": "https://x.com/Kulturlesite_/status/2123594521212747934",
-      "reserved_at_utc": "2026-11-20T03:35:25Z"
+      "reserved_at_utc": "2026-11-20T03:35:25Z",
+      "published_at_utc": "2026-11-20T03:37:30Z",
+      "instagram": "https://www.instagram.com/p/Df8tLlgiKMn/",
+      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710092345110318343",
+      "note": "validé par Alix (publication manuelle depuis le chat)"
     }
   ]
 }
