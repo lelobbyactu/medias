@@ -63,14 +63,18 @@
   },
   {
    "id": "0009-20_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Kamel (Kameto) se fait avoir par le chat Twitch sur GTA 6 (hydravion)",
    "origin": "KametoTV",
    "source_tweet": "https://x.com/KametoTV/status/2123514558136615081",
    "reserved_at_utc": "2026-11-20T11:04:20Z",
    "slot": "12h",
-   "note": "publié sur validation d'Alix (juge 6,5/10)"
+   "note": "publié sur validation d'Alix (juge 6,5/10)",
+   "published_at_utc": "2026-11-20T11:05:32Z",
+   "instagram": "https://www.instagram.com/reel/Df9gZl7lRYo/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710207974463081749",
+   "zernio_post_id": "6b002945df961bee738476ed"
   }
  ]
 }
