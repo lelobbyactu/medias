@@ -1,65 +1,76 @@
 {
-  "_doc": "Journal partagé des posts du Lobby (lu et mis à jour par toutes les tâches automatiques). Un objet par post, du plus ancien au plus récent. status: en_cours (réservé, montage/publication en cours) | publie | echec | abandonne. Garder les 200 derniers.",
-  "posts": [
-    {
-      "id": "0004-19_11_2026-Clips",
-      "status": "publie",
-      "type": "reel",
-      "published_at_utc": "2026-11-19T12:39:28Z",
-      "topic": "Domingo sème les flics en jet-ski (GTA 6)",
-      "origin": "DomingoTV",
-      "source_tweet": "",
-      "instagram": "https://www.instagram.com/reel/Df7Gdi2HUTs/",
-      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709861317720411413"
-    },
-    {
-      "id": "0005-19_11_2026-Clips",
-      "status": "publie",
-      "type": "reel",
-      "topic": "Gotaga se fait bait par son chat : triangle pour les clignotants (GTA VI)",
-      "origin": "Gotaga",
-      "source_tweet": "https://x.com/riyadinhoo_/status/2123370247918907784",
-      "reserved_at_utc": "2026-11-19T15:59:04Z",
-      "published_at_utc": "2026-11-19T16:00:20Z",
-      "instagram": "https://www.instagram.com/reel/Df7dXspij73/",
-      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709912884892962056"
-    },
-    {
-      "id": "0006-19_11_2026-Clips",
-      "status": "publie",
-      "type": "reel",
-      "topic": "Joueur de GTA 6 tué par un oiseau en roulant (WASTED)",
-      "origin": "pilardarkflatt",
-      "source_tweet": "https://x.com/pilardarkflatt/status/2123142871373271551",
-      "reserved_at_utc": "2026-11-19T17:16:04Z",
-      "published_at_utc": "2026-11-19T17:31:24Z",
-      "instagram": "https://www.instagram.com/reel/Df7nzYijCpd/",
-      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709936384496225554"
-    },
-    {
-      "id": "0007-19_11_2026-Clips",
-      "status": "publie",
-      "type": "reel",
-      "topic": "Domingo démasque une arnaque à l'assurance de piéton (GTA 6)",
-      "origin": "DomingoTV",
-      "source_tweet": "https://x.com/DomingoTV/status/2123479327354552517",
-      "reserved_at_utc": "2026-11-19T19:17:17Z",
-      "published_at_utc": "2026-11-19T19:18:05Z",
-      "instagram": "media_id 18065106014739055 (Zernio post 6aff4b642e2650430f05f841)",
-      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709963980361714964"
-    },
-    {
-      "id": "0008-20_11_2026-Chiffres",
-      "status": "publie",
-      "type": "carrousel",
-      "topic": "GTA 6 : 24,6 millions de copies et 2,36 Md$ en un jour (Sensor Tower)",
-      "origin": "Sensor Tower",
-      "source_tweet": "https://x.com/Kulturlesite_/status/2123594521212747934",
-      "reserved_at_utc": "2026-11-20T03:35:25Z",
-      "published_at_utc": "2026-11-20T03:37:30Z",
-      "instagram": "https://www.instagram.com/p/Df8tLlgiKMn/",
-      "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710092345110318343",
-      "note": "validé par Alix (publication manuelle depuis le chat)"
-    }
-  ]
+ "_doc": "Journal partagé des posts du Lobby (lu et mis à jour par toutes les tâches automatiques). Un objet par post, du plus ancien au plus récent. status: en_cours (réservé, montage/publication en cours) | publie | echec | abandonne. Garder les 200 derniers.",
+ "posts": [
+  {
+   "id": "0004-19_11_2026-Clips",
+   "status": "publie",
+   "type": "reel",
+   "published_at_utc": "2026-11-19T12:39:28Z",
+   "topic": "Domingo sème les flics en jet-ski (GTA 6)",
+   "origin": "DomingoTV",
+   "source_tweet": "",
+   "instagram": "https://www.instagram.com/reel/Df7Gdi2HUTs/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709861317720411413"
+  },
+  {
+   "id": "0005-19_11_2026-Clips",
+   "status": "publie",
+   "type": "reel",
+   "topic": "Gotaga se fait bait par son chat : triangle pour les clignotants (GTA VI)",
+   "origin": "Gotaga",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2123370247918907784",
+   "reserved_at_utc": "2026-11-19T15:59:04Z",
+   "published_at_utc": "2026-11-19T16:00:20Z",
+   "instagram": "https://www.instagram.com/reel/Df7dXspij73/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709912884892962056"
+  },
+  {
+   "id": "0006-19_11_2026-Clips",
+   "status": "publie",
+   "type": "reel",
+   "topic": "Joueur de GTA 6 tué par un oiseau en roulant (WASTED)",
+   "origin": "pilardarkflatt",
+   "source_tweet": "https://x.com/pilardarkflatt/status/2123142871373271551",
+   "reserved_at_utc": "2026-11-19T17:16:04Z",
+   "published_at_utc": "2026-11-19T17:31:24Z",
+   "instagram": "https://www.instagram.com/reel/Df7nzYijCpd/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709936384496225554"
+  },
+  {
+   "id": "0007-19_11_2026-Clips",
+   "status": "publie",
+   "type": "reel",
+   "topic": "Domingo démasque une arnaque à l'assurance de piéton (GTA 6)",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123479327354552517",
+   "reserved_at_utc": "2026-11-19T19:17:17Z",
+   "published_at_utc": "2026-11-19T19:18:05Z",
+   "instagram": "media_id 18065106014739055 (Zernio post 6aff4b642e2650430f05f841)",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7709963980361714964"
+  },
+  {
+   "id": "0008-20_11_2026-Chiffres",
+   "status": "publie",
+   "type": "carrousel",
+   "topic": "GTA 6 : 24,6 millions de copies et 2,36 Md$ en un jour (Sensor Tower)",
+   "origin": "Sensor Tower",
+   "source_tweet": "https://x.com/Kulturlesite_/status/2123594521212747934",
+   "reserved_at_utc": "2026-11-20T03:35:25Z",
+   "published_at_utc": "2026-11-20T03:37:30Z",
+   "instagram": "https://www.instagram.com/p/Df8tLlgiKMn/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710092345110318343",
+   "note": "validé par Alix (publication manuelle depuis le chat)"
+  },
+  {
+   "id": "0009-20_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Kamel (Kameto) se fait avoir par le chat Twitch sur GTA 6 (hydravion)",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2123514558136615081",
+   "reserved_at_utc": "2026-11-20T11:04:20Z",
+   "slot": "12h",
+   "note": "publié sur validation d'Alix (juge 6,5/10)"
+  }
+ ]
 }
