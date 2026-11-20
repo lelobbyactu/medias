@@ -1,491 +1,555 @@
 {
-  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
-  "candidates": [
-    {
-      "id": "c-20261120-1400-gta6-album",
-      "added_at_utc": "2026-11-20T14:20:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "GTA VI : l'album officiel est disponible (34 titres, Travis Scott, Future, etc.)",
-      "topic_key": "gta6-album-sortie",
-      "origin": "RockstarGames",
-      "source_tweet": "https://x.com/RockstarGames/status/2123778388296888354",
-      "primary_source": "@RockstarGames (annonce officielle)",
-      "source_time_utc": "2026-11-20T14:00:00Z",
-      "expires_at_utc": "2026-11-20T20:00:00Z",
-      "fiabilite": "🟢",
-      "score": 7,
-      "mentions": [
-        "RockstarGames",
-        "JVCom",
-        "Platinside"
-      ],
-      "media_url": "assets/keyart/gta6.jpg",
-      "media_repo_path": "",
-      "angle": "L'album GTA VI sort aujourd'hui (streaming + vinyle/CD) : gros noms US, titres de la radio VCRR, spoilers pour ceux qui n'ont pas fini le jeu.",
-      "titles": [
-        "L'*album* de GTA 6 est sorti",
-        "34 titres, Travis Scott, Future : l'*album* GTA 6 est là"
-      ],
-      "checks": [
-        "https://www.gematsu.com/2026/09/grand-theft-auto-vi-the-album-announced",
-        "https://www.psu.com/news/grand-theft-auto-vi-the-album-features-34-tracks-from-genre-defying-roster-of-the-most-exciting-artists-in-the-world/",
-        "https://djmag.com/news/full-gta-vi-album-tracklist-revealed-featuring-justice-arca-fcukers-more"
-      ],
-      "photo_needed": "",
-      "status": "publie",
-      "note": "Carrousel : recouper nb de titres/artistes avec la page officielle Rockstar avant montage. Pas un 'simple pub' : sortie officielle. | pris 2026-11-20T16:59:34Z par créneau 18h (tweet Rockstar « now available » vérifié).",
-      "post_id": "0010-20_11_2026-Actu"
-    },
-    {
-      "id": "c-20261120-1459-kc-reapered",
-      "added_at_utc": "2026-11-20T14:20:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "Karmine Corp se sépare du head coach LoL Reapered (finale EWC, MSI et Worlds sous sa direction)",
-      "topic_key": "kc-reapered-depart",
-      "origin": "KarmineCorp",
-      "source_tweet": "https://x.com/KarmineCorp/status/2123763405337358506",
-      "primary_source": "@KarmineCorp (communiqué officiel)",
-      "source_time_utc": "2026-11-20T13:00:28Z",
-      "expires_at_utc": "2026-11-20T19:00:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "KarmineCorp",
-        "Sheep_Esports",
-        "KametoTV"
-      ],
-      "media_url": "",
-      "media_repo_path": "",
-      "angle": "Le coach coréen du meilleur bilan de l'histoire de KC s'en va : le public KC réagit fort.",
-      "titles": [
-        "La Karmine Corp *vire* son coach Reapered",
-        "Reapered *quitte* KC après la saison de l'histoire"
-      ],
-      "checks": [
-        "https://x.com/Sheep_Esports/status/2123766739590914174"
-      ],
-      "photo_needed": "reapered",
-      "status": "en_attente",
-      "note": "Pas de photo de Reapered dans assets/photos et pas de key art KC : non publiable en carrousel tant que ça manque. Recouper avec 2 médias esport (Sheep, Dot Esports, Dexerto) avant montage."
-    },
-    {
-      "id": "c-20261120-1411-gotaga-lucia-couples",
-      "added_at_utc": "2026-11-20T14:20:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Gotaga joue Lucia sur GTA 6, un appel de 'Jason' arrive : « des couples vont sauter avec GTA 6 »",
-      "topic_key": "gotaga-gta6-couples-lucia",
-      "origin": "GotagaTV",
-      "source_tweet": "https://x.com/GotagaTV/status/2123781276515922093",
-      "primary_source": "https://x.com/GotagaTV/status/2123781276515922093",
-      "source_time_utc": "2026-11-20T14:11:28Z",
-      "expires_at_utc": "2026-11-21T14:11:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "GotagaTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123781109041225728/vid/avc1/1280x720/H2XUIazCKO1TEWOH.mp4?tag=29",
-      "media_repo_path": "",
-      "angle": "Gotaga (face-cam) promène Lucia en tenue d'été pendant que sa copine/un appel arrive : blague sur GTA 6 qui peut faire sauter les couples. 22 s, 16:9, audio non écouté.",
-      "titles": [
-        "Gotaga : « GTA 6 va faire *sauter* des couples »",
-        "Gotaga *se fait appeler* en pleine balade avec Lucia"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7)."
-    },
-    {
-      "id": "c-20261120-1505-ubisoft-166",
-      "added_at_utc": "2026-11-20T15:20:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "Ubisoft licencie 166 personnes à Montréal et Québec avant son rapport financier",
-      "topic_key": "ubisoft-licenciements-166-montreal",
-      "origin": "JVCom",
-      "source_tweet": "https://x.com/JVCom/status/2123794747068190936",
-      "primary_source": "Communiqué Ubisoft (cité par JVCom) ; Gamekult couvre la restructuration",
-      "source_time_utc": "2026-11-20T15:05:00Z",
-      "expires_at_utc": "2026-11-20T21:05:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "JVCom",
-        "Gamekult"
-      ],
-      "media_url": "",
-      "media_repo_path": "",
-      "angle": "Nouvelle vague de licenciements chez Ubisoft juste avant les résultats, avec une filiale IA générative et le remaniement des Creative Houses",
-      "titles": [
-        "Ubisoft *licencie 166* personnes avant ses résultats",
-        "Ubisoft coupe dans ses studios, pendant que *Black Flag* cartonne"
-      ],
-      "checks": [
-        "https://x.com/Gamekult/status/2123793395760124264"
-      ],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Recoupement à faire au créneau : 2 médias fiables (web search ne remonte pas encore l'info) ; visuel officiel Ubisoft/AC Black Flag Resynced à trouver (pas de keyart en dépôt). Sujet moyen, ne passer que si le créneau est faible."
-    },
-    {
-      "id": "c-20261120-1431-weeknd-gta6-maison",
-      "added_at_utc": "2026-11-20T15:20:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "The Weeknd partage en story une photo de GTA VI après avoir trouvé sa maison dans le jeu",
-      "topic_key": "weeknd-gta6-story-maison",
-      "origin": "Kulturlesite_ (relais, capture de la story visible)",
-      "source_tweet": "https://x.com/Kulturlesite_/status/2123786215782830430",
-      "primary_source": "Story Instagram de The Weeknd (capture relayée, non vérifiée directement)",
-      "source_time_utc": "2026-11-20T14:31:00Z",
-      "expires_at_utc": "2026-11-20T20:30:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "Kulturlesite_",
-        "riyadinhoo_",
-        "FrenchRapUS"
-      ],
-      "media_url": "assets/keyart/gta6.jpg",
-      "media_repo_path": "",
-      "angle": "Une méga-star dans GTA VI : The Weeknd flexe sa maison virtuelle (74k vues, 2k likes en 30 min)",
-      "titles": [
-        "The Weeknd a trouvé *sa maison* dans GTA 6",
-        "The Weeknd *flexe* sa maison virtuelle sur GTA VI"
-      ],
-      "checks": [],
-      "photo_needed": "theweeknd",
-      "status": "en_attente",
-      "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication. | 16:20 : 3 comptes (Kulturlesite_, riyadinhoo_, FrenchRapUS ; ce dernier à 26k vues, sensationnaliste). Pas encore 5."
-    },
-    {
-      "id": "c-20261120-1503-gotaga-gta6-motocross",
-      "added_at_utc": "2026-11-20T15:20:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Gotaga en course de moto sur GTA 6, avec Squeezie (3e au GP) évoqué par le chat : « le S toujours dans le rétro »",
-      "topic_key": "gotaga-gta6-course-moto-squeezie",
-      "origin": "GotagaTV",
-      "source_tweet": "https://x.com/GotagaTV/status/2123794266690408521",
-      "primary_source": "https://x.com/GotagaTV/status/2123794266690408521",
-      "source_time_utc": "2026-11-20T15:03:06Z",
-      "expires_at_utc": "2026-11-21T15:03:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "GotagaTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123793731312640000/vid/avc1/1920x1080/uaCn_6p9qQIMCn95.mp4?tag=29",
-      "media_repo_path": "",
-      "angle": "Gotaga se rassure sur sa perf en moto-cross GTA 6 pendant que le chat parle de Squeezie ; le S de Squeezie reste dans le rétro (20 s, 1080p, téléchargeable)",
-      "titles": [
-        "Gotaga se croit *intouchable* en course sur GTA 6",
-        "Le *S* de Squeezie dans le rétro de Gotaga sur GTA VI"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
-    },
-    {
-      "id": "c-20261120-1535-nico-papa-ou-tes-200k",
-      "added_at_utc": "2026-11-20T16:20:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "Le documentaire de Nico « Papa où t'es ? » dépasse 200 000 entrées au cinéma : docu français le plus vu en salles en 2026",
-      "topic_key": "nico-papa-ou-tes-200k-entrees",
-      "origin": "ShadesFrance (relais) : source primaire à confirmer (Nico / Pathé / box-office)",
-      "source_tweet": "https://x.com/ShadesFrance/status/2123802413555499227",
-      "primary_source": "Nico (Nicolas Trouvé) ou distributeur Pathé : à retrouver avant montage",
-      "source_time_utc": "2026-11-20T15:35:28Z",
-      "expires_at_utc": "2026-11-20T21:35:00Z",
-      "fiabilite": "🟡",
-      "score": 7,
-      "mentions": [
-        "ShadesFrance"
-      ],
-      "media_url": "",
-      "media_repo_path": "",
-      "angle": "Un projet de créateur (Nico, ex Dakar-Paris en stop) qui cartonne au cinéma : record de docu FR 2026, projection prévue à l'Assemblée.",
-      "titles": [
-        "Le docu de *Nico* dépasse 200 000 entrées au cinéma",
-        "*Nico* bat le record du docu français le plus vu en salles en 2026"
-      ],
-      "checks": [
-        "https://www.pathe.fr/films/papa-ou-t-es-55275",
-        "https://gensdinternet.fr/2026/08/31/avec-son-documentaire-nicolas-trouve-veut-raconter-lhistoire-de-plein-denfants-places/"
-      ],
-      "photo_needed": "",
-      "status": "ecarte",
-      "note": "Photo assets/photos/photo-nico-la.jpg à utiliser (vérifier que c'est bien Nico/Nicolas Trouvé). Chiffre 200 000 non recoupé : trouver 2 médias (box-office, CNews exclu ; Allociné, CBO, Le Film français) ou le tweet de Nico/Pathé. Sujet : ne pas parler de politique (projection Assemblée = mention neutre au plus), ne rien dire sur les enfants placés au-delà du sujet du film. | 18h: écarté (chiffre 200 000 non recoupé, source primaire introuvable, identité Nico/photo non confirmée)."
-    },
-    {
-      "id": "c-20261120-1606-gotaga-gta6-jason-aura",
-      "added_at_utc": "2026-11-20T16:20:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Gotaga : « la perte d'aura de Jason » sur GTA 6 (puis « le six-pack de Jason est trop sensible »)",
-      "topic_key": "gotaga-gta6-jason-aura",
-      "origin": "GotagaTV",
-      "source_tweet": "https://x.com/GotagaTV/status/2123810307361694104",
-      "primary_source": "https://x.com/GotagaTV/status/2123810307361694104",
-      "source_time_utc": "2026-11-20T16:06:50Z",
-      "expires_at_utc": "2026-11-21T16:06:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "GotagaTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123810240772579328/vid/avc1/1920x1080/mRuQL1LJG3IYE8dy.mp4?tag=29",
-      "media_repo_path": "",
-      "angle": "Gotaga se moque de Jason (héros de GTA 6) qui perd son « aura » : 15 s, 1080p, téléchargeable.",
-      "titles": [
-        "Gotaga se moque de la *perte d'aura* de Jason dans GTA 6",
-        "Jason (GTA 6) *perd son aura* en direct chez Gotaga"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Traction faible (16 likes, 2,5k vues à 8 min) ; gag exact non vu, regarder le clip avant de choisir le titre. Même live que les 2 autres clips Gotaga de la file : en prendre un seul."
-    },
-    {
-      "id": "c-20261120-1600-gta6-crashs-ps5-xbox",
-      "added_at_utc": "2026-11-20T16:50:00Z",
-      "found_by": "veille-int",
-      "type": "actu",
-      "topic": "GTA 6 : des joueurs PS5 et Xbox signalent des crashs (code CE-108255-1), certains bloqués dès le prologue ou à la mission Pipework",
-      "topic_key": "gta6-crashs-ps5-xbox",
-      "origin": "Dexerto (relais, ne pas créditer)",
-      "source_tweet": "https://x.com/Dexerto/status/2123808718168969692",
-      "primary_source": "Posts Reddit de joueurs (r/PS5HelpSupport) ; support PlayStation (code CE-108255-1) ; Rockstar renvoie vers PlayStation/Xbox Support, pas de patch annoncé",
-      "source_time_utc": "2026-11-20T14:08:00Z",
-      "expires_at_utc": "2026-11-20T20:08:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "Dexerto"
-      ],
-      "media_url": "assets/keyart/gta6.jpg",
-      "media_repo_path": "",
-      "angle": "Premier gros bug de lancement GTA 6 : le jeu plante en boucle sur PS5 (Pro comprise) dès le prologue ou en réparant l'évier de Mandy, quelques cas sur Xbox Series X.",
-      "titles": [
-        "GTA 6 *plante* en boucle sur PS5 et Xbox",
-        "Des joueurs *bloqués* dès le début de GTA 6"
-      ],
-      "checks": [
-        "https://www.dexerto.com/gta/gta-6-players-report-game-breaking-crashes-on-ps5-and-xbox-3430090/"
-      ],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Une seule source média (Dexerto, auteur James Busby) : recouper avec 2 médias (IGN, GameSpot, VGC, Insider Gaming…) avant carrousel, sinon écarter. Présenter comme « signalements de joueurs », pas comme un bug généralisé. Vérifier au créneau si Rockstar a annoncé un patch."
-    },
-    {
-      "id": "c-20261120-1630-fortnite-overwatch-wave2",
-      "added_at_utc": "2026-11-20T16:50:00Z",
-      "found_by": "veille-int",
-      "type": "actu",
-      "topic": "Fortnite x Overwatch vague 2 : Widowmaker (la Française) et Kiriko dans la boutique ce soir (leak, non confirmé par Epic)",
-      "topic_key": "fortnite-overwatch-wave2-widowmaker-kiriko",
-      "origin": "ShiinaBR",
-      "source_tweet": "https://x.com/ShiinaBR/status/2123816302892679300",
-      "primary_source": "Leak ShiinaBR / HYPEX / Jorge_Most (18 nov.) ; confirmation officielle Epic/Fortnite attendue au reset de la boutique (00:00 UTC = 01 h Paris)",
-      "source_time_utc": "2026-11-20T16:30:39Z",
-      "expires_at_utc": "2026-11-21T00:30:00Z",
-      "fiabilite": "🟠",
-      "score": 6,
-      "mentions": [
-        "ShiinaBR"
-      ],
-      "media_url": "",
-      "media_repo_path": "",
-      "angle": "Widowmaker = Amélie Lacroix, assassin française d'Overwatch : 2 skins, 2 pickaxes, 1 emote, 1 paire de kicks ; première vague en mai (D.Va, Genji, Tracer, Mercy).",
-      "titles": [
-        "Widowmaker, la *Française* d'Overwatch, arrive sur Fortnite",
-        "Fortnite : *Widowmaker* et Kiriko débarquent ce soir"
-      ],
-      "checks": [
-        "https://www.talkesport.com/news/fortnite/fortnite-overwatch-kiriko-widowmaker-release-date/",
-        "https://x.com/ShiinaBR/status/2123054307616686544"
-      ],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Leak vieux de 2 jours (18 nov.), pas hot. Ne publier qu'avec « non confirmé par Epic » (🟠) ou, mieux, après confirmation officielle (tweet @Fortnite) : alors 🟢. Visuel officiel Epic à trouver (aucun keyart Fortnite/Overwatch en dépôt) : sinon ne pas publier. Créneau 21 h Paris idéal (drop ~1 h du matin)."
-    },
-    {
-      "id": "c-20261120-1716-domingo-gta6-fusillade-police",
-      "added_at_utc": "2026-11-20T17:16:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Domingo en fusillade contre la police sur GTA 6 (clip de 90 s, facecam)",
-      "topic_key": "domingo-gta6-fusillade-police-90s",
-      "origin": "DomingoTV",
-      "source_tweet": "https://x.com/DomingoTV/status/2123812665411932307",
-      "primary_source": "https://x.com/DomingoTV/status/2123812665411932307",
-      "source_time_utc": "2026-11-20T16:16:12Z",
-      "expires_at_utc": "2026-11-21T16:16:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "DomingoTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123812504111374336/vid/avc1/1280x720/Bh8YvgGlhmoe8Pvi.mp4?tag=29",
-      "media_repo_path": "",
-      "angle": "Domingo (facecam) dans une longue course-poursuite/fusillade avec la police de GTA 6 ; tweet « La scène est DINGUE » (68 likes, 7,3 k vues) ; chute exacte non identifiée, à visionner en entier avant montage",
-      "titles": [],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "90 s (limite). Moment fort à trouver ; si pas de chute claire, écarter. Domingo déjà publié 0004 et 0007."
-    },
-    {
-      "id": "c-20261120-1716-gta6-premiere-personne-glitch",
-      "added_at_utc": "2026-11-20T17:16:00Z",
-      "found_by": "veille-fr",
-      "type": "actu",
-      "topic": "GTA 6 jouable entièrement à la première personne grâce à un glitch (à pied, au volant, armes OK, PS5 et Xbox)",
-      "topic_key": "gta6-glitch-premiere-personne",
-      "origin": "DexertoFR (relais ; joueur d'origine à identifier)",
-      "source_tweet": "https://x.com/DexertoFR/status/2123808931403162008",
-      "primary_source": "à identifier (Dexerto / joueur)",
-      "source_time_utc": "2026-11-20T16:01:22Z",
-      "expires_at_utc": "2026-11-20T22:01:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "DexertoFR",
-        "InsiderGamingIG"
-      ],
-      "media_url": "assets/keyart/gta6.jpg",
-      "media_repo_path": "",
-      "angle": "Rockstar avait exclu le mode première personne au lancement ; un glitch le débloque entièrement (2 photos dans le tweet Dexerto)",
-      "titles": [],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé. | 20:40 Paris : InsiderGamingIG a aussi publié un guide « First-Person Glitch » (18:24 UTC) : 2 comptes."
-    },
-    {
-      "id": "c-20261120-1722-domingo-gta6-voiture-arbre",
-      "added_at_utc": "2026-11-20T18:15:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Domingo plante sa voiture volée dans un palmier sur GTA 6, les PNJ du véhicule sont éjectés (33 s, facecam)",
-      "topic_key": "domingo-gta6-voiture-palmier",
-      "origin": "DomingoTV",
-      "source_tweet": "https://x.com/DomingoTV/status/2123829232833036466",
-      "primary_source": "https://x.com/DomingoTV/status/2123829232833036466",
-      "source_time_utc": "2026-11-20T17:22:02Z",
-      "expires_at_utc": "2026-11-21T17:22:00Z",
-      "fiabilite": "🟢",
-      "score": 7,
-      "mentions": [
-        "DomingoTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123829122509991936/vid/avc1/1280x720/f5wtg3vDyEhjuiMM.mp4?tag=29",
-      "media_repo_path": "queue/c-20261120-1722-domingo-gta6-voiture-arbre.mp4",
-      "angle": "Slapstick visible sans le son : course-poursuite, voiture encastrée dans un arbre, PNJ qui tombent ; Domingo (256 k) + GTA 6 = combo qui marche ; tweet « Wshhh mais il est sérieux lui ».",
-      "titles": [
-        "Domingo *plante* sa voiture dans un palmier sur GTA 6",
-        "Domingo finit *encastré* dans un arbre avec la police aux fesses"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Audio non écouté (gag exact inconnu) : visionner les images avant de figer le titre. 720p, 16:9, 1440p source dispo. Traction encore faible (70 likes / 7,9 k vues à 18 h 10 UTC), à revérifier au créneau."
-    },
-    {
-      "id": "c-20261120-1747-domingo-gta6-touristes-titan",
-      "added_at_utc": "2026-11-20T18:15:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Domingo braque un couple de touristes la nuit sur GTA 6, « c'est le titan colossal » (49 s, facecam)",
-      "topic_key": "domingo-gta6-touristes-titan",
-      "origin": "DomingoTV",
-      "source_tweet": "https://x.com/DomingoTV/status/2123835557801521564",
-      "primary_source": "https://x.com/DomingoTV/status/2123835557801521564",
-      "source_time_utc": "2026-11-20T17:47:10Z",
-      "expires_at_utc": "2026-11-21T17:47:00Z",
-      "fiabilite": "🟢",
-      "score": 6,
-      "mentions": [
-        "DomingoTV"
-      ],
-      "media_url": "https://video.twimg.com/amplify_video/2123835376598970368/vid/avc1/1280x720/Fll_lSjcpZsaNIUA.mp4?tag=29",
-      "media_repo_path": "",
-      "angle": "Domingo carjacke un couple de touristes (le mari costaud « titan colossal ») qui se bat puis tire ; scène nocturne, dialogues PNJ FR sous-titrés.",
-      "titles": [
-        "Domingo braque un touriste qui *n'a pas peur* de se battre",
-        "Domingo croise le *titan colossal* dans GTA 6"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Score 6, MP4 non téléchargé. Accroche moins lisible que la voiture dans l'arbre ; ne passer que si l'autre Domingo est déjà pris. Doublon à éviter avec c-20261120-1716-domingo-gta6-fusillade-police."
-    },
-    {
-      "id": "c-20261120-1808-squeezie-gta6-aigris-30fps",
-      "added_at_utc": "2026-11-20T18:15:00Z",
-      "found_by": "veille-fr",
-      "type": "clip",
-      "topic": "Squeezie répond aux critiques sur GTA 6 et aux « aigris » du 30 FPS (extrait de live)",
-      "topic_key": "squeezie-gta6-aigris-30fps",
-      "origin": "xSqueeZie (à confirmer : tweet/clip d'origine non retrouvé)",
-      "source_tweet": "https://x.com/LaTwitchance/status/2123840798865154388",
-      "primary_source": "live Twitch/YouTube de Squeezie (non retrouvé)",
-      "source_time_utc": "2026-11-20T18:08:00Z",
-      "expires_at_utc": "2026-11-21T18:08:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "LaTwitchance"
-      ],
-      "media_url": "",
-      "media_repo_path": "",
-      "angle": "« Les aigris avec vos 30 FPS, dégagez ! » : Squeezie défend GTA 6 (maniabilité RDR 2 + GTA) ; débat 30 FPS très chaud en ce moment.",
-      "titles": [
-        "Squeezie aux *aigris* du 30 FPS : « Dégagez ! »",
-        "Squeezie *défonce* les critiques de GTA 6"
-      ],
-      "checks": [],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
-    },
-    {
-      "id": "c-20261120-1630-zelnick-gta7-propos",
-      "added_at_utc": "2026-11-20T18:50:00Z",
-      "found_by": "veille-int",
-      "type": "actu",
-      "topic": "Le PDG de Take-Two Strauss Zelnick, interrogé sur GTA 7 au lendemain du lancement : « on vient de lancer GTA 6 le 19 novembre… et vous parlez de GTA 7 »",
-      "topic_key": "zelnick-gta7-lancement-gta6",
-      "origin": "Dexerto (relais, ne pas créditer)",
-      "source_tweet": "https://x.com/Dexerto/status/2123816257136865791",
-      "primary_source": "Interview de Strauss Zelnick (média/émission non identifié) : à retrouver",
-      "source_time_utc": "2026-11-20T16:30:28Z",
-      "expires_at_utc": "2026-11-20T22:30:00Z",
-      "fiabilite": "🟡",
-      "score": 6,
-      "mentions": [
-        "Dexerto"
-      ],
-      "media_url": "assets/keyart/gta6.jpg",
-      "media_repo_path": "",
-      "angle": "Zelnick esquive la question GTA 7 (monde entier ?) et laisse entendre que les prochains jeux Rockstar seront plus rapides à faire ; tweet Dexerto à 935 k vues / 67 k likes en 2 h.",
-      "titles": [
-        "Take-Two : « Vous parlez déjà de *GTA 7* ? »",
-        "Le patron de Take-Two *recadre* la question sur GTA 7"
-      ],
-      "checks": [
-        "https://insider-gaming.com/take-two-ceo-gta-7-development/ (propos antérieurs de Zelnick à IGN, ne contient pas cette citation)",
-        "https://www.dexerto.com/gta/rockstar-promises-next-games-wont-take-as-long-as-gta-6-to-make-3418766/ (14 oct., propos de Rockstar via Bloomberg, pas de Zelnick)"
-      ],
-      "photo_needed": "",
-      "status": "en_attente",
-      "note": "Citation vue uniquement dans le tweet Dexerto ; interview d'origine et date non retrouvées (recoupement web : rien de ce jour). Ne publier que si interview primaire + 1 autre média retrouvés ; vidéo = probable extrait presse (ne pas reposter, exclusion §4). Pas de photo Zelnick : keyart GTA 6 seulement."
-    }
-  ]
+ "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
+ "candidates": [
+  {
+   "id": "c-20261120-1400-gta6-album",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA VI : l'album officiel est disponible (34 titres, Travis Scott, Future, etc.)",
+   "topic_key": "gta6-album-sortie",
+   "origin": "RockstarGames",
+   "source_tweet": "https://x.com/RockstarGames/status/2123778388296888354",
+   "primary_source": "@RockstarGames (annonce officielle)",
+   "source_time_utc": "2026-11-20T14:00:00Z",
+   "expires_at_utc": "2026-11-20T20:00:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "RockstarGames",
+    "JVCom",
+    "Platinside"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "L'album GTA VI sort aujourd'hui (streaming + vinyle/CD) : gros noms US, titres de la radio VCRR, spoilers pour ceux qui n'ont pas fini le jeu.",
+   "titles": [
+    "L'*album* de GTA 6 est sorti",
+    "34 titres, Travis Scott, Future : l'*album* GTA 6 est là"
+   ],
+   "checks": [
+    "https://www.gematsu.com/2026/09/grand-theft-auto-vi-the-album-announced",
+    "https://www.psu.com/news/grand-theft-auto-vi-the-album-features-34-tracks-from-genre-defying-roster-of-the-most-exciting-artists-in-the-world/",
+    "https://djmag.com/news/full-gta-vi-album-tracklist-revealed-featuring-justice-arca-fcukers-more"
+   ],
+   "photo_needed": "",
+   "status": "publie",
+   "note": "Carrousel : recouper nb de titres/artistes avec la page officielle Rockstar avant montage. Pas un 'simple pub' : sortie officielle. | pris 2026-11-20T16:59:34Z par créneau 18h (tweet Rockstar « now available » vérifié).",
+   "post_id": "0010-20_11_2026-Actu"
+  },
+  {
+   "id": "c-20261120-1459-kc-reapered",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Karmine Corp se sépare du head coach LoL Reapered (finale EWC, MSI et Worlds sous sa direction)",
+   "topic_key": "kc-reapered-depart",
+   "origin": "KarmineCorp",
+   "source_tweet": "https://x.com/KarmineCorp/status/2123763405337358506",
+   "primary_source": "@KarmineCorp (communiqué officiel)",
+   "source_time_utc": "2026-11-20T13:00:28Z",
+   "expires_at_utc": "2026-11-20T19:00:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "KarmineCorp",
+    "Sheep_Esports",
+    "KametoTV"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Le coach coréen du meilleur bilan de l'histoire de KC s'en va : le public KC réagit fort.",
+   "titles": [
+    "La Karmine Corp *vire* son coach Reapered",
+    "Reapered *quitte* KC après la saison de l'histoire"
+   ],
+   "checks": [
+    "https://x.com/Sheep_Esports/status/2123766739590914174"
+   ],
+   "photo_needed": "reapered",
+   "status": "expire",
+   "note": "Pas de photo de Reapered dans assets/photos et pas de key art KC : non publiable en carrousel tant que ça manque. Recouper avec 2 médias esport (Sheep, Dot Esports, Dexerto) avant montage."
+  },
+  {
+   "id": "c-20261120-1411-gotaga-lucia-couples",
+   "added_at_utc": "2026-11-20T14:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga joue Lucia sur GTA 6, un appel de 'Jason' arrive : « des couples vont sauter avec GTA 6 »",
+   "topic_key": "gotaga-gta6-couples-lucia",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123781276515922093",
+   "primary_source": "https://x.com/GotagaTV/status/2123781276515922093",
+   "source_time_utc": "2026-11-20T14:11:28Z",
+   "expires_at_utc": "2026-11-21T14:11:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123781109041225728/vid/avc1/1280x720/H2XUIazCKO1TEWOH.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga (face-cam) promène Lucia en tenue d'été pendant que sa copine/un appel arrive : blague sur GTA 6 qui peut faire sauter les couples. 22 s, 16:9, audio non écouté.",
+   "titles": [
+    "Gotaga : « GTA 6 va faire *sauter* des couples »",
+    "Gotaga *se fait appeler* en pleine balade avec Lucia"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7)."
+  },
+  {
+   "id": "c-20261120-1505-ubisoft-166",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Ubisoft licencie 166 personnes à Montréal et Québec avant son rapport financier",
+   "topic_key": "ubisoft-licenciements-166-montreal",
+   "origin": "JVCom",
+   "source_tweet": "https://x.com/JVCom/status/2123794747068190936",
+   "primary_source": "Communiqué Ubisoft (cité par JVCom) ; Gamekult couvre la restructuration",
+   "source_time_utc": "2026-11-20T15:05:00Z",
+   "expires_at_utc": "2026-11-20T21:05:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "JVCom",
+    "Gamekult"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Nouvelle vague de licenciements chez Ubisoft juste avant les résultats, avec une filiale IA générative et le remaniement des Creative Houses",
+   "titles": [
+    "Ubisoft *licencie 166* personnes avant ses résultats",
+    "Ubisoft coupe dans ses studios, pendant que *Black Flag* cartonne"
+   ],
+   "checks": [
+    "https://x.com/Gamekult/status/2123793395760124264"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Recoupement à faire au créneau : 2 médias fiables (web search ne remonte pas encore l'info) ; visuel officiel Ubisoft/AC Black Flag Resynced à trouver (pas de keyart en dépôt). Sujet moyen, ne passer que si le créneau est faible."
+  },
+  {
+   "id": "c-20261120-1431-weeknd-gta6-maison",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "The Weeknd partage en story une photo de GTA VI après avoir trouvé sa maison dans le jeu",
+   "topic_key": "weeknd-gta6-story-maison",
+   "origin": "Kulturlesite_ (relais, capture de la story visible)",
+   "source_tweet": "https://x.com/Kulturlesite_/status/2123786215782830430",
+   "primary_source": "Story Instagram de The Weeknd (capture relayée, non vérifiée directement)",
+   "source_time_utc": "2026-11-20T14:31:00Z",
+   "expires_at_utc": "2026-11-20T20:30:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Kulturlesite_",
+    "riyadinhoo_",
+    "FrenchRapUS"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Une méga-star dans GTA VI : The Weeknd flexe sa maison virtuelle (74k vues, 2k likes en 30 min)",
+   "titles": [
+    "The Weeknd a trouvé *sa maison* dans GTA 6",
+    "The Weeknd *flexe* sa maison virtuelle sur GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "theweeknd",
+   "status": "en_attente",
+   "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication. | 16:20 : 3 comptes (Kulturlesite_, riyadinhoo_, FrenchRapUS ; ce dernier à 26k vues, sensationnaliste). Pas encore 5."
+  },
+  {
+   "id": "c-20261120-1503-gotaga-gta6-motocross",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga en course de moto sur GTA 6, avec Squeezie (3e au GP) évoqué par le chat : « le S toujours dans le rétro »",
+   "topic_key": "gotaga-gta6-course-moto-squeezie",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123794266690408521",
+   "primary_source": "https://x.com/GotagaTV/status/2123794266690408521",
+   "source_time_utc": "2026-11-20T15:03:06Z",
+   "expires_at_utc": "2026-11-21T15:03:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123793731312640000/vid/avc1/1920x1080/uaCn_6p9qQIMCn95.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga se rassure sur sa perf en moto-cross GTA 6 pendant que le chat parle de Squeezie ; le S de Squeezie reste dans le rétro (20 s, 1080p, téléchargeable)",
+   "titles": [
+    "Gotaga se croit *intouchable* en course sur GTA 6",
+    "Le *S* de Squeezie dans le rétro de Gotaga sur GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
+  },
+  {
+   "id": "c-20261120-1535-nico-papa-ou-tes-200k",
+   "added_at_utc": "2026-11-20T16:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Le documentaire de Nico « Papa où t'es ? » dépasse 200 000 entrées au cinéma : docu français le plus vu en salles en 2026",
+   "topic_key": "nico-papa-ou-tes-200k-entrees",
+   "origin": "ShadesFrance (relais) : source primaire à confirmer (Nico / Pathé / box-office)",
+   "source_tweet": "https://x.com/ShadesFrance/status/2123802413555499227",
+   "primary_source": "Nico (Nicolas Trouvé) ou distributeur Pathé : à retrouver avant montage",
+   "source_time_utc": "2026-11-20T15:35:28Z",
+   "expires_at_utc": "2026-11-20T21:35:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "ShadesFrance"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un projet de créateur (Nico, ex Dakar-Paris en stop) qui cartonne au cinéma : record de docu FR 2026, projection prévue à l'Assemblée.",
+   "titles": [
+    "Le docu de *Nico* dépasse 200 000 entrées au cinéma",
+    "*Nico* bat le record du docu français le plus vu en salles en 2026"
+   ],
+   "checks": [
+    "https://www.pathe.fr/films/papa-ou-t-es-55275",
+    "https://gensdinternet.fr/2026/08/31/avec-son-documentaire-nicolas-trouve-veut-raconter-lhistoire-de-plein-denfants-places/"
+   ],
+   "photo_needed": "",
+   "status": "ecarte",
+   "note": "Photo assets/photos/photo-nico-la.jpg à utiliser (vérifier que c'est bien Nico/Nicolas Trouvé). Chiffre 200 000 non recoupé : trouver 2 médias (box-office, CNews exclu ; Allociné, CBO, Le Film français) ou le tweet de Nico/Pathé. Sujet : ne pas parler de politique (projection Assemblée = mention neutre au plus), ne rien dire sur les enfants placés au-delà du sujet du film. | 18h: écarté (chiffre 200 000 non recoupé, source primaire introuvable, identité Nico/photo non confirmée)."
+  },
+  {
+   "id": "c-20261120-1606-gotaga-gta6-jason-aura",
+   "added_at_utc": "2026-11-20T16:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga : « la perte d'aura de Jason » sur GTA 6 (puis « le six-pack de Jason est trop sensible »)",
+   "topic_key": "gotaga-gta6-jason-aura",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123810307361694104",
+   "primary_source": "https://x.com/GotagaTV/status/2123810307361694104",
+   "source_time_utc": "2026-11-20T16:06:50Z",
+   "expires_at_utc": "2026-11-21T16:06:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123810240772579328/vid/avc1/1920x1080/mRuQL1LJG3IYE8dy.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga se moque de Jason (héros de GTA 6) qui perd son « aura » : 15 s, 1080p, téléchargeable.",
+   "titles": [
+    "Gotaga se moque de la *perte d'aura* de Jason dans GTA 6",
+    "Jason (GTA 6) *perd son aura* en direct chez Gotaga"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Traction faible (16 likes, 2,5k vues à 8 min) ; gag exact non vu, regarder le clip avant de choisir le titre. Même live que les 2 autres clips Gotaga de la file : en prendre un seul."
+  },
+  {
+   "id": "c-20261120-1600-gta6-crashs-ps5-xbox",
+   "added_at_utc": "2026-11-20T16:50:00Z",
+   "found_by": "veille-int",
+   "type": "actu",
+   "topic": "GTA 6 : des joueurs PS5 et Xbox signalent des crashs (code CE-108255-1), certains bloqués dès le prologue ou à la mission Pipework",
+   "topic_key": "gta6-crashs-ps5-xbox",
+   "origin": "Dexerto (relais, ne pas créditer)",
+   "source_tweet": "https://x.com/Dexerto/status/2123808718168969692",
+   "primary_source": "Posts Reddit de joueurs (r/PS5HelpSupport) ; support PlayStation (code CE-108255-1) ; Rockstar renvoie vers PlayStation/Xbox Support, pas de patch annoncé",
+   "source_time_utc": "2026-11-20T14:08:00Z",
+   "expires_at_utc": "2026-11-20T20:08:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Dexerto",
+    "DexertoFR"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Premier gros bug de lancement GTA 6 : le jeu plante en boucle sur PS5 (Pro comprise) dès le prologue ou en réparant l'évier de Mandy, quelques cas sur Xbox Series X.",
+   "titles": [
+    "GTA 6 *plante* en boucle sur PS5 et Xbox",
+    "Des joueurs *bloqués* dès le début de GTA 6"
+   ],
+   "checks": [
+    "https://www.dexerto.com/gta/gta-6-players-report-game-breaking-crashes-on-ps5-and-xbox-3430090/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Une seule source média (Dexerto, auteur James Busby) : recouper avec 2 médias (IGN, GameSpot, VGC, Insider Gaming…) avant carrousel, sinon écarter. Présenter comme « signalements de joueurs », pas comme un bug généralisé. Vérifier au créneau si Rockstar a annoncé un patch."
+  },
+  {
+   "id": "c-20261120-1630-fortnite-overwatch-wave2",
+   "added_at_utc": "2026-11-20T16:50:00Z",
+   "found_by": "veille-int",
+   "type": "actu",
+   "topic": "Fortnite x Overwatch vague 2 : Widowmaker (la Française) et Kiriko dans la boutique ce soir (leak, non confirmé par Epic)",
+   "topic_key": "fortnite-overwatch-wave2-widowmaker-kiriko",
+   "origin": "ShiinaBR",
+   "source_tweet": "https://x.com/ShiinaBR/status/2123816302892679300",
+   "primary_source": "Leak ShiinaBR / HYPEX / Jorge_Most (18 nov.) ; confirmation officielle Epic/Fortnite attendue au reset de la boutique (00:00 UTC = 01 h Paris)",
+   "source_time_utc": "2026-11-20T16:30:39Z",
+   "expires_at_utc": "2026-11-21T00:30:00Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "ShiinaBR"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Widowmaker = Amélie Lacroix, assassin française d'Overwatch : 2 skins, 2 pickaxes, 1 emote, 1 paire de kicks ; première vague en mai (D.Va, Genji, Tracer, Mercy).",
+   "titles": [
+    "Widowmaker, la *Française* d'Overwatch, arrive sur Fortnite",
+    "Fortnite : *Widowmaker* et Kiriko débarquent ce soir"
+   ],
+   "checks": [
+    "https://www.talkesport.com/news/fortnite/fortnite-overwatch-kiriko-widowmaker-release-date/",
+    "https://x.com/ShiinaBR/status/2123054307616686544"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Leak vieux de 2 jours (18 nov.), pas hot. Ne publier qu'avec « non confirmé par Epic » (🟠) ou, mieux, après confirmation officielle (tweet @Fortnite) : alors 🟢. Visuel officiel Epic à trouver (aucun keyart Fortnite/Overwatch en dépôt) : sinon ne pas publier. Créneau 21 h Paris idéal (drop ~1 h du matin)."
+  },
+  {
+   "id": "c-20261120-1716-domingo-gta6-fusillade-police",
+   "added_at_utc": "2026-11-20T17:16:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo en fusillade contre la police sur GTA 6 (clip de 90 s, facecam)",
+   "topic_key": "domingo-gta6-fusillade-police-90s",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123812665411932307",
+   "primary_source": "https://x.com/DomingoTV/status/2123812665411932307",
+   "source_time_utc": "2026-11-20T16:16:12Z",
+   "expires_at_utc": "2026-11-21T16:16:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123812504111374336/vid/avc1/1280x720/Bh8YvgGlhmoe8Pvi.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Domingo (facecam) dans une longue course-poursuite/fusillade avec la police de GTA 6 ; tweet « La scène est DINGUE » (68 likes, 7,3 k vues) ; chute exacte non identifiée, à visionner en entier avant montage",
+   "titles": [],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "90 s (limite). Moment fort à trouver ; si pas de chute claire, écarter. Domingo déjà publié 0004 et 0007."
+  },
+  {
+   "id": "c-20261120-1716-gta6-premiere-personne-glitch",
+   "added_at_utc": "2026-11-20T17:16:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 jouable entièrement à la première personne grâce à un glitch (à pied, au volant, armes OK, PS5 et Xbox)",
+   "topic_key": "gta6-glitch-premiere-personne",
+   "origin": "DexertoFR (relais ; joueur d'origine à identifier)",
+   "source_tweet": "https://x.com/DexertoFR/status/2123808931403162008",
+   "primary_source": "à identifier (Dexerto / joueur)",
+   "source_time_utc": "2026-11-20T16:01:22Z",
+   "expires_at_utc": "2026-11-20T22:01:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "DexertoFR",
+    "InsiderGamingIG"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Rockstar avait exclu le mode première personne au lancement ; un glitch le débloque entièrement (2 photos dans le tweet Dexerto)",
+   "titles": [],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé. | 20:40 Paris : InsiderGamingIG a aussi publié un guide « First-Person Glitch » (18:24 UTC) : 2 comptes."
+  },
+  {
+   "id": "c-20261120-1722-domingo-gta6-voiture-arbre",
+   "added_at_utc": "2026-11-20T18:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo plante sa voiture volée dans un palmier sur GTA 6, les PNJ du véhicule sont éjectés (33 s, facecam)",
+   "topic_key": "domingo-gta6-voiture-palmier",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123829232833036466",
+   "primary_source": "https://x.com/DomingoTV/status/2123829232833036466",
+   "source_time_utc": "2026-11-20T17:22:02Z",
+   "expires_at_utc": "2026-11-21T17:22:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123829122509991936/vid/avc1/1280x720/f5wtg3vDyEhjuiMM.mp4?tag=29",
+   "media_repo_path": "queue/c-20261120-1722-domingo-gta6-voiture-arbre.mp4",
+   "angle": "Slapstick visible sans le son : course-poursuite, voiture encastrée dans un arbre, PNJ qui tombent ; Domingo (256 k) + GTA 6 = combo qui marche ; tweet « Wshhh mais il est sérieux lui ».",
+   "titles": [
+    "Domingo *plante* sa voiture dans un palmier sur GTA 6",
+    "Domingo finit *encastré* dans un arbre avec la police aux fesses"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Audio non écouté (gag exact inconnu) : visionner les images avant de figer le titre. 720p, 16:9, 1440p source dispo. Traction encore faible (70 likes / 7,9 k vues à 18 h 10 UTC), à revérifier au créneau."
+  },
+  {
+   "id": "c-20261120-1747-domingo-gta6-touristes-titan",
+   "added_at_utc": "2026-11-20T18:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo braque un couple de touristes la nuit sur GTA 6, « c'est le titan colossal » (49 s, facecam)",
+   "topic_key": "domingo-gta6-touristes-titan",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123835557801521564",
+   "primary_source": "https://x.com/DomingoTV/status/2123835557801521564",
+   "source_time_utc": "2026-11-20T17:47:10Z",
+   "expires_at_utc": "2026-11-21T17:47:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123835376598970368/vid/avc1/1280x720/Fll_lSjcpZsaNIUA.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Domingo carjacke un couple de touristes (le mari costaud « titan colossal ») qui se bat puis tire ; scène nocturne, dialogues PNJ FR sous-titrés.",
+   "titles": [
+    "Domingo braque un touriste qui *n'a pas peur* de se battre",
+    "Domingo croise le *titan colossal* dans GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6, MP4 non téléchargé. Accroche moins lisible que la voiture dans l'arbre ; ne passer que si l'autre Domingo est déjà pris. Doublon à éviter avec c-20261120-1716-domingo-gta6-fusillade-police."
+  },
+  {
+   "id": "c-20261120-1808-squeezie-gta6-aigris-30fps",
+   "added_at_utc": "2026-11-20T18:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Squeezie répond aux critiques sur GTA 6 et aux « aigris » du 30 FPS (extrait de live)",
+   "topic_key": "squeezie-gta6-aigris-30fps",
+   "origin": "xSqueeZie (à confirmer : tweet/clip d'origine non retrouvé)",
+   "source_tweet": "https://x.com/LaTwitchance/status/2123840798865154388",
+   "primary_source": "live Twitch/YouTube de Squeezie (non retrouvé)",
+   "source_time_utc": "2026-11-20T18:08:00Z",
+   "expires_at_utc": "2026-11-21T18:08:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "LaTwitchance"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "« Les aigris avec vos 30 FPS, dégagez ! » : Squeezie défend GTA 6 (maniabilité RDR 2 + GTA) ; débat 30 FPS très chaud en ce moment.",
+   "titles": [
+    "Squeezie aux *aigris* du 30 FPS : « Dégagez ! »",
+    "Squeezie *défonce* les critiques de GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
+  },
+  {
+   "id": "c-20261120-1630-zelnick-gta7-propos",
+   "added_at_utc": "2026-11-20T18:50:00Z",
+   "found_by": "veille-int",
+   "type": "actu",
+   "topic": "Le PDG de Take-Two Strauss Zelnick, interrogé sur GTA 7 au lendemain du lancement : « on vient de lancer GTA 6 le 19 novembre… et vous parlez de GTA 7 »",
+   "topic_key": "zelnick-gta7-lancement-gta6",
+   "origin": "Dexerto (relais, ne pas créditer)",
+   "source_tweet": "https://x.com/Dexerto/status/2123816257136865791",
+   "primary_source": "Interview de Strauss Zelnick (média/émission non identifié) : à retrouver",
+   "source_time_utc": "2026-11-20T16:30:28Z",
+   "expires_at_utc": "2026-11-20T22:30:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Dexerto",
+    "riyadinhoo_"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Zelnick esquive la question GTA 7 (monde entier ?) et laisse entendre que les prochains jeux Rockstar seront plus rapides à faire ; tweet Dexerto à 935 k vues / 67 k likes en 2 h.",
+   "titles": [
+    "Take-Two : « Vous parlez déjà de *GTA 7* ? »",
+    "Le patron de Take-Two *recadre* la question sur GTA 7"
+   ],
+   "checks": [
+    "https://insider-gaming.com/take-two-ceo-gta-7-development/ (propos antérieurs de Zelnick à IGN, ne contient pas cette citation)",
+    "https://www.dexerto.com/gta/rockstar-promises-next-games-wont-take-as-long-as-gta-6-to-make-3418766/ (14 oct., propos de Rockstar via Bloomberg, pas de Zelnick)"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Citation vue uniquement dans le tweet Dexerto ; interview d'origine et date non retrouvées (recoupement web : rien de ce jour). Ne publier que si interview primaire + 1 autre média retrouvés ; vidéo = probable extrait presse (ne pas reposter, exclusion §4). Pas de photo Zelnick : keyart GTA 6 seulement."
+  },
+  {
+   "id": "c-20261120-1808-ishowspeed-gta6-52h",
+   "added_at_utc": "2026-11-20T19:15:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "IShowSpeed termine l'histoire de GTA VI après un stream de 52 h non-stop et finit en larmes",
+   "topic_key": "ishowspeed-gta6-histoire-52h",
+   "origin": "IShowSpeed (stream YouTube, relayé par FrenchRapUS et Kulturlesite_)",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2123840866393690599",
+   "primary_source": "Stream YouTube d'IShowSpeed (annonce X @ishowspeedsui à 12:46 UTC : « BEATING GTA 6 TODAY »)",
+   "source_time_utc": "2026-11-20T18:08:00Z",
+   "expires_at_utc": "2026-11-21T00:00:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "FrenchRapUS",
+    "Kulturlesite_"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Le streamer n°1 mondial boucle le jeu le plus attendu en 52 h sans dormir et pleure à la fin : 4,8k likes / 190k vues en 10 min sur FrenchRapUS, repris par une dizaine de comptes (Raphouse 931k…).",
+   "titles": [
+    "IShowSpeed *termine* GTA 6 en 52 h et finit en larmes",
+    "52 h sans dormir : IShowSpeed boucle *GTA 6*"
+   ],
+   "checks": [
+    "https://x.com/ishowspeedsui/status/2123759904976773492",
+    "https://x.com/raphousetv2/status/2123843113169068422"
+   ],
+   "photo_needed": "ishowspeed (pas de photo en dépôt : utiliser seulement le keyart GTA 6)",
+   "status": "en_attente",
+   "note": "ATTENTION : « premier humain/streamer à finir GTA 6 » (FrenchRapUS) NON vérifié et probablement faux (Kai Cenat, Ibai ont déjà fini ; ne pas reprendre ce « premier »). Ne pas spoiler la fin (Lucia et Jason meurent selon des relais, non confirmé) : dire seulement « larmes ». Chiffres de revenus/vues de comptes fans = à ne pas reprendre. Recouper avec 2 médias (Dexerto, Rockstar Intel, Insider Gaming) avant montage ; recherche web faite à 20:13 Paris ne remonte rien encore. Candidat idéal pour créneau 21h (expire 00:00 UTC). Seulement 2 comptes suivis (pas 5_comptes)."
+  },
+  {
+   "id": "c-20261120-1839-domingo-gta6-ovni-foret",
+   "added_at_utc": "2026-11-20T19:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo suit une mystérieuse lumière dans la forêt de GTA 6 et la prend en photo (« Ils sont parmi nous 👽 »)",
+   "topic_key": "domingo-gta6-ovni-foret",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2123848792843927767",
+   "primary_source": "https://x.com/DomingoTV/status/2123848792843927767",
+   "source_time_utc": "2026-11-20T18:39:46Z",
+   "expires_at_utc": "2026-11-21T18:39:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123844203176235008/vid/avc1/1280x720/m43ENPjgOBN5a5E3.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Easter egg OVNI : Domingo suit une lumière violette en pleine forêt de nuit, mode photo, face-cam. 60 s, 16:9, 1440p, téléchargeable. Visuel sombre, chute non vue (frames seulement).",
+   "titles": [
+    "Domingo découvre un *OVNI* dans la forêt de GTA 6",
+    "Domingo : « Ils sont parmi nous » *GTA 6* cache des aliens"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6 : écouter l'audio et vérifier la chute avant titre ; image très sombre (vérifier la luminosité du reel). 4e clip Domingo de la file : ne pas en publier deux de suite."
+  }
+ ]
 }
