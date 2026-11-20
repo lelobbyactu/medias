@@ -96,6 +96,96 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7)."
+  },
+  {
+   "id": "c-20261120-1505-ubisoft-166",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Ubisoft licencie 166 personnes à Montréal et Québec avant son rapport financier",
+   "topic_key": "ubisoft-licenciements-166-montreal",
+   "origin": "JVCom",
+   "source_tweet": "https://x.com/JVCom/status/2123794747068190936",
+   "primary_source": "Communiqué Ubisoft (cité par JVCom) ; Gamekult couvre la restructuration",
+   "source_time_utc": "2026-11-20T15:05:00Z",
+   "expires_at_utc": "2026-11-20T21:05:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "JVCom",
+    "Gamekult"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Nouvelle vague de licenciements chez Ubisoft juste avant les résultats, avec une filiale IA générative et le remaniement des Creative Houses",
+   "titles": [
+    "Ubisoft *licencie 166* personnes avant ses résultats",
+    "Ubisoft coupe dans ses studios, pendant que *Black Flag* cartonne"
+   ],
+   "checks": [
+    "https://x.com/Gamekult/status/2123793395760124264"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Recoupement à faire au créneau : 2 médias fiables (web search ne remonte pas encore l'info) ; visuel officiel Ubisoft/AC Black Flag Resynced à trouver (pas de keyart en dépôt). Sujet moyen, ne passer que si le créneau est faible."
+  },
+  {
+   "id": "c-20261120-1431-weeknd-gta6-maison",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "The Weeknd partage en story une photo de GTA VI après avoir trouvé sa maison dans le jeu",
+   "topic_key": "weeknd-gta6-story-maison",
+   "origin": "Kulturlesite_ (relais, capture de la story visible)",
+   "source_tweet": "https://x.com/Kulturlesite_/status/2123786215782830430",
+   "primary_source": "Story Instagram de The Weeknd (capture relayée, non vérifiée directement)",
+   "source_time_utc": "2026-11-20T14:31:00Z",
+   "expires_at_utc": "2026-11-20T20:30:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Kulturlesite_"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Une méga-star dans GTA VI : The Weeknd flexe sa maison virtuelle (74k vues, 2k likes en 30 min)",
+   "titles": [
+    "The Weeknd a trouvé *sa maison* dans GTA 6",
+    "The Weeknd *flexe* sa maison virtuelle sur GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "theweeknd",
+   "status": "en_attente",
+   "note": "Pas de photo de The Weeknd dans assets/photos : n'utiliser que le keyart GTA 6 ou la capture si sûre. Source primaire à confirmer + 2 médias avant publication."
+  },
+  {
+   "id": "c-20261120-1503-gotaga-gta6-motocross",
+   "added_at_utc": "2026-11-20T15:20:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga en course de moto sur GTA 6, avec Squeezie (3e au GP) évoqué par le chat : « le S toujours dans le rétro »",
+   "topic_key": "gotaga-gta6-course-moto-squeezie",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2123794266690408521",
+   "primary_source": "https://x.com/GotagaTV/status/2123794266690408521",
+   "source_time_utc": "2026-11-20T15:03:06Z",
+   "expires_at_utc": "2026-11-21T15:03:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2123793731312640000/vid/avc1/1920x1080/uaCn_6p9qQIMCn95.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga se rassure sur sa perf en moto-cross GTA 6 pendant que le chat parle de Squeezie ; le S de Squeezie reste dans le rétro (20 s, 1080p, téléchargeable)",
+   "titles": [
+    "Gotaga se croit *intouchable* en course sur GTA 6",
+    "Le *S* de Squeezie dans le rétro de Gotaga sur GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
   }
  ]
 }
