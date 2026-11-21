@@ -557,7 +557,7 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Score 6 : écouter l'audio et vérifier la chute avant titre ; image très sombre (vérifier la luminosité du reel). 4e clip Domingo de la file : ne pas en publier deux de suite."
   },
   {
@@ -953,6 +953,95 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Clip de 43,6 s, 1080p, 16:9, déjà téléchargé (39 Mo), overlay subathon (compteur de subs) visible. Vu en frames : Spider-Man à la grille, pancarte lisible, puis il entre. La révélation « c'était Anis » est dans un 2e clip de JLTomyTV : https://x.com/JLTomyTV/status/2124191688247984359 (60 s, 1080p, MP4 https://video.twimg.com/amplify_video/2124191563639128064/vid/avc1/1920x1080/fLi2vC-amZtZxc87.mp4?tag=29), à utiliser si le titre dit « c'était Anis ». Audio non écouté ; vérifier au créneau. Score 7 : accroche 3 + hype 2 (JL Tomy 111 k, Team Nasdas, hook GTA 6) + traction 1 (156 likes / 6,6 k vues en 45 min) + fraîcheur 1."
+  },
+  {
+   "added_at_utc": "2026-11-21T19:14:33Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "fiabilite": "🟢",
+   "media_repo_path": "",
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "id": "c-20261121-1920-jltomy-gta6-sauvegarde-ps-fake",
+   "topic": "JL Tomy croit avoir perdu sa sauvegarde GTA 6 (50 %+) en plein subathon Miami, puis comprend que c'était la PS5 de Fake",
+   "topic_key": "jltomy-gta6-sauvegarde-ps-de-fake",
+   "origin": "JLTomyTV (x.com/JLTomyTV)",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124211466249343310",
+   "primary_source": "https://x.com/JLTomyTV/status/2124211466249343310",
+   "source_time_utc": "2026-11-21T18:40:54Z",
+   "expires_at_utc": "2026-11-22T18:40:00Z",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV",
+    "Actu2Twitch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124211352767991808/vid/avc1/1920x1080/e56tPMeboGPnTiym.mp4?tag=29",
+   "angle": "Arc du subathon #JLMiami : JL Tomy voit sa sauvegarde GTA 6 'supprimée', puis réalise que ce n'est pas sa PS mais celle de Fake (« il n'a rien perdu »). Tweet JLTomyTV cite son clip 'CLIP DE L'ANNÉE' ; le relais Actu2Twitch du moment de la suppression fait 328 likes / 46 k vues en 25 min.",
+   "titles": [
+    "JL Tomy croit avoir perdu sa *sauvegarde* GTA 6… c'était la PS5 de Fake",
+    "Il pensait avoir tout perdu sur GTA 6 : *10 minutes* plus tard, le retournement"
+   ],
+   "note": "Clip de 60 s, 1080p 16:9, 27 Mo, vu en frames seulement (menus PS5 : chargement de sauvegarde, changement d'utilisateur, puis retour jeu) : peu visuel, la valeur est dans la réaction audio (non écoutée). Overlay subathon visible. Score 6 : accroche 2 + hype 3 + traction 0 + fraîcheur 1. À privilégier si un meilleur moment (suppression en direct) est retrouvé chez JLTomyTV ; la version relais est chez Actu2Twitch (ne pas créditer)."
+  },
+  {
+   "added_at_utc": "2026-11-21T19:14:33Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "fiabilite": "🟢",
+   "media_repo_path": "",
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "id": "c-20261121-1920-jltomy-gta6-lucia-jason-gros",
+   "topic": "Subathon Miami : JL Tomy découvre Lucia (et Jason) transformés par Wati et Fake dans GTA 6 (« le clip de l'année »)",
+   "topic_key": "jltomy-gta6-lucia-jason-gros-wati-fake",
+   "origin": "JLTomyTV (x.com/JLTomyTV)",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124206358853513277",
+   "primary_source": "https://x.com/JLTomyTV/status/2124206358853513277",
+   "source_time_utc": "2026-11-21T18:20:36Z",
+   "expires_at_utc": "2026-11-22T18:20:00Z",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV",
+    "Actu2Twitch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124206312988749824/vid/avc1/1920x1080/JwQk37jE6SxJXXIL.mp4?tag=29",
+   "angle": "JLTomyTV : « C'EST LE CLIP DE L'ANNÉE » (460 likes / 17,8 k vues en 20 min). Selon le relais Actu2Twitch (non vérifié à l'écran), Wati et Fake ont rendu Jason et Lucia énormément gros ; Lucia en tenue de nuit, JL Tomy explose de rire.",
+   "titles": [
+    "JL Tomy ouvre GTA 6 et découvre ce que *Wati et Fake* ont fait à Lucia",
+    "Wati et Fake ont *saboté* la partie GTA 6 de JL Tomy, sa réaction est folle"
+   ],
+   "note": "Clip de 38,8 s, 1080p 16:9, 23 Mo, non téléchargé dans queue/ (score 6). Vu en frames : Lucia en débardeur/culotte dans sa chambre rose puis le salon, cam de JL Tomy qui rit, sous-titres incrustés. ATTENTION : tenue légère (haut blanc + culotte) = limite pour l'exclusion nudité §4, à trancher au visionnage ; l'effet « énormément gros » n'est pas clairement visible dans les frames, ne pas le promettre dans le titre sans l'avoir vu. Audio non écouté. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 1 − risque tenue."
+  },
+  {
+   "added_at_utc": "2026-11-21T19:14:33Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "fiabilite": "🟢",
+   "media_repo_path": "",
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "id": "c-20261121-1920-domingo-gta6-accidents-route",
+   "topic": "Domingo sur GTA VI : « Les accidents de la route sur GTA VI, je suis choqué » (voiture retournée, Porsche, police)",
+   "topic_key": "domingo-gta6-accidents-route",
+   "origin": "DomingoTV (x.com/DomingoTV)",
+   "source_tweet": "https://x.com/DomingoTV/status/2124204914180034910",
+   "primary_source": "https://x.com/DomingoTV/status/2124204914180034910",
+   "source_time_utc": "2026-11-21T18:14:52Z",
+   "expires_at_utc": "2026-11-22T18:14:00Z",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124204745296404480/vid/avc1/1280x720/8xhSl1q2xyBtKm_0.mp4?tag=29",
+   "angle": "Domingo choqué par la physique des accidents de voiture dans GTA VI (voiture qui se retourne, piéton, police) ; 195 likes / 23,8 k vues en 25 min.",
+   "titles": [
+    "Domingo teste les *accidents de voiture* de GTA 6 : le réalisme choque",
+    "Domingo crashe sa Porsche sur GTA 6 et la *physique* le laisse sans voix"
+   ],
+   "note": "Clip de 49 s (source 2560x1440 ; MP4 720p 1280x720 listé, 10 Mo, non téléchargé dans queue/). Vu en frames : Porsche rouge qui part en tête-à-queue contre des barrières, voiture retournée en pièces, voiture de police. 5e clip Domingo en file : ne passer qu'après les meilleurs et pas deux Domingo d'affilée. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 0-1."
   }
  ]
 }
