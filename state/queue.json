@@ -432,7 +432,7 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Score 6, MP4 non téléchargé. Accroche moins lisible que la voiture dans l'arbre ; ne passer que si l'autre Domingo est déjà pris. Doublon à éviter avec c-20261120-1716-domingo-gta6-fusillade-police."
   },
   {
@@ -461,7 +461,7 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
   },
   {
@@ -922,6 +922,37 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score 6 : traction faible (50 likes, 6k vues à 17 h 15 UTC, 1,4 M abonnés), audio non écouté, gag exact à confirmer au créneau (regarder les frames + écouter). MP4 non téléchargé (score < 7). allowDownload true."
+  },
+  {
+   "id": "c-20261121-1815-jltomy-miami-spiderman",
+   "added_at_utc": "2026-11-21T18:15:26Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Subathon Miami de JL Tomy : un Spider-Man débarque devant la villa avec une pancarte « No PS5, No Money, No GTA 6 » et se fait ouvrir (c'était Anis de la Team Nasdas)",
+   "topic_key": "jltomy-subathon-miami-spiderman-anis",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124190164574732412",
+   "primary_source": "https://x.com/JLTomyTV/status/2124190164574732412",
+   "source_time_utc": "2026-11-21T17:16:15Z",
+   "expires_at_utc": "2026-11-22T17:16:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "JLTomyTV",
+    "Actu2Twitch",
+    "riyadinhoo_"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124190109322842112/vid/avc1/1920x1080/MIwTMnh5FP0YWaZe.mp4?tag=29",
+   "media_repo_path": "queue/c-20261121-1815-jltomy-miami-spiderman.mp4",
+   "angle": "Un inconnu en Spider-Man sonne à la villa du subathon de JL Tomy avec une pancarte « No PS5, No Money, No GTA 6 » (la quête de GTA 6 est le fil rouge du subathon), JL Tomy lui ouvre ; on apprend ensuite que c'était Anis de la Team Nasdas.",
+   "titles": [
+    "Il débarque en Spider-Man chez JL Tomy : « No PS5, No Money, *No GTA 6* »",
+    "Spider-Man quémande *GTA 6* devant la villa de JL Tomy… et se fait ouvrir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Clip de 43,6 s, 1080p, 16:9, déjà téléchargé (39 Mo), overlay subathon (compteur de subs) visible. Vu en frames : Spider-Man à la grille, pancarte lisible, puis il entre. La révélation « c'était Anis » est dans un 2e clip de JLTomyTV : https://x.com/JLTomyTV/status/2124191688247984359 (60 s, 1080p, MP4 https://video.twimg.com/amplify_video/2124191563639128064/vid/avc1/1920x1080/fLi2vC-amZtZxc87.mp4?tag=29), à utiliser si le titre dit « c'était Anis ». Audio non écouté ; vérifier au créneau. Score 7 : accroche 3 + hype 2 (JL Tomy 111 k, Team Nasdas, hook GTA 6) + traction 1 (156 likes / 6,6 k vues en 45 min) + fraîcheur 1."
   }
  ]
 }
