@@ -189,7 +189,7 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
   },
   {
@@ -794,6 +794,71 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Clip non visionné (score 6, MP4 non téléchargé, 90 s : couper). Titres provisoires, à réécrire après visionnage selon §5. 4e clip Domingo en file : ne passer qu'après les meilleurs."
+  },
+  {
+   "id": "c-20261121-1453-gta6-circana-engagement",
+   "added_at_utc": "2026-11-21T15:14:29Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 : 61 % des joueurs PS5 américains et 56 % des joueurs Xbox actifs le 19 nov. y ont joué, plus de 8 h en moyenne (Circana)",
+   "topic_key": "gta6-circana-engagement-day-one",
+   "origin": "JVCom",
+   "source_tweet": "https://x.com/JVCom/status/2124154337177809121",
+   "primary_source": "Mat Piscatella (Circana) sur Bluesky, via JVCom",
+   "source_time_utc": "2026-11-21T14:53:00Z",
+   "expires_at_utc": "2026-11-21T20:50:00Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "JVCom"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Plus de la moitié des joueurs console actifs le jour du lancement ont lancé GTA 6, 513 min (PS5) et 494 min (Xbox) de jeu en moyenne : record d'engagement, chiffre qui parle.",
+   "titles": [
+    "Plus de la *moitié* des joueurs console ont lancé GTA 6",
+    "GTA 6 : *8 heures* de jeu en moyenne le jour du lancement"
+   ],
+   "checks": [
+    "https://www.thegamer.com/gta-6-half-of-all-active-console-users-played/",
+    "https://www.vgchartz.com/article/469713/61-of-us-ps5-players-active-on-november-19-played-gta-6-56-of-global-xbox-players/",
+    "https://gamingbolt.com/gta-6-players-averaged-8-hours-of-playtime-at-launch-says-circana",
+    "https://www.gamespot.com/articles/gta-6-sets-even-more-records/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Carrousel chiffres. Précision à garder : 61 % = joueurs PS5 américains actifs le 19 nov. ; 56 % = joueurs Xbox du monde entier ; durées moyennes 513 min PS5 / 494 min Xbox. Nouveau vs 0008 (ventes), 0012 (Take-Two), 0014 (Metacritic)."
+  },
+  {
+   "id": "c-20261121-1505-gta6-little-sam-houser",
+   "added_at_utc": "2026-11-21T15:14:29Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 : un vieil homme en t-shirt Rockstar, surnommé « Little Sam », ressemble au boss Sam Houser ; Rockstar refuse de confirmer",
+   "topic_key": "gta6-little-sam-houser-cameo",
+   "origin": "JVCom",
+   "source_tweet": "https://x.com/JVCom/status/2124157134409785548",
+   "primary_source": "Kotaku (interview de Rob Nelson, directeur de production Rockstar)",
+   "source_time_utc": "2026-11-21T15:05:00Z",
+   "expires_at_utc": "2026-11-21T21:00:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "JVCom"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Easter egg : le cofondateur de Rockstar aurait un caméo en plein milieu de l'histoire de GTA 6, Rockstar ne dément pas.",
+   "titles": [
+    "Le *boss de Rockstar* caché dans GTA 6 ?",
+    "« *Little Sam* » : Sam Houser a-t-il un caméo dans GTA 6 ?"
+   ],
+   "checks": [
+    "https://kotaku.com/rockstar-wouldnt-confirm-or-deny-if-thats-studio-president-sam-houser-in-gta-6-2000758489"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Présenter comme une ressemblance non confirmée (pas de photo de Sam Houser : key art GTA 6 seulement). Sujet léger, à prendre si le créneau manque de mieux."
   }
  ]
 }
