@@ -96,8 +96,8 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7)."
+   "status": "pris",
+   "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7). | pris 2026-11-21T10:58Z par créneau 12h (traction réelle 3,2k likes / 330k vues, 22 s 16:9 1440p, audio transcrit : Gotaga raconte qu'on lui a dit « t'as fini de me tromper dans ton jeu ? » après sa nuit sur GTA 6)."
   },
   {
    "id": "c-20261120-1505-ubisoft-166",
@@ -729,8 +729,8 @@
     "https://www.vgchartz.com/article/469692/us-monthly-october-2026/"
    ],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "Heure du post primaire (Piscatella/Circana) non vérifiée : la fraîcheur 6 h est comptée depuis le tweet JVCom, à revérifier au créneau. Nuance : octobre précède la sortie de GTA 6 (surtout Gears + promos), ne pas affirmer de lien causal. Marché US uniquement. Ne pas oublier que Beebom titre « no positive impact » sur les ventes post-sortie."
+   "status": "ecarte",
+   "note": "Heure du post primaire (Piscatella/Circana) non vérifiée : la fraîcheur 6 h est comptée depuis le tweet JVCom, à revérifier au créneau. Nuance : octobre précède la sortie de GTA 6 (surtout Gears + promos), ne pas affirmer de lien causal. Marché US uniquement. Ne pas oublier que Beebom titre « no positive impact » sur les ventes post-sortie. | 12h : écarté, source primaire Circana/Piscatella du 19 nov. 14:00Z (> 6 h) ; la hausse +42 % est surtout due aux prix."
   }
  ]
 }
