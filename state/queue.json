@@ -732,6 +732,39 @@
    "photo_needed": "",
    "status": "ecarte",
    "note": "Heure du post primaire (Piscatella/Circana) non vérifiée : la fraîcheur 6 h est comptée depuis le tweet JVCom, à revérifier au créneau. Nuance : octobre précède la sortie de GTA 6 (surtout Gears + promos), ne pas affirmer de lien causal. Marché US uniquement. Ne pas oublier que Beebom titre « no positive impact » sur les ventes post-sortie. | 12h : écarté, source primaire Circana/Piscatella du 19 nov. 14:00Z (> 6 h) ; la hausse +42 % est surtout due aux prix."
+  },
+  {
+   "id": "c-20261121-1118-gta6-profil-criminel-5-niveaux",
+   "added_at_utc": "2026-11-21T11:18:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 : le profil criminel classe Jason et Lucia en 5 niveaux (Professionnel, Endurci, Violent, Psychopathe, Irrécupérable)",
+   "topic_key": "gta6-profil-criminel-5-niveaux",
+   "origin": "DexertoFR",
+   "source_tweet": "https://x.com/DexertoFR/status/2124088188432007604",
+   "primary_source": "mécanique du jeu (Rockstar) ; Dexerto wiki 'criminal profile system'",
+   "source_time_utc": "2026-11-21T10:31:02Z",
+   "expires_at_utc": "2026-11-21T16:31:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DexertoFR"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Nouvelle mécanique de GTA 6 : un profil criminel suivi séparément pour Jason et Lucia, avec un état final irréversible (Irrécupérable). Très repris par la presse JV.",
+   "titles": [
+    "GTA 6 sait quel genre de *criminel* tu es",
+    "Jason et Lucia peuvent devenir *Irrécupérables* dans GTA 6"
+   ],
+   "checks": [
+    "https://insider-gaming.com/all-criminal-profiles-explained-gta-6/",
+    "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-criminal-profile-system-sounds-pretty-interesting-isnt-a-direct-copy-of-red-deads-honor-system/",
+    "https://www.dexerto.com/wikis/gta-6/criminal-profile-system/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Sujet explicatif (pas une annonce) : à publier seulement si rien de mieux au créneau ; vérifier les 5 niveaux sur 2 sources avant montage."
   }
  ]
 }
