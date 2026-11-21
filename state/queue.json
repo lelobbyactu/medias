@@ -860,6 +860,68 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Présenter comme une ressemblance non confirmée (pas de photo de Sam Houser : key art GTA 6 seulement). Sujet léger, à prendre si le créneau manque de mieux."
+  },
+  {
+   "id": "c-20261121-1601-gta6-zelda-guerre-notes",
+   "added_at_utc": "2026-11-21T17:15:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "GTA 6 vs Zelda Ocarina of Time : guerre de notes sur Metacritic (des fans mettent 0/10 à l'autre jeu pour défendre leur favori, les deux à 99)",
+   "topic_key": "gta6-zelda-guerre-metacritic",
+   "origin": "DexertoFR (relais)",
+   "source_tweet": "https://x.com/DexertoFR/status/2124171326101271036",
+   "primary_source": "Metacritic (pages GTA VI et Ocarina of Time, à relire avant montage)",
+   "source_time_utc": "2026-11-21T16:01:23Z",
+   "expires_at_utc": "2026-11-21T22:01:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "DexertoFR"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Le 99 de GTA 6, identique à celui d'Ocarina of Time, déclenche une bataille de 0/10 entre fans des deux jeux.",
+   "titles": [
+    "GTA 6 et Zelda se *tirent dessus* sur Metacritic",
+    "GTA 6 vs Zelda : la guerre des *0/10*"
+   ],
+   "checks": [
+    "https://www.gfinityesports.com/article/gta-6-vs-ocarina-of-time-whos-winning-the-metacritic-war",
+    "https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/",
+    "https://mynintendonews.com/2026/11/18/gta-vi-and-zelda-ocarina-of-time-n64-are-tied-at-99-100-on-metacritic/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Proche du 0014 (review bombing user score GTA 6) : ne passer que si un chiffre Metacritic frais (notes joueurs Zelda vs GTA) apporte du neuf ; relire les pages Metacritic au créneau. Seul DexertoFR a relayé (pas de tweet de l'article lu en entier)."
+  },
+  {
+   "id": "c-20261121-1641-gotaga-gta6-poursuite-lampadaire",
+   "added_at_utc": "2026-11-21T17:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Gotaga (avec Lucia) en voiture sur GTA 6 : la police débarque, il percute un lampadaire dans la fuite",
+   "topic_key": "gotaga-gta6-poursuite-police-lampadaire",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2124181414635884696",
+   "primary_source": "https://x.com/GotagaTV/status/2124181414635884696",
+   "source_time_utc": "2026-11-21T16:41:29Z",
+   "expires_at_utc": "2026-11-22T16:41:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124181343860916224/vid/avc1/2560x1440/RYylIHwbSS8jGr4l.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Tweet « Il voudrait le faire exprès, il n'y arriverait pas ! » : poursuite de police sur GTA 6, sous-titres Lucia « y a des flics qui débarquent », la voiture finit dans un lampadaire (17 s, 16:9, face-cam).",
+   "titles": [
+    "Gotaga *fonce* dans un lampadaire en fuyant la police",
+    "Gotaga : la fuite qui finit dans un *lampadaire*"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6 : traction faible (50 likes, 6k vues à 17 h 15 UTC, 1,4 M abonnés), audio non écouté, gag exact à confirmer au créneau (regarder les frames + écouter). MP4 non téléchargé (score < 7). allowDownload true."
   }
  ]
 }
