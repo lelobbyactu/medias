@@ -202,12 +202,19 @@
   },
   {
    "id": "0018-21_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Subathon Miami de JL Tomy : un Spider-Man débarque devant la villa avec une pancarte « No PS5, No Money, No GTA 6 » et se fait ouvrir",
    "origin": "JLTomyTV",
    "source_tweet": "https://x.com/JLTomyTV/status/2124190164574732412",
-   "reserved_at_utc": "2026-11-21T19:57:00Z"
+   "reserved_at_utc": "2026-11-21T19:57:00Z",
+   "published_at_utc": "2026-11-21T19:54:37Z",
+   "slot": "21h",
+   "instagram": "instagram media id 18119918836823795 (@lelobbyactu)",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710715452799896833",
+   "zernio_post_id": "6b01f6f59550b9bc34ec4a17",
+   "judge_score": 7,
+   "note": "créneau 21h, file d'attente, combo C (titre avec corrections du juge)"
   }
  ]
 }
