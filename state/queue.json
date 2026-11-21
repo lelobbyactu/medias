@@ -698,6 +698,39 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score 6 (traction faible, clip très court). Le « vice-champion » fait peut-être référence à Squeezie (3e au GP) : à vérifier dans les réponses au tweet avant le titre. MP4 non téléchargé (score < 7)."
+  },
+  {
+   "id": "c-20261121-1015-xbox-circana-octobre",
+   "added_at_utc": "2026-11-21T10:15:00Z",
+   "found_by": "veille-fr",
+   "type": "actu",
+   "topic": "Ventes Xbox Series en hausse de 42 % aux États-Unis en octobre (Circana), avant la sortie de GTA 6",
+   "topic_key": "xbox-ventes-octobre-circana-42pct",
+   "origin": "Circana (Mat Piscatella)",
+   "source_tweet": "https://x.com/JVCom/status/2124070311331275167",
+   "primary_source": "Circana, rapport US d'octobre 2026 (relayé par Mat Piscatella)",
+   "source_time_utc": "2026-11-21T09:20:00Z",
+   "expires_at_utc": "2026-11-21T15:20:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "JVCom"
+   ],
+   "media_url": "assets/keyart/gta6.jpg",
+   "media_repo_path": "",
+   "angle": "Premier vrai sursaut des Xbox depuis longtemps : +42 % en octobre, pendant que la presse débat de l'effet GTA 6.",
+   "titles": [
+    "Les ventes de Xbox *explosent* de 42 % avant GTA 6",
+    "Xbox : +42 % de ventes, GTA 6 y est pour *quelque chose* ?"
+   ],
+   "checks": [
+    "https://www.purexbox.com/news/2026/11/gears-and-gta-6-may-have-provided-a-temporary-reprieve-xbox-hardware-sales-get-a-major-surge-in-the-us",
+    "https://kotaku.com/xbox-hardware-finally-saw-major-surge-gta-us-2000758382",
+    "https://www.vgchartz.com/article/469692/us-monthly-october-2026/"
+   ],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Heure du post primaire (Piscatella/Circana) non vérifiée : la fraîcheur 6 h est comptée depuis le tweet JVCom, à revérifier au créneau. Nuance : octobre précède la sortie de GTA 6 (surtout Gears + promos), ne pas affirmer de lien causal. Marché US uniquement. Ne pas oublier que Beebom titre « no positive impact » sur les ventes post-sortie."
   }
  ]
 }
