@@ -184,6 +184,16 @@
    "instagram": "media_id 18110039794969772 (Zernio post 6b017a140a8448c7b2807d11)",
    "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710578286732037397",
    "note": "juge 8/10 (combo A ajusté), créneau 12h, sujet pris dans la file"
+  },
+  {
+   "id": "0017-21_11_2026-Chiffres",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "GTA 6 : 61 % des joueurs PS5 actifs (US) et 56 % des joueurs Xbox actifs ont joué le jour J, plus de 8 h en moyenne (Circana)",
+   "origin": "Circana (Mat Piscatella)",
+   "source_tweet": "https://x.com/JVCom/status/2124154337177809121",
+   "slot": "18h",
+   "reserved_at_utc": "2026-11-21T17:00:30Z"
   }
  ]
 }
