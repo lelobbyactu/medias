@@ -158,13 +158,18 @@
   },
   {
    "id": "0015-21_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Kameto demande de l'aide à un PNJ sur GTA 6 et il vient vraiment l'aider",
    "origin": "KametoTV",
    "source_tweet": "https://x.com/KametoTV/status/2123894402032742608",
    "reserved_at_utc": "2026-11-21T06:58:00Z",
-   "slot": "08h"
+   "slot": "08h",
+   "published_at_utc": "2026-11-21T06:56:33Z",
+   "instagram": "https://www.instagram.com/reel/Df_otUqDFEq/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710514880708660501",
+   "zernio_post_id": "6b01406d5abd3aef5e7100e3",
+   "judge_score": 8
   }
  ]
 }
