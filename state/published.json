@@ -173,13 +173,17 @@
   },
   {
    "id": "0016-21_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Gotaga rentre se coucher après sa nuit sur GTA 6 : « T'as fini de me tromper dans ton jeu ? »",
    "origin": "GotagaTV",
    "source_tweet": "https://x.com/GotagaTV/status/2123781276515922093",
    "reserved_at_utc": "2026-11-21T11:01:22Z",
-   "slot": "12h"
+   "slot": "12h",
+   "published_at_utc": "2026-11-21T11:01:54Z",
+   "instagram": "media_id 18110039794969772 (Zernio post 6b017a140a8448c7b2807d11)",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710578286732037397",
+   "note": "juge 8/10 (combo A ajusté), créneau 12h, sujet pris dans la file"
   }
  ]
 }
