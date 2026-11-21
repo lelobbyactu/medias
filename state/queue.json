@@ -639,12 +639,13 @@
    "source_time_utc": "2026-11-20T21:48:49Z",
    "expires_at_utc": "2026-11-21T03:48:00Z",
    "fiabilite": "🟡",
-   "score": 6,
+   "score": 7,
    "mentions": [
     "Pirat_Nation",
     "Tech4Gamers",
     "_Tom_Henderson_",
-    "InsiderGamingIG"
+    "InsiderGamingIG",
+    "ShadesFrance"
    ],
    "media_url": "",
    "media_repo_path": "",
@@ -656,11 +657,15 @@
    "checks": [
     "https://tech4gamers.com/gta-6-intense-review-bombing/ (22:05 UTC, 4,9/10, ~4 900 avis)",
     "https://www.videogameschronicle.com/news/metacritic-has-already-had-to-remove-fake-gta-6-user-reviews/ (17 nov, suppression faux avis pré-lancement)",
-    "À FAIRE : 2e média fiable + relire le score sur Metacritic avant publication (chiffres mouvants)"
+    "À FAIRE : 2e média fiable + relire le score sur Metacritic avant publication (chiffres mouvants)",
+    "Metacritic 21 nov 01:10Z : Metascore 99 (152 critiques PS5), note users 5,4/10 sur 23 754 notes (46% positives, 8% mixtes, 46% négatives)",
+    "https://www.keengamer.com/articles/news/gta-6-metacritic-user-score-drops-to-mixed-amid-review-bombing/ (20 nov 23:15Z)",
+    "https://insider-gaming.com/gta-6-review-bombed/"
    ],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "Un seul média récent (T4G) + relais Pirat_Nation : recoupement à compléter. Expire avant le créneau de 8 h Paris (03:48Z) sauf nouvelle source plus récente. | veille-int 00:45Z: +Tom Henderson (00:18Z), Insider Gaming (22:48Z, article) => 4 comptes, 5e = actu brulante"
+   "status": "pris",
+   "note": "Un seul média récent (T4G) + relais Pirat_Nation : recoupement à compléter. Expire avant le créneau de 8 h Paris (03:48Z) sauf nouvelle source plus récente. | veille-int 00:45Z: +Tom Henderson (00:18Z), Insider Gaming (22:48Z, article) => 4 comptes, 5e = actu brulante | veille-fr 01:20Z: +ShadesFrance (00:39Z) => 5 comptes, actu brulante, publication immédiate",
+   "hot": true
   },
   {
    "id": "c-20261121-0044-gotaga-gta6-vice-champion",
