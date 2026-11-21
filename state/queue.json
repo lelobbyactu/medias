@@ -765,6 +765,35 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Sujet explicatif (pas une annonce) : à publier seulement si rien de mieux au créneau ; vérifier les 5 niveaux sur 2 sources avant montage."
+  },
+  {
+   "id": "c-20261121-1415-domingo-gta6-jason-braquage",
+   "added_at_utc": "2026-11-21T14:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "Domingo sur GTA 6 : « Jason il rigole pas durant un braquage » (clip 90 s)",
+   "topic_key": "domingo-gta6-jason-braquage",
+   "origin": "DomingoTV (x.com/DomingoTV)",
+   "source_tweet": "https://x.com/DomingoTV/status/2124136530403102881",
+   "primary_source": "https://x.com/DomingoTV/status/2124136530403102881",
+   "source_time_utc": "2026-11-21T13:43:08Z",
+   "expires_at_utc": "2026-11-22T13:43:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124136398374436864/vid/avc1/1280x720/JLIcBjQ4Iz5RpPoh.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Braquage sur GTA 6 avec Domingo, Jason (le héros) qui ne rigole pas ; 40 likes / 5,3 k vues en 30 min (traction moyenne)",
+   "titles": [
+    "Domingo braque un magasin sur GTA 6 et *Jason* ne rigole plus du tout",
+    "Le *braquage* de Domingo sur GTA 6 ne fait pas rire Jason"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Clip non visionné (score 6, MP4 non téléchargé, 90 s : couper). Titres provisoires, à réécrire après visionnage selon §5. 4e clip Domingo en file : ne passer qu'après les meilleurs."
   }
  ]
 }
