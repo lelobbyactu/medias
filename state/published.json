@@ -141,14 +141,20 @@
   },
   {
    "id": "0014-21_11_2026-Chiffres",
-   "status": "en_cours",
+   "status": "publie",
    "type": "carrousel",
    "topic": "GTA 6 : 99 chez la presse, 5,4/10 chez les joueurs sur Metacritic (review bombing)",
    "origin": "Metacritic",
    "source_tweet": "https://x.com/Pirat_Nation/status/2123896370708783269",
    "reserved_at_utc": "2026-11-21T01:20:00Z",
    "hot": true,
-   "hot_reason": "5_comptes"
+   "hot_reason": "5_comptes",
+   "published_at_utc": "2026-11-21T01:18:36Z",
+   "instagram": "ig_media_id:17877709356593451",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7710427911165168948",
+   "zernio_post_id": "6b00f162821fd1a1fda8af5c",
+   "judge_score": 9,
+   "note": "actu brûlante 5_comptes (Pirat_Nation, Tech4Gamers, Tom Henderson, Insider Gaming, ShadesFrance), chiffres Metacritic lus à 01:10Z (99 / 5,4 sur 23 754 notes), juge combo A 9/10"
   }
  ]
 }

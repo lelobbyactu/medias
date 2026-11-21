@@ -663,9 +663,10 @@
     "https://insider-gaming.com/gta-6-review-bombed/"
    ],
    "photo_needed": "",
-   "status": "pris",
+   "status": "publie",
    "note": "Un seul média récent (T4G) + relais Pirat_Nation : recoupement à compléter. Expire avant le créneau de 8 h Paris (03:48Z) sauf nouvelle source plus récente. | veille-int 00:45Z: +Tom Henderson (00:18Z), Insider Gaming (22:48Z, article) => 4 comptes, 5e = actu brulante | veille-fr 01:20Z: +ShadesFrance (00:39Z) => 5 comptes, actu brulante, publication immédiate",
-   "hot": true
+   "hot": true,
+   "post_id": "0014-21_11_2026-Chiffres"
   },
   {
    "id": "c-20261121-0044-gotaga-gta6-vice-champion",
