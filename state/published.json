@@ -218,12 +218,18 @@
   },
   {
    "id": "0019-22_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "JL Tomy libère une orque dans GTA 6 (subathon Miami) et elle attaque Rosebud",
    "origin": "JLTomyTV",
    "source_tweet": "https://x.com/JLTomyTV/status/2124302174754926994",
-   "reserved_at_utc": "2026-11-22T06:53:21Z"
+   "reserved_at_utc": "2026-11-22T06:53:21Z",
+   "published_at_utc": "2026-11-22T06:54:00Z",
+   "slot": "08h",
+   "zernio_post_id": "6b0291731956107f3d442c92",
+   "instagram": "publie (reel, @lelobbyactu)",
+   "tiktok": "publie (v_pub_url~v2.7710884875615750150)",
+   "judge_score": "8/10 (combo A)"
   }
  ]
 }
