@@ -1756,9 +1756,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-22T19:54:35Z"
+   "status": "ecarte",
+   "note": "clip 772x604 basse déf., créateur peu connu, audio anglais avec insultes lourdes, juge impossible >=7",
+   "taken_at_utc": "2026-11-22T19:54:35Z",
+   "closed_at_utc": "2026-11-22T19:54:50Z"
   },
   {
    "id": "c-20261122-1916-gta6-evolution-long-terme-carte",
