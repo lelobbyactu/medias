@@ -230,6 +230,16 @@
    "instagram": "publie (reel, @lelobbyactu)",
    "tiktok": "publie (v_pub_url~v2.7710884875615750150)",
    "judge_score": "8/10 (combo A)"
+  },
+  {
+   "id": "0020-22_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Domingo sur GTA VI : « Les accidents de la route sur GTA VI, je suis choqué » (voiture retournée, Porsche, police)",
+   "origin": "DomingoTV (x.com/DomingoTV)",
+   "source_tweet": "https://x.com/DomingoTV/status/2124204914180034910",
+   "queue_id": "c-20261121-1920-domingo-gta6-accidents-route",
+   "reserved_at_utc": "2026-11-22T10:56:15Z"
   }
  ]
 }
