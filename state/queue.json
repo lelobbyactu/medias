@@ -966,7 +966,7 @@
    "media_repo_path": "",
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
+   "status": "ecarte",
    "id": "c-20261121-1920-jltomy-gta6-sauvegarde-ps-fake",
    "topic": "JL Tomy croit avoir perdu sa sauvegarde GTA 6 (50 %+) en plein subathon Miami, puis comprend que c'était la PS5 de Fake",
    "topic_key": "jltomy-gta6-sauvegarde-ps-de-fake",
@@ -987,8 +987,9 @@
     "JL Tomy croit avoir perdu sa *sauvegarde* GTA 6… c'était la PS5 de Fake",
     "Il pensait avoir tout perdu sur GTA 6 : *10 minutes* plus tard, le retournement"
    ],
-   "note": "Clip de 60 s, 1080p 16:9, 27 Mo, vu en frames seulement (menus PS5 : chargement de sauvegarde, changement d'utilisateur, puis retour jeu) : peu visuel, la valeur est dans la réaction audio (non écoutée). Overlay subathon visible. Score 6 : accroche 2 + hype 3 + traction 0 + fraîcheur 1. À privilégier si un meilleur moment (suppression en direct) est retrouvé chez JLTomyTV ; la version relais est chez Actu2Twitch (ne pas créditer).",
-   "taken_at_utc": "2026-11-22T10:52:55Z"
+   "note": "clip quasi sans visuel (menus PS5), retournement non vérifiable (audio non écouté, aucune réponse trouvée), doute",
+   "taken_at_utc": "2026-11-22T10:52:55Z",
+   "closed_at_utc": "2026-11-22T10:54:26Z"
   },
   {
    "added_at_utc": "2026-11-21T19:14:33Z",
