@@ -1379,8 +1379,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "doublon : sujet Metacritic 99 presse / joueurs deja publie le 21/11 (carrousel 0014, 5,4) ; 5,6 = simple evolution, pas de fait nouveau",
+   "closed_at_utc": "2026-11-22T16:52:54Z"
   },
   {
    "id": "c-20261122-1517-nisqy-revenus-twitch-pub",
