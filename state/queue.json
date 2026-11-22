@@ -1410,8 +1410,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "actu périmée : source primaire = interview VGC du 19 nov. (>6 h) ; aucune citation sur le bowling",
+   "closed_at_utc": "2026-11-22T19:53:27Z"
   },
   {
    "id": "c-20261122-1715-gta6-pluie-absente",
