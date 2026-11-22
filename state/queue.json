@@ -61,38 +61,6 @@
    "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
   },
   {
-   "id": "c-20261120-1535-nico-papa-ou-tes-200k",
-   "added_at_utc": "2026-11-20T16:20:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "Le documentaire de Nico « Papa où t'es ? » dépasse 200 000 entrées au cinéma : docu français le plus vu en salles en 2026",
-   "topic_key": "nico-papa-ou-tes-200k-entrees",
-   "origin": "ShadesFrance (relais) : source primaire à confirmer (Nico / Pathé / box-office)",
-   "source_tweet": "https://x.com/ShadesFrance/status/2123802413555499227",
-   "primary_source": "Nico (Nicolas Trouvé) ou distributeur Pathé : à retrouver avant montage",
-   "source_time_utc": "2026-11-20T15:35:28Z",
-   "expires_at_utc": "2026-11-20T21:35:00Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "ShadesFrance"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un projet de créateur (Nico, ex Dakar-Paris en stop) qui cartonne au cinéma : record de docu FR 2026, projection prévue à l'Assemblée.",
-   "titles": [
-    "Le docu de *Nico* dépasse 200 000 entrées au cinéma",
-    "*Nico* bat le record du docu français le plus vu en salles en 2026"
-   ],
-   "checks": [
-    "https://www.pathe.fr/films/papa-ou-t-es-55275",
-    "https://gensdinternet.fr/2026/08/31/avec-son-documentaire-nicolas-trouve-veut-raconter-lhistoire-de-plein-denfants-places/"
-   ],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "Photo assets/photos/photo-nico-la.jpg à utiliser (vérifier que c'est bien Nico/Nicolas Trouvé). Chiffre 200 000 non recoupé : trouver 2 médias (box-office, CNews exclu ; Allociné, CBO, Le Film français) ou le tweet de Nico/Pathé. Sujet : ne pas parler de politique (projection Assemblée = mention neutre au plus), ne rien dire sur les enfants placés au-delà du sujet du film. | 18h: écarté (chiffre 200 000 non recoupé, source primaire introuvable, identité Nico/photo non confirmée)."
-  },
-  {
    "id": "c-20261120-1606-gotaga-gta6-jason-aura",
    "added_at_utc": "2026-11-20T16:20:00Z",
    "found_by": "veille-fr",
@@ -186,33 +154,6 @@
    "note": "90 s (limite). Moment fort à trouver ; si pas de chute claire, écarter. Domingo déjà publié 0004 et 0007."
   },
   {
-   "id": "c-20261120-1716-gta6-premiere-personne-glitch",
-   "added_at_utc": "2026-11-20T17:16:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA 6 jouable entièrement à la première personne grâce à un glitch (à pied, au volant, armes OK, PS5 et Xbox)",
-   "topic_key": "gta6-glitch-premiere-personne",
-   "origin": "DexertoFR (relais ; joueur d'origine à identifier)",
-   "source_tweet": "https://x.com/DexertoFR/status/2123808931403162008",
-   "primary_source": "à identifier (Dexerto / joueur)",
-   "source_time_utc": "2026-11-20T16:01:22Z",
-   "expires_at_utc": "2026-11-20T22:01:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "DexertoFR",
-    "InsiderGamingIG"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Rockstar avait exclu le mode première personne au lancement ; un glitch le débloque entièrement (2 photos dans le tweet Dexerto)",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "À recouper avec 2 médias (article Dexerto + source du glitch) au créneau ; ne publier que si recoupé. | 20:40 Paris : InsiderGamingIG a aussi publié un guide « First-Person Glitch » (18:24 UTC) : 2 comptes."
-  },
-  {
    "id": "c-20261120-1722-domingo-gta6-voiture-arbre",
    "added_at_utc": "2026-11-20T18:15:00Z",
    "found_by": "veille-fr",
@@ -299,39 +240,6 @@
    "photo_needed": "",
    "status": "expire",
    "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
-  },
-  {
-   "id": "c-20261120-1630-zelnick-gta7-propos",
-   "added_at_utc": "2026-11-20T18:50:00Z",
-   "found_by": "veille-int",
-   "type": "actu",
-   "topic": "Le PDG de Take-Two Strauss Zelnick, interrogé sur GTA 7 au lendemain du lancement : « on vient de lancer GTA 6 le 19 novembre… et vous parlez de GTA 7 »",
-   "topic_key": "zelnick-gta7-lancement-gta6",
-   "origin": "Dexerto (relais, ne pas créditer)",
-   "source_tweet": "https://x.com/Dexerto/status/2123816257136865791",
-   "primary_source": "Interview de Strauss Zelnick (média/émission non identifié) : à retrouver",
-   "source_time_utc": "2026-11-20T16:30:28Z",
-   "expires_at_utc": "2026-11-20T22:30:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "Dexerto",
-    "riyadinhoo_"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Zelnick esquive la question GTA 7 (monde entier ?) et laisse entendre que les prochains jeux Rockstar seront plus rapides à faire ; tweet Dexerto à 935 k vues / 67 k likes en 2 h.",
-   "titles": [
-    "Take-Two : « Vous parlez déjà de *GTA 7* ? »",
-    "Le patron de Take-Two *recadre* la question sur GTA 7"
-   ],
-   "checks": [
-    "https://insider-gaming.com/take-two-ceo-gta-7-development/ (propos antérieurs de Zelnick à IGN, ne contient pas cette citation)",
-    "https://www.dexerto.com/gta/rockstar-promises-next-games-wont-take-as-long-as-gta-6-to-make-3418766/ (14 oct., propos de Rockstar via Bloomberg, pas de Zelnick)"
-   ],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Citation vue uniquement dans le tweet Dexerto ; interview d'origine et date non retrouvées (recoupement web : rien de ce jour). Ne publier que si interview primaire + 1 autre média retrouvés ; vidéo = probable extrait presse (ne pas reposter, exclusion §4). Pas de photo Zelnick : keyart GTA 6 seulement."
   },
   {
    "id": "c-20261120-1808-ishowspeed-gta6-52h",
@@ -1310,8 +1218,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-gta6-hommage-mere-developpeur",
@@ -1340,8 +1249,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-wankil-aventure-gta6",
@@ -1367,8 +1277,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-clash-royale-ia-triche-recrutement",
@@ -1396,8 +1307,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-ubisoft-licenciements-166",
@@ -1423,8 +1335,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-lec-transferts-2027-tier1",
@@ -1450,8 +1363,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-22T23:15:27Z"
   },
   {
    "id": "c-20261122-1715-domingo-braqueur-pa",
@@ -1913,6 +1827,87 @@
    "titles": [
     "Ibai raid un streamer GTA 6 et le fait fondre en larmes",
     "Le raid surprise d'Ibai qui fait pleurer un streamer GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-2315-jl-miami-full-tilt-2026-11-22",
+   "added_at_utc": "2026-11-22T23:15:27Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "JL Miami : Samuel part en full tilt",
+   "topic_key": "jl-miami-full-tilt-2026-11-22",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124613812481609815",
+   "primary_source": "https://x.com/JLTomyTV/status/2124613812481609815",
+   "source_time_utc": "2026-11-22T21:19:40Z",
+   "expires_at_utc": "2026-11-23T21:19:40Z",
+   "fiabilite": "🟢",
+   "score": 8,
+   "mentions": [],
+   "media_url": "https://video.twimg.com/amplify_video/2124613710312255488/vid/avc1/1280x720/EuIoTuaZZD5WgzVD.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Réaction explosive d'un créateur de la série JL Miami, très partagée (442 likes, 39k vues pour 111k abonnés).",
+   "titles": [
+    "Dans JL Miami, Samuel part complètement en full tilt",
+    "JL Miami : le moment qui fait exploser les réactions"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-2315-ishowspeed-gta6-55h-2026-11-22",
+   "added_at_utc": "2026-11-22T23:15:27Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "IShowSpeed a joué 55 h d'affilée pour finir GTA 6",
+   "topic_key": "ishowspeed-gta6-55h-2026-11-22",
+   "origin": "IShowSpeed",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2124620782907293780",
+   "primary_source": "https://x.com/FrenchRapUS/status/2124620782907293780",
+   "source_time_utc": "2026-11-22T21:47:22Z",
+   "expires_at_utc": "2026-11-23T03:47:22Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Marathon de 55 h non-stop sur GTA 6 annoncé par IShowSpeed lui-même, suivi de 20 h de sommeil ; très forte notoriété du créateur.",
+   "titles": [
+    "IShowSpeed a joué 55 h d'affilée pour finir GTA 6",
+    "IShowSpeed dort 20 h après son marathon GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-2315-twitch-gta6-ratio-streamers-2026-11-22",
+   "added_at_utc": "2026-11-22T23:15:27Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : les streamers Twitch bondissent de 30 %",
+   "topic_key": "twitch-gta6-ratio-streamers-2026-11-22",
+   "origin": "zachbussey",
+   "source_tweet": "https://x.com/zachbussey/status/2124613377427136676",
+   "primary_source": "https://x.com/zachbussey/status/2124613377427136676",
+   "source_time_utc": "2026-11-22T21:17:57Z",
+   "expires_at_utc": "2026-11-23T03:17:57Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Chiffres Twitch du jour : pic de viewers +11 % mais pic de streamers +30 % grâce à GTA 6, donc une audience diluée entre plus de créateurs.",
+   "titles": [
+    "GTA 6 : les streamers sur Twitch bondissent de 30 %, les viewers de 11 %",
+    "Sur Twitch, GTA 6 attire plus de streamers que de spectateurs"
    ],
    "checks": [],
    "photo_needed": "",
