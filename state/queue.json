@@ -792,9 +792,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "Clip non visionné (score 6, MP4 non téléchargé, 90 s : couper). Titres provisoires, à réécrire après visionnage selon §5. 4e clip Domingo en file : ne passer qu'après les meilleurs.",
-   "taken_at_utc": "2026-11-22T10:52:13Z"
+   "status": "ecarte",
+   "note": "juge 5/10 : titre plat, pas de twist visible",
+   "taken_at_utc": "2026-11-22T10:52:13Z",
+   "closed_at_utc": "2026-11-22T10:52:52Z"
   },
   {
    "id": "c-20261121-1453-gta6-circana-engagement",
