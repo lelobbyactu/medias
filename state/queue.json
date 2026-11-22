@@ -1141,6 +1141,272 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261122-1517-inoxtag-statue-grevin",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Inoxtag découvre sa statue au musée Grévin",
+   "topic_key": "inoxtag-statue-grevin",
+   "origin": "Inoxtag",
+   "source_tweet": "https://x.com/youtube_replay1/status/2124498112291205441",
+   "primary_source": "https://x.com/youtube_replay1/status/2124498112291205441",
+   "source_time_utc": "2026-11-22T13:39:55Z",
+   "expires_at_utc": "2026-11-23T13:39:55Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "youtube_replay1"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124487348318527488/vid/avc1/720x1058/UcODj3fTMK0qE7CT.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Inoxtag face à sa propre statue au Grévin et donne son avis : une réaction filmée qui surprend et fait rire.",
+   "titles": [
+    "Inoxtag découvre sa statue au Grévin : sa réaction",
+    "Quand Inoxtag tombe sur sa propre statue au Grévin"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-platinside-pression-moto",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Platinside, le « pire coup de pression » avec le motard",
+   "topic_key": "platinside-pression-moto",
+   "origin": "Platinside",
+   "source_tweet": "https://x.com/Platinside/status/2124509138650792431",
+   "primary_source": "https://x.com/Platinside/status/2124509138650792431",
+   "source_time_utc": "2026-11-22T14:23:44Z",
+   "expires_at_utc": "2026-11-23T14:23:44Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "Platinside"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124509029560913920/vid/avc1/1920x1080/vUVBUZiXpW2K8Zde.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Le créateur vit une séquence de pression en GTA, avec un motard qui surgit au bon moment.",
+   "titles": [
+    "Platinside : le pire coup de pression, en GTA",
+    "Le motard qui fait basculer la session de Platinside"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-fortnite-equipage-oscar",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Fortnite : l'équipage d'Oscar débarque (teaser)",
+   "topic_key": "fortnite-equipage-oscar",
+   "origin": "Fortnite",
+   "source_tweet": "https://x.com/Fortnite/status/2124503269900947616",
+   "primary_source": "https://x.com/Fortnite/status/2124503269900947616",
+   "source_time_utc": "2026-11-22T14:00:25Z",
+   "expires_at_utc": "2026-11-23T14:00:25Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "Fortnite",
+    "FortniteFR"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124503168403009536/vid/avc1/1280x720/WDQMdMqZ22O1sLmh.mp4?tag=16",
+   "media_repo_path": "",
+   "angle": "Teaser officiel de Fortnite pour l'arrivée de l'équipage d'Oscar, très partagé sur X.",
+   "titles": [
+    "Fortnite : l'équipage d'Oscar fait son entrée",
+    "L'équipage d'Oscar débarque dans Fortnite"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-domingo-csc-suspect",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Domingo et le CSC « très suspect »",
+   "topic_key": "domingo-csc-suspect",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2124494706587660794",
+   "primary_source": "https://x.com/DomingoTV/status/2124494706587660794",
+   "source_time_utc": "2026-11-22T13:26:23Z",
+   "expires_at_utc": "2026-11-23T13:26:23Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124494630452367360/vid/avc1/1280x720/owqoQPXxCfXUwsmi.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un contre son camp commenté par le streamer, moment drôle avec un bon engagement pour un compte de 256k.",
+   "titles": [
+    "Domingo et ce CSC « très suspect »",
+    "Le CSC de Domingo qui fait réagir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-kameto-kametita-caminos",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Kameto, extrait « Kametita Caminos »",
+   "topic_key": "kameto-kametita-caminos",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2124508139890377210",
+   "primary_source": "https://x.com/KametoTV/status/2124508139890377210",
+   "source_time_utc": "2026-11-22T14:19:46Z",
+   "expires_at_utc": "2026-11-23T14:19:46Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "KametoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124507877586915329/vid/avc1/1280x720/XSG2TCamiA1k3F0E.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Court extrait de stream de Kameto, avec un engagement fort par rapport à sa portée.",
+   "titles": [
+    "Kameto et son « Kametita Caminos »",
+    "Le moment Kameto qui fait réagir sur X"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-jltomy-sophie-jlmiami",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "JLTomy, scène de Sophie (#JLMiami)",
+   "topic_key": "jltomy-sophie-jlmiami",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124494913379201459",
+   "primary_source": "https://x.com/JLTomyTV/status/2124494913379201459",
+   "source_time_utc": "2026-11-22T13:27:13Z",
+   "expires_at_utc": "2026-11-23T13:27:13Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124494880692924417/vid/avc1/1920x1080/GiRCEcQn4DBsUqz0.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Épisode #JLMiami avec une scène qui fait réagir la communauté, dans la suite de la série.",
+   "titles": [
+    "JLTomy et la scène de Sophie (#JLMiami)",
+    "Le #JLMiami qui fait réagir avec Sophie"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-fortnite-teto-treasure-w4",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : skin Golden Kasane Teto et Treasure Hunt semaine 4 (fuites)",
+   "topic_key": "fortnite-teto-treasure-w4",
+   "origin": "HYPEX",
+   "source_tweet": "https://x.com/HYPEX/status/2124495780899697084",
+   "primary_source": "https://x.com/HYPEX/status/2124495780899697084",
+   "source_time_utc": "2026-11-22T13:30:40Z",
+   "expires_at_utc": "2026-11-22T19:30:40Z",
+   "fiabilite": "🟠",
+   "score": 7,
+   "mentions": [
+    "HYPEX",
+    "ShiinaBR"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Les insiders HYPEX et ShiinaBR dévoilent le skin Golden Kasane Teto et le trailer treasure hunt de la semaine 4, très partagés.",
+   "titles": [
+    "Fortnite : le skin Golden Kasane Teto fuite",
+    "Fortnite Treasure Hunt semaine 4 : le trailer leaké"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "leak"
+  },
+  {
+   "id": "c-20261122-1517-gta6-metacritic-user-score",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : score joueurs Metacritic à 5,6",
+   "topic_key": "gta6-metacritic-user-score",
+   "origin": "Metacritic",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124503440655298660",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124503440655298660",
+   "source_time_utc": "2026-11-22T14:01:06Z",
+   "expires_at_utc": "2026-11-22T20:01:06Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "InsiderGamingIG",
+    "Pirat_Nation"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Le score joueurs de GTA 6 tombe à 5,6 sur plus de 85 000 notes, alors que la presse reste à 99 : fracture entre joueurs et critiques.",
+   "titles": [
+    "GTA 6 : le score joueurs Metacritic chute à 5,6",
+    "GTA 6 : 99 chez la presse, 5,6 chez les joueurs"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1517-nisqy-revenus-twitch-pub",
+   "added_at_utc": "2026-11-22T15:17:26Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Nisqy : la pub pèse plus de la moitié de ses revenus Twitch",
+   "topic_key": "nisqy-revenus-twitch-pub",
+   "origin": "Nisqy",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124519509537214706",
+   "primary_source": "https://x.com/riyadinhoo_/status/2124519509537214706",
+   "source_time_utc": "2026-11-22T15:04:57Z",
+   "expires_at_utc": "2026-11-22T21:04:57Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "riyadinhoo_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un chiffre sur les revenus Twitch d'un streamer français connu : la pub dépasserait la moitié des gains, à confirmer.",
+   "titles": [
+    "Nisqy : la pub représente plus de la moitié de ses revenus Twitch",
+    "Revenus Twitch de Nisqy : la pub domine"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
