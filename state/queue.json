@@ -922,8 +922,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "Score 6 : traction faible (50 likes, 6k vues à 17 h 15 UTC, 1,4 M abonnés), audio non écouté, gag exact à confirmer au créneau (regarder les frames + écouter). MP4 non téléchargé (score < 7). allowDownload true."
+   "status": "expire",
+   "note": "Score 6 : traction faible (50 likes, 6k vues à 17 h 15 UTC, 1,4 M abonnés), audio non écouté, gag exact à confirmer au créneau (regarder les frames + écouter). MP4 non téléchargé (score < 7). allowDownload true.",
+   "closed_at_utc": "2026-11-22T16:52:32Z"
   },
   {
    "id": "c-20261121-1815-jltomy-miami-spiderman",
