@@ -26,7 +26,7 @@ Expiration : actu 6 h après la source, clip 24 h (appliquée par `add`).
 
 ## Formats (DA v0.6)
 - **Reel « clip + gros titre » = format prioritaire** : on poste CE clip, jamais un carrousel qui le raconte.
-- **Mise en page d'un clip (depuis le 22 nov.)** : une seule vidéo 9:16 pour Instagram et TikTok (`scripts/make_reel_916.py` : bande titre DA, webcam du streamer, bande sous-titres, gameplay 4:3 ; crédit dans la légende), contrôlée par le garde-fou (`docs/juge.md` §6bis). Exceptions : sponsor visible → Instagram seul ; rendu impossible ou raté → ancien format `make_reel.py`, Instagram seul.
+- **Mise en page d'un clip (depuis le 22 nov.)** : une seule vidéo 9:16 pour Instagram et TikTok (`scripts/make_reel_916.py` : bande titre DA, webcam du streamer, sous-titres automatiques DA dans la bande du milieu, gameplay 4:3 ; crédit dans la légende), contrôlée par le garde-fou (`docs/juge.md` §6bis). Exceptions : sponsor visible → Instagram seul ; rendu impossible ou raté → ancien format `make_reel.py`, Instagram seul.
 - **Carrousel d'actu** : info pertinente et creusée (chiffre, record, annonce, sortie, MAJ, projet de créateur, drama vérifié). Actu chiffrée = carrousel, pas reel. Une actu ≥ 7 passe avant un clip ; viser 1 post d'actu par jour sans jamais forcer un sujet faible.
 - Pas d'élément décoratif hors DA, pas d'image IA, pas de voix IA, pas de musique ajoutée.
 

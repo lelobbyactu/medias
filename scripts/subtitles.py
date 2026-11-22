@@ -15,8 +15,8 @@ import argparse, json, pathlib, re, subprocess, sys
 FONTS = pathlib.Path(__file__).resolve().parent / "fonts"
 TTF = FONTS / "Unbounded-ExtraBold.ttf"
 FONT_NAME = "Unbounded ExtraBold"
-SIZE = 54                   # « assez gros mais pas trop »
-MAX_W = 960                 # largeur max d'une ligne (px, écran 1080)
+SIZE = 58                   # « assez gros mais pas trop », puis « un peu plus imposant » (Alix, 23 nov.)
+MAX_W = 1000                # largeur max d'une ligne (px, écran 1080 : 40 px de marge de chaque côté)
 MAX_WORDS = 5
 MAX_DUR = 2.4               # durée max d'un bloc (s)
 PAUSE = 0.55                # une pause plus longue coupe le bloc
@@ -54,7 +54,12 @@ def censor(word):
 
 def transcribe(video, start, length):
     import numpy as np
-    from faster_whisper import WhisperModel
+    try:
+        from faster_whisper import WhisperModel
+    except ImportError:  # environnement neuf d'une tâche planifiée
+        subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--break-system-packages", "faster-whisper"],
+                       check=True, capture_output=True)
+        from faster_whisper import WhisperModel
     raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", str(video),
                           "-ac", "1", "-ar", "16000", "-f", "f32le", "-"], capture_output=True).stdout
     audio = np.frombuffer(raw, np.float32)
