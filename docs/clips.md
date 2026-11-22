@@ -11,6 +11,7 @@
 - Se comprend en 2 secondes (moment visuel, drôle, absurde, spectaculaire) ; audio français ou sans parole de préférence (anglais OK si le visuel parle).
 - Jamais publié (vérifier `state/published.json` : tweet, origine, sujet).
 **Exclusions (éliminatoires)** : politique/candidats, religion, faits divers, accusations pénales ou harcèlement visant des personnes réelles, décès/tragédies, mineurs identifiables, nudité, violence réelle/gore, giveaways/arnaques/promos/placements de produit/contenu sponsorisé, propos haineux ou insultes lourdes dans l'audio, médias de presse et chaînes TV (AJ+…), extraits de films/séries/sport pro/musique à droits évidents, compte qui interdit le téléchargement, leaks non confirmés (🟠/🔴) **sauf actu brûlante « leak » traitée selon §2ter**.
+**Sponsor dans l'overlay du streamer** (logo ou nom de marque dans son habillage de stream, bandeau, compteur sponsorisé, ex. HOLY, AZZARO WANTED) : **toléré sur Instagram** (décision d'Alix du 22 nov. 2026 : ça ne gêne pas les vues), **interdit sur TikTok** (contrôlé par le garde-fou, `docs/juge.md` §6bis). Ce n'est pas un « contenu sponsorisé » au sens des exclusions tant que le clip lui-même n'est pas une pub (mention « Publicité », placement présenté par le streamer = exclusion partout).
 **Score /10** : accroche visuelle/surprise 0-4 · hype du sujet et nom connu 0-3 · traction (likes et vues par rapport aux abonnés, vitesse) 0-2 · fraîcheur 0-1.
 
 

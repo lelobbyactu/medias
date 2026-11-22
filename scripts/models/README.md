@@ -1,0 +1,1 @@
+`face_detection_yunet_2023mar.onnx` : détecteur de visages YuNet (OpenCV Zoo, licence MIT), utilisé par `scripts/make_reel_tiktok.py` pour trouver la webcam du streamer. Source : https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet

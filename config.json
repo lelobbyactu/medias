@@ -108,5 +108,32 @@
   "Inoxtag": "inoxtag",
   "WankilStudio": "wankilstudio",
   "Michoucroute_": "michou"
+ },
+ "tiktok_layouts": {
+  "_doc": "Webcam mémorisée par chaîne Twitch (espace 1920x1080), écrite par make_reel_tiktok.py --save-layout après relecture OK.",
+  "kamet0": {
+   "cam": [
+    1518,
+    179,
+    402,
+    222
+   ]
+  },
+  "domingo": {
+   "cam": [
+    1443,
+    141,
+    438,
+    271
+   ]
+  },
+  "gotaga": {
+   "cam": [
+    23,
+    7,
+    417,
+    234
+   ]
+  }
  }
 }
