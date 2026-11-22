@@ -1169,9 +1169,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-22T16:53:03Z"
+   "status": "ecarte",
+   "note": "video deja montee par un tiers (9:16 sous-titres incrustes, relais youtube_replay1, source primaire non identifiee) : incompatible make_reel_916, risque originalite",
+   "taken_at_utc": "2026-11-22T16:53:03Z",
+   "closed_at_utc": "2026-11-22T16:53:22Z"
   },
   {
    "id": "c-20261122-1517-platinside-pression-moto",
