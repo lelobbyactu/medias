@@ -1111,6 +1111,36 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score 6, pas de MP4 en file (< 7). À couper à ~30 s utiles. Vérifier la chute avant titre."
+  },
+  {
+   "id": "c-20261122-1316-yeney-gta6-verdict-30fps",
+   "added_at_utc": "2026-11-22T13:16:01Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Yeney donne son verdict à chaud sur GTA 6 : 30 FPS, mais « pas le jeu qui m'a choqué »",
+   "topic_key": "yeney-gta6-verdict-30fps",
+   "origin": "Yeney",
+   "source_tweet": "https://x.com/LaTwitchance/status/2124473343349080335",
+   "primary_source": "https://x.com/LaTwitchance/status/2124473343349080335",
+   "source_time_utc": "2026-11-22T12:01:30Z",
+   "expires_at_utc": "2026-11-23T12:01:30Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "LaTwitchance",
+    "VODtwxtch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124473020999753728/vid/avc1/576x1024/CmYQQppVwdEU3EJi.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un streamer français connu lâche son avis à chaud après avoir joué à GTA 6, avec le 30 FPS en point de friction.",
+   "titles": [
+    "Yeney après GTA 6 : le 30 FPS passe, le réalisme non",
+    "Yeney tranche sur GTA 6 : « on va pas se forcer hein »"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
