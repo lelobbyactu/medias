@@ -4,7 +4,7 @@ Média français d'actu créateurs / gaming, Instagram + TikTok (Zernio). Cible 
 Ce fichier est le NOYAU, volontairement court. Les détails sont dans `docs/` : lire **seulement** ce dont la tâche a besoin. Réglages (comptes, seuils, plafonds, horaires) : `config.json`. Le code qui gère file et journal : `scripts/lobby.py` (ne jamais éditer `state/*.json` à la main).
 
 ## PAUSE TIKTOK (décision d'Alix du 22 nov. 2026)
-Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement sur Instagram**. Rien vers le compte TikTok de Zernio (ni post, ni brouillon) ; `lobby.py done` sans `--tiktok` (ou `--tiktok pause`) ; rapport : « TikTok : en pause jusqu'au 27 nov. ». Reprise le 28 nov. **À la reprise, un clip ne va sur TikTok que dans le format 9:16 de `scripts/make_reel_tiktok.py`, après le garde-fou (`docs/montage.md` §7ter, `docs/juge.md` §6bis) ; sinon Instagram seul.** Les carrousels gardent la règle TikTok du 22 nov. Cause : 2 vidéos « non originales » et diffusion TikTok effondrée ; détails dans le doc projet `claude/strategie-tiktok.md`.
+Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement sur Instagram**. Rien vers le compte TikTok de Zernio (ni post, ni brouillon) ; `lobby.py done` sans `--tiktok` (ou `--tiktok pause`) ; rapport : « TikTok : en pause jusqu'au 27 nov. ». Reprise le 28 nov. À la reprise, les clips au format 9:16 validés par le garde-fou partent sur les deux réseaux en un seul post (`docs/montage.md` §7). Les carrousels gardent la règle TikTok du 22 nov. Cause : 2 vidéos « non originales » et diffusion TikTok effondrée ; détails dans le doc projet `claude/strategie-tiktok.md`.
 
 ## Règles générales
 - Exécution automatique : personne ne répond. Jamais de question ; appliquer les règles ; **publier seulement si tous les critères sont réunis, sinon « RAS »**. Doute = ne pas publier.
@@ -21,12 +21,12 @@ Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement s
 
 ## Rythme (valeurs dans config.json)
 4 créneaux par jour (8 h, 12 h, 18 h, 21 h Paris) + actus brûlantes ; **plafond 7 posts/jour (minuit-minuit Paris)** ; un créneau saute si un post est parti depuis moins de 45 min. Les contrôles sont faits par `lobby.py slot`.
-**Mix** (règle d'originalité Instagram) : au moins 60 % de contenus produits par le Lobby ; si 2 des 3 derniers posts sont des clips, un carrousel d'actu ≥ 7 passe avant tout clip (appliqué par `slot`). Un clip n'est jamais posté brut (titre « histoire », mise en page `make_reel.py`, crédit).
+**Mix** (règle d'originalité Instagram) : au moins 60 % de contenus produits par le Lobby ; si 2 des 3 derniers posts sont des clips, un carrousel d'actu ≥ 7 passe avant tout clip (appliqué par `slot`). Un clip n'est jamais posté brut (titre « histoire », mise en page `make_reel_916.py`, crédit).
 Expiration : actu 6 h après la source, clip 24 h (appliquée par `add`).
 
 ## Formats (DA v0.6)
 - **Reel « clip + gros titre » = format prioritaire** : on poste CE clip, jamais un carrousel qui le raconte.
-- **Clip sur TikTok** (dès le 28 nov.) : format 9:16 propre à TikTok (bande titre DA, webcam du streamer, gameplay 4:3), crédit dans la légende seulement ; refusé automatiquement si qualité ou cadrage insuffisants, puis garde-fou visuel ; doute = pas de TikTok.
+- **Mise en page d'un clip (depuis le 22 nov.)** : une seule vidéo 9:16 pour Instagram et TikTok (`scripts/make_reel_916.py` : bande titre DA, webcam du streamer, bande sous-titres, gameplay 4:3 ; crédit dans la légende), contrôlée par le garde-fou (`docs/juge.md` §6bis). Exceptions : sponsor visible → Instagram seul ; rendu impossible ou raté → ancien format `make_reel.py`, Instagram seul.
 - **Carrousel d'actu** : info pertinente et creusée (chiffre, record, annonce, sortie, MAJ, projet de créateur, drama vérifié). Actu chiffrée = carrousel, pas reel. Une actu ≥ 7 passe avant un clip ; viser 1 post d'actu par jour sans jamais forcer un sujet faible.
 - Pas d'élément décoratif hors DA, pas d'image IA, pas de voix IA, pas de musique ajoutée.
 

@@ -1,27 +1,27 @@
 #!/usr/bin/env python3
-"""Le Lobby — reel TikTok 9:16 « titre + webcam + gameplay » (DA v0.6), automatique, avec contrôle qualité.
+"""Le Lobby — reel 9:16 « titre + webcam + gameplay » (DA v0.6), format principal des clips sur Instagram ET TikTok.
 
-Mise en page (1080x1920, validée par Alix le 22 nov. 2026, variante « B ») :
-  0-420     bande titre DA (fond #111114, logo, titre Unbounded + surligneur) — haut caché par l'interface TikTok jusqu'à ~130 px
-  420-980   webcam du streamer (1080x560)
-  ~960      milieu de l'écran : place réservée aux futurs sous-titres (jonction webcam / gameplay)
-  980-1790  gameplay recadré en 4:3 (1080x810), placé hors de la webcam et des overlays fixes
-  1790-1920 marge (zone de la légende TikTok)
-Pas de crédit à l'écran : sur TikTok le crédit va dans la légende.
+Décisions d'Alix (22 nov. 2026) : variante « B » ; même vidéo sur les deux réseaux (un seul post) ; l'ancien format
+(`make_reel.py`, clip 16:9 au milieu) ne sert plus qu'en secours ; webcam un peu plus petite et bande noire entre
+la webcam et le gameplay pour les futurs sous-titres.
+
+Mise en page 1080x1920 :
+  0-400      bande titre (logo + titre Unbounded + surligneur ; le haut, jusqu'à ~130 px, est caché par l'interface TikTok)
+  400-880    webcam : pleine largeur (1080x480) si elle est assez nette, sinon plus petite et centrée (agrandissement max x2,8)
+  880-1000   bande noire réservée aux sous-titres (milieu de l'écran)
+  1000-1810  gameplay recadré en 4:3 (1080x810), placé hors de la webcam et des overlays fixes
+  1810-1920  marge (légende des réseaux)
+  Sans webcam (IRL, vidéo YouTube, webcam minuscule) : titre, gameplay 4:3 en 470-1280, bande sous-titres en dessous.
+Pas de crédit à l'écran : il est dans la légende.
 
 Usage :
-  python3 scripts/make_reel_tiktok.py --video /tmp/clip.mp4 --post <nom> --title "Ligne 1|Ligne 2 *mot*" \
-      [--start S --end E] [--channel kamet0] [--cam x,y,w,h] [--game-x X] [--save-layout] [--check-only]
-
-Refus automatiques (« ok": false, aucune vidéo) — le clip ne part PAS sur TikTok (Instagram : format habituel) :
-  - source < 1080p (version X 720p sans source Twitch)
-  - cinématique : bandes noires sur plus de 30 % du clip (gameplay trop zoomé en 4:3)
-  - pas de webcam trouvée, ou webcam trop petite (agrandissement > 3,4x = floue)
-  - pas de place pour un cadre 4:3 hors de la webcam
-  - QR code détecté dans l'image finale
-Sinon : vidéo + planche de contrôle (`<nom>_tiktok_planche.jpg`) que le juge DOIT regarder (sponsor, zoom, netteté)
-avant toute publication TikTok (voir docs/juge.md « Garde-fou TikTok »).
-Coordonnées --cam / --game-x : dans l'espace 1920x1080 (quelle que soit la définition de la source).
+  python3 scripts/make_reel_916.py --video /tmp/clip.mp4 --post <nom> --title "Ligne 1|Ligne 2 *mot*" \
+      [--start S --end E] [--channel kamet0] [--cam x,y,w,h | --no-cam] [--game-x X] [--save-layout] [--check-only]
+Sorties dans posts/<nom>/ : <nom>.mp4, <nom>_cover.jpg, <nom>_fond.png, <nom>_planche.jpg (planche à faire relire : docs/juge.md §6bis).
+Refus (« ok": false, aucune vidéo) → secours `make_reel.py` (Instagram seul) : cinématique (bandes noires > 30 %), pas de place
+pour un cadre 4:3 hors webcam, gameplay trop zoomé, passage > 90 s.
+« qr": true = QR code vu dans l'image (souvent un sponsor d'overlay) : à traiter comme un sponsor (pas de TikTok).
+Coordonnées --cam / --game-x : dans l'espace 1920x1080, quelle que soit la définition de la source.
 """
 import argparse, html, json, pathlib, re, subprocess, sys
 import numpy as np
@@ -31,10 +31,16 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 FONTS = pathlib.Path(__file__).resolve().parent / "fonts"
 MODEL = pathlib.Path(__file__).resolve().parent / "models" / "face_detection_yunet_2023mar.onnx"
 Y = "#F2FF3D"; BG = "#111114"
-TITLE_H, CAM_Y, CAM_H, GAME_Y, GAME_H = 420, 420, 560, 980, 810
-AW, AH = 1920, 1080                       # espace d'analyse
-MAX_CAM_UPSCALE = 3.4
-MIN_ZOOM = 0.70                           # part de la largeur du jeu visible (16:9 normal = 0,75)
+TITLE_H = 400
+CAM_ZONE_Y, CAM_ZONE_H = 400, 480           # webcam pleine largeur : 1080x480
+SUB_Y, SUB_H = 880, 120                     # bande sous-titres
+GAME_Y, GAME_H = 1000, 810                  # gameplay 4:3
+NOCAM_GAME_Y = 470
+CAM_MAX_UPSCALE = 2.8                       # au-delà, la webcam est affichée plus petite
+CAM_MIN_W = 540                             # largeur minimale d'affichage de la webcam
+CAM_MIN_SRC = 150                           # webcam plus étroite que ça (px source) : mise en page sans webcam
+AW, AH = 1920, 1080                         # espace d'analyse
+MIN_ZOOM = 0.70                             # part de la largeur du jeu visible (16:9 normal = 0,75)
 MAX_CINEMA = 0.30
 
 
@@ -161,6 +167,23 @@ def webcam_rect(face, P, S):
     return [int(xl), int(yt), int(w), int(h)], ok
 
 
+def static_cam_box(frames, face):
+    """Zone de l'image qui bouge peu (fond de la webcam) et qui contient le visage : souvent la webcam entière."""
+    st = np.stack([cv2.resize(cv2.cvtColor(f, cv2.COLOR_BGR2GRAY), (384, 216)).astype(np.float32) for f in frames])
+    mask = ((st.std(0) < 8) & (st.mean(0) > 12)).astype(np.uint8)
+    mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, np.ones((9, 9), np.uint8))
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(mask)
+    cx, cy = int((face[0] + face[2] / 2) / 5), int((face[1] + face[3] / 2) / 5)
+    best = None
+    for i in range(1, n):
+        x, y, w, h, a = stats[i]
+        if x <= cx <= x + w and y <= cy <= y + h:
+            r = [int(x * 5), int(y * 5), int(w * 5), int(h * 5)]
+            if best is None or r[2] * r[3] < best[2] * best[3]:
+                best = r
+    return best
+
+
 def fit_aspect(rect, face, aspect):
     """Rogne la webcam (3 % de marge pour le cadre) au format de la bande, centrée sur le visage."""
     x, y, w, h = rect
@@ -247,23 +270,23 @@ def font_face(fam, fname, w):
     return f"@font-face{{font-family:'{fam}';src:url('{(FONTS / fname).as_uri()}') format('woff2');font-weight:{w};}}"
 
 
-def render_band(title, out_png):
+def render_overlay(title, out_png, logo_xy):
+    """Calque transparent : titre DA dans la bande du haut + petit logo (le fond sombre vient de ffmpeg)."""
     lines = [l.strip() for l in title.split("|") if l.strip()]
     th = "".join("<div class='ln'>" + re.sub(r"\*(.+?)\*", r"<span class='hl'>\1</span>", html.escape(l)) + "</div>" for l in lines)
     css = "".join([font_face("Unbounded", "unbounded-latin-800-normal.woff2", 800),
                    font_face("Unbounded", "unbounded-latin-900-normal.woff2", 900)])
+    box_h = TITLE_H - 140 - 20
     doc = f"""<!DOCTYPE html><html><head><meta charset='utf-8'><style>{css}
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:1080px;height:1920px;background:transparent;overflow:hidden}}
-.band{{position:absolute;left:0;top:0;width:1080px;height:{TITLE_H}px;background:{BG}}}
-.foot{{position:absolute;left:0;top:{GAME_Y + GAME_H}px;width:1080px;height:{1920 - GAME_Y - GAME_H}px;background:{BG}}}
 body{{position:relative;color:#fff}}
-.logo{{position:absolute;left:24px;top:{CAM_Y + 20}px;z-index:5;background:{Y};color:{BG};font-family:Unbounded;font-weight:900;font-size:18px;line-height:.98;padding:8px 9px 7px;border-radius:4px}}
-.box{{position:absolute;left:0;right:0;top:140px;height:{TITLE_H - 140 - 24}px;padding:0 40px;display:flex;flex-direction:column;justify-content:center}}
+.logo{{position:absolute;left:{logo_xy[0]}px;top:{logo_xy[1]}px;background:{Y};color:{BG};font-family:Unbounded;font-weight:900;font-size:18px;line-height:.98;padding:8px 9px 7px;border-radius:4px}}
+.box{{position:absolute;left:0;right:0;top:140px;height:{box_h}px;padding:0 40px;display:flex;flex-direction:column;justify-content:center}}
 .title{{text-align:center;font-family:Unbounded;font-weight:800;text-transform:uppercase;font-size:64px;line-height:1.14;letter-spacing:-.5px}}
 .ln{{white-space:nowrap;display:block;width:max-content;margin:0 auto}}
 .hl{{background:{Y};color:{BG};padding:0 .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
-</style></head><body><div class='band'></div><div class='foot'></div><div class='box'><div class='title' id='t'>{th}</div></div><div class='logo'>LE<br>LOBBY</div></body></html>"""
+</style></head><body><div class='box'><div class='title' id='t'>{th}</div></div><div class='logo'>LE<br>LOBBY</div></body></html>"""
     from playwright.sync_api import sync_playwright
     f = out_png.with_suffix(".html"); f.write_text(doc, encoding="utf-8")
     with sync_playwright() as p:
@@ -272,11 +295,10 @@ body{{position:relative;color:#fff}}
             kw["executable_path"] = "/usr/bin/google-chrome"
         b = p.chromium.launch(**kw); pg = b.new_page(viewport={"width": 1080, "height": 1920})
         pg.goto(f.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(400)
-        # le titre tient en largeur (980 px) et en hauteur dans la bande
         fit = pg.evaluate(f"""() => {{
           const t = document.getElementById('t'); let fs = 64;
           const W = () => Math.max(...[...t.querySelectorAll('.ln')].map(e => e.getBoundingClientRect().width));
-          while ((W() > 980 || t.getBoundingClientRect().height > {TITLE_H - 140 - 24}) && fs > 34) {{ fs -= 2; t.style.fontSize = fs + 'px'; }}
+          while ((W() > 980 || t.getBoundingClientRect().height > {box_h}) && fs > 34) {{ fs -= 2; t.style.fontSize = fs + 'px'; }}
           return fs; }}""")
         pg.wait_for_timeout(100); pg.screenshot(path=str(out_png), omit_background=True); b.close()
     f.unlink()
@@ -288,8 +310,9 @@ def main():
     ap.add_argument("--video", required=True); ap.add_argument("--post", required=True)
     ap.add_argument("--title", default="")
     ap.add_argument("--start", type=float, default=None); ap.add_argument("--end", type=float, default=None)
-    ap.add_argument("--channel", default=None, help="chaîne Twitch (pour la mise en page mémorisée)")
+    ap.add_argument("--channel", default=None, help="chaîne Twitch (webcam mémorisée)")
     ap.add_argument("--cam", default=None, help="x,y,w,h de la webcam (espace 1920x1080) : correction manuelle")
+    ap.add_argument("--no-cam", action="store_true", help="forcer la mise en page sans webcam")
     ap.add_argument("--game-x", type=int, default=None, help="position x du cadre 4:3 : correction manuelle")
     ap.add_argument("--save-layout", action="store_true", help="mémorise la webcam dans config.json (après relecture OK)")
     ap.add_argument("--check-only", action="store_true", help="analyse + planche, sans montage")
@@ -304,10 +327,9 @@ def main():
     s = W / AW
 
     def stop(reason):
-        rep["reasons"].append(reason); print(json.dumps(rep, ensure_ascii=False)); sys.exit(0)
+        rep["reasons"].append(reason + " → secours make_reel.py (Instagram seul)")
+        print(json.dumps(rep, ensure_ascii=False)); sys.exit(0)
 
-    if H < 1080:
-        stop(f"source {H}p < 1080p (pas de version Twitch) : pas de TikTok")
     if length > 90:
         stop("passage > 90 s : couper avec --start/--end")
     frames = sample_frames(a.video, start, length)
@@ -317,91 +339,120 @@ def main():
     cine, top, bot = letterbox(frames)
     rep["cinematique"] = round(cine, 2)
     if cine > MAX_CINEMA:
-        stop(f"cinématique ({cine:.0%} du clip avec bandes noires) : gameplay trop zoomé en 4:3, pas de TikTok")
+        stop(f"cinématique ({cine:.0%} du clip avec bandes noires)")
 
+    # --- webcam ---
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     mem = cfg.get("tiktok_layouts", {}).get(a.channel or "", {}) if a.channel else {}
-    faces = find_faces(frames)
-    face = streamer_face(faces, len(frames))
-    if a.cam:
-        cam = [int(v) for v in a.cam.split(",")]; rep["cam_source"] = "manuel"
-        face = face or (cam[0] + cam[2] * 0.4, cam[1] + cam[3] * 0.3, cam[2] * 0.2, cam[3] * 0.3)
-    elif mem.get("cam") and face and inter(mem["cam"], [face[0], face[1], face[2], face[3]]) > 0.6 * face[2] * face[3]:
-        cam = mem["cam"]; rep["cam_source"] = "mémorisée"
-    elif face:
-        cam, clean = webcam_rect(face, persistent_edges(frames), motion_map(frames)); rep["cam_source"] = "détectée" if clean else "estimée autour du visage"
-    else:
-        stop("pas de webcam trouvée (aucun visage fixe) : pas de TikTok")
+    cam = face = None
+    if not a.no_cam:
+        face = streamer_face(find_faces(frames), len(frames))
+        if a.cam:
+            cam = [int(v) for v in a.cam.split(",")]; rep["cam_source"] = "manuel"
+            face = face or (cam[0] + cam[2] * 0.4, cam[1] + cam[3] * 0.3, cam[2] * 0.2, cam[3] * 0.3)
+        elif mem.get("cam") and face and inter(mem["cam"], list(face)) > 0.6 * face[2] * face[3]:
+            cam = mem["cam"]; rep["cam_source"] = "mémorisée"
+        elif face:
+            cam, clean = webcam_rect(face, persistent_edges(frames), motion_map(frames))
+            rep["cam_source"] = "détectée" if clean else "estimée autour du visage"
+            B = static_cam_box(frames, face)
+            if B:
+                ok_b = 200 <= B[2] <= 1000 and 120 <= B[3] <= 700 and 1.0 <= B[2] / B[3] <= 2.4
+                if ok_b and inter(B, cam) >= 0.8 * cam[2] * cam[3] and B[2] * B[3] > 1.3 * cam[2] * cam[3]:
+                    cam = B; rep["cam_source"] = "détectée (zone fixe)"
+    layout = "sans_webcam"
+    if cam:
+        cam_crop = fit_aspect(cam, face, 1080 / CAM_ZONE_H)
+        src_w = cam_crop[2] * s
+        if src_w >= CAM_MIN_SRC:
+            cw = int(min(1080, max(CAM_MIN_W, src_w * CAM_MAX_UPSCALE))) // 2 * 2
+            if cw >= 960:   # à 10 % près, pleine largeur
+                cw = 1080
+            ch = int(round(cw * CAM_ZONE_H / 1080)) // 2 * 2
+            cam_box = [(1080 - cw) // 2, CAM_ZONE_Y + (CAM_ZONE_H - ch) // 2 // 2 * 2, cw, ch]
+            layout = "webcam" if cw == 1080 else "webcam_reduite"
+            rep["webcam_agrandissement"] = round(cw / src_w, 2)
+            rep["webcam_affichee"] = f"{cw}x{ch}"
+        else:
+            rep["cam_note"] = f"webcam trop petite ({src_w:.0f} px) : mise en page sans webcam"
+            cam = None
+    rep["layout"] = layout
     rep["cam"] = cam
 
-    cam_crop = fit_aspect(cam, face, 1080 / CAM_H)
-    upscale = 1080 / (cam_crop[2] * s)
-    rep["webcam_agrandissement"] = round(upscale, 2)
-    if upscale > MAX_CAM_UPSCALE:
-        stop(f"webcam trop petite ({cam_crop[2] * s:.0f} px de large, agrandie x{upscale:.1f}) : floue, pas de TikTok")
-
-    overlays = static_overlays(frames, [cam])
+    # --- gameplay ---
+    overlays = static_overlays(frames, [cam] if cam else [])
     rep["overlays_fixes"] = overlays
     if a.game_x is not None:
-        gh = AH; gw = int(gh * 4 / 3); win = [a.game_x, 0, gw, gh]; zoom = gw / AW
+        gw = int(AH * 4 / 3); win = [a.game_x, 0, gw, AH]; zoom = gw / AW
     else:
         win, zoom = game_window(cam, overlays, top, bot)
     rep["zoom_largeur_visible"] = round(zoom, 2)
     if not win:
-        stop("pas de place pour un cadre 4:3 hors de la webcam : pas de TikTok")
+        stop("pas de place pour un cadre 4:3 hors de la webcam")
     if zoom < MIN_ZOOM:
-        stop(f"gameplay trop zoomé ({zoom:.0%} de la largeur visible) : pas de TikTok")
+        stop(f"gameplay trop zoomé ({zoom:.0%} de la largeur visible)")
     rep["cadre_jeu"] = win
     rep["overlays_dans_cadre"] = [o for o in overlays if inter(o, win) > 0]
-    if qr_found(frames, [cam_crop, win]):
-        stop("QR code détecté dans l'image : pas de TikTok")
+    rep["qr"] = qr_found(frames, ([cam_crop] if cam else []) + [win])
 
-    # planche de contrôle : 2 images source annotées (rose = webcam, jaune = cadre jeu, rouge = overlays fixes)
-    plan = out_dir / f"{a.post}_tiktok_planche.jpg"
+    # --- planche : images source annotées (rose = webcam, jaune = jeu, rouge = overlays fixes) ---
+    plan = out_dir / f"{a.post}_planche.jpg"
     src = []
     for f in (frames[3], frames[11]):
         im = f.copy()
-        cv2.rectangle(im, (cam_crop[0], cam_crop[1]), (cam_crop[0] + cam_crop[2], cam_crop[1] + cam_crop[3]), (180, 60, 255), 6)
+        if cam:
+            cv2.rectangle(im, (cam_crop[0], cam_crop[1]), (cam_crop[0] + cam_crop[2], cam_crop[1] + cam_crop[3]), (180, 60, 255), 6)
         cv2.rectangle(im, (win[0], win[1]), (win[0] + win[2], win[1] + win[3]), (61, 255, 242), 6)
         for o in overlays:
             cv2.rectangle(im, (o[0], o[1]), (o[0] + o[2], o[1] + o[3]), (40, 40, 255), 3)
         src.append(cv2.resize(im, (960, 540)))
-    top_row = np.hstack(src)
-
-    if a.save_layout and a.channel:
-        cfg.setdefault("tiktok_layouts", {"_doc": "Webcam mémorisée par chaîne Twitch (espace 1920x1080), écrite par make_reel_tiktok.py --save-layout après relecture OK."})
+    src_row = np.hstack(src)
+    if a.save_layout and a.channel and cam:
+        cfg.setdefault("tiktok_layouts", {"_doc": "Webcam mémorisée par chaîne Twitch (espace 1920x1080), écrite par make_reel_916.py --save-layout après relecture OK."})
         cfg["tiktok_layouts"][a.channel] = {"cam": cam}
         (ROOT / "config.json").write_text(json.dumps(cfg, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         rep["layout_memorise"] = a.channel
     if a.check_only:
-        cv2.imwrite(str(plan), top_row, [cv2.IMWRITE_JPEG_QUALITY, 85])
+        cv2.imwrite(str(plan), src_row, [cv2.IMWRITE_JPEG_QUALITY, 85])
         rep.update(ok=True, planche=str(plan), check_only=True); print(json.dumps(rep, ensure_ascii=False)); return
 
-    png = out_dir / f"{a.post}_tiktok_fond.png"
-    rep["titre_px"] = render_band(a.title, png)
-    mp4 = out_dir / f"{a.post}_tiktok.mp4"
-    c = [int(round(v * s)) for v in cam_crop]; g = [int(round(v * s)) for v in win]
-    c[2] -= c[2] % 2; c[3] -= c[3] % 2; g[2] -= g[2] % 2; g[3] -= g[3] % 2
+    # --- montage ---
+    game_y = GAME_Y if cam else NOCAM_GAME_Y
+    logo = (cam_box[0] + 20, cam_box[1] + 20) if cam else (24, game_y + 20)
+    png = out_dir / f"{a.post}_fond.png"
+    rep["titre_px"] = render_overlay(a.title, png, logo)
+    mp4 = out_dir / f"{a.post}.mp4"
+    g = [int(round(v * s)) // 2 * 2 for v in win]
     ofps = 60 if fps > 45 else 30
-    fc = (f"[1:v]split=2[a][b];"
-          f"[a]crop={c[2]}:{c[3]}:{c[0]}:{c[1]},scale=1080:{CAM_H}:flags=lanczos,unsharp=5:5:0.5[c];"
-          f"[b]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
-          f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][c]overlay=0:{CAM_Y}:shortest=1[t1];[t1][g]overlay=0:{GAME_Y}:shortest=1[t2];"
-          f"[t2][0:v]overlay=0:0:shortest=1,fps={ofps},format=yuv420p[o]")
+    if cam:
+        c = [int(round(v * s)) // 2 * 2 for v in cam_crop]
+        fc = (f"[1:v]split=2[a][b];"
+              f"[a]crop={c[2]}:{c[3]}:{c[0]}:{c[1]},scale={cam_box[2]}:{cam_box[3]}:flags=lanczos,unsharp=5:5:0.5[c];"
+              f"[b]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
+              f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][c]overlay={cam_box[0]}:{cam_box[1]}:shortest=1[t1];"
+              f"[t1][g]overlay=0:{game_y}:shortest=1[t2];[t2][0:v]overlay=0:0:shortest=1,fps={ofps},format=yuv420p[o]")
+    else:
+        fc = (f"[1:v]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
+              f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][g]overlay=0:{game_y}:shortest=1[t2];"
+              f"[t2][0:v]overlay=0:0:shortest=1,fps={ofps},format=yuv420p[o]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(ofps), "-i", str(png),
                     "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", a.video, "-filter_complex", fc,
-                    "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-profile:v", "high",
+                    "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-profile:v", "high",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", str(mp4)], check=True)
-    # planche : 4 images du rendu + les 2 images source annotées
+    cover = out_dir / f"{a.post}_cover.jpg"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{min(2.0, length / 3):.2f}", "-i", str(mp4),
+                    "-frames:v", "1", "-q:v", "3", str(cover)], check=True)
     outs = []
     for k in range(4):
         raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{length * (k + 0.5) / 4:.2f}", "-i", str(mp4), "-frames:v", "1",
                               "-vf", "scale=480:854", "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], capture_output=True).stdout
         outs.append(np.frombuffer(raw, np.uint8).reshape(854, 480, 3))
-    row = cv2.resize(np.hstack(outs), (1920, int(854 * 1920 / 1920)))
-    cv2.imwrite(str(plan), np.vstack([row, top_row]), [cv2.IMWRITE_JPEG_QUALITY, 82])
+    cv2.imwrite(str(plan), np.vstack([np.hstack(outs), src_row]), [cv2.IMWRITE_JPEG_QUALITY, 82])
     _, _, odur, _ = probe(mp4)
-    rep.update(ok=True, mp4=str(mp4), planche=str(plan), duration_s=round(odur, 1), size_mb=round(mp4.stat().st_size / 1e6, 1))
+    has_audio = bool(subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=codec_name",
+                                     "-of", "csv=p=0", str(mp4)], capture_output=True, text=True).stdout.strip())
+    rep.update(ok=True, mp4=str(mp4), cover=str(cover), planche=str(plan), duration_s=round(odur, 1),
+               has_audio=has_audio, size_mb=round(mp4.stat().st_size / 1e6, 1))
     print(json.dumps(rep, ensure_ascii=False))
 
 
