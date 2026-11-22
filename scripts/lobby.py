@@ -4,7 +4,7 @@ Les tâches Claude ne font plus ces calculs à la main : elles appellent ces com
 
   lobby.py queries              -> requêtes Apify prêtes (fenêtre depuis la dernière veille)
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
-  lobby.py slot                 -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
+  lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
   lobby.py reserve <id> <reel|carrousel> <Categorie>  -> réserve le numéro de post, journal 'en_cours'
   lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot leak|embrouille|5_comptes --note T]
@@ -208,11 +208,12 @@ def cmd_slot(a):
     stop = None
     if not res["reseau_ok"]: stop = "réseau bloqué (video.twimg.com)"
     elif n >= c["cap_per_day"]: stop = f"plafond de {c['cap_per_day']} posts atteint"
-    elif last and (t - last).total_seconds() < c["min_gap_min"] * 60: stop = f"post publié il y a {int((t - last).total_seconds() / 60)} min"
+    elif not a.hot and last and (t - last).total_seconds() < c["min_gap_min"] * 60: stop = f"post publié il y a {int((t - last).total_seconds() / 60)} min"
     busy = [x for x in p["posts"] if x.get("status") == "en_cours" and post_time(x) and (t - post_time(x)).total_seconds() < 1800]
     if not stop and busy: stop = f"post en cours ({busy[0]['id']})"
     if stop: res["stop"] = stop; out(res); return
     cands = rank(q, p)
+    if a.hot: cands = [x for x in cands if x[1].get("hot")]
     res["candidats"] = [{"id": e["id"], "type": e["type"], "score": e["score"], "score_fraicheur": round(s, 1),
                          "age_h": round(age, 1), "topic": e["topic"], "origin": e["origin"], "fiabilite": e["fiabilite"],
                          "mentions": len(e["mentions"]), "angle": e["angle"], "titles": e["titles"], "checks": e["checks"],
@@ -293,7 +294,8 @@ def cmd_status(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
-    for n in ("queries", "slot", "status"): sp.add_parser(n)
+    for n in ("queries", "status"): sp.add_parser(n)
+    s = sp.add_parser("slot"); s.add_argument("--hot", action="store_true")
     s = sp.add_parser("add"); s.add_argument("file", nargs="?")
     s = sp.add_parser("take"); s.add_argument("id")
     s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel", "carrousel"]); s.add_argument("categorie")
