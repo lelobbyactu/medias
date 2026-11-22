@@ -1814,8 +1814,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "actu périmée : interview Game Informer du 19 nov. (>6 h)",
+   "closed_at_utc": "2026-11-22T19:55:02Z"
   },
   {
    "id": "c-20261122-1916-cod-activision-brevet-pnj-chat-vocal",
