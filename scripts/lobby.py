@@ -6,6 +6,7 @@ Les tâches Claude ne font plus ces calculs à la main : elles appellent ces com
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
   lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
+                                   (+ remplace par la version Twitch 1080p60 si trouvée, champ "twitch" ; --no-twitch pour l'éviter)
   lobby.py reserve <id> <reel|carrousel> <Categorie>  -> réserve le numéro de post, journal 'en_cours'
   lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot leak|embrouille|5_comptes --note T]
   lobby.py fail <post> <raison>  | lobby.py drop <id> <raison>
@@ -233,8 +234,16 @@ def cmd_take(a):
         src = f"{ROOT}/{e['media_repo_path']}" if e.get("media_repo_path") and os.path.exists(f"{ROOT}/{e['media_repo_path']}") else None
         if src: sh(f"cp '{src}' /tmp/clip.mp4")
         else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o /tmp/clip.mp4 '{e['media_url']}'")
+        # source d'origine Twitch (1080p60 + version verticale) si le même moment existe en clip Twitch ; sinon on garde X
+        tw = {"found": False, "reason": "pas d'heure source"}
+        if e.get("source_time_utc") and not getattr(a, "no_twitch", False):
+            r = subprocess.run([sys.executable, f"{ROOT}/scripts/twitch_source.py", "upgrade", "--clip", "/tmp/clip.mp4",
+                                "--origin", e.get("origin", ""), "--time", e["source_time_utc"]],
+                               capture_output=True, text=True, timeout=900)
+            try: tw = json.loads(r.stdout.strip().splitlines()[-1])
+            except Exception: tw = {"found": False, "reason": (r.stderr or "sortie illisible")[-300:]}
         d = sh("ffprobe -v error -show_entries format=duration,size:stream=width,height -of default=nw=1 /tmp/clip.mp4").stdout.split()
-        out({"id": a.id, "clip": "/tmp/clip.mp4", "ffprobe": d, "origin": e["origin"], "titles": e["titles"]})
+        out({"id": a.id, "clip": "/tmp/clip.mp4", "ffprobe": d, "origin": e["origin"], "titles": e["titles"], "twitch": tw})
     else: out({"id": a.id, "type": "actu", "topic": e["topic"], "checks": e["checks"], "titles": e["titles"]})
 
 def next_number(p):
@@ -297,7 +306,7 @@ if __name__ == "__main__":
     for n in ("queries", "status"): sp.add_parser(n)
     s = sp.add_parser("slot"); s.add_argument("--hot", action="store_true")
     s = sp.add_parser("add"); s.add_argument("file", nargs="?")
-    s = sp.add_parser("take"); s.add_argument("id")
+    s = sp.add_parser("take"); s.add_argument("id"); s.add_argument("--no-twitch", action="store_true")
     s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel", "carrousel"]); s.add_argument("categorie")
     s = sp.add_parser("done"); s.add_argument("post")
     for k in ("ig", "tiktok", "zernio", "judge", "slot", "hot", "note"): s.add_argument(f"--{k}")

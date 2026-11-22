@@ -94,5 +94,19 @@
    "VGC_News",
    "gematsu"
   ]
- ]
+ ],
+ "twitch_channels": {
+  "_doc": "Compte X d'origine → chaîne Twitch (utilisé par scripts/twitch_source.py). Sans entrée, le login X en minuscules est essayé.",
+  "DomingoTV": "domingo",
+  "Domingo": "domingo",
+  "KametoTV": "kamet0",
+  "JLTomyTV": "jltomy",
+  "GotagaTV": "gotaga",
+  "xSqueeZie": "squeezie",
+  "ZeratoR": "zerator",
+  "AmineMaTueTV": "amine",
+  "Inoxtag": "inoxtag",
+  "WankilStudio": "wankilstudio",
+  "Michoucroute_": "michou"
+ }
 }
