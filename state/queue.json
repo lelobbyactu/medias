@@ -697,7 +697,7 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "Score 6 (traction faible, clip très court). Le « vice-champion » fait peut-être référence à Squeezie (3e au GP) : à vérifier dans les réponses au tweet avant le titre. MP4 non téléchargé (score < 7)."
   },
   {
@@ -1045,6 +1045,64 @@
     "Domingo crashe sa Porsche sur GTA 6 et la *physique* le laisse sans voix"
    ],
    "note": "Clip de 49 s (source 2560x1440 ; MP4 720p 1280x720 listé, 10 Mo, non téléchargé dans queue/). Vu en frames : Porsche rouge qui part en tête-à-queue contre des barrières, voiture retournée en pièces, voiture de police. 5e clip Domingo en file : ne passer qu'après les meilleurs et pas deux Domingo d'affilée. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 0-1."
+  },
+  {
+   "id": "c-20261122-0141-jltomy-gta6-orque-sauvetage",
+   "added_at_utc": "2026-11-22T01:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "JL Tomy libère une orque dans GTA 6 (subathon Miami) et ça vire au carnage : l'orque envoie Rosebud valser",
+   "topic_key": "jltomy-gta6-orque-sauvetage",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124302174754926994",
+   "primary_source": "https://x.com/JLTomyTV/status/2124302174754926994",
+   "source_time_utc": "2026-11-22T00:41:20Z",
+   "expires_at_utc": "2026-11-23T00:41:00Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124302069611819008/vid/avc1/1920x1080/UFok4vfLTM4qeXpn.mp4?tag=29",
+   "media_repo_path": "queue/c-20261122-0141-jltomy-gta6-orque-sauvetage.mp4",
+   "angle": "Événement aléatoire GTA 6 : sauver un animal tourne mal, orque qui explose/saute hors de l'eau, réaction de Jess et JL ; légende du streamer « jamais sauver les animaux dans ce jeu ». Durée 27 s, 16:9, sous-titres FR incrustés dans le jeu, face cam + overlay subathon.",
+   "titles": [
+    "Sauver une *orque* dans GTA 6 : la pire idée de JL Tomy",
+    "JL Tomy *libère* une orque dans GTA 6 et ça tourne au drame"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Regarder les 27 s avant montage pour confirmer la chute exacte (qui l'orque attaque) avant de figer le titre. Vidéo native, allowDownload true."
+  },
+  {
+   "id": "c-20261122-0135-jltomy-gta6-evenements-aleatoires",
+   "added_at_utc": "2026-11-22T01:15:00Z",
+   "found_by": "veille-fr",
+   "type": "clip",
+   "topic": "JL Tomy enchaîne les événements aléatoires de GTA 6 : livreur Sahara en feu, voiture en flammes, PNJ qui supplie d'être aidé",
+   "topic_key": "jltomy-gta6-evenements-aleatoires",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124300663173648498",
+   "primary_source": "https://x.com/JLTomyTV/status/2124300663173648498",
+   "source_time_utc": "2026-11-22T00:35:20Z",
+   "expires_at_utc": "2026-11-23T00:35:00Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124300542360817664/vid/avc1/1920x1080/s_3t1O6MvgQnKwdS.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Compilation de 60 s d'événements aléatoires dans les rues de Miami (« Stylé les événements aléatoires sur GTA VI hein »). Long, moins punchy que l'orque ; thème proche du clip Kameto déjà publié.",
+   "titles": [
+    "JL Tomy tombe sur LE *PNJ* de GTA 6 qui brûle vif",
+    "Dans GTA 6, JL Tomy a *3 événements* aléatoires d'affilée"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score 6, pas de MP4 en file (< 7). À couper à ~30 s utiles. Vérifier la chute avant titre."
   }
  ]
 }
