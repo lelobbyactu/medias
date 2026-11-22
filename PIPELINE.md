@@ -27,7 +27,7 @@ Expiration : actu 6 h après la source, clip 24 h (appliquée par `add`).
 - Pas d'élément décoratif hors DA, pas d'image IA, pas de voix IA, pas de musique ajoutée.
 
 ## Démarrage d'une exécution (créneau / publication immédiate)
-1. `add_repo` (owner lelobbyactu, repo medias, access push) puis UN clone : `git clone --depth 1 https://github.com/lelobbyactu/medias /home/claude/medias` (timeout 10 min ; 429 : attendre 5 s, réessayer une fois).
+1. `add_repo` (owner lelobbyactu, repo medias, access push) puis clone LÉGER (1 s, sans les anciens médias) : `git clone -q --depth 1 --filter=blob:none --sparse https://github.com/lelobbyactu/medias /home/claude/medias && cd /home/claude/medias && git sparse-checkout set --no-cone '/*' '!/posts/'` (429 : attendre 5 s, réessayer une fois). Ne jamais cloner sans ces options.
 2. `pip list | grep -i playwright || pip install -q --break-system-packages playwright` ; `google-chrome` doit exister, sinon `playwright install chromium`.
 3. `cd /home/claude/medias && python3 scripts/lobby.py slot` (créneau) : affiche réseau, plafond, espacement et les 3 meilleurs candidats. Une clé `stop` = répondre « RAS créneau HH:MM : <raison> » et s'arrêter.
 
