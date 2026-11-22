@@ -1,0 +1,98 @@
+{
+ "_doc": "Réglages du Lobby : seule source pour les comptes veillés, seuils, horaires, plafonds. Lue par scripts/lobby.py. Pour ajouter un compte : l'ajouter dans le bon groupe de query_groups (512 caractères max par requête, ~14 comptes).",
+ "cap_per_day": 7,
+ "min_gap_min": 45,
+ "slots": [
+  "08h",
+  "12h",
+  "18h",
+  "21h"
+ ],
+ "ttl_hours": {
+  "actu": 6,
+  "clip": 24
+ },
+ "hot_mentions": 5,
+ "queue_min_score": 5,
+ "judge_threshold": 7,
+ "apify_max_items": 300,
+ "query_groups": [
+  [
+   "LaTwitchance",
+   "TopDeTwitch",
+   "riyadinhoo_",
+   "youtube_replay1",
+   "Actu2Twitch",
+   "Kulturlesite_",
+   "ShadesFrance",
+   "DexertoFR",
+   "gaak_fr",
+   "FrenchRapUS",
+   "Platinside",
+   "Rockstar_Mag",
+   "RockstarNewsFRA",
+   "gta6hubfr"
+  ],
+  [
+   "FortniteFraActu",
+   "DexertoIntelFR",
+   "JVCom",
+   "Gamekult",
+   "xSqueeZie",
+   "Michoucroute_",
+   "Inoxtag",
+   "ZeratoR",
+   "KametoTV",
+   "AmineMaTueTV",
+   "GotagaTV",
+   "Domingo",
+   "DomingoTV",
+   "SamuelEtienne"
+  ],
+  [
+   "WankilStudio",
+   "byilhan_",
+   "TiboInShape",
+   "JLTomyTV",
+   "ZEVENTFR",
+   "RockstarGames",
+   "PlayStationFR",
+   "NintendoFrance",
+   "FortniteFR",
+   "XboxFR",
+   "UbisoftFR",
+   "VALORANTfr",
+   "KarmineCorp",
+   "Sheep_Esports"
+  ],
+  [
+   "Fortnite",
+   "CallofDuty",
+   "PlayStation",
+   "XBOX",
+   "NintendoAmerica",
+   "EASPORTSFC",
+   "Minecraft",
+   "Steam",
+   "EpicGames",
+   "thegameawards",
+   "geoffkeighley",
+   "SteamDB",
+   "DramaAlert"
+  ],
+  [
+   "_Tom_Henderson_",
+   "InsiderGamingIG",
+   "billbil_kun",
+   "NateTheHate2",
+   "Wario64",
+   "Pirat_Nation",
+   "HYPEX",
+   "ShiinaBR",
+   "zachbussey",
+   "Dexerto",
+   "VGC_News",
+   "gematsu"
+  ]
+ ]
+}

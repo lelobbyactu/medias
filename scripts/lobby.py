@@ -1,0 +1,305 @@
+#!/usr/bin/env python3
+"""Le Lobby : plomberie du pipeline (file d'attente, journal, ménage, git).
+Les tâches Claude ne font plus ces calculs à la main : elles appellent ces commandes.
+
+  lobby.py queries              -> requêtes Apify prêtes (fenêtre depuis la dernière veille)
+  lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
+  lobby.py slot                 -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
+  lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
+  lobby.py reserve <id> <reel|carrousel> <Categorie>  -> réserve le numéro de post, journal 'en_cours'
+  lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot leak|embrouille|5_comptes --note T]
+  lobby.py fail <post> <raison>  | lobby.py drop <id> <raison>
+  lobby.py push "<message>" <chemins...>  -> commit + push de fichiers (posts/…)
+  lobby.py status               -> compte rapide
+Variable LOBBY_NOPUSH=1 : n'écrit que localement (tests).
+"""
+import argparse, datetime as dt, json, os, re, subprocess, sys
+from zoneinfo import ZoneInfo
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+Q, P, M, C = (f"{ROOT}/state/queue.json", f"{ROOT}/state/published.json",
+              f"{ROOT}/state/meta.json", f"{ROOT}/config.json")
+PARIS = ZoneInfo("Europe/Paris")
+NOPUSH = bool(os.environ.get("LOBBY_NOPUSH"))
+CLOSED = ("publie", "expire", "ecarte")
+
+
+# ---------- utilitaires ----------
+def now(): return dt.datetime.now(dt.timezone.utc)
+def iso(d): return d.strftime("%Y-%m-%dT%H:%M:%SZ")
+def parse(s):
+    if not s: return None
+    d = dt.datetime.fromisoformat(s.replace("Z", "+00:00"))
+    return d if d.tzinfo else d.replace(tzinfo=dt.timezone.utc)
+def load(path, default=None):
+    try:
+        with open(path, encoding="utf-8") as f: return json.load(f)
+    except FileNotFoundError: return default
+def save(path, data):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1); f.write("\n")
+def out(obj): print(json.dumps(obj, ensure_ascii=False, indent=1))
+def cfg(): return load(C, {})
+def sh(cmd, check=True):
+    r = subprocess.run(cmd, shell=True, cwd=ROOT, capture_output=True, text=True)
+    if check and r.returncode: raise RuntimeError(f"{cmd}\n{r.stdout}{r.stderr}")
+    return r
+
+def network_ok():
+    r = sh('curl -s -m 15 -o /dev/null -w "%{http_code}" https://video.twimg.com/', check=False)
+    return r.stdout.strip() == "400"
+
+
+# ---------- git ----------
+GIT = 'git -c user.name="Le Lobby bot" -c user.email="lelobbyactu@gmail.com"'
+def sync():
+    if NOPUSH: return
+    sh("git fetch -q --depth 1 origin main"); sh("git reset -q --mixed origin/main")
+    sh("git checkout -q origin/main -- state")
+def commit_push(msg, paths):
+    if NOPUSH: return True
+    sh(f"git add -A -- {paths}")
+    if not sh("git diff --cached --quiet", check=False).returncode: return True
+    sh(f'{GIT} commit -q -m "{msg}"')
+    if NOPUSH: return True
+    return sh("git push -q origin HEAD:main", check=False).returncode == 0
+def transact(fn, msg, paths="state queue"):
+    """Rejoue fn sur l'état distant frais jusqu'à ce que le push passe (4 essais)."""
+    for _ in range(4):
+        sync()
+        res = fn()
+        if commit_push(msg, paths): return res
+    raise RuntimeError("push impossible après 4 essais")
+def push_paths(msg, paths):
+    for _ in range(4):
+        sync()
+        if commit_push(msg, paths): return True
+    raise RuntimeError("push impossible après 4 essais")
+
+
+# ---------- état ----------
+def qload():
+    q = load(Q, {"_doc": "", "candidates": []}); return q
+def pload(): return load(P, {"_doc": "", "posts": []})
+def post_time(p): return parse(p.get("published_at_utc") or p.get("reserved_at_utc"))
+
+def today_stats(posts):
+    mid = now().astimezone(PARIS).replace(hour=0, minute=0, second=0, microsecond=0)
+    live = [p for p in posts if p.get("status") in ("publie", "en_cours") and post_time(p) and post_time(p) >= mid]
+    last = max((post_time(p) for p in live), default=None)
+    return len(live), last
+
+def ménage(q, p):
+    t = now(); n_exp = n_del = 0
+    for e in q["candidates"]:
+        st = e.get("status")
+        if st == "en_attente" and parse(e.get("expires_at_utc")) and parse(e["expires_at_utc"]) < t:
+            e["status"] = "expire"; e["closed_at_utc"] = iso(t); n_exp += 1
+        elif st == "pris" and (t - parse(e.get("taken_at_utc") or e["added_at_utc"])).total_seconds() > 45 * 60:
+            e["status"] = "en_attente"
+    keep = []
+    for e in q["candidates"]:
+        if e.get("status") in CLOSED:
+            ref = parse(e.get("closed_at_utc") or e.get("expires_at_utc") or e.get("added_at_utc"))
+            if ref and (t - ref).total_seconds() > 48 * 3600:
+                mp = e.get("media_repo_path")
+                if mp and os.path.exists(f"{ROOT}/{mp}"): os.remove(f"{ROOT}/{mp}")
+                n_del += 1; continue
+        keep.append(e)
+    q["candidates"] = keep[-300:]
+    # mp4 montés des vieux posts (>3 j) : inutiles une fois publiés (les covers restent)
+    for post in p["posts"]:
+        pt = post_time(post)
+        if post.get("status") == "publie" and pt and (t - pt).days >= 3:
+            d = f"{ROOT}/posts/{post['id']}"
+            if os.path.isdir(d):
+                for f in os.listdir(d):
+                    if f.endswith((".mp4", "_fond.png")): os.remove(f"{d}/{f}")
+    p["posts"] = p["posts"][-200:]
+    return n_exp, n_del
+
+def covered(e, posts):
+    for x in posts:
+        if x.get("status") in ("publie", "en_cours"):
+            if e.get("source_tweet") and e["source_tweet"] == x.get("source_tweet"): return True
+            if e.get("id") and e["id"] == x.get("queue_id"): return True
+    return False
+
+
+# ---------- commandes ----------
+def cmd_queries(a):
+    c = cfg(); m = load(M, {}); t = now()
+    last = parse(m.get("last_veille_utc"))
+    start = max(t - dt.timedelta(hours=6), (last - dt.timedelta(minutes=5)) if last else t - dt.timedelta(hours=2, minutes=15))
+    since = start.strftime("%Y-%m-%d_%H:%M:%S_UTC")
+    qs = [f"({' OR '.join('from:' + x for x in g)}) since:{since} -filter:retweets" for g in c["query_groups"]]
+    out({"debut_utc": since, "maxItems": c.get("apify_max_items", 300), "searchTerms": qs})
+
+def cmd_add(a):
+    raw = open(a.file, encoding="utf-8").read() if a.file else sys.stdin.read()
+    items = json.loads(raw) if raw.strip() else []
+    if isinstance(items, dict): items = [items]
+    c = cfg(); res = {"ajoutes": [], "fusionnes": [], "ignores": [], "hot": []}
+
+    def apply():
+        res.update({"ajoutes": [], "fusionnes": [], "ignores": [], "hot": []})
+        q, p = qload(), pload(); t = now()
+        n_exp, n_del = ménage(q, p)
+        for it in items:
+            if not all(it.get(k) for k in ("type", "topic", "topic_key", "origin", "source_tweet", "source_time_utc", "score")):
+                res["ignores"].append((it.get("topic_key"), "champs manquants")); continue
+            if any(x.get("source_tweet") == it["source_tweet"] for x in p["posts"] if x.get("status") in ("publie", "en_cours")):
+                res["ignores"].append((it["topic_key"], "déjà publié")); continue
+            ex = next((e for e in q["candidates"] if e.get("topic_key") == it["topic_key"] or e.get("source_tweet") == it["source_tweet"]), None)
+            if ex:
+                if ex["status"] in CLOSED: res["ignores"].append((it["topic_key"], f"déjà {ex['status']}")); continue
+                ex["mentions"] = sorted(set(ex.get("mentions", [])) | set(it.get("mentions", [it["origin"]])))
+                ex["score"] = max(ex["score"], it["score"]); res["fusionnes"].append(ex["id"]); e = ex
+            else:
+                src = parse(it["source_time_utc"])
+                ttl = c["ttl_hours"]["clip" if it["type"] == "clip" else "actu"]
+                sid = re.sub(r"[^a-z0-9]+", "-", it["topic_key"].lower())[:40].strip("-")
+                e = {"id": f"c-{t.strftime('%Y%m%d-%H%M')}-{sid}", "added_at_utc": iso(t),
+                     "found_by": it.get("found_by", "veille"), "type": it["type"], "topic": it["topic"],
+                     "topic_key": it["topic_key"], "origin": it["origin"], "source_tweet": it["source_tweet"],
+                     "primary_source": it.get("primary_source", it["source_tweet"]), "source_time_utc": it["source_time_utc"],
+                     "expires_at_utc": iso(src + dt.timedelta(hours=ttl)), "fiabilite": it.get("fiabilite", "🟡"),
+                     "score": it["score"], "mentions": sorted(set(it.get("mentions", [it["origin"]]))),
+                     "media_url": it.get("media_url", ""), "media_repo_path": "", "angle": it.get("angle", ""),
+                     "titles": it.get("titles", []), "checks": it.get("checks", []),
+                     "photo_needed": it.get("photo_needed", ""), "status": "en_attente", "note": it.get("note", "")}
+                q["candidates"].append(e); res["ajoutes"].append(e["id"])
+            hr = it.get("hot_reason")
+            age_h = (t - parse(e["source_time_utc"])).total_seconds() / 3600
+            if not hr and len(e["mentions"]) >= c.get("hot_mentions", 5) and age_h < 6: hr = "5_comptes"
+            if hr and not e.get("hot") and e["status"] == "en_attente":
+                e["hot"] = True; e["hot_reason"] = hr; res["hot"].append({"id": e["id"], "reason": hr, "topic": e["topic"]})
+        m = load(M, {}); m["last_veille_utc"] = iso(t); save(M, m)
+        save(Q, q); save(P, p)
+        res["menage"] = {"expires": n_exp, "supprimes": n_del, "en_attente": sum(1 for e in q["candidates"] if e["status"] == "en_attente")}
+    transact(apply, f"queue: +{len(res['ajoutes'])} fusion {len(res['fusionnes'])}")
+    out(res)
+
+def rank(q, p):
+    c = cfg(); t = now(); posts = p["posts"]
+    last3 = [x for x in posts if x.get("status") in ("publie", "en_cours")][-3:]
+    clips_recent = sum(1 for x in last3 if x.get("type") == "reel") >= 2
+    cands = []
+    for e in q["candidates"]:
+        if e["status"] != "en_attente" or covered(e, posts) or e.get("photo_needed"): continue
+        age = (t - parse(e["source_time_utc"])).total_seconds() / 3600
+        bonus = 1 if age < 2 else (0 if age < 4 else -1)
+        cands.append((e["score"] + bonus, e, age))
+    cands.sort(key=lambda x: -x[0])
+    if clips_recent:
+        a = [x for x in cands if x[1]["type"] == "actu" and x[1]["score"] >= 7]
+        if a: cands = a[:1] + [x for x in cands if x is not a[0]]
+    return cands
+
+def cmd_slot(a):
+    c = cfg(); res = {"reseau_ok": network_ok()}
+    def apply():
+        q, p = qload(), pload(); ménage(q, p); save(Q, q); save(P, p)
+    transact(apply, "queue: ménage (créneau)")
+    q, p = qload(), pload(); n, last = today_stats(p["posts"]); t = now()
+    h = t.astimezone(PARIS).hour + t.astimezone(PARIS).minute / 60
+    slot = min(c["slots"], key=lambda s: abs(int(s[:2]) - h))
+    res.update({"heure_paris": t.astimezone(PARIS).strftime("%H:%M"), "creneau": slot, "posts_aujourdhui": n})
+    stop = None
+    if not res["reseau_ok"]: stop = "réseau bloqué (video.twimg.com)"
+    elif n >= c["cap_per_day"]: stop = f"plafond de {c['cap_per_day']} posts atteint"
+    elif last and (t - last).total_seconds() < c["min_gap_min"] * 60: stop = f"post publié il y a {int((t - last).total_seconds() / 60)} min"
+    busy = [x for x in p["posts"] if x.get("status") == "en_cours" and post_time(x) and (t - post_time(x)).total_seconds() < 1800]
+    if not stop and busy: stop = f"post en cours ({busy[0]['id']})"
+    if stop: res["stop"] = stop; out(res); return
+    cands = rank(q, p)
+    res["candidats"] = [{"id": e["id"], "type": e["type"], "score": e["score"], "score_fraicheur": round(s, 1),
+                         "age_h": round(age, 1), "topic": e["topic"], "origin": e["origin"], "fiabilite": e["fiabilite"],
+                         "mentions": len(e["mentions"]), "angle": e["angle"], "titles": e["titles"], "checks": e["checks"],
+                         "source_tweet": e["source_tweet"], "mp4_repo": e.get("media_repo_path") or None,
+                         "media_url": bool(e.get("media_url"))} for s, e, age in cands[:3]]
+    res["en_attente_total"] = len(cands)
+    out(res)
+
+def cmd_take(a):
+    e = {}
+    def apply():
+        q = qload(); x = next(i for i in q["candidates"] if i["id"] == a.id)
+        if x["status"] != "en_attente": raise SystemExit(f"{a.id} est {x['status']}")
+        x["status"] = "pris"; x["taken_at_utc"] = iso(now()); e.update(x); save(Q, q)
+    transact(apply, f"queue: pris {a.id}")
+    if e["type"] == "clip":
+        src = f"{ROOT}/{e['media_repo_path']}" if e.get("media_repo_path") and os.path.exists(f"{ROOT}/{e['media_repo_path']}") else None
+        if src: sh(f"cp '{src}' /tmp/clip.mp4")
+        else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o /tmp/clip.mp4 '{e['media_url']}'")
+        d = sh("ffprobe -v error -show_entries format=duration,size:stream=width,height -of default=nw=1 /tmp/clip.mp4").stdout.split()
+        out({"id": a.id, "clip": "/tmp/clip.mp4", "ffprobe": d, "origin": e["origin"], "titles": e["titles"]})
+    else: out({"id": a.id, "type": "actu", "topic": e["topic"], "checks": e["checks"], "titles": e["titles"]})
+
+def next_number(p):
+    nums = [int(m.group(1)) for x in p["posts"] if (m := re.match(r"(\d{4})-", x["id"]))]
+    if os.path.isdir(f"{ROOT}/posts"):
+        nums += [int(m.group(1)) for d in os.listdir(f"{ROOT}/posts") if (m := re.match(r"(\d{4})-", d))]
+    return max(nums, default=0) + 1
+
+def cmd_reserve(a):
+    name = {}
+    def apply():
+        q, p = qload(), pload(); e = next((i for i in q["candidates"] if i["id"] == a.id), None)
+        nm = f"{next_number(p):04d}-{now().astimezone(PARIS).strftime('%d_%m_%Y')}-{a.categorie}"
+        p["posts"].append({"id": nm, "status": "en_cours", "type": a.type, "topic": (e or {}).get("topic", a.id),
+                           "origin": (e or {}).get("origin", ""), "source_tweet": (e or {}).get("source_tweet", ""),
+                           "queue_id": a.id, "reserved_at_utc": iso(now())})
+        if e: e["post_id"] = nm
+        save(P, p); save(Q, q); name["n"] = nm
+    transact(apply, f"journal: réserve {a.id}")
+    out({"post": name["n"]})
+
+def cmd_done(a):
+    def apply():
+        q, p = qload(), pload(); x = next(i for i in p["posts"] if i["id"] == a.post)
+        x.update({"status": "publie", "published_at_utc": iso(now())})
+        for k, v in (("instagram", a.ig), ("tiktok", a.tiktok), ("zernio_post_id", a.zernio), ("judge_score", a.judge), ("slot", a.slot), ("note", a.note)):
+            if v: x[k] = v
+        if a.hot: x["hot"] = True; x["hot_reason"] = a.hot
+        e = next((i for i in q["candidates"] if i["id"] == x.get("queue_id")), None)
+        if e: e["status"] = "publie"; e["post_id"] = a.post; e["closed_at_utc"] = iso(now())
+        save(P, p); save(Q, q)
+    transact(apply, f"journal: publié {a.post}"); out({"ok": a.post})
+
+def cmd_fail(a):
+    def apply():
+        q, p = qload(), pload(); x = next(i for i in p["posts"] if i["id"] == a.post)
+        x["status"] = "echec"; x["note"] = a.raison
+        e = next((i for i in q["candidates"] if i["id"] == x.get("queue_id")), None)
+        if e and e["status"] == "pris": e["status"] = "en_attente"
+        save(P, p); save(Q, q)
+    transact(apply, f"journal: échec {a.post}"); out({"ok": a.post})
+
+def cmd_drop(a):
+    def apply():
+        q = qload(); e = next(i for i in q["candidates"] if i["id"] == a.id)
+        e["status"] = "ecarte"; e["note"] = a.raison; e["closed_at_utc"] = iso(now()); save(Q, q)
+    transact(apply, f"queue: écarté {a.id}"); out({"ok": a.id})
+
+def cmd_push(a):
+    push_paths(a.message, " ".join(a.paths)); out({"ok": True})
+
+def cmd_status(a):
+    q, p = qload(), pload(); n, last = today_stats(p["posts"])
+    out({"file": {s: sum(1 for e in q["candidates"] if e["status"] == s) for s in ("en_attente", "pris", "publie", "expire", "ecarte")},
+         "posts_aujourdhui": n, "dernier_post": iso(last) if last else None})
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
+    for n in ("queries", "slot", "status"): sp.add_parser(n)
+    s = sp.add_parser("add"); s.add_argument("file", nargs="?")
+    s = sp.add_parser("take"); s.add_argument("id")
+    s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel", "carrousel"]); s.add_argument("categorie")
+    s = sp.add_parser("done"); s.add_argument("post")
+    for k in ("ig", "tiktok", "zernio", "judge", "slot", "hot", "note"): s.add_argument(f"--{k}")
+    s = sp.add_parser("fail"); s.add_argument("post"); s.add_argument("raison")
+    s = sp.add_parser("drop"); s.add_argument("id"); s.add_argument("raison")
+    s = sp.add_parser("push"); s.add_argument("message"); s.add_argument("paths", nargs="+")
+    a = ap.parse_args(); globals()["cmd_" + a.cmd](a)
