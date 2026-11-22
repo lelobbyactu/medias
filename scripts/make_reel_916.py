@@ -17,7 +17,7 @@ Pas de crédit à l'écran : il est dans la légende.
 Usage :
   python3 scripts/make_reel_916.py --video /tmp/clip.mp4 --post <nom> --title "Ligne 1|Ligne 2 *mot*" \
       [--start S --end E] [--channel kamet0] [--cam x,y,w,h | --no-cam] [--game-x X] [--save-layout] [--check-only]
-Sorties dans posts/<nom>/ : <nom>.mp4, <nom>_cover.jpg, <nom>_fond.png, <nom>_planche.jpg (planche à faire relire : docs/juge.md §6bis).
+Sous-titres automatiques (scripts/subtitles.py) dans la bande du milieu, sauf --no-subs.\nSorties dans posts/<nom>/ : <nom>.mp4, <nom>_cover.jpg, <nom>_fond.png, <nom>_soustitres.ass, <nom>_planche.jpg (planche à faire relire : docs/juge.md §6bis).
 Refus (« ok": false, aucune vidéo) → secours `make_reel.py` (Instagram seul) : cinématique (bandes noires > 30 %), pas de place
 pour un cadre 4:3 hors webcam, gameplay trop zoomé, passage > 90 s.
 « qr": true = QR code vu dans l'image (souvent un sponsor d'overlay) : à traiter comme un sponsor (pas de TikTok).
@@ -316,6 +316,8 @@ def main():
     ap.add_argument("--game-x", type=int, default=None, help="position x du cadre 4:3 : correction manuelle")
     ap.add_argument("--save-layout", action="store_true", help="mémorise la webcam dans config.json (après relecture OK)")
     ap.add_argument("--check-only", action="store_true", help="analyse + planche, sans montage")
+    ap.add_argument("--no-subs", action="store_true", help="sans sous-titres")
+    ap.add_argument("--subs-json", default=None, help="mots corrigés (<nom>_soustitres.json) : pas de nouvelle transcription")
     ap.add_argument("--out-dir", default=None)
     a = ap.parse_args()
 
@@ -422,6 +424,21 @@ def main():
     png = out_dir / f"{a.post}_fond.png"
     rep["titre_px"] = render_overlay(a.title, png, logo)
     mp4 = out_dir / f"{a.post}.mp4"
+    subs = ""
+    if not a.no_subs:   # sous-titres (scripts/subtitles.py) dans la bande noire du milieu
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import subtitles
+        words = subtitles.load_words(a.subs_json) if a.subs_json else subtitles.transcribe(a.video, start, length)
+        if words:
+            if not a.subs_json:
+                subtitles.save_words(words, out_dir / f"{a.post}_soustitres.json")
+            rep["mots_incertains"] = [w[2] for w in words if w[3] < 0.5 and len(w[2]) > 3]
+            ass = out_dir / f"{a.post}_soustitres.ass"
+            blocks = subtitles.write_ass(words, ass, SUB_Y + SUB_H // 2 if cam else NOCAM_GAME_Y + GAME_H + 60, length)
+            subs = f",subtitles={ass}:fontsdir={FONTS}"
+            rep["sous_titres"] = " | ".join(" ".join(subtitles.censor(x[2]) for x in b) for b in blocks)
+        else:
+            rep["sous_titres"] = "aucune parole détectée"
     g = [int(round(v * s)) // 2 * 2 for v in win]
     ofps = 60 if fps > 45 else 30
     if cam:
@@ -430,11 +447,11 @@ def main():
               f"[a]crop={c[2]}:{c[3]}:{c[0]}:{c[1]},scale={cam_box[2]}:{cam_box[3]}:flags=lanczos,unsharp=5:5:0.5[c];"
               f"[b]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
               f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][c]overlay={cam_box[0]}:{cam_box[1]}:shortest=1[t1];"
-              f"[t1][g]overlay=0:{game_y}:shortest=1[t2];[t2][0:v]overlay=0:0:shortest=1,fps={ofps},format=yuv420p[o]")
+              f"[t1][g]overlay=0:{game_y}:shortest=1[t2];[t2][0:v]overlay=0:0:shortest=1{subs},fps={ofps},format=yuv420p[o]")
     else:
         fc = (f"[1:v]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
               f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][g]overlay=0:{game_y}:shortest=1[t2];"
-              f"[t2][0:v]overlay=0:0:shortest=1,fps={ofps},format=yuv420p[o]")
+              f"[t2][0:v]overlay=0:0:shortest=1{subs},fps={ofps},format=yuv420p[o]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(ofps), "-i", str(png),
                     "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", a.video, "-filter_complex", fc,
                     "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-profile:v", "high",
