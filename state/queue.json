@@ -38,39 +38,6 @@
    "post_id": "0010-20_11_2026-Actu"
   },
   {
-   "id": "c-20261120-1459-kc-reapered",
-   "added_at_utc": "2026-11-20T14:20:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "Karmine Corp se sépare du head coach LoL Reapered (finale EWC, MSI et Worlds sous sa direction)",
-   "topic_key": "kc-reapered-depart",
-   "origin": "KarmineCorp",
-   "source_tweet": "https://x.com/KarmineCorp/status/2123763405337358506",
-   "primary_source": "@KarmineCorp (communiqué officiel)",
-   "source_time_utc": "2026-11-20T13:00:28Z",
-   "expires_at_utc": "2026-11-20T19:00:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "KarmineCorp",
-    "Sheep_Esports",
-    "KametoTV"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Le coach coréen du meilleur bilan de l'histoire de KC s'en va : le public KC réagit fort.",
-   "titles": [
-    "La Karmine Corp *vire* son coach Reapered",
-    "Reapered *quitte* KC après la saison de l'histoire"
-   ],
-   "checks": [
-    "https://x.com/Sheep_Esports/status/2123766739590914174"
-   ],
-   "photo_needed": "reapered",
-   "status": "expire",
-   "note": "Pas de photo de Reapered dans assets/photos et pas de key art KC : non publiable en carrousel tant que ça manque. Recouper avec 2 médias esport (Sheep, Dot Esports, Dexerto) avant montage."
-  },
-  {
    "id": "c-20261120-1411-gotaga-lucia-couples",
    "added_at_utc": "2026-11-20T14:20:00Z",
    "found_by": "veille-fr",
@@ -1000,7 +967,7 @@
    "media_repo_path": "",
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "id": "c-20261121-1920-jltomy-gta6-lucia-jason-gros",
    "topic": "Subathon Miami : JL Tomy découvre Lucia (et Jason) transformés par Wati et Fake dans GTA 6 (« le clip de l'année »)",
    "topic_key": "jltomy-gta6-lucia-jason-gros-wati-fake",
@@ -1020,7 +987,8 @@
     "JL Tomy ouvre GTA 6 et découvre ce que *Wati et Fake* ont fait à Lucia",
     "Wati et Fake ont *saboté* la partie GTA 6 de JL Tomy, sa réaction est folle"
    ],
-   "note": "Clip de 38,8 s, 1080p 16:9, 23 Mo, non téléchargé dans queue/ (score 6). Vu en frames : Lucia en débardeur/culotte dans sa chambre rose puis le salon, cam de JL Tomy qui rit, sous-titres incrustés. ATTENTION : tenue légère (haut blanc + culotte) = limite pour l'exclusion nudité §4, à trancher au visionnage ; l'effet « énormément gros » n'est pas clairement visible dans les frames, ne pas le promettre dans le titre sans l'avoir vu. Audio non écouté. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 1 − risque tenue."
+   "note": "Clip de 38,8 s, 1080p 16:9, 23 Mo, non téléchargé dans queue/ (score 6). Vu en frames : Lucia en débardeur/culotte dans sa chambre rose puis le salon, cam de JL Tomy qui rit, sous-titres incrustés. ATTENTION : tenue légère (haut blanc + culotte) = limite pour l'exclusion nudité §4, à trancher au visionnage ; l'effet « énormément gros » n'est pas clairement visible dans les frames, ne pas le promettre dans le titre sans l'avoir vu. Audio non écouté. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 1 − risque tenue.",
+   "closed_at_utc": "2026-11-22T19:16:23Z"
   },
   {
    "added_at_utc": "2026-11-21T19:14:33Z",
@@ -1635,6 +1603,261 @@
    "titles": [
     "« On a trouvé pire braqueur que PA » : le clip de Domingo",
     "Domingo trouve pire braqueur que PA : le moment qui fait rire"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-fortnite-peely-design-abandonne",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Premier design abandonné de Peely dans Fortnite repéré",
+   "topic_key": "fortnite-peely-design-abandonne",
+   "origin": "payattntion (repéré par HYPEX)",
+   "source_tweet": "https://x.com/HYPEX/status/2124572774937272416",
+   "primary_source": "https://x.com/HYPEX/status/2124572774937272416",
+   "source_time_utc": "2026-11-22T18:36:36Z",
+   "expires_at_utc": "2026-11-23T00:36:36Z",
+   "fiabilite": "🟠",
+   "score": 7,
+   "mentions": [
+    "HYPEX"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un design jamais sorti d'un personnage iconique de Fortnite : curiosité forte pour la communauté.",
+   "titles": [
+    "Voici le premier design abandonné de Peely dans Fortnite",
+    "Fortnite : le Peely qui n'a jamais été utilisé refait surface"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "leak"
+  },
+  {
+   "id": "c-20261122-1916-gta6-matt-green-hommage-mere",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Un développeur de GTA 6 rend hommage à sa mère dans le jeu",
+   "topic_key": "gta6-matt-green-hommage-mere",
+   "origin": "Matt Green (développeur Rockstar)",
+   "source_tweet": "https://x.com/ShadesFrance/status/2124553331523592249",
+   "primary_source": "https://x.com/ShadesFrance/status/2124553331523592249",
+   "source_time_utc": "2026-11-22T17:19:21Z",
+   "expires_at_utc": "2026-11-22T23:19:21Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "ShadesFrance"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Histoire personnelle et émouvante qui relie GTA 6 à Vice City : très partageable.",
+   "titles": [
+    "Un développeur de GTA 6 glisse un hommage à sa mère dans le jeu",
+    "GTA 6 : l'hommage émouvant d'un développeur à sa mère disparue"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-gta6-squeezie-systeme-police",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Squeezie critique le nouveau système de police de GTA 6",
+   "topic_key": "gta6-squeezie-systeme-police",
+   "origin": "xSqueeZie (Squeezie)",
+   "source_tweet": "https://x.com/LaTwitchance/status/2124571700704461179",
+   "primary_source": "https://x.com/LaTwitchance/status/2124571700704461179",
+   "source_time_utc": "2026-11-22T18:32:20Z",
+   "expires_at_utc": "2026-11-23T18:32:20Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "LaTwitchance"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124571687140077568/vid/avc1/576x1024/7qhjooG4Sn_2THlU.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un créateur très suivi réagit en direct à une mécanique du jeu : ça parle à tout le monde.",
+   "titles": [
+    "Squeezie trouve le nouveau système de police de GTA 6 anxiogène",
+    "GTA 6 : Squeezie n'aime pas le nouveau système de police"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-twitch-kameto-nouveau-concept",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Kameto repère un nouveau concept sur Twitch",
+   "topic_key": "twitch-kameto-nouveau-concept",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2124555334647705842",
+   "primary_source": "https://x.com/KametoTV/status/2124555334647705842",
+   "source_time_utc": "2026-11-22T17:27:18Z",
+   "expires_at_utc": "2026-11-23T17:27:18Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [],
+   "media_url": "https://video.twimg.com/amplify_video/2124555217442066432/vid/avc1/1280x720/7gpe-V1suAJM2Uh1.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Un gros streamer FR qui tease un format inédit sur Twitch : curiosité immédiate.",
+   "titles": [
+    "Kameto repère un nouveau concept sur Twitch",
+    "Un nouveau concept Twitch repéré par Kameto"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-gta6-tesla-piege-systeme-securite",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Un joueur de GTA 6 se fait piéger par le système de sécurité d'une Tesla",
+   "topic_key": "gta6-tesla-piege-systeme-securite",
+   "origin": "ayeejuju (juju)",
+   "source_tweet": "https://x.com/ayeejuju/status/2124549750548770823",
+   "primary_source": "https://x.com/ayeejuju/status/2124549750548770823",
+   "source_time_utc": "2026-11-22T19:08:18Z",
+   "expires_at_utc": "2026-11-23T19:08:18Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "LaTwitchance"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124549709188710400/vid/avc1/772x604/YrhIPaY4t6ns9yHE.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un vol de voiture qui tourne mal dans GTA 6 : scène courte, drôle et lisible d'un coup d'œil.",
+   "titles": [
+    "Il vole une Tesla dans GTA 6 et se fait piéger par la voiture",
+    "GTA 6 : la Tesla qui enferme son voleur"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-gta6-evolution-long-terme-carte",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 pourrait évoluer pendant des années avec une carte qui s'agrandit",
+   "topic_key": "gta6-evolution-long-terme-carte",
+   "origin": "source non identifiée (« plusieurs informations », relayé par FrenchRapUS)",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2124563341188444540",
+   "primary_source": "https://x.com/FrenchRapUS/status/2124563341188444540",
+   "source_time_utc": "2026-11-22T17:59:07Z",
+   "expires_at_utc": "2026-11-22T23:59:07Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Rumeur sur le contenu après la sortie : un sujet qui fait discuter sur la carte.",
+   "titles": [
+    "GTA 6 : Rockstar prévoirait d'agrandir la carte au fil des années",
+    "Rockstar pourrait faire évoluer GTA 6 pendant des années"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-gta6-relations-jason-lucia-conception",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Rockstar détaille la conception des relations entre Jason et Lucia dans GTA 6",
+   "topic_key": "gta6-relations-jason-lucia-conception",
+   "origin": "Rockstar (Mark Tennant, VP animation)",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124578913191911703",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124578913191911703",
+   "source_time_utc": "2026-11-22T18:25:33Z",
+   "expires_at_utc": "2026-11-23T00:25:33Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "InsiderGamingIG"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Déclaration d'un dirigeant de Rockstar sur la conception des relations : sujet qui fait réagir.",
+   "titles": [
+    "Rockstar détaille la conception des relations de Jason et Lucia dans GTA 6",
+    "GTA 6 : comment Rockstar a pensé la relation entre Jason et Lucia"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-cod-activision-brevet-pnj-chat-vocal",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Activision brevète des PNJ qui apprennent à insulter à partir du chat vocal",
+   "topic_key": "cod-activision-brevet-pnj-chat-vocal",
+   "origin": "Activision (brevet)",
+   "source_tweet": "https://x.com/Dexerto/status/2124578665581469944",
+   "primary_source": "https://x.com/Dexerto/status/2124578665581469944",
+   "source_time_utc": "2026-11-22T19:00:01Z",
+   "expires_at_utc": "2026-11-23T01:00:01Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Brevet original autour de CoD et de l'IA dans les jeux : idée simple qui intrigue.",
+   "titles": [
+    "Activision brevète des PNJ qui apprennent à insulter les joueurs",
+    "CoD : un brevet Activision pour des PNJ qui apprennent à trash-talk"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261122-1916-ubisoft-ac-jade-toujours-en-dev",
+   "added_at_utc": "2026-11-22T19:16:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Ubisoft confirme qu'Assassin's Creed Jade est toujours en développement",
+   "topic_key": "ubisoft-ac-jade-toujours-en-dev",
+   "origin": "Ubisoft (CFO)",
+   "source_tweet": "https://x.com/InsiderGamingIG/status/2124563567055880315",
+   "primary_source": "https://x.com/InsiderGamingIG/status/2124563567055880315",
+   "source_time_utc": "2026-11-22T18:00:01Z",
+   "expires_at_utc": "2026-11-23T00:00:01Z",
+   "fiabilite": "🟢",
+   "score": 5,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Confirmation officielle sur une franchise connue : info simple mais attendue.",
+   "titles": [
+    "Ubisoft confirme qu'Assassin's Creed Jade est toujours en développement",
+    "AC Jade : Ubisoft confirme que le jeu avance toujours"
    ],
    "checks": [],
    "photo_needed": "",
