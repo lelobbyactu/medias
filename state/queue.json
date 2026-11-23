@@ -2,38 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261120-2141-kameto-gta6-pnj-police",
-   "added_at_utc": "2026-11-20T22:14:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Kameto en fuite face à la police sur GTA 6 : un PNJ vient vraiment l'aider quand il lui demande",
-   "topic_key": "kameto-gta6-pnj-aide-police",
-   "origin": "KametoTV",
-   "source_tweet": "https://x.com/KametoTV/status/2123894402032742608",
-   "primary_source": "@KametoTV (clip de son live)",
-   "source_time_utc": "2026-11-20T21:41:00Z",
-   "expires_at_utc": "2026-11-21T21:41:00Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "KametoTV",
-    "Actu2Twitch"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123894147085930496/vid/avc1/1280x720/BZz_p01pb9H7G8YJ.mp4?tag=14",
-   "media_repo_path": "queue/c-20261120-2141-kameto-gta6-pnj-police.mp4",
-   "angle": "Top streamer FR + GTA 6 + police : en pleine intervention, un PNJ répond vraiment à sa demande d'aide et lui facilite la fuite (44 s, 228 likes en 30 min, 16:9 avec facecam).",
-   "titles": [
-    "Kameto demande de l'aide à un *PNJ*|et il vient vraiment l'aider",
-    "Kameto échappe à la *police*|grâce à un PNJ qui passe par hasard"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Même streamer que le 0009 (publié 11h Paris) : à espacer si un autre clip Kameto est sorti récemment. Pas de réponses récupérées (scraper vide).",
-   "taken_at_utc": "2026-11-21T06:55:00Z",
-   "post_id": "0015-21_11_2026-Clips"
-  },
-  {
    "id": "c-20261121-0044-gotaga-gta6-vice-champion",
    "added_at_utc": "2026-11-21T00:18:00Z",
    "found_by": "veille-fr",
@@ -92,39 +60,6 @@
    "note": "juge 5/10 : titre plat, pas de twist visible",
    "taken_at_utc": "2026-11-22T10:52:13Z",
    "closed_at_utc": "2026-11-22T10:52:52Z"
-  },
-  {
-   "id": "c-20261121-1601-gta6-zelda-guerre-notes",
-   "added_at_utc": "2026-11-21T17:15:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA 6 vs Zelda Ocarina of Time : guerre de notes sur Metacritic (des fans mettent 0/10 à l'autre jeu pour défendre leur favori, les deux à 99)",
-   "topic_key": "gta6-zelda-guerre-metacritic",
-   "origin": "DexertoFR (relais)",
-   "source_tweet": "https://x.com/DexertoFR/status/2124171326101271036",
-   "primary_source": "Metacritic (pages GTA VI et Ocarina of Time, à relire avant montage)",
-   "source_time_utc": "2026-11-21T16:01:23Z",
-   "expires_at_utc": "2026-11-21T22:01:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "DexertoFR"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Le 99 de GTA 6, identique à celui d'Ocarina of Time, déclenche une bataille de 0/10 entre fans des deux jeux.",
-   "titles": [
-    "GTA 6 et Zelda se *tirent dessus* sur Metacritic",
-    "GTA 6 vs Zelda : la guerre des *0/10*"
-   ],
-   "checks": [
-    "https://www.gfinityesports.com/article/gta-6-vs-ocarina-of-time-whos-winning-the-metacritic-war",
-    "https://www.dexerto.com/gta/gta-6-is-the-joint-best-reviewed-game-of-the-all-time-3429300/",
-    "https://mynintendonews.com/2026/11/18/gta-vi-and-zelda-ocarina-of-time-n64-are-tied-at-99-100-on-metacritic/"
-   ],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Proche du 0014 (review bombing user score GTA 6) : ne passer que si un chiffre Metacritic frais (notes joueurs Zelda vs GTA) apporte du neuf ; relire les pages Metacritic au créneau. Seul DexertoFR a relayé (pas de tweet de l'article lu en entier)."
   },
   {
    "id": "c-20261121-1641-gotaga-gta6-poursuite-lampadaire",
@@ -2071,10 +2006,11 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "",
    "hot": true,
-   "hot_reason": "leak"
+   "hot_reason": "leak",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-rockstar-jltomy-festival-travis-scott-20",
@@ -2103,8 +2039,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-gta6-jason-personnalite-rockstar",
@@ -2132,8 +2069,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-fortnite-scott-pilgrim-skins-teaser",
@@ -2161,8 +2099,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-fortnite-nocif-izzi-quittent-orchid-2026",
@@ -2190,8 +2129,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-xbox-multijoueur-payant-2026",
@@ -2219,8 +2159,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-karmine-corp-line-up-2027",
@@ -2248,8 +2189,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-kameto-rage-ripp-tiktok-champions",
@@ -2540,6 +2482,201 @@
    "titles": [
     "JLMiami : Anis revient et Samuel part en vrille",
     "Samuel perd le contrôle dans JLMiami, le retour d'Anis fait réagir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-kameto-slot-lec-25m",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Kameto, Walid et BigYouss choqués par le prix d'un slot en LEC",
+   "topic_key": "kameto-slot-lec-25m",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124990523966464481",
+   "primary_source": "https://x.com/riyadinhoo_/status/2124990523966464481",
+   "source_time_utc": "2026-11-23T22:16:35Z",
+   "expires_at_utc": "2026-11-24T22:16:35Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "riyadinhoo_"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124990372459741184/vid/avc1/1920x1080/QODU02OTzDWGXqX8.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Une réaction en trio sur un chiffre choc (25 M$ pour un slot LEC) : des noms connus, une réaction spontanée très lisible.",
+   "titles": [
+    "Walid et BigYouss sous le choc : le prix d'un slot LEC",
+    "25 millions de dollars pour un slot LEC : la réaction de Walid et BigYouss"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-kameto-frites-milkshake",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Kameto et le combo frites-milkshake",
+   "topic_key": "kameto-frites-milkshake",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2124980041981272271",
+   "primary_source": "https://x.com/KametoTV/status/2124980041981272271",
+   "source_time_utc": "2026-11-23T21:34:56Z",
+   "expires_at_utc": "2026-11-24T21:34:56Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [],
+   "media_url": "https://video.twimg.com/amplify_video/2124980017662664704/vid/avc1/1280x720/WoR2YV3To-qEVDeG.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Un test de combo improbable filmé en live par un streamer connu, avec une réaction franche et une référence à une série culte.",
+   "titles": [
+    "Kameto teste le combo frites-milkshake",
+    "Le combo frites-milkshake de Kameto : il fallait oser"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-witcher-4-ciri-personnalite",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "The Witcher 4 : Ciri aura une personnalité très différente de Geralt",
+   "topic_key": "witcher-4-ciri-personnalite",
+   "origin": "CD Projekt Red",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124987857806794765",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124987857806794765",
+   "source_time_utc": "2026-11-23T22:06:00Z",
+   "expires_at_utc": "2026-11-24T04:06:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "Pirat_Nation"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Déclaration du VP Story de CD Projekt sur le personnage de Ciri, une licence très suivie et un sujet d'actu pour le public jeu vidéo.",
+   "titles": [
+    "The Witcher 4 : Ciri ne sera pas une copie de Geralt",
+    "Ciri dans The Witcher 4 : une personnalité bien différente"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-gta6-alinea-4-milliards",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 aurait déjà rapporté 4 milliards de dollars selon Alinea Analytics",
+   "topic_key": "gta6-alinea-4-milliards",
+   "origin": "Alinea Analytics",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124997174706745713",
+   "primary_source": "https://x.com/riyadinhoo_/status/2124997174706745713",
+   "source_time_utc": "2026-11-23T22:43:01Z",
+   "expires_at_utc": "2026-11-24T04:43:01Z",
+   "fiabilite": "🟠",
+   "score": 7,
+   "mentions": [],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Estimation de ventes et de revenus de GTA 6 par un cabinet d'analyse : sujet très recherché, chiffre spectaculaire mais non officiel.",
+   "titles": [
+    "GTA 6 : 4 milliards de dollars de revenus selon Alinea Analytics",
+    "GTA 6 aurait déjà vendu 45 millions d'exemplaires"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-fortnite-fin-chapitre-7",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : fin du Chapitre 7 et événement de fin ce soir",
+   "topic_key": "fortnite-fin-chapitre-7",
+   "origin": "Fortnite",
+   "source_tweet": "https://x.com/HYPEX/status/2125002499249590685",
+   "primary_source": "https://x.com/HYPEX/status/2125002499249590685",
+   "source_time_utc": "2026-11-23T23:04:11Z",
+   "expires_at_utc": "2026-11-24T05:04:11Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "ShiinaBR"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "La dernière mise à jour du Chapitre 7 arrive ce soir avec un event de fin : une étape de saison qui intéresse la communauté FR.",
+   "titles": [
+    "Fortnite tourne la page du Chapitre 7 ce soir",
+    "Fortnite : la dernière mise à jour du Chapitre 7 arrive ce soir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-gotaga-objectif-1m-lucia",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Gotaga lance un objectif de 1 M$ ce soir pour Lucia",
+   "topic_key": "gotaga-objectif-1m-lucia",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2124977773693276292",
+   "primary_source": "https://x.com/GotagaTV/status/2124977773693276292",
+   "source_time_utc": "2026-11-23T21:25:56Z",
+   "expires_at_utc": "2026-11-24T03:25:56Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Événement caritatif annoncé par un streamer FR très suivi, avec un objectif chiffré précis pour la soirée.",
+   "titles": [
+    "Gotaga vise 1 M$ ce soir pour Lucia",
+    "Gotaga lance une collecte à 1 M$ pour Lucia"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2321-antoinedaniel-quoi-clip",
+   "added_at_utc": "2026-11-23T23:21:55Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "topic": "Antoine Daniel lâche un « QUOI ?! » en plein live",
+   "topic_key": "antoinedaniel-quoi-clip",
+   "origin": "antoinedaniel",
+   "source_tweet": "https://www.twitch.tv/antoinedaniel/clip/CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "primary_source": "https://www.twitch.tv/antoinedaniel/clip/CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "source_time_utc": "2026-11-23T20:58:03Z",
+   "expires_at_utc": "2026-11-24T20:58:03Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [],
+   "media_url": "https://www.twitch.tv/antoinedaniel/clip/CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "media_repo_path": "",
+   "angle": "Clip Twitch d'un streamer connu avec une traction rapide (plus de 1 000 vues par heure) ; le titre est vague, le contenu reste à vérifier au montage.",
+   "titles": [
+    "Antoine Daniel : un « QUOI ?! » qui fait réagir",
+    "Antoine Daniel face à un moment qui part en vrille"
    ],
    "checks": [],
    "photo_needed": "",
