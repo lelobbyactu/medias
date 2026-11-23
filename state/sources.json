@@ -128,15 +128,30 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-23T09:54:43Z"
+  },
+  {
+   "id": "steam-top-236390-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T11:10:49Z",
+   "title": "War Thunder entre dans le top 25 Steam (45 582 joueurs connectés)",
+   "url": "https://steamdb.info/app/236390/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 23,
+    "players": 45582,
+    "peak_24h": 86674
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T11:10:49Z"
   }
  ],
- "updated_utc": "2026-11-23T09:54:43Z",
+ "updated_utc": "2026-11-23T11:10:49Z",
  "report": {
-  "twitch": "40 chaînes suivies, 95 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 38 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T06:26:17Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "1 tendances liées"
+  "trends": "0 tendances liées"
  }
 }
