@@ -41,15 +41,30 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-23T03:27:03Z"
+  },
+  {
+   "id": "steam-top-4348910-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T04:48:15Z",
+   "title": "Probably Stolen - Cyberpunk Shopkeeper Sim entre dans le top 25 Steam (45 516 joueurs connectés)",
+   "url": "https://steamdb.info/app/4348910/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 23,
+    "players": 45516,
+    "peak_24h": 92060
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T04:48:16Z"
   }
  ],
- "updated_utc": "2026-11-23T03:27:03Z",
+ "updated_utc": "2026-11-23T04:48:16Z",
  "report": {
   "twitch": "ignoré : secrets TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET absents",
   "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
   "reddit": "ignoré : secret APIFY_TOKEN absent",
-  "steam": "top 25 lu (1er passage : mémorisation seulement)",
+  "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "1 tendances liées"
+  "trends": "0 tendances liées"
  }
 }
