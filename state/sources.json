@@ -198,13 +198,13 @@
    "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
    "channel": "ZeratoR",
    "metrics": {
-    "views": 15310,
-    "views_per_h": 4864,
-    "age_h": 3.1
+    "views": 29990,
+    "views_per_h": 6731,
+    "age_h": 4.5
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T20:09:01Z"
+   "updated_utc": "2026-11-23T21:27:29Z"
   },
   {
    "id": "yt-new-TN9q6Pgl5-A",
@@ -214,13 +214,13 @@
    "url": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
    "channel": "JL Tomy",
    "metrics": {
-    "views": 10356,
-    "views_per_h": 2502,
-    "age_h": 4.1
+    "views": 16324,
+    "views_per_h": 2996,
+    "age_h": 5.4
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T20:09:01Z"
+   "updated_utc": "2026-11-23T21:27:29Z"
   },
   {
    "id": "yt-new-xDxXCZ_C4lY",
@@ -230,13 +230,13 @@
    "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
    "channel": "Gotaga",
    "metrics": {
-    "views": 70060,
-    "views_per_h": 19237,
-    "age_h": 3.6
+    "views": 109386,
+    "views_per_h": 22098,
+    "age_h": 4.9
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T20:09:01Z"
+   "updated_utc": "2026-11-23T21:27:29Z"
   },
   {
    "id": "steam-top-227300-2026-11-23",
@@ -276,13 +276,13 @@
    "url": "https://www.youtube.com/watch?v=eNCZt3aR-MY",
    "channel": "LeBouseuh",
    "metrics": {
-    "views": 80589,
-    "views_per_h": 26306,
-    "age_h": 3.1
+    "views": 176433,
+    "views_per_h": 40361,
+    "age_h": 4.4
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T18:05:04Z",
-   "updated_utc": "2026-11-23T20:09:01Z"
+   "updated_utc": "2026-11-23T21:27:29Z"
   },
   {
    "id": "reddit-1y3jhs6",
@@ -397,12 +397,13 @@
    "url": "https://www.youtube.com/watch?v=bFqP_uO_6DM",
    "channel": "Le Grand JD",
    "metrics": {
-    "views": 12400,
-    "views_per_h": 18559,
-    "age_h": 0.7
+    "views": 24737,
+    "views_per_h": 12519,
+    "age_h": 2.0
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T20:09:01Z"
+   "first_seen_utc": "2026-11-23T20:09:01Z",
+   "updated_utc": "2026-11-23T21:27:29Z"
   },
   {
    "id": "fortnite-news-94e60d11443fdc168386a0d50e827204",
@@ -414,11 +415,71 @@
    "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/6e32f04f347740e7a5bc1e2503a7de14.jpeg?width=1920&height=1080&aspect=fill",
    "hint": 4,
    "first_seen_utc": "2026-11-23T20:09:01Z"
+  },
+  {
+   "id": "twitch-clip-CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "kind": "twitch_clip",
+   "created_utc": "2026-11-23T20:58:03Z",
+   "title": "Un doigt dans le QUOIIIIII ????!!!!!!",
+   "url": "https://www.twitch.tv/antoinedaniel/clip/CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "media_url": "https://www.twitch.tv/antoinedaniel/clip/CheerfulPlausibleTigerFUNgineer-bJt2BNsBLCW4n2w5",
+   "channel": "antoinedaniel",
+   "lang": "fr",
+   "metrics": {
+    "views": 1586,
+    "views_per_h": 3249,
+    "duration_s": 30,
+    "game": "",
+    "streamer": "AntoineDaniel",
+    "suivi": true
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T21:27:29Z"
+  },
+  {
+   "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
+   "kind": "twitch_clip",
+   "created_utc": "2026-11-23T15:28:37Z",
+   "title": "x",
+   "url": "https://www.twitch.tv/gotaga/clip/SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
+   "media_url": "https://www.twitch.tv/gotaga/clip/SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
+   "channel": "gotaga",
+   "lang": "fr",
+   "metrics": {
+    "views": 439,
+    "views_per_h": 73,
+    "duration_s": 29.6,
+    "game": "Grand Theft Auto VI",
+    "streamer": "Gotaga",
+    "suivi": true
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T21:27:29Z"
+  },
+  {
+   "id": "twitch-clip-EntertainingArtsyBunnyDancingBanana-MkHg88lofSjDxxRW",
+   "kind": "twitch_clip",
+   "created_utc": "2026-11-23T21:00:35Z",
+   "title": "Juste un doigt",
+   "url": "https://www.twitch.tv/joueur_du_grenier/clip/EntertainingArtsyBunnyDancingBanana-MkHg88lofSjDxxRW",
+   "media_url": "https://www.twitch.tv/joueur_du_grenier/clip/EntertainingArtsyBunnyDancingBanana-MkHg88lofSjDxxRW",
+   "channel": "joueur_du_grenier",
+   "lang": "fr",
+   "metrics": {
+    "views": 336,
+    "views_per_h": 753,
+    "duration_s": 14.9,
+    "game": "",
+    "streamer": "Joueur_du_Grenier",
+    "suivi": true
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T21:27:29Z"
   }
  ],
- "updated_utc": "2026-11-23T20:09:01Z",
+ "updated_utc": "2026-11-23T21:27:29Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 3 clips retenus",
   "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
   "steam": "top 25 lu",
