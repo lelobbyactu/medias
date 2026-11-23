@@ -2403,8 +2403,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "teaser non recoupé par 2 médias (recherches: seulement d'anciens leaks), pas de key art officiel",
+   "closed_at_utc": "2026-11-23T19:53:09Z"
   }
  ]
 }
