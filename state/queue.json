@@ -735,8 +735,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T13:21:58Z"
   },
   {
    "id": "c-20261122-1517-inoxtag-statue-grevin",
@@ -1986,8 +1987,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T13:21:58Z"
   },
   {
    "id": "c-20261123-0914-gta6-ages-jason-lucia",
@@ -2111,6 +2113,185 @@
    "hot_reason": "leak",
    "taken_at_utc": "2026-11-23T11:16:04Z",
    "closed_at_utc": "2026-11-23T11:16:32Z"
+  },
+  {
+   "id": "c-20261123-1321-gta6-maj-1-002-002",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : première mise à jour disponible (1.002.002)",
+   "topic_key": "gta6-maj-1-002-002",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/Rockstar_Mag/status/2124823652885475718",
+   "primary_source": "https://x.com/Rockstar_Mag/status/2124823652885475718",
+   "source_time_utc": "2026-11-23T11:13:30Z",
+   "expires_at_utc": "2026-11-23T17:13:30Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "@Rockstar_Mag",
+    "@ShadesFrance",
+    "@_Tom_Henderson_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Première grosse update depuis la sortie de GTA 6, déployée par vagues : tout le monde veut savoir ce qu'elle contient.",
+   "titles": [
+    "GTA 6 reçoit sa première mise à jour, déployée par vagues",
+    "GTA 6 : la première update pèse 603 Mo sur PS5"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1321-gta6-ventes-estimees-4-jours",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : plus de 4 Md$ de ventes estimées en 4 jours",
+   "topic_key": "gta6-ventes-estimees-4-jours",
+   "origin": "Alinea Analytics (estimation)",
+   "source_tweet": "https://x.com/Dexerto/status/2124850486931009586",
+   "primary_source": "https://x.com/Dexerto/status/2124850486931009586",
+   "source_time_utc": "2026-11-23T13:00:08Z",
+   "expires_at_utc": "2026-11-23T19:00:08Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "@Dexerto",
+    "@InsiderGamingIG",
+    "@_Tom_Henderson_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Chiffre record annoncé par un cabinet d'analyse, pas par Rockstar : il va faire réagir même si c'est une estimation.",
+   "titles": [
+    "GTA 6 aurait déjà rapporté plus de 4 milliards de dollars",
+    "GTA 6 : environ 45 millions d'exemplaires vendus en quatre jours"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1321-gta6-flechettes-bowling-retires",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : pas de fléchettes ni de bowling, faute de ressources",
+   "topic_key": "gta6-flechettes-bowling-retires",
+   "origin": "Rob Nelson (Rockstar)",
+   "source_tweet": "https://x.com/Dexerto/status/2124842951008248167",
+   "primary_source": "https://x.com/Dexerto/status/2124842951008248167",
+   "source_time_utc": "2026-11-23T12:30:11Z",
+   "expires_at_utc": "2026-11-23T18:30:11Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "@Dexerto",
+    "@DexertoFR"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Le patron de GTA 6 explique l'absence d'un mini-jeu très attendu : la communauté va réagir.",
+   "titles": [
+    "GTA 6 : pas de fléchettes ni de bowling, faute de ressources",
+    "Rob Nelson explique pourquoi GTA 6 n'a pas de bowling"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1321-worlds-2026-record-bilibili",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Worlds 2026 : finale la plus regardée de l'histoire de LoL sur Bilibili",
+   "topic_key": "worlds-2026-record-bilibili",
+   "origin": "Bilibili (données de diffusion)",
+   "source_tweet": "https://x.com/Sheep_Esports/status/2124836870164975940",
+   "primary_source": "https://x.com/Sheep_Esports/status/2124836870164975940",
+   "source_time_utc": "2026-11-23T12:06:02Z",
+   "expires_at_utc": "2026-11-23T18:06:02Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "@Sheep_Esports"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un record d'audience chiffré et facile à comprendre pour le public LoL francophone.",
+   "titles": [
+    "Worlds 2026 : la finale la plus regardée de l'histoire de LoL",
+    "La finale des Worlds 2026 dépasse celle de 2018 sur Bilibili"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1321-binding-of-isaac-musiques-suno",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "The Binding of Isaac : mise à jour retirée après review-bombing (musiques IA)",
+   "topic_key": "binding-of-isaac-musiques-suno",
+   "origin": "Nicalis (éditeur)",
+   "source_tweet": "https://x.com/Gamekult/status/2124836841325228042",
+   "primary_source": "https://x.com/Gamekult/status/2124836841325228042",
+   "source_time_utc": "2026-11-23T12:05:55Z",
+   "expires_at_utc": "2026-11-23T18:05:55Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "@Gamekult"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un éditeur retire en urgence des musiques générées par IA après une vague de mauvaises notes : sujet d'actu tech et communauté.",
+   "titles": [
+    "The Binding of Isaac retire des musiques IA après un review-bombing",
+    "Binding of Isaac : l'éditeur supprime des musiques Suno en urgence"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1321-nickeh30-train-npc-gta",
+   "added_at_utc": "2026-11-23T13:21:58Z",
+   "found_by": "sources:reddit",
+   "type": "clip",
+   "topic": "NickEh30 fait des NPC victimes dans un train de GTA",
+   "topic_key": "nickeh30-train-npc-gta",
+   "origin": "nickeh30",
+   "source_tweet": "https://www.reddit.com/r/LivestreamFail/comments/1y3ap33/nickeh30_has_a_great_family_friendly_experience/",
+   "primary_source": "https://www.reddit.com/r/LivestreamFail/comments/1y3ap33/nickeh30_has_a_great_family_friendly_experience/",
+   "source_time_utc": "2026-11-23T06:01:19Z",
+   "expires_at_utc": "2026-11-24T06:01:19Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "r/LivestreamFail"
+   ],
+   "media_url": "https://v.redd.it/xzwz76tgya3i1/HLSPlaylist.m3u8",
+   "media_repo_path": "",
+   "angle": "Scène absurde et lisible sans parole, 4,2 k upvotes sur r/LivestreamFail : clip de dernier recours, streamer peu connu en France.",
+   "titles": [
+    "Un streamer fait un massacre de PNJ dans un train de GTA",
+    "Le « family friendly » de ce streamer dans GTA fait le buzz"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
