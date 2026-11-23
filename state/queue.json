@@ -2105,11 +2105,12 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "pas un leak : patch 1.002 deja deploye (PS5/Xbox), ~600 Mo, sujet faible, aucune info creusee ; seuil juge non atteint",
    "hot": true,
    "hot_reason": "leak",
-   "taken_at_utc": "2026-11-23T11:16:04Z"
+   "taken_at_utc": "2026-11-23T11:16:04Z",
+   "closed_at_utc": "2026-11-23T11:16:32Z"
   }
  ]
 }
