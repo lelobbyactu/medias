@@ -2252,6 +2252,211 @@
    "note": "",
    "hot": true,
    "hot_reason": "leak"
+  },
+  {
+   "id": "c-20261123-1720-rockstar-jltomy-festival-travis-scott-20",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Rockstar invite JL Tomy au festival GTA VI avec Travis Scott",
+   "topic_key": "rockstar-jltomy-festival-travis-scott-2026",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
+   "primary_source": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
+   "source_time_utc": "2026-11-23T16:00:34Z",
+   "expires_at_utc": "2026-11-23T22:00:34Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "JLTomyTV",
+    "youtube"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un youtubeur FR invité par Rockstar au festival GTA VI (Travis Scott) : collab rare avec un créateur français",
+   "titles": [
+    "JL Tomy invité par Rockstar au concert de Travis Scott",
+    "Rockstar invite JL Tomy en VIP au festival GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-gta6-jason-personnalite-rockstar",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Rockstar explique la personnalité de Jason dans GTA 6",
+   "topic_key": "gta6-jason-personnalite-rockstar",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2124899504742617470",
+   "primary_source": "https://x.com/FrenchRapUS/status/2124899504742617470",
+   "source_time_utc": "2026-11-23T16:14:55Z",
+   "expires_at_utc": "2026-11-23T22:14:55Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "FrenchRapUS"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Rockstar détaille le caractère de Jason, protagoniste de GTA 6 (relais FrenchRapUS, source d'origine à confirmer)",
+   "titles": [
+    "Rockstar explique pourquoi Jason est si discret dans GTA 6",
+    "Le caractère de Jason dévoilé par Rockstar"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-fortnite-scott-pilgrim-skins-teaser",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : teaser d'une collab Scott Pilgrim avec des skins",
+   "topic_key": "fortnite-scott-pilgrim-skins-teaser",
+   "origin": "Fortnite",
+   "source_tweet": "https://x.com/HYPEX/status/2124913517195415739",
+   "primary_source": "https://x.com/HYPEX/status/2124913517195415739",
+   "source_time_utc": "2026-11-23T17:10:36Z",
+   "expires_at_utc": "2026-11-23T23:10:36Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "HYPEX"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Teaser d'une collab Fortnite x Scott Pilgrim, relayé par un insider (non confirmé officiellement) : collab grand public",
+   "titles": [
+    "Fortnite prépare une collab Scott Pilgrim avec des skins",
+    "Scott Pilgrim débarque dans Fortnite"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-fortnite-nocif-izzi-quittent-orchid-2026",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Départs de nocifFN et izziFNBR de TeamOrchid",
+   "topic_key": "fortnite-nocif-izzi-quittent-orchid-2026",
+   "origin": "TeamOrchidGG",
+   "source_tweet": "https://x.com/FortniteFraActu/status/2124896501767778495",
+   "primary_source": "https://x.com/FortniteFraActu/status/2124896501767778495",
+   "source_time_utc": "2026-11-23T16:02:59Z",
+   "expires_at_utc": "2026-11-23T22:02:59Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "FortniteFraActu"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Deux joueurs Fortnite FR quittent l'équipe Orchid, nocif déjà signé ailleurs : transferts esport Fortnite",
+   "titles": [
+    "nocifFN et izziFNBR quittent TeamOrchid",
+    "nocifFN déjà signé dans une nouvelle structure"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-xbox-multijoueur-payant-2026",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Xbox envisage de supprimer le multijoueur payant",
+   "topic_key": "xbox-multijoueur-payant-2026",
+   "origin": "Insider Gaming",
+   "source_tweet": "https://x.com/InsiderGamingIG/status/2124900748790264074",
+   "primary_source": "https://x.com/InsiderGamingIG/status/2124900748790264074",
+   "source_time_utc": "2026-11-23T16:19:51Z",
+   "expires_at_utc": "2026-11-23T22:19:51Z",
+   "fiabilite": "🟠",
+   "score": 5,
+   "mentions": [
+    "InsiderGamingIG"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Rapport d'Insider Gaming sur un abandon possible du multijoueur payant Xbox : sujet gaming fort, source non confirmée",
+   "titles": [
+    "Xbox envisage de supprimer le multijoueur payant",
+    "Xbox pourrait supprimer le multijoueur payant"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-karmine-corp-line-up-2027",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Karmine Corp boucle son line-up 2027",
+   "topic_key": "karmine-corp-line-up-2027",
+   "origin": "KarmineCorp",
+   "source_tweet": "https://x.com/KarmineCorp/status/2124911430289760614",
+   "primary_source": "https://x.com/KarmineCorp/status/2124911430289760614",
+   "source_time_utc": "2026-11-23T17:02:18Z",
+   "expires_at_utc": "2026-11-23T23:02:18Z",
+   "fiabilite": "🟢",
+   "score": 5,
+   "mentions": [
+    "KarmineCorp"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Annonce officielle du line-up 2027 de la Karmine Corp (orga très suivie en France) ; le tweet pousse aussi une carte collector, à ne pas reprendre",
+   "titles": [
+    "La Karmine Corp boucle son line-up 2027",
+    "Le roster 2027 de la Karmine Corp est complet"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1720-kameto-rage-ripp-tiktok-champions",
+   "added_at_utc": "2026-11-23T17:20:28Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Kameto qui rage sur Ripp, reprise TikTok piégée par 5 champions",
+   "topic_key": "kameto-rage-ripp-tiktok-champions",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/Actu2Twitch/status/2124896756374618578",
+   "primary_source": "https://x.com/Actu2Twitch/status/2124896756374618578",
+   "source_time_utc": "2026-11-23T16:04:00Z",
+   "expires_at_utc": "2026-11-24T16:04:00Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "Actu2Twitch",
+    "TikTok"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124896725873610752/vid/avc1/576x1024/FlahO-r0wQoNYt9x.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Reprise TikTok d'un rage de Kameto en LoL, version traduite en chinois qui buzz : le moment est connu et la vidéo parle d'elle-même",
+   "titles": [
+    "Kameto en rage sur Ripp : la reprise TikTok qui fait le buzz",
+    "Le rage de Kameto revisité en TikTok, en chinois"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
