@@ -264,6 +264,16 @@
    "judge_score": "7/10",
    "slot": "12h",
    "note": "secours Apify (clip perrikaryal, source verticale -> make_reel_916 impossible -> make_reel.py, Instagram seul) ; TikTok en pause"
+  },
+  {
+   "id": "0022-23_11_2026-Actu",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "GTA VI : édition deluxe de l'album Rockstar avec 23 titres bonus",
+   "origin": "RockstarGames",
+   "source_tweet": "https://x.com/RockstarGames/status/2124867612450386302",
+   "queue_id": "c-20261123-1546-gta6-album-deluxe",
+   "reserved_at_utc": "2026-11-23T15:48:14Z"
   }
  ]
 }
