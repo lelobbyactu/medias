@@ -284,13 +284,19 @@
   },
   {
    "id": "0023-23_11_2026-Actu",
-   "status": "en_cours",
+   "status": "publie",
    "type": "carrousel",
    "topic": "GTA VI : première mise à jour corrige crashs, météo figée et sauvegarde",
    "origin": "Rockstar Games",
    "source_tweet": "https://x.com/Dexerto/status/2124888229400715756",
    "queue_id": "c-20261123-1546-gta6-patch-01-002-002",
-   "reserved_at_utc": "2026-11-23T16:55:21Z"
+   "reserved_at_utc": "2026-11-23T16:55:21Z",
+   "published_at_utc": "2026-11-23T16:59:11Z",
+   "instagram": "https://www.instagram.com/p/DgF3SQ1iFND/",
+   "tiktok": "pause",
+   "zernio_post_id": "6b04707192a7228a54661f48",
+   "judge_score": "8/10",
+   "slot": "18h"
   }
  ]
 }

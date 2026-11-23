@@ -2215,10 +2215,11 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
+   "status": "publie",
    "note": "",
    "taken_at_utc": "2026-11-23T16:54:43Z",
-   "post_id": "0023-23_11_2026-Actu"
+   "post_id": "0023-23_11_2026-Actu",
+   "closed_at_utc": "2026-11-23T16:59:11Z"
   },
   {
    "id": "c-20261123-1546-fortnite-c8-graphismes-leak",
