@@ -1967,8 +1967,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "doublon : sujet publié (0023, patch 01.002.002)",
+   "closed_at_utc": "2026-11-23T16:59:17Z"
   },
   {
    "id": "c-20261123-1321-gta6-ventes-estimees-4-jours",
