@@ -3,6 +3,8 @@
 Les tâches Claude ne font plus ces calculs à la main : elles appellent ces commandes.
 
   lobby.py queries              -> requêtes Apify prêtes (fenêtre depuis la dernière veille)
+  lobby.py sources [-n 20]      -> sujets hors X (Twitch, YouTube, Reddit, Steam, Fortnite, Trends) apparus depuis la
+                                   dernière veille (state/sources.json, collecté par GitHub Actions) ; à lancer AVANT `add`
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
   lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
@@ -136,6 +138,17 @@ def cmd_queries(a):
     qs = [f"({' OR '.join('from:' + x for x in g)}) since:{since} -filter:retweets" for g in c["query_groups"]]
     out({"debut_utc": since, "maxItems": c.get("apify_max_items", 300), "searchTerms": qs})
 
+def cmd_sources(a):
+    sys.path.insert(0, f"{ROOT}/scripts"); import sources as S
+    m = load(M, {}); last = parse(m.get("last_veille_utc"))
+    since = (last - dt.timedelta(minutes=5)) if last else now() - dt.timedelta(hours=2, minutes=15)
+    data = load(f"{ROOT}/state/sources.json", {"items": []})
+    res = S.brief(data["items"], since, a.n)
+    upd = parse(data.get("updated_utc"))
+    res["collecte"] = {"derniere_utc": data.get("updated_utc"), "retard_min": int((now() - upd).total_seconds() / 60) if upd else None,
+                       "rapport": {k: v for k, v in (data.get("report") or {}).items() if "erreur" in str(v) or "ignoré" in str(v)}}
+    out(res)
+
 def cmd_add(a):
     raw = open(a.file, encoding="utf-8").read() if a.file else sys.stdin.read()
     items = json.loads(raw) if raw.strip() else []
@@ -147,6 +160,7 @@ def cmd_add(a):
         q, p = qload(), pload(); t = now()
         n_exp, n_del = ménage(q, p)
         for it in items:
+            if not it.get("source_tweet") and it.get("source_url"): it["source_tweet"] = it["source_url"]
             if not all(it.get(k) for k in ("type", "topic", "topic_key", "origin", "source_tweet", "source_time_utc", "score")):
                 res["ignores"].append((it.get("topic_key"), "champs manquants")); continue
             if any(x.get("source_tweet") == it["source_tweet"] for x in p["posts"] if x.get("status") in ("publie", "en_cours")):
@@ -232,11 +246,30 @@ def cmd_take(a):
     transact(apply, f"queue: pris {a.id}")
     if e["type"] == "clip":
         src = f"{ROOT}/{e['media_repo_path']}" if e.get("media_repo_path") and os.path.exists(f"{ROOT}/{e['media_repo_path']}") else None
-        if src: sh(f"cp '{src}' /tmp/clip.mp4")
-        else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o /tmp/clip.mp4 '{e['media_url']}'")
-        # source d'origine Twitch (1080p60 + version verticale) si le même moment existe en clip Twitch ; sinon on garde X
+        mu = e.get("media_url") or ""
         tw = {"found": False, "reason": "pas d'heure source"}
-        if e.get("source_time_utc") and not getattr(a, "no_twitch", False):
+        native_twitch = bool(re.search(r"clips\.twitch\.tv/|twitch\.tv/[^/]+/clip/", mu))
+        if src: sh(f"cp '{src}' /tmp/clip.mp4")
+        elif native_twitch or re.search(r"youtube\.com|youtu\.be|streamable\.com|kick\.com", mu):
+            # clip trouvé directement à la source (veille Twitch / Reddit) : version d'origine en qualité max
+            sh("pip install -q --break-system-packages -U yt-dlp >/dev/null 2>&1 || true", check=False)
+            sh(f"rm -f /tmp/clip_dl.*; yt-dlp -q -f 'bv*[height<=1080]+ba/b[height<=1080]/b' --merge-output-format mp4 -o '/tmp/clip_dl.%(ext)s' '{mu}'")
+            sh("ffmpeg -v error -y -i /tmp/clip_dl.mp4 -c:v libx264 -preset veryfast -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k /tmp/clip.mp4")
+            if native_twitch:
+                ch = re.search(r"twitch\.tv/([^/]+)/clip/", mu); ch = ch.group(1).lower() if ch else (e.get("origin") or "").lower()
+                tw = {"found": True, "source": "twitch_direct", "twitch_url": mu, "channel": ch, "credit": f"twitch.tv/{ch}"}
+        elif "v.redd.it" in mu:
+            # Reddit refuse ffmpeg : fichiers CMAF directs (meilleure définition dispo + son), puis fusion
+            base = re.sub(r"/[^/]*\.m3u8$", "", mu.rstrip("/")); ua = "-A 'Mozilla/5.0'"
+            for r in (1080, 720, 480, 360):
+                if sh(f"curl -sf {ua} -o /tmp/rv.mp4 {base}/CMAF_{r}.mp4 || curl -sf {ua} -o /tmp/rv.mp4 {base}/DASH_{r}.mp4", check=False).returncode == 0: break
+            has_a = any(sh(f"curl -sf {ua} -o /tmp/ra.mp4 {base}/{n}.mp4", check=False).returncode == 0
+                        for n in ("CMAF_AUDIO_128", "CMAF_AUDIO_64", "DASH_AUDIO_128", "DASH_AUDIO_64"))
+            amap = "-i /tmp/ra.mp4 -map 0:v -map 1:a -c:a aac -b:a 192k" if has_a else "-an"
+            sh(f"ffmpeg -v error -y -i /tmp/rv.mp4 {amap} -c:v libx264 -preset veryfast -crf 17 -pix_fmt yuv420p /tmp/clip.mp4")
+        else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o /tmp/clip.mp4 '{mu}'")
+        # source d'origine Twitch (1080p60 + version verticale) si le même moment existe en clip Twitch ; sinon on garde X
+        if not tw.get("found") and e.get("source_time_utc") and not getattr(a, "no_twitch", False) and "x.com" in (e.get("source_tweet") or "") + (e.get("primary_source") or ""):
             r = subprocess.run([sys.executable, f"{ROOT}/scripts/twitch_source.py", "upgrade", "--clip", "/tmp/clip.mp4",
                                 "--origin", e.get("origin", ""), "--time", e["source_time_utc"]],
                                capture_output=True, text=True, timeout=900)
@@ -304,6 +337,7 @@ def cmd_status(a):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); sp = ap.add_subparsers(dest="cmd", required=True)
     for n in ("queries", "status"): sp.add_parser(n)
+    s = sp.add_parser("sources"); s.add_argument("-n", type=int, default=20)
     s = sp.add_parser("slot"); s.add_argument("--hot", action="store_true")
     s = sp.add_parser("add"); s.add_argument("file", nargs="?")
     s = sp.add_parser("take"); s.add_argument("id"); s.add_argument("--no-twitch", action="store_true")

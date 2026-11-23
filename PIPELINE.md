@@ -1,4 +1,4 @@
-# Le Lobby (@lelobbyactu) — pipeline v4 (22 nov. 2026 : plomberie en scripts, règlement découpé)
+# Le Lobby (@lelobbyactu) — pipeline v5 (23 nov. 2026 : sources hors X + album d'inspiration)
 
 Média français d'actu créateurs / gaming, Instagram + TikTok (Zernio). Cible 14-30 ans. Pas que du GTA 6 : Twitch, streamers et YouTubeurs FR, Fortnite, CoD, EA FC, Minecraft, Nintendo, dramas d'internet connus.
 Ce fichier est le NOYAU, volontairement court. Les détails sont dans `docs/` : lire **seulement** ce dont la tâche a besoin. Réglages (comptes, seuils, plafonds, horaires) : `config.json`. Le code qui gère file et journal : `scripts/lobby.py` (ne jamais éditer `state/*.json` à la main).
@@ -15,7 +15,9 @@ Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement s
 ## Les tâches
 | Tâche | Rôle | Lit |
 |---|---|---|
-| **Veille** (Haiku, toutes les 2 h) | `lobby.py queries` → Apify → tri → `lobby.py add` ; si alerte brûlante, déclenche la tâche « Publication immédiate » | ce fichier seulement |
+| **Veille** (Haiku, toutes les 2 h) | `lobby.py queries` → Apify → tri ; `lobby.py sources` (Twitch, YouTube, Reddit, Steam, Fortnite, Trends) → tri ; `lobby.py add` ; si alerte brûlante, déclenche la tâche « Publication immédiate » | ce fichier + `docs/sources.md` |
+| **Collecte hors X** (GitHub Actions `sources.yml`, toutes les 30 min, sans IA) | `scripts/sources.py run` → `state/sources.json` | — |
+| **Inspirations** (1×/jour) | posts envoyés par Alix (raccourci « Lobby inspi » → issues `inspi`) → `scripts/inspi.py` → juge → fiches `juge/inspirations.md` + file | ce fichier + `docs/inspi.md` |
 | **Créneau** (7 h 51, 11 h 51, 17 h 51, 20 h 51 Paris) | `lobby.py slot` → choix → `take` → juge → montage → publication → `done` | ce fichier + `docs/juge.md` + `docs/montage.md` + `docs/clips.md` ou `docs/actus.md` |
 | **Publication immédiate** (déclenchée par la veille) | publie l'actu brûlante marquée `hot` dans la file | + `docs/brulante.md` |
 

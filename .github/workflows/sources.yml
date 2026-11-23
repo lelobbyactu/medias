@@ -1,0 +1,45 @@
+# Le Lobby — collecte des sources hors X (Twitch, YouTube, Reddit, Steam, Fortnite, Google Trends).
+# Sans IA et sans ordinateur : scripts/sources.py écrit state/sources.json, que la veille lit via `lobby.py sources`.
+# Secrets du dépôt : TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET (app dev.twitch.tv), APIFY_TOKEN (Reddit).
+name: sources
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      force_reddit:
+        description: "Forcer le passage Reddit"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: { group: sources, cancel-in-progress: false }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            state
+            config.json
+          sparse-checkout-cone-mode: false
+      - name: Collecte
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: python3 scripts/sources.py run ${{ inputs.force_reddit && '--force' || '' }}
+      - name: Commit
+        run: |
+          git config user.name "lelobby-bot"; git config user.email "lelobbyactu@gmail.com"
+          git add state/sources.json state/sources_cache.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "sources: collecte"
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
