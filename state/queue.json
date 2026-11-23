@@ -2,65 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261120-1411-gotaga-lucia-couples",
-   "added_at_utc": "2026-11-20T14:20:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Gotaga joue Lucia sur GTA 6, un appel de 'Jason' arrive : « des couples vont sauter avec GTA 6 »",
-   "topic_key": "gotaga-gta6-couples-lucia",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2123781276515922093",
-   "primary_source": "https://x.com/GotagaTV/status/2123781276515922093",
-   "source_time_utc": "2026-11-20T14:11:28Z",
-   "expires_at_utc": "2026-11-21T14:11:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123781109041225728/vid/avc1/1280x720/H2XUIazCKO1TEWOH.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Gotaga (face-cam) promène Lucia en tenue d'été pendant que sa copine/un appel arrive : blague sur GTA 6 qui peut faire sauter les couples. 22 s, 16:9, audio non écouté.",
-   "titles": [
-    "Gotaga : « GTA 6 va faire *sauter* des couples »",
-    "Gotaga *se fait appeler* en pleine balade avec Lucia"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Score 6 : écouter l'audio avant de choisir le titre (le gag exact est inconnu). Tweet à 12 likes seulement, à revérifier au créneau. MP4 non téléchargé (score < 7). | pris 2026-11-21T10:58Z par créneau 12h (traction réelle 3,2k likes / 330k vues, 22 s 16:9 1440p, audio transcrit : Gotaga raconte qu'on lui a dit « t'as fini de me tromper dans ton jeu ? » après sa nuit sur GTA 6).",
-   "post_id": "0016-21_11_2026-Clips"
-  },
-  {
-   "id": "c-20261120-1503-gotaga-gta6-motocross",
-   "added_at_utc": "2026-11-20T15:20:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Gotaga en course de moto sur GTA 6, avec Squeezie (3e au GP) évoqué par le chat : « le S toujours dans le rétro »",
-   "topic_key": "gotaga-gta6-course-moto-squeezie",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2123794266690408521",
-   "primary_source": "https://x.com/GotagaTV/status/2123794266690408521",
-   "source_time_utc": "2026-11-20T15:03:06Z",
-   "expires_at_utc": "2026-11-21T15:03:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123793731312640000/vid/avc1/1920x1080/uaCn_6p9qQIMCn95.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Gotaga se rassure sur sa perf en moto-cross GTA 6 pendant que le chat parle de Squeezie ; le S de Squeezie reste dans le rétro (20 s, 1080p, téléchargeable)",
-   "titles": [
-    "Gotaga se croit *intouchable* en course sur GTA 6",
-    "Le *S* de Squeezie dans le rétro de Gotaga sur GTA VI"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Chute pas évidente (traction faible : 14 likes à 11 min). Regarder les 20 s en entier avant de choisir le titre ; MP4 non téléchargé (score 6)."
-  },
-  {
    "id": "c-20261120-1606-gotaga-gta6-jason-aura",
    "added_at_utc": "2026-11-20T16:20:00Z",
    "found_by": "veille-fr",
@@ -292,39 +233,6 @@
    "photo_needed": "",
    "status": "expire",
    "note": "Score 6 (traction faible, clip très court). Le « vice-champion » fait peut-être référence à Squeezie (3e au GP) : à vérifier dans les réponses au tweet avant le titre. MP4 non téléchargé (score < 7)."
-  },
-  {
-   "id": "c-20261121-1015-xbox-circana-octobre",
-   "added_at_utc": "2026-11-21T10:15:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "Ventes Xbox Series en hausse de 42 % aux États-Unis en octobre (Circana), avant la sortie de GTA 6",
-   "topic_key": "xbox-ventes-octobre-circana-42pct",
-   "origin": "Circana (Mat Piscatella)",
-   "source_tweet": "https://x.com/JVCom/status/2124070311331275167",
-   "primary_source": "Circana, rapport US d'octobre 2026 (relayé par Mat Piscatella)",
-   "source_time_utc": "2026-11-21T09:20:00Z",
-   "expires_at_utc": "2026-11-21T15:20:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "JVCom"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Premier vrai sursaut des Xbox depuis longtemps : +42 % en octobre, pendant que la presse débat de l'effet GTA 6.",
-   "titles": [
-    "Les ventes de Xbox *explosent* de 42 % avant GTA 6",
-    "Xbox : +42 % de ventes, GTA 6 y est pour *quelque chose* ?"
-   ],
-   "checks": [
-    "https://www.purexbox.com/news/2026/11/gears-and-gta-6-may-have-provided-a-temporary-reprieve-xbox-hardware-sales-get-a-major-surge-in-the-us",
-    "https://kotaku.com/xbox-hardware-finally-saw-major-surge-gta-us-2000758382",
-    "https://www.vgchartz.com/article/469692/us-monthly-october-2026/"
-   ],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "Heure du post primaire (Piscatella/Circana) non vérifiée : la fraîcheur 6 h est comptée depuis le tweet JVCom, à revérifier au créneau. Nuance : octobre précède la sortie de GTA 6 (surtout Gears + promos), ne pas affirmer de lien causal. Marché US uniquement. Ne pas oublier que Beebom titre « no positive impact » sur les ventes post-sortie. | 12h : écarté, source primaire Circana/Piscatella du 19 nov. 14:00Z (> 6 h) ; la hausse +42 % est surtout due aux prix."
   },
   {
    "id": "c-20261121-1118-gta6-profil-criminel-5-niveaux",
@@ -890,8 +798,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
    "id": "c-20261122-1517-jltomy-sophie-jlmiami",
@@ -919,8 +828,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
    "id": "c-20261122-1517-fortnite-teto-treasure-w4",
@@ -1246,8 +1156,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
    "id": "c-20261122-1916-fortnite-peely-design-abandonne",
@@ -2018,8 +1929,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
    "id": "c-20261123-0914-gta-v-legacy-top25-steam",
@@ -2047,8 +1959,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
    "id": "c-20261123-1104-perrikaryal-gta6-jet-cerveau",
@@ -2292,6 +2205,134 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261123-1546-gta6-album-deluxe",
+   "added_at_utc": "2026-11-23T15:46:04Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA VI : édition deluxe de l'album Rockstar avec 23 titres bonus",
+   "topic_key": "gta6-album-deluxe",
+   "origin": "RockstarGames",
+   "source_tweet": "https://x.com/RockstarGames/status/2124867612450386302",
+   "primary_source": "https://x.com/RockstarGames/status/2124867612450386302",
+   "source_time_utc": "2026-11-23T14:08:11Z",
+   "expires_at_utc": "2026-11-23T20:08:11Z",
+   "fiabilite": "🟢",
+   "score": 9,
+   "mentions": [
+    "FrenchRapUS",
+    "Kulturlesite_",
+    "Platinside",
+    "RockstarNewsFRA",
+    "ShadesFrance",
+    "riyadinhoo_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Rockstar sort la version deluxe de l'album GTA VI avec 23 morceaux inédits, dont Travis Scott et Sexyy Red : l'annonce officielle d'un contenu très attendu.",
+   "titles": [
+    "GTA VI : la version deluxe de l'album sort avec 23 titres bonus",
+    "Rockstar dévoile l'édition deluxe de l'album GTA VI, avec Travis Scott et Sexyy Red"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "5_comptes"
+  },
+  {
+   "id": "c-20261123-1546-karmine-skewmond-2027",
+   "added_at_utc": "2026-11-23T15:46:04Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Karmine Corp recrute SkewMond, jungler LEC, pour 2027",
+   "topic_key": "karmine-skewmond-2027",
+   "origin": "KarmineCorp",
+   "source_tweet": "https://x.com/KarmineCorp/status/2124889153913659639",
+   "primary_source": "https://x.com/KarmineCorp/status/2124889153913659639",
+   "source_time_utc": "2026-11-23T15:33:47Z",
+   "expires_at_utc": "2026-11-23T21:33:47Z",
+   "fiabilite": "🟢",
+   "score": 9,
+   "mentions": [
+    "Sheep_Esports"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Annonce officielle d'un transfert très suivi en LEC : le jungler qui a remporté les quatre derniers splits avec G2 rejoint la Karmine Corp.",
+   "titles": [
+    "Karmine Corp recrute SkewMond, jungler de la LEC, pour 2027",
+    "SkewMond quitte G2 Esports et rejoint la Karmine Corp"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1546-gta6-patch-01-002-002",
+   "added_at_utc": "2026-11-23T15:46:04Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA VI : première mise à jour corrige crashs, météo figée et sauvegarde",
+   "topic_key": "gta6-patch-01-002-002",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/Dexerto/status/2124888229400715756",
+   "primary_source": "https://x.com/Dexerto/status/2124888229400715756",
+   "source_time_utc": "2026-11-23T14:45:25Z",
+   "expires_at_utc": "2026-11-23T20:45:25Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "FrenchRapUS",
+    "InsiderGamingIG",
+    "VGC_News",
+    "_Tom_Henderson_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Premier correctif de GTA VI depuis sa sortie : Rockstar répond aux bugs les plus visibles (météo figée, autosave, crashs), un sujet que tout le public a vécu.",
+   "titles": [
+    "GTA VI reçoit sa première mise à jour : crashs, météo et sauvegarde corrigés",
+    "Première patch de GTA VI : la météo figée et l'autosave enfin réparés"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-1546-fortnite-c8-graphismes-leak",
+   "added_at_utc": "2026-11-23T15:46:04Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fuite : le Chapitre 8 de Fortnite aurait des graphismes proches du Chapitre 4",
+   "topic_key": "fortnite-c8-graphismes-leak",
+   "origin": "FNBRintel",
+   "source_tweet": "https://x.com/ShiinaBR/status/2124888343578333582",
+   "primary_source": "https://x.com/ShiinaBR/status/2124888343578333582",
+   "source_time_utc": "2026-11-23T15:30:34Z",
+   "expires_at_utc": "2026-11-23T21:30:34Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "HYPEX"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Fuite d'un insider reconnu sur le rendu visuel du prochain chapitre de Fortnite, très commenté par la communauté ; à présenter comme une rumeur.",
+   "titles": [
+    "Fortnite Chapitre 8 : un rendu proche du Chapitre 4, selon une fuite",
+    "Le Chapitre 8 de Fortnite aurait des graphismes plus stylisés, selon une fuite"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "leak"
   }
  ]
 }
