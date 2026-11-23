@@ -267,13 +267,20 @@
   },
   {
    "id": "0022-23_11_2026-Actu",
-   "status": "en_cours",
+   "status": "publie",
    "type": "carrousel",
    "topic": "GTA VI : édition deluxe de l'album Rockstar avec 23 titres bonus",
    "origin": "RockstarGames",
    "source_tweet": "https://x.com/RockstarGames/status/2124867612450386302",
    "queue_id": "c-20261123-1546-gta6-album-deluxe",
-   "reserved_at_utc": "2026-11-23T15:48:14Z"
+   "reserved_at_utc": "2026-11-23T15:48:14Z",
+   "published_at_utc": "2026-11-23T15:52:22Z",
+   "tiktok": "pause",
+   "zernio_post_id": "6b0460e3532b05a8e941ffdf",
+   "judge_score": "8/10",
+   "note": "carrousel IG seul, pause TikTok; URL IG non récupérée via Zernio",
+   "hot": true,
+   "hot_reason": "5_comptes"
   }
  ]
 }
