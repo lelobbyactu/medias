@@ -1,0 +1,16 @@
+{
+ "_doc": "Album d'inspiration : posts envoyés par Alix (raccourci « Lobby inspi » → issues GitHub) et verdict de l'analyse quotidienne. Écrit par scripts/inspi.py.",
+ "items": [
+  {
+   "n": 3,
+   "url": "https://www.instagram.com/reel/DgCTQQAstLW/",
+   "traite_utc": "2026-11-23T09:56:51Z",
+   "verdict": "ecarte",
+   "score": 0.0,
+   "format": "autre : hors sujet",
+   "recette": "Hors sujet (poursuites/chats, Japon).",
+   "queue_id": null,
+   "note": null
+  }
+ ]
+}
