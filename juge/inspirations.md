@@ -2,3 +2,7 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #5 · reel-clip · 8.0/10 · 23/11/2026
+Accroche mystère/easter egg avec un top streamer FR : nommer l'élément le plus surprenant (ex. « KAMETO | TOMBE SUR DES | *ALIENS* | DANS GTA 6 »). Structure : 1re seconde = scène la plus bizarre du gameplay, puis réaction facecam, puis la révélation. À utiliser dès qu'un top streamer FR découvre un secret ou un truc inexpliqué dans GTA 6 ; un nom + un élément visuel, pas une question vague.
+Source : https://www.instagram.com/reel/DgBWPxVRoT3/
+
