@@ -198,12 +198,13 @@
    "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
    "channel": "ZeratoR",
    "metrics": {
-    "views": 0,
-    "views_per_h": 0,
-    "age_h": 0.1
+    "views": 4349,
+    "views_per_h": 4019,
+    "age_h": 1.1
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T17:06:01Z"
+   "first_seen_utc": "2026-11-23T17:06:01Z",
+   "updated_utc": "2026-11-23T18:05:04Z"
   },
   {
    "id": "yt-new-TN9q6Pgl5-A",
@@ -213,12 +214,13 @@
    "url": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
    "channel": "JL Tomy",
    "metrics": {
-    "views": 1184,
-    "views_per_h": 1086,
-    "age_h": 1.1
+    "views": 2248,
+    "views_per_h": 1084,
+    "age_h": 2.1
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T17:06:01Z"
+   "first_seen_utc": "2026-11-23T17:06:01Z",
+   "updated_utc": "2026-11-23T18:05:04Z"
   },
   {
    "id": "yt-new-xDxXCZ_C4lY",
@@ -228,12 +230,13 @@
    "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
    "channel": "Gotaga",
    "metrics": {
-    "views": 5556,
-    "views_per_h": 9373,
-    "age_h": 0.6
+    "views": 15159,
+    "views_per_h": 9615,
+    "age_h": 1.6
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T17:06:01Z"
+   "first_seen_utc": "2026-11-23T17:06:01Z",
+   "updated_utc": "2026-11-23T18:05:04Z"
   },
   {
    "id": "steam-top-227300-2026-11-23",
@@ -264,12 +267,27 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T17:06:01Z"
+  },
+  {
+   "id": "yt-new-eNCZt3aR-MY",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-23T17:05:11Z",
+   "title": "Je teste en premier le retour de Mealy ! (fast food de Michou)",
+   "url": "https://www.youtube.com/watch?v=eNCZt3aR-MY",
+   "channel": "LeBouseuh",
+   "metrics": {
+    "views": 4722,
+    "views_per_h": 4733,
+    "age_h": 1.0
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T18:05:04Z"
   }
  ],
- "updated_utc": "2026-11-23T17:06:01Z",
+ "updated_utc": "2026-11-23T18:05:04Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 94 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T12:38:13Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
