@@ -24,7 +24,7 @@ URL_RE = re.compile(r"https?://[^\s<>\"')\]]+")
 
 
 def gh_issues():
-    req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?state=all&per_page=60&sort=created&direction=desc",
+    req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/issues?state=open&per_page=60&sort=created&direction=desc",
                                  headers={"Accept": "application/vnd.github+json", "User-Agent": "lelobby"})
     with urllib.request.urlopen(req, timeout=30) as r: return json.loads(r.read())
 
@@ -152,7 +152,8 @@ def cmd_done(a):
             with open(FICHES, "w", encoding="utf-8") as f: f.write(head + fiche + "".join(fiches[:59]))
     lobby.transact(apply, f"inspi: #{a.n} {a.verdict}", "state/inspi.json juge")
     if shutil.which("gh"):  # fermeture de l'issue si possible (sinon le journal suffit)
-        subprocess.run(["gh", "issue", "close", str(a.n), "-R", REPO, "-c", f"Traité : {a.verdict} ({a.score}/10)"], capture_output=True, timeout=60)
+        subprocess.run(["gh", "api", "-X", "POST", f"repos/{REPO}/issues/{a.n}/comments", "-f", f"body=Traité : {a.verdict} ({a.score:g}/10, {a.format})"], capture_output=True, timeout=60)
+        subprocess.run(["gh", "api", "-X", "PATCH", f"repos/{REPO}/issues/{a.n}", "-f", "state=closed"], capture_output=True, timeout=60)
     lobby.out({"ok": a.n, "verdict": a.verdict})
 
 
