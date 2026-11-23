@@ -1952,8 +1952,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T09:14:53Z"
   },
   {
    "id": "c-20261123-0717-gta6-missions-monde-ouvert-design",
@@ -1978,6 +1979,65 @@
    "titles": [
     "GTA 6 : Rockstar veut effacer la frontière entre missions et monde ouvert",
     "GTA 6 : les missions seront connectées au monde ouvert, selon Rockstar"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0914-gta6-ages-jason-lucia",
+   "added_at_utc": "2026-11-23T09:14:53Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Âges des personnages de GTA 6 (Jason et Lucia) révélés via leurs permis de conduire",
+   "topic_key": "gta6-ages-jason-lucia",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2124782252676845826",
+   "primary_source": "https://x.com/FrenchRapUS/status/2124782252676845826",
+   "source_time_utc": "2026-11-23T08:29:00Z",
+   "expires_at_utc": "2026-11-23T14:29:00Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "FrenchRapUS",
+    "Pirat_Nation"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Un détail in-game sur les personnages de GTA 6 relancé par plusieurs comptes, dans un contexte de hype maximal sur la franchise.",
+   "titles": [
+    "GTA 6 : les âges de Jason et Lucia dévoilés",
+    "Les permis de conduire de GTA 6 révèlent l'âge de Jason et Lucia"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0914-gta-v-legacy-top25-steam",
+   "added_at_utc": "2026-11-23T09:14:53Z",
+   "found_by": "sources:steam",
+   "type": "actu",
+   "topic": "GTA V Legacy entre dans le top 25 Steam",
+   "topic_key": "gta-v-legacy-top25-steam",
+   "origin": "SteamDB",
+   "source_tweet": "https://steamdb.info/app/271590/charts/",
+   "primary_source": "https://steamdb.info/app/271590/charts/",
+   "source_time_utc": "2026-11-23T08:07:24Z",
+   "expires_at_utc": "2026-11-23T14:07:24Z",
+   "fiabilite": "🟢",
+   "score": 5,
+   "mentions": [
+    "steam"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Un titre de la franchise GTA entre dans le top 25 Steam avec plus de 37 000 joueurs connectés au relevé.",
+   "titles": [
+    "GTA V Legacy entre dans le top 25 Steam",
+    "GTA V Legacy revient dans le top 25 Steam avec plus de 37 000 joueurs connectés"
    ],
    "checks": [],
    "photo_needed": "",
