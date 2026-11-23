@@ -281,6 +281,16 @@
    "note": "carrousel IG seul, pause TikTok; URL IG non récupérée via Zernio",
    "hot": true,
    "hot_reason": "5_comptes"
+  },
+  {
+   "id": "0023-23_11_2026-Actu",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "GTA VI : première mise à jour corrige crashs, météo figée et sauvegarde",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/Dexerto/status/2124888229400715756",
+   "queue_id": "c-20261123-1546-gta6-patch-01-002-002",
+   "reserved_at_utc": "2026-11-23T16:55:21Z"
   }
  ]
 }
