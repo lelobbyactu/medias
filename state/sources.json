@@ -85,13 +85,43 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T06:09:32Z"
+  },
+  {
+   "id": "steam-top-271590-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T08:07:24Z",
+   "title": "Grand Theft Auto V Legacy entre dans le top 25 Steam (37 560 joueurs connectés)",
+   "url": "https://steamdb.info/app/271590/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 23,
+    "players": 37560,
+    "peak_24h": 101616
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T08:07:26Z"
+  },
+  {
+   "id": "steam-top-238960-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T08:07:24Z",
+   "title": "Path of Exile entre dans le top 25 Steam (35 160 joueurs connectés)",
+   "url": "https://steamdb.info/app/238960/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 35160,
+    "peak_24h": 83151
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T08:07:26Z"
   }
  ],
- "updated_utc": "2026-11-23T06:26:19Z",
+ "updated_utc": "2026-11-23T08:07:26Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
-  "reddit": "0 posts retenus",
+  "reddit": "pas encore (dernier passage 2026-11-23T06:26:17Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
