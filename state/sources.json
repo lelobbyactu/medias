@@ -198,13 +198,13 @@
    "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
    "channel": "ZeratoR",
    "metrics": {
-    "views": 29990,
-    "views_per_h": 6731,
-    "age_h": 4.5
+    "views": 38237,
+    "views_per_h": 6996,
+    "age_h": 5.5
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T21:27:29Z"
+   "updated_utc": "2026-11-23T22:28:06Z"
   },
   {
    "id": "yt-new-TN9q6Pgl5-A",
@@ -230,13 +230,13 @@
    "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
    "channel": "Gotaga",
    "metrics": {
-    "views": 109386,
-    "views_per_h": 22098,
-    "age_h": 4.9
+    "views": 140960,
+    "views_per_h": 23650,
+    "age_h": 6.0
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T21:27:29Z"
+   "updated_utc": "2026-11-23T22:28:06Z"
   },
   {
    "id": "steam-top-227300-2026-11-23",
@@ -276,13 +276,13 @@
    "url": "https://www.youtube.com/watch?v=eNCZt3aR-MY",
    "channel": "LeBouseuh",
    "metrics": {
-    "views": 176433,
-    "views_per_h": 40361,
-    "age_h": 4.4
+    "views": 239046,
+    "views_per_h": 44421,
+    "age_h": 5.4
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T18:05:04Z",
-   "updated_utc": "2026-11-23T21:27:29Z"
+   "updated_utc": "2026-11-23T22:28:06Z"
   },
   {
    "id": "reddit-1y3jhs6",
@@ -426,15 +426,16 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 1586,
-    "views_per_h": 3249,
+    "views": 1735,
+    "views_per_h": 1158,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
     "suivi": true
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T21:27:29Z"
+   "first_seen_utc": "2026-11-23T21:27:29Z",
+   "updated_utc": "2026-11-23T22:28:06Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -466,21 +467,37 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 336,
-    "views_per_h": 753,
+    "views": 407,
+    "views_per_h": 279,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
     "suivi": true
    },
    "hint": 5,
-   "first_seen_utc": "2026-11-23T21:27:29Z"
+   "first_seen_utc": "2026-11-23T21:27:29Z",
+   "updated_utc": "2026-11-23T22:28:06Z"
+  },
+  {
+   "id": "steam-top-322170-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T22:28:05Z",
+   "title": "Geometry Dash entre dans le top 25 Steam (40 099 joueurs connectés)",
+   "url": "https://steamdb.info/app/322170/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 40099,
+    "peak_24h": 50308
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T22:28:06Z"
   }
  ],
- "updated_utc": "2026-11-23T21:27:29Z",
+ "updated_utc": "2026-11-23T22:28:06Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 3 clips retenus",
-  "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 2 clips retenus",
+  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
