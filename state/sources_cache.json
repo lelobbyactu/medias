@@ -1,7 +1,7 @@
 {
  "youtube": {
   "tiers": {
-   "wGZKQoYpRts": 1000000,
+   "wGZKQoYpRts": 2000000,
    "4eHzsUUo69w": 2000000
   }
  },
@@ -32,7 +32,8 @@
    "252490": "Rust",
    "2357570": "Overwatch®",
    "413150": "Stardew Valley",
-   "4348910": "Probably Stolen - Cyberpunk Shopkeeper Sim"
+   "4348910": "Probably Stolen - Cyberpunk Shopkeeper Sim",
+   "2507950": "Delta Force"
   },
   "seen_top": {
    "570": "2026-11-23",
@@ -60,7 +61,8 @@
    "252490": "2026-11-23",
    "2357570": "2026-11-23",
    "413150": "2026-11-23",
-   "4348910": "2026-11-23"
+   "4348910": "2026-11-23",
+   "2507950": "2026-11-23"
   },
   "tiers": {
    "4262460": 500000,
@@ -76,5 +78,184 @@
    "8f317c4af0a2205d86a592c15128ad0f",
    "53445f38f1ddf149405a47e3d010dee9"
   ]
+ },
+ "twitch": {
+  "ids": {
+   "aminematue": {
+    "id": "407388596",
+    "name": "aminematue"
+   },
+   "amixem": {
+    "id": "42104852",
+    "name": "amixem"
+   },
+   "antoinedaniel": {
+    "id": "135468063",
+    "name": "AntoineDaniel"
+   },
+   "anyme023": {
+    "id": "737048563",
+    "name": "Anyme023"
+   },
+   "bagherajones": {
+    "id": "100744948",
+    "name": "BagheraJones"
+   },
+   "chowh1": {
+    "id": "117168642",
+    "name": "chowh1"
+   },
+   "djilsi": {
+    "id": "405186159",
+    "name": "Djilsi"
+   },
+   "doigby": {
+    "id": "25454398",
+    "name": "Doigby"
+   },
+   "domingo": {
+    "id": "40063341",
+    "name": "Domingo"
+   },
+   "etoiles": {
+    "id": "85800130",
+    "name": "Etoiles"
+   },
+   "flamby": {
+    "id": "60256640",
+    "name": "Flamby"
+   },
+   "gotaga": {
+    "id": "24147592",
+    "name": "Gotaga"
+   },
+   "inoxtag": {
+    "id": "80716629",
+    "name": "Inoxtag"
+   },
+   "itachi": {
+    "id": "110902144",
+    "name": "itachi"
+   },
+   "jltomy": {
+    "id": "155601320",
+    "name": "JLTomy"
+   },
+   "joueur_du_grenier": {
+    "id": "68078157",
+    "name": "Joueur_du_Grenier"
+   },
+   "joyca": {
+    "id": "192023754",
+    "name": "Joyca"
+   },
+   "kaatsup": {
+    "id": "544340296",
+    "name": "Kaatsup"
+   },
+   "kamet0": {
+    "id": "27115917",
+    "name": "Kamet0"
+   },
+   "kennystream": {
+    "id": "32183344",
+    "name": "KennyStream"
+   },
+   "lebouseuh": {
+    "id": "96562014",
+    "name": "LeBouseuh"
+   },
+   "lenasituations": {
+    "id": "500792347",
+    "name": "lenasituations"
+   },
+   "locklear": {
+    "id": "137347549",
+    "name": "Locklear"
+   },
+   "maghla": {
+    "id": "131215608",
+    "name": "Maghla"
+   },
+   "mastu": {
+    "id": "63936838",
+    "name": "Mastu"
+   },
+   "mcflyetcarlito": {
+    "id": "603181436",
+    "name": "mcflyetcarlito"
+   },
+   "michou": {
+    "id": "231634715",
+    "name": "Michou"
+   },
+   "mistermv": {
+    "id": "28575692",
+    "name": "mistermv"
+   },
+   "nico_la": {
+    "id": "887001013",
+    "name": "Nico_la"
+   },
+   "ponce": {
+    "id": "50597026",
+    "name": "Ponce"
+   },
+   "rebeudeter": {
+    "id": "407837457",
+    "name": "RebeuDeter"
+   },
+   "sakor_": {
+    "id": "38284441",
+    "name": "Sakor_"
+   },
+   "samueletienne": {
+    "id": "505902512",
+    "name": "samueletienne"
+   },
+   "sardoche": {
+    "id": "50795214",
+    "name": "Sardoche"
+   },
+   "squeezie": {
+    "id": "52130765",
+    "name": "Squeezie"
+   },
+   "theodort": {
+    "id": "144580986",
+    "name": "theodort"
+   },
+   "wankilstudio": {
+    "id": "31289086",
+    "name": "WankilStudio"
+   },
+   "yvick": {
+    "id": "430079850",
+    "name": "Yvick"
+   },
+   "zerator": {
+    "id": "41719107",
+    "name": "ZeratoR"
+   },
+   "zevent": {
+    "id": "77870741",
+    "name": "ZEVENT"
+   }
+  },
+  "unknown": [
+   "amine",
+   "billy",
+   "byilhan",
+   "gmk",
+   "horty_",
+   "jirayatv",
+   "lestream",
+   "maxime",
+   "tiboinshape"
+  ],
+  "live_alerts": {}
+ },
+ "reddit": {
+  "last_run_utc": "2026-11-23T06:09:31Z"
  }
 }

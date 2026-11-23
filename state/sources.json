@@ -56,13 +56,42 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T04:48:16Z"
+  },
+  {
+   "id": "yt-tier-wGZKQoYpRts-2000000",
+   "kind": "youtube_record",
+   "created_utc": "2026-11-23T06:08:17Z",
+   "title": "Amixem : « CACHE-CACHE ÉDITION CAMOUFLAGE EXTRÊME #7 » passe 2 M de vues en 13 h",
+   "url": "https://www.youtube.com/watch?v=wGZKQoYpRts",
+   "channel": "Amixem",
+   "metrics": {
+    "views": 2023176,
+    "age_h": 13.7
+   },
+   "hint": 8,
+   "first_seen_utc": "2026-11-23T06:09:32Z"
+  },
+  {
+   "id": "steam-top-2507950-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T06:09:31Z",
+   "title": "Delta Force entre dans le top 25 Steam (38 161 joueurs connectés)",
+   "url": "https://steamdb.info/app/2507950/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 23,
+    "players": 38161,
+    "peak_24h": 100563
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T06:09:32Z"
   }
  ],
- "updated_utc": "2026-11-23T04:48:16Z",
+ "updated_utc": "2026-11-23T06:09:32Z",
  "report": {
-  "twitch": "ignoré : secrets TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET absents",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
-  "reddit": "ignoré : secret APIFY_TOKEN absent",
+  "reddit": "0 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
