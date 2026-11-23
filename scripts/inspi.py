@@ -36,18 +36,38 @@ def platform(u):
     return "web"
 
 
+def norm(u):
+    """Lien sans paramètres de suivi ni slash final : sert à repérer un même post partagé deux fois."""
+    u = (u or "").strip()
+    v = re.search(r"[?&]v=([\w-]+)", u)  # YouTube : l'identifiant est dans ?v=
+    u = re.sub(r"[?#].*$", "", u).rstrip("/") + (f"?v={v.group(1)}" if v else "")
+    m = re.match(r"(?i)(https?://)(?:www\.|m\.)?([^/]+)(.*)", u)
+    return (m.group(2).lower() + m.group(3)) if m else u
+
+
+def close_issue(n, msg):
+    if shutil.which("gh"):
+        subprocess.run(["gh", "api", "-X", "POST", f"repos/{REPO}/issues/{n}/comments", "-f", f"body={msg}"], capture_output=True, timeout=60)
+        subprocess.run(["gh", "api", "-X", "PATCH", f"repos/{REPO}/issues/{n}", "-f", "state=closed", "-f", "state_reason=not_planned"], capture_output=True, timeout=60)
+
+
 def cmd_list(a):
-    done = {str(x["n"]) for x in lobby.load(J, {"items": []})["items"]}
-    rows = []
-    for it in gh_issues():
+    items = lobby.load(J, {"items": []})["items"]
+    done = {str(x["n"]) for x in items}
+    seen = {norm(x.get("url")): x["n"] for x in items if x.get("url")}
+    rows, doublons = [], []
+    for it in sorted(gh_issues(), key=lambda i: i["number"]):
         if "pull_request" in it: continue
         labels = [l["name"].lower() for l in it.get("labels", [])]
         if not (it["title"].lower().startswith("inspi") or "inspi" in labels) or str(it["number"]) in done: continue
         urls = URL_RE.findall(f"{it.get('body') or ''} {it['title']}")
         note = URL_RE.sub("", it.get("body") or "").strip()[:200]
+        if urls and norm(urls[0]) in seen:  # même post déjà envoyé (déjà analysé ou en double dans le lot)
+            doublons.append(it["number"]); close_issue(it["number"], f"Doublon de #{seen[norm(urls[0])]} : ignoré."); continue
+        if urls: seen[norm(urls[0])] = it["number"]
         rows.append({"n": it["number"], "url": urls[0] if urls else None, "platform": platform(urls[0]) if urls else None,
                      "ajoute_utc": it["created_at"], "note_alix": note or None})
-    lobby.out({"a_traiter": len(rows), "items": rows[:10]})
+    lobby.out({"a_traiter": len(rows), "doublons_fermes": doublons, "items": rows[:10]})
 
 
 def ytdlp(url, d):
