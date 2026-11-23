@@ -198,13 +198,13 @@
    "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
    "channel": "ZeratoR",
    "metrics": {
-    "views": 8099,
-    "views_per_h": 3858,
-    "age_h": 2.1
+    "views": 15310,
+    "views_per_h": 4864,
+    "age_h": 3.1
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T19:06:23Z"
+   "updated_utc": "2026-11-23T20:09:01Z"
   },
   {
    "id": "yt-new-TN9q6Pgl5-A",
@@ -214,13 +214,13 @@
    "url": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
    "channel": "JL Tomy",
    "metrics": {
-    "views": 6122,
-    "views_per_h": 1980,
-    "age_h": 3.1
+    "views": 10356,
+    "views_per_h": 2502,
+    "age_h": 4.1
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T19:06:23Z"
+   "updated_utc": "2026-11-23T20:09:01Z"
   },
   {
    "id": "yt-new-xDxXCZ_C4lY",
@@ -230,13 +230,13 @@
    "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
    "channel": "Gotaga",
    "metrics": {
-    "views": 26438,
-    "views_per_h": 10193,
-    "age_h": 2.6
+    "views": 70060,
+    "views_per_h": 19237,
+    "age_h": 3.6
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T19:06:23Z"
+   "updated_utc": "2026-11-23T20:09:01Z"
   },
   {
    "id": "steam-top-227300-2026-11-23",
@@ -276,13 +276,13 @@
    "url": "https://www.youtube.com/watch?v=eNCZt3aR-MY",
    "channel": "LeBouseuh",
    "metrics": {
-    "views": 7286,
-    "views_per_h": 3616,
-    "age_h": 2.0
+    "views": 80589,
+    "views_per_h": 26306,
+    "age_h": 3.1
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T18:05:04Z",
-   "updated_utc": "2026-11-23T19:06:23Z"
+   "updated_utc": "2026-11-23T20:09:01Z"
   },
   {
    "id": "reddit-1y3jhs6",
@@ -388,13 +388,39 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "yt-new-bFqP_uO_6DM",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-23T19:28:53Z",
+   "title": "LES EXPÉRIENCES PARANORMALES DE MES ABONNÉS EN LIVE (la dernière!)",
+   "url": "https://www.youtube.com/watch?v=bFqP_uO_6DM",
+   "channel": "Le Grand JD",
+   "metrics": {
+    "views": 12400,
+    "views_per_h": 18559,
+    "age_h": 0.7
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T20:09:01Z"
+  },
+  {
+   "id": "fortnite-news-94e60d11443fdc168386a0d50e827204",
+   "kind": "fortnite",
+   "created_utc": "2026-11-23T20:09:01Z",
+   "title": "Actu Fortnite en jeu : Semaine en or + Journée de la communauté — À partir du 28 novembre, découvrez du nouveau butin et redécouvrez des objets réintroduits lors de la Semaine en or, pen",
+   "url": "https://www.fortnite.com/news",
+   "channel": "Fortnite",
+   "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/6e32f04f347740e7a5bc1e2503a7de14.jpeg?width=1920&height=1080&aspect=fill",
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T20:09:01Z"
   }
  ],
- "updated_utc": "2026-11-23T19:06:23Z",
+ "updated_utc": "2026-11-23T20:09:01Z",
  "report": {
-  "twitch": "40 chaînes suivies, 96 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
-  "reddit": "5 posts retenus",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
+  "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
