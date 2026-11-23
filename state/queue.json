@@ -2078,6 +2078,37 @@
    "taken_at_utc": "2026-11-23T11:04:42Z",
    "post_id": "0021-23_11_2026-Clips",
    "closed_at_utc": "2026-11-23T11:10:18Z"
+  },
+  {
+   "id": "c-20261123-1114-gta6-maj-phases-2026-11",
+   "added_at_utc": "2026-11-23T11:14:53Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : une nouvelle mise à jour arrive par phases, taille révélée",
+   "topic_key": "gta6-maj-phases-2026-11",
+   "origin": "_Tom_Henderson_",
+   "source_tweet": "https://x.com/_Tom_Henderson_/status/2124823478796791925",
+   "primary_source": "https://x.com/_Tom_Henderson_/status/2124823478796791925",
+   "source_time_utc": "2026-11-23T11:12:49Z",
+   "expires_at_utc": "2026-11-23T17:12:49Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "_Tom_Henderson_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Info insider sur la prochaine MAJ de GTA 6 (déploiement par phases, poids révélé) : sujet très suivi, à confirmer par Rockstar.",
+   "titles": [
+    "GTA 6 : la prochaine mise à jour arrivera en plusieurs phases",
+    "GTA 6 : Tom Henderson révèle le poids de la prochaine mise à jour"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "leak"
   }
  ]
 }
