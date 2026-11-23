@@ -2072,8 +2072,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "transfert annoncé par sources dès le 18 nov (pas de confirmation officielle recoupée, hors fraîcheur) ; pas de photo/visuel officiel disponible",
+   "closed_at_utc": "2026-11-23T19:53:06Z"
   },
   {
    "id": "c-20261123-1546-gta6-patch-01-002-002",
