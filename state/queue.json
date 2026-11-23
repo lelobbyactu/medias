@@ -1716,9 +1716,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-23T06:53:27Z"
+   "status": "ecarte",
+   "note": "contexte incertain : audio non vérifié, fils de réponses = embrouille (invitée/forceur) ; titre non vérifiable, doute = pas de publication",
+   "taken_at_utc": "2026-11-23T06:53:27Z",
+   "closed_at_utc": "2026-11-23T06:56:32Z"
   },
   {
    "id": "c-20261122-2315-ishowspeed-gta6-55h-2026-11-22",
