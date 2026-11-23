@@ -176,15 +176,28 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T12:38:15Z"
+  },
+  {
+   "id": "trend-leonida-github-20261123",
+   "kind": "trend",
+   "created_utc": "2026-11-23T15:42:19Z",
+   "title": "Tendance Google FR : « leonida github » (500+ recherches)",
+   "url": "https://rockstarintel.com/could-this-major-gta-vi-leak-make-it-playable-on-pc/",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "Could This Major GTA VI Leak Make It Playable On PC? GTA 6 Leaker Dangles a PC Port Behind a $15 Million Crypto Pump Developers have released the Leonida tool for natively running Grand Theft Auto VI "
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T15:42:19Z"
   }
  ],
- "updated_utc": "2026-11-23T14:29:33Z",
+ "updated_utc": "2026-11-23T15:42:19Z",
  "report": {
   "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
+  "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T12:38:13Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
