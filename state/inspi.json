@@ -44,6 +44,17 @@
    "recette": "Hors sujet (anime/cartoon japonais).",
    "queue_id": null,
    "note": null
+  },
+  {
+   "n": 7,
+   "url": "https://www.instagram.com/reel/DgDFCI4hvVF/",
+   "traite_utc": "2026-11-23T09:57:07Z",
+   "verdict": "ecarte",
+   "score": 3.0,
+   "format": "autre : gameplay brut",
+   "recette": "Gameplay brut sans streamer ni titre, watermark tiers : rien de reproductible.",
+   "queue_id": null,
+   "note": null
   }
  ]
 }
