@@ -1920,8 +1920,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "recoupement 2 médias impossible (palier de vues non relayé), info mineure",
+   "closed_at_utc": "2026-11-23T06:56:41Z"
   },
   {
    "id": "c-20261123-0515-anyme-leto-lucia-polemique",
