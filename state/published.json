@@ -250,13 +250,20 @@
   },
   {
    "id": "0021-23_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Une streameuse vole un jet dans GTA 6 en le controlant avec son cerveau (casque EEG)",
    "origin": "perrikaryal",
    "source_tweet": "https://x.com/perrikaryal/status/2124639246971548122",
    "queue_id": "c-20261123-1104-perrikaryal-gta6-jet-cerveau",
-   "reserved_at_utc": "2026-11-23T11:05:16Z"
+   "reserved_at_utc": "2026-11-23T11:05:16Z",
+   "published_at_utc": "2026-11-23T11:10:18Z",
+   "instagram": "https://www.instagram.com/lelobbyactu/ (url du post non renvoyee par Zernio)",
+   "tiktok": "pause",
+   "zernio_post_id": "6b041ea03eae08275854593f",
+   "judge_score": "7/10",
+   "slot": "12h",
+   "note": "secours Apify (clip perrikaryal, source verticale -> make_reel_916 impossible -> make_reel.py, Instagram seul) ; TikTok en pause"
   }
  ]
 }
