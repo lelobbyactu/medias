@@ -198,13 +198,13 @@
    "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
    "channel": "ZeratoR",
    "metrics": {
-    "views": 4349,
-    "views_per_h": 4019,
-    "age_h": 1.1
+    "views": 8099,
+    "views_per_h": 3858,
+    "age_h": 2.1
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T18:05:04Z"
+   "updated_utc": "2026-11-23T19:06:23Z"
   },
   {
    "id": "yt-new-TN9q6Pgl5-A",
@@ -214,13 +214,13 @@
    "url": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
    "channel": "JL Tomy",
    "metrics": {
-    "views": 2248,
-    "views_per_h": 1084,
-    "age_h": 2.1
+    "views": 6122,
+    "views_per_h": 1980,
+    "age_h": 3.1
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T18:05:04Z"
+   "updated_utc": "2026-11-23T19:06:23Z"
   },
   {
    "id": "yt-new-xDxXCZ_C4lY",
@@ -230,13 +230,13 @@
    "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
    "channel": "Gotaga",
    "metrics": {
-    "views": 15159,
-    "views_per_h": 9615,
-    "age_h": 1.6
+    "views": 26438,
+    "views_per_h": 10193,
+    "age_h": 2.6
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T17:06:01Z",
-   "updated_utc": "2026-11-23T18:05:04Z"
+   "updated_utc": "2026-11-23T19:06:23Z"
   },
   {
    "id": "steam-top-227300-2026-11-23",
@@ -276,19 +276,125 @@
    "url": "https://www.youtube.com/watch?v=eNCZt3aR-MY",
    "channel": "LeBouseuh",
    "metrics": {
-    "views": 4722,
-    "views_per_h": 4733,
-    "age_h": 1.0
+    "views": 7286,
+    "views_per_h": 3616,
+    "age_h": 2.0
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T18:05:04Z"
+   "first_seen_utc": "2026-11-23T18:05:04Z",
+   "updated_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "reddit-1y3jhs6",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T14:21:35Z",
+   "title": "Togi losses 340k thousand usd in 5 minutes on his robinhood account after Jensen Huang returns to NVIDIA live on stream",
+   "url": "https://www.reddit.com/r/LivestreamFail/comments/1y3jhs6/togi_losses_340k_thousand_usd_in_5_minutes_on_his/",
+   "channel": "r/LivestreamFail",
+   "media_url": "https://v.redd.it/rotewr69fd3i1/HLSPlaylist.m3u8",
+   "metrics": {
+    "score": 4450,
+    "comments": 623,
+    "flair": ":kick: Togi",
+    "link": "https://v.redd.it/rotewr69fd3i1",
+    "domain": "v.redd.it"
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "reddit-1y3ggdb",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T11:58:31Z",
+   "title": "Maximilian Dood on how GTA 6 is different compared to any previous GTA game",
+   "url": "https://www.reddit.com/r/LivestreamFail/comments/1y3ggdb/maximilian_dood_on_how_gta_6_is_different/",
+   "channel": "r/LivestreamFail",
+   "media_url": "https://v.redd.it/0kdac0ptpc3i1/HLSPlaylist.m3u8",
+   "metrics": {
+    "score": 2737,
+    "comments": 805,
+    "flair": ":twitch:",
+    "link": "https://v.redd.it/0kdac0ptpc3i1",
+    "domain": "v.redd.it"
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "reddit-1y3jzqe",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T14:41:17Z",
+   "title": "Cyberleek posted the GTA 6 Xbox build executable",
+   "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
+   "channel": "r/GamingLeaksAndRumours",
+   "media_url": "",
+   "metrics": {
+    "score": 2766,
+    "comments": 1143,
+    "flair": "Leak",
+    "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
+    "domain": "self.GamingLeaksAndRumours"
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "reddit-1y3nshb",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T17:07:20Z",
+   "title": "‘God of War’ Live-Action Series: Deborah Ann Woll to Reprise Faye Role",
+   "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3nshb/god_of_war_liveaction_series_deborah_ann_woll_to/",
+   "channel": "r/GamingLeaksAndRumours",
+   "media_url": "",
+   "metrics": {
+    "score": 377,
+    "comments": 40,
+    "flair": "Rumour",
+    "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3nshb/god_of_war_liveaction_series_deborah_ann_woll_to/",
+    "domain": "self.GamingLeaksAndRumours"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "reddit-1y3lqh2",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T15:49:52Z",
+   "title": "Windows Central: Xbox Helix was originally meant to have free online multiplayer, full PC games, and Steam, but plans may have changed",
+   "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3lqh2/windows_central_xbox_helix_was_originally_meant/",
+   "channel": "r/GamingLeaksAndRumours",
+   "media_url": "",
+   "metrics": {
+    "score": 383,
+    "comments": 284,
+    "flair": "Rumour",
+    "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3lqh2/windows_central_xbox_helix_was_originally_meant/",
+    "domain": "self.GamingLeaksAndRumours"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
+  },
+  {
+   "id": "steam-top-4080220-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T19:06:22Z",
+   "title": "EA SPORTS FC™ 27 entre dans le top 25 Steam (53 431 joueurs connectés)",
+   "url": "https://steamdb.info/app/4080220/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 53431,
+    "peak_24h": 59690
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T19:06:23Z"
   }
  ],
- "updated_utc": "2026-11-23T18:05:04Z",
+ "updated_utc": "2026-11-23T19:06:23Z",
  "report": {
-  "twitch": "40 chaînes suivies, 94 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-23T12:38:13Z)",
+  "twitch": "40 chaînes suivies, 96 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
+  "reddit": "5 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
