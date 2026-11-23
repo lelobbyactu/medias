@@ -115,15 +115,28 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T08:07:26Z"
+  },
+  {
+   "id": "trend-rockstar-north-20261123",
+   "kind": "trend",
+   "created_utc": "2026-11-23T09:54:43Z",
+   "title": "Tendance Google FR : « rockstar north » (100+ recherches)",
+   "url": "https://www.franceinfo.fr/culture/jeux-video/dans-l-ombre-de-la-sortie-de-gta-vi-des-salaries-de-rockstar-games-se-prononcent-sur-la-reconnaissance-d-un-syndicat_8284856.html",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "Dans l&apos;ombre de la sortie de GTA VI, des salariés de Rockstar Games se prononcent sur la reconnaissance d&apos;un syndicat Le procès de Rockstar pour entrave à l’activité syndicale s’achève à la "
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T09:54:43Z"
   }
  ],
- "updated_utc": "2026-11-23T08:07:26Z",
+ "updated_utc": "2026-11-23T09:54:43Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 95 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 38 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T06:26:17Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
