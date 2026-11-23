@@ -11,6 +11,17 @@
    "recette": "Hors sujet (poursuites/chats, Japon).",
    "queue_id": null,
    "note": null
+  },
+  {
+   "n": 4,
+   "url": "https://www.instagram.com/reel/DgCYND6owPi/",
+   "traite_utc": "2026-11-23T09:56:55Z",
+   "verdict": "ecarte",
+   "score": 6.0,
+   "format": "reel-clip",
+   "recette": "Accroche curiosité « au bout de la map » : bonne idée mais streamer peu connu, pas de victime + twist clair.",
+   "queue_id": null,
+   "note": null
   }
  ]
 }
