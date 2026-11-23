@@ -90,44 +90,6 @@
    "note": "Traction faible (16 likes, 2,5k vues à 8 min) ; gag exact non vu, regarder le clip avant de choisir le titre. Même live que les 2 autres clips Gotaga de la file : en prendre un seul."
   },
   {
-   "id": "c-20261120-1630-fortnite-overwatch-wave2",
-   "added_at_utc": "2026-11-20T16:50:00Z",
-   "found_by": "veille-int",
-   "type": "clip",
-   "topic": "Fortnite x Overwatch vague 2 : trailer officiel de Widowmaker (la Française) et Kiriko, dans la boutique ce soir",
-   "topic_key": "fortnite-overwatch-wave2-widowmaker-kiriko",
-   "origin": "ShiinaBR",
-   "source_tweet": "https://x.com/HYPEX/status/2123869583333544163",
-   "primary_source": "Leak ShiinaBR / HYPEX / Jorge_Most (18 nov.) ; confirmation officielle Epic/Fortnite attendue au reset de la boutique (00:00 UTC = 01 h Paris)",
-   "source_time_utc": "2026-11-20T20:02:22Z",
-   "expires_at_utc": "2026-11-21T00:30:00Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "FN_Assist",
-    "HYPEX",
-    "OWCavalry",
-    "ShiinaBR",
-    "FortniteFR"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123869515855298560/vid/avc1/1080x1920/XfLjCGiSv05IvQjH.mp4?tag=29",
-   "media_repo_path": "queue/c-20261120-1630-fortnite-overwatch-wave2.mp4",
-   "angle": "Widowmaker = Amélie Lacroix, assassin française d'Overwatch : 2 skins, 2 pickaxes, 1 emote, 1 paire de kicks ; première vague en mai (D.Va, Genji, Tracer, Mercy).",
-   "titles": [
-    "Widowmaker, la *Française* d'Overwatch, débarque sur Fortnite ce soir",
-    "Fortnite : *Widowmaker* et Kiriko arrivent dans la boutique"
-   ],
-   "checks": [
-    "https://www.talkesport.com/news/fortnite/fortnite-overwatch-kiriko-widowmaker-release-date/",
-    "https://x.com/ShiinaBR/status/2123054307616686544"
-   ],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "MAJ veille-int 20:45 UTC : le leak est confirmé par un trailer de sortie officiel (relayé par HYPEX 20:02 UTC, vidéo 9:16 de 20 s, 1080x1920, ~12 Mo, téléchargée dans queue/). Drop dans la boutique à 00:00 UTC (01 h Paris). Reel d'éditeur 🟢 : créditer Fortnite / Epic Games (vérifier le tweet @Fortnite d'origine si possible) ; titre « histoire » à soigner. Pas de keyart nécessaire pour un reel. Idéal pour le créneau 21 h Paris (ou 8 h demain, mais le drop aura eu lieu). | veille-fr 21:13Z : @FortniteFR (officiel) poste le trailer 9:16 à 20:01Z, 5 comptes cumulés = actu brûlante 5_comptes, pris par la veille-fr (juge 8/10, combo A).",
-   "hot": true,
-   "post_id": "0013-20_11_2026-Clips"
-  },
-  {
    "id": "c-20261120-1716-domingo-gta6-fusillade-police",
    "added_at_utc": "2026-11-20T17:16:00Z",
    "found_by": "veille-fr",
@@ -240,40 +202,6 @@
    "photo_needed": "",
    "status": "expire",
    "note": "Seul le relais LaTwitchance (vertical 576x1024, 27 s, probable watermark) est disponible : ne pas l'utiliser tel quel. Retrouver le clip d'origine (compte Squeezie / Twitch) avant montage ; sinon ecarte. Photo Squeezie dispo (assets/photos) si carrousel."
-  },
-  {
-   "id": "c-20261120-1808-ishowspeed-gta6-52h",
-   "added_at_utc": "2026-11-20T19:15:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "IShowSpeed termine l'histoire de GTA VI après un stream de 52 h non-stop et finit en larmes",
-   "topic_key": "ishowspeed-gta6-histoire-52h",
-   "origin": "IShowSpeed (stream YouTube, relayé par FrenchRapUS et Kulturlesite_)",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2123840866393690599",
-   "primary_source": "Stream YouTube d'IShowSpeed (annonce X @ishowspeedsui à 12:46 UTC : « BEATING GTA 6 TODAY »)",
-   "source_time_utc": "2026-11-20T18:08:00Z",
-   "expires_at_utc": "2026-11-21T00:00:00Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "FrenchRapUS",
-    "Kulturlesite_",
-    "riyadinhoo_"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Le streamer n°1 mondial boucle le jeu le plus attendu en 52 h sans dormir et pleure à la fin : 4,8k likes / 190k vues en 10 min sur FrenchRapUS, repris par une dizaine de comptes (Raphouse 931k…).",
-   "titles": [
-    "IShowSpeed *termine* GTA 6 en 52 h et finit en larmes",
-    "52 h sans dormir : IShowSpeed boucle *GTA 6*"
-   ],
-   "checks": [
-    "https://x.com/ishowspeedsui/status/2123759904976773492",
-    "https://x.com/raphousetv2/status/2123843113169068422"
-   ],
-   "photo_needed": "ishowspeed (pas de photo en dépôt : utiliser seulement le keyart GTA 6)",
-   "status": "expire",
-   "note": "ATTENTION : « premier humain/streamer à finir GTA 6 » (FrenchRapUS) NON vérifié et probablement faux (Kai Cenat, Ibai ont déjà fini ; ne pas reprendre ce « premier »). Ne pas spoiler la fin (Lucia et Jason meurent selon des relais, non confirmé) : dire seulement « larmes ». Chiffres de revenus/vues de comptes fans = à ne pas reprendre. Recouper avec 2 médias (Dexerto, Rockstar Intel, Insider Gaming) avant montage ; recherche web faite à 20:13 Paris ne remonte rien encore. Candidat idéal pour créneau 21h (expire 00:00 UTC). Seulement 2 comptes suivis (pas 5_comptes). | 21h : non recoupé (aucun média trouvé), laissé en attente jusqu'à expiration."
   },
   {
    "id": "c-20261120-1839-domingo-gta6-ovni-foret",
@@ -855,8 +783,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": "Score 6, pas de MP4 en file (< 7). À couper à ~30 s utiles. Vérifier la chute avant titre."
+   "status": "expire",
+   "note": "Score 6, pas de MP4 en file (< 7). À couper à ~30 s utiles. Vérifier la chute avant titre.",
+   "closed_at_utc": "2026-11-23T01:15:14Z"
   },
   {
    "id": "c-20261122-1316-yeney-gta6-verdict-30fps",
@@ -1453,8 +1382,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T01:15:14Z"
   },
   {
    "id": "c-20261122-1916-gta6-squeezie-systeme-police",
@@ -1569,8 +1499,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T01:15:14Z"
   },
   {
    "id": "c-20261122-1916-gta6-relations-jason-lucia-conception",
@@ -1626,8 +1557,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T01:15:14Z"
   },
   {
    "id": "c-20261122-1916-ubisoft-ac-jade-toujours-en-dev",
@@ -1653,8 +1585,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T01:15:14Z"
   },
   {
    "id": "c-20261122-2115-ishowspeed-usain-bolt-sprint",
@@ -1908,6 +1841,94 @@
    "titles": [
     "GTA 6 : les streamers sur Twitch bondissent de 30 %, les viewers de 11 %",
     "Sur Twitch, GTA 6 attire plus de streamers que de spectateurs"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0115-doigby-feat-anyme-gazo",
+   "added_at_utc": "2026-11-23T01:15:14Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Doigby laisse échapper un feat secret entre Anyme et Gazo pendant un live",
+   "topic_key": "doigby-feat-anyme-gazo",
+   "origin": "Doigby",
+   "source_tweet": "https://x.com/LaTwitchance/status/2124658291053670435",
+   "primary_source": "https://x.com/LaTwitchance/status/2124658291053670435",
+   "source_time_utc": "2026-11-23T00:16:25Z",
+   "expires_at_utc": "2026-11-23T06:16:25Z",
+   "fiabilite": "🟠",
+   "score": 8,
+   "mentions": [
+    "LaTwitchance",
+    "riyadinhoo_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Une collab non annoncée révélée par accident en live, avec Anyme visiblement gêné : le genre de révélation qui fait tourner les clips et les spéculations.",
+   "titles": [
+    "Doigby lâche par erreur un feat secret entre Anyme et Gazo",
+    "Anyme embarrassé : un feat avec Gazo révélé en live par Doigby"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0115-tysmey-sale-retour",
+   "added_at_utc": "2026-11-23T01:15:14Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Tysmey Salé fait son retour sur TikTok après 4 ans d'inactivité",
+   "topic_key": "tysmey-sale-retour",
+   "origin": "Tysmey Salé",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124657935905124826",
+   "primary_source": "https://x.com/riyadinhoo_/status/2124657935905124826",
+   "source_time_utc": "2026-11-23T00:15:00Z",
+   "expires_at_utc": "2026-11-23T06:15:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "riyadinhoo_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Une légende de TikTok France qui revient après quatre ans de silence : nostalgie forte chez les 18-25 ans et retour très visible.",
+   "titles": [
+    "La légende de TikTok Tysmey Salé fait son grand retour",
+    "Tysmey Salé revient après 4 ans d'inactivité sur TikTok"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0115-warshaw-ia-krach-jeu-video",
+   "added_at_utc": "2026-11-23T01:15:14Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Howard Scott Warshaw (créateur de E.T.) prévient que l'IA pourrait provoquer un nouveau krach du jeu vidéo",
+   "topic_key": "warshaw-ia-krach-jeu-video",
+   "origin": "Howard Scott Warshaw",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124655417401991498",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124655417401991498",
+   "source_time_utc": "2026-11-23T00:05:00Z",
+   "expires_at_utc": "2026-11-23T06:05:00Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "Pirat_Nation"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un vétéran du jeu vidéo qui compare l'IA au krach de 1983 et réclame de meilleurs filtres sur Steam : débat sur l'avenir de l'industrie.",
+   "titles": [
+    "Le créateur de E.T. craint un nouveau krach du jeu vidéo à cause de l'IA",
+    "Howard Scott Warshaw : l'IA risque de noyer Steam sous les jeux médiocres"
    ],
    "checks": [],
    "photo_needed": "",
