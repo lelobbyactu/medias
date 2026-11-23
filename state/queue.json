@@ -1954,6 +1954,35 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261123-0717-gta6-missions-monde-ouvert-design",
+   "added_at_utc": "2026-11-23T07:17:24Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : Rockstar explique vouloir effacer la frontière entre missions et monde ouvert",
+   "topic_key": "gta6-missions-monde-ouvert-design",
+   "origin": "Rockstar Games (propos relayé par @Pirat_Nation)",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124761365667631254",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124761365667631254",
+   "source_time_utc": "2026-11-23T07:06:00Z",
+   "expires_at_utc": "2026-11-23T13:06:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Pirat_Nation"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Rockstar détaille la conception des missions de GTA 6, pensées pour se fondre dans le monde ouvert avec Jason et Lucia : sujet très suivi, mais déclaration sans visuel ni annonce nouvelle.",
+   "titles": [
+    "GTA 6 : Rockstar veut effacer la frontière entre missions et monde ouvert",
+    "GTA 6 : les missions seront connectées au monde ouvert, selon Rockstar"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
