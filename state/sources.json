@@ -426,16 +426,16 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 1735,
-    "views_per_h": 1158,
+    "views": 1886,
+    "views_per_h": 754,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
     "suivi": true
    },
-   "hint": 6,
+   "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-23T22:28:06Z"
+   "updated_utc": "2026-11-23T23:28:09Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -467,8 +467,8 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 407,
-    "views_per_h": 279,
+    "views": 534,
+    "views_per_h": 217,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
@@ -476,7 +476,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-23T22:28:06Z"
+   "updated_utc": "2026-11-23T23:28:09Z"
   },
   {
    "id": "steam-top-322170-2026-11-23",
@@ -492,11 +492,31 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T22:28:06Z"
+  },
+  {
+   "id": "twitch-clip-ExuberantOnerousFerretDoggo-CaPIg4KRGNl1movX",
+   "kind": "twitch_clip",
+   "created_utc": "2026-11-23T20:58:01Z",
+   "title": "un doigt dans le gosse",
+   "url": "https://www.twitch.tv/zerator/clip/ExuberantOnerousFerretDoggo-CaPIg4KRGNl1movX",
+   "media_url": "https://www.twitch.tv/zerator/clip/ExuberantOnerousFerretDoggo-CaPIg4KRGNl1movX",
+   "channel": "zerator",
+   "lang": "fr",
+   "metrics": {
+    "views": 300,
+    "views_per_h": 119,
+    "duration_s": 36,
+    "game": "",
+    "streamer": "ZeratoR",
+    "suivi": true
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T23:28:09Z"
   }
  ],
- "updated_utc": "2026-11-23T22:28:06Z",
+ "updated_utc": "2026-11-23T23:28:09Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 2 clips retenus",
+  "twitch": "40 chaînes suivies, 96 lives FR lus, 3 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
   "steam": "top 25 lu",
