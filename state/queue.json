@@ -2,61 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261120-1606-gotaga-gta6-jason-aura",
-   "added_at_utc": "2026-11-20T16:20:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Gotaga : « la perte d'aura de Jason » sur GTA 6 (puis « le six-pack de Jason est trop sensible »)",
-   "topic_key": "gotaga-gta6-jason-aura",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2123810307361694104",
-   "primary_source": "https://x.com/GotagaTV/status/2123810307361694104",
-   "source_time_utc": "2026-11-20T16:06:50Z",
-   "expires_at_utc": "2026-11-21T16:06:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123810240772579328/vid/avc1/1920x1080/mRuQL1LJG3IYE8dy.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Gotaga se moque de Jason (héros de GTA 6) qui perd son « aura » : 15 s, 1080p, téléchargeable.",
-   "titles": [
-    "Gotaga se moque de la *perte d'aura* de Jason dans GTA 6",
-    "Jason (GTA 6) *perd son aura* en direct chez Gotaga"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Traction faible (16 likes, 2,5k vues à 8 min) ; gag exact non vu, regarder le clip avant de choisir le titre. Même live que les 2 autres clips Gotaga de la file : en prendre un seul."
-  },
-  {
-   "id": "c-20261120-1716-domingo-gta6-fusillade-police",
-   "added_at_utc": "2026-11-20T17:16:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Domingo en fusillade contre la police sur GTA 6 (clip de 90 s, facecam)",
-   "topic_key": "domingo-gta6-fusillade-police-90s",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2123812665411932307",
-   "primary_source": "https://x.com/DomingoTV/status/2123812665411932307",
-   "source_time_utc": "2026-11-20T16:16:12Z",
-   "expires_at_utc": "2026-11-21T16:16:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123812504111374336/vid/avc1/1280x720/Bh8YvgGlhmoe8Pvi.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Domingo (facecam) dans une longue course-poursuite/fusillade avec la police de GTA 6 ; tweet « La scène est DINGUE » (68 likes, 7,3 k vues) ; chute exacte non identifiée, à visionner en entier avant montage",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "90 s (limite). Moment fort à trouver ; si pas de chute claire, écarter. Domingo déjà publié 0004 et 0007."
-  },
-  {
    "id": "c-20261120-1722-domingo-gta6-voiture-arbre",
    "added_at_utc": "2026-11-20T18:15:00Z",
    "found_by": "veille-fr",
@@ -233,39 +178,6 @@
    "photo_needed": "",
    "status": "expire",
    "note": "Score 6 (traction faible, clip très court). Le « vice-champion » fait peut-être référence à Squeezie (3e au GP) : à vérifier dans les réponses au tweet avant le titre. MP4 non téléchargé (score < 7)."
-  },
-  {
-   "id": "c-20261121-1118-gta6-profil-criminel-5-niveaux",
-   "added_at_utc": "2026-11-21T11:18:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA 6 : le profil criminel classe Jason et Lucia en 5 niveaux (Professionnel, Endurci, Violent, Psychopathe, Irrécupérable)",
-   "topic_key": "gta6-profil-criminel-5-niveaux",
-   "origin": "DexertoFR",
-   "source_tweet": "https://x.com/DexertoFR/status/2124088188432007604",
-   "primary_source": "mécanique du jeu (Rockstar) ; Dexerto wiki 'criminal profile system'",
-   "source_time_utc": "2026-11-21T10:31:02Z",
-   "expires_at_utc": "2026-11-21T16:31:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "DexertoFR"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Nouvelle mécanique de GTA 6 : un profil criminel suivi séparément pour Jason et Lucia, avec un état final irréversible (Irrécupérable). Très repris par la presse JV.",
-   "titles": [
-    "GTA 6 sait quel genre de *criminel* tu es",
-    "Jason et Lucia peuvent devenir *Irrécupérables* dans GTA 6"
-   ],
-   "checks": [
-    "https://insider-gaming.com/all-criminal-profiles-explained-gta-6/",
-    "https://www.pcgamer.com/games/grand-theft-auto/gta-6s-criminal-profile-system-sounds-pretty-interesting-isnt-a-direct-copy-of-red-deads-honor-system/",
-    "https://www.dexerto.com/wikis/gta-6/criminal-profile-system/"
-   ],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Sujet explicatif (pas une annonce) : à publier seulement si rien de mieux au créneau ; vérifier les 5 niveaux sur 2 sources avant montage."
   },
   {
    "id": "c-20261121-1415-domingo-gta6-jason-braquage",
