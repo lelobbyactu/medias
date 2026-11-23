@@ -94,72 +94,6 @@
    "closed_at_utc": "2026-11-22T10:52:52Z"
   },
   {
-   "id": "c-20261121-1453-gta6-circana-engagement",
-   "added_at_utc": "2026-11-21T15:14:29Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA 6 : 61 % des joueurs PS5 américains et 56 % des joueurs Xbox actifs le 19 nov. y ont joué, plus de 8 h en moyenne (Circana)",
-   "topic_key": "gta6-circana-engagement-day-one",
-   "origin": "JVCom",
-   "source_tweet": "https://x.com/JVCom/status/2124154337177809121",
-   "primary_source": "Mat Piscatella (Circana) sur Bluesky, via JVCom",
-   "source_time_utc": "2026-11-21T14:53:00Z",
-   "expires_at_utc": "2026-11-21T20:50:00Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "JVCom"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Plus de la moitié des joueurs console actifs le jour du lancement ont lancé GTA 6, 513 min (PS5) et 494 min (Xbox) de jeu en moyenne : record d'engagement, chiffre qui parle.",
-   "titles": [
-    "Plus de la *moitié* des joueurs console ont lancé GTA 6",
-    "GTA 6 : *8 heures* de jeu en moyenne le jour du lancement"
-   ],
-   "checks": [
-    "https://www.thegamer.com/gta-6-half-of-all-active-console-users-played/",
-    "https://www.vgchartz.com/article/469713/61-of-us-ps5-players-active-on-november-19-played-gta-6-56-of-global-xbox-players/",
-    "https://gamingbolt.com/gta-6-players-averaged-8-hours-of-playtime-at-launch-says-circana",
-    "https://www.gamespot.com/articles/gta-6-sets-even-more-records/"
-   ],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Carrousel chiffres. Précision à garder : 61 % = joueurs PS5 américains actifs le 19 nov. ; 56 % = joueurs Xbox du monde entier ; durées moyennes 513 min PS5 / 494 min Xbox. Nouveau vs 0008 (ventes), 0012 (Take-Two), 0014 (Metacritic). | publié créneau 18h",
-   "post_id": "0017-21_11_2026-Chiffres"
-  },
-  {
-   "id": "c-20261121-1505-gta6-little-sam-houser",
-   "added_at_utc": "2026-11-21T15:14:29Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA 6 : un vieil homme en t-shirt Rockstar, surnommé « Little Sam », ressemble au boss Sam Houser ; Rockstar refuse de confirmer",
-   "topic_key": "gta6-little-sam-houser-cameo",
-   "origin": "JVCom",
-   "source_tweet": "https://x.com/JVCom/status/2124157134409785548",
-   "primary_source": "Kotaku (interview de Rob Nelson, directeur de production Rockstar)",
-   "source_time_utc": "2026-11-21T15:05:00Z",
-   "expires_at_utc": "2026-11-21T21:00:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "JVCom"
-   ],
-   "media_url": "assets/keyart/gta6.jpg",
-   "media_repo_path": "",
-   "angle": "Easter egg : le cofondateur de Rockstar aurait un caméo en plein milieu de l'histoire de GTA 6, Rockstar ne dément pas.",
-   "titles": [
-    "Le *boss de Rockstar* caché dans GTA 6 ?",
-    "« *Little Sam* » : Sam Houser a-t-il un caméo dans GTA 6 ?"
-   ],
-   "checks": [
-    "https://kotaku.com/rockstar-wouldnt-confirm-or-deny-if-thats-studio-president-sam-houser-in-gta-6-2000758489"
-   ],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Présenter comme une ressemblance non confirmée (pas de photo de Sam Houser : key art GTA 6 seulement). Sujet léger, à prendre si le créneau manque de mieux."
-  },
-  {
    "id": "c-20261121-1601-gta6-zelda-guerre-notes",
    "added_at_utc": "2026-11-21T17:15:00Z",
    "found_by": "veille-fr",
@@ -2406,6 +2340,211 @@
    "status": "ecarte",
    "note": "teaser non recoupé par 2 médias (recherches: seulement d'anciens leaks), pas de key art officiel",
    "closed_at_utc": "2026-11-23T19:53:09Z"
+  },
+  {
+   "id": "c-20261123-2117-fortnite-semaine-or-2026-11",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "sources:fortnite",
+   "type": "actu",
+   "topic": "Fortnite : Semaine en or et Journée de la communauté à partir du 28 novembre",
+   "topic_key": "fortnite-semaine-or-2026-11",
+   "origin": "Fortnite (Epic Games)",
+   "source_tweet": "https://www.fortnite.com/news",
+   "primary_source": "https://www.fortnite.com/news",
+   "source_time_utc": "2026-11-23T20:09:01Z",
+   "expires_at_utc": "2026-11-24T02:09:01Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "HYPEX",
+    "ShiinaBR",
+    "fortnite"
+   ],
+   "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/6e32f04f347740e7a5bc1e2503a7de14.jpeg?width=1920&height=1080&aspect=fill",
+   "media_repo_path": "",
+   "angle": "Événement officiel avec retour des objets dorés des Capitaines, double XP et Journée de la communauté le 5 décembre",
+   "titles": [
+    "Fortnite : la Semaine en or revient le 28 novembre",
+    "Fortnite lance sa Semaine en or avec la Journée de la communauté"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-gta6-acteur-personnage-appel",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : un acteur ne sait pas quel personnage il incarne et lance un appel aux fans",
+   "topic_key": "gta6-acteur-personnage-appel",
+   "origin": "Guy A. Fortt (acteur de GTA 6)",
+   "source_tweet": "https://x.com/Dexerto/status/2124956436207640797",
+   "primary_source": "https://x.com/Dexerto/status/2124956436207640797",
+   "source_time_utc": "2026-11-23T20:01:08Z",
+   "expires_at_utc": "2026-11-24T02:01:08Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "Dexerto"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Histoire virale : un acteur de GTA 6 ignore quel personnage il joue et demande aux fans de le retrouver, avec plus de 130 000 vues",
+   "titles": [
+    "Un acteur de GTA 6 cherche son personnage sans savoir qui il incarne",
+    "GTA 6 : l'acteur qui demande aux fans de retrouver son rôle"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-gta6-ventes-45m",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : 45 millions d'exemplaires vendus en cinq jours (chiffre non confirmé)",
+   "topic_key": "gta6-ventes-45m",
+   "origin": "Rockstar / Take-Two (chiffre relayé)",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2124974212674883966",
+   "primary_source": "https://x.com/FrenchRapUS/status/2124974212674883966",
+   "source_time_utc": "2026-11-23T21:11:47Z",
+   "expires_at_utc": "2026-11-24T03:11:47Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "FrenchRapUS",
+    "Kulturlesite_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Chiffre de ventes spectaculaire relayé par deux comptes sans source officielle : à confirmer avant publication",
+   "titles": [
+    "GTA 6 aurait déjà écoulé 45 millions d'exemplaires",
+    "45 millions de GTA 6 vendus en cinq jours : le chiffre qui circule"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-gta6-maj-1",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : Rockstar déploie une première mise à jour avec une liste de correctifs",
+   "topic_key": "gta6-maj-1",
+   "origin": "Rockstar Games",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124944895299449026",
+   "primary_source": "https://x.com/riyadinhoo_/status/2124944895299449026",
+   "source_time_utc": "2026-11-23T19:15:17Z",
+   "expires_at_utc": "2026-11-24T01:15:17Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [
+    "riyadinhoo_"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Première MAJ du jeu avec des correctifs très détaillés, à confirmer par une communication officielle de Rockstar",
+   "titles": [
+    "GTA 6 : la première mise à jour est là, voici ce qu'elle corrige",
+    "Première MAJ de GTA 6 : les correctifs qui vont plaire aux joueurs"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-gta6-vermeij-chapitre1",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : un ancien directeur technique de Rockstar défend le premier chapitre",
+   "topic_key": "gta6-vermeij-chapitre1",
+   "origin": "Obbe Vermeij (ex-Rockstar)",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2124956152987373641",
+   "primary_source": "https://x.com/Pirat_Nation/status/2124956152987373641",
+   "source_time_utc": "2026-11-23T20:00:01Z",
+   "expires_at_utc": "2026-11-24T02:00:01Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Pirat_Nation"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un ancien de Rockstar répond aux critiques sur le début très guidé de GTA 6",
+   "titles": [
+    "Un ex-Rockstar défend le premier chapitre de GTA 6",
+    "GTA 6 : l'ancien directeur technique de Rockstar répond aux critiques"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-rnboi-olympia-piaf",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "RnBoi fait son entrée à l'Olympia sur Hymne à l'amour d'Édith Piaf",
+   "topic_key": "rnboi-olympia-piaf",
+   "origin": "RnBoi",
+   "source_tweet": "https://x.com/ShadesFrance/status/2124960213933425002",
+   "primary_source": "https://x.com/ShadesFrance/status/2124960213933425002",
+   "source_time_utc": "2026-11-23T20:16:09Z",
+   "expires_at_utc": "2026-11-24T20:16:09Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Rapplume",
+    "ShadesFrance"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124959431569883136/vid/avc1/720x1280/6QiKY8QOuyol7QVh.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Entrée inattendue sur une scène mythique, un mélange de registres qui surprend",
+   "titles": [
+    "RnBoi entre à l'Olympia sur Hymne à l'amour",
+    "Quand RnBoi fait son entrée à l'Olympia avec Édith Piaf"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-2117-jlmiami-anis-samuel",
+   "added_at_utc": "2026-11-23T21:17:36Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "JLMiami : Anis revient et Samuel part en vrille",
+   "topic_key": "jlmiami-anis-samuel",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2124960228789686540",
+   "primary_source": "https://x.com/JLTomyTV/status/2124960228789686540",
+   "source_time_utc": "2026-11-23T20:16:13Z",
+   "expires_at_utc": "2026-11-24T20:16:13Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [],
+   "media_url": "https://video.twimg.com/amplify_video/2124960080911106048/vid/avc1/1280x720/LlT-A3coA-cghtt_.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Moment de chaos dans la série JLMiami, avec plus de 31 000 vues sur un compte de 111 000 abonnés",
+   "titles": [
+    "JLMiami : Anis revient et Samuel part en vrille",
+    "Samuel perd le contrôle dans JLMiami, le retour d'Anis fait réagir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
