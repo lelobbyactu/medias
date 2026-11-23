@@ -1,0 +1,55 @@
+{
+ "_doc": "Sujets repérés hors X par scripts/sources.py (GitHub Actions, toutes les 30 min). Lu par la veille via `python3 scripts/lobby.py sources`. Ne pas éditer à la main. hint = pré-note mécanique /10.",
+ "items": [
+  {
+   "id": "yt-tier-wGZKQoYpRts-1000000",
+   "kind": "youtube_record",
+   "created_utc": "2026-11-23T03:26:54Z",
+   "title": "Amixem : « CACHE-CACHE ÉDITION CAMOUFLAGE EXTRÊME #7 » passe 1 M de vues en 11 h",
+   "url": "https://www.youtube.com/watch?v=wGZKQoYpRts",
+   "channel": "Amixem",
+   "metrics": {
+    "views": 1940228,
+    "age_h": 11.0
+   },
+   "hint": 7,
+   "first_seen_utc": "2026-11-23T03:27:03Z"
+  },
+  {
+   "id": "yt-tier-4eHzsUUo69w-2000000",
+   "kind": "youtube_record",
+   "created_utc": "2026-11-23T03:26:55Z",
+   "title": "Djilsi : « ROI DU SILENCE 4 (ft Inoxtag, Seb & Sofyan) » passe 2 M de vues en 41 h",
+   "url": "https://www.youtube.com/watch?v=4eHzsUUo69w",
+   "channel": "Djilsi",
+   "metrics": {
+    "views": 4012500,
+    "age_h": 41.5
+   },
+   "hint": 8,
+   "first_seen_utc": "2026-11-23T03:27:03Z"
+  },
+  {
+   "id": "trend-leonida-20261123",
+   "kind": "trend",
+   "created_utc": "2026-11-23T03:27:03Z",
+   "title": "Tendance Google FR : « leonida » (200+ recherches)",
+   "url": "https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "Can My PC Run GTA 6? Minimum And Recommended Specs To Expect The anonymous hacker Cyberleek releases an Xbox build of &apos;GTA VI&apos; A GTA 6 listing has appeared on Steam, but it isn’t the PC port"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-23T03:27:03Z"
+  }
+ ],
+ "updated_utc": "2026-11-23T03:27:03Z",
+ "report": {
+  "twitch": "ignoré : secrets TWITCH_CLIENT_ID / TWITCH_CLIENT_SECRET absents",
+  "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
+  "reddit": "ignoré : secret APIFY_TOKEN absent",
+  "steam": "top 25 lu (1er passage : mémorisation seulement)",
+  "fortnite": "build 43.10-CL-60118918",
+  "trends": "1 tendances liées"
+ }
+}
