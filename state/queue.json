@@ -858,8 +858,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-23T10:53:53Z"
   },
   {
    "id": "c-20261122-1517-kameto-kametita-caminos",
