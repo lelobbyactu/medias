@@ -143,13 +143,46 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T11:10:49Z"
+  },
+  {
+   "id": "reddit-1y3ap33",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T06:01:19Z",
+   "title": "NickEh30 has a great family friendly experience killing NPC's on a train in GTA",
+   "url": "https://www.reddit.com/r/LivestreamFail/comments/1y3ap33/nickeh30_has_a_great_family_friendly_experience/",
+   "channel": "r/LivestreamFail",
+   "media_url": "https://v.redd.it/xzwz76tgya3i1/HLSPlaylist.m3u8",
+   "metrics": {
+    "score": 4252,
+    "comments": 809,
+    "flair": ":twitch:",
+    "link": "https://v.redd.it/xzwz76tgya3i1",
+    "domain": "v.redd.it"
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T12:38:15Z"
+  },
+  {
+   "id": "steam-top-1203220-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T12:38:13Z",
+   "title": "NARAKA: BLADEPOINT entre dans le top 25 Steam (55 984 joueurs connectés)",
+   "url": "https://steamdb.info/app/1203220/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 55984,
+    "peak_24h": 62274
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T12:38:15Z"
   }
  ],
- "updated_utc": "2026-11-23T11:10:49Z",
+ "updated_utc": "2026-11-23T12:38:15Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 38 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-23T06:26:17Z)",
+  "twitch": "40 chaînes suivies, 97 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
+  "reddit": "1 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
