@@ -1716,8 +1716,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-23T06:53:27Z"
   },
   {
    "id": "c-20261122-2315-ishowspeed-gta6-55h-2026-11-22",
