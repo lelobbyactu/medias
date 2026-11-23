@@ -2047,6 +2047,34 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261123-1104-perrikaryal-gta6-jet-cerveau",
+   "added_at_utc": "2026-11-23T11:04:35Z",
+   "found_by": "secours-apify",
+   "type": "clip",
+   "topic": "Une streameuse vole un jet dans GTA 6 en le controlant avec son cerveau (casque EEG)",
+   "topic_key": "perrikaryal-gta6-jet-cerveau",
+   "origin": "perrikaryal",
+   "source_tweet": "https://x.com/perrikaryal/status/2124639246971548122",
+   "primary_source": "https://x.com/perrikaryal/status/2124639246971548122",
+   "source_time_utc": "2026-11-22T23:00:45Z",
+   "expires_at_utc": "2026-11-23T23:00:45Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "perrikaryal"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124639064766726144/vid/avc1/1080x1920/uvAc5XH6GcCFjebr.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Concept fou et visuel : une creatrice pilote GTA 6 avec ses ondes cerveau et vole un jet, 724k vues en 12 h.",
+   "titles": [
+    "Elle vole un jet dans GTA 6 avec son cerveau"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
