@@ -233,43 +233,6 @@
    "note": "Score 6 : écouter l'audio et vérifier la chute avant titre ; image très sombre (vérifier la luminosité du reel). 4e clip Domingo de la file : ne pas en publier deux de suite."
   },
   {
-   "id": "c-20261120-2013-gta6-3-79-md",
-   "added_at_utc": "2026-11-20T20:20:00Z",
-   "found_by": "veille-fr",
-   "type": "actu",
-   "topic": "GTA VI : chiffres officiels, 3,79 Md$ de ventes day one et 32,5 M d'unités (record du divertissement)",
-   "topic_key": "gta6-chiffres-officiels-3-79md",
-   "origin": "Rockstar Games / Take-Two",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2123861687585628179",
-   "primary_source": "https://www.businesswire.com/news/home/20261120446139/en/Grand-Theft-Auto-VI-Shatters-Entertainment-Box-Office-Records-with-$3.79-Billion-in-Day-One-Retail-Sales",
-   "source_time_utc": "2026-11-20T19:20:00Z",
-   "expires_at_utc": "2026-11-21T01:20:00Z",
-   "fiabilite": "🟢",
-   "score": 9,
-   "mentions": [
-    "FrenchRapUS",
-    "ShadesFrance",
-    "Kulturlesite_",
-    "Rockstar_Mag",
-    "RockstarNewsFRA"
-   ],
-   "media_url": "",
-   "angle": "Chiffres officiels bien au-dessus des estimations (2,36 Md$ / 24,6 M) : plus gros lancement de l'histoire du divertissement",
-   "titles": [
-    "GTA 6 : *3,79 Md$* en un jour",
-    "GTA 6 pulvérise *tous les records*"
-   ],
-   "checks": [
-    "https://www.pcgamer.com/games/grand-theft-auto/grand-theft-auto-6-earned-usd3-79-billion-on-launch-day/",
-    "https://seekingalpha.com/news/4675294-take-two-says-gta-vi-posts-record-379b-in-day-one-sales"
-   ],
-   "photo_needed": "",
-   "status": "publie",
-   "hot": true,
-   "note": "actu brûlante 5_comptes",
-   "post_id": "0012-20_11_2026-Chiffres"
-  },
-  {
    "id": "c-20261120-2141-kameto-gta6-pnj-police",
    "added_at_utc": "2026-11-20T22:14:00Z",
    "found_by": "veille-fr",
@@ -300,48 +263,6 @@
    "note": "Même streamer que le 0009 (publié 11h Paris) : à espacer si un autre clip Kameto est sorti récemment. Pas de réponses récupérées (scraper vide).",
    "taken_at_utc": "2026-11-21T06:55:00Z",
    "post_id": "0015-21_11_2026-Clips"
-  },
-  {
-   "id": "c-20261120-2245-gta6-metacritic-reviewbomb",
-   "added_at_utc": "2026-11-20T22:45:00Z",
-   "found_by": "veille-int",
-   "type": "actu",
-   "topic": "GTA 6 review-bombé sur Metacritic : note users 4,9/10 pour 99 côté presse",
-   "topic_key": "gta6-metacritic-review-bomb-user-score",
-   "origin": "Metacritic (page officielle du jeu)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2123896370708783269",
-   "primary_source": "https://www.metacritic.com/game/grand-theft-auto-vi/",
-   "source_time_utc": "2026-11-20T21:48:49Z",
-   "expires_at_utc": "2026-11-21T03:48:00Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "Pirat_Nation",
-    "Tech4Gamers",
-    "_Tom_Henderson_",
-    "InsiderGamingIG",
-    "ShadesFrance"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Metascore 99 (record) mais note users sous 5/10 après ~4 900 avis : l'écart critiques/joueurs le plus grand de Metacritic ; Metacritic supprime les faux avis (déjà fait le 17 nov avant sortie, VGC).",
-   "titles": [
-    "GTA 6 : 99 chez la presse, *4,9* chez les joueurs",
-    "GTA 6 se fait *review-bomber* sur Metacritic"
-   ],
-   "checks": [
-    "https://tech4gamers.com/gta-6-intense-review-bombing/ (22:05 UTC, 4,9/10, ~4 900 avis)",
-    "https://www.videogameschronicle.com/news/metacritic-has-already-had-to-remove-fake-gta-6-user-reviews/ (17 nov, suppression faux avis pré-lancement)",
-    "À FAIRE : 2e média fiable + relire le score sur Metacritic avant publication (chiffres mouvants)",
-    "Metacritic 21 nov 01:10Z : Metascore 99 (152 critiques PS5), note users 5,4/10 sur 23 754 notes (46% positives, 8% mixtes, 46% négatives)",
-    "https://www.keengamer.com/articles/news/gta-6-metacritic-user-score-drops-to-mixed-amid-review-bombing/ (20 nov 23:15Z)",
-    "https://insider-gaming.com/gta-6-review-bombed/"
-   ],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Un seul média récent (T4G) + relais Pirat_Nation : recoupement à compléter. Expire avant le créneau de 8 h Paris (03:48Z) sauf nouvelle source plus récente. | veille-int 00:45Z: +Tom Henderson (00:18Z), Insider Gaming (22:48Z, article) => 4 comptes, 5e = actu brulante | veille-fr 01:20Z: +ShadesFrance (00:39Z) => 5 comptes, actu brulante, publication immédiate",
-   "hot": true,
-   "post_id": "0014-21_11_2026-Chiffres"
   },
   {
    "id": "c-20261121-0044-gotaga-gta6-vice-champion",
@@ -1617,8 +1538,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2115-inoxtag-gmk-dents",
@@ -1675,8 +1597,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2115-activision-brevet-ia-trash-talk",
@@ -1705,8 +1628,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2115-isaac-repentance-musique-ia-steam",
@@ -1734,8 +1658,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2115-ibai-raid-streamer-gta6",
@@ -1763,8 +1688,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2315-jl-miami-full-tilt-2026-11-22",
@@ -1817,8 +1743,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2315-twitch-gta6-ratio-streamers-2026-11-22",
@@ -1844,8 +1771,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261123-0115-doigby-feat-anyme-gazo",
@@ -1929,6 +1857,89 @@
    "titles": [
     "Le créateur de E.T. craint un nouveau krach du jeu vidéo à cause de l'IA",
     "Howard Scott Warshaw : l'IA risque de noyer Steam sous les jeux médiocres"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0515-djilsi-roi-du-silence-4",
+   "added_at_utc": "2026-11-23T05:15:16Z",
+   "found_by": "sources:youtube_record",
+   "type": "actu",
+   "topic": "Djilsi : « Roi du Silence 4 » avec Inoxtag, Seb et Sofyan fait exploser les compteurs YouTube",
+   "topic_key": "djilsi-roi-du-silence-4",
+   "origin": "Djilsi",
+   "source_tweet": "https://www.youtube.com/watch?v=4eHzsUUo69w",
+   "primary_source": "https://www.youtube.com/watch?v=4eHzsUUo69w",
+   "source_time_utc": "2026-11-23T03:26:55Z",
+   "expires_at_utc": "2026-11-23T09:26:55Z",
+   "fiabilite": "🟢",
+   "score": 8,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Palier de 2 M de vues atteint en 41 h, avec Inoxtag, Seb et Sofyan au casting.",
+   "titles": [
+    "Roi du Silence 4 : Djilsi et Inoxtag font exploser YouTube",
+    "Djilsi frappe fort avec Roi du Silence 4 et son casting Inoxtag, Seb et Sofyan"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0515-amixem-cache-cache-camouflage-7",
+   "added_at_utc": "2026-11-23T05:15:16Z",
+   "found_by": "sources:youtube_record",
+   "type": "actu",
+   "topic": "Amixem : « Cache-cache édition camouflage extrême #7 » franchit le million de vues en 11 h",
+   "topic_key": "amixem-cache-cache-camouflage-7",
+   "origin": "Amixem",
+   "source_tweet": "https://www.youtube.com/watch?v=wGZKQoYpRts",
+   "primary_source": "https://www.youtube.com/watch?v=wGZKQoYpRts",
+   "source_time_utc": "2026-11-23T03:26:54Z",
+   "expires_at_utc": "2026-11-23T09:26:54Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Un million de vues en 11 h pour le nouvel épisode du Cache-cache camouflage extrême.",
+   "titles": [
+    "Cache-cache camouflage extrême : Amixem explose les compteurs en quelques heures",
+    "Amixem relance son Cache-cache camouflage extrême et fait un carton"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261123-0515-anyme-leto-lucia-polemique",
+   "added_at_utc": "2026-11-23T05:15:16Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Anyme revient sur la polémique Leto autour du refus de jouer Lucia dans GTA 6",
+   "topic_key": "anyme-leto-lucia-polemique",
+   "origin": "Anyme",
+   "source_tweet": "https://x.com/LaTwitchance/status/2124687537591767082",
+   "primary_source": "https://x.com/LaTwitchance/status/2124687537591767082",
+   "source_time_utc": "2026-11-23T02:12:38Z",
+   "expires_at_utc": "2026-11-23T08:12:38Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "LaTwitchance"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Une polémique entre streamers sur un personnage féminin de GTA 6, relancée par Anyme.",
+   "titles": [
+    "Anyme revient sur la polémique Leto autour de Lucia dans GTA 6",
+    "Polémique Leto : Anyme répond sur le refus de jouer Lucia"
    ],
    "checks": [],
    "photo_needed": "",
