@@ -189,15 +189,90 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-23T15:42:19Z"
+  },
+  {
+   "id": "yt-new-8FJUWEO1WjA",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-23T17:00:03Z",
+   "title": "SCANDALEUX - Best of ZeratoR #516",
+   "url": "https://www.youtube.com/watch?v=8FJUWEO1WjA",
+   "channel": "ZeratoR",
+   "metrics": {
+    "views": 0,
+    "views_per_h": 0,
+    "age_h": 0.1
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T17:06:01Z"
+  },
+  {
+   "id": "yt-new-TN9q6Pgl5-A",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-23T16:00:34Z",
+   "title": "Rockstar nous invite en VIP au concert de Travis Scott",
+   "url": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
+   "channel": "JL Tomy",
+   "metrics": {
+    "views": 1184,
+    "views_per_h": 1086,
+    "age_h": 1.1
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T17:06:01Z"
+  },
+  {
+   "id": "yt-new-xDxXCZ_C4lY",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-23T16:30:24Z",
+   "title": "je n'aurais jamais dû l'inviter...",
+   "url": "https://www.youtube.com/watch?v=xDxXCZ_C4lY",
+   "channel": "Gotaga",
+   "metrics": {
+    "views": 5556,
+    "views_per_h": 9373,
+    "age_h": 0.6
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-23T17:06:01Z"
+  },
+  {
+   "id": "steam-top-227300-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T17:06:00Z",
+   "title": "Euro Truck Simulator 2 entre dans le top 25 Steam (52 291 joueurs connectés)",
+   "url": "https://steamdb.info/app/227300/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 24,
+    "players": 52291,
+    "peak_24h": 68877
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T17:06:01Z"
+  },
+  {
+   "id": "steam-top-4530370-2026-11-23",
+   "kind": "steam",
+   "created_utc": "2026-11-23T17:06:00Z",
+   "title": "Football Manager 27 entre dans le top 25 Steam (51 297 joueurs connectés)",
+   "url": "https://steamdb.info/app/4530370/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 51297,
+    "peak_24h": 63437
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T17:06:01Z"
   }
  ],
- "updated_utc": "2026-11-23T15:42:19Z",
+ "updated_utc": "2026-11-23T17:06:01Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 39 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T12:38:13Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "1 tendances liées"
+  "trends": "0 tendances liées"
  }
 }
