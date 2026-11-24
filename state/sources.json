@@ -675,13 +675,13 @@
    "url": "https://www.youtube.com/watch?v=F-8Im7F2_ao",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 279156,
-    "views_per_h": 74931,
-    "age_h": 3.7
+    "views": 396812,
+    "views_per_h": 83117,
+    "age_h": 4.8
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T18:27:43Z",
-   "updated_utc": "2026-11-24T20:57:01Z"
+   "updated_utc": "2026-11-24T21:59:44Z"
   },
   {
    "id": "yt-new--GFFkFY_i9w",
@@ -691,13 +691,13 @@
    "url": "https://www.youtube.com/watch?v=-GFFkFY_i9w",
    "channel": "Pierre Croce",
    "metrics": {
-    "views": 38678,
-    "views_per_h": 10475,
-    "age_h": 3.7
+    "views": 67478,
+    "views_per_h": 14233,
+    "age_h": 4.7
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T18:27:43Z",
-   "updated_utc": "2026-11-24T20:57:01Z"
+   "updated_utc": "2026-11-24T21:59:44Z"
   },
   {
    "id": "steam-top-381210-2026-11-24",
@@ -722,13 +722,13 @@
    "url": "https://www.youtube.com/watch?v=RJP4p77kmYc",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 280968,
-    "views_per_h": 159976,
-    "age_h": 1.8
+    "views": 383397,
+    "views_per_h": 136685,
+    "age_h": 2.8
    },
    "hint": 7,
    "first_seen_utc": "2026-11-24T19:38:11Z",
-   "updated_utc": "2026-11-24T20:57:01Z"
+   "updated_utc": "2026-11-24T21:59:44Z"
   },
   {
    "id": "yt-new-z2hbNUuqizQ",
@@ -738,13 +738,13 @@
    "url": "https://www.youtube.com/watch?v=z2hbNUuqizQ",
    "channel": "Domingo",
    "metrics": {
-    "views": 6555,
-    "views_per_h": 2731,
-    "age_h": 2.4
+    "views": 16038,
+    "views_per_h": 4650,
+    "age_h": 3.4
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T19:38:11Z",
-   "updated_utc": "2026-11-24T20:57:01Z"
+   "updated_utc": "2026-11-24T21:59:44Z"
   },
   {
    "id": "reddit-1y4efcp",
@@ -783,11 +783,11 @@
    "first_seen_utc": "2026-11-24T20:57:01Z"
   }
  ],
- "updated_utc": "2026-11-24T20:57:01Z",
+ "updated_utc": "2026-11-24T21:59:44Z",
  "report": {
   "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 45 vidéos de moins de 72 h",
-  "reddit": "2 posts retenus",
+  "reddit": "pas encore (dernier passage 2026-11-24T20:57:00Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
