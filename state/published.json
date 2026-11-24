@@ -314,6 +314,16 @@
    "judge_score": "8/10",
    "hot": true,
    "hot_reason": "5_comptes"
+  },
+  {
+   "id": "0025-24_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Kameto, Walid et BigYouss choqués par le prix d'un slot en LEC",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2124990523966464481",
+   "queue_id": "c-20261123-2321-kameto-slot-lec-25m",
+   "reserved_at_utc": "2026-11-24T06:58:35Z"
   }
  ]
 }
