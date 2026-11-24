@@ -638,15 +638,43 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T09:07:27Z"
+  },
+  {
+   "id": "steam-top-1174180-2026-11-24",
+   "kind": "steam",
+   "created_utc": "2026-11-24T14:25:05Z",
+   "title": "Red Dead Redemption 2 entre dans le top 25 Steam (62 324 joueurs connectés)",
+   "url": "https://steamdb.info/app/1174180/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 24,
+    "players": 62324,
+    "peak_24h": 62324
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-24T14:25:06Z"
+  },
+  {
+   "id": "trend-console-ps5-pro-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T14:25:06Z",
+   "title": "Tendance Google FR : « console ps5 pro » (500+ recherches)",
+   "url": "https://actu.orange.fr/videos/france/la-ps5-en-rupture-de-stock-face-au-succes-de-gta-vi-CNT000002u1Buo.html",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "La PS5 en rupture de stock face au succès de GTA VI &quot;On s&apos;est fait déborder&quot;: vous vouliez offrir ou acheter la PS5 pour Noël? Pourquoi ça risque d&apos;être compliqué PlayStation liqui"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T14:25:06Z"
   }
  ],
- "updated_utc": "2026-11-24T12:37:54Z",
+ "updated_utc": "2026-11-24T14:25:06Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 99 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-24T07:59:04Z)",
+  "reddit": "0 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
