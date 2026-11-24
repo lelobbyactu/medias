@@ -2522,9 +2522,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-24T10:52:38Z"
+   "status": "ecarte",
+   "note": "extrait de talk-show sans webcam ni gameplay, histoire non lisible (poll smoothie/milkshake), même émission que le 0025",
+   "taken_at_utc": "2026-11-24T10:52:38Z",
+   "closed_at_utc": "2026-11-24T10:53:08Z"
   },
   {
    "id": "c-20261123-2321-witcher-4-ciri-personnalite",
