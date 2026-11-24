@@ -612,9 +612,22 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T05:10:28Z"
+  },
+  {
+   "id": "trend-playstation-5-black-friday-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T06:30:01Z",
+   "title": "Tendance Google FR : « playstation 5 black friday » (100+ recherches)",
+   "url": "https://www.bfmtv.com/replay-emissions/bfm-premiere/video-la-ps5-en-rupture-de-stock-face-au-succes-de-gta-vi_VN-202611240135.html",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "La PS5 en rupture de stock face au succès de GTA VI PlayStation liquide ses stocks : le prix de la manette officielle PS5 DualSense n’a jamais été aussi bas sur Amazon Black Friday PS5 : des consoles "
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T06:30:01Z"
   }
  ],
- "updated_utc": "2026-11-24T05:10:28Z",
+ "updated_utc": "2026-11-24T06:30:01Z",
  "report": {
   "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
