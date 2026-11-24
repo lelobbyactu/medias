@@ -2827,9 +2827,10 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-24T10:52:04Z"
+   "status": "ecarte",
+   "note": "source de 312 s (hors 8-120 s), clip non exploitable",
+   "taken_at_utc": "2026-11-24T10:52:04Z",
+   "closed_at_utc": "2026-11-24T10:52:36Z"
   },
   {
    "id": "c-20261124-0515-gotaga-webcam-lucia",
