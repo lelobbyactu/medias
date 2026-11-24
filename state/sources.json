@@ -426,8 +426,8 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 1886,
-    "views_per_h": 754,
+    "views": 1966,
+    "views_per_h": 565,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
@@ -435,7 +435,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-23T23:28:09Z"
+   "updated_utc": "2026-11-24T00:26:50Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -467,16 +467,16 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 534,
-    "views_per_h": 217,
+    "views": 570,
+    "views_per_h": 165,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
     "suivi": true
    },
-   "hint": 5,
+   "hint": 6,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-23T23:28:09Z"
+   "updated_utc": "2026-11-24T00:26:50Z"
   },
   {
    "id": "steam-top-322170-2026-11-23",
@@ -503,20 +503,46 @@
    "channel": "zerator",
    "lang": "fr",
    "metrics": {
-    "views": 300,
-    "views_per_h": 119,
+    "views": 380,
+    "views_per_h": 109,
     "duration_s": 36,
     "game": "",
     "streamer": "ZeratoR",
     "suivi": true
    },
    "hint": 5,
-   "first_seen_utc": "2026-11-23T23:28:09Z"
+   "first_seen_utc": "2026-11-23T23:28:09Z",
+   "updated_utc": "2026-11-24T00:26:50Z"
+  },
+  {
+   "id": "yt-tier-4_8r_Q7IHXk-1000000",
+   "kind": "youtube_record",
+   "created_utc": "2026-11-24T00:26:45Z",
+   "title": "McFly et Carlito : « Ce pré-générique est devenu une vidéo (mise au point avec l’équipe) » passe 1 M de vues en 38 h",
+   "url": "https://www.youtube.com/watch?v=4_8r_Q7IHXk",
+   "channel": "McFly et Carlito",
+   "metrics": {
+    "views": 1008252,
+    "age_h": 38.0
+   },
+   "hint": 7,
+   "first_seen_utc": "2026-11-24T00:26:50Z"
+  },
+  {
+   "id": "fortnite-news-5ceec1c327e27ddf9641fc60f3ed7c49",
+   "kind": "fortnite",
+   "created_utc": "2026-11-24T00:26:50Z",
+   "title": "Actu Fortnite en jeu : En cours - Coupe PlayStation — Participez à la Coupe PlayStation (Battle Royale ou Zéro construction en solo) dès maintenant ! Participez et gagnez 8 p",
+   "url": "https://www.fortnite.com/news",
+   "channel": "Fortnite",
+   "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/bdbd8d4169d040de893c038e929b0d8d.jpeg?width=1920&height=1080&aspect=fill",
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T00:26:50Z"
   }
  ],
- "updated_utc": "2026-11-23T23:28:09Z",
+ "updated_utc": "2026-11-24T00:26:50Z",
  "report": {
-  "twitch": "40 chaînes suivies, 96 lives FR lus, 3 clips retenus",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 3 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
   "steam": "top 25 lu",
