@@ -77,6 +77,17 @@
    "recette": "Illisible : post Instagram restreint par l'âge, impossible à récupérer (scraper et yt-dlp).",
    "queue_id": null,
    "note": null
+  },
+  {
+   "n": 10,
+   "url": "https://www.instagram.com/reel/DgACIhcCYkV/?dmpr=MWFpd3dlbjdkendocA==",
+   "traite_utc": "2026-11-24T09:56:40Z",
+   "verdict": "ecarte",
+   "score": 6.0,
+   "format": "reel-clip",
+   "recette": "Promesse utilitaire « la voiture la plus rapide de GTA 6 » + créateur en facecam ; à reprendre seulement avec un créateur FR connu qui livre une astuce GTA 6.",
+   "queue_id": null,
+   "note": null
   }
  ]
 }
