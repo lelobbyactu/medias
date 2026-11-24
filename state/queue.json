@@ -2912,8 +2912,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "ecarte",
+   "note": "Source primaire Xbox Wire du 23/11 21:36 UTC = explainer vieux de 9 h (>6 h) ; l'annonce cloud Xbox One date du 10/11 (pas une nouveauté)",
+   "closed_at_utc": "2026-11-24T06:55:31Z"
   },
   {
    "id": "c-20261124-0515-h3-podcast-fin",
