@@ -1844,8 +1844,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T06:52:10Z"
   },
   {
    "id": "c-20261123-1546-gta6-album-deluxe",
@@ -2733,8 +2734,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T06:52:10Z"
   },
   {
    "id": "c-20261124-0118-x-remunere-streamers",
@@ -2762,8 +2764,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T06:52:10Z"
   },
   {
    "id": "c-20261124-0118-quad-flyquest-rebellion",
@@ -2791,8 +2794,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T06:52:10Z"
   },
   {
    "id": "c-20261124-0515-gta6-premiere-personne-shiinabr",
@@ -2938,8 +2942,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T06:52:10Z"
   },
   {
    "id": "c-20261124-0515-gta6-crashs-ps5-maj",
