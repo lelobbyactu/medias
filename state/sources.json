@@ -666,12 +666,57 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T14:25:06Z"
+  },
+  {
+   "id": "yt-new-F-8Im7F2_ao",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-24T17:13:14Z",
+   "title": "On vous annonce le gage de Youtube Warrior 6",
+   "url": "https://www.youtube.com/watch?v=F-8Im7F2_ao",
+   "channel": "McFly et Carlito",
+   "metrics": {
+    "views": 71776,
+    "views_per_h": 57885,
+    "age_h": 1.2
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-24T18:27:43Z"
+  },
+  {
+   "id": "yt-new--GFFkFY_i9w",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-24T17:15:16Z",
+   "title": "Une journée à 5 000€ à Marrakech VS Une journée à 50€",
+   "url": "https://www.youtube.com/watch?v=-GFFkFY_i9w",
+   "channel": "Pierre Croce",
+   "metrics": {
+    "views": 6026,
+    "views_per_h": 4991,
+    "age_h": 1.2
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-24T18:27:43Z"
+  },
+  {
+   "id": "steam-top-381210-2026-11-24",
+   "kind": "steam",
+   "created_utc": "2026-11-24T18:27:43Z",
+   "title": "Dead by Daylight entre dans le top 25 Steam (67 082 joueurs connectés)",
+   "url": "https://steamdb.info/app/381210/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 14,
+    "players": 67082,
+    "peak_24h": 67082
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-24T18:27:43Z"
   }
  ],
- "updated_utc": "2026-11-24T17:08:17Z",
+ "updated_utc": "2026-11-24T18:27:43Z",
  "report": {
   "twitch": "40 chaînes suivies, 97 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 37 vidéos de moins de 72 h",
+  "youtube": "34 chaînes, 36 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T14:25:05Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
