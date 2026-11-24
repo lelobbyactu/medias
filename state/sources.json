@@ -675,13 +675,13 @@
    "url": "https://www.youtube.com/watch?v=F-8Im7F2_ao",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 147328,
-    "views_per_h": 61004,
-    "age_h": 2.4
+    "views": 279156,
+    "views_per_h": 74931,
+    "age_h": 3.7
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T18:27:43Z",
-   "updated_utc": "2026-11-24T19:38:11Z"
+   "updated_utc": "2026-11-24T20:57:01Z"
   },
   {
    "id": "yt-new--GFFkFY_i9w",
@@ -691,13 +691,13 @@
    "url": "https://www.youtube.com/watch?v=-GFFkFY_i9w",
    "channel": "Pierre Croce",
    "metrics": {
-    "views": 16281,
-    "views_per_h": 6835,
-    "age_h": 2.4
+    "views": 38678,
+    "views_per_h": 10475,
+    "age_h": 3.7
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T18:27:43Z",
-   "updated_utc": "2026-11-24T19:38:11Z"
+   "updated_utc": "2026-11-24T20:57:01Z"
   },
   {
    "id": "steam-top-381210-2026-11-24",
@@ -722,12 +722,13 @@
    "url": "https://www.youtube.com/watch?v=RJP4p77kmYc",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 221240,
-    "views_per_h": 496209,
-    "age_h": 0.4
+    "views": 280968,
+    "views_per_h": 159976,
+    "age_h": 1.8
    },
    "hint": 7,
-   "first_seen_utc": "2026-11-24T19:38:11Z"
+   "first_seen_utc": "2026-11-24T19:38:11Z",
+   "updated_utc": "2026-11-24T20:57:01Z"
   },
   {
    "id": "yt-new-z2hbNUuqizQ",
@@ -737,19 +738,56 @@
    "url": "https://www.youtube.com/watch?v=z2hbNUuqizQ",
    "channel": "Domingo",
    "metrics": {
-    "views": 1742,
-    "views_per_h": 1598,
-    "age_h": 1.1
+    "views": 6555,
+    "views_per_h": 2731,
+    "age_h": 2.4
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-24T19:38:11Z"
+   "first_seen_utc": "2026-11-24T19:38:11Z",
+   "updated_utc": "2026-11-24T20:57:01Z"
+  },
+  {
+   "id": "reddit-1y4efcp",
+   "kind": "reddit",
+   "created_utc": "2026-11-24T14:18:49Z",
+   "title": "Kevin O’Leary says Jensen Huang has zero chance of coming back, then gets the reinstatement news live on air",
+   "url": "https://www.reddit.com/r/LivestreamFail/comments/1y4efcp/kevin_oleary_says_jensen_huang_has_zero_chance_of/",
+   "channel": "r/LivestreamFail",
+   "media_url": "",
+   "metrics": {
+    "score": 1549,
+    "comments": 166,
+    "flair": "News:PepoG:",
+    "link": "https://www.reddit.com/r/wallstreetbets/comments/1y4bir8/kevin_oleary_says_jensen_huang_has_zero_chance_of/",
+    "domain": "v.redd.it"
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-24T20:57:01Z"
+  },
+  {
+   "id": "reddit-1y4d7sd",
+   "kind": "reddit",
+   "created_utc": "2026-11-24T13:25:01Z",
+   "title": "The Ankler Reports That Rockstar Is Open to a Red Dead Redemption Movie or TV Adaptation, With Licensing Rights Potentially Exceeding $100 Million",
+   "url": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y4d7sd/the_ankler_reports_that_rockstar_is_open_to_a_red/",
+   "channel": "r/GamingLeaksAndRumours",
+   "media_url": "",
+   "metrics": {
+    "score": 618,
+    "comments": 158,
+    "flair": "Rumour",
+    "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y4d7sd/the_ankler_reports_that_rockstar_is_open_to_a_red/",
+    "domain": "self.GamingLeaksAndRumours"
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-24T20:57:01Z"
   }
  ],
- "updated_utc": "2026-11-24T19:38:11Z",
+ "updated_utc": "2026-11-24T20:57:01Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 42 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-24T14:25:05Z)",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 45 vidéos de moins de 72 h",
+  "reddit": "2 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
