@@ -110,6 +110,17 @@
    "recette": "Fail physique lisible en 2 s, viral par nostalgie ; pas de créateur ni d'actu, non reproductible.",
    "queue_id": null,
    "note": null
+  },
+  {
+   "n": 13,
+   "url": "https://www.instagram.com/reel/Dekg4VtPYYE/?evlk=cDVxcW13ZHg5YWdq",
+   "traite_utc": "2026-11-24T09:56:54Z",
+   "verdict": "ecarte",
+   "score": 6.0,
+   "format": "reel-clip",
+   "recette": "Nom connu + jeu hype en titre court, réaction facecam du créateur qui vend le gag ; déjà couvert par notre reel-clip.",
+   "queue_id": null,
+   "note": null
   }
  ]
 }
