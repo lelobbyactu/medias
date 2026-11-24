@@ -3085,11 +3085,12 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "A TRAITER : leak HYPEX verifie (DDLC dans Fortnite sous 1 semaine, 4 persos) mais aucun visuel officiel recuperable (pas de key art Fortnite/DDLC dans assets, og:image illisible)",
    "hot": true,
    "hot_reason": "leak",
-   "taken_at_utc": "2026-11-24T11:15:54Z"
+   "taken_at_utc": "2026-11-24T11:15:54Z",
+   "closed_at_utc": "2026-11-24T11:17:15Z"
   },
   {
    "id": "c-20261124-1115-fortnite-puss-in-boots-collab",
