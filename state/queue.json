@@ -3203,6 +3203,183 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261124-1320-gta6-acteurs-jason-lucia-2016",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Les acteurs de Jason et Lucia révèlent avoir travaillé sur GTA 6 dès 2016",
+   "topic_key": "gta6-acteurs-jason-lucia-2016",
+   "origin": "acteurs de Jason et Lucia (GTA 6)",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2125202773746552951",
+   "primary_source": "https://x.com/FrenchRapUS/status/2125202773746552951",
+   "source_time_utc": "2026-11-24T12:20:00Z",
+   "expires_at_utc": "2026-11-24T18:20:00Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "FrenchRapUS"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Révélation des comédiens sur la durée de production du jeu, très partagée et relancée par le hype GTA 6.",
+   "titles": [
+    "Les acteurs de Jason et Lucia ont commencé à bosser sur GTA 6 en 2016",
+    "GTA 6 : les comédiens de Jason et Lucia révèlent une production lancée il y a dix ans"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1320-dosseh-dieu-donne-jutilise-part3",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Annonce d'un nouveau projet de DOSSEH, « Dieu donne, j'utilise » Part. 3, pour décembre 2026",
+   "topic_key": "dosseh-dieu-donne-jutilise-part3",
+   "origin": "DOSSEH",
+   "source_tweet": "https://x.com/Kulturlesite_/status/2125197893933969534",
+   "primary_source": "https://x.com/Kulturlesite_/status/2125197893933969534",
+   "source_time_utc": "2026-11-24T12:00:36Z",
+   "expires_at_utc": "2026-11-24T18:00:36Z",
+   "fiabilite": "🟢",
+   "score": 8,
+   "mentions": [
+    "Kulturlesite_",
+    "ShadesFrance"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Annonce officielle d'un créateur connu avec date de sortie, reprise par deux relais.",
+   "titles": [
+    "DOSSEH annonce « Dieu donne, j'utilise » Part. 3 pour décembre 2026",
+    "DOSSEH dévoile un nouveau projet : « Dieu donne, j'utilise » Part. 3"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1320-gta6-easter-eggs-hotel-vice-city",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Easter eggs GTA VI cachés dans un hôtel de Vice City (ascenseur clown, piège façon Saw)",
+   "topic_key": "gta6-easter-eggs-hotel-vice-city",
+   "origin": "découvreur non identifié (relayé par riyadinhoo_ et DexertoFR)",
+   "source_tweet": "https://x.com/riyadinhoo_/status/2125195110468198427",
+   "primary_source": "https://x.com/riyadinhoo_/status/2125195110468198427",
+   "source_time_utc": "2026-11-24T11:49:33Z",
+   "expires_at_utc": "2026-11-24T17:49:33Z",
+   "fiabilite": "🟠",
+   "score": 7,
+   "mentions": [
+    "DexertoFR",
+    "riyadinhoo_"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Secrets de Vice City très partagés par les médias FR, à vérifier auprès de l'auteur de la découverte.",
+   "titles": [
+    "GTA VI : un hôtel de Vice City cache un easter egg façon Saw",
+    "GTA VI : l'hôtel Marbelle cache un piège et un clown inspiré de Ça"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1320-maj-golden-charlotte-jones-twitch-drop",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Nouvelle série Golden ajoutée dans la mise à jour du jour (Golden Charlotte, Golden Jones en Twitch Drop)",
+   "topic_key": "maj-golden-charlotte-jones-twitch-drop",
+   "origin": "ShiinaBR",
+   "source_tweet": "https://x.com/ShiinaBR/status/2125187068376559989",
+   "primary_source": "https://x.com/ShiinaBR/status/2125187068376559989",
+   "source_time_utc": "2026-11-24T11:17:35Z",
+   "expires_at_utc": "2026-11-24T17:17:35Z",
+   "fiabilite": "🟠",
+   "score": 8,
+   "mentions": [
+    "ShiinaBR"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Contenu de mise à jour très visible (92k vues) annoncé par un insider, avec un Twitch Drop à suivre.",
+   "titles": [
+    "Une nouvelle série Golden arrive avec la mise à jour du jour",
+    "Golden Charlotte disponible pour les détenteurs du Battle Pass, Golden Jones en Twitch Drop"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1320-darrah-bioware-ea-dragon-age",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Mark Darrah (ex-Dragon Age) : BioWare n'a fait que choisir les « moins pires » options imposées par EA",
+   "topic_key": "darrah-bioware-ea-dragon-age",
+   "origin": "Mark Darrah",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2125198244439642377",
+   "primary_source": "https://x.com/Pirat_Nation/status/2125198244439642377",
+   "source_time_utc": "2026-11-24T12:02:00Z",
+   "expires_at_utc": "2026-11-24T18:02:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Pirat_Nation",
+    "VGC_News"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Témoignage d'un ancien producteur de la série Dragon Age sur les choix du studio, très commenté.",
+   "titles": [
+    "Un ex-producteur de Dragon Age accuse EA d'avoir plombé BioWare",
+    "Mark Darrah : BioWare n'avait que des « moins pires » options face à EA"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1320-paduck-bnk-fearx-youth-lck-cl",
+   "added_at_utc": "2026-11-24T13:20:59Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Paduck rejoint BNK FEARX Youth dans la LCK CL après sa saison avec Shifters",
+   "topic_key": "paduck-bnk-fearx-youth-lck-cl",
+   "origin": "BNK FEARX Youth",
+   "source_tweet": "https://x.com/Sheep_Esports/status/2125214827979092092",
+   "primary_source": "https://x.com/Sheep_Esports/status/2125214827979092092",
+   "source_time_utc": "2026-11-24T13:07:54Z",
+   "expires_at_utc": "2026-11-24T19:07:54Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "Sheep_Esports"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Transfert officiel d'un joueur LoL connu, moins grand public que les sujets créateurs.",
+   "titles": [
+    "Paduck rejoint BNK FEARX Youth dans la LCK CL",
+    "Le joueur coréen Paduck revient en Corée avec BNK FEARX Youth"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
