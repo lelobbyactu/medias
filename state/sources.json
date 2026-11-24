@@ -722,13 +722,13 @@
    "url": "https://www.youtube.com/watch?v=RJP4p77kmYc",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 500250,
-    "views_per_h": 131750,
-    "age_h": 3.8
+    "views": 600051,
+    "views_per_h": 128284,
+    "age_h": 4.7
    },
    "hint": 7,
    "first_seen_utc": "2026-11-24T19:38:11Z",
-   "updated_utc": "2026-11-24T22:59:15Z"
+   "updated_utc": "2026-11-24T23:52:05Z"
   },
   {
    "id": "yt-new-z2hbNUuqizQ",
@@ -738,13 +738,13 @@
    "url": "https://www.youtube.com/watch?v=z2hbNUuqizQ",
    "channel": "Domingo",
    "metrics": {
-    "views": 21897,
-    "views_per_h": 4931,
-    "age_h": 4.4
+    "views": 26806,
+    "views_per_h": 5037,
+    "age_h": 5.3
    },
    "hint": 6,
    "first_seen_utc": "2026-11-24T19:38:11Z",
-   "updated_utc": "2026-11-24T22:59:15Z"
+   "updated_utc": "2026-11-24T23:52:05Z"
   },
   {
    "id": "reddit-1y4efcp",
@@ -781,15 +781,28 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-24T20:57:01Z"
+  },
+  {
+   "id": "trend-vice-city-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T23:52:05Z",
+   "title": "Tendance Google FR : « vice city » (100+ recherches)",
+   "url": "https://www.forbes.com/sites/paultassi/2026/11/23/a-gta-6-player-finds-tommy-vercettis-shirt-portal-to-original-vice-city/",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "A ‘GTA 6’ Player Finds Tommy Vercetti’s Shirt And Portal To Original Vice City GTA VI hides a huge Easter Egg referencing GTA: Vice City GTA 6 Easter Egg Opens a Portal to the Original 2002 Vice City"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T23:52:05Z"
   }
  ],
- "updated_utc": "2026-11-24T22:59:15Z",
+ "updated_utc": "2026-11-24T23:52:05Z",
  "report": {
-  "twitch": "40 chaînes suivies, 97 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 96 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 46 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T20:57:00Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
