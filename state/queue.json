@@ -2283,8 +2283,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2117-gta6-acteur-personnage-appel",
@@ -2312,8 +2313,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2117-gta6-ventes-45m",
@@ -2342,8 +2344,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2117-gta6-maj-1",
@@ -2401,8 +2404,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2117-rnboi-olympia-piaf",
@@ -2543,8 +2547,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2321-gta6-alinea-4-milliards",
@@ -2570,8 +2575,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2321-fortnite-fin-chapitre-7",
@@ -2599,8 +2605,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2321-gotaga-objectif-1m-lucia",
@@ -2626,8 +2633,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T05:15:17Z"
   },
   {
    "id": "c-20261123-2321-antoinedaniel-quoi-clip",
@@ -2780,6 +2788,182 @@
    "titles": [
     "Quad quitte FlyQuest et rejoint Shopify Rebellion pour la LCS 2027",
     "Le midlaner Quad change d'équipe : FlyQuest officialise son départ"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-gta6-premiere-personne-shiinabr",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "GTA 6 : le mode première personne activé par accident",
+   "topic_key": "gta6-premiere-personne-shiinabr",
+   "origin": "ShiinaBR",
+   "source_tweet": "https://x.com/ShiinaBR/status/2125050454942134663",
+   "primary_source": "https://x.com/ShiinaBR/status/2125050454942134663",
+   "source_time_utc": "2026-11-24T02:14:44Z",
+   "expires_at_utc": "2026-11-25T02:14:44Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [
+    "ShiinaBR"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125049805877473280/vid/avc1/1920x1080/DqeJVUqBMBmnHBSG.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un mode première personne qui marche par accident dans GTA 6, montré par un compte GTA très suivi : visuel inattendu et forte curiosité.",
+   "titles": [
+    "GTA 6 : il active le mode première personne par accident",
+    "Le mode première personne de GTA 6 existe (presque) par hasard"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-gotaga-webcam-lucia",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Gotaga cache sa webcam pendant sa romance RP avec Lucia dans GTA 6",
+   "topic_key": "gotaga-webcam-lucia",
+   "origin": "GotagaTV",
+   "source_tweet": "https://x.com/GotagaTV/status/2125050239065198659",
+   "primary_source": "https://x.com/GotagaTV/status/2125050239065198659",
+   "source_time_utc": "2026-11-24T02:13:53Z",
+   "expires_at_utc": "2026-11-25T02:13:53Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "GotagaTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125050019950575617/vid/avc1/1280x720/kiKGZQy3M475MxV0.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Gotaga très investi dans sa relation RP avec Lucia qui tente de cacher la webcam : une scène drôle et courte, facile à monter.",
+   "titles": [
+    "Gotaga cache sa webcam pendant sa romance RP avec Lucia dans GTA 6",
+    "Quand Gotaga cache la webcam pour son couple RP dans GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-aishah-sofey-vol-voiture-live",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "Une streameuse GTA 6 se fait voler sa voiture en plein live",
+   "topic_key": "aishah-sofey-vol-voiture-live",
+   "origin": "Aishah Sofey",
+   "source_tweet": "https://x.com/LaTwitchance/status/2125062538568016355",
+   "primary_source": "https://x.com/LaTwitchance/status/2125062538568016355",
+   "source_time_utc": "2026-11-24T03:02:45Z",
+   "expires_at_utc": "2026-11-25T03:02:45Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "FearedBuck",
+    "LaTwitchance"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2124921327668658176/vid/avc1/1920x1080/AEHmTHan44_Q_2nH.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Une streameuse qui joue à GTA 6 voit sa voiture volée pendant le direct, et toute la scène est filmée : surprise visuelle, mais audience FR encore modeste.",
+   "titles": [
+    "Une streameuse se fait voler sa voiture en plein live GTA 6",
+    "Vol de voiture en direct pendant un stream GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-gta6-xbox-cloud-remote-play",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "sources:trend",
+   "type": "actu",
+   "topic": "GTA 6 jouable sur Xbox Cloud Gaming, Xbox One inclus",
+   "topic_key": "gta6-xbox-cloud-remote-play",
+   "origin": "Xbox",
+   "source_tweet": "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
+   "primary_source": "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
+   "source_time_utc": "2026-11-24T05:10:28Z",
+   "expires_at_utc": "2026-11-24T11:10:28Z",
+   "fiabilite": "🟢",
+   "score": 8,
+   "mentions": [
+    "Google Trends FR (« gta vi »)"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Xbox annonce que GTA 6 arrive en cloud gaming et en Remote Play, y compris sur Xbox One : une info concrète pour les joueurs sans console récente, et le sujet est très recherché en France.",
+   "titles": [
+    "GTA 6 arrive sur Xbox Cloud Gaming, Xbox One compris",
+    "GTA 6 en cloud et en Remote Play : ce que change l'annonce Xbox"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-h3-podcast-fin",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "sources:reddit",
+   "type": "actu",
+   "topic": "Fin du H3 Podcast annoncée par Hila Klein",
+   "topic_key": "h3-podcast-fin",
+   "origin": "Hila Klein",
+   "source_tweet": "https://x.com/DramaAlert/status/2125044527463649749",
+   "primary_source": "https://x.com/DramaAlert/status/2125044527463649749",
+   "source_time_utc": "2026-11-23T23:57:53Z",
+   "expires_at_utc": "2026-11-24T05:57:53Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "DramaAlert",
+    "r/LivestreamFail"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "La fin annoncée d'un des podcasts les plus suivis de la scène streaming anglophone, avec une forte réaction sur Reddit et X : un événement de créateurs qui dépasse la niche.",
+   "titles": [
+    "Hila Klein annonce la fin du H3 Podcast",
+    "Fin du H3 Podcast : l'annonce qui secoue la scène streaming"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0515-gta6-crashs-ps5-maj",
+   "added_at_utc": "2026-11-24T05:15:17Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : les crashs sur PS5 persistent après la première mise à jour",
+   "topic_key": "gta6-crashs-ps5-maj",
+   "origin": "joueurs PS5 (signalements)",
+   "source_tweet": "https://x.com/Pirat_Nation/status/2125046997203984479",
+   "primary_source": "https://x.com/Pirat_Nation/status/2125046997203984479",
+   "source_time_utc": "2026-11-24T02:01:00Z",
+   "expires_at_utc": "2026-11-24T08:01:00Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "Pirat_Nation"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Les plantages sur PS5 reviennent toutes les 3 à 5 minutes malgré la MAJ, y compris sur PS5 Pro : un vrai sujet pour les joueurs GTA 6 et une info chiffrée facile à illustrer.",
+   "titles": [
+    "GTA 6 : les crashs sur PS5 continuent après la première mise à jour",
+    "GTA 6 sur PS5 : un plantage toutes les 3 à 5 minutes malgré la MAJ"
    ],
    "checks": [],
    "photo_needed": "",
