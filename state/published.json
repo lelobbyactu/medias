@@ -297,6 +297,16 @@
    "zernio_post_id": "6b04707192a7228a54661f48",
    "judge_score": "8/10",
    "slot": "18h"
+  },
+  {
+   "id": "0024-24_11_2026-Actu",
+   "status": "en_cours",
+   "type": "carrousel",
+   "topic": "GTA 6 : plus de 39 millions de joueurs sur PS5, le plus gros lancement de l'histoire de PlayStation",
+   "origin": "PlayStation",
+   "source_tweet": "https://x.com/PlayStation/status/2125009125322957131",
+   "queue_id": "c-20261124-0118-gta6-39m-joueurs-ps5",
+   "reserved_at_utc": "2026-11-24T01:20:05Z"
   }
  ]
 }
