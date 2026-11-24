@@ -625,15 +625,28 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T06:30:01Z"
+  },
+  {
+   "id": "trend-rassie-erasmus-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T09:07:27Z",
+   "title": "Tendance Google FR : « rassie erasmus » (500+ recherches)",
+   "url": "https://www.theguardian.com/sport/2026/nov/22/rassie-erasmus-weird-watchalong-south-africa-rugby-union",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "‘Great coach, terrible streamer’ – Erasmus gets thumbs-down for his weird watchalong No Rassie hearing, Stokke in trouble Finals opener facing half-empty Twickenham and Springboks take Erasmus decisio"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T09:07:27Z"
   }
  ],
- "updated_utc": "2026-11-24T07:59:05Z",
+ "updated_utc": "2026-11-24T09:07:27Z",
  "report": {
-  "twitch": "40 chaînes suivies, 99 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
-  "reddit": "0 posts retenus",
+  "reddit": "pas encore (dernier passage 2026-11-24T07:59:04Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
