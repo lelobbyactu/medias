@@ -584,11 +584,39 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T04:01:03Z"
+  },
+  {
+   "id": "steam-top-1973530-2026-11-24",
+   "kind": "steam",
+   "created_utc": "2026-11-24T05:10:28Z",
+   "title": "Limbus Company entre dans le top 25 Steam (37 869 joueurs connectés)",
+   "url": "https://steamdb.info/app/1973530/charts/",
+   "channel": "Steam",
+   "metrics": {
+    "rank": 25,
+    "players": 37869,
+    "peak_24h": 48193
+   },
+   "hint": 5,
+   "first_seen_utc": "2026-11-24T05:10:28Z"
+  },
+  {
+   "id": "trend-gta-vi-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T05:10:28Z",
+   "title": "Tendance Google FR : « gta vi » (200+ recherches)",
+   "url": "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "How to Play Grand Theft Auto VI in the Cloud and with Remote Play GTA 6 Owners Can Now Stream the Game to PS5, PS Portal with PS Plus Premium Game streaming can bring &apos;Grand Theft Auto VI&apos; t"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T05:10:28Z"
   }
  ],
- "updated_utc": "2026-11-24T04:01:03Z",
+ "updated_utc": "2026-11-24T05:10:28Z",
  "report": {
-  "twitch": "40 chaînes suivies, 95 lives FR lus, 0 clips retenus",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T01:54:12Z)",
   "steam": "top 25 lu",
