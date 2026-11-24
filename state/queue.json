@@ -2,35 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261121-0044-gotaga-gta6-vice-champion",
-   "added_at_utc": "2026-11-21T00:18:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Gotaga finit 2e d'une course sur GTA 6 : « Top 2, vice-champion, noooon ! » puis « vice-champion à Vice City… » (9,5 s, facecam)",
-   "topic_key": "gotaga-gta6-vice-champion-vice-city",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2123925515182456846",
-   "primary_source": "https://x.com/GotagaTV/status/2123925515182456846",
-   "source_time_utc": "2026-11-20T23:44:38Z",
-   "expires_at_utc": "2026-11-21T23:44:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2123925313310584832/vid/avc1/1920x1080/CM1rA50djTHXlGQw.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Gotaga voit la victoire lui échapper en course de rue (2e), se prend la tête dans les mains, jeu de mots « vice-champion à Vice City » sous-titré par lui. 9,5 s, 16:9, 76 likes en 30 min (traction faible).",
-   "titles": [
-    "Gotaga finit *vice-champion* à Vice City",
-    "Gotaga rate la *victoire* de peu sur GTA 6"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Score 6 (traction faible, clip très court). Le « vice-champion » fait peut-être référence à Squeezie (3e au GP) : à vérifier dans les réponses au tweet avant le titre. MP4 non téléchargé (score < 7)."
-  },
-  {
    "id": "c-20261121-1415-domingo-gta6-jason-braquage",
    "added_at_utc": "2026-11-21T14:15:00Z",
    "found_by": "veille-fr",
@@ -2250,8 +2221,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T01:18:46Z"
   },
   {
    "id": "c-20261123-1918-fortnite-scott-pilgrim-teaser-nov26",
@@ -2399,8 +2371,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T01:18:46Z"
   },
   {
    "id": "c-20261123-2117-gta6-vermeij-chapitre1",
@@ -2677,6 +2650,133 @@
    "titles": [
     "Antoine Daniel : un « QUOI ?! » qui fait réagir",
     "Antoine Daniel face à un moment qui part en vrille"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0118-gta6-39m-joueurs-ps5",
+   "added_at_utc": "2026-11-24T01:18:46Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "GTA 6 : plus de 39 millions de joueurs sur PS5, le plus gros lancement de l'histoire de PlayStation",
+   "topic_key": "gta6-39m-joueurs-ps5",
+   "origin": "PlayStation",
+   "source_tweet": "https://x.com/PlayStation/status/2125009125322957131",
+   "primary_source": "https://x.com/PlayStation/status/2125009125322957131",
+   "source_time_utc": "2026-11-23T23:30:30Z",
+   "expires_at_utc": "2026-11-24T05:30:30Z",
+   "fiabilite": "🟢",
+   "score": 9,
+   "mentions": [
+    "HYPEX",
+    "InsiderGamingIG",
+    "PlayStation",
+    "Rockstar_Mag",
+    "VGC_News",
+    "Wario64",
+    "_Tom_Henderson_",
+    "gematsu",
+    "geoffkeighley",
+    "thegameawards"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Sony officialise le record de lancement de GTA 6 sur PS5 (683 M d'heures jouées), un chiffre que toute la presse reprend en quelques minutes.",
+   "titles": [
+    "GTA 6 : Sony annonce 39 millions de joueurs sur PS5, un record historique pour PlayStation",
+    "683 millions d'heures jouées sur PS5 : GTA 6 écrit un nouveau chapitre du record de PlayStation"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "5_comptes"
+  },
+  {
+   "id": "c-20261124-0118-mcfly-carlito-pre-generique-1m",
+   "added_at_utc": "2026-11-24T01:18:46Z",
+   "found_by": "sources:youtube_record",
+   "type": "actu",
+   "topic": "McFly et Carlito : un pré-générique devenu vidéo de mise au point atteint 1 M de vues",
+   "topic_key": "mcfly-carlito-pre-generique-1m",
+   "origin": "McFly et Carlito",
+   "source_tweet": "https://www.youtube.com/watch?v=4_8r_Q7IHXk",
+   "primary_source": "https://www.youtube.com/watch?v=4_8r_Q7IHXk",
+   "source_time_utc": "2026-11-24T00:26:45Z",
+   "expires_at_utc": "2026-11-24T06:26:45Z",
+   "fiabilite": "🟢",
+   "score": 7,
+   "mentions": [
+    "youtube"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Une mise au point transformée en vidéo qui dépasse 1 M de vues en moins de 40 h : rare pour une chaîne FR de cette taille.",
+   "titles": [
+    "McFly et Carlito transforment leur pré-générique en vidéo de mise au point",
+    "McFly et Carlito : la vidéo née d'un pré-générique passe le cap du million de vues en deux jours"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0118-x-remunere-streamers",
+   "added_at_utc": "2026-11-24T01:18:46Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "X envisagerait de rémunérer les livestreamers selon leurs vues et leur engagement",
+   "topic_key": "x-remunere-streamers",
+   "origin": "zachbussey",
+   "source_tweet": "https://x.com/zachbussey/status/2125011090094583998",
+   "primary_source": "https://x.com/zachbussey/status/2125011090094583998",
+   "source_time_utc": "2026-11-23T23:38:19Z",
+   "expires_at_utc": "2026-11-24T05:38:19Z",
+   "fiabilite": "🟠",
+   "score": 5,
+   "mentions": [
+    "zachbussey"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Un modèle de type Kick pourrait arriver sur X : un nouveau débouché potentiel pour les streamers, encore non confirmé.",
+   "titles": [
+    "X pourrait bientôt payer les streamers selon leur audience",
+    "Vers un Kick bis sur X ? La plateforme étudierait une rémunération des livestreamers"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-0118-quad-flyquest-rebellion",
+   "added_at_utc": "2026-11-24T01:18:46Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Quad quitte FlyQuest et rejoint Shopify Rebellion pour la saison 2027 de LCS",
+   "topic_key": "quad-flyquest-rebellion",
+   "origin": "FlyQuest",
+   "source_tweet": "https://x.com/Sheep_Esports/status/2125020164853051463",
+   "primary_source": "https://x.com/Sheep_Esports/status/2125020164853051463",
+   "source_time_utc": "2026-11-24T00:14:22Z",
+   "expires_at_utc": "2026-11-24T06:14:22Z",
+   "fiabilite": "🟢",
+   "score": 5,
+   "mentions": [
+    "Sheep_Esports"
+   ],
+   "media_url": null,
+   "media_repo_path": "",
+   "angle": "Mercato LoL confirmé par l'organisation : le midlaner coréen change de structure pour la LCS 2027.",
+   "titles": [
+    "Quad quitte FlyQuest et rejoint Shopify Rebellion pour la LCS 2027",
+    "Le midlaner Quad change d'équipe : FlyQuest officialise son départ"
    ],
    "checks": [],
    "photo_needed": "",
