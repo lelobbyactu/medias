@@ -293,14 +293,15 @@
    "channel": "r/LivestreamFail",
    "media_url": "https://v.redd.it/rotewr69fd3i1/HLSPlaylist.m3u8",
    "metrics": {
-    "score": 4450,
-    "comments": 623,
+    "score": 7096,
+    "comments": 936,
     "flair": ":kick: Togi",
     "link": "https://v.redd.it/rotewr69fd3i1",
     "domain": "v.redd.it"
    },
-   "hint": 6,
-   "first_seen_utc": "2026-11-23T19:06:23Z"
+   "hint": 7,
+   "first_seen_utc": "2026-11-23T19:06:23Z",
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "reddit-1y3ggdb",
@@ -329,14 +330,15 @@
    "channel": "r/GamingLeaksAndRumours",
    "media_url": "",
    "metrics": {
-    "score": 2766,
-    "comments": 1143,
+    "score": 3744,
+    "comments": 1453,
     "flair": "Leak",
     "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3jzqe/cyberleek_posted_the_gta_6_xbox_build_executable/",
     "domain": "self.GamingLeaksAndRumours"
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-23T19:06:23Z"
+   "first_seen_utc": "2026-11-23T19:06:23Z",
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "reddit-1y3nshb",
@@ -347,14 +349,15 @@
    "channel": "r/GamingLeaksAndRumours",
    "media_url": "",
    "metrics": {
-    "score": 377,
-    "comments": 40,
+    "score": 582,
+    "comments": 83,
     "flair": "Rumour",
     "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3nshb/god_of_war_liveaction_series_deborah_ann_woll_to/",
     "domain": "self.GamingLeaksAndRumours"
    },
-   "hint": 4,
-   "first_seen_utc": "2026-11-23T19:06:23Z"
+   "hint": 5,
+   "first_seen_utc": "2026-11-23T19:06:23Z",
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "reddit-1y3lqh2",
@@ -365,14 +368,15 @@
    "channel": "r/GamingLeaksAndRumours",
    "media_url": "",
    "metrics": {
-    "score": 383,
-    "comments": 284,
+    "score": 558,
+    "comments": 335,
     "flair": "Rumour",
     "link": "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1y3lqh2/windows_central_xbox_helix_was_originally_meant/",
     "domain": "self.GamingLeaksAndRumours"
    },
    "hint": 4,
-   "first_seen_utc": "2026-11-23T19:06:23Z"
+   "first_seen_utc": "2026-11-23T19:06:23Z",
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "steam-top-4080220-2026-11-23",
@@ -426,8 +430,8 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 1966,
-    "views_per_h": 565,
+    "views": 2024,
+    "views_per_h": 410,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
@@ -435,7 +439,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-24T00:26:50Z"
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -467,8 +471,8 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 570,
-    "views_per_h": 165,
+    "views": 611,
+    "views_per_h": 124,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
@@ -476,7 +480,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-24T00:26:50Z"
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "steam-top-322170-2026-11-23",
@@ -503,8 +507,8 @@
    "channel": "zerator",
    "lang": "fr",
    "metrics": {
-    "views": 380,
-    "views_per_h": 109,
+    "views": 421,
+    "views_per_h": 85,
     "duration_s": 36,
     "game": "",
     "streamer": "ZeratoR",
@@ -512,7 +516,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T23:28:09Z",
-   "updated_utc": "2026-11-24T00:26:50Z"
+   "updated_utc": "2026-11-24T01:54:13Z"
   },
   {
    "id": "yt-tier-4_8r_Q7IHXk-1000000",
@@ -538,13 +542,31 @@
    "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/bdbd8d4169d040de893c038e929b0d8d.jpeg?width=1920&height=1080&aspect=fill",
    "hint": 4,
    "first_seen_utc": "2026-11-24T00:26:50Z"
+  },
+  {
+   "id": "reddit-1y3yboj",
+   "kind": "reddit",
+   "created_utc": "2026-11-23T23:57:53Z",
+   "title": "Hila Klein Announces The End of The H3 Podcast",
+   "url": "https://www.reddit.com/r/LivestreamFail/comments/1y3yboj/hila_klein_announces_the_end_of_the_h3_podcast/",
+   "channel": "r/LivestreamFail",
+   "media_url": "https://v.redd.it/t6ks9q4qag3i1/HLSPlaylist.m3u8",
+   "metrics": {
+    "score": 6374,
+    "comments": 1370,
+    "flair": "News:PepoG:",
+    "link": "https://v.redd.it/t6ks9q4qag3i1",
+    "domain": "v.redd.it"
+   },
+   "hint": 7,
+   "first_seen_utc": "2026-11-24T01:54:13Z"
   }
  ],
- "updated_utc": "2026-11-24T00:26:50Z",
+ "updated_utc": "2026-11-24T01:54:13Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 3 clips retenus",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 3 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-23T19:06:21Z)",
+  "reddit": "5 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
