@@ -675,12 +675,13 @@
    "url": "https://www.youtube.com/watch?v=F-8Im7F2_ao",
    "channel": "McFly et Carlito",
    "metrics": {
-    "views": 71776,
-    "views_per_h": 57885,
-    "age_h": 1.2
+    "views": 147328,
+    "views_per_h": 61004,
+    "age_h": 2.4
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-24T18:27:43Z"
+   "first_seen_utc": "2026-11-24T18:27:43Z",
+   "updated_utc": "2026-11-24T19:38:11Z"
   },
   {
    "id": "yt-new--GFFkFY_i9w",
@@ -690,12 +691,13 @@
    "url": "https://www.youtube.com/watch?v=-GFFkFY_i9w",
    "channel": "Pierre Croce",
    "metrics": {
-    "views": 6026,
-    "views_per_h": 4991,
-    "age_h": 1.2
+    "views": 16281,
+    "views_per_h": 6835,
+    "age_h": 2.4
    },
    "hint": 6,
-   "first_seen_utc": "2026-11-24T18:27:43Z"
+   "first_seen_utc": "2026-11-24T18:27:43Z",
+   "updated_utc": "2026-11-24T19:38:11Z"
   },
   {
    "id": "steam-top-381210-2026-11-24",
@@ -711,12 +713,42 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-24T18:27:43Z"
+  },
+  {
+   "id": "yt-new-RJP4p77kmYc",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-24T19:11:23Z",
+   "title": "On réagit au gage de Djilsi et Maxime Biaggi (Youtube Warrior 6)",
+   "url": "https://www.youtube.com/watch?v=RJP4p77kmYc",
+   "channel": "McFly et Carlito",
+   "metrics": {
+    "views": 221240,
+    "views_per_h": 496209,
+    "age_h": 0.4
+   },
+   "hint": 7,
+   "first_seen_utc": "2026-11-24T19:38:11Z"
+  },
+  {
+   "id": "yt-new-z2hbNUuqizQ",
+   "kind": "youtube_video",
+   "created_utc": "2026-11-24T18:32:46Z",
+   "title": "MES PREMIÈRES HEURES SUR GTA VI SONT INCROYABLES !",
+   "url": "https://www.youtube.com/watch?v=z2hbNUuqizQ",
+   "channel": "Domingo",
+   "metrics": {
+    "views": 1742,
+    "views_per_h": 1598,
+    "age_h": 1.1
+   },
+   "hint": 6,
+   "first_seen_utc": "2026-11-24T19:38:11Z"
   }
  ],
- "updated_utc": "2026-11-24T18:27:43Z",
+ "updated_utc": "2026-11-24T19:38:11Z",
  "report": {
-  "twitch": "40 chaînes suivies, 97 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 36 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 42 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T14:25:05Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
