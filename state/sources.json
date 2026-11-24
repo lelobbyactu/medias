@@ -627,13 +627,13 @@
    "first_seen_utc": "2026-11-24T06:30:01Z"
   }
  ],
- "updated_utc": "2026-11-24T06:30:01Z",
+ "updated_utc": "2026-11-24T07:59:05Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
-  "reddit": "pas encore (dernier passage 2026-11-24T01:54:12Z)",
+  "twitch": "40 chaînes suivies, 99 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 41 vidéos de moins de 72 h",
+  "reddit": "0 posts retenus",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "1 tendances liées"
+  "trends": "0 tendances liées"
  }
 }
