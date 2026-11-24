@@ -2691,12 +2691,13 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
+   "status": "publie",
    "note": "",
    "hot": true,
    "hot_reason": "5_comptes",
    "taken_at_utc": "2026-11-24T01:19:28Z",
-   "post_id": "0024-24_11_2026-Actu"
+   "post_id": "0024-24_11_2026-Actu",
+   "closed_at_utc": "2026-11-24T01:22:49Z"
   },
   {
    "id": "c-20261124-0118-mcfly-carlito-pre-generique-1m",

@@ -300,13 +300,20 @@
   },
   {
    "id": "0024-24_11_2026-Actu",
-   "status": "en_cours",
+   "status": "publie",
    "type": "carrousel",
    "topic": "GTA 6 : plus de 39 millions de joueurs sur PS5, le plus gros lancement de l'histoire de PlayStation",
    "origin": "PlayStation",
    "source_tweet": "https://x.com/PlayStation/status/2125009125322957131",
    "queue_id": "c-20261124-0118-gta6-39m-joueurs-ps5",
-   "reserved_at_utc": "2026-11-24T01:20:05Z"
+   "reserved_at_utc": "2026-11-24T01:20:05Z",
+   "published_at_utc": "2026-11-24T01:22:49Z",
+   "instagram": "zernio:6b04e68bf851828c7a004f0e",
+   "tiktok": "pause",
+   "zernio_post_id": "6b04e68bf851828c7a004f0e",
+   "judge_score": "8/10",
+   "hot": true,
+   "hot_reason": "5_comptes"
   }
  ]
 }
