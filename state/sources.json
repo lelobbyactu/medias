@@ -430,8 +430,8 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 2024,
-    "views_per_h": 410,
+    "views": 2037,
+    "views_per_h": 340,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
@@ -439,7 +439,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-24T01:54:13Z"
+   "updated_utc": "2026-11-24T02:57:00Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -471,8 +471,8 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 611,
-    "views_per_h": 124,
+    "views": 629,
+    "views_per_h": 105,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
@@ -480,7 +480,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-24T01:54:13Z"
+   "updated_utc": "2026-11-24T02:57:00Z"
   },
   {
    "id": "steam-top-322170-2026-11-23",
@@ -507,8 +507,8 @@
    "channel": "zerator",
    "lang": "fr",
    "metrics": {
-    "views": 421,
-    "views_per_h": 85,
+    "views": 433,
+    "views_per_h": 72,
     "duration_s": 36,
     "game": "",
     "streamer": "ZeratoR",
@@ -516,7 +516,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-23T23:28:09Z",
-   "updated_utc": "2026-11-24T01:54:13Z"
+   "updated_utc": "2026-11-24T02:57:00Z"
   },
   {
    "id": "yt-tier-4_8r_Q7IHXk-1000000",
@@ -562,11 +562,11 @@
    "first_seen_utc": "2026-11-24T01:54:13Z"
   }
  ],
- "updated_utc": "2026-11-24T01:54:13Z",
+ "updated_utc": "2026-11-24T02:57:00Z",
  "report": {
   "twitch": "40 chaînes suivies, 98 lives FR lus, 3 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
-  "reddit": "5 posts retenus",
+  "reddit": "pas encore (dernier passage 2026-11-24T01:54:12Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
   "trends": "0 tendances liées"
