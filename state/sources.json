@@ -560,15 +560,39 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-24T01:54:13Z"
+  },
+  {
+   "id": "fortnite-news-8f317c4af0a2205d86a592c15128ad0f",
+   "kind": "fortnite",
+   "created_utc": "2026-11-24T04:01:03Z",
+   "title": "Actu Fortnite en jeu : Barrage de poings — RAFALE GUM-GUM !",
+   "url": "https://www.fortnite.com/news",
+   "channel": "Fortnite",
+   "media_url": "https://cdn-live.prm.ol.epicgames.com/prod/e9db8889f0df48368b6a9a151297980a.jpeg?width=1920&height=1080&aspect=fill",
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T04:01:03Z"
+  },
+  {
+   "id": "trend-timberwolves-nets-20261124",
+   "kind": "trend",
+   "created_utc": "2026-11-24T04:01:03Z",
+   "title": "Tendance Google FR : « timberwolves – nets » (200+ recherches)",
+   "url": "https://www.espn.com/nba/recap?gameId=401910040",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "Timberwolves 142-116 Nets (Nov 23, 2026) Game Recap Julius Randle returns to Minnesota as veteran leader for Nets How to Watch Nets vs. Wolves for Free: TV Channels, Live Stream Options"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-24T04:01:03Z"
   }
  ],
- "updated_utc": "2026-11-24T02:57:00Z",
+ "updated_utc": "2026-11-24T04:01:03Z",
  "report": {
-  "twitch": "40 chaînes suivies, 98 lives FR lus, 3 clips retenus",
+  "twitch": "40 chaînes suivies, 95 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 40 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T01:54:12Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "0 tendances liées"
+  "trends": "1 tendances liées"
  }
 }
