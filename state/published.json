@@ -317,13 +317,18 @@
   },
   {
    "id": "0025-24_11_2026-Clips",
-   "status": "en_cours",
+   "status": "publie",
    "type": "reel",
    "topic": "Kameto, Walid et BigYouss choqués par le prix d'un slot en LEC",
    "origin": "KametoTV",
    "source_tweet": "https://x.com/riyadinhoo_/status/2124990523966464481",
    "queue_id": "c-20261123-2321-kameto-slot-lec-25m",
-   "reserved_at_utc": "2026-11-24T06:58:35Z"
+   "reserved_at_utc": "2026-11-24T06:58:35Z",
+   "published_at_utc": "2026-11-24T07:02:33Z",
+   "instagram": "https://www.instagram.com/lelobbyactu/ (id 18183526594451195)",
+   "zernio_post_id": "6b053622a6a99a6eb0ce9f0c",
+   "judge_score": "7/10",
+   "slot": "08h"
   }
  ]
 }
