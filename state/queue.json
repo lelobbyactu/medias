@@ -2,37 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261121-1415-domingo-gta6-jason-braquage",
-   "added_at_utc": "2026-11-21T14:15:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Domingo sur GTA 6 : « Jason il rigole pas durant un braquage » (clip 90 s)",
-   "topic_key": "domingo-gta6-jason-braquage",
-   "origin": "DomingoTV (x.com/DomingoTV)",
-   "source_tweet": "https://x.com/DomingoTV/status/2124136530403102881",
-   "primary_source": "https://x.com/DomingoTV/status/2124136530403102881",
-   "source_time_utc": "2026-11-21T13:43:08Z",
-   "expires_at_utc": "2026-11-22T13:43:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124136398374436864/vid/avc1/1280x720/JLIcBjQ4Iz5RpPoh.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Braquage sur GTA 6 avec Domingo, Jason (le héros) qui ne rigole pas ; 40 likes / 5,3 k vues en 30 min (traction moyenne)",
-   "titles": [
-    "Domingo braque un magasin sur GTA 6 et *Jason* ne rigole plus du tout",
-    "Le *braquage* de Domingo sur GTA 6 ne fait pas rire Jason"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "juge 5/10 : titre plat, pas de twist visible",
-   "taken_at_utc": "2026-11-22T10:52:13Z",
-   "closed_at_utc": "2026-11-22T10:52:52Z"
-  },
-  {
    "id": "c-20261121-1641-gotaga-gta6-poursuite-lampadaire",
    "added_at_utc": "2026-11-21T17:15:00Z",
    "found_by": "veille-fr",
@@ -103,39 +72,6 @@
    "media_repo_path": "",
    "checks": [],
    "photo_needed": "",
-   "status": "ecarte",
-   "id": "c-20261121-1920-jltomy-gta6-sauvegarde-ps-fake",
-   "topic": "JL Tomy croit avoir perdu sa sauvegarde GTA 6 (50 %+) en plein subathon Miami, puis comprend que c'était la PS5 de Fake",
-   "topic_key": "jltomy-gta6-sauvegarde-ps-de-fake",
-   "origin": "JLTomyTV (x.com/JLTomyTV)",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124211466249343310",
-   "primary_source": "https://x.com/JLTomyTV/status/2124211466249343310",
-   "source_time_utc": "2026-11-21T18:40:54Z",
-   "expires_at_utc": "2026-11-22T18:40:00Z",
-   "score": 6,
-   "mentions": [
-    "JLTomyTV",
-    "Actu2Twitch",
-    "riyadinhoo_"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124211352767991808/vid/avc1/1920x1080/e56tPMeboGPnTiym.mp4?tag=29",
-   "angle": "Arc du subathon #JLMiami : JL Tomy voit sa sauvegarde GTA 6 'supprimée', puis réalise que ce n'est pas sa PS mais celle de Fake (« il n'a rien perdu »). Tweet JLTomyTV cite son clip 'CLIP DE L'ANNÉE' ; le relais Actu2Twitch du moment de la suppression fait 328 likes / 46 k vues en 25 min.",
-   "titles": [
-    "JL Tomy croit avoir perdu sa *sauvegarde* GTA 6… c'était la PS5 de Fake",
-    "Il pensait avoir tout perdu sur GTA 6 : *10 minutes* plus tard, le retournement"
-   ],
-   "note": "clip quasi sans visuel (menus PS5), retournement non vérifiable (audio non écouté, aucune réponse trouvée), doute",
-   "taken_at_utc": "2026-11-22T10:52:55Z",
-   "closed_at_utc": "2026-11-22T10:54:26Z"
-  },
-  {
-   "added_at_utc": "2026-11-21T19:14:33Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "fiabilite": "🟢",
-   "media_repo_path": "",
-   "checks": [],
-   "photo_needed": "",
    "status": "expire",
    "id": "c-20261121-1920-jltomy-gta6-lucia-jason-gros",
    "topic": "Subathon Miami : JL Tomy découvre Lucia (et Jason) transformés par Wati et Fake dans GTA 6 (« le clip de l'année »)",
@@ -158,38 +94,6 @@
    ],
    "note": "Clip de 38,8 s, 1080p 16:9, 23 Mo, non téléchargé dans queue/ (score 6). Vu en frames : Lucia en débardeur/culotte dans sa chambre rose puis le salon, cam de JL Tomy qui rit, sous-titres incrustés. ATTENTION : tenue légère (haut blanc + culotte) = limite pour l'exclusion nudité §4, à trancher au visionnage ; l'effet « énormément gros » n'est pas clairement visible dans les frames, ne pas le promettre dans le titre sans l'avoir vu. Audio non écouté. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 1 − risque tenue.",
    "closed_at_utc": "2026-11-22T19:16:23Z"
-  },
-  {
-   "added_at_utc": "2026-11-21T19:14:33Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "fiabilite": "🟢",
-   "media_repo_path": "",
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "id": "c-20261121-1920-domingo-gta6-accidents-route",
-   "topic": "Domingo sur GTA VI : « Les accidents de la route sur GTA VI, je suis choqué » (voiture retournée, Porsche, police)",
-   "topic_key": "domingo-gta6-accidents-route",
-   "origin": "DomingoTV (x.com/DomingoTV)",
-   "source_tweet": "https://x.com/DomingoTV/status/2124204914180034910",
-   "primary_source": "https://x.com/DomingoTV/status/2124204914180034910",
-   "source_time_utc": "2026-11-21T18:14:52Z",
-   "expires_at_utc": "2026-11-22T18:14:00Z",
-   "score": 6,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124204745296404480/vid/avc1/1280x720/8xhSl1q2xyBtKm_0.mp4?tag=29",
-   "angle": "Domingo choqué par la physique des accidents de voiture dans GTA VI (voiture qui se retourne, piéton, police) ; 195 likes / 23,8 k vues en 25 min.",
-   "titles": [
-    "Domingo teste les *accidents de voiture* de GTA 6 : le réalisme choque",
-    "Domingo crashe sa Porsche sur GTA 6 et la *physique* le laisse sans voix"
-   ],
-   "note": "Clip de 49 s (source 2560x1440 ; MP4 720p 1280x720 listé, 10 Mo, non téléchargé dans queue/). Vu en frames : Porsche rouge qui part en tête-à-queue contre des barrières, voiture retournée en pièces, voiture de police. 5e clip Domingo en file : ne passer qu'après les meilleurs et pas deux Domingo d'affilée. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 0-1.",
-   "taken_at_utc": "2026-11-22T10:55:37Z",
-   "post_id": "0020-22_11_2026-Clips",
-   "closed_at_utc": "2026-11-22T11:09:35Z"
   },
   {
    "id": "c-20261122-0141-jltomy-gta6-orque-sauvetage",
@@ -3068,8 +2972,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-24T11:15:23Z"
   },
   {
    "id": "c-20261124-0915-gta6-chiffres-lancement-ps5-nov26",
@@ -3150,6 +3055,147 @@
    "titles": [
     "GTA 6 reçoit sa première mise à jour : météo et sauvegarde automatique corrigées",
     "Une semaine après sa sortie, GTA 6 corrige sa météo et sa sauvegarde auto"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1115-fortnite-doki-doki-collab",
+   "added_at_utc": "2026-11-24T11:15:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : Doki Doki Literature Club arrive dans le jeu",
+   "topic_key": "fortnite-doki-doki-collab",
+   "origin": "HYPEX",
+   "source_tweet": "https://x.com/HYPEX/status/2125173683174182950",
+   "primary_source": "https://x.com/HYPEX/status/2125173683174182950",
+   "source_time_utc": "2026-11-24T10:24:24Z",
+   "expires_at_utc": "2026-11-24T16:24:24Z",
+   "fiabilite": "🟠",
+   "score": 8,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Collab annoncée par un insider (fuite, sortie prévue dans la semaine, quatre personnages) ; très fort engagement (160 k vues, plus de 6 000 likes).",
+   "titles": [
+    "Fortnite : Doki Doki Literature Club débarque dans le jeu",
+    "Doki Doki Literature Club arrive dans Fortnite d'ici une semaine"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "",
+   "hot": true,
+   "hot_reason": "leak"
+  },
+  {
+   "id": "c-20261124-1115-fortnite-puss-in-boots-collab",
+   "added_at_utc": "2026-11-24T11:15:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : Puss in Boots arrive avec un skin et un sidekick",
+   "topic_key": "fortnite-puss-in-boots-collab",
+   "origin": "HYPEX",
+   "source_tweet": "https://x.com/HYPEX/status/2125175154477355069",
+   "primary_source": "https://x.com/HYPEX/status/2125175154477355069",
+   "source_time_utc": "2026-11-24T10:30:15Z",
+   "expires_at_utc": "2026-11-24T16:30:15Z",
+   "fiabilite": "🟠",
+   "score": 6,
+   "mentions": [],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Collab annoncée par un insider avec skin, pioche, emote et voix ; sortie prévue dans la semaine (116 k vues).",
+   "titles": [
+    "Fortnite : Puss in Boots arrive dans le jeu d'ici une semaine",
+    "Puss in Boots débarque dans Fortnite avec son propre skin"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1115-fortnite-ember-blade-collab",
+   "added_at_utc": "2026-11-24T11:15:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "Fortnite : collab Ember & Blade dès le 1er décembre",
+   "topic_key": "fortnite-ember-blade-collab",
+   "origin": "Epic Games",
+   "source_tweet": "https://x.com/HYPEX/status/2125170981694066698",
+   "primary_source": "https://x.com/HYPEX/status/2125170981694066698",
+   "source_time_utc": "2026-11-24T10:13:40Z",
+   "expires_at_utc": "2026-11-24T16:13:40Z",
+   "fiabilite": "🟡",
+   "score": 7,
+   "mentions": [
+    "ShiinaBR"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Skin de collab disponible le 1er décembre, en cadeau d'achat sur l'Epic Games Store ou à 1 500 V-Bucks dans la boutique ; très engageant (96 k vues).",
+   "titles": [
+    "Fortnite x Ember & Blade : le skin Shadow of Ariella arrive le 1er décembre",
+    "Une collab Ember & Blade débarque dans Fortnite le 1er décembre"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1115-gta6-easter-egg-mario-chapeaux",
+   "added_at_utc": "2026-11-24T11:15:23Z",
+   "found_by": "veille",
+   "type": "clip",
+   "topic": "GTA 6 : easter egg Mario, des chapeaux tombent quand on casse le bloc",
+   "topic_key": "gta6-easter-egg-mario-chapeaux",
+   "origin": "à identifier (repost FrenchRapUS, créditer le joueur d'origine)",
+   "source_tweet": "https://x.com/FrenchRapUS/status/2125159993619922965",
+   "primary_source": "https://x.com/FrenchRapUS/status/2125159993619922965",
+   "source_time_utc": "2026-11-24T09:30:00Z",
+   "expires_at_utc": "2026-11-25T09:30:00Z",
+   "fiabilite": "🟡",
+   "score": 8,
+   "mentions": [],
+   "media_url": "https://video.twimg.com/amplify_video/2125149955799035904/vid/avc1/1280x720/flexMjgKzPpvFpes.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Easter egg visuel et drôle (chapeaux Mario et Luigi portés par Jason et Lucia), 75 secondes ; crédit d'origine à retrouver avant publication.",
+   "titles": [
+    "GTA 6 cache un easter egg Mario : des chapeaux à récupérer",
+    "Dans GTA 6, casser un bloc comme Mario fait tomber des chapeaux"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261124-1115-god-of-war-serie-deborah-ann-woll",
+   "added_at_utc": "2026-11-24T11:15:23Z",
+   "found_by": "veille",
+   "type": "actu",
+   "topic": "God of War : Deborah Ann Woll au casting de la série Prime Video",
+   "topic_key": "god-of-war-serie-deborah-ann-woll",
+   "origin": "Prime Video",
+   "source_tweet": "https://x.com/JVCom/status/2125171316139475102",
+   "primary_source": "https://x.com/JVCom/status/2125171316139475102",
+   "source_time_utc": "2026-11-24T10:15:00Z",
+   "expires_at_utc": "2026-11-24T16:15:00Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "Gamekult"
+   ],
+   "media_url": "",
+   "media_repo_path": "",
+   "angle": "Casting de la série live-action, lié au prochain jeu God of War 2027 ; franchise connue du grand public.",
+   "titles": [
+    "God of War : Deborah Ann Woll au casting de la série Prime Video",
+    "La série God of War dévoile une actrice qui revient aussi dans le jeu"
    ],
    "checks": [],
    "photo_needed": "",
