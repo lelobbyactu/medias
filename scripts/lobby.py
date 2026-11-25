@@ -29,7 +29,7 @@ NOPUSH = bool(os.environ.get("LOBBY_NOPUSH"))
 CLOSED = ("publie", "expire", "ecarte")
 # statuts d'un post du journal : en_cours (montage) → a_valider (envoyé à Alix) → valide → publication → publie
 # (ou programme : drama urgent daté par Zernio) ; fins possibles : refuse, expire, echec
-PRIS = ("en_cours", "a_valider", "valide", "publication", "programme", "publie", "refuse", "expire")  # sujet déjà traité
+PRIS = ("en_cours", "retouche", "a_valider", "valide", "publication", "programme", "publie", "refuse", "expire")  # sujet déjà traité
 PARTI = ("publication", "programme", "publie")   # compte dans le plafond du jour et l'espacement
 
 
@@ -264,6 +264,8 @@ def cmd_lot(a):
     slot = next_slot(t, c["slots"])
     res.update({"a_produire": max(0, reste), "prochain_creneau_paris": slot.astimezone(PARIS).strftime("%d/%m %H:%M"),
                 "en_validation": sum(1 for x in p["posts"] if x.get("status") in ("a_valider", "valide"))})
+    res["retouches"] = [{"post": x["id"], "demande": x.get("demande"), "titre": x.get("titre"), "clip": x.get("clip")}
+                        for x in p["posts"] if x.get("status") == "retouche"]
     if not res["reseau_ok"]: res["stop"] = "réseau bloqué (video.twimg.com)"
     elif reste <= 0: res["stop"] = f"déjà {maxi} vidéos produites pour cette session"
     if res.get("stop"): out(res); return
@@ -291,6 +293,7 @@ def cmd_proposer(a):
         if not a.urgent and len(produits_session(p["posts"], t)) >= c.get("lot_max", 4):
             raise SystemExit(f"plafond de {c.get('lot_max', 4)} vidéos par session atteint")
         e = next((i for i in q["candidates"] if i["id"] == x.get("queue_id")), None)
+        if e and e.get("clip"): x["clip"] = e["clip"]
         if e: x["topic_key"] = e["topic_key"]; x["expires_at_utc"] = e["expires_at_utc"]; x["nature"] = e.get("nature", "")
         x.setdefault("expires_at_utc", iso(t + dt.timedelta(hours=12)))
         x.update({"status": "a_valider", "proposed_at_utc": iso(t), "titre": d["titre"], "legende": d["legende"],
@@ -300,6 +303,34 @@ def cmd_proposer(a):
         q["candidates"] = [i for i in q["candidates"] if i["id"] != x.get("queue_id")]
         save(P, p); save(Q, q)
     transact(apply, f"validation: {a.post} à valider"); out({"ok": a.post, "statut": "a_valider"})
+
+def fetch_media(mu, dest, offset=0, dur=None):
+    """Retélécharge la vidéo source d'un montage (retouche demandée depuis Telegram)."""
+    tmp = dest + ".src.mp4"
+    if "v.redd.it" in mu:
+        base = re.sub(r"/[^/]*\.m3u8$", "", mu.rstrip("/")); ua = "-A 'Mozilla/5.0'"
+        for r in (1080, 720, 480, 360):
+            if sh(f"curl -sf {ua} -o '{tmp}.v' {base}/CMAF_{r}.mp4 || curl -sf {ua} -o '{tmp}.v' {base}/DASH_{r}.mp4", check=False).returncode == 0: break
+        has_a = any(sh(f"curl -sf {ua} -o '{tmp}.a' {base}/{n}.mp4", check=False).returncode == 0
+                    for n in ("CMAF_AUDIO_128", "CMAF_AUDIO_64", "DASH_AUDIO_128", "DASH_AUDIO_64"))
+        amap = f"-i '{tmp}.a' -map 0:v -map 1:a -c:a aac" if has_a else "-an"
+        sh(f"ffmpeg -v error -y -i '{tmp}.v' {amap} -c:v copy '{tmp}'")
+    elif re.search(r"twitch\.tv|youtube\.com|youtu\.be|streamable\.com|kick\.com", mu):
+        sh(f"yt-dlp -q -f 'bv*[height<=1080]+ba/b[height<=1080]/b' --merge-output-format mp4 -o '{tmp}' '{mu}'")
+    else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o '{tmp}' '{mu}'")
+    cut = f"-t {dur:.2f}" if dur else ""
+    sh(f"ffmpeg -v error -y -ss {max(offset, 0):.2f} -i '{tmp}' {cut} -c:v libx264 -preset veryfast -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k '{dest}'")
+
+def cmd_renvoyer(a):
+    """Retouche libre faite et poussée : la vidéo repart en validation."""
+    meta = load(f"{ROOT}/posts/{a.post}/{a.post}_montage.json") or {}
+    def apply():
+        p = pload(); x = next(i for i in p["posts"] if i["id"] == a.post)
+        if x["status"] != "retouche": raise SystemExit(f"{a.post} est {x['status']}")
+        x.update({"status": "a_valider", "format": meta.get("format", x.get("format"))})
+        for k in ("telegram_msg", "envoi_utc", "demande"): x.pop(k, None)
+        save(P, p)
+    transact(apply, f"validation: {a.post} retouché"); out({"ok": a.post})
 
 def cmd_take(a):
     e = {}
@@ -340,6 +371,14 @@ def cmd_take(a):
             try: tw = json.loads(r.stdout.strip().splitlines()[-1])
             except Exception: tw = {"found": False, "reason": (r.stderr or "sortie illisible")[-300:]}
         d = sh("ffprobe -v error -show_entries format=duration,size:stream=width,height -of default=nw=1 /tmp/clip.mp4").stdout.split()
+        # d'où vient exactement /tmp/clip.mp4 : permet une retouche sans Claude
+        if tw.get("found"): src_info = {"url": tw["twitch_url"], "offset": tw.get("offset_s", 0),
+                                        "dur": None if tw.get("source") == "twitch_direct" else float(next(l.split("=")[1] for l in d if l.startswith("duration=")))}
+        else: src_info = {"url": mu, "offset": 0, "dur": None}
+        if src_info["url"]:
+            def note():
+                q = qload(); x = next(i for i in q["candidates"] if i["id"] == a.id); x["clip"] = src_info; save(Q, q)
+            transact(note, f"queue: source {a.id}")
         out({"id": a.id, "clip": "/tmp/clip.mp4", "ffprobe": d, "origin": e["origin"], "titles": e["titles"], "twitch": tw})
     else: out({"id": a.id, "type": "actu", "topic": e["topic"], "checks": e["checks"], "titles": e["titles"]})
 
@@ -412,5 +451,6 @@ if __name__ == "__main__":
     for k in ("ig", "tiktok", "zernio", "judge", "slot", "hot", "note"): s.add_argument(f"--{k}")
     s = sp.add_parser("fail"); s.add_argument("post"); s.add_argument("raison")
     s = sp.add_parser("drop"); s.add_argument("id"); s.add_argument("raison")
+    s = sp.add_parser("renvoyer"); s.add_argument("post")
     s = sp.add_parser("push"); s.add_argument("message"); s.add_argument("paths", nargs="+")
     a = ap.parse_args(); globals()["cmd_" + a.cmd](a)

@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       numero: { description: "Numéro du post (4 chiffres)", required: true, type: string }
-      action: { description: "ok | non | titre | annuler", required: true, type: string }
-      valeur: { description: "Raison du refus ou nouveau titre", required: false, type: string, default: "" }
+      action: { description: "ok | non | titre | annuler | retouche | autre", required: true, type: string }
+      valeur: { description: "Raison du refus, nouveau titre ou retouche", required: false, type: string, default: "" }
 permissions:
   contents: write
 jobs:
@@ -23,10 +23,10 @@ jobs:
             /juge/
             /config.json
           sparse-checkout-cone-mode: false
-      - name: Outils de montage (changement de titre seulement)
-        if: inputs.action == 'titre'
+      - name: Outils de montage (changement de titre ou retouche)
+        if: inputs.action == 'titre' || inputs.action == 'retouche'
         run: |
-          pip install -q playwright
+          pip install -q playwright numpy opencv-python-headless yt-dlp
           command -v google-chrome || python3 -m playwright install --with-deps chromium
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Décision

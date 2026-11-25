@@ -43,7 +43,13 @@ async function findPost(env, n) {
 
 const keyboard = (rows) => ({ inline_keyboard: rows });
 const btn = (text, data) => ({ text, callback_data: data });
-const baseRows = (n) => [[btn("✅ Poster", `ok:${n}`), btn("❌ Non", `non:${n}`)], [btn("✏️ Autre titre", `alt:${n}`)]];
+const baseRows = (n) => [[btn("✅ Poster", `ok:${n}`), btn("❌ Non", `non:${n}`)],
+  [btn("✏️ Autre titre", `alt:${n}`), btn("🔧 Retoucher", `retoucher:${n}`)]];
+const retoucheRows = (n) => [[btn("🔍 Moins zoomé", `zoom:${n}`), btn("📐 Format 16:9", `m:${n}:16x9`)],
+  [btn("✂️ Début −2 s", `m:${n}:debut`), btn("✂️ Fin −2 s", `m:${n}:fin`)],
+  [btn("✍️ Autre retouche", `autre:${n}`), btn("↩︎ Retour", `retour:${n}`)]];
+const zoomRows = (n) => [[btn("Webcam", `m:${n}:cam`), btn("Gameplay", `m:${n}:jeu`), btn("Les deux", `m:${n}:deux`)],
+  [btn("↩︎ Retour", `retoucher:${n}`)]];
 
 async function decide(env, chat, n, action, valeur = "") {
   const err = await dispatch(env, "decision.yml", { numero: n, action, valeur });
@@ -92,6 +98,20 @@ async function onClick(env, q) {
     await tg(env, "sendMessage", { chat_id: chat,
       text: `#${n} · titre\nRéponds à ce message avec ton titre. Entoure d'*étoiles* le mot à surligner. « | » force un retour à la ligne.`,
       reply_markup: { force_reply: true } });
+  } else if (action === "retoucher" || action === "zoom") {
+    await answer("");
+    await buttons(action === "zoom" ? zoomRows(n) : retoucheRows(n));
+  } else if (action === "m") {
+    await answer("Je refais la vidéo (3-5 min)");
+    if (await decide(env, chat, n, "retouche", arg)) {
+      await buttons([]);
+      await tg(env, "sendMessage", { chat_id: chat, text: `#${n} : retouche lancée, la nouvelle version arrive dans 3 à 5 min.` });
+    }
+  } else if (action === "autre") {
+    await answer("");
+    await tg(env, "sendMessage", { chat_id: chat,
+      text: `#${n} · retouche\nRéponds à ce message : que faut-il changer ? (fait à la prochaine session de production)`,
+      reply_markup: { force_reply: true } });
   } else if (action === "retour") {
     await answer("");
     await buttons(baseRows(n));
@@ -119,11 +139,11 @@ async function onMessage(env, m) {
     await tg(env, "sendMessage", { chat_id: chat, text: "Bot prêt. J'envoie les vidéos en attente, s'il y en a." });
     return sendPending(env, chat);
   }
-  const reply = m.reply_to_message && (m.reply_to_message.text || "").match(/^#(\d{4}) · (titre|raison)/);
+  const reply = m.reply_to_message && (m.reply_to_message.text || "").match(/^#(\d{4}) · (titre|raison|retouche)/);
   if (reply && text) {
     const [, n, kind] = reply;
-    const action = kind === "titre" ? "titre" : "non";
-    if (await decide(env, chat, n, action, text.slice(0, 120)))
+    const action = { titre: "titre", raison: "non", retouche: "autre" }[kind];
+    if (await decide(env, chat, n, action, text.slice(0, 300)) && kind !== "retouche")
       await tg(env, "sendMessage", { chat_id: chat, text: kind === "titre" ? `#${n} : je refais la vidéo (2-3 min).` : `#${n} : noté.` });
     return;
   }

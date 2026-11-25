@@ -319,7 +319,11 @@ def main():
     ap.add_argument("--no-subs", action="store_true", help="sans sous-titres")
     ap.add_argument("--subs-json", default=None, help="mots corrigés (<nom>_soustitres.json) : pas de nouvelle transcription")
     ap.add_argument("--out-dir", default=None)
+    ap.add_argument("--refaire", default=None, help="_montage.json d'un montage précédent : mêmes cadres (retouche)")
+    ap.add_argument("--dezoom-cam", action="store_true", help="webcam entière (visage moins gros)")
+    ap.add_argument("--dezoom-jeu", action="store_true", help="gameplay sur toute sa largeur (webcam incrustée floutée)")
     a = ap.parse_args()
+    ref = json.loads(pathlib.Path(a.refaire).read_text(encoding="utf-8")) if a.refaire else {}
 
     W, H, dur, fps = probe(a.video)
     start = a.start or 0.0; end = a.end if a.end is not None else dur; length = end - start
@@ -362,7 +366,7 @@ def main():
                 ok_b = 200 <= B[2] <= 1000 and 120 <= B[3] <= 700 and 1.0 <= B[2] / B[3] <= 2.4
                 if ok_b and inter(B, cam) >= 0.8 * cam[2] * cam[3] and B[2] * B[3] > 1.3 * cam[2] * cam[3]:
                     cam = B; rep["cam_source"] = "détectée (zone fixe)"
-    layout = "sans_webcam"
+    layout = "sans_webcam"; cam_crop = cam_box = None
     if cam:
         cam_crop = fit_aspect(cam, face, 1080 / CAM_ZONE_H)
         src_w = cam_crop[2] * s
@@ -379,12 +383,30 @@ def main():
             rep["cam_note"] = f"webcam trop petite ({src_w:.0f} px) : mise en page sans webcam"
             cam = None
     rep["layout"] = layout
+    if ref:   # retouche : on repart exactement des cadres du premier montage
+        cam = ref.get("cam")
+        if cam:
+            cam_crop, cam_box, layout = ref["cam_crop"], ref["cam_box"], "webcam"
+        else:
+            layout = "sans_webcam"
+        a.dezoom_cam = a.dezoom_cam or ref.get("dezoom_cam", False)
+        a.dezoom_jeu = a.dezoom_jeu or ref.get("dezoom_jeu", False)
+    base_cam = {"cam_crop": cam_crop, "cam_box": cam_box} if cam else {}
+    if cam and a.dezoom_cam:   # webcam entière, centrée dans la zone
+        m = 0.02
+        cam_crop = [int(cam[0] + cam[2] * m), int(cam[1] + cam[3] * m), int(cam[2] * (1 - 2 * m)), int(cam[3] * (1 - 2 * m))]
+        k = min(1080 / cam_crop[2], CAM_ZONE_H / cam_crop[3])
+        bw, bh = int(cam_crop[2] * k) // 2 * 2, int(cam_crop[3] * k) // 2 * 2
+        cam_box = [(1080 - bw) // 2, CAM_ZONE_Y + (CAM_ZONE_H - bh) // 2, bw, bh]
+    rep["layout"] = layout
     rep["cam"] = cam
 
     # --- gameplay ---
     overlays = static_overlays(frames, [cam] if cam else [])
     rep["overlays_fixes"] = overlays
-    if a.game_x is not None:
+    if ref:
+        win = ref["win"]; zoom = win[2] / AW
+    elif a.game_x is not None:
         gw = int(AH * 4 / 3); win = [a.game_x, 0, gw, AH]; zoom = gw / AW
     else:
         win, zoom = game_window(cam, overlays, top, bot)
@@ -393,6 +415,13 @@ def main():
         stop("pas de place pour un cadre 4:3 hors de la webcam")
     if zoom < MIN_ZOOM:
         stop(f"gameplay trop zoomé ({zoom:.0%} de la largeur visible)")
+    base_win = list(win)
+    game_h = GAME_H
+    if a.dezoom_jeu:
+        y0, h0 = (top, AH - top - bot) if (top >= 30 and bot >= 30) else (0, AH)
+        win, zoom = [0, y0, AW, h0], 1.0
+        game_h = int(round(1080 * h0 / AW)) // 2 * 2
+        rep["zoom_largeur_visible"] = 1.0
     rep["cadre_jeu"] = win
     rep["overlays_dans_cadre"] = [o for o in overlays if inter(o, win) > 0]
     rep["qr"] = qr_found(frames, ([cam_crop] if cam else []) + [win])
@@ -419,7 +448,7 @@ def main():
         rep.update(ok=True, planche=str(plan), check_only=True); print(json.dumps(rep, ensure_ascii=False)); return
 
     # --- montage ---
-    game_y = GAME_Y if cam else NOCAM_GAME_Y
+    game_y = (GAME_Y if cam else NOCAM_GAME_Y) + (GAME_H - game_h) // 2
     logo = (cam_box[0] + 20, cam_box[1] + 20) if cam else (24, game_y + 20)
     png = out_dir / f"{a.post}_fond.png"
     rep["titre_px"] = render_overlay(a.title, png, logo)
@@ -441,22 +470,31 @@ def main():
             rep["sous_titres"] = "aucune parole détectée"
     g = [int(round(v * s)) // 2 * 2 for v in win]
     ofps = 60 if fps > 45 else 30
+    # jeu en pleine largeur : la webcam incrustée dans l'image est floutée (elle est déjà au-dessus)
+    pre = ""
+    if a.dezoom_jeu and cam:
+        bx, by = max(0, cam[0] - 8), max(0, cam[1] - 8)
+        bw, bh = min(AW - bx, cam[2] + 16), min(AH - by, cam[3] + 16)
+        bx, by, bw, bh = [int(round(v * s)) // 2 * 2 for v in (bx, by, bw, bh)]
+        pre = f"split=2[g1][g2];[g2]crop={bw}:{bh}:{bx}:{by},boxblur=24:3[gb];[g1][gb]overlay={bx}:{by},"
     if cam:
         c = [int(round(v * s)) // 2 * 2 for v in cam_crop]
         fc = (f"[1:v]split=2[a][b];"
               f"[a]crop={c[2]}:{c[3]}:{c[0]}:{c[1]},scale={cam_box[2]}:{cam_box[3]}:flags=lanczos,unsharp=5:5:0.5[c];"
-              f"[b]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
+              f"[b]{pre}crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{game_h}:flags=lanczos,unsharp=5:5:0.3[g];"
               f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][c]overlay={cam_box[0]}:{cam_box[1]}:shortest=1[t1];"
               f"[t1][g]overlay=0:{game_y}:shortest=1[t2];[t2][0:v]overlay=0:0:shortest=1{subs},fps={ofps},format=yuv420p[o]")
     else:
-        fc = (f"[1:v]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{GAME_H}:flags=lanczos,unsharp=5:5:0.3[g];"
+        fc = (f"[1:v]crop={g[2]}:{g[3]}:{g[0]}:{g[1]},scale=1080:{game_h}:flags=lanczos,unsharp=5:5:0.3[g];"
               f"color=c=0x111114:s=1080x1920:r={ofps}[bg];[bg][g]overlay=0:{game_y}:shortest=1[t2];"
               f"[t2][0:v]overlay=0:0:shortest=1{subs},fps={ofps},format=yuv420p[o]")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(ofps), "-i", str(png),
                     "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", a.video, "-filter_complex", fc,
                     "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-profile:v", "high",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", str(mp4)], check=True)
-    (out_dir / f"{a.post}_montage.json").write_text(json.dumps({"format": "9:16", "bande": [140, TITLE_H]}), encoding="utf-8")
+    (out_dir / f"{a.post}_montage.json").write_text(json.dumps({
+        "format": "9:16", "bande": [140, TITLE_H], "start": round(start, 2), "end": round(end, 2), "channel": a.channel,
+        "cam": cam, **base_cam, "win": base_win, "dezoom_cam": a.dezoom_cam, "dezoom_jeu": a.dezoom_jeu}), encoding="utf-8")
     cover = out_dir / f"{a.post}_cover.jpg"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{min(2.0, length / 3):.2f}", "-i", str(mp4),
                     "-frames:v", "1", "-q:v", "3", str(cover)], check=True)

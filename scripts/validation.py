@@ -162,7 +162,9 @@ def clavier(x):
     ligne = [{"text": "✅ Poster", "callback_data": f"ok:{n}"}, {"text": "❌ Non", "callback_data": f"non:{n}"}]
     rows = [ligne]
     meta = L.load(f"{L.ROOT}/posts/{x['id']}/{x['id']}_montage.json") or {}
-    if meta.get("bande"): rows.append([{"text": "✏️ Autre titre", "callback_data": f"alt:{n}"}])
+    extra = [{"text": "✏️ Autre titre", "callback_data": f"alt:{n}"}] if meta.get("bande") else []
+    extra.append({"text": "🔧 Retoucher", "callback_data": f"retoucher:{n}"})
+    rows.append(extra)
     return rows
 
 def sparse_add(pid):
@@ -302,8 +304,75 @@ def decider(n, action, valeur=""):
             L.save(L.P, p); return True
         if L.transact(apply, f"validation: nouveau titre {pid}", f"state posts/{pid}"):
             clear_buttons(x); time.sleep(0 if os.environ.get("LOBBY_NOCHECK") else 20); envoyer()
+    elif action == "retouche":
+        if st != "a_valider": return say(f"#{n} : retouche impossible ({st}).")
+        appliquer_retouche(n, x, valeur)
+    elif action == "autre":
+        if not update(pid, {"status": "retouche", "demande": valeur.strip()[:300]}, f"validation: retouche demandée {pid}", ("a_valider",)):
+            return say(f"#{n} : retouche impossible ({st}).")
+        clear_buttons(x)
+        say(f"🛠️ #{n} : demande notée. Elle sera faite à la prochaine session de production, avant expiration ({hm(x['expires_at_utc'])}, Taipei).")
     else: raise SystemExit(f"action inconnue : {action}")
 
+
+# ---------- retoucher ----------
+CHOIX = {"cam": "webcam moins zoomée", "jeu": "gameplay moins zoomé", "deux": "webcam et gameplay moins zoomés",
+         "16x9": "format 16:9", "debut": "début raccourci de 2 s", "fin": "fin raccourcie de 2 s"}
+
+def retoucher(x, choix):
+    """Remonte la vidéo depuis sa source avec le réglage demandé (mêmes titre et sous-titres)."""
+    pid = x["id"]; sparse_add(pid); d = f"{L.ROOT}/posts/{pid}"; clip = x.get("clip") or {}
+    meta = L.load(f"{d}/{pid}_montage.json") or {}
+    if not clip.get("url") or "start" not in meta: raise RuntimeError("source du montage non conservée")
+    if choix in ("cam", "jeu", "deux"):
+        if meta["format"] != "9:16": raise RuntimeError("le dézoom ne concerne que le format vertical")
+        if choix == "cam" and not meta.get("cam"): raise RuntimeError("cette vidéo n'a pas de webcam")
+    tmp = tempfile.mkdtemp(); src = f"{tmp}/source.mp4"; out = f"{tmp}/out"; os.makedirs(out)
+    L.fetch_media(clip["url"], src, clip.get("offset") or 0, clip.get("dur"))
+    start, end = meta["start"], meta["end"]
+    subs = L.load(f"{d}/{pid}_soustitres.json") if os.path.exists(f"{d}/{pid}_soustitres.json") else None
+    if choix in ("debut", "fin"):
+        if end - start - 2 < 6: raise RuntimeError("vidéo déjà très courte")
+        if choix == "debut":
+            start += 2
+            if subs is not None: subs = [{**w, "debut": w["debut"] - 2, "fin": w["fin"] - 2} for w in subs if w["debut"] >= 2]
+        else:
+            end -= 2
+            if subs is not None: subs = [w for w in subs if w["debut"] < end - start]
+    vertical = meta["format"] == "9:16" and choix != "16x9"
+    cmd = [sys.executable, f"{L.ROOT}/scripts/{'make_reel_916' if vertical else 'make_reel'}.py", "--video", src, "--post", pid,
+           "--title", x["titre"], "--start", f"{start:.2f}", "--end", f"{end:.2f}", "--out-dir", out]
+    if subs:
+        L.save(f"{out}/{pid}_soustitres.json", subs); cmd += ["--subs-json", f"{out}/{pid}_soustitres.json"]
+    else: cmd += ["--no-subs"]
+    if vertical:
+        ref = f"{tmp}/ref.json"; L.save(ref, meta); cmd += ["--refaire", ref]
+        if meta.get("channel"): cmd += ["--channel", meta["channel"]]
+        if choix in ("cam", "deux"): cmd += ["--dezoom-cam"]
+        if choix in ("jeu", "deux"): cmd += ["--dezoom-jeu"]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode or not os.path.exists(f"{out}/{pid}.mp4"):
+        raise RuntimeError(f"montage refusé : {(r.stdout or r.stderr).strip()[-250:]}")
+    return out
+
+def appliquer_retouche(n, x, choix):
+    pid = x["id"]
+    if choix not in CHOIX: return say(f"#{n} : retouche inconnue.")
+    try: out = retoucher(x, choix)
+    except Exception as e: return say(f"⚠️ #{n} : retouche impossible ({e}).")
+    def apply():
+        import shutil
+        p = L.pload(); y = next(i for i in p["posts"] if i["id"] == pid)
+        if y["status"] != "a_valider": return None
+        for f in os.listdir(out):
+            if f.startswith(pid) and not f.endswith(".html"): shutil.copy(f"{out}/{f}", f"{L.ROOT}/posts/{pid}/{f}")
+        y["format"] = L.load(f"{L.ROOT}/posts/{pid}/{pid}_montage.json")["format"]
+        if choix in ("jeu", "cam", "deux") and y.get("garde_fou") == "OK":
+            y["garde_fou"] = "SPONSOR"   # zones d'image non contrôlées par le garde-fou : Instagram seul
+        y.setdefault("retouches", []).append(choix); y.pop("telegram_msg", None); y.pop("envoi_utc", None)
+        L.save(L.P, p); return True
+    if L.transact(apply, f"validation: retouche {choix} {pid}", f"state posts/{pid}"):
+        clear_buttons(x); time.sleep(0 if os.environ.get("LOBBY_NOCHECK") else 20); envoyer()
 
 # ---------- publier ----------
 def publier(essai=False, confirmer=False):
@@ -325,9 +394,9 @@ def publier(essai=False, confirmer=False):
             update(x["id"], {"status": "echec", "note": "; ".join(ko)[:200] or "absent chez Zernio"}, f"journal: échec {x['id']}")
             say(f"⚠️ #{num(x)} : publication en échec. {' ; '.join(ko)}")
     # 2. expirations
-    for x in [x for x in L.pload()["posts"] if x["status"] in ("a_valider", "valide")]:
+    for x in [x for x in L.pload()["posts"] if x["status"] in ("a_valider", "valide", "retouche")]:
         if L.parse(x["expires_at_utc"]) < t and not essai:
-            update(x["id"], {"status": "expire"}, f"validation: {x['id']} expiré", ("a_valider", "valide"))
+            update(x["id"], {"status": "expire"}, f"validation: {x['id']} expiré", ("a_valider", "valide", "retouche"))
             clear_buttons(x); say(f"⌛ #{num(x)} expiré ({'validé mais pas de créneau libre' if x['status'] == 'valide' else 'pas de réponse'}).")
     # 3. un post par créneau
     if confirmer: return print("passage de contrôle : rien à publier")
