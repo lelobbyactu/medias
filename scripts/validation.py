@@ -293,7 +293,8 @@ def decider(n, action, valeur=""):
         titre = mise_en_forme(valeur)
         if not titre: return say(f"#{n} : titre vide.")
         try: new, cover = retitrer(x, titre)
-        except Exception as e: return say(f"⚠️ #{n} : impossible de changer le titre ({e}).")
+        except Exception as e:
+            restore_buttons(x); return say(f"⚠️ #{n} : impossible de changer le titre ({e}).")
         alts = [t for t in [x["titre"]] + x.get("titres_alt", []) if t != titre][:2]
         def apply():
             p = L.pload(); y = next(i for i in p["posts"] if i["id"] == pid)
@@ -318,6 +319,13 @@ def decider(n, action, valeur=""):
 # ---------- retoucher ----------
 CHOIX = {"cam": "webcam moins zoomée", "jeu": "gameplay moins zoomé", "deux": "webcam et gameplay moins zoomés",
          "16x9": "format 16:9", "debut": "début raccourci de 2 s", "fin": "fin raccourcie de 2 s"}
+
+def restore_buttons(x):
+    """Échec d'un changement : on remet les boutons sous la vidéo."""
+    cid = chat_id(); mid = x.get("telegram_msg")
+    if cid and mid:
+        try: tg("editMessageReplyMarkup", {"chat_id": cid, "message_id": mid, "reply_markup": {"inline_keyboard": clavier(x)}})
+        except Exception: pass
 
 def retoucher(x, choix):
     """Remonte la vidéo depuis sa source avec le réglage demandé (mêmes titre et sous-titres)."""
@@ -359,7 +367,8 @@ def appliquer_retouche(n, x, choix):
     pid = x["id"]
     if choix not in CHOIX: return say(f"#{n} : retouche inconnue.")
     try: out = retoucher(x, choix)
-    except Exception as e: return say(f"⚠️ #{n} : retouche impossible ({e}).")
+    except Exception as e:
+        restore_buttons(x); return say(f"⚠️ #{n} : retouche impossible ({e}).")
     def apply():
         import shutil
         p = L.pload(); y = next(i for i in p["posts"] if i["id"] == pid)
