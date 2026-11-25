@@ -1,5 +1,5 @@
 {
- "_doc": "Réglages du Lobby : seule source pour les comptes veillés, seuils, horaires, plafonds. Lue par scripts/lobby.py. Pour ajouter un compte : l'ajouter dans le bon groupe de query_groups (512 caractères max par requête, ~14 comptes).",
+ "_doc": "Réglages du Lobby : seule source pour les comptes veillés, seuils, horaires, plafonds. Lue par scripts/lobby.py. Pour ajouter un compte : l'ajouter dans un groupe de query_groups (512 caractères max par requête, ~14 comptes).",
  "cap_per_day": 7,
  "min_gap_min": 45,
  "slots": [
@@ -12,7 +12,6 @@
   "actu": 6,
   "clip": 24
  },
- "hot_mentions": 5,
  "queue_min_score": 5,
  "judge_threshold": 7,
  "apify_max_items": 300,
@@ -36,8 +35,6 @@
   [
    "FortniteFraActu",
    "DexertoIntelFR",
-   "JVCom",
-   "Gamekult",
    "xSqueeZie",
    "Michoucroute_",
    "Inoxtag",
@@ -47,61 +44,25 @@
    "GotagaTV",
    "Domingo",
    "DomingoTV",
-   "SamuelEtienne"
+   "SamuelEtienne",
+   "WankilStudio",
+   "byilhan_"
   ],
   [
-   "WankilStudio",
-   "byilhan_",
    "TiboInShape",
    "JLTomyTV",
    "ZEVENTFR",
-   "RockstarGames",
-   "PlayStationFR",
-   "NintendoFrance",
-   "FortniteFR",
-   "XboxFR",
-   "UbisoftFR",
-   "VALORANTfr",
    "KarmineCorp",
-   "Sheep_Esports"
-  ],
-  [
-   "Fortnite",
-   "CallofDuty",
-   "PlayStation",
-   "XBOX",
-   "NintendoAmerica",
-   "EASPORTSFC",
-   "Minecraft",
-   "Steam",
-   "EpicGames",
-   "thegameawards",
-   "geoffkeighley",
-   "SteamDB",
-   "DramaAlert"
-  ],
-  [
-   "_Tom_Henderson_",
-   "InsiderGamingIG",
-   "billbil_kun",
-   "NateTheHate2",
-   "Wario64",
-   "Pirat_Nation",
-   "HYPEX",
-   "ShiinaBR",
-   "zachbussey",
-   "Dexerto",
-   "VGC_News",
-   "gematsu"
-  ],
-  [
    "LeBouseuh",
    "RebeuDeter",
    "Doigby",
    "fugu_fps",
    "Maghla",
    "MonsieurDream",
-   "TraytonTV"
+   "TraytonTV",
+   "DramaAlert",
+   "Pirat_Nation",
+   "Dexerto"
   ]
  ],
  "twitch_channels": {
@@ -163,7 +124,7 @@
   }
  },
  "sources": {
-  "_doc": "Sources hors X, collectées par scripts/sources.py (GitHub Actions .github/workflows/sources.yml, toutes les 30 min, sans IA). Résultat : state/sources.json, lu par la veille via `lobby.py sources`. Seuils = filtre mécanique ; la veille re-note chaque sujet.",
+  "_doc": "Sources hors X (ligne éditoriale du 25 nov. 2026 : uniquement Twitch et Reddit), collectées par scripts/sources.py (GitHub Actions .github/workflows/sources.yml, toutes les 30 min, sans IA). Résultat : state/sources.json, lu par la veille via `lobby.py sources`. Seuils = filtre mécanique ; la veille re-note chaque clip.",
   "twitch": {
    "streamers": [
     "squeezie",
@@ -254,52 +215,6 @@
     2000000
    ]
   },
-  "youtube": {
-   "_doc": "Flux RSS publics (aucune clé). Nom affiché -> id de chaîne.",
-   "channels": {
-    "Squeezie": "UCWeg2Pkate69NFdBeuRFTAw",
-    "Michou": "UCo3i0nUzZjjLuM7VjAVz4zA",
-    "Inoxtag": "UCL9aTJb0ur4sovxcppAopEw",
-    "Amixem": "UCgvqvBoSHB1ctlyyhoHrGwQ",
-    "Joyca": "UCow2IGnug1l3Xazkrc5jM_Q",
-    "Cyprien": "UCyWqModMQlbIo8274Wh_ZsQ",
-    "Tibo InShape": "UCpWaR3gNAQGsX48cIlQC0qw",
-    "Lena Situations": "UCDkl5M0WVaddTWE4rr2cSeA",
-    "Anyme": "UCRhTl0maVFVMys3NotMRseA",
-    "AmineMaTue": "UCNigJTVnMU8F3n08pYz0UYw",
-    "Byilhan": "UCqnlB4GE3EyQcgcth3FTKhQ",
-    "ZeratoR": "UCZ_oIYI9ZNpOfWbpZxWNuRQ",
-    "Kameto": "UCuTWiw7k-2Y5hANPDYrbhag",
-    "Djilsi": "UCEUZRSYr1a2hnBfnpWslFeQ",
-    "JL Tomy": "UCdrGSTF5pSCZKXzhov3Wx9A",
-    "Mastu": "UCAhaFPP6v3WCfK5Tjao0B7A",
-    "McFly et Carlito": "UCDPK_MTu3uTUFJXRVcTJcEw",
-    "Gotaga": "UCCFqUJYKT97UerMmb6DM0bw",
-    "Domingo": "UCRCMNm2I4tM4BTmNSboc4QA",
-    "Wankil Studio": "UCYGjxo5ifuhnmvhPvCc3DJQ",
-    "Natoo": "UCtihF1ZtlYVzoaj_bKLQZ-Q",
-    "Seb": "UCK3inMNRNAVUleEbpDU1k2g",
-    "Locklear": "UCvuACILbubOXV_OMBWqLM2g",
-    "Vilebrequin": "UCC9mlCpyisiIpp9YA9xV-QA",
-    "Kaatsup": "UCoetxEkAQbHlXBv2toas_1A",
-    "Flamby": "UCdyzLcSvVCKsHFS_TTSa0Gg",
-    "GMK": "UCWPOLkftHreB1p8ospsiApw",
-    "Le Grand JD": "UCzjd9v6DMprAAvOBB4sxBPA",
-    "Maxime Biaggi": "UCwsttsWPse6KzUzUbQDGRPA",
-    "Theodort": "UC3TmGiSjX2Ix3qTjUnIIv4g",
-    "LeBouseuh": "UCUl7mwOyySfZzUkq4H29nug",
-    "Pierre Croce": "UCC_r3spMB5i5QKgtdNVO0OQ",
-    "Nico Là": "UCrSVu3ryGNObwCFoOGU8lHg",
-    "Basti Ui": "UCnnIP34CpT7nIBZS5KuuhbA"
-   },
-   "new_video_max_age_h": 6,
-   "view_tiers": [
-    1000000,
-    2000000,
-    5000000,
-    10000000
-   ]
-  },
   "reddit": {
    "_doc": "Via Apify (automation-lab/reddit-scraper, ~0,00115 $/post), Reddit ayant fermé son API et ses RSS en 2026. Secret GitHub APIFY_TOKEN requis.",
    "every_hours": 6,
@@ -308,75 +223,10 @@
      "name": "LivestreamFail",
      "max": 8,
      "min_score": 1500
-    },
-    {
-     "name": "GamingLeaksAndRumours",
-     "max": 6,
-     "min_score": 300
     }
    ],
    "max_age_h": 12,
    "max_charge_usd": 0.05
-  },
-  "steam": {
-   "top_n": 25,
-   "peak_tiers": [
-    300000,
-    500000,
-    1000000
-   ],
-   "ignore_appids": [
-    570,
-    730
-   ]
-  },
-  "trends_keywords": [
-   "twitch",
-   "youtube",
-   "youtubeur",
-   "streamer",
-   "stream",
-   "gta",
-   "fortnite",
-   "minecraft",
-   "nintendo",
-   "switch",
-   "playstation",
-   "ps5",
-   "xbox",
-   "call of duty",
-   "valorant",
-   "league of legends",
-   "steam",
-   "zevent",
-   "jeu vidéo",
-   "jeux vidéo",
-   "squeezie",
-   "michou",
-   "inoxtag",
-   "kameto",
-   "gotaga",
-   "domingo",
-   "zerator",
-   "amine",
-   "tibo",
-   "lena situations",
-   "mcfly",
-   "carlito",
-   "joyca",
-   "amixem",
-   "cyprien",
-   "natoo",
-   "anyme",
-   "locklear",
-   "byilhan",
-   "karmine",
-   "gp explorer",
-   "popcorn",
-   "speed",
-   "mrbeast",
-   "kai cenat",
-   "ishowspeed"
-  ]
+  }
  }
 }

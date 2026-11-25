@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-"""Le Lobby — monte un reel « clip + gros titre » (DA v0.6) en UNE commande.
+"""Le Lobby — format 16:9 DE SECOURS : le clip tel qu'on le voit en live, titre en haut, sous-titres en bas.
+
+Ligne éditoriale (doc projet claude/ligne-editoriale.md, 25 nov. 2026) : le format principal est le 9:16 de
+make_reel_916.py ; ce script ne sert que si la qualité de la webcam ou du gameplay recadré n'est pas acceptable
+(refus de make_reel_916.py ou garde-fou NON après une correction). Instagram seul.
 
 Usage :
   python3 scripts/make_reel.py --video clip.mp4 --post 0005-19_11_2026-Clips \
-      --title "Il se fait tuer|par un *oiseau*|dans GTA 6" \
-      --credit-label CLIP --credit "x.com/pilardarkflatt" [--start 3 --end 38]
+      --title "Il se fait tuer|par un *oiseau*|dans GTA 6" [--start 3 --end 38] [--no-subs | --subs-json F]
 
 - --title : lignes séparées par « | » ; le mot/groupe entre *étoiles* reçoit le surligneur jaune (un seul par titre).
 - Sortie : posts/<post>/<post>.mp4 + <post>_cover.jpg + <post>_fond.png (à relire visuellement avant publication).
 - Mise en page automatique selon le format du clip : « framed » (clip 16:9, carré, 4:3 : cadre sous le titre)
   ou « cover » (clip vertical 9:16 : plein écran, titre sur dégradé).
-- Pas de nombre de vues à l'écran (règle Alix). Le crédit de la source est obligatoire.
+- Pas de nombre de vues ni de crédit à l'écran (le crédit est dans la légende).
+- Sous-titres automatiques (scripts/subtitles.py, même DA que le 9:16) sous la vidéo, sauf --no-subs.
 Prérequis : ffmpeg, ffprobe, python3 + playwright, google-chrome (ou chromium Playwright).
 """
 import argparse, html, json, pathlib, re, subprocess, sys
@@ -65,6 +69,8 @@ def build_html(layout, title, credit_label, credit, vy, hbox):
                  f"background:linear-gradient(180deg,rgba(17,17,20,.92) 0%,rgba(17,17,20,.7) 55%,rgba(17,17,20,0) 100%)}}")
         video_div = "<div class='grad'></div>"
         src_style = f"background:rgba(17,17,20,.72);padding:8px 18px 8px 16px;border-radius:4px;"
+    src_div = (f"<div class='src'><b>{html.escape(credit_label.upper())}</b><span>{html.escape(credit)}</span></div>"
+               if credit else "")
     return f"""<!DOCTYPE html><html><head><meta charset='utf-8'><style>{css}
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:1080px;height:1920px;{bg}overflow:hidden}}
@@ -80,7 +86,7 @@ body{{position:relative;color:#fff;font-family:Bricolage}}
 {video_div}
 <div class='logo'>LE<br>LOBBY</div>
 <div class='title' id='t'>{th}</div>
-<div class='src'><b>{html.escape(credit_label.upper())}</b><span>{html.escape(credit)}</span></div>
+{src_div}
 </body></html>"""
 
 
@@ -116,7 +122,9 @@ def main():
     ap.add_argument("--post", required=True)
     ap.add_argument("--title", required=True)
     ap.add_argument("--credit-label", default="CLIP")
-    ap.add_argument("--credit", required=True)
+    ap.add_argument("--credit", default="", help="obsolète : le crédit va dans la légende, pas à l'écran")
+    ap.add_argument("--no-subs", action="store_true", help="sans sous-titres")
+    ap.add_argument("--subs-json", default=None, help="mots corrigés (<nom>_soustitres.json) : pas de nouvelle transcription")
     ap.add_argument("--start", type=float, default=None)
     ap.add_argument("--end", type=float, default=None)
     ap.add_argument("--layout", choices=["auto", "framed", "cover"], default="auto")
@@ -151,12 +159,29 @@ def main():
 
     render_png(build_html(layout, a.title, a.credit_label, a.credit, vy, hbox), png, transparent=(layout == "cover"))
 
+    rep = {}
+    subs = ""
+    if not a.no_subs:   # sous-titres en bas : sous la vidéo (framed) ou en bas de l'écran (cover)
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import subtitles
+        words = subtitles.load_words(a.subs_json) if a.subs_json else subtitles.transcribe(a.video, start, length)
+        if words:
+            if not a.subs_json:
+                subtitles.save_words(words, out_dir / f"{a.post}_soustitres.json")
+            rep["mots_incertains"] = [x[2] for x in words if x[3] < 0.5 and len(x[2]) > 3]
+            ass = out_dir / f"{a.post}_soustitres.ass"
+            sub_y = min(vy + hbox + 90, 1760) if layout == "framed" else 1560
+            blocks = subtitles.write_ass(words, ass, sub_y, length)
+            subs = f",subtitles={ass}:fontsdir={FONTS}"
+            rep["sous_titres"] = " | ".join(" ".join(subtitles.censor(x[2]) for x in b) for b in blocks)
+        else:
+            rep["sous_titres"] = "aucune parole détectée"
     if layout == "framed":
         fc = (f"[1:v]scale=1080:{hbox}:force_original_aspect_ratio=decrease,pad=1080:{hbox}:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30[v];"
-              f"[0:v][v]overlay=0:{vy}:shortest=1,format=yuv420p[o]")
+              f"[0:v][v]overlay=0:{vy}:shortest=1{subs},format=yuv420p[o]")
     else:
         fc = ("[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30[v];"
-              "[v][0:v]overlay=0:0:shortest=1,format=yuv420p[o]")
+              f"[v][0:v]overlay=0:0:shortest=1{subs},format=yuv420p[o]")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", "30", "-i", str(png),
            "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", a.video, "-filter_complex", fc,
            "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-profile:v", "high",
@@ -169,7 +194,7 @@ def main():
                                     capture_output=True, text=True).stdout.strip())
     print(json.dumps({"mp4": str(mp4), "cover": str(cover), "fond": str(png), "layout": layout,
                       "source": f"{w}x{h}", "duration_s": round(od_dur, 1), "has_audio": has_audio,
-                      "size_mb": round(mp4.stat().st_size / 1e6, 1)}, ensure_ascii=False))
+                      "size_mb": round(mp4.stat().st_size / 1e6, 1), **rep}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

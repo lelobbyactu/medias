@@ -3,14 +3,14 @@
 Les tâches Claude ne font plus ces calculs à la main : elles appellent ces commandes.
 
   lobby.py queries              -> requêtes Apify prêtes (fenêtre depuis la dernière veille)
-  lobby.py sources [-n 20]      -> sujets hors X (Twitch, YouTube, Reddit, Steam, Fortnite, Trends) apparus depuis la
+  lobby.py sources [-n 20]      -> clips hors X (Twitch, Reddit) apparus depuis la
                                    dernière veille (state/sources.json, collecté par GitHub Actions) ; à lancer AVANT `add`
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
   lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
                                    (+ remplace par la version Twitch 1080p60 si trouvée, champ "twitch" ; --no-twitch pour l'éviter)
-  lobby.py reserve <id> <reel|carrousel> <Categorie>  -> réserve le numéro de post, journal 'en_cours'
-  lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot leak|embrouille|5_comptes --note T]
+  lobby.py reserve <id> reel Clips  -> réserve le numéro de post, journal 'en_cours'
+  lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot drama --note T]
   lobby.py fail <post> <raison>  | lobby.py drop <id> <raison>
   lobby.py push "<message>" <chemins...>  -> commit + push de fichiers (posts/…)
   lobby.py status               -> compte rapide
@@ -186,7 +186,6 @@ def cmd_add(a):
                 q["candidates"].append(e); res["ajoutes"].append(e["id"])
             hr = it.get("hot_reason")
             age_h = (t - parse(e["source_time_utc"])).total_seconds() / 3600
-            if not hr and len(e["mentions"]) >= c.get("hot_mentions", 5) and age_h < 6: hr = "5_comptes"
             if hr and not e.get("hot") and e["status"] == "en_attente":
                 e["hot"] = True; e["hot_reason"] = hr; res["hot"].append({"id": e["id"], "reason": hr, "topic": e["topic"]})
         m = load(M, {}); m["last_veille_utc"] = iso(t); save(M, m)
@@ -197,8 +196,6 @@ def cmd_add(a):
 
 def rank(q, p):
     c = cfg(); t = now(); posts = p["posts"]
-    last3 = [x for x in posts if x.get("status") in ("publie", "en_cours")][-3:]
-    clips_recent = sum(1 for x in last3 if x.get("type") == "reel") >= 2
     cands = []
     for e in q["candidates"]:
         if e["status"] != "en_attente" or covered(e, posts) or e.get("photo_needed"): continue
@@ -206,9 +203,6 @@ def rank(q, p):
         bonus = 1 if age < 2 else (0 if age < 4 else -1)
         cands.append((e["score"] + bonus, e, age))
     cands.sort(key=lambda x: -x[0])
-    if clips_recent:
-        a = [x for x in cands if x[1]["type"] == "actu" and x[1]["score"] >= 7]
-        if a: cands = a[:1] + [x for x in cands if x is not a[0]]
     return cands
 
 def cmd_slot(a):
@@ -341,7 +335,7 @@ if __name__ == "__main__":
     s = sp.add_parser("slot"); s.add_argument("--hot", action="store_true")
     s = sp.add_parser("add"); s.add_argument("file", nargs="?")
     s = sp.add_parser("take"); s.add_argument("id"); s.add_argument("--no-twitch", action="store_true")
-    s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel", "carrousel"]); s.add_argument("categorie")
+    s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel"]); s.add_argument("categorie")
     s = sp.add_parser("done"); s.add_argument("post")
     for k in ("ig", "tiktok", "zernio", "judge", "slot", "hot", "note"): s.add_argument(f"--{k}")
     s = sp.add_parser("fail"); s.add_argument("post"); s.add_argument("raison")

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Le Lobby — collecte des sources hors X (sans IA), lancée par GitHub Actions toutes les 30 min.
 
-  python3 scripts/sources.py run [--only twitch,youtube,reddit,steam,fortnite,trends] [--dry]
+  python3 scripts/sources.py run [--only twitch,reddit] [--dry]   (youtube, steam, fortnite, trends : désactivées le 25 nov. 2026)
   python3 scripts/sources.py show [--since ISO] [-n 20]     (aperçu, même format que `lobby.py sources`)
 
 Sources (réglages dans config.json → "sources") :
@@ -261,7 +261,7 @@ class Collector:
 def cmd_run(a):
     cfg = load(CFG, {}); sc = dict(cfg.get("sources", {})); sc["_twitch_channels"] = {k: v for k, v in cfg.get("twitch_channels", {}).items() if not k.startswith("_")}
     cache = load(CACHE, {}); col = Collector(sc, cache); col.force = a.force
-    only = a.only.split(",") if a.only else ["twitch", "youtube", "reddit", "steam", "fortnite", "trends"]
+    only = a.only.split(",") if a.only else ["twitch", "reddit"]  # ligne éditoriale du 25 nov. 2026 : Twitch + Reddit seulement
     for name in only:
         try: col.report[name] = getattr(col, name)()
         except Exception as e: col.report[name] = f"erreur : {type(e).__name__} {str(e)[:150]}"
