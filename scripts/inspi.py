@@ -61,7 +61,7 @@ def cmd_list(a):
         labels = [l["name"].lower() for l in it.get("labels", [])]
         if not (it["title"].lower().startswith("inspi") or "inspi" in labels) or str(it["number"]) in done: continue
         urls = URL_RE.findall(f"{it.get('body') or ''} {it['title']}")
-        note = URL_RE.sub("", it.get("body") or "").strip()[:200]
+        note = re.sub(r"(?is)^\s*note\s*:\s*", "", URL_RE.sub("", it.get("body") or "").strip())[:400].strip()  # corps = « NOTE: <note> <lien> » (raccourci du 25 nov.)
         if urls and norm(urls[0]) in seen:  # même post déjà envoyé (déjà analysé ou en double dans le lot)
             doublons.append(it["number"]); close_issue(it["number"], f"Doublon de #{seen[norm(urls[0])]} : ignoré."); continue
         if urls: seen[norm(urls[0])] = it["number"]
