@@ -2281,6 +2281,36 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261125-1049-samueletienne-atterrissage-gta6",
+   "added_at_utc": "2026-11-25T10:49:12Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Samuel Etienne, « atterrissage en finesse » dans GTA VI",
+   "topic_key": "samueletienne-atterrissage-gta6",
+   "origin": "samueletienne",
+   "source_tweet": "https://www.twitch.tv/samueletienne/clip/TallGoldenMarrowSeemsGood-Q5_ExDs1vJZXTmQS",
+   "primary_source": "https://www.twitch.tv/samueletienne/clip/TallGoldenMarrowSeemsGood-Q5_ExDs1vJZXTmQS",
+   "source_time_utc": "2026-11-24T21:04:25Z",
+   "expires_at_utc": "2026-11-26T21:04:25Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/samueletienne/clip/TallGoldenMarrowSeemsGood-Q5_ExDs1vJZXTmQS",
+   "media_repo_path": "",
+   "angle": "Clip GTA VI d'un streamer FR suivi ; titre ironique et peu de vues, à vérifier en vidéo avant montage.",
+   "titles": [
+    "« Atterrissage en finesse » : Samuel Etienne dans GTA VI",
+    "Samuel Etienne et son atterrissage très élégant dans GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
