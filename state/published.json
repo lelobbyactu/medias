@@ -354,7 +354,9 @@
     "offset": 0,
     "dur": null
    },
-   "telegram_msg": 5
+   "retouches": [
+    "jeu"
+   ]
   }
  ]
 }

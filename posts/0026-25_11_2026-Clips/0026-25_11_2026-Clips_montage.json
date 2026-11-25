@@ -1,1 +1,1 @@
-{"format": "9:16", "bande": [140, 400], "start": 0.5, "end": 16.0, "channel": "domingo", "cam": [1443, 141, 438, 271], "cam_crop": [1456, 170, 411, 182], "cam_box": [0, 400, 1080, 480], "win": [28, 11, 1410, 1058], "dezoom_cam": false, "dezoom_jeu": false}
+{"format": "9:16", "bande": [140, 400], "start": 0.5, "end": 16.0, "channel": "domingo", "cam": [1443, 141, 438, 271], "cam_crop": [1456, 170, 411, 182], "cam_box": [0, 400, 1080, 480], "win": [28, 11, 1410, 1058], "dezoom_cam": false, "dezoom_jeu": true}
