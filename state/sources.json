@@ -794,12 +794,25 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-24T23:52:05Z"
+  },
+  {
+   "id": "trend-vice-city-20261125",
+   "kind": "trend",
+   "created_utc": "2026-11-25T01:16:05Z",
+   "title": "Tendance Google FR : « vice city » (200+ recherches)",
+   "url": "https://www.forbes.com/sites/paultassi/2026/11/23/a-gta-6-player-finds-tommy-vercettis-shirt-portal-to-original-vice-city/",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "A ‘GTA 6’ Player Finds Tommy Vercetti’s Shirt And Portal To Original Vice City GTA 6 Easter Egg Opens a Portal to the Original 2002 Vice City GTA VI Vice City Retro Easter Egg Guide: 12 Substations, L"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-25T01:16:05Z"
   }
  ],
- "updated_utc": "2026-11-24T23:52:05Z",
+ "updated_utc": "2026-11-25T01:16:05Z",
  "report": {
-  "twitch": "40 chaînes suivies, 96 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 46 vidéos de moins de 72 h",
+  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 45 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T20:57:00Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
