@@ -806,16 +806,30 @@
     "articles": "A ‘GTA 6’ Player Finds Tommy Vercetti’s Shirt And Portal To Original Vice City GTA 6 Easter Egg Opens a Portal to the Original 2002 Vice City GTA VI Vice City Retro Easter Egg Guide: 12 Substations, L"
    },
    "hint": 4,
-   "first_seen_utc": "2026-11-25T01:16:05Z"
+   "first_seen_utc": "2026-11-25T01:16:05Z",
+   "updated_utc": "2026-11-25T02:35:35Z"
+  },
+  {
+   "id": "trend-tibo-inshape-20261125",
+   "kind": "trend",
+   "created_utc": "2026-11-25T02:35:35Z",
+   "title": "Tendance Google FR : « tibo inshape » (100+ recherches)",
+   "url": "https://www.lemonde.fr/pixels/article/2026/11/25/l-influenceur-tibo-inshape-depose-plainte-apres-une-action-devant-son-domicile-revendiquee-par-un-groupuscule-identitaire_6814900_4408996.html",
+   "channel": "Google Trends",
+   "metrics": {
+    "articles": "L’influenceur Tibo InShape dépose plainte après une action devant son domicile revendiquée par un groupuscule identitaire Drapeau français transformé en voile islamique : Tibo InShape porte plainte ap"
+   },
+   "hint": 4,
+   "first_seen_utc": "2026-11-25T02:35:35Z"
   }
  ],
- "updated_utc": "2026-11-25T01:16:05Z",
+ "updated_utc": "2026-11-25T02:35:35Z",
  "report": {
-  "twitch": "40 chaînes suivies, 100 lives FR lus, 0 clips retenus",
-  "youtube": "34 chaînes, 45 vidéos de moins de 72 h",
+  "twitch": "43 chaînes suivies, 95 lives FR lus, 0 clips retenus",
+  "youtube": "34 chaînes, 44 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T20:57:00Z)",
   "steam": "top 25 lu",
   "fortnite": "build 43.10-CL-60118918",
-  "trends": "1 tendances liées"
+  "trends": "2 tendances liées"
  }
 }
