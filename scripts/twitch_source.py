@@ -62,11 +62,12 @@ def list_clips(channel, rng):
     return list(seen.values())
 
 
-def frames(path, fps=2):
+def frames(path, fps=2, crop=None, w=48, h=27):
+    """Empreintes w x h (niveaux de gris, normalisées). `crop` = filtre ffmpeg optionnel (ex. "crop=iw:ih/2:0:ih/2")."""
     import numpy as np
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-vf",
-                          f"fps={fps},scale=48:27,format=gray", "-f", "rawvideo", "-"], capture_output=True).stdout
-    a = np.frombuffer(raw, np.uint8).reshape(-1, 27 * 48).astype(np.float32)
+    vf = f"fps={fps}," + (crop + "," if crop else "") + f"scale={w}:{h},format=gray"
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-vf", vf, "-f", "rawvideo", "-"], capture_output=True).stdout
+    a = np.frombuffer(raw, np.uint8).reshape(-1, h * w).astype(np.float32)
     a -= a.mean(1, keepdims=True)
     a /= a.std(1, keepdims=True) + 1e-6
     return a
@@ -172,6 +173,67 @@ def cmd_upgrade(a):
     out(res)
 
 
+LOCATE_THRESHOLD = 0.85
+
+
+def zone_filter(zone):
+    """zone = "x,y,w,h" en fractions de l'image du reel (ex. "0,0.5,1,0.5" = moitié basse)."""
+    x, y, w, h = [float(v) for v in zone.split(",")]
+    return f"crop=iw*{w}:ih*{h}:iw*{x}:ih*{y}"
+
+
+def cmd_locate(a):
+    """Retrouve le clip Twitch brut d'un reel posté par un autre compte (inspiration d'Alix).
+    On compare une ZONE du reel (gameplay ou webcam, indiquée par le juge) aux clips Twitch du streamer créés avant le post.
+    Le reel recadre le jeu (souvent en 4:3) : on teste le clip entier écrasé ET son centre en 4:3, on garde le meilleur."""
+    res = {"found": False}
+    try:
+        ensure_ytdlp()
+        channel = channel_for(a.channel)
+        res["channel"] = channel
+        t = dt.datetime.fromisoformat(a.time.replace("Z", "+00:00")).timestamp()
+        age_h = (dt.datetime.now(dt.timezone.utc).timestamp() - t) / 3600
+        clips = list_clips(channel, "24hr" if age_h < 20 else "7d")
+        rinfo = probe(a.reel)
+        cands = [c for c in clips if t - a.window_h * 3600 <= c["timestamp"] <= t + 600
+                 and (c.get("duration") or 0) >= rinfo["dur"] - 3]
+        cands.sort(key=lambda c: -(c.get("view_count") or 0))  # un reel reprend presque toujours un clip qui a buzzé
+        res["candidates"] = len(cands)
+        if not cands:
+            res["reason"] = "aucun clip Twitch dans la fenêtre (autre plateforme, ou moment jamais clippé)"
+            return out(res)
+        ref = frames(a.reel, crop=zone_filter(a.zone), w=48, h=36)
+        d = tempfile.mkdtemp()
+        best, partial = None, 0.0
+        for c in cands[:MAX_CANDIDATES]:
+            p = os.path.join(d, re.sub(r"\W", "", c["url"].rsplit("/", 1)[-1])[:40] + ".mp4")
+            try:
+                subprocess.run(["yt-dlp", "-q", "-f", "360/480/worst", "-o", p, c["url"]], timeout=120, check=True)
+                cdur = probe(p)["dur"]
+                s, off = max((score_and_offset(ref, frames(p, crop=cr, w=48, h=36)) for cr in (None, "crop=ih*4/3:ih")),
+                             key=lambda x: x[0])
+            except Exception:
+                continue
+            cover = max(0.0, min(off + rinfo["dur"], cdur) - max(off, 0.0)) / rinfo["dur"]
+            ok = s >= LOCATE_THRESHOLD and cover >= 0.8  # le reel peut être raccourci : 80 % du passage suffit
+            if ok and (best is None or s > best[0]):
+                best = (s, off, c)
+            if not ok:
+                partial = max(partial, s)
+            if ok and s >= 0.95:
+                break
+        if not best:
+            res["reason"] = f"pas de clip Twitch qui correspond (meilleur score partiel {partial:.2f})"
+            return out(res)
+        s, off, c = best
+        res.update(found=True, twitch_url=c["url"], title=c.get("title"), views=c.get("view_count"), duration=c.get("duration"),
+                   score=round(s, 3), offset_s=off, credit=f"twitch.tv/{channel}",
+                   created_utc=dt.datetime.fromtimestamp(c["timestamp"], dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
+    except Exception as e:
+        res.update(found=False, reason=f"erreur : {e}")
+    out(res)
+
+
 def cmd_top(a):
     ensure_ytdlp()
     clips = list_clips(a.channel, "24hr" if a.hours <= 24 else "7d")
@@ -191,9 +253,14 @@ if __name__ == "__main__":
     u.add_argument("--time", required=True, help="heure du tweet source, ISO UTC")
     u.add_argument("--portrait", default="/tmp/clip_portrait.mp4")
     u.add_argument("--dry-run", action="store_true")
+    l = sp.add_parser("locate", help="retrouve le clip Twitch brut d'un reel (inspiration)")
+    l.add_argument("--reel", required=True); l.add_argument("--channel", required=True, help="streamer (login Twitch ou compte X)")
+    l.add_argument("--time", required=True, help="date du post du reel, ISO UTC")
+    l.add_argument("--zone", default="0,0.5,1,0.5", help="zone gameplay/webcam du reel en fractions x,y,w,h (défaut : moitié basse)")
+    l.add_argument("--window-h", type=int, default=72, help="clips créés jusqu'à N h avant le post")
     t = sp.add_parser("top")
     t.add_argument("--channel", required=True)
     t.add_argument("--hours", type=int, default=24)
     t.add_argument("-n", type=int, default=10)
     a = ap.parse_args()
-    {"upgrade": cmd_upgrade, "top": cmd_top}[a.cmd](a)
+    {"upgrade": cmd_upgrade, "locate": cmd_locate, "top": cmd_top}[a.cmd](a)

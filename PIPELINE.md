@@ -25,7 +25,7 @@ Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement s
 | **Collecte hors X** (GitHub Actions `sources.yml`, toutes les 30 min, sans IA) | `scripts/sources.py run` (Twitch, Reddit) → `state/sources.json` | — |
 | **Créneau** (7 h 51, 11 h 51, 17 h 51, 20 h 51 Paris) | `lobby.py slot` → `take` → juge → montage → garde-fou → publication → `done` | ce fichier + `docs/clips.md` + `docs/juge.md` + `docs/montage.md` |
 | **Publication immédiate** (déclenchée par la veille) | publie le drama brûlant marqué `hot` | + `docs/brulante.md` |
-| **Inspirations** (1×/jour) | reels envoyés par Alix (« Lobby inspi ») → fiches d'exemples pour le juge (`juge/inspirations.md`) ; ne remplit pas la file | ce fichier + `docs/inspi.md` |
+| **Inspirations** (1×/jour) | reels envoyés par Alix (« Lobby inspi ») → fiches d'exemples pour le juge (`juge/inspirations.md`) + calibrage sur la note /10 d'Alix ; les 2 meilleurs : clip Twitch brut retrouvé (`inspi.py locate`) puis mis en file avec la note du juge (`inspi.py queue`), publié seulement si rien de mieux | ce fichier + `docs/inspi.md` |
 
 ## Rythme (valeurs dans config.json)
 4 créneaux par jour (8 h, 12 h, 18 h, 21 h Paris) + dramas brûlants ; **plafond 7 posts/jour (minuit-minuit Paris)** ; un créneau saute si un post est parti depuis moins de 45 min. Contrôles faits par `lobby.py slot`. Expiration des sujets selon le champ `nature` : drama et événement 12 h après le moment, gameplay 48 h (appliquée par `add`, valeurs dans `config.json` → `ttl_hours`).
