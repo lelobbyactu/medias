@@ -93,6 +93,15 @@
    "Dexerto",
    "VGC_News",
    "gematsu"
+  ],
+  [
+   "LeBouseuh",
+   "RebeuDeter",
+   "Doigby",
+   "fugu_fps",
+   "Maghla",
+   "MonsieurDream",
+   "TraytonTV"
   ]
  ],
  "twitch_channels": {
@@ -107,7 +116,8 @@
   "AmineMaTueTV": "amine",
   "Inoxtag": "inoxtag",
   "WankilStudio": "wankilstudio",
-  "Michoucroute_": "michou"
+  "Michoucroute_": "michou",
+  "TraytonTV": "trayton"
  },
  "tiktok_layouts": {
   "_doc": "Webcam mémorisée par chaîne Twitch (espace 1920x1080), écrite par make_reel_916.py --save-layout après relecture OK.",
@@ -204,7 +214,12 @@
     "kennystream",
     "aminematue",
     "mcflyetcarlito",
-    "lenasituations"
+    "lenasituations",
+    "ikariutv",
+    "fugu_fps",
+    "skyrroztv",
+    "skyrroz",
+    "trayton"
    ],
    "fixed_games": [
     "Grand Theft Auto VI",
