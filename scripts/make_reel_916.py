@@ -456,6 +456,7 @@ def main():
                     "-ss", f"{start:.2f}", "-t", f"{length:.2f}", "-i", a.video, "-filter_complex", fc,
                     "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-profile:v", "high",
                     "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", "-shortest", str(mp4)], check=True)
+    (out_dir / f"{a.post}_montage.json").write_text(json.dumps({"format": "9:16", "bande": [140, TITLE_H]}), encoding="utf-8")
     cover = out_dir / f"{a.post}_cover.jpg"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{min(2.0, length / 3):.2f}", "-i", str(mp4),
                     "-frames:v", "1", "-q:v", "3", str(cover)], check=True)

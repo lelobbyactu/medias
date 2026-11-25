@@ -1,6 +1,7 @@
 # Juge indépendant (lu avant chaque montage)
 
 ## 6. Juge indépendant (obligatoire avant le montage)
+Le juge lit d'abord les 15 premières lignes de `juge/refus.md` s'il existe (refus d'Alix avec leur raison) : ne pas reproduire ce qu'il a refusé. En session de production, **un seul sous-agent note tout le lot** (grille appliquée clip par clip, un classement) ; il indique aussi, pour chaque clip retenu, lesquels des 2 autres titres passent les critères éliminatoires (proposés à Alix via « Autre titre »).
 Préparer **3 combos** (clip + titre + description + 1 ligne « pourquoi ça marche » ; 2 combos suffisent pour un drama brûlant), puis lancer un sous-agent au **contexte vierge** (outil Agent, type general-purpose ; il n'a pas écrit les propositions) avec : les combos, la planche du clip, la grille ci-dessous, les critères d'Alix et les 10 premières fiches de `juge/inspirations.md` (exemples « Top » : leur recette, jamais leur contenu). Il renvoie un classement court et un verdict (retenu / rien). Si l'outil Agent est indisponible, faire la passe seul, en relecteur sévère.
 **Grille /10** : accroche titre + sujet 0-4 · hype/nom connu 0-3 · clarté en 2 s 0-1 · description conforme (courte, finit par une question, crédit, 5 hashtags max) 0-1 · fraîcheur/valeur d'actu 0-1.
 **Éliminatoire** : titre qui ne tient pas la promesse ; titre plat qui décrit seulement l'action au lieu de raconter la chute (`docs/clips.md` §5) ; contenu qui n'est pas un clip de stream (jeu vidéo, Just Chatting, événement) ; exclusion de `docs/clips.md` §4 ; doublon.

@@ -6,6 +6,8 @@ Les tâches Claude ne font plus ces calculs à la main : elles appellent ces com
   lobby.py sources [-n 20]      -> clips hors X (Twitch, Reddit) apparus depuis la
                                    dernière veille (state/sources.json, collecté par GitHub Actions) ; à lancer AVANT `add`
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
+  lobby.py lot                  -> session de production : 4 vidéos max, meilleurs candidats encore frais
+  lobby.py proposer <post> <fiche.json> [--urgent] -> envoi en validation Telegram, sujet retiré de la file
   lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
                                    (+ remplace par la version Twitch 1080p60 si trouvée, champ "twitch" ; --no-twitch pour l'éviter)
@@ -25,6 +27,10 @@ Q, P, M, C = (f"{ROOT}/state/queue.json", f"{ROOT}/state/published.json",
 PARIS = ZoneInfo("Europe/Paris")
 NOPUSH = bool(os.environ.get("LOBBY_NOPUSH"))
 CLOSED = ("publie", "expire", "ecarte")
+# statuts d'un post du journal : en_cours (montage) → a_valider (envoyé à Alix) → valide → publication → publie
+# (ou programme : drama urgent daté par Zernio) ; fins possibles : refuse, expire, echec
+PRIS = ("en_cours", "a_valider", "valide", "publication", "programme", "publie", "refuse", "expire")  # sujet déjà traité
+PARTI = ("publication", "programme", "publie")   # compte dans le plafond du jour et l'espacement
 
 
 # ---------- utilitaires ----------
@@ -88,7 +94,7 @@ def post_time(p): return parse(p.get("published_at_utc") or p.get("reserved_at_u
 
 def today_stats(posts):
     mid = now().astimezone(PARIS).replace(hour=0, minute=0, second=0, microsecond=0)
-    live = [p for p in posts if p.get("status") in ("publie", "en_cours") and post_time(p) and post_time(p) >= mid]
+    live = [p for p in posts if p.get("status") in PARTI and post_time(p) and post_time(p) >= mid]
     last = max((post_time(p) for p in live), default=None)
     return len(live), last
 
@@ -98,7 +104,7 @@ def ménage(q, p):
         st = e.get("status")
         if st == "en_attente" and parse(e.get("expires_at_utc")) and parse(e["expires_at_utc"]) < t:
             e["status"] = "expire"; e["closed_at_utc"] = iso(t); n_exp += 1
-        elif st == "pris" and (t - parse(e.get("taken_at_utc") or e["added_at_utc"])).total_seconds() > 45 * 60:
+        elif st == "pris" and (t - parse(e.get("taken_at_utc") or e["added_at_utc"])).total_seconds() > 90 * 60:
             e["status"] = "en_attente"
     keep = []
     for e in q["candidates"]:
@@ -113,7 +119,8 @@ def ménage(q, p):
     # mp4 montés des vieux posts (>3 j) : inutiles une fois publiés (les covers restent)
     for post in p["posts"]:
         pt = post_time(post)
-        if post.get("status") == "publie" and pt and (t - pt).days >= 3:
+        age_max = {"publie": 3, "refuse": 1, "expire": 1}.get(post.get("status"))
+        if age_max and pt and (t - pt).days >= age_max:
             d = f"{ROOT}/posts/{post['id']}"
             if os.path.isdir(d):
                 for f in os.listdir(d):
@@ -123,7 +130,8 @@ def ménage(q, p):
 
 def covered(e, posts):
     for x in posts:
-        if x.get("status") in ("publie", "en_cours"):
+        if x.get("status") in PRIS:
+            if e.get("topic_key") and e["topic_key"] == x.get("topic_key"): return True
             if e.get("source_tweet") and e["source_tweet"] == x.get("source_tweet"): return True
             if e.get("id") and e["id"] == x.get("queue_id"): return True
     return False
@@ -163,8 +171,9 @@ def cmd_add(a):
             if not it.get("source_tweet") and it.get("source_url"): it["source_tweet"] = it["source_url"]
             if not all(it.get(k) for k in ("type", "topic", "topic_key", "origin", "source_tweet", "source_time_utc", "score")):
                 res["ignores"].append((it.get("topic_key"), "champs manquants")); continue
-            if any(x.get("source_tweet") == it["source_tweet"] for x in p["posts"] if x.get("status") in ("publie", "en_cours")):
-                res["ignores"].append((it["topic_key"], "déjà publié")); continue
+            if any(x.get("source_tweet") == it["source_tweet"] or x.get("topic_key") == it["topic_key"]
+                   for x in p["posts"] if x.get("status") in PRIS):
+                res["ignores"].append((it["topic_key"], "déjà monté ou publié")); continue
             ex = next((e for e in q["candidates"] if e.get("topic_key") == it["topic_key"] or e.get("source_tweet") == it["source_tweet"]), None)
             if ex:
                 if ex["status"] in CLOSED: res["ignores"].append((it["topic_key"], f"déjà {ex['status']}")); continue
@@ -230,6 +239,67 @@ def cmd_slot(a):
                          "media_url": bool(e.get("media_url"))} for s, e, age in cands[:3]]
     res["en_attente_total"] = len(cands)
     out(res)
+
+def next_slot(t, slots):
+    """Prochain créneau de publication (heure de Paris) après t."""
+    loc = t.astimezone(PARIS)
+    for d in (0, 1):
+        for s in sorted(slots):
+            x = (loc + dt.timedelta(days=d)).replace(hour=int(s[:2]), minute=0, second=0, microsecond=0)
+            if x > loc: return x.astimezone(dt.timezone.utc)
+
+def produits_session(posts, t):
+    """Vidéos (hors urgences) montées depuis moins de 4 h = session de production en cours."""
+    return [x for x in posts if not x.get("urgent") and x.get("status") in PRIS and x.get("proposed_at_utc")
+            and (t - parse(x["proposed_at_utc"])).total_seconds() < 4 * 3600]
+
+def cmd_lot(a):
+    """Session de production : les meilleurs candidats encore frais au prochain créneau (4 vidéos max)."""
+    c = cfg(); res = {"reseau_ok": network_ok()}
+    def apply():
+        q, p = qload(), pload(); ménage(q, p); save(Q, q); save(P, p)
+    transact(apply, "queue: ménage (production)")
+    q, p = qload(), pload(); t = now(); maxi = c.get("lot_max", 4)
+    reste = maxi - len(produits_session(p["posts"], t))
+    slot = next_slot(t, c["slots"])
+    res.update({"a_produire": max(0, reste), "prochain_creneau_paris": slot.astimezone(PARIS).strftime("%d/%m %H:%M"),
+                "en_validation": sum(1 for x in p["posts"] if x.get("status") in ("a_valider", "valide"))})
+    if not res["reseau_ok"]: res["stop"] = "réseau bloqué (video.twimg.com)"
+    elif reste <= 0: res["stop"] = f"déjà {maxi} vidéos produites pour cette session"
+    if res.get("stop"): out(res); return
+    cands = [x for x in rank(q, p) if parse(x[1]["expires_at_utc"]) > slot + dt.timedelta(minutes=5)]
+    res["candidats"] = [{"id": e["id"], "score": e["score"], "nature": e.get("nature"), "age_h": round(age, 1),
+                         "expire_paris": parse(e["expires_at_utc"]).astimezone(PARIS).strftime("%d/%m %H:%M"),
+                         "topic": e["topic"], "origin": e["origin"], "mentions": len(e["mentions"]), "angle": e["angle"],
+                         "titles": e["titles"], "checks": e["checks"], "source_tweet": e["source_tweet"]}
+                        for s, e, age in cands[:reste + 2]]
+    res["en_attente_total"] = len(cands)
+    out(res)
+
+def cmd_proposer(a):
+    """Le montage est fait et poussé : envoi en validation. Le sujet SORT de la file (demande d'Alix)."""
+    d = json.load(open(a.fiche, encoding="utf-8"))
+    for k in ("titre", "legende", "judge"):
+        if not d.get(k): raise SystemExit(f"fiche incomplète : « {k} » manque")
+    meta = load(f"{ROOT}/posts/{a.post}/{a.post}_montage.json")
+    if not meta: raise SystemExit("pas de _montage.json : lancer le montage puis `push` avant `proposer`")
+    verdict = (d.get("garde_fou") or "").upper()
+    if meta["format"] == "9:16" and verdict not in ("OK", "SPONSOR"): raise SystemExit("garde_fou OK ou SPONSOR requis en 9:16")
+    def apply():
+        q, p = qload(), pload(); x = next(i for i in p["posts"] if i["id"] == a.post); t = now(); c = cfg()
+        if x["status"] != "en_cours": raise SystemExit(f"{a.post} est {x['status']}")
+        if not a.urgent and len(produits_session(p["posts"], t)) >= c.get("lot_max", 4):
+            raise SystemExit(f"plafond de {c.get('lot_max', 4)} vidéos par session atteint")
+        e = next((i for i in q["candidates"] if i["id"] == x.get("queue_id")), None)
+        if e: x["topic_key"] = e["topic_key"]; x["expires_at_utc"] = e["expires_at_utc"]; x["nature"] = e.get("nature", "")
+        x.setdefault("expires_at_utc", iso(t + dt.timedelta(hours=12)))
+        x.update({"status": "a_valider", "proposed_at_utc": iso(t), "titre": d["titre"], "legende": d["legende"],
+                  "titres_alt": [s for s in d.get("titres_alt", []) if s and s != d["titre"]][:2],
+                  "judge_score": str(d["judge"]), "format": meta["format"], "garde_fou": verdict or "SECOURS"})
+        if a.urgent: x["urgent"] = True; x["hot_reason"] = "drama"
+        q["candidates"] = [i for i in q["candidates"] if i["id"] != x.get("queue_id")]
+        save(P, p); save(Q, q)
+    transact(apply, f"validation: {a.post} à valider"); out({"ok": a.post, "statut": "a_valider"})
 
 def cmd_take(a):
     e = {}
@@ -333,6 +403,8 @@ if __name__ == "__main__":
     for n in ("queries", "status"): sp.add_parser(n)
     s = sp.add_parser("sources"); s.add_argument("-n", type=int, default=20)
     s = sp.add_parser("slot"); s.add_argument("--hot", action="store_true")
+    sp.add_parser("lot")
+    s = sp.add_parser("proposer"); s.add_argument("post"); s.add_argument("fiche"); s.add_argument("--urgent", action="store_true")
     s = sp.add_parser("add"); s.add_argument("file", nargs="?")
     s = sp.add_parser("take"); s.add_argument("id"); s.add_argument("--no-twitch", action="store_true")
     s = sp.add_parser("reserve"); s.add_argument("id"); s.add_argument("type", choices=["reel"]); s.add_argument("categorie")

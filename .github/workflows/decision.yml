@@ -1,0 +1,39 @@
+# Le Lobby — applique un clic d'Alix (déclenché par le Worker Cloudflare). Sans IA.
+# Pas de groupe de concurrence : GitHub annulerait les décisions en attente ; les conflits sont rejoués par lobby.transact.
+name: decision
+run-name: "decision #${{ inputs.numero }} ${{ inputs.action }}"
+on:
+  workflow_dispatch:
+    inputs:
+      numero: { description: "Numéro du post (4 chiffres)", required: true, type: string }
+      action: { description: "ok | non | titre | annuler", required: true, type: string }
+      valeur: { description: "Raison du refus ou nouveau titre", required: false, type: string, default: "" }
+permissions:
+  contents: write
+jobs:
+  decider:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /scripts/
+            /state/
+            /juge/
+            /config.json
+          sparse-checkout-cone-mode: false
+      - name: Outils de montage (changement de titre seulement)
+        if: inputs.action == 'titre'
+        run: |
+          pip install -q playwright
+          command -v google-chrome || python3 -m playwright install --with-deps chromium
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Décision
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          NUMERO: ${{ inputs.numero }}
+          ACTION: ${{ inputs.action }}
+          VALEUR: ${{ inputs.valeur }}
+        run: python3 scripts/validation.py decider "$NUMERO" "$ACTION" "$VALEUR"

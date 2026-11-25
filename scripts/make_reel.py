@@ -187,6 +187,8 @@ def main():
            "-map", "[o]", "-map", "1:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-profile:v", "high",
            "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", "-shortest", str(mp4)]
     subprocess.run(cmd, check=True)
+    bande = [240, vy - 8] if layout == "framed" and vy >= 420 else None   # None : titre non remplaçable après coup
+    (out_dir / f"{a.post}_montage.json").write_text(json.dumps({"format": "16:9", "bande": bande}), encoding="utf-8")
     t_cover = min(2.0, length / 3)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{t_cover:.2f}", "-i", str(mp4), "-frames:v", "1", "-q:v", "3", str(cover)], check=True)
     od, _, od_dur = probe(mp4)

@@ -1,0 +1,28 @@
+# Le Lobby — envoie à Alix (Telegram) les vidéos montées par la session de production. Sans IA.
+name: telegram
+on:
+  push:
+    branches: [main]
+    paths: ["state/published.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: telegram, cancel-in-progress: false }
+jobs:
+  envoyer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /scripts/
+            /state/
+            /juge/
+            /config.json
+          sparse-checkout-cone-mode: false
+      - name: Envoi
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+        run: python3 scripts/validation.py envoyer

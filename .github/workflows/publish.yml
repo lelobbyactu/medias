@@ -1,0 +1,39 @@
+# Le Lobby — au créneau, publie la vidéo validée la mieux notée (déclenché par le Worker Cloudflare). Sans IA.
+name: publish
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "publier | confirmer (contrôle seulement) | essai (n'envoie rien)"
+        required: false
+        type: choice
+        options: [publier, confirmer, essai]
+        default: essai
+permissions:
+  contents: write
+concurrency: { group: publish, cancel-in-progress: false }
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /scripts/
+            /state/
+            /juge/
+            /config.json
+          sparse-checkout-cone-mode: false
+      - name: Publication
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          case "$MODE" in
+            publier) python3 scripts/validation.py publier ;;
+            confirmer) python3 scripts/validation.py publier --confirmer ;;
+            *) python3 scripts/validation.py publier --essai ;;
+          esac
+          python3 scripts/validation.py envoyer   # rattrape un envoi Telegram manqué
