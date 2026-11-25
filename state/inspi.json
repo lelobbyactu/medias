@@ -121,6 +121,20 @@
    "recette": "Nom connu + jeu hype en titre court, réaction facecam du créateur qui vend le gag ; déjà couvert par notre reel-clip.",
    "queue_id": null,
    "note": null
+  },
+  {
+   "n": 16,
+   "url": "https://www.instagram.com/reel/DgH-alvT1Lw/?fqnt=MWttaWJmcHF6Ymsweg==",
+   "traite_utc": "2026-11-25T10:56:50Z",
+   "verdict": "ecarte",
+   "score": 5.0,
+   "format": "clip-jv",
+   "recette": "Reprendre le principe : ouvrir directement sur le coup, sans intro, avec une musique d'action, en grand cadre sur un moment net tiré d'un stream.",
+   "queue_id": null,
+   "note": "avis Alix : Bien",
+   "note_alix": null,
+   "pourquoi": "Démarre en pleine bagarre et reste court, mais image petite et floue dans un cadre blanc de mème, sans streamer. Alix : Bien (action directe, wtf, musique), divergence.",
+   "clip_brut": null
   }
  ]
 }
