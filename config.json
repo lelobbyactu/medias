@@ -9,8 +9,11 @@
   "21h"
  ],
  "ttl_hours": {
-  "actu": 6,
-  "clip": 24
+  "_doc": "Durée de vie d'un clip dans la file selon sa nature (champ `nature` donné par la veille). Décision d'Alix du 25 nov. 2026 : drama / clip qui fait l'actu / événement 12 h, clip de gameplay 48 h.",
+  "drama": 12,
+  "evenement": 12,
+  "gameplay": 48,
+  "defaut": 12
  },
  "queue_min_score": 5,
  "judge_threshold": 7,
@@ -63,6 +66,44 @@
    "DramaAlert",
    "Pirat_Nation",
    "Dexerto"
+  ],
+  [
+   "RockstarGames",
+   "PlayStationFR",
+   "NintendoFrance",
+   "FortniteFR",
+   "XboxFR",
+   "UbisoftFR",
+   "VALORANTfr",
+   "JVCom",
+   "Gamekult",
+   "Sheep_Esports"
+  ],
+  [
+   "Fortnite",
+   "CallofDuty",
+   "PlayStation",
+   "XBOX",
+   "NintendoAmerica",
+   "EASPORTSFC",
+   "Minecraft",
+   "Steam",
+   "EpicGames",
+   "thegameawards",
+   "geoffkeighley",
+   "SteamDB"
+  ],
+  [
+   "_Tom_Henderson_",
+   "InsiderGamingIG",
+   "billbil_kun",
+   "NateTheHate2",
+   "Wario64",
+   "HYPEX",
+   "ShiinaBR",
+   "zachbussey",
+   "VGC_News",
+   "gematsu"
   ]
  ],
  "twitch_channels": {
@@ -194,7 +235,7 @@
    ],
    "clip_min_views_tracked": 300,
    "clip_min_views_discovery": 1500,
-   "clip_max_age_h": 6,
+   "clip_max_age_h": 48,
    "clip_duration_s": [
     6,
     60

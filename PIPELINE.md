@@ -8,7 +8,7 @@ Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement s
 
 ## Ligne éditoriale (résumé)
 - **On ne publie que des clips vidéo** : moment de jeu vidéo en stream (cœur : moments choquants de gros streamers FR sur GTA 6), clip Just Chatting (drama, histoire, annonce qui buzze), moment fort d'un événement (ZEvent, GP Explorer, gros live). **Jamais** de carrousel, d'image, de reel d'actu, de trailer, de voix IA ni de musique ajoutée.
-- **Sources : X (veille Apify), API Twitch, Reddit (r/LivestreamFail).** Meilleure version du clip (Twitch d'origine si possible). Crédit = créateur d'origine, dans la légende, jamais le relais.
+- **Sources : X (veille Apify), API Twitch, Reddit (r/LivestreamFail).** Sur X, les comptes d'éditeurs, de médias et d'insiders servent au contexte et à repérer les événements, jamais de post à eux seuls. Meilleure version du clip (Twitch d'origine si possible). Crédit = créateur d'origine, dans la légende, jamais le relais.
 - **Format 9:16** (titre en haut, webcam, sous-titres au milieu, gameplay en bas) si la webcam et le gameplay sont de qualité acceptable ; **sinon 16:9** (clip tel qu'en live, titre en haut, sous-titres en bas), Instagram seul. Détails : `docs/montage.md`.
 - Titre qui raconte la chute ; description courte qui **finit par une question**, puis crédit et 5 hashtags max. Détails : `docs/clips.md` §5.
 
@@ -28,7 +28,7 @@ Jusqu'au **jeudi 27 nov. 2026 inclus (heure de Paris)** : publier **uniquement s
 | **Inspirations** (1×/jour) | reels envoyés par Alix (« Lobby inspi ») → fiches d'exemples pour le juge (`juge/inspirations.md`) ; ne remplit pas la file | ce fichier + `docs/inspi.md` |
 
 ## Rythme (valeurs dans config.json)
-4 créneaux par jour (8 h, 12 h, 18 h, 21 h Paris) + dramas brûlants ; **plafond 7 posts/jour (minuit-minuit Paris)** ; un créneau saute si un post est parti depuis moins de 45 min. Contrôles faits par `lobby.py slot`. Expiration des sujets : drama/actu 6 h après la source, clip de gameplay 24 h (appliquée par `add`).
+4 créneaux par jour (8 h, 12 h, 18 h, 21 h Paris) + dramas brûlants ; **plafond 7 posts/jour (minuit-minuit Paris)** ; un créneau saute si un post est parti depuis moins de 45 min. Contrôles faits par `lobby.py slot`. Expiration des sujets selon le champ `nature` : drama et événement 12 h après le moment, gameplay 48 h (appliquée par `add`, valeurs dans `config.json` → `ttl_hours`).
 
 ## Démarrage d'une exécution (créneau / publication immédiate)
 1. `add_repo` (owner lelobbyactu, repo medias, access push) puis clone LÉGER : `git clone -q --depth 1 --filter=blob:none --sparse https://github.com/lelobbyactu/medias /home/claude/medias && cd /home/claude/medias && git sparse-checkout set --no-cone '/*' '!/posts/'` (429 : attendre 5 s, réessayer une fois). Ne jamais cloner sans ces options.

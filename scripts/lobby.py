@@ -172,10 +172,10 @@ def cmd_add(a):
                 ex["score"] = max(ex["score"], it["score"]); res["fusionnes"].append(ex["id"]); e = ex
             else:
                 src = parse(it["source_time_utc"])
-                ttl = c["ttl_hours"]["clip" if it["type"] == "clip" else "actu"]
+                ttl_h = c["ttl_hours"]; ttl = ttl_h.get(it.get("nature") or "defaut", ttl_h.get("defaut", 12))
                 sid = re.sub(r"[^a-z0-9]+", "-", it["topic_key"].lower())[:40].strip("-")
                 e = {"id": f"c-{t.strftime('%Y%m%d-%H%M')}-{sid}", "added_at_utc": iso(t),
-                     "found_by": it.get("found_by", "veille"), "type": it["type"], "topic": it["topic"],
+                     "found_by": it.get("found_by", "veille"), "type": it["type"], "nature": it.get("nature", ""), "topic": it["topic"],
                      "topic_key": it["topic_key"], "origin": it["origin"], "source_tweet": it["source_tweet"],
                      "primary_source": it.get("primary_source", it["source_tweet"]), "source_time_utc": it["source_time_utc"],
                      "expires_at_utc": iso(src + dt.timedelta(hours=ttl)), "fiabilite": it.get("fiabilite", "🟡"),
