@@ -2,6 +2,10 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #14 · clip-jv · 8.0/10 · 25/11/2026
+Streamer FR connu sur le jeu du moment face à un choix : question en titre dès la 1re seconde, webcam en haut, jeu en bas, sous-titres surlignés ; couper juste après la réaction (20-25 s) et créditer la chaîne.
+Source : https://www.instagram.com/reel/DgH_asyAkvG/?hvrq=czUzMzF2MGtkc21i
+
 ## #15 · clip-jv · 7.0/10 · 25/11/2026
 Accident ou bug surprenant de 10-15 s tiré d'un streamer, une ligne de texte courte et ironique au centre, réaction webcam, violence dosée.
 Source : https://www.instagram.com/reel/DgGwGmYoFNH/?evlk=d3oyM2h0aW4zYWht
