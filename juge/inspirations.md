@@ -2,6 +2,10 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #15 · clip-jv · 7.0/10 · 25/11/2026
+Accident ou bug surprenant de 10-15 s tiré d'un streamer, une ligne de texte courte et ironique au centre, réaction webcam, violence dosée.
+Source : https://www.instagram.com/reel/DgGwGmYoFNH/?evlk=d3oyM2h0aW4zYWht
+
 ## #21 · clip-jv · 9.0/10 · 25/11/2026
 Défi d'un streamer avec compteur d'essais incrusté, 2-3 échecs rapides puis la réussite à la fin, environ 30 s ; ajouter la réaction webcam et une question en légende pour faire commenter.
 Source : https://www.instagram.com/reel/DdcSJ8yziSJ/?knvt=bXp6ZDg5M3p1M243
