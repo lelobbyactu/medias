@@ -2,36 +2,6 @@
  "_doc": "Sujets repérés hors X par scripts/sources.py (GitHub Actions, toutes les 30 min). Lu par la veille via `python3 scripts/lobby.py sources`. Ne pas éditer à la main. hint = pré-note mécanique /10.",
  "items": [
   {
-   "id": "steam-top-271590-2026-11-23",
-   "kind": "steam",
-   "created_utc": "2026-11-23T08:07:24Z",
-   "title": "Grand Theft Auto V Legacy entre dans le top 25 Steam (37 560 joueurs connectés)",
-   "url": "https://steamdb.info/app/271590/charts/",
-   "channel": "Steam",
-   "metrics": {
-    "rank": 23,
-    "players": 37560,
-    "peak_24h": 101616
-   },
-   "hint": 5,
-   "first_seen_utc": "2026-11-23T08:07:26Z"
-  },
-  {
-   "id": "steam-top-238960-2026-11-23",
-   "kind": "steam",
-   "created_utc": "2026-11-23T08:07:24Z",
-   "title": "Path of Exile entre dans le top 25 Steam (35 160 joueurs connectés)",
-   "url": "https://steamdb.info/app/238960/charts/",
-   "channel": "Steam",
-   "metrics": {
-    "rank": 25,
-    "players": 35160,
-    "peak_24h": 83151
-   },
-   "hint": 5,
-   "first_seen_utc": "2026-11-23T08:07:26Z"
-  },
-  {
    "id": "trend-rockstar-north-20261123",
    "kind": "trend",
    "created_utc": "2026-11-23T09:54:43Z",
@@ -345,8 +315,8 @@
    "channel": "antoinedaniel",
    "lang": "fr",
    "metrics": {
-    "views": 2669,
-    "views_per_h": 76,
+    "views": 2679,
+    "views_per_h": 73,
     "duration_s": 30,
     "game": "",
     "streamer": "AntoineDaniel",
@@ -354,7 +324,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-SparklyEphemeralCheddarStoneLightning-O8TlHSS2kdW4pG3f",
@@ -366,7 +336,7 @@
    "channel": "gotaga",
    "lang": "fr",
    "metrics": {
-    "views": 2311,
+    "views": 2341,
     "views_per_h": 56,
     "duration_s": 29.6,
     "game": "Grand Theft Auto VI",
@@ -375,7 +345,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-EntertainingArtsyBunnyDancingBanana-MkHg88lofSjDxxRW",
@@ -387,8 +357,8 @@
    "channel": "joueur_du_grenier",
    "lang": "fr",
    "metrics": {
-    "views": 1350,
-    "views_per_h": 38,
+    "views": 1366,
+    "views_per_h": 37,
     "duration_s": 14.9,
     "game": "",
     "streamer": "Joueur_du_Grenier",
@@ -396,7 +366,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T21:27:29Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "steam-top-322170-2026-11-23",
@@ -423,7 +393,7 @@
    "channel": "zerator",
    "lang": "fr",
    "metrics": {
-    "views": 875,
+    "views": 882,
     "views_per_h": 24,
     "duration_s": 36,
     "game": "",
@@ -432,7 +402,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-23T23:28:09Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "yt-tier-4_8r_Q7IHXk-1000000",
@@ -749,7 +719,7 @@
    "channel": "anyme023",
    "lang": "fr",
    "metrics": {
-    "views": 446,
+    "views": 448,
     "views_per_h": 10,
     "duration_s": 21,
     "game": "Just Chatting",
@@ -758,7 +728,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-BloodyRelentlessAlpacaPoooound-PU3Z-d5U8A9r0IMx",
@@ -779,7 +749,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-CoyInnocentFishFUNgineer-ym_llrH1EQqwvdTE",
@@ -812,8 +782,8 @@
    "channel": "domingo",
    "lang": "fr",
    "metrics": {
-    "views": 780,
-    "views_per_h": 18,
+    "views": 783,
+    "views_per_h": 17,
     "duration_s": 41.9,
     "game": "Grand Theft Auto VI",
     "streamer": "Domingo",
@@ -821,7 +791,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-ThankfulElatedFennelAMPTropPunch-gelypkKS3DBTheQn",
@@ -833,8 +803,8 @@
    "channel": "domingo",
    "lang": "fr",
    "metrics": {
-    "views": 677,
-    "views_per_h": 35,
+    "views": 737,
+    "views_per_h": 36,
     "duration_s": 31.9,
     "game": "Grand Theft Auto VI",
     "streamer": "Domingo",
@@ -842,7 +812,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-SourBitterMarrowDAESuppy-Y5v3YfvFYJCOpuqA",
@@ -854,7 +824,7 @@
    "channel": "domingo",
    "lang": "fr",
    "metrics": {
-    "views": 366,
+    "views": 367,
     "views_per_h": 8,
     "duration_s": 41.6,
     "game": "Grand Theft Auto VI",
@@ -863,7 +833,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-RamshackleUglySageFUNgineer-Vsn0yqErcjmGHsX5",
@@ -875,8 +845,8 @@
    "channel": "gotaga",
    "lang": "fr",
    "metrics": {
-    "views": 2353,
-    "views_per_h": 70,
+    "views": 2363,
+    "views_per_h": 68,
     "duration_s": 52.3,
     "game": "Grand Theft Auto VI",
     "streamer": "Gotaga",
@@ -884,7 +854,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-PowerfulTubularCarabeefBrokeBack-kiE2mwvxMF2_LnRd",
@@ -896,8 +866,8 @@
    "channel": "gotaga",
    "lang": "fr",
    "metrics": {
-    "views": 890,
-    "views_per_h": 28,
+    "views": 891,
+    "views_per_h": 27,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Gotaga",
@@ -905,7 +875,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-ManlySucculentFalconChocolateRain-lz9myEr6-0snmMjp",
@@ -917,7 +887,7 @@
    "channel": "gotaga",
    "lang": "fr",
    "metrics": {
-    "views": 612,
+    "views": 613,
     "views_per_h": 19,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
@@ -926,7 +896,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-MoistCallousCamelKippa-heE2DI9Y8E_vcKKG",
@@ -938,8 +908,8 @@
    "channel": "gotaga",
    "lang": "fr",
    "metrics": {
-    "views": 512,
-    "views_per_h": 18,
+    "views": 514,
+    "views_per_h": 17,
     "duration_s": 32.9,
     "game": "Grand Theft Auto VI",
     "streamer": "Gotaga",
@@ -947,7 +917,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-NimbleOutstandingStrawberryTheRinger-lKZrA9a_3q-vdEJh",
@@ -960,7 +930,7 @@
    "lang": "fr",
    "metrics": {
     "views": 462,
-    "views_per_h": 16,
+    "views_per_h": 15,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Gotaga",
@@ -968,7 +938,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-GiantSeductiveArtichokeFutureMan-T6AyneQNLIRcG72b",
@@ -1002,7 +972,7 @@
    "lang": "fr",
    "metrics": {
     "views": 599,
-    "views_per_h": 16,
+    "views_per_h": 15,
     "duration_s": 30,
     "game": "Just Chatting",
     "streamer": "Mastu",
@@ -1010,7 +980,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-ColdInnocentMeerkatYee-Ap8vrOo8eNCG63jI",
@@ -1022,8 +992,8 @@
    "channel": "michou",
    "lang": "fr",
    "metrics": {
-    "views": 3061,
-    "views_per_h": 85,
+    "views": 3114,
+    "views_per_h": 84,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Michou",
@@ -1031,7 +1001,7 @@
    },
    "hint": 7,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-AdorableDependableRadicchioKappaWealth-TQChBZyAxlZhEvRu",
@@ -1043,8 +1013,8 @@
    "channel": "michou",
    "lang": "fr",
    "metrics": {
-    "views": 1220,
-    "views_per_h": 34,
+    "views": 1240,
+    "views_per_h": 33,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Michou",
@@ -1052,7 +1022,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-SleepyMoistSowPRChase-tI0uC0B4OrD_OuC0",
@@ -1064,7 +1034,7 @@
    "channel": "michou",
    "lang": "fr",
    "metrics": {
-    "views": 1182,
+    "views": 1213,
     "views_per_h": 26,
     "duration_s": 30,
     "game": "Grand Theft Auto VI",
@@ -1073,7 +1043,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-ScrumptiousSpeedyDiscPupper-GcoI9rhs50GU90Qu",
@@ -1085,8 +1055,8 @@
    "channel": "mistermv",
    "lang": "fr",
    "metrics": {
-    "views": 317,
-    "views_per_h": 11,
+    "views": 320,
+    "views_per_h": 10,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "mistermv",
@@ -1094,7 +1064,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-IntelligentMoistDotterelStinkyCheese-xNXgSIfII6331Ojs",
@@ -1106,7 +1076,7 @@
    "channel": "samueletienne",
    "lang": "fr",
    "metrics": {
-    "views": 639,
+    "views": 656,
     "views_per_h": 17,
     "duration_s": 45.2,
     "game": "Grand Theft Auto VI",
@@ -1115,7 +1085,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-ThirstyBlazingKiwiAllenHuhu-sr7n8kOoVnZ6VV6f",
@@ -1127,7 +1097,7 @@
    "channel": "squeezie",
    "lang": "fr",
    "metrics": {
-    "views": 594,
+    "views": 600,
     "views_per_h": 15,
     "duration_s": 30,
     "game": "Grand Theft Auto VI",
@@ -1136,7 +1106,7 @@
    },
    "hint": 6,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-DepressedTrappedEyeballYouDontSay-ANnDJsfXvM7EX1Bw",
@@ -1148,7 +1118,7 @@
    "channel": "squeezie",
    "lang": "fr",
    "metrics": {
-    "views": 369,
+    "views": 370,
     "views_per_h": 10,
     "duration_s": 10.1,
     "game": "Grand Theft Auto VI",
@@ -1157,7 +1127,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T04:07:13Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "reddit-1y4o39w",
@@ -1226,8 +1196,8 @@
    "channel": "ponce",
    "lang": "fr",
    "metrics": {
-    "views": 334,
-    "views_per_h": 17,
+    "views": 358,
+    "views_per_h": 18,
     "duration_s": 44.3,
     "game": "",
     "streamer": "Ponce",
@@ -1235,7 +1205,7 @@
    },
    "hint": 5,
    "first_seen_utc": "2026-11-25T06:31:20Z",
-   "updated_utc": "2026-11-25T08:02:18Z"
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-PiercingSmallPorcupineMikeHogu-TmBkeKBWnaXyd8zD",
@@ -1247,15 +1217,16 @@
    "channel": "domingo",
    "lang": "fr",
    "metrics": {
-    "views": 314,
-    "views_per_h": 21,
+    "views": 344,
+    "views_per_h": 22,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Domingo",
     "suivi": true
    },
    "hint": 5,
-   "first_seen_utc": "2026-11-25T08:02:18Z"
+   "first_seen_utc": "2026-11-25T08:02:18Z",
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-PleasantEsteemedGiraffeCurseLit-4UC6glw4XB2tRoD8",
@@ -1267,15 +1238,16 @@
    "channel": "samueletienne",
    "lang": "fr",
    "metrics": {
-    "views": 304,
-    "views_per_h": 24,
+    "views": 399,
+    "views_per_h": 29,
     "duration_s": 22.1,
     "game": "Grand Theft Auto VI",
     "streamer": "samueletienne",
     "suivi": true
    },
    "hint": 5,
-   "first_seen_utc": "2026-11-25T08:02:18Z"
+   "first_seen_utc": "2026-11-25T08:02:18Z",
+   "updated_utc": "2026-11-25T09:12:53Z"
   },
   {
    "id": "twitch-clip-HorribleIronicSeahorseKippa-jomOUpme93oe5E1-",
@@ -1287,20 +1259,21 @@
    "channel": "squeezie",
    "lang": "fr",
    "metrics": {
-    "views": 370,
-    "views_per_h": 32,
+    "views": 398,
+    "views_per_h": 31,
     "duration_s": 60,
     "game": "Grand Theft Auto VI",
     "streamer": "Squeezie",
     "suivi": true
    },
    "hint": 5,
-   "first_seen_utc": "2026-11-25T08:02:18Z"
+   "first_seen_utc": "2026-11-25T08:02:18Z",
+   "updated_utc": "2026-11-25T09:12:53Z"
   }
  ],
- "updated_utc": "2026-11-25T08:02:18Z",
+ "updated_utc": "2026-11-25T09:12:53Z",
  "report": {
-  "twitch": "43 chaînes suivies, 99 lives FR lus, 29 clips retenus",
+  "twitch": "43 chaînes suivies, 100 lives FR lus, 26 clips retenus",
   "reddit": "pas encore (dernier passage 2026-11-25T04:07:13Z)"
  }
 }
