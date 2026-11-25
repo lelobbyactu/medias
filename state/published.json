@@ -332,7 +332,7 @@
   },
   {
    "id": "0026-25_11_2026-Clips",
-   "status": "a_valider",
+   "status": "refuse",
    "type": "reel",
    "topic": "Domingo sur GTA 6 : le plongeon",
    "origin": "domingo",
@@ -349,7 +349,8 @@
    "judge_score": "7/10",
    "format": "9:16",
    "garde_fou": "SPONSOR",
-   "telegram_msg": 3
+   "telegram_msg": 3,
+   "refus": "Montage"
   }
  ]
 }
