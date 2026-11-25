@@ -98,6 +98,12 @@ async function onClick(env, q) {
   } else await answer("Bouton inconnu");
 }
 
+// envoie les vidéos montées avant que le bot soit relié (ou dont l'envoi a échoué)
+async function sendPending(env, chat) {
+  const err = await dispatch(env, "telegram.yml", {});
+  if (err) await tg(env, "sendMessage", { chat_id: chat, text: `⚠️ Envoi des vidéos non lancé (${err}).` });
+}
+
 async function onMessage(env, m) {
   const chat = m.chat.id, text = (m.text || "").trim();
   const owner = await env.KV.get("owner");
@@ -105,9 +111,14 @@ async function onMessage(env, m) {
     // premier /start en conversation privée = propriétaire (bot neuf, connu du seul Alix)
     if (m.chat.type !== "private" || !text.startsWith("/start")) return;
     await env.KV.put("owner", String(chat));
-    return tg(env, "sendMessage", { chat_id: chat, text: "✅ Bot relié à cette conversation. Les vidéos du Lobby arriveront ici." });
+    await tg(env, "sendMessage", { chat_id: chat, text: "✅ Bot relié à cette conversation. Les vidéos du Lobby arriveront ici." });
+    return sendPending(env, chat);
   }
   if (String(chat) !== owner) return;
+  if (text.startsWith("/start")) {
+    await tg(env, "sendMessage", { chat_id: chat, text: "Bot prêt. J'envoie les vidéos en attente, s'il y en a." });
+    return sendPending(env, chat);
+  }
   const reply = m.reply_to_message && (m.reply_to_message.text || "").match(/^#(\d{4}) · (titre|raison)/);
   if (reply && text) {
     const [, n, kind] = reply;
