@@ -2,6 +2,10 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #21 · clip-jv · 9.0/10 · 25/11/2026
+Défi d'un streamer avec compteur d'essais incrusté, 2-3 échecs rapides puis la réussite à la fin, environ 30 s ; ajouter la réaction webcam et une question en légende pour faire commenter.
+Source : https://www.instagram.com/reel/DdcSJ8yziSJ/?knvt=bXp6ZDg5M3p1M243
+
 ## #8 · reel-clip · 7.0/10 · 23/11/2026
 Accroche victime + chute sur un détail absurde de GTA 6, qui touche au monde des créateurs (ex. « UNE *INFLUENCEUSE* | AVALÉE PAR | UN SERPENT | DANS GTA 6 »). Structure : facecam + gameplay, scène visuelle choc dès la 1re seconde, puis réaction. À refaire seulement avec un streamer FR connu.
 Source : https://www.instagram.com/reel/DgBsDOPokWW/
