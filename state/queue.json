@@ -2279,8 +2279,9 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-25T09:40:34Z"
   },
   {
    "id": "c-20261125-0938-squeezie-gta6-voiture-toit",
