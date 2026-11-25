@@ -329,6 +329,16 @@
    "zernio_post_id": "6b053622a6a99a6eb0ce9f0c",
    "judge_score": "7/10",
    "slot": "08h"
+  },
+  {
+   "id": "0026-25_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Domingo sur GTA 6 : le plongeon",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/ThankfulElatedFennelAMPTropPunch-gelypkKS3DBTheQn",
+   "queue_id": "c-20261125-0938-domingo-gta6-plongeon",
+   "reserved_at_utc": "2026-11-25T09:43:19Z"
   }
  ]
 }
