@@ -332,13 +332,23 @@
   },
   {
    "id": "0026-25_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo sur GTA 6 : le plongeon",
    "origin": "domingo",
    "source_tweet": "https://www.twitch.tv/domingo/clip/ThankfulElatedFennelAMPTropPunch-gelypkKS3DBTheQn",
    "queue_id": "c-20261125-0938-domingo-gta6-plongeon",
-   "reserved_at_utc": "2026-11-25T09:43:19Z"
+   "reserved_at_utc": "2026-11-25T09:43:19Z",
+   "topic_key": "domingo-gta6-plongeon",
+   "expires_at_utc": "2026-11-26T13:12:06Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-25T09:45:42Z",
+   "titre": "Là on meurt|non ? Domingo|*teste* quand même",
+   "legende": "Parfois la réponse était dans la question. Tu sautes ou pas ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #twitchfr #jeuxvideo",
+   "titres_alt": [],
+   "judge_score": "7/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   }
  ]
 }
