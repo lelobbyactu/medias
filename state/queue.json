@@ -2,160 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261121-1641-gotaga-gta6-poursuite-lampadaire",
-   "added_at_utc": "2026-11-21T17:15:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Gotaga (avec Lucia) en voiture sur GTA 6 : la police débarque, il percute un lampadaire dans la fuite",
-   "topic_key": "gotaga-gta6-poursuite-police-lampadaire",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2124181414635884696",
-   "primary_source": "https://x.com/GotagaTV/status/2124181414635884696",
-   "source_time_utc": "2026-11-21T16:41:29Z",
-   "expires_at_utc": "2026-11-22T16:41:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124181343860916224/vid/avc1/2560x1440/RYylIHwbSS8jGr4l.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Tweet « Il voudrait le faire exprès, il n'y arriverait pas ! » : poursuite de police sur GTA 6, sous-titres Lucia « y a des flics qui débarquent », la voiture finit dans un lampadaire (17 s, 16:9, face-cam).",
-   "titles": [
-    "Gotaga *fonce* dans un lampadaire en fuyant la police",
-    "Gotaga : la fuite qui finit dans un *lampadaire*"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Score 6 : traction faible (50 likes, 6k vues à 17 h 15 UTC, 1,4 M abonnés), audio non écouté, gag exact à confirmer au créneau (regarder les frames + écouter). MP4 non téléchargé (score < 7). allowDownload true.",
-   "closed_at_utc": "2026-11-22T16:52:32Z"
-  },
-  {
-   "id": "c-20261121-1815-jltomy-miami-spiderman",
-   "added_at_utc": "2026-11-21T18:15:26Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "Subathon Miami de JL Tomy : un Spider-Man débarque devant la villa avec une pancarte « No PS5, No Money, No GTA 6 » et se fait ouvrir (c'était Anis de la Team Nasdas)",
-   "topic_key": "jltomy-subathon-miami-spiderman-anis",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124190164574732412",
-   "primary_source": "https://x.com/JLTomyTV/status/2124190164574732412",
-   "source_time_utc": "2026-11-21T17:16:15Z",
-   "expires_at_utc": "2026-11-22T17:16:00Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "JLTomyTV",
-    "Actu2Twitch",
-    "riyadinhoo_"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124190109322842112/vid/avc1/1920x1080/MIwTMnh5FP0YWaZe.mp4?tag=29",
-   "media_repo_path": "queue/c-20261121-1815-jltomy-miami-spiderman.mp4",
-   "angle": "Un inconnu en Spider-Man sonne à la villa du subathon de JL Tomy avec une pancarte « No PS5, No Money, No GTA 6 » (la quête de GTA 6 est le fil rouge du subathon), JL Tomy lui ouvre ; on apprend ensuite que c'était Anis de la Team Nasdas.",
-   "titles": [
-    "Il débarque en Spider-Man chez JL Tomy : « No PS5, No Money, *No GTA 6* »",
-    "Spider-Man quémande *GTA 6* devant la villa de JL Tomy… et se fait ouvrir"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Clip de 43,6 s, 1080p, 16:9, déjà téléchargé (39 Mo), overlay subathon (compteur de subs) visible. Vu en frames : Spider-Man à la grille, pancarte lisible, puis il entre. La révélation « c'était Anis » est dans un 2e clip de JLTomyTV : https://x.com/JLTomyTV/status/2124191688247984359 (60 s, 1080p, MP4 https://video.twimg.com/amplify_video/2124191563639128064/vid/avc1/1920x1080/fLi2vC-amZtZxc87.mp4?tag=29), à utiliser si le titre dit « c'était Anis ». Audio non écouté ; vérifier au créneau. Score 7 : accroche 3 + hype 2 (JL Tomy 111 k, Team Nasdas, hook GTA 6) + traction 1 (156 likes / 6,6 k vues en 45 min) + fraîcheur 1.",
-   "taken_at_utc": "2026-11-21T19:55:00Z",
-   "post_id": "0018-21_11_2026-Clips"
-  },
-  {
-   "added_at_utc": "2026-11-21T19:14:33Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "fiabilite": "🟢",
-   "media_repo_path": "",
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "id": "c-20261121-1920-jltomy-gta6-lucia-jason-gros",
-   "topic": "Subathon Miami : JL Tomy découvre Lucia (et Jason) transformés par Wati et Fake dans GTA 6 (« le clip de l'année »)",
-   "topic_key": "jltomy-gta6-lucia-jason-gros-wati-fake",
-   "origin": "JLTomyTV (x.com/JLTomyTV)",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124206358853513277",
-   "primary_source": "https://x.com/JLTomyTV/status/2124206358853513277",
-   "source_time_utc": "2026-11-21T18:20:36Z",
-   "expires_at_utc": "2026-11-22T18:20:00Z",
-   "score": 6,
-   "mentions": [
-    "JLTomyTV",
-    "Actu2Twitch"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124206312988749824/vid/avc1/1920x1080/JwQk37jE6SxJXXIL.mp4?tag=29",
-   "angle": "JLTomyTV : « C'EST LE CLIP DE L'ANNÉE » (460 likes / 17,8 k vues en 20 min). Selon le relais Actu2Twitch (non vérifié à l'écran), Wati et Fake ont rendu Jason et Lucia énormément gros ; Lucia en tenue de nuit, JL Tomy explose de rire.",
-   "titles": [
-    "JL Tomy ouvre GTA 6 et découvre ce que *Wati et Fake* ont fait à Lucia",
-    "Wati et Fake ont *saboté* la partie GTA 6 de JL Tomy, sa réaction est folle"
-   ],
-   "note": "Clip de 38,8 s, 1080p 16:9, 23 Mo, non téléchargé dans queue/ (score 6). Vu en frames : Lucia en débardeur/culotte dans sa chambre rose puis le salon, cam de JL Tomy qui rit, sous-titres incrustés. ATTENTION : tenue légère (haut blanc + culotte) = limite pour l'exclusion nudité §4, à trancher au visionnage ; l'effet « énormément gros » n'est pas clairement visible dans les frames, ne pas le promettre dans le titre sans l'avoir vu. Audio non écouté. Score 6 : accroche 2 + hype 3 + traction 1 + fraîcheur 1 − risque tenue.",
-   "closed_at_utc": "2026-11-22T19:16:23Z"
-  },
-  {
-   "id": "c-20261122-0141-jltomy-gta6-orque-sauvetage",
-   "added_at_utc": "2026-11-22T01:15:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "JL Tomy libère une orque dans GTA 6 (subathon Miami) et ça vire au carnage : l'orque envoie Rosebud valser",
-   "topic_key": "jltomy-gta6-orque-sauvetage",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124302174754926994",
-   "primary_source": "https://x.com/JLTomyTV/status/2124302174754926994",
-   "source_time_utc": "2026-11-22T00:41:20Z",
-   "expires_at_utc": "2026-11-23T00:41:00Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "JLTomyTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124302069611819008/vid/avc1/1920x1080/UFok4vfLTM4qeXpn.mp4?tag=29",
-   "media_repo_path": "queue/c-20261122-0141-jltomy-gta6-orque-sauvetage.mp4",
-   "angle": "Événement aléatoire GTA 6 : sauver un animal tourne mal, orque qui explose/saute hors de l'eau, réaction de Jess et JL ; légende du streamer « jamais sauver les animaux dans ce jeu ». Durée 27 s, 16:9, sous-titres FR incrustés dans le jeu, face cam + overlay subathon.",
-   "titles": [
-    "Sauver une *orque* dans GTA 6 : la pire idée de JL Tomy",
-    "JL Tomy *libère* une orque dans GTA 6 et ça tourne au drame"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "Regarder les 27 s avant montage pour confirmer la chute exacte (qui l'orque attaque) avant de figer le titre. Vidéo native, allowDownload true. | pris par créneau 08h le 2026-11-22T06:55Z",
-   "post_id": "0019-22_11_2026-Clips"
-  },
-  {
-   "id": "c-20261122-0135-jltomy-gta6-evenements-aleatoires",
-   "added_at_utc": "2026-11-22T01:15:00Z",
-   "found_by": "veille-fr",
-   "type": "clip",
-   "topic": "JL Tomy enchaîne les événements aléatoires de GTA 6 : livreur Sahara en feu, voiture en flammes, PNJ qui supplie d'être aidé",
-   "topic_key": "jltomy-gta6-evenements-aleatoires",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124300663173648498",
-   "primary_source": "https://x.com/JLTomyTV/status/2124300663173648498",
-   "source_time_utc": "2026-11-22T00:35:20Z",
-   "expires_at_utc": "2026-11-23T00:35:00Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "JLTomyTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124300542360817664/vid/avc1/1920x1080/s_3t1O6MvgQnKwdS.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Compilation de 60 s d'événements aléatoires dans les rues de Miami (« Stylé les événements aléatoires sur GTA VI hein »). Long, moins punchy que l'orque ; thème proche du clip Kameto déjà publié.",
-   "titles": [
-    "JL Tomy tombe sur LE *PNJ* de GTA 6 qui brûle vif",
-    "Dans GTA 6, JL Tomy a *3 événements* aléatoires d'affilée"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "Score 6, pas de MP4 en file (< 7). À couper à ~30 s utiles. Vérifier la chute avant titre.",
-   "closed_at_utc": "2026-11-23T01:15:14Z"
-  },
-  {
    "id": "c-20261122-1316-yeney-gta6-verdict-30fps",
    "added_at_utc": "2026-11-22T13:16:01Z",
    "found_by": "veille",
@@ -185,100 +31,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-23T13:21:58Z"
-  },
-  {
-   "id": "c-20261122-1517-inoxtag-statue-grevin",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Inoxtag découvre sa statue au musée Grévin",
-   "topic_key": "inoxtag-statue-grevin",
-   "origin": "Inoxtag",
-   "source_tweet": "https://x.com/youtube_replay1/status/2124498112291205441",
-   "primary_source": "https://x.com/youtube_replay1/status/2124498112291205441",
-   "source_time_utc": "2026-11-22T13:39:55Z",
-   "expires_at_utc": "2026-11-23T13:39:55Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "youtube_replay1"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124487348318527488/vid/avc1/720x1058/UcODj3fTMK0qE7CT.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Inoxtag face à sa propre statue au Grévin et donne son avis : une réaction filmée qui surprend et fait rire.",
-   "titles": [
-    "Inoxtag découvre sa statue au Grévin : sa réaction",
-    "Quand Inoxtag tombe sur sa propre statue au Grévin"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "video deja montee par un tiers (9:16 sous-titres incrustes, relais youtube_replay1, source primaire non identifiee) : incompatible make_reel_916, risque originalite",
-   "taken_at_utc": "2026-11-22T16:53:03Z",
-   "closed_at_utc": "2026-11-22T16:53:22Z"
-  },
-  {
-   "id": "c-20261122-1517-platinside-pression-moto",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Platinside, le « pire coup de pression » avec le motard",
-   "topic_key": "platinside-pression-moto",
-   "origin": "Platinside",
-   "source_tweet": "https://x.com/Platinside/status/2124509138650792431",
-   "primary_source": "https://x.com/Platinside/status/2124509138650792431",
-   "source_time_utc": "2026-11-22T14:23:44Z",
-   "expires_at_utc": "2026-11-23T14:23:44Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "Platinside"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124509029560913920/vid/avc1/1920x1080/vUVBUZiXpW2K8Zde.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Le créateur vit une séquence de pression en GTA, avec un motard qui surgit au bon moment.",
-   "titles": [
-    "Platinside : le pire coup de pression, en GTA",
-    "Le motard qui fait basculer la session de Platinside"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "clip tres sombre, punchline (motard) illisible en 2 s, pas de webcam, traction faible (61 likes/8k vues)",
-   "taken_at_utc": "2026-11-22T16:53:24Z",
-   "closed_at_utc": "2026-11-22T16:54:34Z"
-  },
-  {
-   "id": "c-20261122-1517-fortnite-equipage-oscar",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Fortnite : l'équipage d'Oscar débarque (teaser)",
-   "topic_key": "fortnite-equipage-oscar",
-   "origin": "Fortnite",
-   "source_tweet": "https://x.com/Fortnite/status/2124503269900947616",
-   "primary_source": "https://x.com/Fortnite/status/2124503269900947616",
-   "source_time_utc": "2026-11-22T14:00:25Z",
-   "expires_at_utc": "2026-11-23T14:00:25Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "Fortnite",
-    "FortniteFR"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124503168403009536/vid/avc1/1280x720/WDQMdMqZ22O1sLmh.mp4?tag=16",
-   "media_repo_path": "",
-   "angle": "Teaser officiel de Fortnite pour l'arrivée de l'équipage d'Oscar, très partagé sur X.",
-   "titles": [
-    "Fortnite : l'équipage d'Oscar fait son entrée",
-    "L'équipage d'Oscar débarque dans Fortnite"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "durée source 5 s (< 8 s minimum), teaser éditeur",
-   "taken_at_utc": "2026-11-23T06:56:47Z",
-   "closed_at_utc": "2026-11-23T06:57:34Z"
   },
   {
    "id": "c-20261122-1517-domingo-csc-suspect",
@@ -372,306 +124,6 @@
    "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
-   "id": "c-20261122-1517-fortnite-teto-treasure-w4",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fortnite : skin Golden Kasane Teto et Treasure Hunt semaine 4 (fuites)",
-   "topic_key": "fortnite-teto-treasure-w4",
-   "origin": "HYPEX",
-   "source_tweet": "https://x.com/HYPEX/status/2124495780899697084",
-   "primary_source": "https://x.com/HYPEX/status/2124495780899697084",
-   "source_time_utc": "2026-11-22T13:30:40Z",
-   "expires_at_utc": "2026-11-22T19:30:40Z",
-   "fiabilite": "🟠",
-   "score": 7,
-   "mentions": [
-    "HYPEX",
-    "ShiinaBR"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Les insiders HYPEX et ShiinaBR dévoilent le skin Golden Kasane Teto et le trailer treasure hunt de la semaine 4, très partagés.",
-   "titles": [
-    "Fortnite : le skin Golden Kasane Teto fuite",
-    "Fortnite Treasure Hunt semaine 4 : le trailer leaké"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "plus un leak: skin Golden Teto deja disponible (Pirate Chest, rotation hebdo), source unique HYPEX, pas de visuel officiel Fortnite dans assets/keyart, doute = pas de publication",
-   "hot": true,
-   "hot_reason": "leak",
-   "taken_at_utc": "2026-11-22T16:39:35Z",
-   "closed_at_utc": "2026-11-22T16:39:55Z"
-  },
-  {
-   "id": "c-20261122-1517-gta6-metacritic-user-score",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : score joueurs Metacritic à 5,6",
-   "topic_key": "gta6-metacritic-user-score",
-   "origin": "Metacritic",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124503440655298660",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124503440655298660",
-   "source_time_utc": "2026-11-22T14:01:06Z",
-   "expires_at_utc": "2026-11-22T20:01:06Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "InsiderGamingIG",
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Le score joueurs de GTA 6 tombe à 5,6 sur plus de 85 000 notes, alors que la presse reste à 99 : fracture entre joueurs et critiques.",
-   "titles": [
-    "GTA 6 : le score joueurs Metacritic chute à 5,6",
-    "GTA 6 : 99 chez la presse, 5,6 chez les joueurs"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "doublon : sujet Metacritic 99 presse / joueurs deja publie le 21/11 (carrousel 0014, 5,4) ; 5,6 = simple evolution, pas de fait nouveau",
-   "closed_at_utc": "2026-11-22T16:52:54Z"
-  },
-  {
-   "id": "c-20261122-1517-nisqy-revenus-twitch-pub",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Nisqy : la pub pèse plus de la moitié de ses revenus Twitch",
-   "topic_key": "nisqy-revenus-twitch-pub",
-   "origin": "Nisqy",
-   "source_tweet": "https://x.com/riyadinhoo_/status/2124519509537214706",
-   "primary_source": "https://x.com/riyadinhoo_/status/2124519509537214706",
-   "source_time_utc": "2026-11-22T15:04:57Z",
-   "expires_at_utc": "2026-11-22T21:04:57Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un chiffre sur les revenus Twitch d'un streamer français connu : la pub dépasserait la moitié des gains, à confirmer.",
-   "titles": [
-    "Nisqy : la pub représente plus de la moitié de ses revenus Twitch",
-    "Revenus Twitch de Nisqy : la pub domine"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T21:15:01Z"
-  },
-  {
-   "id": "c-20261122-1715-gta6-darts-bowling-rob-nelson",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Rockstar explique l'absence de fléchettes et de bowling dans GTA 6",
-   "topic_key": "gta6-darts-bowling-rob-nelson",
-   "origin": "Rockstar North (Rob Nelson, co-studio head)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124535124733653219",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124535124733653219",
-   "source_time_utc": "2026-11-22T16:07:00Z",
-   "expires_at_utc": "2026-11-22T22:07:00Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Une explication directe d'un dirigeant de Rockstar sur un choix très discuté de GTA 6, qui alimente le débat chez les joueurs.",
-   "titles": [
-    "Pas de fléchettes ni de bowling dans GTA 6 : Rockstar s'explique",
-    "Rockstar justifie l'absence de fléchettes et de bowling dans GTA 6"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "actu périmée : source primaire = interview VGC du 19 nov. (>6 h) ; aucune citation sur le bowling",
-   "closed_at_utc": "2026-11-22T19:53:27Z"
-  },
-  {
-   "id": "c-20261122-1715-gta6-pluie-absente",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Des joueurs se plaignent de l'absence de pluie dans GTA 6",
-   "topic_key": "gta6-pluie-absente",
-   "origin": "non identifié (relais FrenchRapUS)",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124529400595005644",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124529400595005644",
-   "source_time_utc": "2026-11-22T15:44:15Z",
-   "expires_at_utc": "2026-11-22T21:44:15Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "FrenchRapUS"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Une météo annoncée comme avancée par Rockstar remise en cause par des milliers de joueurs, sujet fort sur le réalisme du jeu.",
-   "titles": [
-    "GTA 6 : toujours pas de pluie ? Les joueurs réclament la météo promise",
-    "Pluie, orages, ouragans : GTA 6 déçoit les joueurs sur la météo"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
-   "id": "c-20261122-1715-gta6-hommage-mere-developpeur",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Un développeur de GTA 6 rend hommage à sa mère dans le jeu",
-   "topic_key": "gta6-hommage-mere-developpeur",
-   "origin": "non identifié (développeur de GTA 6)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124537018315158006",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124537018315158006",
-   "source_time_utc": "2026-11-22T16:14:31Z",
-   "expires_at_utc": "2026-11-22T22:14:31Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "FrenchRapUS",
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Histoire personnelle et émotionnelle : un tribut à sa mère, lié à GTA Vice City, qui circule très largement sur X.",
-   "titles": [
-    "Un développeur de GTA 6 rend hommage à sa mère disparue dans le jeu",
-    "Le tribut émouvant d'un développeur de GTA 6 à sa mère"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
-   "id": "c-20261122-1715-wankil-aventure-gta6",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Wankil se lance dans GTA 6 avec une nouvelle vidéo",
-   "topic_key": "wankil-aventure-gta6",
-   "origin": "WankilStudio",
-   "source_tweet": "https://x.com/WankilStudio/status/2124522602450256089",
-   "primary_source": "https://x.com/WankilStudio/status/2124522602450256089",
-   "source_time_utc": "2026-11-22T15:17:14Z",
-   "expires_at_utc": "2026-11-22T21:17:14Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Nouvelle vidéo d'un des plus gros créateurs francophones sur GTA 6, très attendue par leur audience.",
-   "titles": [
-    "Wankil se lance dans GTA 6 dans une nouvelle vidéo",
-    "La nouvelle aventure GTA 6 de Wankil Studio"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
-   "id": "c-20261122-1715-clash-royale-ia-triche-recrutement",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Clash Royale recrute le créateur de son outil de triche IA",
-   "topic_key": "clash-royale-ia-triche-recrutement",
-   "origin": "Supercell (Clash Royale)",
-   "source_tweet": "https://x.com/Dexerto/status/2124533367630635203",
-   "primary_source": "https://x.com/Dexerto/status/2124533367630635203",
-   "source_time_utc": "2026-11-22T16:00:01Z",
-   "expires_at_utc": "2026-11-22T22:00:01Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "Dexerto"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Décision inattendue de Supercell : embaucher le créateur d'un outil de triche pour lutter contre les tricheurs.",
-   "titles": [
-    "Clash Royale embauche le créateur de son outil de triche IA",
-    "Supercell recrute le créateur d'un outil de triche IA sur Clash Royale"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
-   "id": "c-20261122-1715-ubisoft-licenciements-166",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Ubisoft licencie 166 personnes avant son rapport de résultats",
-   "topic_key": "ubisoft-licenciements-166",
-   "origin": "InsiderGaming",
-   "source_tweet": "https://x.com/InsiderGamingIG/status/2124533364862619943",
-   "primary_source": "https://x.com/InsiderGamingIG/status/2124533364862619943",
-   "source_time_utc": "2026-11-22T16:00:00Z",
-   "expires_at_utc": "2026-11-22T22:00:00Z",
-   "fiabilite": "🟠",
-   "score": 5,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Nouveau plan social chez un gros éditeur français, à quelques jours de ses résultats financiers.",
-   "titles": [
-    "Ubisoft supprimerait 166 postes avant ses résultats",
-    "Ubisoft licencie 166 personnes à quelques jours de ses résultats"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
-   "id": "c-20261122-1715-lec-transferts-2027-tier1",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Quatre joueurs européens de Tier 1 attendus hors LEC en 2027",
-   "topic_key": "lec-transferts-2027-tier1",
-   "origin": "Sheep Esports",
-   "source_tweet": "https://x.com/Sheep_Esports/status/2124543428990239122",
-   "primary_source": "https://x.com/Sheep_Esports/status/2124543428990239122",
-   "source_time_utc": "2026-11-22T16:40:00Z",
-   "expires_at_utc": "2026-11-22T22:40:00Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Mercato LoL : des joueurs européens de haut niveau sur le départ, sujet suivi par la communauté esport.",
-   "titles": [
-    "Quatre joueurs européens de haut niveau attendus hors LEC en 2027",
-    "Le mercato LoL se précise : quatre joueurs de Tier 1 quittent la LEC"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-22T23:15:27Z"
-  },
-  {
    "id": "c-20261122-1715-domingo-braqueur-pa",
    "added_at_utc": "2026-11-22T17:15:54Z",
    "found_by": "veille",
@@ -700,100 +152,6 @@
    "closed_at_utc": "2026-11-23T15:46:04Z"
   },
   {
-   "id": "c-20261122-1916-fortnite-peely-design-abandonne",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Premier design abandonné de Peely dans Fortnite repéré",
-   "topic_key": "fortnite-peely-design-abandonne",
-   "origin": "payattntion (repéré par HYPEX)",
-   "source_tweet": "https://x.com/HYPEX/status/2124572774937272416",
-   "primary_source": "https://x.com/HYPEX/status/2124572774937272416",
-   "source_time_utc": "2026-11-22T18:36:36Z",
-   "expires_at_utc": "2026-11-23T00:36:36Z",
-   "fiabilite": "🟠",
-   "score": 7,
-   "mentions": [
-    "HYPEX"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un design jamais sorti d'un personnage iconique de Fortnite : curiosité forte pour la communauté.",
-   "titles": [
-    "Voici le premier design abandonné de Peely dans Fortnite",
-    "Fortnite : le Peely qui n'a jamais été utilisé refait surface"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "pas une actu brulante: design Peely abandonne, relai unique payattntion/HYPEX, fiabilite orange, 1 mention, ni leak de contenu a venir ni embrouille, pas de visuel officiel",
-   "hot": true,
-   "hot_reason": "leak",
-   "taken_at_utc": "2026-11-22T19:17:25Z",
-   "closed_at_utc": "2026-11-22T19:17:38Z"
-  },
-  {
-   "id": "c-20261122-1916-gta6-matt-green-hommage-mere",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Un développeur de GTA 6 rend hommage à sa mère dans le jeu",
-   "topic_key": "gta6-matt-green-hommage-mere",
-   "origin": "Matt Green (développeur Rockstar)",
-   "source_tweet": "https://x.com/ShadesFrance/status/2124553331523592249",
-   "primary_source": "https://x.com/ShadesFrance/status/2124553331523592249",
-   "source_time_utc": "2026-11-22T17:19:21Z",
-   "expires_at_utc": "2026-11-22T23:19:21Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "ShadesFrance"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Histoire personnelle et émouvante qui relie GTA 6 à Vice City : très partageable.",
-   "titles": [
-    "Un développeur de GTA 6 glisse un hommage à sa mère dans le jeu",
-    "GTA 6 : l'hommage émouvant d'un développeur à sa mère disparue"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T01:15:14Z"
-  },
-  {
-   "id": "c-20261122-1916-gta6-squeezie-systeme-police",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Squeezie critique le nouveau système de police de GTA 6",
-   "topic_key": "gta6-squeezie-systeme-police",
-   "origin": "xSqueeZie (Squeezie)",
-   "source_tweet": "https://x.com/LaTwitchance/status/2124571700704461179",
-   "primary_source": "https://x.com/LaTwitchance/status/2124571700704461179",
-   "source_time_utc": "2026-11-22T18:32:20Z",
-   "expires_at_utc": "2026-11-23T18:32:20Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "LaTwitchance"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124571687140077568/vid/avc1/576x1024/7qhjooG4Sn_2THlU.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un créateur très suivi réagit en direct à une mécanique du jeu : ça parle à tout le monde.",
-   "titles": [
-    "Squeezie trouve le nouveau système de police de GTA 6 anxiogène",
-    "GTA 6 : Squeezie n'aime pas le nouveau système de police"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "source = montage vertical 576x1024 d'un relais (LaTwitchance), légende rouge incrustée + watermark, écran de carte statique, pas de gameplay",
-   "taken_at_utc": "2026-11-22T19:53:33Z",
-   "closed_at_utc": "2026-11-22T19:54:32Z"
-  },
-  {
    "id": "c-20261122-1916-twitch-kameto-nouveau-concept",
    "added_at_utc": "2026-11-22T19:16:23Z",
    "found_by": "veille",
@@ -820,183 +178,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
-   "id": "c-20261122-1916-gta6-tesla-piege-systeme-securite",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Un joueur de GTA 6 se fait piéger par le système de sécurité d'une Tesla",
-   "topic_key": "gta6-tesla-piege-systeme-securite",
-   "origin": "ayeejuju (juju)",
-   "source_tweet": "https://x.com/ayeejuju/status/2124549750548770823",
-   "primary_source": "https://x.com/ayeejuju/status/2124549750548770823",
-   "source_time_utc": "2026-11-22T19:08:18Z",
-   "expires_at_utc": "2026-11-23T19:08:18Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "LaTwitchance"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124549709188710400/vid/avc1/772x604/YrhIPaY4t6ns9yHE.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un vol de voiture qui tourne mal dans GTA 6 : scène courte, drôle et lisible d'un coup d'œil.",
-   "titles": [
-    "Il vole une Tesla dans GTA 6 et se fait piéger par la voiture",
-    "GTA 6 : la Tesla qui enferme son voleur"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "clip 772x604 basse déf., créateur peu connu, audio anglais avec insultes lourdes, juge impossible >=7",
-   "taken_at_utc": "2026-11-22T19:54:35Z",
-   "closed_at_utc": "2026-11-22T19:54:50Z"
-  },
-  {
-   "id": "c-20261122-1916-gta6-evolution-long-terme-carte",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 pourrait évoluer pendant des années avec une carte qui s'agrandit",
-   "topic_key": "gta6-evolution-long-terme-carte",
-   "origin": "source non identifiée (« plusieurs informations », relayé par FrenchRapUS)",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124563341188444540",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124563341188444540",
-   "source_time_utc": "2026-11-22T17:59:07Z",
-   "expires_at_utc": "2026-11-22T23:59:07Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Rumeur sur le contenu après la sortie : un sujet qui fait discuter sur la carte.",
-   "titles": [
-    "GTA 6 : Rockstar prévoirait d'agrandir la carte au fil des années",
-    "Rockstar pourrait faire évoluer GTA 6 pendant des années"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T01:15:14Z"
-  },
-  {
-   "id": "c-20261122-1916-gta6-relations-jason-lucia-conception",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Rockstar détaille la conception des relations entre Jason et Lucia dans GTA 6",
-   "topic_key": "gta6-relations-jason-lucia-conception",
-   "origin": "Rockstar (Mark Tennant, VP animation)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124578913191911703",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124578913191911703",
-   "source_time_utc": "2026-11-22T18:25:33Z",
-   "expires_at_utc": "2026-11-23T00:25:33Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "InsiderGamingIG"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Déclaration d'un dirigeant de Rockstar sur la conception des relations : sujet qui fait réagir.",
-   "titles": [
-    "Rockstar détaille la conception des relations de Jason et Lucia dans GTA 6",
-    "GTA 6 : comment Rockstar a pensé la relation entre Jason et Lucia"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "actu périmée : interview Game Informer du 19 nov. (>6 h)",
-   "closed_at_utc": "2026-11-22T19:55:02Z"
-  },
-  {
-   "id": "c-20261122-1916-cod-activision-brevet-pnj-chat-vocal",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Activision brevète des PNJ qui apprennent à insulter à partir du chat vocal",
-   "topic_key": "cod-activision-brevet-pnj-chat-vocal",
-   "origin": "Activision (brevet)",
-   "source_tweet": "https://x.com/Dexerto/status/2124578665581469944",
-   "primary_source": "https://x.com/Dexerto/status/2124578665581469944",
-   "source_time_utc": "2026-11-22T19:00:01Z",
-   "expires_at_utc": "2026-11-23T01:00:01Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Brevet original autour de CoD et de l'IA dans les jeux : idée simple qui intrigue.",
-   "titles": [
-    "Activision brevète des PNJ qui apprennent à insulter les joueurs",
-    "CoD : un brevet Activision pour des PNJ qui apprennent à trash-talk"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T01:15:14Z"
-  },
-  {
-   "id": "c-20261122-1916-ubisoft-ac-jade-toujours-en-dev",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Ubisoft confirme qu'Assassin's Creed Jade est toujours en développement",
-   "topic_key": "ubisoft-ac-jade-toujours-en-dev",
-   "origin": "Ubisoft (CFO)",
-   "source_tweet": "https://x.com/InsiderGamingIG/status/2124563567055880315",
-   "primary_source": "https://x.com/InsiderGamingIG/status/2124563567055880315",
-   "source_time_utc": "2026-11-22T18:00:01Z",
-   "expires_at_utc": "2026-11-23T00:00:01Z",
-   "fiabilite": "🟢",
-   "score": 5,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Confirmation officielle sur une franchise connue : info simple mais attendue.",
-   "titles": [
-    "Ubisoft confirme qu'Assassin's Creed Jade est toujours en développement",
-    "AC Jade : Ubisoft confirme que le jeu avance toujours"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T01:15:14Z"
-  },
-  {
-   "id": "c-20261122-2115-ishowspeed-usain-bolt-sprint",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Usain Bolt estime qu'IShowSpeed pourrait devenir sprinteur professionnel après son 100 m",
-   "topic_key": "ishowspeed-usain-bolt-sprint",
-   "origin": "Usain Bolt",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124600071895515462",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124600071895515462",
-   "source_time_utc": "2026-11-22T20:25:04Z",
-   "expires_at_utc": "2026-11-23T02:25:04Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "FrenchRapUS",
-    "LaTwitchance",
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un champion olympique légendaire qui adoube un créateur américain très suivi en France, avec un chrono de 100 m qui alimente le buzz.",
-   "titles": [
-    "Usain Bolt pense qu'IShowSpeed pourrait devenir sprinteur professionnel",
-    "IShowSpeed court le 100 m et Usain Bolt se dit impressionné"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
   },
   {
    "id": "c-20261122-2115-inoxtag-gmk-dents",
@@ -1028,389 +209,6 @@
    "note": "story Instagram reposte par un relais (youtube_replay1), createur d'origine non creditable sur X, sujet = moquerie physique (dents) avec reponses toxiques",
    "taken_at_utc": "2026-11-23T10:52:08Z",
    "closed_at_utc": "2026-11-23T10:53:50Z"
-  },
-  {
-   "id": "c-20261122-2115-cyberleek-menace-build-xbox-gta6",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Cyberleek menacerait de publier la version Xbox de GTA 6",
-   "topic_key": "cyberleek-menace-build-xbox-gta6",
-   "origin": "Cyberleek",
-   "source_tweet": "https://x.com/InsiderGamingIG/status/2124593763909865571",
-   "primary_source": "https://x.com/InsiderGamingIG/status/2124593763909865571",
-   "source_time_utc": "2026-11-22T20:00:01Z",
-   "expires_at_utc": "2026-11-23T02:00:01Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "InsiderGamingIG"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Sujet GTA 6 au plus haut de l'attention, mais l'information reste une menace de fuite non confirmée relayée par Insider Gaming.",
-   "titles": [
-    "Un leaker de GTA 6 menacerait de publier la version Xbox du jeu",
-    "Cyberleek menace de fuiter le build Xbox de GTA 6"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261122-2115-activision-brevet-ia-trash-talk",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Activision dépose un brevet pour des ennemis IA qui apprennent à chambrer les joueurs",
-   "topic_key": "activision-brevet-ia-trash-talk",
-   "origin": "Activision",
-   "source_tweet": "https://x.com/_Tom_Henderson_/status/2124588362853999068",
-   "primary_source": "https://x.com/_Tom_Henderson_/status/2124588362853999068",
-   "source_time_utc": "2026-11-22T19:38:33Z",
-   "expires_at_utc": "2026-11-23T01:38:33Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "InsiderGamingIG",
-    "_Tom_Henderson_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un brevet concret et un peu décalé sur l'IA dans Call of Duty, facile à résumer en une phrase.",
-   "titles": [
-    "Activision brevète des ennemis IA qui apprennent à chambrer les joueurs",
-    "Un brevet d'Activision veut des IA qui copient le trash talk des joueurs"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261122-2115-isaac-repentance-musique-ia-steam",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Repentance+ de The Binding of Isaac review-bombé sur Steam après de la musique IA dans un mode inspiré de GTA 6",
-   "topic_key": "isaac-repentance-musique-ia-steam",
-   "origin": "Edmund McMillen",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124593762508923228",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124593762508923228",
-   "source_time_utc": "2026-11-22T20:00:00Z",
-   "expires_at_utc": "2026-11-23T02:00:00Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Polémique IA dans un jeu indé culte, avec une réaction du créateur et un retrait d'urgence des pistes.",
-   "titles": [
-    "Isaac Repentance+ review-bombé après la découverte de musiques IA",
-    "The Binding of Isaac retire ses musiques IA en urgence après la polémique"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261122-2115-ibai-raid-streamer-gta6",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Ibai envoie sa communauté raider un streamer GTA 6 qui fond en larmes",
-   "topic_key": "ibai-raid-streamer-gta6",
-   "origin": "Ibai",
-   "source_tweet": "https://x.com/Dexerto/status/2124593762160853081",
-   "primary_source": "https://x.com/Dexerto/status/2124593762160853081",
-   "source_time_utc": "2026-11-22T20:00:00Z",
-   "expires_at_utc": "2026-11-23T02:00:00Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "Dexerto"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un raid organisé par Ibai transforme une audience quasi nulle en pic soudain, avec une réaction émotionnelle du streamer.",
-   "titles": [
-    "Ibai raid un streamer GTA 6 et le fait fondre en larmes",
-    "Le raid surprise d'Ibai qui fait pleurer un streamer GTA 6"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261122-2315-jl-miami-full-tilt-2026-11-22",
-   "added_at_utc": "2026-11-22T23:15:27Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "JL Miami : Samuel part en full tilt",
-   "topic_key": "jl-miami-full-tilt-2026-11-22",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124613812481609815",
-   "primary_source": "https://x.com/JLTomyTV/status/2124613812481609815",
-   "source_time_utc": "2026-11-22T21:19:40Z",
-   "expires_at_utc": "2026-11-23T21:19:40Z",
-   "fiabilite": "🟢",
-   "score": 8,
-   "mentions": [],
-   "media_url": "https://video.twimg.com/amplify_video/2124613710312255488/vid/avc1/1280x720/EuIoTuaZZD5WgzVD.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Réaction explosive d'un créateur de la série JL Miami, très partagée (442 likes, 39k vues pour 111k abonnés).",
-   "titles": [
-    "Dans JL Miami, Samuel part complètement en full tilt",
-    "JL Miami : le moment qui fait exploser les réactions"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "contexte incertain : audio non vérifié, fils de réponses = embrouille (invitée/forceur) ; titre non vérifiable, doute = pas de publication",
-   "taken_at_utc": "2026-11-23T06:53:27Z",
-   "closed_at_utc": "2026-11-23T06:56:32Z"
-  },
-  {
-   "id": "c-20261122-2315-ishowspeed-gta6-55h-2026-11-22",
-   "added_at_utc": "2026-11-22T23:15:27Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "IShowSpeed a joué 55 h d'affilée pour finir GTA 6",
-   "topic_key": "ishowspeed-gta6-55h-2026-11-22",
-   "origin": "IShowSpeed",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124620782907293780",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124620782907293780",
-   "source_time_utc": "2026-11-22T21:47:22Z",
-   "expires_at_utc": "2026-11-23T03:47:22Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Marathon de 55 h non-stop sur GTA 6 annoncé par IShowSpeed lui-même, suivi de 20 h de sommeil ; très forte notoriété du créateur.",
-   "titles": [
-    "IShowSpeed a joué 55 h d'affilée pour finir GTA 6",
-    "IShowSpeed dort 20 h après son marathon GTA 6"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261122-2315-twitch-gta6-ratio-streamers-2026-11-22",
-   "added_at_utc": "2026-11-22T23:15:27Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : les streamers Twitch bondissent de 30 %",
-   "topic_key": "twitch-gta6-ratio-streamers-2026-11-22",
-   "origin": "zachbussey",
-   "source_tweet": "https://x.com/zachbussey/status/2124613377427136676",
-   "primary_source": "https://x.com/zachbussey/status/2124613377427136676",
-   "source_time_utc": "2026-11-22T21:17:57Z",
-   "expires_at_utc": "2026-11-23T03:17:57Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Chiffres Twitch du jour : pic de viewers +11 % mais pic de streamers +30 % grâce à GTA 6, donc une audience diluée entre plus de créateurs.",
-   "titles": [
-    "GTA 6 : les streamers sur Twitch bondissent de 30 %, les viewers de 11 %",
-    "Sur Twitch, GTA 6 attire plus de streamers que de spectateurs"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T05:15:16Z"
-  },
-  {
-   "id": "c-20261123-0115-doigby-feat-anyme-gazo",
-   "added_at_utc": "2026-11-23T01:15:14Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Doigby laisse échapper un feat secret entre Anyme et Gazo pendant un live",
-   "topic_key": "doigby-feat-anyme-gazo",
-   "origin": "Doigby",
-   "source_tweet": "https://x.com/LaTwitchance/status/2124658291053670435",
-   "primary_source": "https://x.com/LaTwitchance/status/2124658291053670435",
-   "source_time_utc": "2026-11-23T00:16:25Z",
-   "expires_at_utc": "2026-11-23T06:16:25Z",
-   "fiabilite": "🟠",
-   "score": 8,
-   "mentions": [
-    "LaTwitchance",
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Une collab non annoncée révélée par accident en live, avec Anyme visiblement gêné : le genre de révélation qui fait tourner les clips et les spéculations.",
-   "titles": [
-    "Doigby lâche par erreur un feat secret entre Anyme et Gazo",
-    "Anyme embarrassé : un feat avec Gazo révélé en live par Doigby"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T06:52:57Z"
-  },
-  {
-   "id": "c-20261123-0115-tysmey-sale-retour",
-   "added_at_utc": "2026-11-23T01:15:14Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Tysmey Salé fait son retour sur TikTok après 4 ans d'inactivité",
-   "topic_key": "tysmey-sale-retour",
-   "origin": "Tysmey Salé",
-   "source_tweet": "https://x.com/riyadinhoo_/status/2124657935905124826",
-   "primary_source": "https://x.com/riyadinhoo_/status/2124657935905124826",
-   "source_time_utc": "2026-11-23T00:15:00Z",
-   "expires_at_utc": "2026-11-23T06:15:00Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Une légende de TikTok France qui revient après quatre ans de silence : nostalgie forte chez les 18-25 ans et retour très visible.",
-   "titles": [
-    "La légende de TikTok Tysmey Salé fait son grand retour",
-    "Tysmey Salé revient après 4 ans d'inactivité sur TikTok"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T06:52:57Z"
-  },
-  {
-   "id": "c-20261123-0115-warshaw-ia-krach-jeu-video",
-   "added_at_utc": "2026-11-23T01:15:14Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Howard Scott Warshaw (créateur de E.T.) prévient que l'IA pourrait provoquer un nouveau krach du jeu vidéo",
-   "topic_key": "warshaw-ia-krach-jeu-video",
-   "origin": "Howard Scott Warshaw",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124655417401991498",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124655417401991498",
-   "source_time_utc": "2026-11-23T00:05:00Z",
-   "expires_at_utc": "2026-11-23T06:05:00Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un vétéran du jeu vidéo qui compare l'IA au krach de 1983 et réclame de meilleurs filtres sur Steam : débat sur l'avenir de l'industrie.",
-   "titles": [
-    "Le créateur de E.T. craint un nouveau krach du jeu vidéo à cause de l'IA",
-    "Howard Scott Warshaw : l'IA risque de noyer Steam sous les jeux médiocres"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T06:52:57Z"
-  },
-  {
-   "id": "c-20261123-0515-djilsi-roi-du-silence-4",
-   "added_at_utc": "2026-11-23T05:15:16Z",
-   "found_by": "sources:youtube_record",
-   "type": "actu",
-   "topic": "Djilsi : « Roi du Silence 4 » avec Inoxtag, Seb et Sofyan fait exploser les compteurs YouTube",
-   "topic_key": "djilsi-roi-du-silence-4",
-   "origin": "Djilsi",
-   "source_tweet": "https://www.youtube.com/watch?v=4eHzsUUo69w",
-   "primary_source": "https://www.youtube.com/watch?v=4eHzsUUo69w",
-   "source_time_utc": "2026-11-23T03:26:55Z",
-   "expires_at_utc": "2026-11-23T09:26:55Z",
-   "fiabilite": "🟢",
-   "score": 8,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Palier de 2 M de vues atteint en 41 h, avec Inoxtag, Seb et Sofyan au casting.",
-   "titles": [
-    "Roi du Silence 4 : Djilsi et Inoxtag font exploser YouTube",
-    "Djilsi frappe fort avec Roi du Silence 4 et son casting Inoxtag, Seb et Sofyan"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "recoupement 2 médias impossible (aucun média fiable trouvé pour le palier 2 M de vues, source YouTube seule)",
-   "closed_at_utc": "2026-11-23T06:53:23Z"
-  },
-  {
-   "id": "c-20261123-0515-amixem-cache-cache-camouflage-7",
-   "added_at_utc": "2026-11-23T05:15:16Z",
-   "found_by": "sources:youtube_record",
-   "type": "actu",
-   "topic": "Amixem : « Cache-cache édition camouflage extrême #7 » franchit le million de vues en 11 h",
-   "topic_key": "amixem-cache-cache-camouflage-7",
-   "origin": "Amixem",
-   "source_tweet": "https://www.youtube.com/watch?v=wGZKQoYpRts",
-   "primary_source": "https://www.youtube.com/watch?v=wGZKQoYpRts",
-   "source_time_utc": "2026-11-23T03:26:54Z",
-   "expires_at_utc": "2026-11-23T09:26:54Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un million de vues en 11 h pour le nouvel épisode du Cache-cache camouflage extrême.",
-   "titles": [
-    "Cache-cache camouflage extrême : Amixem explose les compteurs en quelques heures",
-    "Amixem relance son Cache-cache camouflage extrême et fait un carton"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "recoupement 2 médias impossible (palier de vues non relayé), info mineure",
-   "closed_at_utc": "2026-11-23T06:56:41Z"
-  },
-  {
-   "id": "c-20261123-0515-anyme-leto-lucia-polemique",
-   "added_at_utc": "2026-11-23T05:15:16Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Anyme revient sur la polémique Leto autour du refus de jouer Lucia dans GTA 6",
-   "topic_key": "anyme-leto-lucia-polemique",
-   "origin": "Anyme",
-   "source_tweet": "https://x.com/LaTwitchance/status/2124687537591767082",
-   "primary_source": "https://x.com/LaTwitchance/status/2124687537591767082",
-   "source_time_utc": "2026-11-23T02:12:38Z",
-   "expires_at_utc": "2026-11-23T08:12:38Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "LaTwitchance"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Une polémique entre streamers sur un personnage féminin de GTA 6, relancée par Anyme.",
-   "titles": [
-    "Anyme revient sur la polémique Leto autour de Lucia dans GTA 6",
-    "Polémique Leto : Anyme répond sur le refus de jouer Lucia"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T09:14:53Z"
   },
   {
    "id": "c-20261123-0717-gta6-missions-monde-ouvert-design",
@@ -2096,8 +894,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261123-1918-fortnite-community-day-2-nov26",
@@ -2340,8 +1139,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261123-2117-jlmiami-anis-samuel",
@@ -2367,8 +1167,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261123-2321-kameto-slot-lec-25m",
@@ -2571,8 +1372,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0118-gta6-39m-joueurs-ps5",
@@ -2764,8 +1566,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0515-aishah-sofey-vol-voiture-live",
@@ -2794,8 +1597,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0515-gta6-xbox-cloud-remote-play",
@@ -2914,8 +1718,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0714-jlmiami-tensions-20261124",
@@ -2943,8 +1748,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0714-anyme-gp-explorer-confession-20261124",
@@ -3000,8 +1806,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-0915-fortnite-collabs-puss-in-boots-ddlc-nov2",
@@ -3058,8 +1865,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1115-fortnite-doki-doki-collab",
@@ -3116,8 +1924,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1115-fortnite-ember-blade-collab",
@@ -3145,8 +1954,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1115-gta6-easter-egg-mario-chapeaux",
@@ -3172,8 +1982,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1115-god-of-war-serie-deborah-ann-woll",
@@ -3201,8 +2012,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-gta6-acteurs-jason-lucia-2016",
@@ -3230,8 +2042,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-dosseh-dieu-donne-jutilise-part3",
@@ -3260,8 +2073,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-gta6-easter-eggs-hotel-vice-city",
@@ -3290,8 +2104,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-maj-golden-charlotte-jones-twitch-drop",
@@ -3319,8 +2134,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-darrah-bioware-ea-dragon-age",
@@ -3349,8 +2165,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
    "id": "c-20261124-1320-paduck-bnk-fearx-youth-lck-cl",
@@ -3378,8 +2195,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-25T09:38:25Z"
   }
  ]
 }
