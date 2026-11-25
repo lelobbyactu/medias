@@ -807,7 +807,7 @@
    },
    "hint": 4,
    "first_seen_utc": "2026-11-25T01:16:05Z",
-   "updated_utc": "2026-11-25T02:35:35Z"
+   "updated_utc": "2026-11-25T02:40:42Z"
   },
   {
    "id": "trend-tibo-inshape-20261125",
@@ -820,12 +820,13 @@
     "articles": "L’influenceur Tibo InShape dépose plainte après une action devant son domicile revendiquée par un groupuscule identitaire Drapeau français transformé en voile islamique : Tibo InShape porte plainte ap"
    },
    "hint": 4,
-   "first_seen_utc": "2026-11-25T02:35:35Z"
+   "first_seen_utc": "2026-11-25T02:35:35Z",
+   "updated_utc": "2026-11-25T02:40:42Z"
   }
  ],
- "updated_utc": "2026-11-25T02:35:35Z",
+ "updated_utc": "2026-11-25T02:40:42Z",
  "report": {
-  "twitch": "43 chaînes suivies, 95 lives FR lus, 0 clips retenus",
+  "twitch": "43 chaînes suivies, 94 lives FR lus, 0 clips retenus",
   "youtube": "34 chaînes, 44 vidéos de moins de 72 h",
   "reddit": "pas encore (dernier passage 2026-11-24T20:57:00Z)",
   "steam": "top 25 lu",
