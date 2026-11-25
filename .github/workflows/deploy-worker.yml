@@ -34,11 +34,14 @@ jobs:
             if [ -z "${!v}" ]; then echo "::error::secret manquant : $v"; manque=1; fi
           done
           [ $manque -eq 0 ]
-          ok() { echo "$1 : $2"; [ "$2" = 200 ] || { echo "::error::$1 refusé (code $2)"; exit 1; }; }
+          ko=0
+          ok() { echo "$1 : $2"; [ "$2" = 200 ] || { echo "::error::$1 refusé (code $2)"; ko=1; }; }
+          [[ "$TELEGRAM_BOT_TOKEN" =~ ^[0-9]+:[A-Za-z0-9_-]{30,}$ ]] || echo "::error::TELEGRAM_BOT_TOKEN n'a pas la forme « chiffres:lettres » donnée par BotFather (espace, ligne en trop ou valeur tronquée ?)"
           ok "Telegram" "$(curl -s -o /dev/null -w '%{http_code}' "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getMe")"
           ok "Zernio" "$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $ZERNIO_API_KEY" https://zernio.com/api/v1/accounts)"
           ok "Jeton GitHub (Actions)" "$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $GH_DISPATCH_TOKEN" -H 'User-Agent: lelobby' "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows")"
           ok "Cloudflare" "$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts")"
+          [ $ko -eq 0 ]
       - name: Préparer le stockage et l'adresse
         run: |
           set -euo pipefail
