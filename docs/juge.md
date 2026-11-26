@@ -12,7 +12,7 @@ Préparer **3 combos** (clip + titre + description + 1 ligne « pourquoi ça mar
 ## 6bis. Garde-fou du rendu 9:16 (obligatoire pour chaque clip 9:16 avant publication)
 Après `make_reel_916.py` avec `"ok": true` (`docs/montage.md` §7). Contrôle visuel **indépendant** : sous-agent au contexte vierge à qui on donne seulement le chemin de `posts/<nom>/<nom>_planche.jpg`, le titre et cette grille (sinon le faire soi-même en relecteur sévère). Il lit **une seule image** : en haut 4 images du rendu, en bas 2 images de la source (cadre rose = webcam prise, jaune = gameplay pris, rouge = overlays fixes repérés). Il répond par un seul mot + une ligne de raison :
 - **NON** si : (1) **webcam** qui n'est pas le streamer, visage coupé, morceau de jeu ou d'overlay dans la webcam, image floue ou pixelisée ; (2) **gameplay trop zoomé** : l'action dont parle le titre est coupée ou sort du cadre, ou image floue ; (3) **titre** coupé, illisible ou qui chevauche, ou **sous-titres** illisibles ou qui débordent de la bande ; (4) clip surtout en cinématique.
-- **SPONSOR** si le rendu est bon mais montre un logo ou nom de marque d'un overlay (ex. AZZARO WANTED, HOLY), une mention « Publicité », un QR code ou un code promo → Instagram seul.
+- **SPONSOR** si le rendu est bon mais montre un logo ou nom de marque d'un overlay (ex. AZZARO WANTED, HOLY), une mention « Publicité », un QR code ou un code promo → publié quand même (Instagram + TikTok), noté pour le suivi.
 - **OK** sinon.
 **Doute entre OK et SPONSOR = SPONSOR ; doute sur la qualité = NON** (règle d'Alix : qualité de la webcam et du gameplay acceptable, sinon 16:9). Un NON mène au format 16:9 (`docs/montage.md` §7.5), jamais à l'abandon du post.
 

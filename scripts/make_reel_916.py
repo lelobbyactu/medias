@@ -20,7 +20,7 @@ Usage :
 Sous-titres automatiques (scripts/subtitles.py) dans la bande du milieu, sauf --no-subs.\nSorties dans posts/<nom>/ : <nom>.mp4, <nom>_cover.jpg, <nom>_fond.png, <nom>_soustitres.ass, <nom>_planche.jpg (planche à faire relire : docs/juge.md §6bis).
 Refus (« ok": false, aucune vidéo) → secours `make_reel.py` (Instagram seul) : cinématique (bandes noires > 30 %), pas de place
 pour un cadre 4:3 hors webcam, gameplay trop zoomé, passage > 90 s.
-« qr": true = QR code vu dans l'image (souvent un sponsor d'overlay) : à traiter comme un sponsor (pas de TikTok).
+« qr": true = QR code vu dans l'image (souvent un sponsor d'overlay) : à traiter comme un sponsor (verdict SPONSOR).
 Coordonnées --cam / --game-x : dans l'espace 1920x1080, quelle que soit la définition de la source.
 """
 import argparse, html, json, pathlib, re, subprocess, sys

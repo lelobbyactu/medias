@@ -260,14 +260,18 @@ def cmd_lot(a):
         q, p = qload(), pload(); ménage(q, p); save(Q, q); save(P, p)
     transact(apply, "queue: ménage (production)")
     q, p = qload(), pload(); t = now(); maxi = c.get("lot_max", 4)
-    reste = maxi - len(produits_session(p["posts"], t))
+    # stock = vidéos montées pas encore parties (à valider, validées, en retouche), hors urgences : on ne monte que le manque
+    stock = [x for x in p["posts"] if x.get("status") in ("a_valider", "valide", "retouche") and not x.get("urgent")
+             and parse(x.get("expires_at_utc")) and parse(x["expires_at_utc"]) > t]
+    reste = min(maxi - len(produits_session(p["posts"], t)), c.get("stock_cible", 5) - len(stock))
     slot = next_slot(t, c["slots"])
-    res.update({"a_produire": max(0, reste), "prochain_creneau_paris": slot.astimezone(PARIS).strftime("%d/%m %H:%M"),
+    res.update({"a_produire": max(0, reste), "stock": len(stock), "prochain_creneau_paris": slot.astimezone(PARIS).strftime("%d/%m %H:%M"),
                 "en_validation": sum(1 for x in p["posts"] if x.get("status") in ("a_valider", "valide"))})
     res["retouches"] = [{"post": x["id"], "demande": x.get("demande"), "titre": x.get("titre"), "clip": x.get("clip")}
                         for x in p["posts"] if x.get("status") == "retouche"]
     if not res["reseau_ok"]: res["stop"] = "réseau bloqué (video.twimg.com)"
-    elif reste <= 0: res["stop"] = f"déjà {maxi} vidéos produites pour cette session"
+    elif reste <= 0: res["stop"] = (f"stock suffisant : {len(stock)} vidéos à valider ou validées (cible {c.get('stock_cible', 5)})"
+                                    if len(stock) >= c.get("stock_cible", 5) else f"déjà {maxi} vidéos produites pour cette session")
     if res.get("stop"): out(res); return
     cands = [x for x in rank(q, p) if parse(x[1]["expires_at_utc"]) > slot + dt.timedelta(minutes=5)]
     res["candidats"] = [{"id": e["id"], "score": e["score"], "nature": e.get("nature"), "age_h": round(age, 1),

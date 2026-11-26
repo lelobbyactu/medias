@@ -84,9 +84,9 @@ def clear_buttons(x):
 # ---------- utilitaires ----------
 def num(x): return x["id"][:4]
 def plat_list(x):
-    """Instagram toujours ; TikTok sauf 16:9, sponsor, ou pause."""
+    """Instagram toujours ; TikTok pour tout 9:16 (OK ou SPONSOR, décision d'Alix du 26/11), sauf pendant une pause."""
     c = L.cfg(); today = L.now().astimezone(L.PARIS).date().isoformat()
-    ok = x.get("format") == "9:16" and x.get("garde_fou") == "OK" and today > (c.get("tiktok_pause_until") or "")
+    ok = x.get("format") == "9:16" and x.get("garde_fou") in ("OK", "SPONSOR") and today > (c.get("tiktok_pause_until") or "")
     return ["instagram", "tiktok"] if ok else ["instagram"]
 def score(x):
     m = re.match(r"\s*(\d+(?:[.,]\d+)?)", str(x.get("judge_score", "0")))
@@ -377,7 +377,7 @@ def appliquer_retouche(n, x, choix):
             if f.startswith(pid) and not f.endswith(".html"): shutil.copy(f"{out}/{f}", f"{L.ROOT}/posts/{pid}/{f}")
         y["format"] = L.load(f"{L.ROOT}/posts/{pid}/{pid}_montage.json")["format"]
         if choix in ("jeu", "cam", "deux") and y.get("garde_fou") == "OK":
-            y["garde_fou"] = "SPONSOR"   # zones d'image non contrôlées par le garde-fou : Instagram seul
+            y["garde_fou"] = "SPONSOR"   # zones d'image non contrôlées par le garde-fou
         y.setdefault("retouches", []).append(choix); y.pop("telegram_msg", None); y.pop("envoi_utc", None)
         L.save(L.P, p); return True
     if L.transact(apply, f"validation: retouche {choix} {pid}", f"state posts/{pid}"):

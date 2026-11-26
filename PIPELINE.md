@@ -4,7 +4,7 @@ Média français, Instagram + TikTok (Zernio). Cible 14-30 ans. Ces règles appl
 Ce fichier est le NOYAU, volontairement court. Les détails sont dans `docs/` : lire **seulement** ce dont la tâche a besoin. Réglages (comptes, seuils, plafonds, horaires) : `config.json`. File et journal : `scripts/lobby.py` (ne jamais éditer `state/*.json` à la main).
 
 ## Publication : jamais par Claude
-Claude monte, puis envoie en validation (`lobby.py proposer`). La publication, le choix TikTok (16:9, sponsor, pause `config.json` → `tiktok_pause_until`) et le journal sont faits par GitHub Actions (`scripts/validation.py`) et le Worker Cloudflare (`worker/`). Ne jamais appeler Zernio.
+Claude monte, puis envoie en validation (`lobby.py proposer`). La publication, le choix TikTok (16:9 = Instagram seul, pause `config.json` → `tiktok_pause_until`) et le journal sont faits par GitHub Actions (`scripts/validation.py`) et le Worker Cloudflare (`worker/`). Ne jamais appeler Zernio.
 
 ## Ligne éditoriale (résumé)
 - **On ne publie que des clips vidéo** : moment de jeu vidéo en stream (cœur : moments choquants de gros streamers FR sur GTA 6), clip Just Chatting (drama, histoire, annonce qui buzze), moment fort d'un événement (ZEvent, GP Explorer, gros live). **Jamais** de carrousel, d'image, de reel d'actu, de trailer, de voix IA ni de musique ajoutée.
@@ -29,7 +29,7 @@ Claude monte, puis envoie en validation (`lobby.py proposer`). La publication, l
 | **Inspirations** (1×/jour) | reels envoyés par Alix (« Lobby inspi ») → fiches d'exemples pour le juge (`juge/inspirations.md`) + calibrage sur la note /10 d'Alix ; les 2 meilleurs : clip Twitch brut retrouvé (`inspi.py locate`) puis mis en file avec la note du juge (`inspi.py queue`), publié seulement si rien de mieux | ce fichier + `docs/inspi.md` |
 
 ## Rythme (valeurs dans config.json)
-2 sessions de production (4 vidéos max chacune), 4 créneaux de publication par jour (8 h, 12 h, 18 h, 21 h Paris), un post par créneau, plafond 7/jour avec les urgences. Expiration selon `nature` : drama et événement 12 h après le moment, gameplay 48 h. Une vidéo montée sort de la file ; le journal `state/published.json` suit son statut (a_valider, valide, programme, publie, refuse, expire, echec).
+2 sessions de production (4 vidéos max chacune, seulement ce qui manque pour un stock de 5 vidéos à valider ou validées), 4 créneaux de publication par jour (8 h, 12 h, 18 h, 21 h Paris), un post par créneau, plafond 7/jour avec les urgences. Expiration selon `nature` : drama et événement 12 h après le moment, gameplay 48 h. Une vidéo montée sort de la file ; le journal `state/published.json` suit son statut (a_valider, valide, programme, publie, refuse, expire, echec).
 
 ## Démarrage d'une exécution (production / publication immédiate)
 1. `add_repo` (owner lelobbyactu, repo medias, access push) puis clone LÉGER : `git clone -q --depth 1 --filter=blob:none --sparse https://github.com/lelobbyactu/medias /home/claude/medias && cd /home/claude/medias && git sparse-checkout set --no-cone '/*' '!/posts/'` (429 : attendre 5 s, réessayer une fois). Ne jamais cloner sans ces options.
