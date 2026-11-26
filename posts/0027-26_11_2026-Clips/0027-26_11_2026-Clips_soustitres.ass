@@ -1,0 +1,53 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.80,0:00:02.42,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON{\c&HFFFFFF&} MAIS TANT PIS
+Dialogue: 0,0:00:02.42,0:00:02.50,Sub,,0,0,0,,{\pos(540,940)}NON {\c&H3DFFF2&}MAIS{\c&HFFFFFF&} TANT PIS
+Dialogue: 0,0:00:02.50,0:00:02.62,Sub,,0,0,0,,{\pos(540,940)}NON MAIS {\c&H3DFFF2&}TANT{\c&HFFFFFF&} PIS
+Dialogue: 0,0:00:02.62,0:00:03.44,Sub,,0,0,0,,{\pos(540,940)}NON MAIS TANT {\c&H3DFFF2&}PIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.20,0:00:04.82,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON{\c&HFFFFFF&} PARDON PARDON
+Dialogue: 0,0:00:04.82,0:00:05.44,Sub,,0,0,0,,{\pos(540,940)}NON {\c&H3DFFF2&}PARDON{\c&HFFFFFF&} PARDON
+Dialogue: 0,0:00:05.44,0:00:05.86,Sub,,0,0,0,,{\pos(540,940)}NON PARDON {\c&H3DFFF2&}PARDON{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.86,0:00:06.06,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARDON{\c&HFFFFFF&} PARDON PARDON
+Dialogue: 0,0:00:06.06,0:00:06.32,Sub,,0,0,0,,{\pos(540,940)}PARDON {\c&H3DFFF2&}PARDON{\c&HFFFFFF&} PARDON
+Dialogue: 0,0:00:06.32,0:00:06.64,Sub,,0,0,0,,{\pos(540,940)}PARDON PARDON {\c&H3DFFF2&}PARDON{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.64,0:00:07.58,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARDON{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.68,0:00:08.30,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}JE{\c&HFFFFFF&} SUIS DÉSOLÉ
+Dialogue: 0,0:00:08.30,0:00:08.40,Sub,,0,0,0,,{\pos(540,940)}JE {\c&H3DFFF2&}SUIS{\c&HFFFFFF&} DÉSOLÉ
+Dialogue: 0,0:00:08.40,0:00:09.32,Sub,,0,0,0,,{\pos(540,940)}JE SUIS {\c&H3DFFF2&}DÉSOLÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.58,0:00:10.20,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON{\c&HFFFFFF&} NON VRAIMENT
+Dialogue: 0,0:00:10.20,0:00:10.52,Sub,,0,0,0,,{\pos(540,940)}NON {\c&H3DFFF2&}NON{\c&HFFFFFF&} VRAIMENT
+Dialogue: 0,0:00:10.52,0:00:11.44,Sub,,0,0,0,,{\pos(540,940)}NON NON {\c&H3DFFF2&}VRAIMENT{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.70,0:00:12.90,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON{\c&HFFFFFF&} NON LÂCHE-MOI
+Dialogue: 0,0:00:12.90,0:00:12.98,Sub,,0,0,0,,{\pos(540,940)}NON {\c&H3DFFF2&}NON{\c&HFFFFFF&} LÂCHE-MOI
+Dialogue: 0,0:00:12.98,0:00:13.42,Sub,,0,0,0,,{\pos(540,940)}NON NON {\c&H3DFFF2&}LÂCHE-MOI{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.42,0:00:13.88,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}J'ARRIVE{\c&HFFFFFF&} PAS À LA LÂCHER
+Dialogue: 0,0:00:13.88,0:00:14.00,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE {\c&H3DFFF2&}PAS{\c&HFFFFFF&} À LA LÂCHER
+Dialogue: 0,0:00:14.00,0:00:14.08,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE PAS {\c&H3DFFF2&}À{\c&HFFFFFF&} LA LÂCHER
+Dialogue: 0,0:00:14.08,0:00:14.12,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE PAS À {\c&H3DFFF2&}LA{\c&HFFFFFF&} LÂCHER
+Dialogue: 0,0:00:14.12,0:00:14.98,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE PAS À LA {\c&H3DFFF2&}LÂCHER{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.56,0:00:18.46,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARDON{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.61,0:00:24.23,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} P***** M**** ALORS
+Dialogue: 0,0:00:24.23,0:00:24.61,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}P*****{\c&HFFFFFF&} M**** ALORS
+Dialogue: 0,0:00:24.61,0:00:24.89,Sub,,0,0,0,,{\pos(540,940)}OH P***** {\c&H3DFFF2&}M****{\c&HFFFFFF&} ALORS
+Dialogue: 0,0:00:24.89,0:00:25.77,Sub,,0,0,0,,{\pos(540,940)}OH P***** M**** {\c&H3DFFF2&}ALORS{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.81,0:00:28.43,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} JE SUIS DÉSOLÉ
+Dialogue: 0,0:00:28.43,0:00:28.53,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}JE{\c&HFFFFFF&} SUIS DÉSOLÉ
+Dialogue: 0,0:00:28.53,0:00:28.63,Sub,,0,0,0,,{\pos(540,940)}OH JE {\c&H3DFFF2&}SUIS{\c&HFFFFFF&} DÉSOLÉ
+Dialogue: 0,0:00:28.63,0:00:29.03,Sub,,0,0,0,,{\pos(540,940)}OH JE SUIS {\c&H3DFFF2&}DÉSOLÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:29.03,0:00:30.21,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} JE SUIS VRAIMENT
+Dialogue: 0,0:00:30.21,0:00:30.33,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}JE{\c&HFFFFFF&} SUIS VRAIMENT
+Dialogue: 0,0:00:30.33,0:00:30.41,Sub,,0,0,0,,{\pos(540,940)}OH JE {\c&H3DFFF2&}SUIS{\c&HFFFFFF&} VRAIMENT
+Dialogue: 0,0:00:30.41,0:00:30.61,Sub,,0,0,0,,{\pos(540,940)}OH JE SUIS {\c&H3DFFF2&}VRAIMENT{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.61,0:00:31.61,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DÉSOLÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.81,0:00:32.90,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARDON{\c&HFFFFFF&}

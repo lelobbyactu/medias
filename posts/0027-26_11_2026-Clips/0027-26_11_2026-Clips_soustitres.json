@@ -1,0 +1,242 @@
+[
+ {
+  "debut": 1.8,
+  "fin": 2.42,
+  "mot": "Non",
+  "confiance": 0.7
+ },
+ {
+  "debut": 2.42,
+  "fin": 2.5,
+  "mot": "mais",
+  "confiance": 0.8
+ },
+ {
+  "debut": 2.5,
+  "fin": 2.62,
+  "mot": "tant",
+  "confiance": 0.96
+ },
+ {
+  "debut": 2.62,
+  "fin": 2.84,
+  "mot": "pis",
+  "confiance": 1.0
+ },
+ {
+  "debut": 4.2,
+  "fin": 4.82,
+  "mot": "Non",
+  "confiance": 0.49
+ },
+ {
+  "debut": 4.82,
+  "fin": 5.44,
+  "mot": "pardon",
+  "confiance": 0.27
+ },
+ {
+  "debut": 5.44,
+  "fin": 5.86,
+  "mot": "pardon",
+  "confiance": 0.82
+ },
+ {
+  "debut": 5.86,
+  "fin": 6.06,
+  "mot": "pardon",
+  "confiance": 0.87
+ },
+ {
+  "debut": 6.06,
+  "fin": 6.32,
+  "mot": "pardon",
+  "confiance": 0.81
+ },
+ {
+  "debut": 6.32,
+  "fin": 6.64,
+  "mot": "pardon",
+  "confiance": 0.76
+ },
+ {
+  "debut": 6.64,
+  "fin": 6.98,
+  "mot": "pardon",
+  "confiance": 0.49
+ },
+ {
+  "debut": 7.68,
+  "fin": 8.3,
+  "mot": "Je",
+  "confiance": 0.42
+ },
+ {
+  "debut": 8.3,
+  "fin": 8.4,
+  "mot": "suis",
+  "confiance": 0.99
+ },
+ {
+  "debut": 8.4,
+  "fin": 8.72,
+  "mot": "désolé",
+  "confiance": 0.98
+ },
+ {
+  "debut": 9.58,
+  "fin": 10.2,
+  "mot": "Non",
+  "confiance": 0.6
+ },
+ {
+  "debut": 10.2,
+  "fin": 10.52,
+  "mot": "non",
+  "confiance": 0.44
+ },
+ {
+  "debut": 10.52,
+  "fin": 10.84,
+  "mot": "vraiment",
+  "confiance": 0.3
+ },
+ {
+  "debut": 11.7,
+  "fin": 12.9,
+  "mot": "non",
+  "confiance": 0.9
+ },
+ {
+  "debut": 12.9,
+  "fin": 12.98,
+  "mot": "non",
+  "confiance": 0.79
+ },
+ {
+  "debut": 12.98,
+  "fin": 13.42,
+  "mot": "lâche-moi",
+  "confiance": 0.95
+ },
+ {
+  "debut": 13.42,
+  "fin": 13.88,
+  "mot": "J'arrive",
+  "confiance": 0.3
+ },
+ {
+  "debut": 13.88,
+  "fin": 14.0,
+  "mot": "pas",
+  "confiance": 1.0
+ },
+ {
+  "debut": 14.0,
+  "fin": 14.08,
+  "mot": "à",
+  "confiance": 0.94
+ },
+ {
+  "debut": 14.08,
+  "fin": 14.12,
+  "mot": "la",
+  "confiance": 0.58
+ },
+ {
+  "debut": 14.12,
+  "fin": 14.38,
+  "mot": "lâcher",
+  "confiance": 0.99
+ },
+ {
+  "debut": 17.56,
+  "fin": 17.86,
+  "mot": "pardon",
+  "confiance": 0.99
+ },
+ {
+  "debut": 23.61,
+  "fin": 24.23,
+  "mot": "Oh",
+  "confiance": 0.84
+ },
+ {
+  "debut": 24.23,
+  "fin": 24.61,
+  "mot": "putain",
+  "confiance": 0.9
+ },
+ {
+  "debut": 24.61,
+  "fin": 24.89,
+  "mot": "merde",
+  "confiance": 0.93
+ },
+ {
+  "debut": 24.89,
+  "fin": 25.17,
+  "mot": "alors",
+  "confiance": 0.99
+ },
+ {
+  "debut": 27.81,
+  "fin": 28.43,
+  "mot": "Oh",
+  "confiance": 0.94
+ },
+ {
+  "debut": 28.43,
+  "fin": 28.53,
+  "mot": "je",
+  "confiance": 0.95
+ },
+ {
+  "debut": 28.53,
+  "fin": 28.63,
+  "mot": "suis",
+  "confiance": 1.0
+ },
+ {
+  "debut": 28.63,
+  "fin": 29.03,
+  "mot": "désolé",
+  "confiance": 0.99
+ },
+ {
+  "debut": 29.03,
+  "fin": 30.21,
+  "mot": "Oh",
+  "confiance": 0.92
+ },
+ {
+  "debut": 30.21,
+  "fin": 30.33,
+  "mot": "je",
+  "confiance": 1.0
+ },
+ {
+  "debut": 30.33,
+  "fin": 30.41,
+  "mot": "suis",
+  "confiance": 1.0
+ },
+ {
+  "debut": 30.41,
+  "fin": 30.61,
+  "mot": "vraiment",
+  "confiance": 0.99
+ },
+ {
+  "debut": 30.61,
+  "fin": 31.01,
+  "mot": "désolé",
+  "confiance": 1.0
+ },
+ {
+  "debut": 31.81,
+  "fin": 32.43,
+  "mot": "Pardon",
+  "confiance": 0.97
+ }
+]
