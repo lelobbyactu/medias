@@ -92,35 +92,6 @@
    "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
-   "id": "c-20261123-2321-kameto-frites-milkshake",
-   "added_at_utc": "2026-11-23T23:21:55Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Kameto et le combo frites-milkshake",
-   "topic_key": "kameto-frites-milkshake",
-   "origin": "KametoTV",
-   "source_tweet": "https://x.com/KametoTV/status/2124980041981272271",
-   "primary_source": "https://x.com/KametoTV/status/2124980041981272271",
-   "source_time_utc": "2026-11-23T21:34:56Z",
-   "expires_at_utc": "2026-11-24T21:34:56Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [],
-   "media_url": "https://video.twimg.com/amplify_video/2124980017662664704/vid/avc1/1280x720/WoR2YV3To-qEVDeG.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "Un test de combo improbable filmé en live par un streamer connu, avec une réaction franche et une référence à une série culte.",
-   "titles": [
-    "Kameto teste le combo frites-milkshake",
-    "Le combo frites-milkshake de Kameto : il fallait oser"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "extrait de talk-show sans webcam ni gameplay, histoire non lisible (poll smoothie/milkshake), même émission que le 0025",
-   "taken_at_utc": "2026-11-24T10:52:38Z",
-   "closed_at_utc": "2026-11-24T10:53:08Z"
-  },
-  {
    "id": "c-20261123-2321-antoinedaniel-quoi-clip",
    "added_at_utc": "2026-11-23T23:21:55Z",
    "found_by": "sources:twitch_clip",
@@ -147,37 +118,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261124-0515-gta6-premiere-personne-shiinabr",
-   "added_at_utc": "2026-11-24T05:15:17Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "GTA 6 : le mode première personne activé par accident",
-   "topic_key": "gta6-premiere-personne-shiinabr",
-   "origin": "ShiinaBR",
-   "source_tweet": "https://x.com/ShiinaBR/status/2125050454942134663",
-   "primary_source": "https://x.com/ShiinaBR/status/2125050454942134663",
-   "source_time_utc": "2026-11-24T02:14:44Z",
-   "expires_at_utc": "2026-11-25T02:14:44Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "ShiinaBR"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125049805877473280/vid/avc1/1920x1080/DqeJVUqBMBmnHBSG.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un mode première personne qui marche par accident dans GTA 6, montré par un compte GTA très suivi : visuel inattendu et forte curiosité.",
-   "titles": [
-    "GTA 6 : il active le mode première personne par accident",
-    "Le mode première personne de GTA 6 existe (presque) par hasard"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "source de 312 s (hors 8-120 s), clip non exploitable",
-   "taken_at_utc": "2026-11-24T10:52:04Z",
-   "closed_at_utc": "2026-11-24T10:52:36Z"
   },
   {
    "id": "c-20261124-0515-gotaga-webcam-lucia",
@@ -239,36 +179,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261124-0515-gta6-crashs-ps5-maj",
-   "added_at_utc": "2026-11-24T05:15:17Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : les crashs sur PS5 persistent après la première mise à jour",
-   "topic_key": "gta6-crashs-ps5-maj",
-   "origin": "joueurs PS5 (signalements)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2125046997203984479",
-   "primary_source": "https://x.com/Pirat_Nation/status/2125046997203984479",
-   "source_time_utc": "2026-11-24T02:01:00Z",
-   "expires_at_utc": "2026-11-24T08:01:00Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "Pirat_Nation"
-   ],
-   "media_url": null,
-   "media_repo_path": "",
-   "angle": "Les plantages sur PS5 reviennent toutes les 3 à 5 minutes malgré la MAJ, y compris sur PS5 Pro : un vrai sujet pour les joueurs GTA 6 et une info chiffrée facile à illustrer.",
-   "titles": [
-    "GTA 6 : les crashs sur PS5 continuent après la première mise à jour",
-    "GTA 6 sur PS5 : un plantage toutes les 3 à 5 minutes malgré la MAJ"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-24T09:15:09Z"
   },
   {
    "id": "c-20261124-0714-jltomy-milkshake-lactose-20261124",
@@ -387,37 +297,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261124-0915-fortnite-collabs-puss-in-boots-ddlc-nov2",
-   "added_at_utc": "2026-11-24T09:15:09Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fortnite : collabs Puss in Boots et Doki Doki Literature Club et nouveaux skins annoncés par un leaker",
-   "topic_key": "fortnite-collabs-puss-in-boots-ddlc-nov26",
-   "origin": "ShiinaBR",
-   "source_tweet": "https://x.com/ShiinaBR/status/2125154209385312601",
-   "primary_source": "https://x.com/ShiinaBR/status/2125154209385312601",
-   "source_time_utc": "2026-11-24T09:07:01Z",
-   "expires_at_utc": "2026-11-24T15:07:01Z",
-   "fiabilite": "🟠",
-   "score": 7,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Deux collabs annoncées pour la prochaine MAJ Fortnite, avec des noms connus du grand public ; info d'insider pas encore confirmée par Epic.",
-   "titles": [
-    "Fortnite : une collab Puss in Boots et une autre Doki Doki Literature Club arrivent selon ShiinaBR",
-    "Fortnite prépare deux collabs surprises pour la prochaine mise à jour"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "pas de visuel officiel (aucune key art Fortnite dans assets/keyart ni image officielle de la collab), source unique ShiinaBR, tweet ne confirme que DDLC (Puss in Boots non verifie), doute = pas de publication",
-   "hot": true,
-   "hot_reason": "leak",
-   "taken_at_utc": "2026-11-24T09:15:58Z",
-   "closed_at_utc": "2026-11-24T09:16:37Z"
   },
   {
    "id": "c-20261124-0915-gta6-maj-01002002-meteo-sauvegarde",
