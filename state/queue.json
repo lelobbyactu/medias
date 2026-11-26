@@ -989,6 +989,36 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261126-1914-domingo-gta6-accidents-2026-11-26",
+   "added_at_utc": "2026-11-26T19:14:12Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo enchaîne les accidents dans GTA 6",
+   "topic_key": "domingo-gta6-accidents-2026-11-26",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
+   "primary_source": "https://x.com/DomingoTV/status/2126001638653530599",
+   "source_time_utc": "2026-11-26T17:14:24Z",
+   "expires_at_utc": "2026-11-28T17:14:24Z",
+   "fiabilite": "haute",
+   "score": 7,
+   "mentions": [
+    "@DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126001523570225152/vid/avc1/1280x720/Wrs-wAvP__WFkM5-.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un streamer français connu qui enchaîne les accidents dans GTA 6, moment visuel et drôle sur le jeu le plus attendu.",
+   "titles": [
+    "Domingo enchaîne les accidents dans GTA 6",
+    "GTA 6 : Domingo et ses accidents à répétition"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
