@@ -1560,7 +1560,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-26T02:29:27Z"
+   "taken_at_utc": "2026-11-26T02:29:27Z",
+   "clip": {
+    "url": "https://www.twitch.tv/jltomy/clip/StylishCrepuscularBobaLitty-Ej4lQwEiFOU6kVBA",
+    "offset": 5.5,
+    "dur": 38.833333
+   }
   }
  ]
 }
