@@ -1,0 +1,494 @@
+[
+{
+"debut": 0.21,
+"fin": 0.67,
+"mot": "Oh",
+"confiance": 0.71
+},
+{
+"debut": 0.67,
+"fin": 0.87,
+"mot": "putain",
+"confiance": 0.82
+},
+{
+"debut": 0.87,
+"fin": 0.95,
+"mot": "il",
+"confiance": 0.68
+},
+{
+"debut": 0.95,
+"fin": 1.21,
+"mot": "a...",
+"confiance": 0.65
+},
+{
+"debut": 1.21,
+"fin": 1.63,
+"mot": "Oh",
+"confiance": 0.66
+},
+{
+"debut": 1.63,
+"fin": 1.93,
+"mot": "c'est",
+"confiance": 0.4
+},
+{
+"debut": 1.93,
+"fin": 2.13,
+"mot": "devenu",
+"confiance": 0.99
+},
+{
+"debut": 2.13,
+"fin": 2.21,
+"mot": "un",
+"confiance": 0.99
+},
+{
+"debut": 2.21,
+"fin": 2.41,
+"mot": "mutant",
+"confiance": 0.94
+},
+{
+"debut": 2.41,
+"fin": 2.95,
+"mot": "Kyle !",
+"confiance": 0.6
+},
+{
+"debut": 5.7,
+"fin": 6.5,
+"mot": "Comment",
+"confiance": 0.89
+},
+{
+"debut": 6.5,
+"fin": 6.98,
+"mot": "ça ?",
+"confiance": 0.9
+},
+{
+"debut": 6.98,
+"fin": 7.44,
+"mot": "C'est",
+"confiance": 0.98
+},
+{
+"debut": 7.44,
+"fin": 7.66,
+"mot": "devenu",
+"confiance": 1.0
+},
+{
+"debut": 7.66,
+"fin": 7.94,
+"mot": "Hulk",
+"confiance": 0.99
+},
+{
+"debut": 7.94,
+"fin": 8.64,
+"mot": "Kyle !",
+"confiance": 0.86
+},
+{
+"debut": 10.11,
+"fin": 10.67,
+"mot": "Kyle",
+"confiance": 0.97
+},
+{
+"debut": 10.67,
+"fin": 10.85,
+"mot": "c'est",
+"confiance": 0.96
+},
+{
+"debut": 10.85,
+"fin": 10.99,
+"mot": "moi",
+"confiance": 0.99
+},
+{
+"debut": 10.99,
+"fin": 11.57,
+"mot": "Kyle !",
+"confiance": 0.92
+},
+{
+"debut": 11.57,
+"fin": 12.51,
+"mot": "Kyle",
+"confiance": 0.99
+},
+{
+"debut": 12.51,
+"fin": 12.71,
+"mot": "tout",
+"confiance": 0.96
+},
+{
+"debut": 12.71,
+"fin": 12.85,
+"mot": "va",
+"confiance": 1.0
+},
+{
+"debut": 12.85,
+"fin": 13.23,
+"mot": "bien !",
+"confiance": 0.51
+},
+{
+"debut": 13.23,
+"fin": 13.43,
+"mot": "Kyle",
+"confiance": 0.99
+},
+{
+"debut": 13.43,
+"fin": 14.75,
+"mot": "écoute-moi !",
+"confiance": 0.69
+},
+{
+"debut": 15.65,
+"fin": 16.07,
+"mot": "Kyle",
+"confiance": 0.98
+},
+{
+"debut": 17.71,
+"fin": 18.13,
+"mot": "Non",
+"confiance": 0.73
+},
+{
+"debut": 18.13,
+"fin": 19.11,
+"mot": "Kyle !",
+"confiance": 0.83
+},
+{
+"debut": 22.82,
+"fin": 23.32,
+"mot": "Je",
+"confiance": 0.62
+},
+{
+"debut": 23.32,
+"fin": 23.52,
+"mot": "prends",
+"confiance": 0.96
+},
+{
+"debut": 23.52,
+"fin": 23.68,
+"mot": "des",
+"confiance": 0.99
+},
+{
+"debut": 23.68,
+"fin": 23.88,
+"mot": "balles",
+"confiance": 0.99
+},
+{
+"debut": 23.88,
+"fin": 24.02,
+"mot": "les",
+"confiance": 0.99
+},
+{
+"debut": 24.02,
+"fin": 24.2,
+"mot": "cons",
+"confiance": 0.96
+},
+{
+"debut": 24.2,
+"fin": 24.98,
+"mot": "là !",
+"confiance": 0.95
+},
+{
+"debut": 31.51,
+"fin": 31.73,
+"mot": "Mais",
+"confiance": 0.98
+},
+{
+"debut": 31.73,
+"fin": 32.65,
+"mot": "Kyle !",
+"confiance": 0.39
+},
+{
+"debut": 33.67,
+"fin": 34.09,
+"mot": "Il",
+"confiance": 0.99
+},
+{
+"debut": 34.09,
+"fin": 34.19,
+"mot": "a",
+"confiance": 0.99
+},
+{
+"debut": 34.19,
+"fin": 34.43,
+"mot": "bouffé",
+"confiance": 0.99
+},
+{
+"debut": 34.43,
+"fin": 34.55,
+"mot": "trop",
+"confiance": 1.0
+},
+{
+"debut": 34.55,
+"fin": 34.65,
+"mot": "de",
+"confiance": 0.99
+},
+{
+"debut": 34.65,
+"fin": 35.57,
+"mot": "fraises !",
+"confiance": 0.71
+},
+{
+"debut": 37.88,
+"fin": 38.08,
+"mot": "Kyle",
+"confiance": 0.99
+},
+{
+"debut": 38.08,
+"fin": 38.24,
+"mot": "tu",
+"confiance": 0.98
+},
+{
+"debut": 38.24,
+"fin": 38.34,
+"mot": "vois",
+"confiance": 0.99
+},
+{
+"debut": 38.34,
+"fin": 38.42,
+"mot": "ce",
+"confiance": 0.99
+},
+{
+"debut": 38.42,
+"fin": 38.48,
+"mot": "que",
+"confiance": 1.0
+},
+{
+"debut": 38.48,
+"fin": 38.6,
+"mot": "tu",
+"confiance": 1.0
+},
+{
+"debut": 38.6,
+"fin": 38.68,
+"mot": "me",
+"confiance": 0.99
+},
+{
+"debut": 38.68,
+"fin": 38.78,
+"mot": "fais",
+"confiance": 0.99
+},
+{
+"debut": 38.78,
+"fin": 38.9,
+"mot": "ou",
+"confiance": 1.0
+},
+{
+"debut": 38.9,
+"fin": 39.36,
+"mot": "pas ?",
+"confiance": 0.95
+},
+{
+"debut": 39.36,
+"fin": 39.9,
+"mot": "Kyle",
+"confiance": 1.0
+},
+{
+"debut": 39.9,
+"fin": 40.0,
+"mot": "il",
+"confiance": 0.94
+},
+{
+"debut": 40.0,
+"fin": 40.1,
+"mot": "nous",
+"confiance": 1.0
+},
+{
+"debut": 40.1,
+"fin": 40.28,
+"mot": "aimait",
+"confiance": 0.99
+},
+{
+"debut": 40.28,
+"fin": 41.2,
+"mot": "bien !",
+"confiance": 0.92
+},
+{
+"debut": 43.6,
+"fin": 43.9,
+"mot": "Kyle",
+"confiance": 1.0
+},
+{
+"debut": 43.9,
+"fin": 45.18,
+"mot": "regarde-moi !",
+"confiance": 0.8
+},
+{
+"debut": 45.18,
+"fin": 45.98,
+"mot": "Regarde-moi",
+"confiance": 0.99
+},
+{
+"debut": 45.98,
+"fin": 46.94,
+"mot": "Kyle !",
+"confiance": 0.9
+},
+{
+"debut": 49.47,
+"fin": 49.79,
+"mot": "Kyle,",
+"confiance": 0.78
+},
+{
+"debut": 50.65,
+"fin": 50.79,
+"mot": "c'est",
+"confiance": 0.98
+},
+{
+"debut": 50.79,
+"fin": 50.93,
+"mot": "moi,",
+"confiance": 0.99
+},
+{
+"debut": 51.01,
+"fin": 51.19,
+"mot": "Kyle.",
+"confiance": 0.78
+},
+{
+"debut": 52.39,
+"fin": 52.67,
+"mot": "Non,",
+"confiance": 0.77
+},
+{
+"debut": 52.83,
+"fin": 52.91,
+"mot": "Kyle,",
+"confiance": 0.94
+},
+{
+"debut": 52.99,
+"fin": 53.09,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 53.09,
+"fin": 53.25,
+"mot": "moi.",
+"confiance": 1.0
+},
+{
+"debut": 54.01,
+"fin": 54.27,
+"mot": "Attention",
+"confiance": 0.99
+},
+{
+"debut": 54.27,
+"fin": 54.41,
+"mot": "à",
+"confiance": 0.99
+},
+{
+"debut": 54.41,
+"fin": 54.49,
+"mot": "tes",
+"confiance": 1.0
+},
+{
+"debut": 54.49,
+"fin": 54.63,
+"mot": "gros",
+"confiance": 1.0
+},
+{
+"debut": 54.63,
+"fin": 54.93,
+"mot": "pieds",
+"confiance": 1.0
+},
+{
+"debut": 54.93,
+"fin": 54.93,
+"mot": "quand",
+"confiance": 0.71
+},
+{
+"debut": 54.93,
+"fin": 55.01,
+"mot": "même,",
+"confiance": 1.0
+},
+{
+"debut": 55.09,
+"fin": 55.11,
+"mot": "tu",
+"confiance": 1.0
+},
+{
+"debut": 55.11,
+"fin": 55.19,
+"mot": "vas",
+"confiance": 0.97
+},
+{
+"debut": 55.19,
+"fin": 55.47,
+"mot": "me marcher",
+"confiance": 0.78
+},
+{
+"debut": 55.47,
+"fin": 55.61,
+"mot": "dessus.",
+"confiance": 1.0
+}
+]

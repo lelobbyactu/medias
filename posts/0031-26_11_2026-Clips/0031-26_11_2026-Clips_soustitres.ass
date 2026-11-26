@@ -1,0 +1,95 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.21,0:00:00.67,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} P***** IL A...
+Dialogue: 0,0:00:00.67,0:00:00.87,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}P*****{\c&HFFFFFF&} IL A...
+Dialogue: 0,0:00:00.87,0:00:00.95,Sub,,0,0,0,,{\pos(540,940)}OH P***** {\c&H3DFFF2&}IL{\c&HFFFFFF&} A...
+Dialogue: 0,0:00:00.95,0:00:01.21,Sub,,0,0,0,,{\pos(540,940)}OH P***** IL {\c&H3DFFF2&}A...{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.21,0:00:01.63,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} C'EST DEVENU
+Dialogue: 0,0:00:01.63,0:00:01.93,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} DEVENU
+Dialogue: 0,0:00:01.93,0:00:02.13,Sub,,0,0,0,,{\pos(540,940)}OH C'EST {\c&H3DFFF2&}DEVENU{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.13,0:00:02.21,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}UN{\c&HFFFFFF&} MUTANT KYLE !
+Dialogue: 0,0:00:02.21,0:00:02.41,Sub,,0,0,0,,{\pos(540,940)}UN {\c&H3DFFF2&}MUTANT{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:02.41,0:00:03.55,Sub,,0,0,0,,{\pos(540,940)}UN MUTANT {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.70,0:00:06.50,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}COMMENT{\c&HFFFFFF&} ÇA ?
+Dialogue: 0,0:00:06.50,0:00:06.98,Sub,,0,0,0,,{\pos(540,940)}COMMENT {\c&H3DFFF2&}ÇA ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.98,0:00:07.44,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} DEVENU HULK KYLE !
+Dialogue: 0,0:00:07.44,0:00:07.66,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}DEVENU{\c&HFFFFFF&} HULK KYLE !
+Dialogue: 0,0:00:07.66,0:00:07.94,Sub,,0,0,0,,{\pos(540,940)}C'EST DEVENU {\c&H3DFFF2&}HULK{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:07.94,0:00:09.24,Sub,,0,0,0,,{\pos(540,940)}C'EST DEVENU HULK {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.11,0:00:10.67,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} C'EST MOI KYLE !
+Dialogue: 0,0:00:10.67,0:00:10.85,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} MOI KYLE !
+Dialogue: 0,0:00:10.85,0:00:10.99,Sub,,0,0,0,,{\pos(540,940)}KYLE C'EST {\c&H3DFFF2&}MOI{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:10.99,0:00:11.57,Sub,,0,0,0,,{\pos(540,940)}KYLE C'EST MOI {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.57,0:00:12.51,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} TOUT VA BIEN !
+Dialogue: 0,0:00:12.51,0:00:12.71,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}TOUT{\c&HFFFFFF&} VA BIEN !
+Dialogue: 0,0:00:12.71,0:00:12.85,Sub,,0,0,0,,{\pos(540,940)}KYLE TOUT {\c&H3DFFF2&}VA{\c&HFFFFFF&} BIEN !
+Dialogue: 0,0:00:12.85,0:00:13.23,Sub,,0,0,0,,{\pos(540,940)}KYLE TOUT VA {\c&H3DFFF2&}BIEN !{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.23,0:00:13.43,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} ÉCOUTE-MOI !
+Dialogue: 0,0:00:13.43,0:00:15.35,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}ÉCOUTE-MOI !{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.65,0:00:16.67,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.71,0:00:18.13,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:18.13,0:00:19.71,Sub,,0,0,0,,{\pos(540,940)}NON {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.82,0:00:23.32,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}JE{\c&HFFFFFF&} PRENDS DES BALLES
+Dialogue: 0,0:00:23.32,0:00:23.52,Sub,,0,0,0,,{\pos(540,940)}JE {\c&H3DFFF2&}PRENDS{\c&HFFFFFF&} DES BALLES
+Dialogue: 0,0:00:23.52,0:00:23.68,Sub,,0,0,0,,{\pos(540,940)}JE PRENDS {\c&H3DFFF2&}DES{\c&HFFFFFF&} BALLES
+Dialogue: 0,0:00:23.68,0:00:23.88,Sub,,0,0,0,,{\pos(540,940)}JE PRENDS DES {\c&H3DFFF2&}BALLES{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.88,0:00:24.02,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LES{\c&HFFFFFF&} C*** LÀ !
+Dialogue: 0,0:00:24.02,0:00:24.20,Sub,,0,0,0,,{\pos(540,940)}LES {\c&H3DFFF2&}C***{\c&HFFFFFF&} LÀ !
+Dialogue: 0,0:00:24.20,0:00:25.58,Sub,,0,0,0,,{\pos(540,940)}LES C*** {\c&H3DFFF2&}LÀ !{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.51,0:00:31.73,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}MAIS{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:31.73,0:00:33.25,Sub,,0,0,0,,{\pos(540,940)}MAIS {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:33.67,0:00:34.09,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}IL{\c&HFFFFFF&} A BOUFFÉ
+Dialogue: 0,0:00:34.09,0:00:34.19,Sub,,0,0,0,,{\pos(540,940)}IL {\c&H3DFFF2&}A{\c&HFFFFFF&} BOUFFÉ
+Dialogue: 0,0:00:34.19,0:00:34.43,Sub,,0,0,0,,{\pos(540,940)}IL A {\c&H3DFFF2&}BOUFFÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:34.43,0:00:34.55,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}TROP{\c&HFFFFFF&} DE FRAISES !
+Dialogue: 0,0:00:34.55,0:00:34.65,Sub,,0,0,0,,{\pos(540,940)}TROP {\c&H3DFFF2&}DE{\c&HFFFFFF&} FRAISES !
+Dialogue: 0,0:00:34.65,0:00:36.17,Sub,,0,0,0,,{\pos(540,940)}TROP DE {\c&H3DFFF2&}FRAISES !{\c&HFFFFFF&}
+Dialogue: 0,0:00:37.88,0:00:38.08,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} TU VOIS
+Dialogue: 0,0:00:38.08,0:00:38.24,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}TU{\c&HFFFFFF&} VOIS
+Dialogue: 0,0:00:38.24,0:00:38.34,Sub,,0,0,0,,{\pos(540,940)}KYLE TU {\c&H3DFFF2&}VOIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.34,0:00:38.42,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}CE{\c&HFFFFFF&} QUE TU ME FAIS
+Dialogue: 0,0:00:38.42,0:00:38.48,Sub,,0,0,0,,{\pos(540,940)}CE {\c&H3DFFF2&}QUE{\c&HFFFFFF&} TU ME FAIS
+Dialogue: 0,0:00:38.48,0:00:38.60,Sub,,0,0,0,,{\pos(540,940)}CE QUE {\c&H3DFFF2&}TU{\c&HFFFFFF&} ME FAIS
+Dialogue: 0,0:00:38.60,0:00:38.68,Sub,,0,0,0,,{\pos(540,940)}CE QUE TU {\c&H3DFFF2&}ME{\c&HFFFFFF&} FAIS
+Dialogue: 0,0:00:38.68,0:00:38.78,Sub,,0,0,0,,{\pos(540,940)}CE QUE TU ME {\c&H3DFFF2&}FAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:38.78,0:00:38.90,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OU{\c&HFFFFFF&} PAS ?
+Dialogue: 0,0:00:38.90,0:00:39.36,Sub,,0,0,0,,{\pos(540,940)}OU {\c&H3DFFF2&}PAS ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:39.36,0:00:39.90,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} IL NOUS AIMAIT
+Dialogue: 0,0:00:39.90,0:00:40.00,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}IL{\c&HFFFFFF&} NOUS AIMAIT
+Dialogue: 0,0:00:40.00,0:00:40.10,Sub,,0,0,0,,{\pos(540,940)}KYLE IL {\c&H3DFFF2&}NOUS{\c&HFFFFFF&} AIMAIT
+Dialogue: 0,0:00:40.10,0:00:40.28,Sub,,0,0,0,,{\pos(540,940)}KYLE IL NOUS {\c&H3DFFF2&}AIMAIT{\c&HFFFFFF&}
+Dialogue: 0,0:00:40.28,0:00:41.80,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}BIEN !{\c&HFFFFFF&}
+Dialogue: 0,0:00:43.60,0:00:43.90,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE{\c&HFFFFFF&} REGARDE-MOI !
+Dialogue: 0,0:00:43.90,0:00:45.18,Sub,,0,0,0,,{\pos(540,940)}KYLE {\c&H3DFFF2&}REGARDE-MOI !{\c&HFFFFFF&}
+Dialogue: 0,0:00:45.18,0:00:45.98,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}REGARDE-MOI{\c&HFFFFFF&} KYLE !
+Dialogue: 0,0:00:45.98,0:00:47.54,Sub,,0,0,0,,{\pos(540,940)}REGARDE-MOI {\c&H3DFFF2&}KYLE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.47,0:00:50.39,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}KYLE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:50.65,0:00:50.79,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} MOI, KYLE.
+Dialogue: 0,0:00:50.79,0:00:51.01,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}MOI,{\c&HFFFFFF&} KYLE.
+Dialogue: 0,0:00:51.01,0:00:51.79,Sub,,0,0,0,,{\pos(540,940)}C'EST MOI, {\c&H3DFFF2&}KYLE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:52.39,0:00:52.83,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}NON,{\c&HFFFFFF&} KYLE, C'EST MOI.
+Dialogue: 0,0:00:52.83,0:00:52.99,Sub,,0,0,0,,{\pos(540,940)}NON, {\c&H3DFFF2&}KYLE,{\c&HFFFFFF&} C'EST MOI.
+Dialogue: 0,0:00:52.99,0:00:53.09,Sub,,0,0,0,,{\pos(540,940)}NON, KYLE, {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} MOI.
+Dialogue: 0,0:00:53.09,0:00:53.85,Sub,,0,0,0,,{\pos(540,940)}NON, KYLE, C'EST {\c&H3DFFF2&}MOI.{\c&HFFFFFF&}
+Dialogue: 0,0:00:54.01,0:00:54.27,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}ATTENTION{\c&HFFFFFF&} À TES GROS
+Dialogue: 0,0:00:54.27,0:00:54.41,Sub,,0,0,0,,{\pos(540,940)}ATTENTION {\c&H3DFFF2&}À{\c&HFFFFFF&} TES GROS
+Dialogue: 0,0:00:54.41,0:00:54.49,Sub,,0,0,0,,{\pos(540,940)}ATTENTION À {\c&H3DFFF2&}TES{\c&HFFFFFF&} GROS
+Dialogue: 0,0:00:54.49,0:00:54.63,Sub,,0,0,0,,{\pos(540,940)}ATTENTION À TES {\c&H3DFFF2&}GROS{\c&HFFFFFF&}
+Dialogue: 0,0:00:54.63,0:00:54.93,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PIEDS{\c&HFFFFFF&} QUAND MÊME,
+Dialogue: 0,0:00:54.93,0:00:54.93,Sub,,0,0,0,,{\pos(540,940)}PIEDS {\c&H3DFFF2&}QUAND{\c&HFFFFFF&} MÊME,
+Dialogue: 0,0:00:54.93,0:00:55.09,Sub,,0,0,0,,{\pos(540,940)}PIEDS QUAND {\c&H3DFFF2&}MÊME,{\c&HFFFFFF&}
+Dialogue: 0,0:00:55.09,0:00:55.11,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}TU{\c&HFFFFFF&} VAS ME MARCHER
+Dialogue: 0,0:00:55.11,0:00:55.19,Sub,,0,0,0,,{\pos(540,940)}TU {\c&H3DFFF2&}VAS{\c&HFFFFFF&} ME MARCHER
+Dialogue: 0,0:00:55.19,0:00:55.47,Sub,,0,0,0,,{\pos(540,940)}TU VAS {\c&H3DFFF2&}ME MARCHER{\c&HFFFFFF&}
+Dialogue: 0,0:00:55.47,0:00:56.21,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DESSUS.{\c&HFFFFFF&}
