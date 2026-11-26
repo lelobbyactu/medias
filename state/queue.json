@@ -1372,8 +1372,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-26T02:28:58Z"
   },
   {
    "id": "c-20261126-0205-gotaga-gta6-clip-peaceful",
