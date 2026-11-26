@@ -867,40 +867,6 @@
    "closed_at_utc": "2026-11-26T12:15:54Z"
   },
   {
-   "id": "c-20261126-1223-domingo-moto-grillage-gta6-2511",
-   "added_at_utc": "2026-11-26T12:23:39Z",
-   "found_by": "secours X",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Domingo envoie sa moto par-dessus le grillage sur GTA 6",
-   "topic_key": "domingo-moto-grillage-gta6-2511",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2125600699522429175",
-   "primary_source": "https://x.com/DomingoTV/status/2125600699522429175",
-   "source_time_utc": "2026-11-25T14:41:13Z",
-   "expires_at_utc": "2026-11-27T14:41:13Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125600610724491264/vid/avc1/2560x1440/DzP8tfKqMtS9-qo_.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "La moto passe le grillage, pas ses passagers",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-26T12:23:48Z",
-   "clip": {
-    "url": "https://www.twitch.tv/domingo/clip/ShakingSuspiciousOilANELE-CjBCh9tvG5ScTDTQ",
-    "offset": 0.0,
-    "dur": 28.138
-   },
-   "post_id": "0032-26_11_2026-Clips"
-  },
-  {
    "id": "c-20261126-1223-domingo-avion-de-chasse-gta6-2511",
    "added_at_utc": "2026-11-26T12:23:39Z",
    "found_by": "secours X",

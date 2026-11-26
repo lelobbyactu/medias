@@ -515,13 +515,28 @@
   },
   {
    "id": "0032-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo envoie sa moto par-dessus le grillage sur GTA 6",
    "origin": "DomingoTV",
    "source_tweet": "https://x.com/DomingoTV/status/2125600699522429175",
    "queue_id": "c-20261126-1223-domingo-moto-grillage-gta6-2511",
-   "reserved_at_utc": "2026-11-26T12:52:58Z"
+   "reserved_at_utc": "2026-11-26T12:52:58Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/ShakingSuspiciousOilANELE-CjBCh9tvG5ScTDTQ",
+    "offset": 0.0,
+    "dur": 28.138
+   },
+   "topic_key": "domingo-moto-grillage-gta6-2511",
+   "expires_at_utc": "2026-11-27T14:41:13Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T13:04:14Z",
+   "titre": "La moto passe|le grillage,|pas *Domingo*",
+   "legende": "Même en essayant, impossible de la refaire exprès 😭 C'est Domingo qui le dit. Tu mets combien sur 10 à cette cascade ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #gameplay #twitchfr",
+   "titres_alt": [],
+   "judge_score": "8/10",
+   "format": "9:16",
+   "garde_fou": "OK"
   },
   {
    "id": "0033-26_11_2026-Clips",
