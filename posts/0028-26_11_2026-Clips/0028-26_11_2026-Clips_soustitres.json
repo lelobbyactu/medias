@@ -1,0 +1,92 @@
+[
+ {
+  "debut": 12.96,
+  "fin": 13.16,
+  "mot": "j'ai mis",
+  "confiance": 0.96
+ },
+ {
+  "debut": 13.16,
+  "fin": 13.32,
+  "mot": "trop",
+  "confiance": 1.0
+ },
+ {
+  "debut": 13.32,
+  "fin": 13.42,
+  "mot": "de",
+  "confiance": 0.97
+ },
+ {
+  "debut": 13.42,
+  "fin": 13.54,
+  "mot": "temps",
+  "confiance": 1.0
+ },
+ {
+  "debut": 13.54,
+  "fin": 13.66,
+  "mot": "à",
+  "confiance": 0.96
+ },
+ {
+  "debut": 13.66,
+  "fin": 13.92,
+  "mot": "hésiter",
+  "confiance": 1.0
+ },
+ {
+  "debut": 13.92,
+  "fin": 14.04,
+  "mot": "à",
+  "confiance": 0.93
+ },
+ {
+  "debut": 14.04,
+  "fin": 14.12,
+  "mot": "le",
+  "confiance": 0.97
+ },
+ {
+  "debut": 14.12,
+  "fin": 14.4,
+  "mot": "tuer",
+  "confiance": 1.0
+ },
+ {
+  "debut": 15.66,
+  "fin": 16.0,
+  "mot": "m'a",
+  "confiance": 0.94
+ },
+ {
+  "debut": 16.0,
+  "fin": 16.32,
+  "mot": "emporté",
+  "confiance": 0.99
+ },
+ {
+  "debut": 16.32,
+  "fin": 16.44,
+  "mot": "avec",
+  "confiance": 0.99
+ },
+ {
+  "debut": 16.44,
+  "fin": 16.54,
+  "mot": "lui",
+  "confiance": 1.0
+ },
+ {
+  "debut": 16.54,
+  "fin": 16.72,
+  "mot": "ce",
+  "confiance": 0.99
+ },
+ {
+  "debut": 16.72,
+  "fin": 16.94,
+  "mot": "chien",
+  "confiance": 1.0
+ }
+]
