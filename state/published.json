@@ -358,6 +358,16 @@
     "jeu"
    ],
    "telegram_msg": 14
+  },
+  {
+   "id": "0027-26_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "JLTomy braque par accident et met KO la caissière",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2125738503426478369",
+   "queue_id": "c-20261126-0205-jltomy-caissiere-ko-gta6",
+   "reserved_at_utc": "2026-11-26T02:42:30Z"
   }
  ]
 }
