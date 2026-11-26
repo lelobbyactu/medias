@@ -332,7 +332,7 @@
   },
   {
    "id": "0026-25_11_2026-Clips",
-   "status": "retouche",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo sur GTA 6 : le plongeon",
    "origin": "domingo",
@@ -356,9 +356,7 @@
    },
    "retouches": [
     "jeu"
-   ],
-   "telegram_msg": 10,
-   "demande": "Re zoom le gameplay comme la v2 envoyée, c’était juste un test pour voir si le bot marchait."
+   ]
   }
  ]
 }
