@@ -362,13 +362,28 @@
   },
   {
    "id": "0027-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "JLTomy braque par accident et met KO la caissière",
    "origin": "JLTomyTV",
    "source_tweet": "https://x.com/JLTomyTV/status/2125738503426478369",
    "queue_id": "c-20261126-0205-jltomy-caissiere-ko-gta6",
-   "reserved_at_utc": "2026-11-26T02:42:30Z"
+   "reserved_at_utc": "2026-11-26T02:42:30Z",
+   "clip": {
+    "url": "https://www.twitch.tv/jltomy/clip/StylishCrepuscularBobaLitty-Ej4lQwEiFOU6kVBA",
+    "offset": 5.5,
+    "dur": 38.833333
+   },
+   "topic_key": "jltomy-caissiere-ko-gta6",
+   "expires_at_utc": "2026-11-27T23:48:48Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T02:51:33Z",
+   "titre": "JL Tomy|s'excuse en|*vidant* la|caisse",
+   "legende": "Poli jusqu'au bout, même la main dans les billets. Tu le crois quand il dit désolé ?\n\nClip : twitch.tv/jltomy\n\n#gta6 #gtavi #jltomy #twitchfr #jeuxvideo",
+   "titres_alt": [],
+   "judge_score": "9/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   },
   {
    "id": "0028-26_11_2026-Clips",

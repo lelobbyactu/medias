@@ -1559,43 +1559,6 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
-  },
-  {
-   "id": "c-20261126-0205-jltomy-caissiere-ko-gta6",
-   "added_at_utc": "2026-11-26T02:05:01Z",
-   "found_by": "veille",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "JLTomy braque par accident et met KO la caissière",
-   "topic_key": "jltomy-caissiere-ko-gta6",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2125738503426478369",
-   "primary_source": "https://x.com/JLTomyTV/status/2125738503426478369",
-   "source_time_utc": "2026-11-25T23:48:48Z",
-   "expires_at_utc": "2026-11-27T23:48:48Z",
-   "fiabilite": "compte du streamer lui-même",
-   "score": 5,
-   "mentions": [
-    "JLTomyTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125738401143881728/vid/avc1/1280x720/Kf0we_izWDrUxvrr.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Braquage raté et caissière KO, moment visuel et drôle sur GTA 6 (#JLMiami).",
-   "titles": [
-    "JLTomy braque par accident et met KO la caissière",
-    "Braquage accidentel sur GTA 6 : la caissière KO"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-26T02:29:27Z",
-   "clip": {
-    "url": "https://www.twitch.tv/jltomy/clip/StylishCrepuscularBobaLitty-Ej4lQwEiFOU6kVBA",
-    "offset": 5.5,
-    "dur": 38.833333
-   },
-   "post_id": "0027-26_11_2026-Clips"
   }
  ]
 }
