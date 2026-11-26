@@ -892,7 +892,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-26T12:23:48Z"
+   "taken_at_utc": "2026-11-26T12:23:48Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/ShakingSuspiciousOilANELE-CjBCh9tvG5ScTDTQ",
+    "offset": 0.0,
+    "dur": 28.138
+   }
   },
   {
    "id": "c-20261126-1223-domingo-kyle-hulk-gta6-2511",
