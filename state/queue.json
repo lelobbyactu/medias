@@ -1344,7 +1344,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-26T02:31:45Z"
+   "taken_at_utc": "2026-11-26T02:31:45Z",
+   "clip": {
+    "url": "https://www.twitch.tv/samueletienne/clip/TallGoldenMarrowSeemsGood-Q5_ExDs1vJZXTmQS",
+    "offset": 0,
+    "dur": null
+   }
   },
   {
    "id": "c-20261126-0205-gotaga-gta6-clip-1948",
