@@ -494,6 +494,16 @@
    "source_tweet": "https://x.com/DomingoTV/status/2125585516993392738",
    "queue_id": "c-20261126-1223-domingo-kyle-hulk-gta6-2511",
    "reserved_at_utc": "2026-11-26T12:40:24Z"
+  },
+  {
+   "id": "0032-26_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Domingo envoie sa moto par-dessus le grillage sur GTA 6",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2125600699522429175",
+   "queue_id": "c-20261126-1223-domingo-moto-grillage-gta6-2511",
+   "reserved_at_utc": "2026-11-26T12:52:58Z"
   }
  ]
 }
