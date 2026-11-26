@@ -2,525 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261122-1316-yeney-gta6-verdict-30fps",
-   "added_at_utc": "2026-11-22T13:16:01Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Yeney donne son verdict à chaud sur GTA 6 : 30 FPS, mais « pas le jeu qui m'a choqué »",
-   "topic_key": "yeney-gta6-verdict-30fps",
-   "origin": "Yeney",
-   "source_tweet": "https://x.com/LaTwitchance/status/2124473343349080335",
-   "primary_source": "https://x.com/LaTwitchance/status/2124473343349080335",
-   "source_time_utc": "2026-11-22T12:01:30Z",
-   "expires_at_utc": "2026-11-23T12:01:30Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "LaTwitchance",
-    "VODtwxtch"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124473020999753728/vid/avc1/576x1024/CmYQQppVwdEU3EJi.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un streamer français connu lâche son avis à chaud après avoir joué à GTA 6, avec le 30 FPS en point de friction.",
-   "titles": [
-    "Yeney après GTA 6 : le 30 FPS passe, le réalisme non",
-    "Yeney tranche sur GTA 6 : « on va pas se forcer hein »"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T13:21:58Z"
-  },
-  {
-   "id": "c-20261122-1517-domingo-csc-suspect",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Domingo et le CSC « très suspect »",
-   "topic_key": "domingo-csc-suspect",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2124494706587660794",
-   "primary_source": "https://x.com/DomingoTV/status/2124494706587660794",
-   "source_time_utc": "2026-11-22T13:26:23Z",
-   "expires_at_utc": "2026-11-23T13:26:23Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124494630452367360/vid/avc1/1280x720/owqoQPXxCfXUwsmi.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un contre son camp commenté par le streamer, moment drôle avec un bon engagement pour un compte de 256k.",
-   "titles": [
-    "Domingo et ce CSC « très suspect »",
-    "Le CSC de Domingo qui fait réagir"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "clip = reaction a un match de foot pro (FC Porto, extrait a droits) + overlay sponsor : exclusion docs/clips.md",
-   "taken_at_utc": "2026-11-23T10:53:53Z",
-   "closed_at_utc": "2026-11-23T10:58:33Z"
-  },
-  {
-   "id": "c-20261122-1517-kameto-kametita-caminos",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Kameto, extrait « Kametita Caminos »",
-   "topic_key": "kameto-kametita-caminos",
-   "origin": "KametoTV",
-   "source_tweet": "https://x.com/KametoTV/status/2124508139890377210",
-   "primary_source": "https://x.com/KametoTV/status/2124508139890377210",
-   "source_time_utc": "2026-11-22T14:19:46Z",
-   "expires_at_utc": "2026-11-23T14:19:46Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "KametoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124507877586915329/vid/avc1/1280x720/XSG2TCamiA1k3F0E.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "Court extrait de stream de Kameto, avec un engagement fort par rapport à sa portée.",
-   "titles": [
-    "Kameto et son « Kametita Caminos »",
-    "Le moment Kameto qui fait réagir sur X"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T15:46:04Z"
-  },
-  {
-   "id": "c-20261122-1517-jltomy-sophie-jlmiami",
-   "added_at_utc": "2026-11-22T15:17:26Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "JLTomy, scène de Sophie (#JLMiami)",
-   "topic_key": "jltomy-sophie-jlmiami",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://x.com/JLTomyTV/status/2124494913379201459",
-   "primary_source": "https://x.com/JLTomyTV/status/2124494913379201459",
-   "source_time_utc": "2026-11-22T13:27:13Z",
-   "expires_at_utc": "2026-11-23T13:27:13Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "JLTomyTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124494880692924417/vid/avc1/1920x1080/GiRCEcQn4DBsUqz0.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Épisode #JLMiami avec une scène qui fait réagir la communauté, dans la suite de la série.",
-   "titles": [
-    "JLTomy et la scène de Sophie (#JLMiami)",
-    "Le #JLMiami qui fait réagir avec Sophie"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T15:46:04Z"
-  },
-  {
-   "id": "c-20261122-1715-domingo-braqueur-pa",
-   "added_at_utc": "2026-11-22T17:15:54Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "DomingoTV : « on a trouvé pire braqueur que PA »",
-   "topic_key": "domingo-braqueur-pa",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2124524826023096484",
-   "primary_source": "https://x.com/DomingoTV/status/2124524826023096484",
-   "source_time_utc": "2026-11-22T15:26:04Z",
-   "expires_at_utc": "2026-11-23T15:26:04Z",
-   "fiabilite": "🟢",
-   "score": 5,
-   "mentions": [],
-   "media_url": "https://video.twimg.com/amplify_video/2124524689049423872/vid/avc1/1280x720/sMdrwevqWI3qoMvZ.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Une réplique qui sort du lot d'un gros streamer français, moment court de 60 secondes facile à monter.",
-   "titles": [
-    "« On a trouvé pire braqueur que PA » : le clip de Domingo",
-    "Domingo trouve pire braqueur que PA : le moment qui fait rire"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T15:46:04Z"
-  },
-  {
-   "id": "c-20261122-1916-twitch-kameto-nouveau-concept",
-   "added_at_utc": "2026-11-22T19:16:23Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Kameto repère un nouveau concept sur Twitch",
-   "topic_key": "twitch-kameto-nouveau-concept",
-   "origin": "KametoTV",
-   "source_tweet": "https://x.com/KametoTV/status/2124555334647705842",
-   "primary_source": "https://x.com/KametoTV/status/2124555334647705842",
-   "source_time_utc": "2026-11-22T17:27:18Z",
-   "expires_at_utc": "2026-11-23T17:27:18Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [],
-   "media_url": "https://video.twimg.com/amplify_video/2124555217442066432/vid/avc1/1280x720/7gpe-V1suAJM2Uh1.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "Un gros streamer FR qui tease un format inédit sur Twitch : curiosité immédiate.",
-   "titles": [
-    "Kameto repère un nouveau concept sur Twitch",
-    "Un nouveau concept Twitch repéré par Kameto"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
-   "id": "c-20261122-2115-inoxtag-gmk-dents",
-   "added_at_utc": "2026-11-22T21:15:01Z",
-   "found_by": "veille",
-   "type": "clip",
-   "topic": "Inoxtag se moque des nouvelles dents de GMK",
-   "topic_key": "inoxtag-gmk-dents",
-   "origin": "Inoxtag",
-   "source_tweet": "https://x.com/youtube_replay1/status/2124589067581128828",
-   "primary_source": "https://x.com/youtube_replay1/status/2124589067581128828",
-   "source_time_utc": "2026-11-22T19:41:21Z",
-   "expires_at_utc": "2026-11-23T19:41:21Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "youtube_replay1"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124588994839052288/vid/avc1/888x1320/SfO9wuQwKZEhplki.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Une vanne ciblée d'Inoxtag sur le sourire de GMK, courte, verticale et immédiatement compréhensible pour le public FR.",
-   "titles": [
-    "Inoxtag ne peut pas s'empêcher de charrier GMK sur ses nouvelles dents",
-    "Inoxtag se moque des nouvelles dents de GMK : le clip qui fait rire"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "story Instagram reposte par un relais (youtube_replay1), createur d'origine non creditable sur X, sujet = moquerie physique (dents) avec reponses toxiques",
-   "taken_at_utc": "2026-11-23T10:52:08Z",
-   "closed_at_utc": "2026-11-23T10:53:50Z"
-  },
-  {
-   "id": "c-20261123-0717-gta6-missions-monde-ouvert-design",
-   "added_at_utc": "2026-11-23T07:17:24Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : Rockstar explique vouloir effacer la frontière entre missions et monde ouvert",
-   "topic_key": "gta6-missions-monde-ouvert-design",
-   "origin": "Rockstar Games (propos relayé par @Pirat_Nation)",
-   "source_tweet": "https://x.com/Pirat_Nation/status/2124761365667631254",
-   "primary_source": "https://x.com/Pirat_Nation/status/2124761365667631254",
-   "source_time_utc": "2026-11-23T07:06:00Z",
-   "expires_at_utc": "2026-11-23T13:06:00Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "Pirat_Nation"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Rockstar détaille la conception des missions de GTA 6, pensées pour se fondre dans le monde ouvert avec Jason et Lucia : sujet très suivi, mais déclaration sans visuel ni annonce nouvelle.",
-   "titles": [
-    "GTA 6 : Rockstar veut effacer la frontière entre missions et monde ouvert",
-    "GTA 6 : les missions seront connectées au monde ouvert, selon Rockstar"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T13:21:58Z"
-  },
-  {
-   "id": "c-20261123-0914-gta6-ages-jason-lucia",
-   "added_at_utc": "2026-11-23T09:14:53Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Âges des personnages de GTA 6 (Jason et Lucia) révélés via leurs permis de conduire",
-   "topic_key": "gta6-ages-jason-lucia",
-   "origin": "Rockstar Games",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124782252676845826",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124782252676845826",
-   "source_time_utc": "2026-11-23T08:29:00Z",
-   "expires_at_utc": "2026-11-23T14:29:00Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "FrenchRapUS",
-    "Pirat_Nation"
-   ],
-   "media_url": null,
-   "media_repo_path": "",
-   "angle": "Un détail in-game sur les personnages de GTA 6 relancé par plusieurs comptes, dans un contexte de hype maximal sur la franchise.",
-   "titles": [
-    "GTA 6 : les âges de Jason et Lucia dévoilés",
-    "Les permis de conduire de GTA 6 révèlent l'âge de Jason et Lucia"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T15:46:04Z"
-  },
-  {
-   "id": "c-20261123-0914-gta-v-legacy-top25-steam",
-   "added_at_utc": "2026-11-23T09:14:53Z",
-   "found_by": "sources:steam",
-   "type": "actu",
-   "topic": "GTA V Legacy entre dans le top 25 Steam",
-   "topic_key": "gta-v-legacy-top25-steam",
-   "origin": "SteamDB",
-   "source_tweet": "https://steamdb.info/app/271590/charts/",
-   "primary_source": "https://steamdb.info/app/271590/charts/",
-   "source_time_utc": "2026-11-23T08:07:24Z",
-   "expires_at_utc": "2026-11-23T14:07:24Z",
-   "fiabilite": "🟢",
-   "score": 5,
-   "mentions": [
-    "steam"
-   ],
-   "media_url": null,
-   "media_repo_path": "",
-   "angle": "Un titre de la franchise GTA entre dans le top 25 Steam avec plus de 37 000 joueurs connectés au relevé.",
-   "titles": [
-    "GTA V Legacy entre dans le top 25 Steam",
-    "GTA V Legacy revient dans le top 25 Steam avec plus de 37 000 joueurs connectés"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T15:46:04Z"
-  },
-  {
-   "id": "c-20261123-1104-perrikaryal-gta6-jet-cerveau",
-   "added_at_utc": "2026-11-23T11:04:35Z",
-   "found_by": "secours-apify",
-   "type": "clip",
-   "topic": "Une streameuse vole un jet dans GTA 6 en le controlant avec son cerveau (casque EEG)",
-   "topic_key": "perrikaryal-gta6-jet-cerveau",
-   "origin": "perrikaryal",
-   "source_tweet": "https://x.com/perrikaryal/status/2124639246971548122",
-   "primary_source": "https://x.com/perrikaryal/status/2124639246971548122",
-   "source_time_utc": "2026-11-22T23:00:45Z",
-   "expires_at_utc": "2026-11-23T23:00:45Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "perrikaryal"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2124639064766726144/vid/avc1/1080x1920/uvAc5XH6GcCFjebr.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Concept fou et visuel : une creatrice pilote GTA 6 avec ses ondes cerveau et vole un jet, 724k vues en 12 h.",
-   "titles": [
-    "Elle vole un jet dans GTA 6 avec son cerveau"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "",
-   "taken_at_utc": "2026-11-23T11:04:42Z",
-   "post_id": "0021-23_11_2026-Clips",
-   "closed_at_utc": "2026-11-23T11:10:18Z"
-  },
-  {
-   "id": "c-20261123-1114-gta6-maj-phases-2026-11",
-   "added_at_utc": "2026-11-23T11:14:53Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : une nouvelle mise à jour arrive par phases, taille révélée",
-   "topic_key": "gta6-maj-phases-2026-11",
-   "origin": "_Tom_Henderson_",
-   "source_tweet": "https://x.com/_Tom_Henderson_/status/2124823478796791925",
-   "primary_source": "https://x.com/_Tom_Henderson_/status/2124823478796791925",
-   "source_time_utc": "2026-11-23T11:12:49Z",
-   "expires_at_utc": "2026-11-23T17:12:49Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "_Tom_Henderson_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Info insider sur la prochaine MAJ de GTA 6 (déploiement par phases, poids révélé) : sujet très suivi, à confirmer par Rockstar.",
-   "titles": [
-    "GTA 6 : la prochaine mise à jour arrivera en plusieurs phases",
-    "GTA 6 : Tom Henderson révèle le poids de la prochaine mise à jour"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "pas un leak : patch 1.002 deja deploye (PS5/Xbox), ~600 Mo, sujet faible, aucune info creusee ; seuil juge non atteint",
-   "hot": true,
-   "hot_reason": "leak",
-   "taken_at_utc": "2026-11-23T11:16:04Z",
-   "closed_at_utc": "2026-11-23T11:16:32Z"
-  },
-  {
-   "id": "c-20261123-1321-gta6-maj-1-002-002",
-   "added_at_utc": "2026-11-23T13:21:58Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : première mise à jour disponible (1.002.002)",
-   "topic_key": "gta6-maj-1-002-002",
-   "origin": "Rockstar Games",
-   "source_tweet": "https://x.com/Rockstar_Mag/status/2124823652885475718",
-   "primary_source": "https://x.com/Rockstar_Mag/status/2124823652885475718",
-   "source_time_utc": "2026-11-23T11:13:30Z",
-   "expires_at_utc": "2026-11-23T17:13:30Z",
-   "fiabilite": "🟢",
-   "score": 7,
-   "mentions": [
-    "@Rockstar_Mag",
-    "@ShadesFrance",
-    "@_Tom_Henderson_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Première grosse update depuis la sortie de GTA 6, déployée par vagues : tout le monde veut savoir ce qu'elle contient.",
-   "titles": [
-    "GTA 6 reçoit sa première mise à jour, déployée par vagues",
-    "GTA 6 : la première update pèse 603 Mo sur PS5"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "doublon : sujet publié (0023, patch 01.002.002)",
-   "closed_at_utc": "2026-11-23T16:59:17Z"
-  },
-  {
-   "id": "c-20261123-1321-gta6-ventes-estimees-4-jours",
-   "added_at_utc": "2026-11-23T13:21:58Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : plus de 4 Md$ de ventes estimées en 4 jours",
-   "topic_key": "gta6-ventes-estimees-4-jours",
-   "origin": "Alinea Analytics (estimation)",
-   "source_tweet": "https://x.com/Dexerto/status/2124850486931009586",
-   "primary_source": "https://x.com/Dexerto/status/2124850486931009586",
-   "source_time_utc": "2026-11-23T13:00:08Z",
-   "expires_at_utc": "2026-11-23T19:00:08Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "@Dexerto",
-    "@InsiderGamingIG",
-    "@_Tom_Henderson_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Chiffre record annoncé par un cabinet d'analyse, pas par Rockstar : il va faire réagir même si c'est une estimation.",
-   "titles": [
-    "GTA 6 aurait déjà rapporté plus de 4 milliards de dollars",
-    "GTA 6 : environ 45 millions d'exemplaires vendus en quatre jours"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
-   "id": "c-20261123-1321-gta6-flechettes-bowling-retires",
-   "added_at_utc": "2026-11-23T13:21:58Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : pas de fléchettes ni de bowling, faute de ressources",
-   "topic_key": "gta6-flechettes-bowling-retires",
-   "origin": "Rob Nelson (Rockstar)",
-   "source_tweet": "https://x.com/Dexerto/status/2124842951008248167",
-   "primary_source": "https://x.com/Dexerto/status/2124842951008248167",
-   "source_time_utc": "2026-11-23T12:30:11Z",
-   "expires_at_utc": "2026-11-23T18:30:11Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "@Dexerto",
-    "@DexertoFR"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Le patron de GTA 6 explique l'absence d'un mini-jeu très attendu : la communauté va réagir.",
-   "titles": [
-    "GTA 6 : pas de fléchettes ni de bowling, faute de ressources",
-    "Rob Nelson explique pourquoi GTA 6 n'a pas de bowling"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
-   "id": "c-20261123-1321-worlds-2026-record-bilibili",
-   "added_at_utc": "2026-11-23T13:21:58Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Worlds 2026 : finale la plus regardée de l'histoire de LoL sur Bilibili",
-   "topic_key": "worlds-2026-record-bilibili",
-   "origin": "Bilibili (données de diffusion)",
-   "source_tweet": "https://x.com/Sheep_Esports/status/2124836870164975940",
-   "primary_source": "https://x.com/Sheep_Esports/status/2124836870164975940",
-   "source_time_utc": "2026-11-23T12:06:02Z",
-   "expires_at_utc": "2026-11-23T18:06:02Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "@Sheep_Esports"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un record d'audience chiffré et facile à comprendre pour le public LoL francophone.",
-   "titles": [
-    "Worlds 2026 : la finale la plus regardée de l'histoire de LoL",
-    "La finale des Worlds 2026 dépasse celle de 2018 sur Bilibili"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
-   "id": "c-20261123-1321-binding-of-isaac-musiques-suno",
-   "added_at_utc": "2026-11-23T13:21:58Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "The Binding of Isaac : mise à jour retirée après review-bombing (musiques IA)",
-   "topic_key": "binding-of-isaac-musiques-suno",
-   "origin": "Nicalis (éditeur)",
-   "source_tweet": "https://x.com/Gamekult/status/2124836841325228042",
-   "primary_source": "https://x.com/Gamekult/status/2124836841325228042",
-   "source_time_utc": "2026-11-23T12:05:55Z",
-   "expires_at_utc": "2026-11-23T18:05:55Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "@Gamekult"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un éditeur retire en urgence des musiques générées par IA après une vague de mauvaises notes : sujet d'actu tech et communauté.",
-   "titles": [
-    "The Binding of Isaac retire des musiques IA après un review-bombing",
-    "Binding of Isaac : l'éditeur supprime des musiques Suno en urgence"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T19:18:04Z"
-  },
-  {
    "id": "c-20261123-1321-nickeh30-train-npc-gta",
    "added_at_utc": "2026-11-23T13:21:58Z",
    "found_by": "sources:reddit",
@@ -549,323 +30,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-24T06:52:10Z"
-  },
-  {
-   "id": "c-20261123-1546-gta6-album-deluxe",
-   "added_at_utc": "2026-11-23T15:46:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA VI : édition deluxe de l'album Rockstar avec 23 titres bonus",
-   "topic_key": "gta6-album-deluxe",
-   "origin": "RockstarGames",
-   "source_tweet": "https://x.com/RockstarGames/status/2124867612450386302",
-   "primary_source": "https://x.com/RockstarGames/status/2124867612450386302",
-   "source_time_utc": "2026-11-23T14:08:11Z",
-   "expires_at_utc": "2026-11-23T20:08:11Z",
-   "fiabilite": "🟢",
-   "score": 9,
-   "mentions": [
-    "FrenchRapUS",
-    "Kulturlesite_",
-    "Platinside",
-    "RockstarNewsFRA",
-    "ShadesFrance",
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Rockstar sort la version deluxe de l'album GTA VI avec 23 morceaux inédits, dont Travis Scott et Sexyy Red : l'annonce officielle d'un contenu très attendu.",
-   "titles": [
-    "GTA VI : la version deluxe de l'album sort avec 23 titres bonus",
-    "Rockstar dévoile l'édition deluxe de l'album GTA VI, avec Travis Scott et Sexyy Red"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "",
-   "hot": true,
-   "hot_reason": "5_comptes",
-   "taken_at_utc": "2026-11-23T15:47:17Z",
-   "post_id": "0022-23_11_2026-Actu",
-   "closed_at_utc": "2026-11-23T15:52:22Z"
-  },
-  {
-   "id": "c-20261123-1546-karmine-skewmond-2027",
-   "added_at_utc": "2026-11-23T15:46:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Karmine Corp recrute SkewMond, jungler LEC, pour 2027",
-   "topic_key": "karmine-skewmond-2027",
-   "origin": "KarmineCorp",
-   "source_tweet": "https://x.com/KarmineCorp/status/2124889153913659639",
-   "primary_source": "https://x.com/KarmineCorp/status/2124889153913659639",
-   "source_time_utc": "2026-11-23T15:33:47Z",
-   "expires_at_utc": "2026-11-23T21:33:47Z",
-   "fiabilite": "🟢",
-   "score": 9,
-   "mentions": [
-    "Sheep_Esports"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Annonce officielle d'un transfert très suivi en LEC : le jungler qui a remporté les quatre derniers splits avec G2 rejoint la Karmine Corp.",
-   "titles": [
-    "Karmine Corp recrute SkewMond, jungler de la LEC, pour 2027",
-    "SkewMond quitte G2 Esports et rejoint la Karmine Corp"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "transfert annoncé par sources dès le 18 nov (pas de confirmation officielle recoupée, hors fraîcheur) ; pas de photo/visuel officiel disponible",
-   "closed_at_utc": "2026-11-23T19:53:06Z"
-  },
-  {
-   "id": "c-20261123-1546-gta6-patch-01-002-002",
-   "added_at_utc": "2026-11-23T15:46:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA VI : première mise à jour corrige crashs, météo figée et sauvegarde",
-   "topic_key": "gta6-patch-01-002-002",
-   "origin": "Rockstar Games",
-   "source_tweet": "https://x.com/Dexerto/status/2124888229400715756",
-   "primary_source": "https://x.com/Dexerto/status/2124888229400715756",
-   "source_time_utc": "2026-11-23T14:45:25Z",
-   "expires_at_utc": "2026-11-23T20:45:25Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "FrenchRapUS",
-    "InsiderGamingIG",
-    "VGC_News",
-    "_Tom_Henderson_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Premier correctif de GTA VI depuis sa sortie : Rockstar répond aux bugs les plus visibles (météo figée, autosave, crashs), un sujet que tout le public a vécu.",
-   "titles": [
-    "GTA VI reçoit sa première mise à jour : crashs, météo et sauvegarde corrigés",
-    "Première patch de GTA VI : la météo figée et l'autosave enfin réparés"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "",
-   "taken_at_utc": "2026-11-23T16:54:43Z",
-   "post_id": "0023-23_11_2026-Actu",
-   "closed_at_utc": "2026-11-23T16:59:11Z"
-  },
-  {
-   "id": "c-20261123-1546-fortnite-c8-graphismes-leak",
-   "added_at_utc": "2026-11-23T15:46:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fuite : le Chapitre 8 de Fortnite aurait des graphismes proches du Chapitre 4",
-   "topic_key": "fortnite-c8-graphismes-leak",
-   "origin": "FNBRintel",
-   "source_tweet": "https://x.com/ShiinaBR/status/2124888343578333582",
-   "primary_source": "https://x.com/ShiinaBR/status/2124888343578333582",
-   "source_time_utc": "2026-11-23T15:30:34Z",
-   "expires_at_utc": "2026-11-23T21:30:34Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "HYPEX"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Fuite d'un insider reconnu sur le rendu visuel du prochain chapitre de Fortnite, très commenté par la communauté ; à présenter comme une rumeur.",
-   "titles": [
-    "Fortnite Chapitre 8 : un rendu proche du Chapitre 4, selon une fuite",
-    "Le Chapitre 8 de Fortnite aurait des graphismes plus stylisés, selon une fuite"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "hot": true,
-   "hot_reason": "leak",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-rockstar-jltomy-festival-travis-scott-20",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Rockstar invite JL Tomy au festival GTA VI avec Travis Scott",
-   "topic_key": "rockstar-jltomy-festival-travis-scott-2026",
-   "origin": "JLTomyTV",
-   "source_tweet": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
-   "primary_source": "https://www.youtube.com/watch?v=TN9q6Pgl5-A",
-   "source_time_utc": "2026-11-23T16:00:34Z",
-   "expires_at_utc": "2026-11-23T22:00:34Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "JLTomyTV",
-    "youtube"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Un youtubeur FR invité par Rockstar au festival GTA VI (Travis Scott) : collab rare avec un créateur français",
-   "titles": [
-    "JL Tomy invité par Rockstar au concert de Travis Scott",
-    "Rockstar invite JL Tomy en VIP au festival GTA VI"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-gta6-jason-personnalite-rockstar",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Rockstar explique la personnalité de Jason dans GTA 6",
-   "topic_key": "gta6-jason-personnalite-rockstar",
-   "origin": "Rockstar Games",
-   "source_tweet": "https://x.com/FrenchRapUS/status/2124899504742617470",
-   "primary_source": "https://x.com/FrenchRapUS/status/2124899504742617470",
-   "source_time_utc": "2026-11-23T16:14:55Z",
-   "expires_at_utc": "2026-11-23T22:14:55Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "FrenchRapUS"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Rockstar détaille le caractère de Jason, protagoniste de GTA 6 (relais FrenchRapUS, source d'origine à confirmer)",
-   "titles": [
-    "Rockstar explique pourquoi Jason est si discret dans GTA 6",
-    "Le caractère de Jason dévoilé par Rockstar"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-fortnite-scott-pilgrim-skins-teaser",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fortnite : teaser d'une collab Scott Pilgrim avec des skins",
-   "topic_key": "fortnite-scott-pilgrim-skins-teaser",
-   "origin": "Fortnite",
-   "source_tweet": "https://x.com/HYPEX/status/2124913517195415739",
-   "primary_source": "https://x.com/HYPEX/status/2124913517195415739",
-   "source_time_utc": "2026-11-23T17:10:36Z",
-   "expires_at_utc": "2026-11-23T23:10:36Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "HYPEX"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Teaser d'une collab Fortnite x Scott Pilgrim, relayé par un insider (non confirmé officiellement) : collab grand public",
-   "titles": [
-    "Fortnite prépare une collab Scott Pilgrim avec des skins",
-    "Scott Pilgrim débarque dans Fortnite"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-fortnite-nocif-izzi-quittent-orchid-2026",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Départs de nocifFN et izziFNBR de TeamOrchid",
-   "topic_key": "fortnite-nocif-izzi-quittent-orchid-2026",
-   "origin": "TeamOrchidGG",
-   "source_tweet": "https://x.com/FortniteFraActu/status/2124896501767778495",
-   "primary_source": "https://x.com/FortniteFraActu/status/2124896501767778495",
-   "source_time_utc": "2026-11-23T16:02:59Z",
-   "expires_at_utc": "2026-11-23T22:02:59Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "FortniteFraActu"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Deux joueurs Fortnite FR quittent l'équipe Orchid, nocif déjà signé ailleurs : transferts esport Fortnite",
-   "titles": [
-    "nocifFN et izziFNBR quittent TeamOrchid",
-    "nocifFN déjà signé dans une nouvelle structure"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-xbox-multijoueur-payant-2026",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Xbox envisage de supprimer le multijoueur payant",
-   "topic_key": "xbox-multijoueur-payant-2026",
-   "origin": "Insider Gaming",
-   "source_tweet": "https://x.com/InsiderGamingIG/status/2124900748790264074",
-   "primary_source": "https://x.com/InsiderGamingIG/status/2124900748790264074",
-   "source_time_utc": "2026-11-23T16:19:51Z",
-   "expires_at_utc": "2026-11-23T22:19:51Z",
-   "fiabilite": "🟠",
-   "score": 5,
-   "mentions": [
-    "InsiderGamingIG"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Rapport d'Insider Gaming sur un abandon possible du multijoueur payant Xbox : sujet gaming fort, source non confirmée",
-   "titles": [
-    "Xbox envisage de supprimer le multijoueur payant",
-    "Xbox pourrait supprimer le multijoueur payant"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
-  },
-  {
-   "id": "c-20261123-1720-karmine-corp-line-up-2027",
-   "added_at_utc": "2026-11-23T17:20:28Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Karmine Corp boucle son line-up 2027",
-   "topic_key": "karmine-corp-line-up-2027",
-   "origin": "KarmineCorp",
-   "source_tweet": "https://x.com/KarmineCorp/status/2124911430289760614",
-   "primary_source": "https://x.com/KarmineCorp/status/2124911430289760614",
-   "source_time_utc": "2026-11-23T17:02:18Z",
-   "expires_at_utc": "2026-11-23T23:02:18Z",
-   "fiabilite": "🟢",
-   "score": 5,
-   "mentions": [
-    "KarmineCorp"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Annonce officielle du line-up 2027 de la Karmine Corp (orga très suivie en France) ; le tweet pousse aussi une carte collector, à ne pas reprendre",
-   "titles": [
-    "La Karmine Corp boucle son line-up 2027",
-    "Le roster 2027 de la Karmine Corp est complet"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-23T23:21:55Z"
   },
   {
    "id": "c-20261123-1720-kameto-rage-ripp-tiktok-champions",
@@ -897,67 +61,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261123-1918-fortnite-community-day-2-nov26",
-   "added_at_utc": "2026-11-23T19:18:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Community Day 2 de Fortnite annoncée pour la semaine prochaine, avec parapluie doré offert",
-   "topic_key": "fortnite-community-day-2-nov26",
-   "origin": "EpicTofuChris",
-   "source_tweet": "https://x.com/ShiinaBR/status/2124919822441951697",
-   "primary_source": "https://x.com/ShiinaBR/status/2124919822441951697",
-   "source_time_utc": "2026-11-23T17:35:39Z",
-   "expires_at_utc": "2026-11-23T23:35:39Z",
-   "fiabilite": "🟠",
-   "score": 7,
-   "mentions": [
-    "HYPEX",
-    "ShiinaBR"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Community Day de Fortnite révélée à l'avance avec un parapluie doré gratuit, très attendue par la communauté.",
-   "titles": [
-    "Fortnite : une Community Day 2 arrive la semaine prochaine",
-    "Fortnite prépare une Community Day avec un parapluie doré gratuit"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-24T01:18:46Z"
-  },
-  {
-   "id": "c-20261123-1918-fortnite-scott-pilgrim-teaser-nov26",
-   "added_at_utc": "2026-11-23T19:18:04Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fortnite x Scott Pilgrim : premier teaser officiel de la collaboration",
-   "topic_key": "fortnite-scott-pilgrim-teaser-nov26",
-   "origin": "Fortnite",
-   "source_tweet": "https://x.com/ShiinaBR/status/2124920187782926505",
-   "primary_source": "https://x.com/ShiinaBR/status/2124920187782926505",
-   "source_time_utc": "2026-11-23T17:37:06Z",
-   "expires_at_utc": "2026-11-23T23:37:06Z",
-   "fiabilite": "🟡",
-   "score": 8,
-   "mentions": [
-    "ShiinaBR"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Collab Fortnite avec Scott Pilgrim dévoilée par un teaser officiel, un crossover très visible pour les joueurs et fans du comics.",
-   "titles": [
-    "Fortnite et Scott Pilgrim : le premier teaser de la collab",
-    "Scott Pilgrim débarque dans Fortnite, teaser officiel à l'appui"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "teaser non recoupé par 2 médias (recherches: seulement d'anciens leaks), pas de key art officiel",
-   "closed_at_utc": "2026-11-23T19:53:09Z"
   },
   {
    "id": "c-20261123-2117-fortnite-semaine-or-2026-11",
@@ -1051,36 +154,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-24T05:15:17Z"
-  },
-  {
-   "id": "c-20261123-2117-gta6-maj-1",
-   "added_at_utc": "2026-11-23T21:17:36Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : Rockstar déploie une première mise à jour avec une liste de correctifs",
-   "topic_key": "gta6-maj-1",
-   "origin": "Rockstar Games",
-   "source_tweet": "https://x.com/riyadinhoo_/status/2124944895299449026",
-   "primary_source": "https://x.com/riyadinhoo_/status/2124944895299449026",
-   "source_time_utc": "2026-11-23T19:15:17Z",
-   "expires_at_utc": "2026-11-24T01:15:17Z",
-   "fiabilite": "🟠",
-   "score": 6,
-   "mentions": [
-    "riyadinhoo_"
-   ],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Première MAJ du jeu avec des correctifs très détaillés, à confirmer par une communication officielle de Rockstar",
-   "titles": [
-    "GTA 6 : la première mise à jour est là, voici ce qu'elle corrige",
-    "Première MAJ de GTA 6 : les correctifs qui vont plaire aux joueurs"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-24T01:18:46Z"
   },
   {
    "id": "c-20261123-2117-gta6-vermeij-chapitre1",
@@ -1375,49 +448,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261124-0118-gta6-39m-joueurs-ps5",
-   "added_at_utc": "2026-11-24T01:18:46Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "GTA 6 : plus de 39 millions de joueurs sur PS5, le plus gros lancement de l'histoire de PlayStation",
-   "topic_key": "gta6-39m-joueurs-ps5",
-   "origin": "PlayStation",
-   "source_tweet": "https://x.com/PlayStation/status/2125009125322957131",
-   "primary_source": "https://x.com/PlayStation/status/2125009125322957131",
-   "source_time_utc": "2026-11-23T23:30:30Z",
-   "expires_at_utc": "2026-11-24T05:30:30Z",
-   "fiabilite": "🟢",
-   "score": 9,
-   "mentions": [
-    "HYPEX",
-    "InsiderGamingIG",
-    "PlayStation",
-    "Rockstar_Mag",
-    "VGC_News",
-    "Wario64",
-    "_Tom_Henderson_",
-    "gematsu",
-    "geoffkeighley",
-    "thegameawards"
-   ],
-   "media_url": null,
-   "media_repo_path": "",
-   "angle": "Sony officialise le record de lancement de GTA 6 sur PS5 (683 M d'heures jouées), un chiffre que toute la presse reprend en quelques minutes.",
-   "titles": [
-    "GTA 6 : Sony annonce 39 millions de joueurs sur PS5, un record historique pour PlayStation",
-    "683 millions d'heures jouées sur PS5 : GTA 6 écrit un nouveau chapitre du record de PlayStation"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "publie",
-   "note": "",
-   "hot": true,
-   "hot_reason": "5_comptes",
-   "taken_at_utc": "2026-11-24T01:19:28Z",
-   "post_id": "0024-24_11_2026-Actu",
-   "closed_at_utc": "2026-11-24T01:22:49Z"
   },
   {
    "id": "c-20261124-0118-mcfly-carlito-pre-generique-1m",
@@ -2223,7 +1253,7 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
+   "status": "en_attente",
    "note": "",
    "taken_at_utc": "2026-11-25T09:39:31Z"
   },
@@ -2251,7 +1281,7 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
+   "status": "en_attente",
    "note": "",
    "taken_at_utc": "2026-11-25T09:40:34Z"
   },
@@ -2279,8 +1309,9 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-26T02:05:01Z"
   },
   {
    "id": "c-20261125-1049-samueletienne-atterrissage-gta6",
@@ -2306,6 +1337,216 @@
    "titles": [
     "« Atterrissage en finesse » : Samuel Etienne dans GTA VI",
     "Samuel Etienne et son atterrissage très élégant dans GTA VI"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-gotaga-gta6-clip-1948",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Gotaga, moment GTA 6 très partagé",
+   "topic_key": "gotaga-gta6-clip-1948",
+   "origin": "gotaga",
+   "source_tweet": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
+   "primary_source": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
+   "source_time_utc": "2026-11-25T14:00:00Z",
+   "expires_at_utc": "2026-11-27T14:00:00Z",
+   "fiabilite": "origine directe (Twitch), contenu non vérifié",
+   "score": 6,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
+   "media_repo_path": "",
+   "angle": "Clip GTA 6 de Gotaga, le plus vu de la veille hors X (1 948 vues en peu de temps).",
+   "titles": [
+    "Gotaga, le moment GTA 6 qui fait le buzz",
+    "Le clip GTA 6 de Gotaga que tout le monde regarde"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-gotaga-gta6-clip-peaceful",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Gotaga, clip GTA 6 à forte traction",
+   "topic_key": "gotaga-gta6-clip-peaceful",
+   "origin": "gotaga",
+   "source_tweet": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
+   "primary_source": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
+   "source_time_utc": "2026-11-25T14:42:00Z",
+   "expires_at_utc": "2026-11-27T14:42:00Z",
+   "fiabilite": "origine directe (Twitch), contenu non vérifié",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
+   "media_repo_path": "",
+   "angle": "Court clip GTA 6 de Gotaga avec une traction forte pour sa durée (19 s).",
+   "titles": [
+    "Gotaga, le clip GTA 6 qui surprend en 19 secondes",
+    "Court moment GTA 6 de Gotaga qui part en vrille"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-chowh1-taser-crocodile",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "chowh1 tente de taser un crocodile sur GTA 6",
+   "topic_key": "chowh1-taser-crocodile",
+   "origin": "chowh1",
+   "source_tweet": "https://www.twitch.tv/chowh1/clip/EnergeticScrumptiousMooseShadyLulu-ChxPvuFqoJ0MNn91",
+   "primary_source": "https://www.twitch.tv/chowh1/clip/EnergeticScrumptiousMooseShadyLulu-ChxPvuFqoJ0MNn91",
+   "source_time_utc": "2026-11-24T17:25:00Z",
+   "expires_at_utc": "2026-11-26T17:25:00Z",
+   "fiabilite": "origine directe (Twitch)",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/chowh1/clip/EnergeticScrumptiousMooseShadyLulu-ChxPvuFqoJ0MNn91",
+   "media_repo_path": "",
+   "angle": "Moment visuel absurde et drôle (taser un crocodile), compréhensible sans parole.",
+   "titles": [
+    "Taser un crocodile sur GTA 6, mauvaise idée",
+    "chowh1 et le crocodile : la pire idée de GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-squeezie-braquage-live-gta6",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Squeezie, braquage GTA 6 en live",
+   "topic_key": "squeezie-braquage-live-gta6",
+   "origin": "squeezie",
+   "source_tweet": "https://www.twitch.tv/squeezie/clip/LongObeseOrangeResidentSleeper-43PVWVke_FHK_Yz4",
+   "primary_source": "https://www.twitch.tv/squeezie/clip/LongObeseOrangeResidentSleeper-43PVWVke_FHK_Yz4",
+   "source_time_utc": "2026-11-25T16:41:00Z",
+   "expires_at_utc": "2026-11-27T16:41:00Z",
+   "fiabilite": "origine directe (Twitch), titre de live, contenu non vérifié",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/squeezie/clip/LongObeseOrangeResidentSleeper-43PVWVke_FHK_Yz4",
+   "media_repo_path": "",
+   "angle": "Squeezie sur un braquage GTA 6 en live très long, public FR connu.",
+   "titles": [
+    "Squeezie lance le braquage GTA 6 non-stop",
+    "Squeezie et son live GTA 6 de 676 heures"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-zerator-riot-valorant",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "ZeratoR et un message de Riot sur VALORANT",
+   "topic_key": "zerator-riot-valorant",
+   "origin": "zerator",
+   "source_tweet": "https://www.twitch.tv/zerator/clip/ArtisticTastySquirrelFUNgineer-VyRaiF8hmFRAyo76",
+   "primary_source": "https://www.twitch.tv/zerator/clip/ArtisticTastySquirrelFUNgineer-VyRaiF8hmFRAyo76",
+   "source_time_utc": "2026-11-25T17:45:00Z",
+   "expires_at_utc": "2026-11-27T17:45:00Z",
+   "fiabilite": "origine directe (Twitch), titre vague",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/zerator/clip/ArtisticTastySquirrelFUNgineer-VyRaiF8hmFRAyo76",
+   "media_repo_path": "",
+   "angle": "Grand streamer FR face à un message de Riot en plein stream VALORANT.",
+   "titles": [
+    "ZeratoR face au message de Riot pendant son stream",
+    "Le message de Riot à ZeratoR sur VALORANT"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-domingo-crash-gta6",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo, crash en plein GTA 6",
+   "topic_key": "domingo-crash-gta6",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
+   "primary_source": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
+   "source_time_utc": "2026-11-25T12:57:00Z",
+   "expires_at_utc": "2026-11-27T12:57:00Z",
+   "fiabilite": "origine directe (Twitch), contenu non vérifié",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
+   "media_repo_path": "",
+   "angle": "Bug ou crash GTA 6 sur un top streamer FR, court et lisible.",
+   "titles": [
+    "Domingo crash le jeu sur GTA 6",
+    "GTA 6 : le crash de Domingo en stream"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-0205-jltomy-caissiere-ko-gta6",
+   "added_at_utc": "2026-11-26T02:05:01Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JLTomy braque par accident et met KO la caissière",
+   "topic_key": "jltomy-caissiere-ko-gta6",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2125738503426478369",
+   "primary_source": "https://x.com/JLTomyTV/status/2125738503426478369",
+   "source_time_utc": "2026-11-25T23:48:48Z",
+   "expires_at_utc": "2026-11-27T23:48:48Z",
+   "fiabilite": "compte du streamer lui-même",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125738401143881728/vid/avc1/1280x720/Kf0we_izWDrUxvrr.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Braquage raté et caissière KO, moment visuel et drôle sur GTA 6 (#JLMiami).",
+   "titles": [
+    "JLTomy braque par accident et met KO la caissière",
+    "Braquage accidentel sur GTA 6 : la caissière KO"
    ],
    "checks": [],
    "photo_needed": "",
