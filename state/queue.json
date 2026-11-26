@@ -1253,9 +1253,10 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "",
-   "taken_at_utc": "2026-11-25T09:39:31Z"
+   "taken_at_utc": "2026-11-25T09:39:31Z",
+   "closed_at_utc": "2026-11-26T02:28:00Z"
   },
   {
    "id": "c-20261125-0938-michou-gta6-doue-1",
@@ -1281,9 +1282,10 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "expire",
    "note": "",
-   "taken_at_utc": "2026-11-25T09:40:34Z"
+   "taken_at_utc": "2026-11-25T09:40:34Z",
+   "closed_at_utc": "2026-11-26T02:28:00Z"
   },
   {
    "id": "c-20261125-0938-squeezie-gta6-voiture-toit",
