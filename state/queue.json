@@ -1010,6 +1010,36 @@
     "dur": null
    },
    "closed_at_utc": "2026-11-26T02:58:23Z"
+  },
+  {
+   "id": "c-20261126-0914-jltomy-jlmiami-wati-assomme-alderiate",
+   "added_at_utc": "2026-11-26T09:14:27Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JLTomy : Wati assomme Alderiate pendant le JLMiami",
+   "topic_key": "jltomy-jlmiami-wati-assomme-alderiate",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2125878684791820590",
+   "primary_source": "https://x.com/JLTomyTV/status/2125878684791820590",
+   "source_time_utc": "2026-11-26T09:05:50Z",
+   "expires_at_utc": "2026-11-28T09:05:50Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125877671502483456/vid/avc1/1920x1080/fINowkDqKkKkGm3-.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un KO en pleine bagarre de JLMiami, moment visuel et court sur un créateur whitelisté (palier 2).",
+   "titles": [
+    "Wati *assomme* Alderiate|en plein JLMiami",
+    "Alderiate KO face à Wati|le JLMiami tourne à la bagarre"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
