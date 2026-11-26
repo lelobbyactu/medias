@@ -1079,6 +1079,67 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261126-2314-kameto-lol-rage-coequipiers-20261126",
+   "added_at_utc": "2026-11-26T23:14:46Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
+   "topic_key": "kameto-lol-rage-coequipiers-20261126",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2126077825887199638",
+   "primary_source": "https://x.com/KametoTV/status/2126077825887199638",
+   "source_time_utc": "2026-11-26T22:17:08Z",
+   "expires_at_utc": "2026-11-28T22:17:08Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "KametoTV",
+    "TopDeTwitch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126077726931005441/vid/avc1/1280x720/ULp193rkWJL3i40E.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Un streamer FR très suivi qui craque en plein match de LoL : la rage en direct se comprend sans contexte.",
+   "titles": [
+    "Kameto pète un câble face à ses coéquipiers sur LoL",
+    "Quand Kameto craque complètement en pleine partie de LoL"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-2314-gotaga-gta6-clip-twitch-20261126-1638",
+   "added_at_utc": "2026-11-26T23:14:46Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Gotaga, moment de jeu sur GTA VI (clip Twitch)",
+   "topic_key": "gotaga-gta6-clip-twitch-20261126-1638",
+   "origin": "gotaga",
+   "source_tweet": "https://www.twitch.tv/gotaga/clip/MoralKathishPicklesPermaSmug-UEIRnzmcCfJAubFg",
+   "primary_source": "https://www.twitch.tv/gotaga/clip/MoralKathishPicklesPermaSmug-UEIRnzmcCfJAubFg",
+   "source_time_utc": "2026-11-26T16:38:16Z",
+   "expires_at_utc": "2026-11-28T16:38:16Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/gotaga/clip/MoralKathishPicklesPermaSmug-UEIRnzmcCfJAubFg",
+   "media_repo_path": "",
+   "angle": "Clip GTA VI d'un gros streamer FR, sujet fort du jour ; contenu non identifié par la veille, à regarder avant montage.",
+   "titles": [
+    "Gotaga tombe sur un moment inattendu dans GTA VI",
+    "Le moment GTA VI de Gotaga qui fait réagir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
