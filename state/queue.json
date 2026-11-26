@@ -989,14 +989,15 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "doublon : même clip Twitch que 0029-26_11_2026-Clips, publié le 26/11",
    "taken_at_utc": "2026-11-26T12:33:07Z",
    "clip": {
     "url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
     "offset": 0.0,
     "dur": 16.64
-   }
+   },
+   "closed_at_utc": "2026-11-26T12:35:36Z"
   }
  ]
 }
