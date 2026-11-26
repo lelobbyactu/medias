@@ -1,0 +1,38 @@
+[
+{
+"debut": 0.0,
+"fin": 0.82,
+"mot": "elle",
+"confiance": 0.47
+},
+{
+"debut": 0.82,
+"fin": 0.94,
+"mot": "est",
+"confiance": 1.0
+},
+{
+"debut": 0.94,
+"fin": 1.28,
+"mot": "justement",
+"confiance": 0.99
+},
+{
+"debut": 1.28,
+"fin": 1.44,
+"mot": "en",
+"confiance": 1.0
+},
+{
+"debut": 1.44,
+"fin": 2.1,
+"mot": "infiltration",
+"confiance": 1.0
+},
+{
+"debut": 2.1,
+"fin": 2.36,
+"mot": "dans",
+"confiance": 0.8
+}
+]
