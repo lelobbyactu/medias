@@ -389,7 +389,7 @@
   },
   {
    "id": "0028-26_11_2026-Clips",
-   "status": "a_valider",
+   "status": "refuse",
    "type": "reel",
    "topic": "Gotaga, clip GTA 6 à forte traction",
    "origin": "gotaga",
@@ -414,7 +414,8 @@
    "judge_score": "8/10",
    "format": "9:16",
    "garde_fou": "SPONSOR",
-   "telegram_msg": 17
+   "telegram_msg": 17,
+   "refus": "Clip"
   },
   {
    "id": "0029-26_11_2026-Clips",
