@@ -1019,6 +1019,66 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261126-2114-jltomy-fana-nikos-villa-bagarre",
+   "added_at_utc": "2026-11-26T21:14:54Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "drama",
+   "topic": "Fana frôle la bagarre pour défendre Nikos dans la villa JL Tomy",
+   "topic_key": "jltomy-fana-nikos-villa-bagarre",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126033241618710989",
+   "primary_source": "https://x.com/JLTomyTV/status/2126033241618710989",
+   "source_time_utc": "2026-11-26T19:19:59Z",
+   "expires_at_utc": "2026-11-27T07:19:59Z",
+   "fiabilite": "haute",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126032300991254529/vid/avc1/1920x1080/OOz6yUDWBFB6TDo-.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Une quasi-bagarre dans le subathon à Miami, avec un streamer qui s'interpose pour un autre : la tension se comprend sans contexte.",
+   "titles": [
+    "Fana *failli* se battre|pour défendre Nikos|dans la villa de JL Tomy",
+    "Le clash de la villa :|Fana s'interpose|pour protéger Nikos"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-2114-jltomy-logs-kills-gta6",
+   "added_at_utc": "2026-11-26T21:14:54Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JL Tomy : les logs du jeu sortis pour compter ses kills sur GTA 6",
+   "topic_key": "jltomy-logs-kills-gta6",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126052484619624504",
+   "primary_source": "https://x.com/JLTomyTV/status/2126052484619624504",
+   "source_time_utc": "2026-11-26T20:36:27Z",
+   "expires_at_utc": "2026-11-28T20:36:27Z",
+   "fiabilite": "haute",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126052419217858560/vid/avc1/1920x1080/Q0y5BWWYPN_ZevLA.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Le jeu sort ses logs pour compter les kills : un détail absurde sur GTA 6, le jeu le plus attendu du moment.",
+   "titles": [
+    "Les logs du jeu sortis|pour compter *les kills*|de JL Tomy sur GTA 6",
+    "JL Tomy fait sortir|les logs de GTA 6|pour voir ses kills"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
