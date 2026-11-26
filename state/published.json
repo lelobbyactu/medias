@@ -465,16 +465,15 @@
    "expires_at_utc": "2026-11-27T12:57:00Z",
    "nature": "gameplay",
    "proposed_at_utc": "2026-11-26T03:01:29Z",
-   "titre": "Domingo finit|sa course dans|les lettres|*géantes*",
+   "titre": "Domingo offre|à Lucia une|*commotion*|cérébrale",
    "legende": "Le diagnostic du docteur Domingo est tombé en direct. Tu conduis mieux que ça à moto ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #twitchfr #jeuxvideo",
    "titres_alt": [
-    "Domingo plante|sa moto dans|une *enseigne*|géante",
-    "Domingo offre|à Lucia une|*commotion*|cérébrale"
+    "Domingo finit|sa course dans|les lettres|*géantes*",
+    "Domingo plante|sa moto dans|une *enseigne*|géante"
    ],
    "judge_score": "7/10",
    "format": "9:16",
-   "garde_fou": "SPONSOR",
-   "telegram_msg": 22
+   "garde_fou": "SPONSOR"
   }
  ]
 }
