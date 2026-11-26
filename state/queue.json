@@ -929,6 +929,66 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261126-1514-domingo-reaction-live-2026-11-26",
+   "added_at_utc": "2026-11-26T15:14:55Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "drama",
+   "topic": "Domingo s'emporte en live : « Non là, tu te fous de ma gueule »",
+   "topic_key": "domingo-reaction-live-2026-11-26",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2125952703759040567",
+   "primary_source": "https://x.com/DomingoTV/status/2125952703759040567",
+   "source_time_utc": "2026-11-26T13:59:57Z",
+   "expires_at_utc": "2026-11-27T01:59:57Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125952598377197568/vid/avc1/1280x720/Xdc05c5UIsvU89K7.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Réaction spontanée d'un gros streamer FR (256 k abonnés), 16 k vues en environ 1 h ; contenu du clip non vérifié à la veille, à confirmer au montage.",
+   "titles": [
+    "Domingo lâche un « tu te fous de ma gueule » en plein live",
+    "Le moment où Domingo s'emporte en stream"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261126-1514-jltomy-jlmiami-guerre-2026-11-26",
+   "added_at_utc": "2026-11-26T15:14:55Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JLTomy à Miami (#JLMiami) : « C'est la guerre »",
+   "topic_key": "jltomy-jlmiami-guerre-2026-11-26",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2125965415029338440",
+   "primary_source": "https://x.com/JLTomyTV/status/2125965415029338440",
+   "source_time_utc": "2026-11-26T14:50:28Z",
+   "expires_at_utc": "2026-11-28T14:50:28Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125965270808199168/vid/avc1/1280x720/flR_946wxjR5KQFX.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Épisode #JLMiami d'un streamer FR (111 k abonnés) annoncé comme une escalade ; 3 k vues, peu de traction, contenu non vu : entrée de file au seuil, à juger au montage.",
+   "titles": [
+    "JLTomy plonge dans la guerre à Miami",
+    "« C'est la guerre » : JLTomy en plein #JLMiami"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
