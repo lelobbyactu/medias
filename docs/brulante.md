@@ -4,7 +4,7 @@
 Tout le reste passe par la validation d'Alix. Un drama urgent part **20 minutes après son envoi sur Telegram, sauf s'il clique « Annuler »** (Instagram et TikTok ne permettent pas de supprimer un post par l'API). La veille ne marque `hot_reason: "drama"` que si **tout** est réuni :
 - **clip vidéo** d'un drama, d'une embrouille ou d'une annonce en Just Chatting (ou en live) ;
 - le créateur concerné est sur **la liste blanche** (doc projet `claude/liste-blanche-streamers.md`) ;
-- **buzz prouvé** : repris par au moins 3 comptes FR indépendants de la veille (champ `mentions`) ;
+- **buzz prouvé** : repris par au moins 2 comptes FR indépendants de la veille (champ `mentions`) ;
 - **moins de 12 h** depuis le moment ;
 - aucune exclusion de `docs/clips.md` §4 ; accusation grave : seulement si vérifiée (`docs/clips.md` §4), et jamais si elle touche des mineurs, des violences sexuelles ou une procédure judiciaire en cours.
 

@@ -2,7 +2,7 @@
  "_doc": "Réglages du Lobby : seule source pour les comptes veillés, seuils, horaires, plafonds. Lue par scripts/lobby.py. Pour ajouter un compte : l'ajouter dans un groupe de query_groups (512 caractères max par requête, ~14 comptes).",
  "cap_per_day": 7,
  "lot_max": 4,
- "tiktok_pause_until": "2026-11-27",
+ "tiktok_pause_until": "2026-11-25",
  "urgent_delay_min": 20,
  "zernio_accounts": {
   "instagram": "6afdabaa129402676fdefe98",
