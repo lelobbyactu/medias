@@ -540,13 +540,30 @@
   },
   {
    "id": "0033-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo vole un avion de chasse sur la base militaire de GTA 6",
    "origin": "DomingoTV",
    "source_tweet": "https://x.com/DomingoTV/status/2125653649137279441",
    "queue_id": "c-20261126-1223-domingo-avion-de-chasse-gta6-2511",
-   "reserved_at_utc": "2026-11-26T12:54:53Z"
+   "reserved_at_utc": "2026-11-26T12:54:53Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/PatientWittyFungusShazBotstix-e1vqyaIXf2dDLeCk",
+    "offset": 0.0,
+    "dur": 60.01
+   },
+   "topic_key": "domingo-avion-de-chasse-gta6-2511",
+   "expires_at_utc": "2026-11-27T18:11:37Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T13:04:23Z",
+   "titre": "Domingo vole|un *avion de*|*chasse* sur GTA",
+   "legende": "Débarquer dans une base aérienne en pick-up pour repartir par les airs, il fallait oser 👀 Tu aurais tenté le coup à 5 étoiles ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #gameplay #twitchfr",
+   "titres_alt": [
+    "5 étoiles,|Domingo repart|en *jet*"
+   ],
+   "judge_score": "7.5/10",
+   "format": "9:16",
+   "garde_fou": "OK"
   }
  ]
 }

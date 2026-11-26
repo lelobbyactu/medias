@@ -867,40 +867,6 @@
    "closed_at_utc": "2026-11-26T12:15:54Z"
   },
   {
-   "id": "c-20261126-1223-domingo-avion-de-chasse-gta6-2511",
-   "added_at_utc": "2026-11-26T12:23:39Z",
-   "found_by": "secours X",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Domingo vole un avion de chasse sur la base militaire de GTA 6",
-   "topic_key": "domingo-avion-de-chasse-gta6-2511",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2125653649137279441",
-   "primary_source": "https://x.com/DomingoTV/status/2125653649137279441",
-   "source_time_utc": "2026-11-25T18:11:37Z",
-   "expires_at_utc": "2026-11-27T18:11:37Z",
-   "fiabilite": "🟡",
-   "score": 7,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125653527636721664/vid/avc1/2560x1440/0IHmsPZohQCcl72x.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Il force la base en pick-up et décolle en avion de chasse",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-26T12:29:40Z",
-   "clip": {
-    "url": "https://www.twitch.tv/domingo/clip/PatientWittyFungusShazBotstix-e1vqyaIXf2dDLeCk",
-    "offset": 0.0,
-    "dur": 60.01
-   },
-   "post_id": "0033-26_11_2026-Clips"
-  },
-  {
    "id": "c-20261126-1223-gotaga-carjacking-sms-gta6-2511",
    "added_at_utc": "2026-11-26T12:23:39Z",
    "found_by": "secours X",
