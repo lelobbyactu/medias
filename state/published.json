@@ -387,13 +387,31 @@
   },
   {
    "id": "0028-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Gotaga, clip GTA 6 à forte traction",
    "origin": "gotaga",
    "source_tweet": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
    "queue_id": "c-20261126-0205-gotaga-gta6-clip-peaceful",
-   "reserved_at_utc": "2026-11-26T02:42:33Z"
+   "reserved_at_utc": "2026-11-26T02:42:33Z",
+   "clip": {
+    "url": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "gotaga-gta6-clip-peaceful",
+   "expires_at_utc": "2026-11-27T14:42:00Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T02:51:39Z",
+   "titre": "Gotaga hésite|une seconde de|*trop* et tombe|de l'avion",
+   "legende": "Il avait le tir, il a préféré réfléchir. Tu aurais tiré direct ?\n\nClip : twitch.tv/gotaga\n\n#gta6 #gtavi #gotaga #twitchfr #jeuxvideo",
+   "titres_alt": [
+    "Gotaga hésite|à tirer et le|regrette *très*|vite",
+    "Il l'emporte|avec lui :|Gotaga *éjecté*|de l'avion"
+   ],
+   "judge_score": "8/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   },
   {
    "id": "0029-26_11_2026-Clips",
