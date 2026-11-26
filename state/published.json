@@ -362,7 +362,7 @@
   },
   {
    "id": "0027-26_11_2026-Clips",
-   "status": "a_valider",
+   "status": "valide",
    "type": "reel",
    "topic": "JLTomy braque par accident et met KO la caissière",
    "origin": "JLTomyTV",
@@ -384,7 +384,8 @@
    "judge_score": "9/10",
    "format": "9:16",
    "garde_fou": "SPONSOR",
-   "telegram_msg": 16
+   "telegram_msg": 16,
+   "validated_at_utc": "2026-11-26T02:55:12Z"
   },
   {
    "id": "0028-26_11_2026-Clips",
