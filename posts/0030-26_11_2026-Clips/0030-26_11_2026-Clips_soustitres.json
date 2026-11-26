@@ -1,0 +1,110 @@
+[
+ {
+  "debut": 6.21,
+  "fin": 6.77,
+  "mot": "Parfait.",
+  "confiance": 0.78
+ },
+ {
+  "debut": 8.53,
+  "fin": 9.55,
+  "mot": "Pardon !",
+  "confiance": 0.37
+ },
+ {
+  "debut": 9.55,
+  "fin": 9.81,
+  "mot": "Oh",
+  "confiance": 0.92
+ },
+ {
+  "debut": 9.81,
+  "fin": 9.89,
+  "mot": "la",
+  "confiance": 0.83
+ },
+ {
+  "debut": 9.89,
+  "fin": 10.75,
+  "mot": "commotion !",
+  "confiance": 0.58
+ },
+ {
+  "debut": 10.75,
+  "fin": 11.27,
+  "mot": "Ok,",
+  "confiance": 0.91
+ },
+ {
+  "debut": 11.39,
+  "fin": 11.91,
+  "mot": "super !",
+  "confiance": 0.73
+ },
+ {
+  "debut": 13.53,
+  "fin": 14.09,
+  "mot": "Ouais,",
+  "confiance": 0.81
+ },
+ {
+  "debut": 14.25,
+  "fin": 14.37,
+  "mot": "ça",
+  "confiance": 0.96
+ },
+ {
+  "debut": 14.37,
+  "fin": 14.47,
+  "mot": "va",
+  "confiance": 1.0
+ },
+ {
+  "debut": 14.47,
+  "fin": 15.17,
+  "mot": "Lucia ?",
+  "confiance": 0.86
+ },
+ {
+  "debut": 15.17,
+  "fin": 15.49,
+  "mot": "Ah",
+  "confiance": 0.76
+ },
+ {
+  "debut": 15.49,
+  "fin": 16.25,
+  "mot": "putain !",
+  "confiance": 0.44
+ },
+ {
+  "debut": 16.25,
+  "fin": 16.31,
+  "mot": "Ah",
+  "confiance": 0.59
+ },
+ {
+  "debut": 16.31,
+  "fin": 16.39,
+  "mot": "là",
+  "confiance": 0.79
+ },
+ {
+  "debut": 16.39,
+  "fin": 16.55,
+  "mot": "c'est",
+  "confiance": 0.8
+ },
+ {
+  "debut": 16.55,
+  "fin": 16.89,
+  "mot": "commotion",
+  "confiance": 0.95
+ },
+ {
+  "debut": 16.89,
+  "fin": 17.35,
+  "mot": "cérébrale",
+  "confiance": 0.99
+ }
+]

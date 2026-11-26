@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.21,0:00:07.37,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARFAIT.{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.53,0:00:09.55,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PARDON !{\c&HFFFFFF&}
+Dialogue: 0,0:00:09.55,0:00:09.81,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OH{\c&HFFFFFF&} LA COMMOTION !
+Dialogue: 0,0:00:09.81,0:00:09.89,Sub,,0,0,0,,{\pos(540,940)}OH {\c&H3DFFF2&}LA{\c&HFFFFFF&} COMMOTION !
+Dialogue: 0,0:00:09.89,0:00:10.75,Sub,,0,0,0,,{\pos(540,940)}OH LA {\c&H3DFFF2&}COMMOTION !{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.75,0:00:11.39,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OK,{\c&HFFFFFF&} SUPER !
+Dialogue: 0,0:00:11.39,0:00:12.51,Sub,,0,0,0,,{\pos(540,940)}OK, {\c&H3DFFF2&}SUPER !{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.53,0:00:14.25,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OUAIS,{\c&HFFFFFF&} ÇA VA LUCIA ?
+Dialogue: 0,0:00:14.25,0:00:14.37,Sub,,0,0,0,,{\pos(540,940)}OUAIS, {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} VA LUCIA ?
+Dialogue: 0,0:00:14.37,0:00:14.47,Sub,,0,0,0,,{\pos(540,940)}OUAIS, ÇA {\c&H3DFFF2&}VA{\c&HFFFFFF&} LUCIA ?
+Dialogue: 0,0:00:14.47,0:00:15.17,Sub,,0,0,0,,{\pos(540,940)}OUAIS, ÇA VA {\c&H3DFFF2&}LUCIA ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.17,0:00:15.49,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} P***** !
+Dialogue: 0,0:00:15.49,0:00:16.25,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}P***** !{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.25,0:00:16.31,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} LÀ C'EST COMMOTION
+Dialogue: 0,0:00:16.31,0:00:16.39,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} C'EST COMMOTION
+Dialogue: 0,0:00:16.39,0:00:16.55,Sub,,0,0,0,,{\pos(540,940)}AH LÀ {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} COMMOTION
+Dialogue: 0,0:00:16.55,0:00:16.89,Sub,,0,0,0,,{\pos(540,940)}AH LÀ C'EST {\c&H3DFFF2&}COMMOTION{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.89,0:00:17.70,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}CÉRÉBRALE{\c&HFFFFFF&}
