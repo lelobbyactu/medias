@@ -493,7 +493,7 @@
   },
   {
    "id": "0031-26_11_2026-Clips",
-   "status": "a_valider",
+   "status": "valide",
    "type": "reel",
    "topic": "Domingo voit Kyle transformé en Hulk sur GTA 6",
    "origin": "DomingoTV",
@@ -517,7 +517,8 @@
    "judge_score": "8.5/10",
    "format": "9:16",
    "garde_fou": "SPONSOR",
-   "telegram_msg": 27
+   "telegram_msg": 27,
+   "validated_at_utc": "2026-11-26T17:02:20Z"
   },
   {
    "id": "0032-26_11_2026-Clips",
