@@ -241,36 +241,6 @@
    "closed_at_utc": "2026-11-25T09:38:25Z"
   },
   {
-   "id": "c-20261124-0714-anyme-gp-explorer-confession-20261124",
-   "added_at_utc": "2026-11-24T07:14:19Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Anyme revient sur sa mise à l'écart après le GP Explorer",
-   "topic_key": "anyme-gp-explorer-confession-20261124",
-   "origin": "Anyme",
-   "source_tweet": "https://x.com/LaTwitchance/status/2125095455331651675",
-   "primary_source": "https://x.com/LaTwitchance/status/2125095455331651675",
-   "source_time_utc": "2026-11-24T05:13:33Z",
-   "expires_at_utc": "2026-11-24T11:13:33Z",
-   "fiabilite": "🟡",
-   "score": 5,
-   "mentions": [
-    "X @LaTwitchance"
-   ],
-   "media_url": null,
-   "media_repo_path": "",
-   "angle": "Un créateur connu s'exprime sur le fait d'avoir été détesté par le public après sa présence trop marquée dans le GP Explorer.",
-   "titles": [
-    "Anyme explique pourquoi il a été détesté après le GP Explorer",
-    "« J'ai senti que j'avais perdu mon totem d'immunité »"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "expire",
-   "note": "",
-   "closed_at_utc": "2026-11-24T11:15:23Z"
-  },
-  {
    "id": "c-20261124-0915-gta6-chiffres-lancement-ps5-nov26",
    "added_at_utc": "2026-11-24T09:15:09Z",
    "found_by": "veille",
@@ -325,37 +295,6 @@
    "status": "expire",
    "note": "",
    "closed_at_utc": "2026-11-25T09:38:25Z"
-  },
-  {
-   "id": "c-20261124-1115-fortnite-doki-doki-collab",
-   "added_at_utc": "2026-11-24T11:15:23Z",
-   "found_by": "veille",
-   "type": "actu",
-   "topic": "Fortnite : Doki Doki Literature Club arrive dans le jeu",
-   "topic_key": "fortnite-doki-doki-collab",
-   "origin": "HYPEX",
-   "source_tweet": "https://x.com/HYPEX/status/2125173683174182950",
-   "primary_source": "https://x.com/HYPEX/status/2125173683174182950",
-   "source_time_utc": "2026-11-24T10:24:24Z",
-   "expires_at_utc": "2026-11-24T16:24:24Z",
-   "fiabilite": "🟠",
-   "score": 8,
-   "mentions": [],
-   "media_url": "",
-   "media_repo_path": "",
-   "angle": "Collab annoncée par un insider (fuite, sortie prévue dans la semaine, quatre personnages) ; très fort engagement (160 k vues, plus de 6 000 likes).",
-   "titles": [
-    "Fortnite : Doki Doki Literature Club débarque dans le jeu",
-    "Doki Doki Literature Club arrive dans Fortnite d'ici une semaine"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "A TRAITER : leak HYPEX verifie (DDLC dans Fortnite sous 1 semaine, 4 persos) mais aucun visuel officiel recuperable (pas de key art Fortnite/DDLC dans assets, og:image illisible)",
-   "hot": true,
-   "hot_reason": "leak",
-   "taken_at_utc": "2026-11-24T11:15:54Z",
-   "closed_at_utc": "2026-11-24T11:17:15Z"
   },
   {
    "id": "c-20261124-1115-fortnite-puss-in-boots-collab",
