@@ -416,13 +416,31 @@
   },
   {
    "id": "0029-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Gotaga, moment GTA 6 très partagé",
    "origin": "gotaga",
    "source_tweet": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
    "queue_id": "c-20261126-0205-gotaga-gta6-clip-1948",
-   "reserved_at_utc": "2026-11-26T02:42:35Z"
+   "reserved_at_utc": "2026-11-26T02:42:35Z",
+   "clip": {
+    "url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "gotaga-gta6-clip-1948",
+   "expires_at_utc": "2026-11-27T14:00:00Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T02:51:49Z",
+   "titre": "Gotaga se fait|braquer et|*dérouille*|le voleur",
+   "legende": "Un flingue en face, et il choisit les poings. Tu l'aurais tenté ?\n\nClip : twitch.tv/gotaga\n\n#gta6 #gtavi #gotaga #twitchfr #jeuxvideo",
+   "titres_alt": [
+    "Il braque|Gotaga et finit|*au sol*",
+    "Mauvaise idée|de vouloir la|*caisse* de|Gotaga"
+   ],
+   "judge_score": "8/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   }
  ]
 }

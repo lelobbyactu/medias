@@ -1353,43 +1353,6 @@
    "closed_at_utc": "2026-11-26T02:40:31Z"
   },
   {
-   "id": "c-20261126-0205-gotaga-gta6-clip-1948",
-   "added_at_utc": "2026-11-26T02:05:01Z",
-   "found_by": "sources:twitch_clip",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Gotaga, moment GTA 6 très partagé",
-   "topic_key": "gotaga-gta6-clip-1948",
-   "origin": "gotaga",
-   "source_tweet": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
-   "primary_source": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
-   "source_time_utc": "2026-11-25T14:00:00Z",
-   "expires_at_utc": "2026-11-27T14:00:00Z",
-   "fiabilite": "origine directe (Twitch), contenu non vérifié",
-   "score": 6,
-   "mentions": [
-    "twitch"
-   ],
-   "media_url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
-   "media_repo_path": "",
-   "angle": "Clip GTA 6 de Gotaga, le plus vu de la veille hors X (1 948 vues en peu de temps).",
-   "titles": [
-    "Gotaga, le moment GTA 6 qui fait le buzz",
-    "Le clip GTA 6 de Gotaga que tout le monde regarde"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-26T02:28:58Z",
-   "clip": {
-    "url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
-    "offset": 0,
-    "dur": null
-   },
-   "post_id": "0029-26_11_2026-Clips"
-  },
-  {
    "id": "c-20261126-0205-chowh1-taser-crocodile",
    "added_at_utc": "2026-11-26T02:05:01Z",
    "found_by": "sources:twitch_clip",
