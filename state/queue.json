@@ -1451,14 +1451,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "juge 5/10 : plus de la moitié en écran MORT/noir/cinématique",
    "taken_at_utc": "2026-11-26T02:33:04Z",
    "clip": {
     "url": "https://www.twitch.tv/chowh1/clip/EnergeticScrumptiousMooseShadyLulu-ChxPvuFqoJ0MNn91",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-26T02:40:33Z"
   },
   {
    "id": "c-20261126-0205-squeezie-braquage-live-gta6",
