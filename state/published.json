@@ -378,6 +378,16 @@
    "source_tweet": "https://www.twitch.tv/gotaga/clip/PeacefulKitschyAnacondaMrDestructoid-yqp2lD-qMho0IzwM",
    "queue_id": "c-20261126-0205-gotaga-gta6-clip-peaceful",
    "reserved_at_utc": "2026-11-26T02:42:33Z"
+  },
+  {
+   "id": "0029-26_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Gotaga, moment GTA 6 très partagé",
+   "origin": "gotaga",
+   "source_tweet": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
+   "queue_id": "c-20261126-0205-gotaga-gta6-clip-1948",
+   "reserved_at_utc": "2026-11-26T02:42:35Z"
   }
  ]
 }
