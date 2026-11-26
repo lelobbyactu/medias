@@ -461,7 +461,7 @@
   },
   {
    "id": "0030-26_11_2026-Clips",
-   "status": "publication",
+   "status": "publie",
    "type": "reel",
    "topic": "Domingo, crash en plein GTA 6",
    "origin": "domingo",
@@ -489,7 +489,9 @@
    "telegram_msg": 23,
    "validated_at_utc": "2026-11-26T03:11:29Z",
    "published_at_utc": "2026-11-26T17:01:15Z",
-   "zernio_post_id": "6b0865e23316e65ffb8b61cd"
+   "zernio_post_id": "6b0865e23316e65ffb8b61cd",
+   "instagram": "https://www.instagram.com/reel/DgNmAPNCQSQ/",
+   "tiktok": "https://www.tiktok.com/@lelobbyactu/video/7712525571942518017"
   },
   {
    "id": "0031-26_11_2026-Clips",
