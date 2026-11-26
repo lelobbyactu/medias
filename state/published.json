@@ -449,13 +449,31 @@
   },
   {
    "id": "0030-26_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo, crash en plein GTA 6",
    "origin": "domingo",
    "source_tweet": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
    "queue_id": "c-20261126-0205-domingo-crash-gta6",
-   "reserved_at_utc": "2026-11-26T02:58:25Z"
+   "reserved_at_utc": "2026-11-26T02:58:25Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "domingo-crash-gta6",
+   "expires_at_utc": "2026-11-27T12:57:00Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-26T03:01:29Z",
+   "titre": "Domingo finit|sa course dans|les lettres|*géantes*",
+   "legende": "Le diagnostic du docteur Domingo est tombé en direct. Tu conduis mieux que ça à moto ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #twitchfr #jeuxvideo",
+   "titres_alt": [
+    "Domingo plante|sa moto dans|une *enseigne*|géante",
+    "Domingo offre|à Lucia une|*commotion*|cérébrale"
+   ],
+   "judge_score": "7/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   }
  ]
 }

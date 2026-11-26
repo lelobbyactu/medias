@@ -1462,43 +1462,6 @@
     "dur": null
    },
    "closed_at_utc": "2026-11-26T02:58:23Z"
-  },
-  {
-   "id": "c-20261126-0205-domingo-crash-gta6",
-   "added_at_utc": "2026-11-26T02:05:01Z",
-   "found_by": "sources:twitch_clip",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Domingo, crash en plein GTA 6",
-   "topic_key": "domingo-crash-gta6",
-   "origin": "domingo",
-   "source_tweet": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
-   "primary_source": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
-   "source_time_utc": "2026-11-25T12:57:00Z",
-   "expires_at_utc": "2026-11-27T12:57:00Z",
-   "fiabilite": "origine directe (Twitch), contenu non vérifié",
-   "score": 5,
-   "mentions": [
-    "twitch"
-   ],
-   "media_url": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
-   "media_repo_path": "",
-   "angle": "Bug ou crash GTA 6 sur un top streamer FR, court et lisible.",
-   "titles": [
-    "Domingo crash le jeu sur GTA 6",
-    "GTA 6 : le crash de Domingo en stream"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-26T02:54:48Z",
-   "clip": {
-    "url": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
-    "offset": 0,
-    "dur": null
-   },
-   "post_id": "0030-26_11_2026-Clips"
   }
  ]
 }
