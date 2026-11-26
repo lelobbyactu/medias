@@ -504,6 +504,16 @@
    "source_tweet": "https://x.com/DomingoTV/status/2125600699522429175",
    "queue_id": "c-20261126-1223-domingo-moto-grillage-gta6-2511",
    "reserved_at_utc": "2026-11-26T12:52:58Z"
+  },
+  {
+   "id": "0033-26_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Domingo vole un avion de chasse sur la base militaire de GTA 6",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2125653649137279441",
+   "queue_id": "c-20261126-1223-domingo-avion-de-chasse-gta6-2511",
+   "reserved_at_utc": "2026-11-26T12:54:53Z"
   }
  ]
 }
