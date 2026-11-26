@@ -1491,7 +1491,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-26T02:54:48Z"
+   "taken_at_utc": "2026-11-26T02:54:48Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/AntsyMuddyChinchillaM4xHeh-KDQtW21KEPD8ak7w",
+    "offset": 0,
+    "dur": null
+   }
   }
  ]
 }
