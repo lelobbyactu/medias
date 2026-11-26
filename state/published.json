@@ -423,7 +423,7 @@
   },
   {
    "id": "0029-26_11_2026-Clips",
-   "status": "valide",
+   "status": "publication",
    "type": "reel",
    "topic": "Gotaga, moment GTA 6 très partagé",
    "origin": "gotaga",
@@ -449,7 +449,8 @@
    "format": "9:16",
    "garde_fou": "SPONSOR",
    "telegram_msg": 18,
-   "validated_at_utc": "2026-11-26T02:55:05Z"
+   "validated_at_utc": "2026-11-26T02:55:05Z",
+   "published_at_utc": "2026-11-26T11:01:06Z"
   },
   {
    "id": "0030-26_11_2026-Clips",
