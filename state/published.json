@@ -541,7 +541,7 @@
   },
   {
    "id": "0033-26_11_2026-Clips",
-   "status": "a_valider",
+   "status": "echec",
    "type": "reel",
    "topic": "Domingo vole un avion de chasse sur la base militaire de GTA 6",
    "origin": "DomingoTV",
@@ -565,7 +565,8 @@
    "judge_score": "7.5/10",
    "format": "9:16",
    "garde_fou": "OK",
-   "envoi_utc": "2026-11-26T13:04:36Z"
+   "envoi_utc": "2026-11-26T13:04:36Z",
+   "note": "<urlopen error [Errno 104] Connection reset by peer>"
   }
  ]
 }
