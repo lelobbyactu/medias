@@ -1,0 +1,74 @@
+[
+{
+"debut": 9.18,
+"fin": 9.28,
+"mot": "Il dit",
+"confiance": 0.86
+},
+{
+"debut": 9.28,
+"fin": 9.42,
+"mot": "vite,",
+"confiance": 0.91
+},
+{
+"debut": 12.23,
+"fin": 12.83,
+"mot": "allez,",
+"confiance": 0.7
+},
+{
+"debut": 13.05,
+"fin": 13.05,
+"mot": "allez,",
+"confiance": 0.94
+},
+{
+"debut": 13.05,
+"fin": 13.21,
+"mot": "allez",
+"confiance": 0.93
+},
+{
+"debut": 14.39,
+"fin": 14.49,
+"mot": "aller",
+"confiance": 0.55
+},
+{
+"debut": 14.49,
+"fin": 14.55,
+"mot": "à",
+"confiance": 0.99
+},
+{
+"debut": 14.55,
+"fin": 14.69,
+"mot": "gauche",
+"confiance": 1.0
+},
+{
+"debut": 14.69,
+"fin": 14.83,
+"mot": "tout",
+"confiance": 0.97
+},
+{
+"debut": 14.83,
+"fin": 14.91,
+"mot": "de",
+"confiance": 0.99
+},
+{
+"debut": 14.91,
+"fin": 15.03,
+"mot": "suite,",
+"confiance": 1.0
+},
+{
+"debut": 15.13,
+"fin": 15.35,
+"mot": "mais...",
+"confiance": 0.92
+}
+]

@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:09.18,0:00:09.28,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}IL DIT{\c&HFFFFFF&} VITE,
+Dialogue: 0,0:00:09.28,0:00:10.02,Sub,,0,0,0,,{\pos(540,940)}IL DIT {\c&H3DFFF2&}VITE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.23,0:00:13.05,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}ALLEZ,{\c&HFFFFFF&} ALLEZ, ALLEZ
+Dialogue: 0,0:00:13.05,0:00:13.05,Sub,,0,0,0,,{\pos(540,940)}ALLEZ, {\c&H3DFFF2&}ALLEZ,{\c&HFFFFFF&} ALLEZ
+Dialogue: 0,0:00:13.05,0:00:13.81,Sub,,0,0,0,,{\pos(540,940)}ALLEZ, ALLEZ, {\c&H3DFFF2&}ALLEZ{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.39,0:00:14.49,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}ALLER{\c&HFFFFFF&} À GAUCHE TOUT
+Dialogue: 0,0:00:14.49,0:00:14.55,Sub,,0,0,0,,{\pos(540,940)}ALLER {\c&H3DFFF2&}À{\c&HFFFFFF&} GAUCHE TOUT
+Dialogue: 0,0:00:14.55,0:00:14.69,Sub,,0,0,0,,{\pos(540,940)}ALLER À {\c&H3DFFF2&}GAUCHE{\c&HFFFFFF&} TOUT
+Dialogue: 0,0:00:14.69,0:00:14.83,Sub,,0,0,0,,{\pos(540,940)}ALLER À GAUCHE {\c&H3DFFF2&}TOUT{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.83,0:00:14.91,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DE{\c&HFFFFFF&} SUITE, MAIS...
+Dialogue: 0,0:00:14.91,0:00:15.13,Sub,,0,0,0,,{\pos(540,940)}DE {\c&H3DFFF2&}SUITE,{\c&HFFFFFF&} MAIS...
+Dialogue: 0,0:00:15.13,0:00:15.95,Sub,,0,0,0,,{\pos(540,940)}DE SUITE, {\c&H3DFFF2&}MAIS...{\c&HFFFFFF&}
