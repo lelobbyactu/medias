@@ -927,6 +927,36 @@
    "status": "pris",
    "note": "",
    "taken_at_utc": "2026-11-26T13:13:00Z"
+  },
+  {
+   "id": "c-20261126-1315-jltomy-pete-les-plombs-2026-11-26",
+   "added_at_utc": "2026-11-26T13:15:41Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JL Tomy qui pète les plombs (clip de 30 s)",
+   "topic_key": "jltomy-pete-les-plombs-2026-11-26",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2125924953094754485",
+   "primary_source": "https://x.com/JLTomyTV/status/2125924953094754485",
+   "source_time_utc": "2026-11-26T12:09:41Z",
+   "expires_at_utc": "2026-11-28T12:09:41Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "@JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125924527657869313/vid/avc1/1280x720/7NIbwTmcwUJAno7m.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un streamer palier 2 qui craque en 30 s, réaction brute et lisible sans contexte ; score plafonné à 6 car le contenu n'est pas vérifiable depuis la veille.",
+   "titles": [
+    "JL Tomy pète complètement les plombs",
+    "Le moment où JL Tomy perd son calme"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
