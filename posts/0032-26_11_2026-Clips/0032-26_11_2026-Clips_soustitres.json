@@ -1,0 +1,452 @@
+[
+{
+"debut": 6.65,
+"fin": 6.93,
+"mot": "Ah",
+"confiance": 0.72
+},
+{
+"debut": 6.93,
+"fin": 7.07,
+"mot": "c'est",
+"confiance": 0.88
+},
+{
+"debut": 7.07,
+"fin": 7.15,
+"mot": "du",
+"confiance": 1.0
+},
+{
+"debut": 7.15,
+"fin": 7.29,
+"mot": "jamais",
+"confiance": 1.0
+},
+{
+"debut": 7.29,
+"fin": 7.51,
+"mot": "vu",
+"confiance": 0.99
+},
+{
+"debut": 7.51,
+"fin": 7.65,
+"mot": "là",
+"confiance": 0.85
+},
+{
+"debut": 8.01,
+"fin": 8.15,
+"mot": "là",
+"confiance": 0.94
+},
+{
+"debut": 8.15,
+"fin": 8.63,
+"mot": "c'est",
+"confiance": 0.66
+},
+{
+"debut": 8.63,
+"fin": 8.75,
+"mot": "très",
+"confiance": 1.0
+},
+{
+"debut": 8.75,
+"fin": 8.89,
+"mot": "dur",
+"confiance": 0.95
+},
+{
+"debut": 8.89,
+"fin": 9.05,
+"mot": "Ah",
+"confiance": 0.44
+},
+{
+"debut": 9.05,
+"fin": 10.47,
+"mot": "là",
+"confiance": 0.99
+},
+{
+"debut": 10.47,
+"fin": 10.65,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 10.65,
+"fin": 10.85,
+"mot": "très",
+"confiance": 1.0
+},
+{
+"debut": 10.85,
+"fin": 10.99,
+"mot": "très",
+"confiance": 1.0
+},
+{
+"debut": 10.99,
+"fin": 11.15,
+"mot": "dur",
+"confiance": 1.0
+},
+{
+"debut": 11.15,
+"fin": 11.27,
+"mot": "ce",
+"confiance": 0.95
+},
+{
+"debut": 11.27,
+"fin": 11.33,
+"mot": "qui",
+"confiance": 1.0
+},
+{
+"debut": 11.33,
+"fin": 11.43,
+"mot": "vient",
+"confiance": 1.0
+},
+{
+"debut": 11.43,
+"fin": 11.57,
+"mot": "d'être",
+"confiance": 1.0
+},
+{
+"debut": 11.57,
+"fin": 11.91,
+"mot": "réalisé",
+"confiance": 0.99
+},
+{
+"debut": 11.91,
+"fin": 12.29,
+"mot": "Alors",
+"confiance": 0.96
+},
+{
+"debut": 12.29,
+"fin": 12.45,
+"mot": "ça",
+"confiance": 1.0
+},
+{
+"debut": 12.45,
+"fin": 12.63,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 12.63,
+"fin": 12.99,
+"mot": "quasiment",
+"confiance": 1.0
+},
+{
+"debut": 12.99,
+"fin": 13.13,
+"mot": "du",
+"confiance": 1.0
+},
+{
+"debut": 13.13,
+"fin": 13.31,
+"mot": "jamais",
+"confiance": 1.0
+},
+{
+"debut": 13.31,
+"fin": 13.49,
+"mot": "vu",
+"confiance": 1.0
+},
+{
+"debut": 13.49,
+"fin": 13.61,
+"mot": "là",
+"confiance": 0.41
+},
+{
+"debut": 14.01,
+"fin": 14.29,
+"mot": "Ah",
+"confiance": 0.99
+},
+{
+"debut": 14.29,
+"fin": 14.43,
+"mot": "j'ai",
+"confiance": 1.0
+},
+{
+"debut": 14.43,
+"fin": 14.67,
+"mot": "senti",
+"confiance": 1.0
+},
+{
+"debut": 14.67,
+"fin": 14.75,
+"mot": "que",
+"confiance": 1.0
+},
+{
+"debut": 14.75,
+"fin": 14.79,
+"mot": "je",
+"confiance": 1.0
+},
+{
+"debut": 14.79,
+"fin": 14.99,
+"mot": "perdais",
+"confiance": 1.0
+},
+{
+"debut": 14.99,
+"fin": 15.09,
+"mot": "le",
+"confiance": 1.0
+},
+{
+"debut": 15.09,
+"fin": 15.29,
+"mot": "contrôle",
+"confiance": 1.0
+},
+{
+"debut": 15.29,
+"fin": 15.41,
+"mot": "de",
+"confiance": 1.0
+},
+{
+"debut": 15.41,
+"fin": 15.51,
+"mot": "la",
+"confiance": 1.0
+},
+{
+"debut": 15.51,
+"fin": 15.71,
+"mot": "moto",
+"confiance": 1.0
+},
+{
+"debut": 15.71,
+"fin": 15.83,
+"mot": "On",
+"confiance": 0.91
+},
+{
+"debut": 15.83,
+"fin": 15.91,
+"mot": "a",
+"confiance": 1.0
+},
+{
+"debut": 15.91,
+"fin": 16.13,
+"mot": "réussi",
+"confiance": 1.0
+},
+{
+"debut": 16.13,
+"fin": 16.27,
+"mot": "à",
+"confiance": 1.0
+},
+{
+"debut": 16.27,
+"fin": 16.67,
+"mot": "exfiltrer",
+"confiance": 0.99
+},
+{
+"debut": 16.67,
+"fin": 16.79,
+"mot": "la",
+"confiance": 1.0
+},
+{
+"debut": 16.79,
+"fin": 17.01,
+"mot": "moto",
+"confiance": 1.0
+},
+{
+"debut": 17.01,
+"fin": 17.11,
+"mot": "de",
+"confiance": 1.0
+},
+{
+"debut": 17.11,
+"fin": 17.19,
+"mot": "l'autre",
+"confiance": 1.0
+},
+{
+"debut": 17.19,
+"fin": 17.45,
+"mot": "côté",
+"confiance": 0.98
+},
+{
+"debut": 17.95,
+"fin": 18.23,
+"mot": "Mais",
+"confiance": 1.0
+},
+{
+"debut": 18.23,
+"fin": 18.35,
+"mot": "pas",
+"confiance": 1.0
+},
+{
+"debut": 18.35,
+"fin": 18.49,
+"mot": "les",
+"confiance": 0.99
+},
+{
+"debut": 18.49,
+"fin": 18.71,
+"mot": "corps",
+"confiance": 0.99
+},
+{
+"debut": 19.99,
+"fin": 20.27,
+"mot": "Ah",
+"confiance": 1.0
+},
+{
+"debut": 20.27,
+"fin": 20.43,
+"mot": "ouais",
+"confiance": 0.99
+},
+{
+"debut": 20.43,
+"fin": 20.53,
+"mot": "là",
+"confiance": 0.99
+},
+{
+"debut": 20.53,
+"fin": 20.75,
+"mot": "c'était",
+"confiance": 1.0
+},
+{
+"debut": 20.75,
+"fin": 20.89,
+"mot": "pas",
+"confiance": 1.0
+},
+{
+"debut": 20.89,
+"fin": 21.07,
+"mot": "rien",
+"confiance": 1.0
+},
+{
+"debut": 21.07,
+"fin": 21.27,
+"mot": "ça",
+"confiance": 1.0
+},
+{
+"debut": 21.61,
+"fin": 21.89,
+"mot": "Ça",
+"confiance": 0.94
+},
+{
+"debut": 21.89,
+"fin": 22.09,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 22.09,
+"fin": 22.23,
+"mot": "vrai",
+"confiance": 1.0
+},
+{
+"debut": 22.23,
+"fin": 22.47,
+"mot": "que",
+"confiance": 1.0
+},
+{
+"debut": 23.63,
+"fin": 23.91,
+"mot": "Là",
+"confiance": 0.84
+},
+{
+"debut": 23.91,
+"fin": 24.15,
+"mot": "celle",
+"confiance": 0.99
+},
+{
+"debut": 24.15,
+"fin": 24.25,
+"mot": "là",
+"confiance": 0.62
+},
+{
+"debut": 24.25,
+"fin": 24.39,
+"mot": "tu",
+"confiance": 1.0
+},
+{
+"debut": 24.39,
+"fin": 24.51,
+"mot": "veux",
+"confiance": 1.0
+},
+{
+"debut": 24.51,
+"fin": 24.67,
+"mot": "faire",
+"confiance": 1.0
+},
+{
+"debut": 24.67,
+"fin": 24.93,
+"mot": "exprès",
+"confiance": 1.0
+},
+{
+"debut": 24.93,
+"fin": 25.07,
+"mot": "t'y",
+"confiance": 0.72
+},
+{
+"debut": 25.07,
+"fin": 25.19,
+"mot": "arrives",
+"confiance": 0.78
+},
+{
+"debut": 25.19,
+"fin": 25.35,
+"mot": "pas",
+"confiance": 1.0
+}
+]

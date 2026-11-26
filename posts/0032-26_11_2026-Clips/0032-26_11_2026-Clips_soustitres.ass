@@ -1,0 +1,88 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.65,0:00:06.93,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} C'EST DU JAMAIS VU
+Dialogue: 0,0:00:06.93,0:00:07.07,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} DU JAMAIS VU
+Dialogue: 0,0:00:07.07,0:00:07.15,Sub,,0,0,0,,{\pos(540,940)}AH C'EST {\c&H3DFFF2&}DU{\c&HFFFFFF&} JAMAIS VU
+Dialogue: 0,0:00:07.15,0:00:07.29,Sub,,0,0,0,,{\pos(540,940)}AH C'EST DU {\c&H3DFFF2&}JAMAIS{\c&HFFFFFF&} VU
+Dialogue: 0,0:00:07.29,0:00:07.51,Sub,,0,0,0,,{\pos(540,940)}AH C'EST DU JAMAIS {\c&H3DFFF2&}VU{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.51,0:00:08.01,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LÀ{\c&HFFFFFF&} LÀ C'EST TRÈS DUR
+Dialogue: 0,0:00:08.01,0:00:08.15,Sub,,0,0,0,,{\pos(540,940)}LÀ {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} C'EST TRÈS DUR
+Dialogue: 0,0:00:08.15,0:00:08.63,Sub,,0,0,0,,{\pos(540,940)}LÀ LÀ {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} TRÈS DUR
+Dialogue: 0,0:00:08.63,0:00:08.75,Sub,,0,0,0,,{\pos(540,940)}LÀ LÀ C'EST {\c&H3DFFF2&}TRÈS{\c&HFFFFFF&} DUR
+Dialogue: 0,0:00:08.75,0:00:08.89,Sub,,0,0,0,,{\pos(540,940)}LÀ LÀ C'EST TRÈS {\c&H3DFFF2&}DUR{\c&HFFFFFF&}
+Dialogue: 0,0:00:08.89,0:00:09.05,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} LÀ C'EST
+Dialogue: 0,0:00:09.05,0:00:10.47,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} C'EST
+Dialogue: 0,0:00:10.47,0:00:10.65,Sub,,0,0,0,,{\pos(540,940)}AH LÀ {\c&H3DFFF2&}C'EST{\c&HFFFFFF&}
+Dialogue: 0,0:00:10.65,0:00:10.85,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}TRÈS{\c&HFFFFFF&} TRÈS DUR
+Dialogue: 0,0:00:10.85,0:00:10.99,Sub,,0,0,0,,{\pos(540,940)}TRÈS {\c&H3DFFF2&}TRÈS{\c&HFFFFFF&} DUR
+Dialogue: 0,0:00:10.99,0:00:11.15,Sub,,0,0,0,,{\pos(540,940)}TRÈS TRÈS {\c&H3DFFF2&}DUR{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.15,0:00:11.27,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}CE{\c&HFFFFFF&} QUI VIENT D'ÊTRE
+Dialogue: 0,0:00:11.27,0:00:11.33,Sub,,0,0,0,,{\pos(540,940)}CE {\c&H3DFFF2&}QUI{\c&HFFFFFF&} VIENT D'ÊTRE
+Dialogue: 0,0:00:11.33,0:00:11.43,Sub,,0,0,0,,{\pos(540,940)}CE QUI {\c&H3DFFF2&}VIENT{\c&HFFFFFF&} D'ÊTRE
+Dialogue: 0,0:00:11.43,0:00:11.57,Sub,,0,0,0,,{\pos(540,940)}CE QUI VIENT {\c&H3DFFF2&}D'ÊTRE{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.57,0:00:11.91,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}RÉALISÉ{\c&HFFFFFF&} ALORS ÇA C'EST
+Dialogue: 0,0:00:11.91,0:00:12.29,Sub,,0,0,0,,{\pos(540,940)}RÉALISÉ {\c&H3DFFF2&}ALORS{\c&HFFFFFF&} ÇA C'EST
+Dialogue: 0,0:00:12.29,0:00:12.45,Sub,,0,0,0,,{\pos(540,940)}RÉALISÉ ALORS {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} C'EST
+Dialogue: 0,0:00:12.45,0:00:12.63,Sub,,0,0,0,,{\pos(540,940)}RÉALISÉ ALORS ÇA {\c&H3DFFF2&}C'EST{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.63,0:00:12.99,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QUASIMENT{\c&HFFFFFF&} DU JAMAIS
+Dialogue: 0,0:00:12.99,0:00:13.13,Sub,,0,0,0,,{\pos(540,940)}QUASIMENT {\c&H3DFFF2&}DU{\c&HFFFFFF&} JAMAIS
+Dialogue: 0,0:00:13.13,0:00:13.31,Sub,,0,0,0,,{\pos(540,940)}QUASIMENT DU {\c&H3DFFF2&}JAMAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:13.31,0:00:13.49,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}VU{\c&HFFFFFF&} LÀ AH J'AI SENTI
+Dialogue: 0,0:00:13.49,0:00:14.01,Sub,,0,0,0,,{\pos(540,940)}VU {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} AH J'AI SENTI
+Dialogue: 0,0:00:14.01,0:00:14.29,Sub,,0,0,0,,{\pos(540,940)}VU LÀ {\c&H3DFFF2&}AH{\c&HFFFFFF&} J'AI SENTI
+Dialogue: 0,0:00:14.29,0:00:14.43,Sub,,0,0,0,,{\pos(540,940)}VU LÀ AH {\c&H3DFFF2&}J'AI{\c&HFFFFFF&} SENTI
+Dialogue: 0,0:00:14.43,0:00:14.67,Sub,,0,0,0,,{\pos(540,940)}VU LÀ AH J'AI {\c&H3DFFF2&}SENTI{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.67,0:00:14.75,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QUE{\c&HFFFFFF&} JE PERDAIS
+Dialogue: 0,0:00:14.75,0:00:14.79,Sub,,0,0,0,,{\pos(540,940)}QUE {\c&H3DFFF2&}JE{\c&HFFFFFF&} PERDAIS
+Dialogue: 0,0:00:14.79,0:00:14.99,Sub,,0,0,0,,{\pos(540,940)}QUE JE {\c&H3DFFF2&}PERDAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:14.99,0:00:15.09,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LE{\c&HFFFFFF&} CONTRÔLE DE LA MOTO
+Dialogue: 0,0:00:15.09,0:00:15.29,Sub,,0,0,0,,{\pos(540,940)}LE {\c&H3DFFF2&}CONTRÔLE{\c&HFFFFFF&} DE LA MOTO
+Dialogue: 0,0:00:15.29,0:00:15.41,Sub,,0,0,0,,{\pos(540,940)}LE CONTRÔLE {\c&H3DFFF2&}DE{\c&HFFFFFF&} LA MOTO
+Dialogue: 0,0:00:15.41,0:00:15.51,Sub,,0,0,0,,{\pos(540,940)}LE CONTRÔLE DE {\c&H3DFFF2&}LA{\c&HFFFFFF&} MOTO
+Dialogue: 0,0:00:15.51,0:00:15.71,Sub,,0,0,0,,{\pos(540,940)}LE CONTRÔLE DE LA {\c&H3DFFF2&}MOTO{\c&HFFFFFF&}
+Dialogue: 0,0:00:15.71,0:00:15.83,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}ON{\c&HFFFFFF&} A RÉUSSI À EXFILTRER
+Dialogue: 0,0:00:15.83,0:00:15.91,Sub,,0,0,0,,{\pos(540,940)}ON {\c&H3DFFF2&}A{\c&HFFFFFF&} RÉUSSI À EXFILTRER
+Dialogue: 0,0:00:15.91,0:00:16.13,Sub,,0,0,0,,{\pos(540,940)}ON A {\c&H3DFFF2&}RÉUSSI{\c&HFFFFFF&} À EXFILTRER
+Dialogue: 0,0:00:16.13,0:00:16.27,Sub,,0,0,0,,{\pos(540,940)}ON A RÉUSSI {\c&H3DFFF2&}À{\c&HFFFFFF&} EXFILTRER
+Dialogue: 0,0:00:16.27,0:00:16.67,Sub,,0,0,0,,{\pos(540,940)}ON A RÉUSSI À {\c&H3DFFF2&}EXFILTRER{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.67,0:00:16.79,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LA{\c&HFFFFFF&} MOTO DE L'AUTRE CÔTÉ
+Dialogue: 0,0:00:16.79,0:00:17.01,Sub,,0,0,0,,{\pos(540,940)}LA {\c&H3DFFF2&}MOTO{\c&HFFFFFF&} DE L'AUTRE CÔTÉ
+Dialogue: 0,0:00:17.01,0:00:17.11,Sub,,0,0,0,,{\pos(540,940)}LA MOTO {\c&H3DFFF2&}DE{\c&HFFFFFF&} L'AUTRE CÔTÉ
+Dialogue: 0,0:00:17.11,0:00:17.19,Sub,,0,0,0,,{\pos(540,940)}LA MOTO DE {\c&H3DFFF2&}L'AUTRE{\c&HFFFFFF&} CÔTÉ
+Dialogue: 0,0:00:17.19,0:00:17.95,Sub,,0,0,0,,{\pos(540,940)}LA MOTO DE L'AUTRE {\c&H3DFFF2&}CÔTÉ{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.95,0:00:18.23,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}MAIS{\c&HFFFFFF&} PAS LES CORPS
+Dialogue: 0,0:00:18.23,0:00:18.35,Sub,,0,0,0,,{\pos(540,940)}MAIS {\c&H3DFFF2&}PAS{\c&HFFFFFF&} LES CORPS
+Dialogue: 0,0:00:18.35,0:00:18.49,Sub,,0,0,0,,{\pos(540,940)}MAIS PAS {\c&H3DFFF2&}LES{\c&HFFFFFF&} CORPS
+Dialogue: 0,0:00:18.49,0:00:19.31,Sub,,0,0,0,,{\pos(540,940)}MAIS PAS LES {\c&H3DFFF2&}CORPS{\c&HFFFFFF&}
+Dialogue: 0,0:00:19.99,0:00:20.27,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} OUAIS LÀ C'ÉTAIT
+Dialogue: 0,0:00:20.27,0:00:20.43,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}OUAIS{\c&HFFFFFF&} LÀ C'ÉTAIT
+Dialogue: 0,0:00:20.43,0:00:20.53,Sub,,0,0,0,,{\pos(540,940)}AH OUAIS {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} C'ÉTAIT
+Dialogue: 0,0:00:20.53,0:00:20.75,Sub,,0,0,0,,{\pos(540,940)}AH OUAIS LÀ {\c&H3DFFF2&}C'ÉTAIT{\c&HFFFFFF&}
+Dialogue: 0,0:00:20.75,0:00:20.89,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PAS{\c&HFFFFFF&} RIEN ÇA ÇA C'EST
+Dialogue: 0,0:00:20.89,0:00:21.07,Sub,,0,0,0,,{\pos(540,940)}PAS {\c&H3DFFF2&}RIEN{\c&HFFFFFF&} ÇA ÇA C'EST
+Dialogue: 0,0:00:21.07,0:00:21.61,Sub,,0,0,0,,{\pos(540,940)}PAS RIEN {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} ÇA C'EST
+Dialogue: 0,0:00:21.61,0:00:21.89,Sub,,0,0,0,,{\pos(540,940)}PAS RIEN ÇA {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} C'EST
+Dialogue: 0,0:00:21.89,0:00:22.09,Sub,,0,0,0,,{\pos(540,940)}PAS RIEN ÇA ÇA {\c&H3DFFF2&}C'EST{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.09,0:00:22.23,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}VRAI{\c&HFFFFFF&} QUE
+Dialogue: 0,0:00:22.23,0:00:23.07,Sub,,0,0,0,,{\pos(540,940)}VRAI {\c&H3DFFF2&}QUE{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.63,0:00:23.91,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LÀ{\c&HFFFFFF&} CELLE LÀ TU VEUX
+Dialogue: 0,0:00:23.91,0:00:24.15,Sub,,0,0,0,,{\pos(540,940)}LÀ {\c&H3DFFF2&}CELLE{\c&HFFFFFF&} LÀ TU VEUX
+Dialogue: 0,0:00:24.15,0:00:24.25,Sub,,0,0,0,,{\pos(540,940)}LÀ CELLE {\c&H3DFFF2&}LÀ{\c&HFFFFFF&} TU VEUX
+Dialogue: 0,0:00:24.25,0:00:24.39,Sub,,0,0,0,,{\pos(540,940)}LÀ CELLE LÀ {\c&H3DFFF2&}TU{\c&HFFFFFF&} VEUX
+Dialogue: 0,0:00:24.39,0:00:24.51,Sub,,0,0,0,,{\pos(540,940)}LÀ CELLE LÀ TU {\c&H3DFFF2&}VEUX{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.51,0:00:24.67,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}FAIRE{\c&HFFFFFF&} EXPRÈS T'Y ARRIVES
+Dialogue: 0,0:00:24.67,0:00:24.93,Sub,,0,0,0,,{\pos(540,940)}FAIRE {\c&H3DFFF2&}EXPRÈS{\c&HFFFFFF&} T'Y ARRIVES
+Dialogue: 0,0:00:24.93,0:00:25.07,Sub,,0,0,0,,{\pos(540,940)}FAIRE EXPRÈS {\c&H3DFFF2&}T'Y{\c&HFFFFFF&} ARRIVES
+Dialogue: 0,0:00:25.07,0:00:25.19,Sub,,0,0,0,,{\pos(540,940)}FAIRE EXPRÈS T'Y {\c&H3DFFF2&}ARRIVES{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.19,0:00:25.95,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}PAS{\c&HFFFFFF&}
