@@ -958,7 +958,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-26T12:29:40Z"
+   "taken_at_utc": "2026-11-26T12:29:40Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/PatientWittyFungusShazBotstix-e1vqyaIXf2dDLeCk",
+    "offset": 0.0,
+    "dur": 60.01
+   }
   },
   {
    "id": "c-20261126-1223-gotaga-carjacking-sms-gta6-2511",
