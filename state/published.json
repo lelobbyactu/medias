@@ -767,7 +767,7 @@
   },
   {
    "id": "0040-27_11_2026-Clips",
-   "status": "a_valider",
+   "status": "valide",
    "type": "reel",
    "topic": "Locklear nage 30 minutes sur GTA 6 et meurt au pied d'un bateau",
    "origin": "Lockl34rTV",
@@ -792,7 +792,8 @@
    "judge_score": "7/10",
    "format": "16:9",
    "garde_fou": "SECOURS",
-   "telegram_msg": 65
+   "telegram_msg": 65,
+   "validated_at_utc": "2026-11-27T13:01:03Z"
   }
  ]
 }
