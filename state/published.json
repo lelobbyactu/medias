@@ -705,7 +705,7 @@
   },
   {
    "id": "0038-27_11_2026-Clips",
-   "status": "valide",
+   "status": "publication",
    "type": "reel",
    "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
    "origin": "KametoTV",
@@ -732,7 +732,8 @@
    "garde_fou": "OK",
    "immediat": true,
    "telegram_msg": 53,
-   "validated_at_utc": "2026-11-27T12:08:14Z"
+   "validated_at_utc": "2026-11-27T12:08:14Z",
+   "published_at_utc": "2026-11-27T12:08:18Z"
   }
  ]
 }
