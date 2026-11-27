@@ -582,14 +582,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "Juge 5,5/10 : bandeau d'overlay vente flash Whatnot avec PS5 + GTA VI à gagner (exclusion giveaway/promo), chute faible, aucune casse visible contrairement au sujet",
    "taken_at_utc": "2026-11-27T12:10:04Z",
    "clip": {
     "url": "https://video.twimg.com/amplify_video/2126193142407770112/vid/avc1/1280x720/2rbktBi_qzV76cnX.mp4?tag=29",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-27T12:16:20Z"
   }
  ]
 }
