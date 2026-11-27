@@ -1129,7 +1129,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-27T03:15:02Z"
+   "taken_at_utc": "2026-11-27T03:15:02Z",
+   "clip": {
+    "url": "https://www.twitch.tv/kamet0/clip/RelatedAgitatedSnoodDoritosChip-_6J4SZckwYGzqY1r",
+    "offset": 0.0,
+    "dur": 60.01
+   }
   },
   {
    "id": "c-20261126-2314-gotaga-gta6-clip-twitch-20261126-1638",
