@@ -1,0 +1,200 @@
+[
+ {
+  "debut": 0.64,
+  "fin": 0.64,
+  "mot": "Y'a",
+  "confiance": 1.0
+ },
+ {
+  "debut": 0.64,
+  "fin": 0.8,
+  "mot": "nulle",
+  "confiance": 0.93
+ },
+ {
+  "debut": 0.8,
+  "fin": 0.88,
+  "mot": "part",
+  "confiance": 0.95
+ },
+ {
+  "debut": 0.88,
+  "fin": 0.98,
+  "mot": "où",
+  "confiance": 0.91
+ },
+ {
+  "debut": 0.98,
+  "fin": 1.06,
+  "mot": "je",
+  "confiance": 0.97
+ },
+ {
+  "debut": 1.06,
+  "fin": 1.14,
+  "mot": "peux",
+  "confiance": 0.99
+ },
+ {
+  "debut": 1.14,
+  "fin": 1.46,
+  "mot": "grimper.",
+  "confiance": 1.0
+ },
+ {
+  "debut": 2.18,
+  "fin": 2.66,
+  "mot": "Au",
+  "confiance": 0.98
+ },
+ {
+  "debut": 2.66,
+  "fin": 3.7,
+  "mot": "secours !",
+  "confiance": 0.87
+ },
+ {
+  "debut": 5.08,
+  "fin": 5.42,
+  "mot": "Au",
+  "confiance": 0.97
+ },
+ {
+  "debut": 5.42,
+  "fin": 7.06,
+  "mot": "secours !",
+  "confiance": 0.96
+ },
+ {
+  "debut": 7.06,
+  "fin": 7.98,
+  "mot": "Il",
+  "confiance": 0.82
+ },
+ {
+  "debut": 7.98,
+  "fin": 8.18,
+  "mot": "s'en",
+  "confiance": 1.0
+ },
+ {
+  "debut": 8.18,
+  "fin": 8.26,
+  "mot": "bat",
+  "confiance": 0.91
+ },
+ {
+  "debut": 8.26,
+  "fin": 8.36,
+  "mot": "les",
+  "confiance": 0.99
+ },
+ {
+  "debut": 8.36,
+  "fin": 8.62,
+  "mot": "couilles.",
+  "confiance": 0.99
+ },
+ {
+  "debut": 46.14,
+  "fin": 47.02,
+  "mot": "C'est dramatique.",
+  "confiance": 0.99
+ },
+ {
+  "debut": 47.58,
+  "fin": 48.06,
+  "mot": "Tout",
+  "confiance": 1.0
+ },
+ {
+  "debut": 48.06,
+  "fin": 48.42,
+  "mot": "ça",
+  "confiance": 1.0
+ },
+ {
+  "debut": 48.42,
+  "fin": 48.7,
+  "mot": "pour",
+  "confiance": 1.0
+ },
+ {
+  "debut": 48.7,
+  "fin": 48.94,
+  "mot": "ça,",
+  "confiance": 0.9
+ },
+ {
+  "debut": 49.08,
+  "fin": 49.4,
+  "mot": "putain",
+  "confiance": 0.99
+ },
+ {
+  "debut": 49.4,
+  "fin": 49.5,
+  "mot": "de",
+  "confiance": 1.0
+ },
+ {
+  "debut": 49.5,
+  "fin": 49.74,
+  "mot": "merde.",
+  "confiance": 1.0
+ },
+ {
+  "debut": 50.0,
+  "fin": 50.24,
+  "mot": "Ça",
+  "confiance": 0.99
+ },
+ {
+  "debut": 50.24,
+  "fin": 50.46,
+  "mot": "fait",
+  "confiance": 1.0
+ },
+ {
+  "debut": 50.46,
+  "fin": 50.82,
+  "mot": "30",
+  "confiance": 0.99
+ },
+ {
+  "debut": 50.82,
+  "fin": 51.16,
+  "mot": "minutes",
+  "confiance": 1.0
+ },
+ {
+  "debut": 51.16,
+  "fin": 51.38,
+  "mot": "que",
+  "confiance": 1.0
+ },
+ {
+  "debut": 51.38,
+  "fin": 51.54,
+  "mot": "je",
+  "confiance": 1.0
+ },
+ {
+  "debut": 51.54,
+  "fin": 51.76,
+  "mot": "nage,",
+  "confiance": 0.98
+ },
+ {
+  "debut": 51.86,
+  "fin": 51.94,
+  "mot": "sa",
+  "confiance": 0.87
+ },
+ {
+  "debut": 51.94,
+  "fin": 52.56,
+  "mot": "grand-mère.",
+  "confiance": 1.0
+ }
+]

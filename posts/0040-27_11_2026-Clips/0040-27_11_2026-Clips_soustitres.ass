@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.64,0:00:00.64,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}Y'A{\c&HFFFFFF&} NULLE PART OÙ
+Dialogue: 0,0:00:00.64,0:00:00.80,Sub,,0,0,0,,{\pos(540,1428)}Y'A {\c&H3DFFF2&}NULLE{\c&HFFFFFF&} PART OÙ
+Dialogue: 0,0:00:00.80,0:00:00.88,Sub,,0,0,0,,{\pos(540,1428)}Y'A NULLE {\c&H3DFFF2&}PART{\c&HFFFFFF&} OÙ
+Dialogue: 0,0:00:00.88,0:00:00.98,Sub,,0,0,0,,{\pos(540,1428)}Y'A NULLE PART {\c&H3DFFF2&}OÙ{\c&HFFFFFF&}
+Dialogue: 0,0:00:00.98,0:00:01.06,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}JE{\c&HFFFFFF&} PEUX GRIMPER.
+Dialogue: 0,0:00:01.06,0:00:01.14,Sub,,0,0,0,,{\pos(540,1428)}JE {\c&H3DFFF2&}PEUX{\c&HFFFFFF&} GRIMPER.
+Dialogue: 0,0:00:01.14,0:00:02.06,Sub,,0,0,0,,{\pos(540,1428)}JE PEUX {\c&H3DFFF2&}GRIMPER.{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.18,0:00:02.66,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AU{\c&HFFFFFF&} SECOURS !
+Dialogue: 0,0:00:02.66,0:00:04.30,Sub,,0,0,0,,{\pos(540,1428)}AU {\c&H3DFFF2&}SECOURS !{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.08,0:00:05.42,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AU{\c&HFFFFFF&} SECOURS !
+Dialogue: 0,0:00:05.42,0:00:07.06,Sub,,0,0,0,,{\pos(540,1428)}AU {\c&H3DFFF2&}SECOURS !{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.06,0:00:07.98,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}IL{\c&HFFFFFF&} S'EN BAT LES C*******.
+Dialogue: 0,0:00:07.98,0:00:08.18,Sub,,0,0,0,,{\pos(540,1428)}IL {\c&H3DFFF2&}S'EN{\c&HFFFFFF&} BAT LES C*******.
+Dialogue: 0,0:00:08.18,0:00:08.26,Sub,,0,0,0,,{\pos(540,1428)}IL S'EN {\c&H3DFFF2&}BAT{\c&HFFFFFF&} LES C*******.
+Dialogue: 0,0:00:08.26,0:00:08.36,Sub,,0,0,0,,{\pos(540,1428)}IL S'EN BAT {\c&H3DFFF2&}LES{\c&HFFFFFF&} C*******.
+Dialogue: 0,0:00:08.36,0:00:09.22,Sub,,0,0,0,,{\pos(540,1428)}IL S'EN BAT LES {\c&H3DFFF2&}C*******.{\c&HFFFFFF&}
+Dialogue: 0,0:00:46.14,0:00:47.58,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST DRAMATIQUE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:47.58,0:00:48.06,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}TOUT{\c&HFFFFFF&} ÇA POUR ÇA, P*****
+Dialogue: 0,0:00:48.06,0:00:48.42,Sub,,0,0,0,,{\pos(540,1428)}TOUT {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} POUR ÇA, P*****
+Dialogue: 0,0:00:48.42,0:00:48.70,Sub,,0,0,0,,{\pos(540,1428)}TOUT ÇA {\c&H3DFFF2&}POUR{\c&HFFFFFF&} ÇA, P*****
+Dialogue: 0,0:00:48.70,0:00:49.08,Sub,,0,0,0,,{\pos(540,1428)}TOUT ÇA POUR {\c&H3DFFF2&}ÇA,{\c&HFFFFFF&} P*****
+Dialogue: 0,0:00:49.08,0:00:49.40,Sub,,0,0,0,,{\pos(540,1428)}TOUT ÇA POUR ÇA, {\c&H3DFFF2&}P*****{\c&HFFFFFF&}
+Dialogue: 0,0:00:49.40,0:00:49.50,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DE{\c&HFFFFFF&} M****.
+Dialogue: 0,0:00:49.50,0:00:50.00,Sub,,0,0,0,,{\pos(540,1428)}DE {\c&H3DFFF2&}M****.{\c&HFFFFFF&}
+Dialogue: 0,0:00:50.00,0:00:50.24,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}ÇA{\c&HFFFFFF&} FAIT 30 MINUTES
+Dialogue: 0,0:00:50.24,0:00:50.46,Sub,,0,0,0,,{\pos(540,1428)}ÇA {\c&H3DFFF2&}FAIT{\c&HFFFFFF&} 30 MINUTES
+Dialogue: 0,0:00:50.46,0:00:50.82,Sub,,0,0,0,,{\pos(540,1428)}ÇA FAIT {\c&H3DFFF2&}30{\c&HFFFFFF&} MINUTES
+Dialogue: 0,0:00:50.82,0:00:51.16,Sub,,0,0,0,,{\pos(540,1428)}ÇA FAIT 30 {\c&H3DFFF2&}MINUTES{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.16,0:00:51.38,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QUE{\c&HFFFFFF&} JE NAGE,
+Dialogue: 0,0:00:51.38,0:00:51.54,Sub,,0,0,0,,{\pos(540,1428)}QUE {\c&H3DFFF2&}JE{\c&HFFFFFF&} NAGE,
+Dialogue: 0,0:00:51.54,0:00:51.86,Sub,,0,0,0,,{\pos(540,1428)}QUE JE {\c&H3DFFF2&}NAGE,{\c&HFFFFFF&}
+Dialogue: 0,0:00:51.86,0:00:51.94,Sub,,0,0,0,,{\pos(540,1428)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}SA{\c&HFFFFFF&} GRAND-MÈRE.
+Dialogue: 0,0:00:51.94,0:00:52.80,Sub,,0,0,0,,{\pos(540,1428)}SA {\c&H3DFFF2&}GRAND-MÈRE.{\c&HFFFFFF&}
