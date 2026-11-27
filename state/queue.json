@@ -927,14 +927,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "juge 5.5/10 : garçon non identifié, moment banal, titre plat ou invérifiable",
    "taken_at_utc": "2026-11-27T03:12:02Z",
    "clip": {
     "url": "https://www.twitch.tv/jltomy/clip/GrotesqueEnchantingFrogOSsloth-bqH4EDUgjxPGitlJ",
     "offset": 6.0,
     "dur": 30.05
-   }
+   },
+   "closed_at_utc": "2026-11-27T03:24:53Z"
   },
   {
    "id": "c-20261126-1514-domingo-reaction-live-2026-11-26",
