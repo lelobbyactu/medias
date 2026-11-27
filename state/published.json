@@ -705,7 +705,7 @@
   },
   {
    "id": "0038-27_11_2026-Clips",
-   "status": "retouche_manuelle",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
    "origin": "KametoTV",
@@ -721,7 +721,7 @@
    "expires_at_utc": "2026-11-28T22:17:08Z",
    "nature": "gameplay",
    "proposed_at_utc": "2026-11-27T03:44:48Z",
-   "titre": "Kameto pète un|câble contre son|mate et se tape|le crâne 🤣",
+   "titre": "Kameto pète un|câble contre son|mate et *se tape*|*le crâne* 🤣",
    "legende": "La game, il s'en fiche. Le move de son mate, beaucoup moins. C'est quoi le pire move qu'un mate t'a sorti ?\n\nClip : twitch.tv/kamet0\n\n#leagueoflegends #kameto #lol #twitchfr #jeuxvideo",
    "titres_alt": [
     "Kameto :|son mate a des|*cacahuètes*|dans le cerveau",
@@ -730,8 +730,7 @@
    "judge_score": "7.5/10",
    "format": "9:16",
    "garde_fou": "OK",
-   "telegram_msg": 48,
-   "demande": "Monte un peu le titre pour que ce soit plus centré + pour le titre : *se tape le crâne* en surligné"
+   "immediat": true
   }
  ]
 }
