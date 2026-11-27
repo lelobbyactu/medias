@@ -1140,6 +1140,33 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261127-0113-domingo-gta6-clip-2026-11-26",
+   "added_at_utc": "2026-11-27T01:13:55Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo, clip GTA VI en stream (titre vague « xbox », contenu à vérifier au montage)",
+   "topic_key": "domingo-gta6-clip-2026-11-26",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/MoralDepressedSalsifyOSsloth-T_8CK8OJXqiXJMWJ",
+   "primary_source": "https://www.twitch.tv/domingo/clip/MoralDepressedSalsifyOSsloth-T_8CK8OJXqiXJMWJ",
+   "source_time_utc": "2026-11-26T12:21:35Z",
+   "expires_at_utc": "2026-11-28T12:21:35Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch:domingo"
+   ],
+   "media_url": "https://www.twitch.tv/domingo/clip/MoralDepressedSalsifyOSsloth-T_8CK8OJXqiXJMWJ",
+   "media_repo_path": "",
+   "angle": "Streamer FR connu qui joue à GTA VI, clip de 58 s ; le moment n'est pas décrit (titre « xbox »), à vérifier à la vidéo avant tout titre.",
+   "titles": [],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": "Score plafonné faute de savoir ce qui se passe dans le clip (grille docs/sources.md). Le créneau doit regarder la vidéo et écrire les titres."
   }
  ]
 }
