@@ -682,6 +682,66 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261127-1715-jltomy-jlmiami-esquive-2026-11-27",
+   "added_at_utc": "2026-11-27T17:15:45Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "evenement",
+   "topic": "JL Tomy esquive une attaque en pleine session #JLMiami",
+   "topic_key": "jltomy-jlmiami-esquive-2026-11-27",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126363581252059297",
+   "primary_source": "https://x.com/JLTomyTV/status/2126363581252059297",
+   "source_time_utc": "2026-11-27T17:12:38Z",
+   "expires_at_utc": "2026-11-28T05:12:38Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126363436275625984/vid/avc1/1280x720/qvc3-MUWKlnrJbUZ.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Esquive jugée folle sur un événement Miami très suivi par la communauté",
+   "titles": [
+    "JL Tomy esquive une *attaque* de fou|pendant le #JLMiami",
+    "Une *esquive* de fou pour JL Tomy|à Miami"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-1715-domingo-accident-gta6-twitch",
+   "added_at_utc": "2026-11-27T17:15:45Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo a un accident sur GTA 6",
+   "topic_key": "domingo-accident-gta6-twitch",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+   "primary_source": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+   "source_time_utc": "2026-11-26T17:13:25Z",
+   "expires_at_utc": "2026-11-28T17:13:25Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "domingo"
+   ],
+   "media_url": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+   "media_repo_path": "",
+   "angle": "Clip GTA VI d'un top streamer FR, titre vague : à vérifier à la vidéo",
+   "titles": [
+    "Domingo et son *accident* sur GTA 6",
+    "Accident *fou* pour Domingo sur GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
