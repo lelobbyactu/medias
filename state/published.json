@@ -620,6 +620,16 @@
    "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
    "queue_id": "c-20261126-1914-domingo-gta6-accidents-2026-11-26",
    "reserved_at_utc": "2026-11-27T03:31:13Z"
+  },
+  {
+   "id": "0036-27_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2126077825887199638",
+   "queue_id": "c-20261126-2314-kameto-lol-rage-coequipiers-20261126",
+   "reserved_at_utc": "2026-11-27T03:33:17Z"
   }
  ]
 }
