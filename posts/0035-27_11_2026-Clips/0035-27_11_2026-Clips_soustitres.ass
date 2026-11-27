@@ -1,0 +1,65 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:03.64,0:00:03.88,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}OUAH{\c&HFFFFFF&} ÇA VA ?
+Dialogue: 0,0:00:03.88,0:00:04.04,Sub,,0,0,0,,{\pos(540,940)}OUAH {\c&H3DFFF2&}ÇA{\c&HFFFFFF&} VA ?
+Dialogue: 0,0:00:04.04,0:00:04.98,Sub,,0,0,0,,{\pos(540,940)}OUAH ÇA {\c&H3DFFF2&}VA ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:16.70,0:00:16.94,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}MAIS{\c&HFFFFFF&} IL EST OÙ LUI ?
+Dialogue: 0,0:00:16.94,0:00:17.04,Sub,,0,0,0,,{\pos(540,940)}MAIS {\c&H3DFFF2&}IL{\c&HFFFFFF&} EST OÙ LUI ?
+Dialogue: 0,0:00:17.04,0:00:17.08,Sub,,0,0,0,,{\pos(540,940)}MAIS IL {\c&H3DFFF2&}EST{\c&HFFFFFF&} OÙ LUI ?
+Dialogue: 0,0:00:17.08,0:00:17.14,Sub,,0,0,0,,{\pos(540,940)}MAIS IL EST {\c&H3DFFF2&}OÙ{\c&HFFFFFF&} LUI ?
+Dialogue: 0,0:00:17.14,0:00:17.54,Sub,,0,0,0,,{\pos(540,940)}MAIS IL EST OÙ {\c&H3DFFF2&}LUI ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:17.54,0:00:17.82,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} FAUT LE SAUVER ?
+Dialogue: 0,0:00:17.82,0:00:17.90,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}FAUT{\c&HFFFFFF&} LE SAUVER ?
+Dialogue: 0,0:00:17.90,0:00:18.00,Sub,,0,0,0,,{\pos(540,940)}AH FAUT {\c&H3DFFF2&}LE{\c&HFFFFFF&} SAUVER ?
+Dialogue: 0,0:00:18.00,0:00:19.22,Sub,,0,0,0,,{\pos(540,940)}AH FAUT LE {\c&H3DFFF2&}SAUVER ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:22.20,0:00:22.80,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}J'ARRIVE,{\c&HFFFFFF&} J'ARRIVE, J'VAIS
+Dialogue: 0,0:00:22.80,0:00:22.90,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE, {\c&H3DFFF2&}J'ARRIVE,{\c&HFFFFFF&} J'VAIS
+Dialogue: 0,0:00:22.90,0:00:23.18,Sub,,0,0,0,,{\pos(540,940)}J'ARRIVE, J'ARRIVE, {\c&H3DFFF2&}J'VAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.18,0:00:23.24,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}TE{\c&HFFFFFF&} SAUVER, J'VAIS TE
+Dialogue: 0,0:00:23.24,0:00:23.44,Sub,,0,0,0,,{\pos(540,940)}TE {\c&H3DFFF2&}SAUVER,{\c&HFFFFFF&} J'VAIS TE
+Dialogue: 0,0:00:23.44,0:00:23.60,Sub,,0,0,0,,{\pos(540,940)}TE SAUVER, {\c&H3DFFF2&}J'VAIS{\c&HFFFFFF&} TE
+Dialogue: 0,0:00:23.60,0:00:23.64,Sub,,0,0,0,,{\pos(540,940)}TE SAUVER, J'VAIS {\c&H3DFFF2&}TE{\c&HFFFFFF&}
+Dialogue: 0,0:00:23.64,0:00:23.84,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}SAUVER,{\c&HFFFFFF&} J'VAIS TE
+Dialogue: 0,0:00:23.84,0:00:23.96,Sub,,0,0,0,,{\pos(540,940)}SAUVER, {\c&H3DFFF2&}J'VAIS{\c&HFFFFFF&} TE
+Dialogue: 0,0:00:23.96,0:00:24.02,Sub,,0,0,0,,{\pos(540,940)}SAUVER, J'VAIS {\c&H3DFFF2&}TE{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.02,0:00:24.28,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}SAUVER,{\c&HFFFFFF&} C'EST EN TRAIN
+Dialogue: 0,0:00:24.28,0:00:24.34,Sub,,0,0,0,,{\pos(540,940)}SAUVER, {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} EN TRAIN
+Dialogue: 0,0:00:24.34,0:00:24.38,Sub,,0,0,0,,{\pos(540,940)}SAUVER, C'EST {\c&H3DFFF2&}EN{\c&HFFFFFF&} TRAIN
+Dialogue: 0,0:00:24.38,0:00:24.46,Sub,,0,0,0,,{\pos(540,940)}SAUVER, C'EST EN {\c&H3DFFF2&}TRAIN{\c&HFFFFFF&}
+Dialogue: 0,0:00:24.46,0:00:24.52,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DE{\c&HFFFFFF&} CRAMER, J'AVAIS
+Dialogue: 0,0:00:24.52,0:00:24.86,Sub,,0,0,0,,{\pos(540,940)}DE {\c&H3DFFF2&}CRAMER,{\c&HFFFFFF&} J'AVAIS
+Dialogue: 0,0:00:24.86,0:00:25.00,Sub,,0,0,0,,{\pos(540,940)}DE CRAMER, {\c&H3DFFF2&}J'AVAIS{\c&HFFFFFF&}
+Dialogue: 0,0:00:25.00,0:00:25.14,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}MÊME{\c&HFFFFFF&} PAS ENTENDU MOI.
+Dialogue: 0,0:00:25.14,0:00:25.18,Sub,,0,0,0,,{\pos(540,940)}MÊME {\c&H3DFFF2&}PAS{\c&HFFFFFF&} ENTENDU MOI.
+Dialogue: 0,0:00:25.18,0:00:25.44,Sub,,0,0,0,,{\pos(540,940)}MÊME PAS {\c&H3DFFF2&}ENTENDU{\c&HFFFFFF&} MOI.
+Dialogue: 0,0:00:25.44,0:00:26.24,Sub,,0,0,0,,{\pos(540,940)}MÊME PAS ENTENDU {\c&H3DFFF2&}MOI.{\c&HFFFFFF&}
+Dialogue: 0,0:00:27.48,0:00:27.96,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}J'AVAIS{\c&HFFFFFF&} MÊME PAS VU
+Dialogue: 0,0:00:27.96,0:00:28.08,Sub,,0,0,0,,{\pos(540,940)}J'AVAIS {\c&H3DFFF2&}MÊME{\c&HFFFFFF&} PAS VU
+Dialogue: 0,0:00:28.08,0:00:28.22,Sub,,0,0,0,,{\pos(540,940)}J'AVAIS MÊME {\c&H3DFFF2&}PAS{\c&HFFFFFF&} VU
+Dialogue: 0,0:00:28.22,0:00:28.32,Sub,,0,0,0,,{\pos(540,940)}J'AVAIS MÊME PAS {\c&H3DFFF2&}VU{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.32,0:00:28.46,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QU'IL{\c&HFFFFFF&} Y AVAIT UN MEC
+Dialogue: 0,0:00:28.46,0:00:28.48,Sub,,0,0,0,,{\pos(540,940)}QU'IL {\c&H3DFFF2&}Y{\c&HFFFFFF&} AVAIT UN MEC
+Dialogue: 0,0:00:28.48,0:00:28.54,Sub,,0,0,0,,{\pos(540,940)}QU'IL Y {\c&H3DFFF2&}AVAIT{\c&HFFFFFF&} UN MEC
+Dialogue: 0,0:00:28.54,0:00:28.66,Sub,,0,0,0,,{\pos(540,940)}QU'IL Y AVAIT {\c&H3DFFF2&}UN{\c&HFFFFFF&} MEC
+Dialogue: 0,0:00:28.66,0:00:28.78,Sub,,0,0,0,,{\pos(540,940)}QU'IL Y AVAIT UN {\c&H3DFFF2&}MEC{\c&HFFFFFF&}
+Dialogue: 0,0:00:28.78,0:00:28.98,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}EN{\c&HFFFFFF&} TRAIN DE DIE.
+Dialogue: 0,0:00:28.98,0:00:29.02,Sub,,0,0,0,,{\pos(540,940)}EN {\c&H3DFFF2&}TRAIN{\c&HFFFFFF&} DE DIE.
+Dialogue: 0,0:00:29.02,0:00:29.12,Sub,,0,0,0,,{\pos(540,940)}EN TRAIN {\c&H3DFFF2&}DE{\c&HFFFFFF&} DIE.
+Dialogue: 0,0:00:29.12,0:00:29.88,Sub,,0,0,0,,{\pos(540,940)}EN TRAIN DE {\c&H3DFFF2&}DIE.{\c&HFFFFFF&}
+Dialogue: 0,0:00:30.54,0:00:31.02,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} UN BRAQUAGE, NON
+Dialogue: 0,0:00:31.02,0:00:31.06,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}UN{\c&HFFFFFF&} BRAQUAGE, NON
+Dialogue: 0,0:00:31.06,0:00:31.54,Sub,,0,0,0,,{\pos(540,940)}C'EST UN {\c&H3DFFF2&}BRAQUAGE,{\c&HFFFFFF&} NON
+Dialogue: 0,0:00:31.54,0:00:31.62,Sub,,0,0,0,,{\pos(540,940)}C'EST UN BRAQUAGE, {\c&H3DFFF2&}NON{\c&HFFFFFF&}
+Dialogue: 0,0:00:31.62,0:00:31.78,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} AMAZON.
+Dialogue: 0,0:00:31.78,0:00:32.15,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}AMAZON.{\c&HFFFFFF&}

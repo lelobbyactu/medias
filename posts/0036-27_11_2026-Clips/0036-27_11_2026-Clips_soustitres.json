@@ -1,0 +1,770 @@
+[
+{
+"debut": 0.68,
+"fin": 1.04,
+"mot": "Mais",
+"confiance": 0.5
+},
+{
+"debut": 1.04,
+"fin": 1.38,
+"mot": "POURQUOI",
+"confiance": 0.9
+},
+{
+"debut": 1.38,
+"fin": 1.54,
+"mot": "vous partez ?",
+"confiance": 0.75
+},
+{
+"debut": 3.6,
+"fin": 3.84,
+"mot": "Ah",
+"confiance": 0.37
+},
+{
+"debut": 3.84,
+"fin": 3.98,
+"mot": "voilà",
+"confiance": 0.61
+},
+{
+"debut": 3.98,
+"fin": 4.22,
+"mot": "ce",
+"confiance": 0.47
+},
+{
+"debut": 4.22,
+"fin": 4.3,
+"mot": "que",
+"confiance": 0.72
+},
+{
+"debut": 4.3,
+"fin": 4.36,
+"mot": "j'ai",
+"confiance": 0.44
+},
+{
+"debut": 4.36,
+"fin": 4.58,
+"mot": "jamais",
+"confiance": 0.99
+},
+{
+"debut": 4.58,
+"fin": 4.76,
+"mot": "vu",
+"confiance": 0.96
+},
+{
+"debut": 7.02,
+"fin": 7.12,
+"mot": "c'est",
+"confiance": 0.76
+},
+{
+"debut": 7.12,
+"fin": 7.24,
+"mot": "pour",
+"confiance": 0.98
+},
+{
+"debut": 7.24,
+"fin": 7.58,
+"mot": "proc",
+"confiance": 0.69
+},
+{
+"debut": 7.58,
+"fin": 7.7,
+"mot": "la",
+"confiance": 0.4
+},
+{
+"debut": 7.7,
+"fin": 7.92,
+"mot": "malignance",
+"confiance": 0.73
+},
+{
+"debut": 7.92,
+"fin": 8.06,
+"mot": "comme",
+"confiance": 0.81
+},
+{
+"debut": 8.06,
+"fin": 8.16,
+"mot": "ça",
+"confiance": 0.82
+},
+{
+"debut": 8.16,
+"fin": 8.26,
+"mot": "on",
+"confiance": 0.98
+},
+{
+"debut": 8.26,
+"fin": 8.32,
+"mot": "le",
+"confiance": 0.95
+},
+{
+"debut": 8.32,
+"fin": 8.46,
+"mot": "tue",
+"confiance": 0.98
+},
+{
+"debut": 9.42,
+"fin": 9.78,
+"mot": "Il",
+"confiance": 0.77
+},
+{
+"debut": 9.78,
+"fin": 9.9,
+"mot": "est",
+"confiance": 0.99
+},
+{
+"debut": 9.9,
+"fin": 10.14,
+"mot": "parti",
+"confiance": 0.97
+},
+{
+"debut": 10.14,
+"fin": 10.42,
+"mot": "push",
+"confiance": 0.6
+},
+{
+"debut": 10.42,
+"fin": 10.64,
+"mot": "mid",
+"confiance": 0.4
+},
+{
+"debut": 11.8,
+"fin": 11.92,
+"mot": "est",
+"confiance": 1.0
+},
+{
+"debut": 11.92,
+"fin": 12.16,
+"mot": "parti",
+"confiance": 0.99
+},
+{
+"debut": 12.16,
+"fin": 12.52,
+"mot": "push",
+"confiance": 0.99
+},
+{
+"debut": 12.52,
+"fin": 12.84,
+"mot": "mid",
+"confiance": 0.97
+},
+{
+"debut": 14.42,
+"fin": 14.78,
+"mot": "En fait",
+"confiance": 0.63
+},
+{
+"debut": 14.78,
+"fin": 14.9,
+"mot": "je",
+"confiance": 0.7
+},
+{
+"debut": 14.9,
+"fin": 15.04,
+"mot": "m'en",
+"confiance": 0.97
+},
+{
+"debut": 15.04,
+"fin": 15.14,
+"mot": "bats",
+"confiance": 0.49
+},
+{
+"debut": 15.14,
+"fin": 15.28,
+"mot": "les",
+"confiance": 0.99
+},
+{
+"debut": 15.28,
+"fin": 15.44,
+"mot": "couilles",
+"confiance": 0.52
+},
+{
+"debut": 15.44,
+"fin": 15.5,
+"mot": "de",
+"confiance": 0.98
+},
+{
+"debut": 15.5,
+"fin": 15.6,
+"mot": "la",
+"confiance": 1.0
+},
+{
+"debut": 15.6,
+"fin": 15.78,
+"mot": "game",
+"confiance": 0.94
+},
+{
+"debut": 15.96,
+"fin": 16.2,
+"mot": "c'est",
+"confiance": 0.98
+},
+{
+"debut": 16.2,
+"fin": 16.66,
+"mot": "la",
+"confiance": 0.89
+},
+{
+"debut": 16.66,
+"fin": 17.08,
+"mot": "bêtise",
+"confiance": 0.96
+},
+{
+"debut": 17.08,
+"fin": 17.44,
+"mot": "humaine",
+"confiance": 1.0
+},
+{
+"debut": 17.44,
+"fin": 17.62,
+"mot": "qui",
+"confiance": 0.9
+},
+{
+"debut": 17.62,
+"fin": 17.78,
+"mot": "me",
+"confiance": 0.97
+},
+{
+"debut": 17.78,
+"fin": 17.9,
+"mot": "rend",
+"confiance": 0.97
+},
+{
+"debut": 17.9,
+"fin": 18.16,
+"mot": "fou",
+"confiance": 0.95
+},
+{
+"debut": 18.16,
+"fin": 18.52,
+"mot": "frère",
+"confiance": 0.93
+},
+{
+"debut": 18.52,
+"fin": 19.0,
+"mot": "C'est",
+"confiance": 0.72
+},
+{
+"debut": 19.0,
+"fin": 19.12,
+"mot": "pas",
+"confiance": 0.99
+},
+{
+"debut": 19.12,
+"fin": 19.32,
+"mot": "la",
+"confiance": 0.99
+},
+{
+"debut": 19.32,
+"fin": 19.58,
+"mot": "game",
+"confiance": 0.99
+},
+{
+"debut": 19.58,
+"fin": 19.72,
+"mot": "je",
+"confiance": 0.77
+},
+{
+"debut": 19.72,
+"fin": 19.9,
+"mot": "m'en",
+"confiance": 1.0
+},
+{
+"debut": 19.9,
+"fin": 20.14,
+"mot": "fous",
+"confiance": 0.93
+},
+{
+"debut": 20.14,
+"fin": 20.5,
+"mot": "On",
+"confiance": 0.77
+},
+{
+"debut": 20.5,
+"fin": 20.62,
+"mot": "peut",
+"confiance": 0.96
+},
+{
+"debut": 20.62,
+"fin": 20.8,
+"mot": "perdre",
+"confiance": 0.66
+},
+{
+"debut": 20.8,
+"fin": 21.0,
+"mot": "100",
+"confiance": 0.52
+},
+{
+"debut": 21.0,
+"fin": 21.2,
+"mot": "games",
+"confiance": 0.47
+},
+{
+"debut": 21.46,
+"fin": 21.58,
+"mot": "sur",
+"confiance": 0.8
+},
+{
+"debut": 21.58,
+"fin": 21.7,
+"mot": "ce",
+"confiance": 0.66
+},
+{
+"debut": 21.7,
+"fin": 21.76,
+"mot": "compte",
+"confiance": 0.75
+},
+{
+"debut": 21.86,
+"fin": 22.04,
+"mot": "m'en",
+"confiance": 0.98
+},
+{
+"debut": 22.04,
+"fin": 22.24,
+"mot": "bats",
+"confiance": 0.97
+},
+{
+"debut": 22.24,
+"fin": 22.42,
+"mot": "les",
+"confiance": 0.98
+},
+{
+"debut": 22.42,
+"fin": 22.6,
+"mot": "reins",
+"confiance": 0.98
+},
+{
+"debut": 23.04,
+"fin": 23.58,
+"mot": "comment ?",
+"confiance": 0.6
+},
+{
+"debut": 23.58,
+"fin": 23.82,
+"mot": "J'suis",
+"confiance": 0.75
+},
+{
+"debut": 23.82,
+"fin": 24.0,
+"mot": "obligé",
+"confiance": 0.99
+},
+{
+"debut": 24.0,
+"fin": 24.1,
+"mot": "de",
+"confiance": 0.95
+},
+{
+"debut": 24.1,
+"fin": 24.52,
+"mot": "réagir",
+"confiance": 1.0
+},
+{
+"debut": 24.52,
+"fin": 24.6,
+"mot": "à",
+"confiance": 0.94
+},
+{
+"debut": 24.6,
+"fin": 24.76,
+"mot": "la",
+"confiance": 1.0
+},
+{
+"debut": 24.76,
+"fin": 25.2,
+"mot": "bêtise",
+"confiance": 0.99
+},
+{
+"debut": 25.2,
+"fin": 25.56,
+"mot": "humaine",
+"confiance": 1.0
+},
+{
+"debut": 25.72,
+"fin": 25.84,
+"mot": "j'suis",
+"confiance": 0.93
+},
+{
+"debut": 25.84,
+"fin": 25.92,
+"mot": "en",
+"confiance": 0.71
+},
+{
+"debut": 25.92,
+"fin": 26.02,
+"mot": "train",
+"confiance": 0.99
+},
+{
+"debut": 26.02,
+"fin": 26.08,
+"mot": "de",
+"confiance": 0.95
+},
+{
+"debut": 26.08,
+"fin": 26.28,
+"mot": "voir",
+"confiance": 0.99
+},
+{
+"debut": 26.28,
+"fin": 26.4,
+"mot": "genre",
+"confiance": 0.7
+},
+{
+"debut": 26.4,
+"fin": 26.52,
+"mot": "c'est",
+"confiance": 0.91
+},
+{
+"debut": 26.52,
+"fin": 26.74,
+"mot": "vraiment",
+"confiance": 0.99
+},
+{
+"debut": 26.74,
+"fin": 26.9,
+"mot": "un",
+"confiance": 0.97
+},
+{
+"debut": 26.9,
+"fin": 27.4,
+"mot": "abruti",
+"confiance": 0.97
+},
+{
+"debut": 27.4,
+"fin": 27.7,
+"mot": "wesh",
+"confiance": 0.9
+},
+{
+"debut": 27.7,
+"fin": 28.18,
+"mot": "C'est",
+"confiance": 0.61
+},
+{
+"debut": 28.18,
+"fin": 28.3,
+"mot": "un",
+"confiance": 0.99
+},
+{
+"debut": 28.3,
+"fin": 28.8,
+"mot": "abruti,",
+"confiance": 0.83
+},
+{
+"debut": 28.86,
+"fin": 28.98,
+"mot": "genre",
+"confiance": 0.77
+},
+{
+"debut": 28.98,
+"fin": 29.12,
+"mot": "son",
+"confiance": 0.95
+},
+{
+"debut": 29.12,
+"fin": 29.56,
+"mot": "cerveau",
+"confiance": 1.0
+},
+{
+"debut": 29.94,
+"fin": 29.96,
+"mot": "y",
+"confiance": 0.72
+},
+{
+"debut": 29.96,
+"fin": 30.5,
+"mot": "a",
+"confiance": 0.99
+},
+{
+"debut": 30.5,
+"fin": 30.62,
+"mot": "des",
+"confiance": 0.99
+},
+{
+"debut": 30.62,
+"fin": 31.36,
+"mot": "cacahuètes",
+"confiance": 0.96
+},
+{
+"debut": 31.36,
+"fin": 31.58,
+"mot": "frère",
+"confiance": 0.65
+},
+{
+"debut": 31.58,
+"fin": 31.64,
+"mot": "Il",
+"confiance": 0.54
+},
+{
+"debut": 31.64,
+"fin": 31.74,
+"mot": "fait",
+"confiance": 0.96
+},
+{
+"debut": 31.74,
+"fin": 31.96,
+"mot": "ça,",
+"confiance": 1.0
+},
+{
+"debut": 32.02,
+"fin": 32.2,
+"mot": "ça,",
+"confiance": 0.99
+},
+{
+"debut": 32.2,
+"fin": 32.46,
+"mot": "ça",
+"confiance": 0.98
+},
+{
+"debut": 32.46,
+"fin": 32.56,
+"mot": "y",
+"confiance": 0.76
+},
+{
+"debut": 32.56,
+"fin": 32.62,
+"mot": "est",
+"confiance": 0.98
+},
+{
+"debut": 32.62,
+"fin": 32.78,
+"mot": "c'est",
+"confiance": 0.75
+},
+{
+"debut": 32.78,
+"fin": 33.0,
+"mot": "fini",
+"confiance": 1.0
+},
+{
+"debut": 33.0,
+"fin": 33.54,
+"mot": "Ça",
+"confiance": 0.71
+},
+{
+"debut": 33.54,
+"fin": 34.02,
+"mot": "rebondit,",
+"confiance": 0.98
+},
+{
+"debut": 34.12,
+"fin": 34.14,
+"mot": "il",
+"confiance": 0.99
+},
+{
+"debut": 34.14,
+"fin": 34.14,
+"mot": "y",
+"confiance": 1.0
+},
+{
+"debut": 34.14,
+"fin": 34.24,
+"mot": "a",
+"confiance": 1.0
+},
+{
+"debut": 34.24,
+"fin": 34.28,
+"mot": "de",
+"confiance": 1.0
+},
+{
+"debut": 34.28,
+"fin": 34.62,
+"mot": "l'écho",
+"confiance": 0.98
+},
+{
+"debut": 34.62,
+"fin": 35.02,
+"mot": "C'est",
+"confiance": 0.35
+},
+{
+"debut": 35.02,
+"fin": 35.42,
+"mot": "abusé,",
+"confiance": 0.99
+},
+{
+"debut": 35.48,
+"fin": 35.62,
+"mot": "comment",
+"confiance": 1.0
+},
+{
+"debut": 35.62,
+"fin": 35.7,
+"mot": "il",
+"confiance": 1.0
+},
+{
+"debut": 35.7,
+"fin": 35.82,
+"mot": "peut",
+"confiance": 1.0
+},
+{
+"debut": 35.82,
+"fin": 35.94,
+"mot": "être",
+"confiance": 1.0
+},
+{
+"debut": 35.94,
+"fin": 36.1,
+"mot": "con",
+"confiance": 1.0
+},
+{
+"debut": 36.1,
+"fin": 36.32,
+"mot": "comme",
+"confiance": 0.98
+},
+{
+"debut": 36.32,
+"fin": 36.5,
+"mot": "ça",
+"confiance": 1.0
+},
+{
+"debut": 38.36,
+"fin": 38.48,
+"mot": "Mais",
+"confiance": 0.85
+},
+{
+"debut": 38.48,
+"fin": 38.74,
+"mot": "t'es",
+"confiance": 0.99
+},
+{
+"debut": 38.74,
+"fin": 38.88,
+"mot": "con",
+"confiance": 1.0
+},
+{
+"debut": 38.88,
+"fin": 39.02,
+"mot": "ou",
+"confiance": 0.95
+},
+{
+"debut": 39.02,
+"fin": 39.24,
+"mot": "quoi",
+"confiance": 1.0
+},
+{
+"debut": 39.24,
+"fin": 39.48,
+"mot": "frère",
+"confiance": 0.99
+}
+]
