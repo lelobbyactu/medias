@@ -592,40 +592,6 @@
     "dur": null
    },
    "closed_at_utc": "2026-11-27T12:16:20Z"
-  },
-  {
-   "id": "c-20261127-1223-locklear-gta6-nage-30min-2026-11-27",
-   "added_at_utc": "2026-11-27T12:23:20Z",
-   "found_by": "secours:apify",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Locklear nage 30 minutes sur GTA 6 et meurt au pied d'un bateau",
-   "topic_key": "locklear-gta6-nage-30min-2026-11-27",
-   "origin": "Lockl34rTV",
-   "source_tweet": "https://x.com/Lockl34rTV/status/2126252818210386025",
-   "primary_source": "https://x.com/Lockl34rTV/status/2126252818210386025",
-   "source_time_utc": "2026-11-27T09:52:30Z",
-   "expires_at_utc": "2026-11-29T09:52:30Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "Lockl34rTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2126252420351008768/vid/avc1/1280x720/SGaOLsjZx1RuJCOt.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "30 minutes de nage selon lui, nulle part où grimper, mort au pied du bateau.",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-27T12:23:39Z",
-   "clip": {
-    "url": "https://video.twimg.com/amplify_video/2126252420351008768/vid/avc1/1280x720/SGaOLsjZx1RuJCOt.mp4?tag=14",
-    "offset": 0,
-    "dur": null
-   },
-   "post_id": "0040-27_11_2026-Clips"
   }
  ]
 }

@@ -763,13 +763,31 @@
   },
   {
    "id": "0040-27_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Locklear nage 30 minutes sur GTA 6 et meurt au pied d'un bateau",
    "origin": "Lockl34rTV",
    "source_tweet": "https://x.com/Lockl34rTV/status/2126252818210386025",
    "queue_id": "c-20261127-1223-locklear-gta6-nage-30min-2026-11-27",
-   "reserved_at_utc": "2026-11-27T12:29:32Z"
+   "reserved_at_utc": "2026-11-27T12:29:32Z",
+   "clip": {
+    "url": "https://video.twimg.com/amplify_video/2126252420351008768/vid/avc1/1280x720/SGaOLsjZx1RuJCOt.mp4?tag=14",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "locklear-gta6-nage-30min-2026-11-27",
+   "expires_at_utc": "2026-11-29T09:52:30Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-27T12:34:19Z",
+   "titre": "Locklear nage|*30 minutes*|pour mourir|sous un bateau",
+   "legende": "Le moment où tu réalises que tout ce chemin n'a servi à rien 😭 Toi, tu relances ou tu éteins la console ?\n\nClip : x.com/Lockl34rTV\n\n#gta6 #gtavi #locklear #gameplay #twitchfr",
+   "titres_alt": [
+    "30 minutes|à la nage, et|ce *bateau*|tue Locklear",
+    "Locklear nage|une demi-heure|et ne peut pas|*monter*"
+   ],
+   "judge_score": "7/10",
+   "format": "16:9",
+   "garde_fou": "SECOURS"
   }
  ]
 }
