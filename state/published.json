@@ -642,7 +642,7 @@
   },
   {
    "id": "0036-27_11_2026-Clips",
-   "status": "a_valider",
+   "status": "echec",
    "type": "reel",
    "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
    "origin": "KametoTV",
@@ -667,7 +667,8 @@
    "judge_score": "7.5/10",
    "format": "9:16",
    "garde_fou": "OK",
-   "envoi_utc": "2026-11-27T03:38:26Z"
+   "envoi_utc": "2026-11-27T03:38:26Z",
+   "note": "[Errno 2] No such file or directory: '/home/runner/work/medias/medias/posts/0036-27_11_2026-Clips/0036-27_11_2026-Clips.mp4'"
   }
  ]
 }
