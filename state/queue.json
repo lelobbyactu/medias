@@ -697,7 +697,7 @@
    "source_time_utc": "2026-11-27T17:12:38Z",
    "expires_at_utc": "2026-11-28T05:12:38Z",
    "fiabilite": "🟡",
-   "score": 5,
+   "score": 6,
    "mentions": [
     "JLTomyTV"
    ],
@@ -737,6 +737,66 @@
    "titles": [
     "Domingo et son *accident* sur GTA 6",
     "Accident *fou* pour Domingo sur GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-1915-domingo-dodge-kamel-2026-11-27",
+   "added_at_utc": "2026-11-27T19:15:32Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Le dodge de Kamel commenté par Domingo",
+   "topic_key": "domingo-dodge-kamel-2026-11-27",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2126382424141480165",
+   "primary_source": "https://x.com/DomingoTV/status/2126382424141480165",
+   "source_time_utc": "2026-11-27T18:27:30Z",
+   "expires_at_utc": "2026-11-29T18:27:30Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126382317027389440/vid/avc1/1280x720/Zw0Qpnn2c1CZzg4n.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Dodge jugé « solide » par Domingo : moment de jeu à vérifier, le juge tranche.",
+   "titles": [
+    "Le dodge de Kamel qui fait réagir Domingo",
+    "Domingo réagit à ce dodge de Kamel"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-1915-michou-3e-booster-2026-11-26",
+   "added_at_utc": "2026-11-27T19:15:32Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Michou ouvre son 3e booster en stream",
+   "topic_key": "michou-3e-booster-2026-11-26",
+   "origin": "michou",
+   "source_tweet": "https://www.twitch.tv/michou/clip/WildBumblingClintmullinsNononoCat-dD1YrIS3aWqaOaEy",
+   "primary_source": "https://www.twitch.tv/michou/clip/WildBumblingClintmullinsNononoCat-dD1YrIS3aWqaOaEy",
+   "source_time_utc": "2026-11-26T19:31:39Z",
+   "expires_at_utc": "2026-11-28T19:31:39Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/michou/clip/WildBumblingClintmullinsNononoCat-dD1YrIS3aWqaOaEy",
+   "media_repo_path": "",
+   "angle": "Ouverture de booster en live par un gros créateur ; le moment n'est pas identifiable depuis le titre, à vérifier.",
+   "titles": [
+    "Michou ouvre son 3e booster en live",
+    "Le 3e booster de Michou, la réaction en direct"
    ],
    "checks": [],
    "photo_needed": "",
