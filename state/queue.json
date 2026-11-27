@@ -1020,7 +1020,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-27T03:09:23Z"
+   "taken_at_utc": "2026-11-27T03:09:23Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+    "offset": 0.0,
+    "dur": 50.154
+   }
   },
   {
    "id": "c-20261126-2114-jltomy-fana-nikos-villa-bagarre",
