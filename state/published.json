@@ -669,6 +669,16 @@
    "garde_fou": "OK",
    "envoi_utc": "2026-11-27T03:38:26Z",
    "note": "[Errno 2] No such file or directory: '/home/runner/work/medias/medias/posts/0036-27_11_2026-Clips/0036-27_11_2026-Clips.mp4'"
+  },
+  {
+   "id": "0037-27_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "Domingo enchaîne les accidents dans GTA 6",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
+   "queue_id": "c-20261127-0339-domingo-gta6-accidents-2026-11-26",
+   "reserved_at_utc": "2026-11-27T03:41:47Z"
   }
  ]
 }
