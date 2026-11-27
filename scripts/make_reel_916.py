@@ -270,7 +270,7 @@ def font_face(fam, fname, w):
     return f"@font-face{{font-family:'{fam}';src:url('{(FONTS / fname).as_uri()}') format('woff2');font-weight:{w};}}"
 
 
-def render_overlay(title, out_png, logo_xy):
+def render_overlay(title, out_png, logo_xy, haut=140):
     """Calque transparent : titre DA dans la bande du haut + petit logo (le fond sombre vient de ffmpeg)."""
     lines = [l.strip() for l in title.split("|") if l.strip()]
     th = "".join("<div class='ln'>" + re.sub(r"\*(.+?)\*", r"<span class='hl'>\1</span>", html.escape(l)) + "</div>" for l in lines)
@@ -282,7 +282,7 @@ def render_overlay(title, out_png, logo_xy):
 html,body{{width:1080px;height:1920px;background:transparent;overflow:hidden}}
 body{{position:relative;color:#fff}}
 .logo{{position:absolute;left:{logo_xy[0]}px;top:{logo_xy[1]}px;background:{Y};color:{BG};font-family:Unbounded;font-weight:900;font-size:18px;line-height:.98;padding:8px 9px 7px;border-radius:4px}}
-.box{{position:absolute;left:0;right:0;top:140px;height:{box_h}px;padding:0 40px;display:flex;flex-direction:column;justify-content:center}}
+.box{{position:absolute;left:0;right:0;top:{haut}px;height:{box_h}px;padding:0 40px;display:flex;flex-direction:column;justify-content:center}}
 .title{{text-align:center;font-family:Unbounded;font-weight:800;text-transform:uppercase;font-size:64px;line-height:1.14;letter-spacing:-.5px}}
 .ln{{white-space:nowrap;display:block;width:max-content;margin:0 auto}}
 .hl{{background:{Y};color:{BG};padding:0 .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}}
@@ -309,6 +309,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--video", required=True); ap.add_argument("--post", required=True)
     ap.add_argument("--title", default="")
+    ap.add_argument("--titre-haut", type=int, default=140, help="bord haut de la zone titre (px) ; plus petit = titre plus haut")
     ap.add_argument("--start", type=float, default=None); ap.add_argument("--end", type=float, default=None)
     ap.add_argument("--channel", default=None, help="chaîne Twitch (webcam mémorisée)")
     ap.add_argument("--cam", default=None, help="x,y,w,h de la webcam (espace 1920x1080) : correction manuelle")
@@ -451,7 +452,7 @@ def main():
     game_y = (GAME_Y if cam else NOCAM_GAME_Y) + (GAME_H - game_h) // 2
     logo = (cam_box[0] + 20, cam_box[1] + 20) if cam else (24, game_y + 20)
     png = out_dir / f"{a.post}_fond.png"
-    rep["titre_px"] = render_overlay(a.title, png, logo)
+    rep["titre_px"] = render_overlay(a.title, png, logo, a.titre_haut)
     mp4 = out_dir / f"{a.post}.mp4"
     subs = ""
     if not a.no_subs:   # sous-titres (scripts/subtitles.py) dans la bande noire du milieu

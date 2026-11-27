@@ -152,6 +152,7 @@ def legende_message(x):
     c = L.cfg(); titre = x["titre"].replace("|", " ").replace("*", "")
     tete = (f"🚨 URGENT · #{num(x)}\nPart dans {c.get('urgent_delay_min', 20)} min si tu n'annules pas."
             if x.get("urgent") else f"🎬 #{num(x)} · à valider avant le {hm(x['expires_at_utc'])} (Taipei)")
+    if x.get("immediat"): tete = f"⚡ #{num(x)} · part dès que tu cliques « Poster »"
     reseaux = " + ".join("Instagram" if p == "instagram" else "TikTok" for p in plat_list(x))
     txt = f"{tete}\n\n{titre}\nJuge : {x['judge_score']} · {x['format']} · {reseaux}\n\n{x['legende']}"
     return txt[:1024]
@@ -269,7 +270,11 @@ def decider(n, action, valeur=""):
         if not update(pid, {"status": "valide", "validated_at_utc": L.iso(L.now())}, f"validation: {pid} validé", ("a_valider",)):
             return say(f"#{n} : déjà traité ({st}).")
         clear_buttons(x)
-        say(f"✅ #{n} validé. Il partira à un créneau selon sa note ({x['judge_score']}), avant le {hm(x['expires_at_utc'])} (Taipei).")
+        if x.get("immediat"):
+            say(f"✅ #{n} validé, publication immédiate en cours.")
+            publier(cible=pid)
+        else:
+            say(f"✅ #{n} validé. Il partira à un créneau selon sa note ({x['judge_score']}), avant le {hm(x['expires_at_utc'])} (Taipei).")
     elif action in ("non", "annuler"):
         if st == "programme":
             code, j = zr("DELETE", f"/posts/{x['zernio_post_id']}")
@@ -384,7 +389,21 @@ def appliquer_retouche(n, x, choix):
         clear_buttons(x); time.sleep(0 if os.environ.get("LOBBY_NOCHECK") else 20); envoyer()
 
 # ---------- publier ----------
-def publier(essai=False, confirmer=False):
+def streamer(x):
+    """Identifiant stable du streamer (DomingoTV, Domingo et domingo = le même)."""
+    o = x.get("origin") or ""
+    table = {k.lower(): v for k, v in L.cfg().get("twitch_channels", {}).items() if not k.startswith("_")}
+    return table.get(o.lower(), o.lower())
+
+def streamer_bloque(posts):
+    """Streamer des N derniers posts partis, s'ils sont tous de lui (règle d'Alix du 27 nov. : 2 d'affilée au maximum)."""
+    n = L.cfg().get("max_same_streamer_row", 2)
+    partis = sorted([x for x in posts if x["status"] in ("publie", "publication", "programme") and x.get("published_at_utc")],
+                    key=lambda x: x["published_at_utc"])[-n:]
+    noms = {streamer(x) for x in partis}
+    return noms.pop() if len(partis) == n and len(noms) == 1 else None
+
+def publier(essai=False, confirmer=False, cible=None):
     L.sync(); t = L.now()
     # 1. urgences programmées et publications interrompues : on relit l'état chez Zernio
     for x in [x for x in L.pload()["posts"] if x["status"] in ("programme", "publication")]:
@@ -412,7 +431,15 @@ def publier(essai=False, confirmer=False):
     c = L.cfg(); posts = L.pload()["posts"]; n, last = L.today_stats(posts)
     valides = sorted([x for x in posts if x["status"] == "valide" and L.parse(x["expires_at_utc"]) > t],
                      key=lambda x: (-score(x), x["expires_at_utc"]))
+    if cible: valides = [x for x in valides if x["id"] == cible]
     if not valides: return print("aucune vidéo validée")
+    bloque = streamer_bloque(posts)
+    if bloque:
+        autres = [x for x in valides if streamer(x) != bloque]
+        if not autres:
+            say(f"⏸️ Créneau sauté : seules des vidéos de {bloque} sont validées, et les 2 derniers posts sont déjà de lui.")
+            return print("règle streamer : rien à publier")
+        valides = autres
     if n >= c["cap_per_day"]: return print("plafond du jour atteint")
     if last and abs((t - last).total_seconds()) < c["min_gap_min"] * 60: return print("post trop récent ou programmé bientôt")
     x = valides[0]
