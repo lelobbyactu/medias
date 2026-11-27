@@ -592,6 +592,96 @@
     "dur": null
    },
    "closed_at_utc": "2026-11-27T12:16:20Z"
+  },
+  {
+   "id": "c-20261127-1515-domingo-fils-michael-gta-v",
+   "added_at_utc": "2026-11-27T15:15:28Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo découvre qui est le fils de Michael dans GTA V",
+   "topic_key": "domingo-fils-michael-gta-v",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2126321011758977287",
+   "primary_source": "https://x.com/DomingoTV/status/2126321011758977287",
+   "source_time_utc": "2026-11-27T14:23:28Z",
+   "expires_at_utc": "2026-11-29T14:23:28Z",
+   "fiabilite": "moyenne : vidéo native du compte d'origine ; contexte stream à vérifier au montage",
+   "score": 6,
+   "mentions": [
+    "DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126320896075857920/vid/avc1/1280x720/RrO9g9aCCKSmN-RL.mp4",
+   "media_repo_path": "",
+   "angle": "Réaction drôle sur un détail de l'histoire de GTA V, en pleine vague GTA 6 ; la référence se comprend pour les fans.",
+   "titles": [
+    "Il n'avait pas capté que c'était le fils de Michael dans GTA V",
+    "Domingo réalise qui est le fils de Michael dans GTA V"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-1515-jltomy-diversite-pnj-gta6",
+   "added_at_utc": "2026-11-27T15:15:28Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JL Tomy réagit à la diversité des PNJ de GTA 6",
+   "topic_key": "jltomy-diversite-pnj-gta6",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126311572868059566",
+   "primary_source": "https://x.com/JLTomyTV/status/2126311572868059566",
+   "source_time_utc": "2026-11-27T13:45:58Z",
+   "expires_at_utc": "2026-11-29T13:45:58Z",
+   "fiabilite": "moyenne : vidéo native du compte d'origine ; stream ou montage à vérifier au montage",
+   "score": 5,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126311451061071872/vid/avc1/1280x720/SP_HYXT-9JrreKUD.mp4",
+   "media_repo_path": "",
+   "angle": "Réaction courte sur les PNJ de GTA 6 pendant la vague de contenus sur le jeu ; le sujet est clair, la chute reste à voir.",
+   "titles": [
+    "La diversité des PNJ de GTA 6 vue par JL Tomy",
+    "JL Tomy trouve la diversité des PNJ de GTA 6 dingue"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-1515-domingo-crash-gta6-twitch",
+   "added_at_utc": "2026-11-27T15:15:28Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Crash de GTA 6 en plein direct chez Domingo",
+   "topic_key": "domingo-crash-gta6-twitch",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/PoisedAstuteShallotGingerPower-j2C6M9ZMf53CE7Tk",
+   "primary_source": "https://www.twitch.tv/domingo/clip/PoisedAstuteShallotGingerPower-j2C6M9ZMf53CE7Tk",
+   "source_time_utc": "2026-11-26T14:38:00Z",
+   "expires_at_utc": "2026-11-28T14:38:00Z",
+   "fiabilite": "faible à moyenne : titre du clip vague, contenu à vérifier au montage",
+   "score": 5,
+   "mentions": [
+    "twitch:domingo"
+   ],
+   "media_url": "https://www.twitch.tv/domingo/clip/PoisedAstuteShallotGingerPower-j2C6M9ZMf53CE7Tk",
+   "media_repo_path": "",
+   "angle": "Un crash de GTA 6 en live parle à tous les joueurs ; le moment exact dépend de la vidéo.",
+   "titles": [
+    "Le jeu plante en plein direct pour Domingo sur GTA 6",
+    "Crash de GTA 6 en plein stream pour Domingo"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
