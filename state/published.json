@@ -733,7 +733,8 @@
    "immediat": true,
    "telegram_msg": 53,
    "validated_at_utc": "2026-11-27T12:08:14Z",
-   "published_at_utc": "2026-11-27T12:08:18Z"
+   "published_at_utc": "2026-11-27T12:08:18Z",
+   "zernio_post_id": "6b0972b5b337f8ad785b3a05"
   }
  ]
 }
