@@ -1144,43 +1144,6 @@
    "note": "Score plafonné faute de savoir ce qui se passe dans le clip (grille docs/sources.md). Le créneau doit regarder la vidéo et écrire les titres."
   },
   {
-   "id": "c-20261127-0339-domingo-gta6-accidents-2026-11-26",
-   "added_at_utc": "2026-11-27T03:39:02Z",
-   "found_by": "veille",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Domingo enchaîne les accidents dans GTA 6",
-   "topic_key": "domingo-gta6-accidents-2026-11-26",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
-   "primary_source": "https://x.com/DomingoTV/status/2126001638653530599",
-   "source_time_utc": "2026-11-26T17:14:24Z",
-   "expires_at_utc": "2026-11-28T17:14:24Z",
-   "fiabilite": "haute",
-   "score": 7,
-   "mentions": [
-    "@DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2126001523570225152/vid/avc1/1280x720/Wrs-wAvP__WFkM5-.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un streamer français connu qui enchaîne les accidents dans GTA 6, moment visuel et drôle sur le jeu le plus attendu.",
-   "titles": [
-    "Domingo enchaîne les accidents dans GTA 6",
-    "GTA 6 : Domingo et ses accidents à répétition"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-27T03:39:10Z",
-   "clip": {
-    "url": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
-    "offset": 0.0,
-    "dur": 50.154
-   },
-   "post_id": "0037-27_11_2026-Clips"
-  },
-  {
    "id": "c-20261127-0339-kameto-lol-rage-coequipiers-20261126",
    "added_at_utc": "2026-11-27T03:39:02Z",
    "found_by": "veille",

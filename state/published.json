@@ -672,13 +672,30 @@
   },
   {
    "id": "0037-27_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo enchaîne les accidents dans GTA 6",
    "origin": "DomingoTV",
    "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
    "queue_id": "c-20261127-0339-domingo-gta6-accidents-2026-11-26",
-   "reserved_at_utc": "2026-11-27T03:41:47Z"
+   "reserved_at_utc": "2026-11-27T03:41:47Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+    "offset": 0.0,
+    "dur": 50.154
+   },
+   "topic_key": "domingo-gta6-accidents-2026-11-26",
+   "expires_at_utc": "2026-11-28T17:14:24Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-27T03:44:45Z",
+   "titre": "Domingo n'avait|pas vu le mec|en train de|*cramer*",
+   "legende": "Il inspecte tranquillement le camion pendant qu'un conducteur est coincé juste à côté 😭 Tu l'aurais sauvé ou tu aurais filé ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #gameplay #twitchfr",
+   "titres_alt": [
+    "Domingo joue|les *pompiers*|après un énorme|crash"
+   ],
+   "judge_score": "8/10",
+   "format": "9:16",
+   "garde_fou": "SPONSOR"
   },
   {
    "id": "0038-27_11_2026-Clips",
