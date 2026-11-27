@@ -738,7 +738,7 @@
   },
   {
    "id": "0039-27_11_2026-Clips",
-   "status": "a_valider",
+   "status": "valide",
    "type": "reel",
    "topic": "Locklear saute d'un pont pour fuir la police sur GTA 6 et meurt, pas assez de profondeur",
    "origin": "Lockl34rTV",
@@ -762,7 +762,8 @@
    "judge_score": "7/10",
    "format": "16:9",
    "garde_fou": "SECOURS",
-   "telegram_msg": 61
+   "telegram_msg": 61,
+   "validated_at_utc": "2026-11-27T12:54:58Z"
   },
   {
    "id": "0040-27_11_2026-Clips",
