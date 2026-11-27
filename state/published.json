@@ -754,13 +754,14 @@
    "expires_at_utc": "2026-11-28T00:22:25Z",
    "nature": "gameplay",
    "proposed_at_utc": "2026-11-27T12:34:11Z",
-   "titre": "Locklear saute|du pont pour fuir|mais l'eau est|trop *basse*",
+   "titre": "LOCKLEAR SAUTE|DU PONT POUR|FUIR LES FLICS|MAIS *S’EXPLOSE LA TÊTE*",
    "legende": "Cinq étoiles au compteur et une seule idée pour s'en sortir, le grand plongeon 💀 C'est la pire mort que t'as vue sur GTA 6 ?\n\nClip : twitch.tv/locklear\n\n#gta6 #gtavi #locklear #gameplay #twitchfr",
-   "titres_alt": [],
+   "titres_alt": [
+    "Locklear saute|du pont pour fuir|mais l'eau est|trop *basse*"
+   ],
    "judge_score": "7/10",
    "format": "16:9",
-   "garde_fou": "SECOURS",
-   "telegram_msg": 55
+   "garde_fou": "SECOURS"
   },
   {
    "id": "0040-27_11_2026-Clips",
