@@ -997,7 +997,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-27T03:26:42Z"
+   "taken_at_utc": "2026-11-27T03:26:42Z",
+   "clip": {
+    "url": "https://www.twitch.tv/jltomy/clip/UgliestGracefulYakinikuBleedPurple-bH7x13KDODIbBqpv",
+    "offset": 0.0,
+    "dur": 25.45
+   }
   },
   {
    "id": "c-20261126-1914-domingo-gta6-accidents-2026-11-26",
