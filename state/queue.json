@@ -957,8 +957,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-27T03:09:16Z"
   },
   {
    "id": "c-20261126-1514-jltomy-jlmiami-guerre-2026-11-26",
