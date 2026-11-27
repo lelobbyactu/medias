@@ -1,0 +1,80 @@
+[
+ {
+  "debut": 25.45,
+  "fin": 25.69,
+  "mot": "la",
+  "confiance": 0.99
+ },
+ {
+  "debut": 25.69,
+  "fin": 26.03,
+  "mot": "fin,",
+  "confiance": 0.99
+ },
+ {
+  "debut": 26.15,
+  "fin": 26.19,
+  "mot": "elle",
+  "confiance": 0.54
+ },
+ {
+  "debut": 26.19,
+  "fin": 27.11,
+  "mot": "est",
+  "confiance": 0.96
+ },
+ {
+  "debut": 27.11,
+  "fin": 27.41,
+  "mot": "terrible",
+  "confiance": 0.77
+ },
+ {
+  "debut": 28.85,
+  "fin": 28.93,
+  "mot": "il n'y",
+  "confiance": 0.92
+ },
+ {
+  "debut": 28.93,
+  "fin": 29.03,
+  "mot": "avait",
+  "confiance": 0.99
+ },
+ {
+  "debut": 29.03,
+  "fin": 29.19,
+  "mot": "pas",
+  "confiance": 1.0
+ },
+ {
+  "debut": 29.19,
+  "fin": 29.37,
+  "mot": "assez",
+  "confiance": 0.99
+ },
+ {
+  "debut": 29.37,
+  "fin": 29.47,
+  "mot": "de",
+  "confiance": 0.96
+ },
+ {
+  "debut": 29.47,
+  "fin": 29.91,
+  "mot": "profondeur",
+  "confiance": 1.0
+ },
+ {
+  "debut": 29.91,
+  "fin": 30.05,
+  "mot": "les",
+  "confiance": 0.82
+ },
+ {
+  "debut": 30.05,
+  "fin": 30.19,
+  "mot": "gars",
+  "confiance": 1.0
+ }
+]
