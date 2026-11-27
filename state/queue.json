@@ -1172,7 +1172,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-27T03:39:10Z"
+   "taken_at_utc": "2026-11-27T03:39:10Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/TardyTenuousSrirachaNerfRedBlaster-3Xpew-DJ4AD-Envw",
+    "offset": 0.0,
+    "dur": 50.154
+   }
   },
   {
    "id": "c-20261127-0339-kameto-lol-rage-coequipiers-20261126",
