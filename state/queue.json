@@ -1142,6 +1142,67 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score plafonné faute de savoir ce qui se passe dans le clip (grille docs/sources.md). Le créneau doit regarder la vidéo et écrire les titres."
+  },
+  {
+   "id": "c-20261127-0339-domingo-gta6-accidents-2026-11-26",
+   "added_at_utc": "2026-11-27T03:39:02Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo enchaîne les accidents dans GTA 6",
+   "topic_key": "domingo-gta6-accidents-2026-11-26",
+   "origin": "DomingoTV",
+   "source_tweet": "https://x.com/DomingoTV/status/2126001638653530599",
+   "primary_source": "https://x.com/DomingoTV/status/2126001638653530599",
+   "source_time_utc": "2026-11-26T17:14:24Z",
+   "expires_at_utc": "2026-11-28T17:14:24Z",
+   "fiabilite": "haute",
+   "score": 7,
+   "mentions": [
+    "@DomingoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126001523570225152/vid/avc1/1280x720/Wrs-wAvP__WFkM5-.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Un streamer français connu qui enchaîne les accidents dans GTA 6, moment visuel et drôle sur le jeu le plus attendu.",
+   "titles": [
+    "Domingo enchaîne les accidents dans GTA 6",
+    "GTA 6 : Domingo et ses accidents à répétition"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-0339-kameto-lol-rage-coequipiers-20261126",
+   "added_at_utc": "2026-11-27T03:39:02Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
+   "topic_key": "kameto-lol-rage-coequipiers-20261126",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2126077825887199638",
+   "primary_source": "https://x.com/KametoTV/status/2126077825887199638",
+   "source_time_utc": "2026-11-26T22:17:08Z",
+   "expires_at_utc": "2026-11-28T22:17:08Z",
+   "fiabilite": "🟡",
+   "score": 6,
+   "mentions": [
+    "KametoTV",
+    "TopDeTwitch"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126077726931005441/vid/avc1/1280x720/ULp193rkWJL3i40E.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Un streamer FR très suivi qui craque en plein match de LoL : la rage en direct se comprend sans contexte.",
+   "titles": [
+    "Kameto pète un câble face à ses coéquipiers sur LoL",
+    "Quand Kameto craque complètement en pleine partie de LoL"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
