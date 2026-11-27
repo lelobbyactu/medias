@@ -783,16 +783,15 @@
    "expires_at_utc": "2026-11-29T09:52:30Z",
    "nature": "gameplay",
    "proposed_at_utc": "2026-11-27T12:34:19Z",
-   "titre": "Locklear nage|*30 minutes*|pour mourir|sous un bateau",
+   "titre": "LOCKLEAR NAGE 30|MINUTES POUR|*S’EXPLOSER* SOUS|UN BATEAU",
    "legende": "Le moment où tu réalises que tout ce chemin n'a servi à rien 😭 Toi, tu relances ou tu éteins la console ?\n\nClip : x.com/Lockl34rTV\n\n#gta6 #gtavi #locklear #gameplay #twitchfr",
    "titres_alt": [
-    "30 minutes|à la nage, et|ce *bateau*|tue Locklear",
-    "Locklear nage|une demi-heure|et ne peut pas|*monter*"
+    "Locklear nage|*30 minutes*|pour mourir|sous un bateau",
+    "30 minutes|à la nage, et|ce *bateau*|tue Locklear"
    ],
    "judge_score": "7/10",
    "format": "16:9",
-   "garde_fou": "SECOURS",
-   "telegram_msg": 56
+   "garde_fou": "SECOURS"
   }
  ]
 }
