@@ -738,13 +738,28 @@
   },
   {
    "id": "0039-27_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Locklear saute d'un pont pour fuir la police sur GTA 6 et meurt, pas assez de profondeur",
    "origin": "Lockl34rTV",
    "source_tweet": "https://x.com/Lockl34rTV/status/2125746962892980457",
    "queue_id": "c-20261127-1223-locklear-gta6-saut-pont-2026-11-26",
-   "reserved_at_utc": "2026-11-27T12:29:30Z"
+   "reserved_at_utc": "2026-11-27T12:29:30Z",
+   "clip": {
+    "url": "https://video.twimg.com/amplify_video/2125746740682797057/vid/avc1/1280x720/0ioIVPVtMgZN1dfZ.mp4?tag=14",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "locklear-gta6-saut-pont-2026-11-26",
+   "expires_at_utc": "2026-11-28T00:22:25Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-27T12:34:11Z",
+   "titre": "Locklear saute|du pont pour fuir|mais l'eau est|trop *basse*",
+   "legende": "Cinq étoiles au compteur et une seule idée pour s'en sortir, le grand plongeon 💀 C'est la pire mort que t'as vue sur GTA 6 ?\n\nClip : twitch.tv/locklear\n\n#gta6 #gtavi #locklear #gameplay #twitchfr",
+   "titres_alt": [],
+   "judge_score": "7/10",
+   "format": "16:9",
+   "garde_fou": "SECOURS"
   },
   {
    "id": "0040-27_11_2026-Clips",

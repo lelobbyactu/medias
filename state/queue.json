@@ -594,40 +594,6 @@
    "closed_at_utc": "2026-11-27T12:16:20Z"
   },
   {
-   "id": "c-20261127-1223-locklear-gta6-saut-pont-2026-11-26",
-   "added_at_utc": "2026-11-27T12:23:20Z",
-   "found_by": "secours:apify",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Locklear saute d'un pont pour fuir la police sur GTA 6 et meurt, pas assez de profondeur",
-   "topic_key": "locklear-gta6-saut-pont-2026-11-26",
-   "origin": "Lockl34rTV",
-   "source_tweet": "https://x.com/Lockl34rTV/status/2125746962892980457",
-   "primary_source": "https://x.com/Lockl34rTV/status/2125746962892980457",
-   "source_time_utc": "2026-11-26T00:22:25Z",
-   "expires_at_utc": "2026-11-28T00:22:25Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "Lockl34rTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125746740682797057/vid/avc1/1280x720/0ioIVPVtMgZN1dfZ.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "Fusillade 5 étoiles sur un pont, saut dans l'eau, mort faute de profondeur, réaction webcam.",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-27T12:23:28Z",
-   "clip": {
-    "url": "https://video.twimg.com/amplify_video/2125746740682797057/vid/avc1/1280x720/0ioIVPVtMgZN1dfZ.mp4?tag=14",
-    "offset": 0,
-    "dur": null
-   },
-   "post_id": "0039-27_11_2026-Clips"
-  },
-  {
    "id": "c-20261127-1223-locklear-gta6-nage-30min-2026-11-27",
    "added_at_utc": "2026-11-27T12:23:20Z",
    "found_by": "secours:apify",
