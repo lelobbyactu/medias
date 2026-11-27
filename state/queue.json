@@ -802,6 +802,67 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261127-2115-kameto-jeu-de-pet-2026-11-27",
+   "added_at_utc": "2026-11-27T21:15:38Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "evenement",
+   "topic": "Kameto mort de rire devant un jeu de pet",
+   "topic_key": "kameto-jeu-de-pet-2026-11-27",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2126395112405995704",
+   "primary_source": "https://x.com/KametoTV/status/2126395112405995704",
+   "source_time_utc": "2026-11-27T19:17:55Z",
+   "expires_at_utc": "2026-11-28T07:17:55Z",
+   "fiabilite": "haute",
+   "score": 7,
+   "mentions": [
+    "KametoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126394973847220224/vid/avc1/720x1280/fEtwPqZ-HpF28a85.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Un gros streamer FR qui s0effondre de rire, réaction franche et relatable (749 likes, 45k vues).",
+   "titles": [
+    "31 ans et Kameto rit encore|comme un *gamin* devant un jeu de pet",
+    "Kameto *mort de rire* devant|un jeu de pet, 31 ans au compteur"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261127-2115-gta6-avion-ecrase-joueur",
+   "added_at_utc": "2026-11-27T21:15:38Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Un avion écrase un joueur en pleine route dans GTA 6",
+   "topic_key": "gta6-avion-ecrase-joueur",
+   "origin": "xzniko",
+   "source_tweet": "https://x.com/LaTwitchance/status/2126407455533875667",
+   "primary_source": "https://x.com/LaTwitchance/status/2126407455533875667",
+   "source_time_utc": "2026-11-26T05:02:36Z",
+   "expires_at_utc": "2026-11-28T05:02:36Z",
+   "fiabilite": "moyenne",
+   "score": 5,
+   "mentions": [
+    "LaTwitchance",
+    "xzniko"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2125817441616048128/vid/avc1/720x406/cMAcihsS-W2myEzL.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Moment visuel sans parole sur GTA 6, drôle et absurde ; créateur inconnu en France : dernier recours.",
+   "titles": [
+    "Il roule tranquille dans *GTA 6*|quand un avion lui tombe dessus",
+    "Un *avion* écrase Jason|en pleine route dans GTA 6"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
