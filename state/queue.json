@@ -1142,6 +1142,36 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": "Score plafonné faute de savoir ce qui se passe dans le clip (grille docs/sources.md). Le créneau doit regarder la vidéo et écrire les titres."
+  },
+  {
+   "id": "c-20261127-0715-jltomy-setup-rage-2026-11-27",
+   "added_at_utc": "2026-11-27T07:15:23Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "drama",
+   "topic": "Crise de rage et setup détruit en stream (JLMiami, JL Tomy)",
+   "topic_key": "jltomy-setup-rage-2026-11-27",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126193251241578795",
+   "primary_source": "https://x.com/JLTomyTV/status/2126193251241578795",
+   "source_time_utc": "2026-11-27T05:55:48Z",
+   "expires_at_utc": "2026-11-27T17:55:48Z",
+   "fiabilite": "haute",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126193142407770112/vid/avc1/1280x720/2rbktBi_qzV76cnX.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Une crise de rage visuelle (setup détruit) qui se comprend sans parole, publiée par la chaîne d'un gros streamer FR.",
+   "titles": [
+    "Il pète un câble | et défonce tout son *setup* | en plein JLMiami",
+    "Le *setup* en miettes | après une crise de rage | en direct"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
