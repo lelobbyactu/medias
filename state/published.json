@@ -640,13 +640,31 @@
   },
   {
    "id": "0036-27_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Kameto pète un câble face à ses coéquipiers sur LoL",
    "origin": "KametoTV",
    "source_tweet": "https://x.com/KametoTV/status/2126077825887199638",
    "queue_id": "c-20261126-2314-kameto-lol-rage-coequipiers-20261126",
-   "reserved_at_utc": "2026-11-27T03:33:17Z"
+   "reserved_at_utc": "2026-11-27T03:33:17Z",
+   "clip": {
+    "url": "https://www.twitch.tv/kamet0/clip/RelatedAgitatedSnoodDoritosChip-_6J4SZckwYGzqY1r",
+    "offset": 0.0,
+    "dur": 60.01
+   },
+   "topic_key": "kameto-lol-rage-coequipiers-20261126",
+   "expires_at_utc": "2026-11-28T22:17:08Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-27T03:38:17Z",
+   "titre": "Kameto :|son mate a des|*cacahuètes*|dans le cerveau",
+   "legende": "La game, il s'en fiche. Le move de son mate, beaucoup moins. C'est quoi le pire move qu'un mate t'a sorti ?\n\nClip : twitch.tv/kamet0\n\n#leagueoflegends #kameto #lol #twitchfr #jeuxvideo",
+   "titres_alt": [
+    "Kameto pète|un câble : « c'est|la *bêtise humaine*|qui me rend fou »",
+    "Son mate part|push mid et Kameto|*explose*"
+   ],
+   "judge_score": "7.5/10",
+   "format": "9:16",
+   "garde_fou": "OK"
   }
  ]
 }
