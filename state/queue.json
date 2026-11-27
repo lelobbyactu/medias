@@ -1062,7 +1062,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-27T03:14:14Z"
+   "taken_at_utc": "2026-11-27T03:14:14Z",
+   "clip": {
+    "url": "https://video.twimg.com/amplify_video/2126032300991254529/vid/avc1/1920x1080/OOz6yUDWBFB6TDo-.mp4?tag=29",
+    "offset": 0,
+    "dur": null
+   }
   },
   {
    "id": "c-20261126-2114-jltomy-logs-kills-gta6",
