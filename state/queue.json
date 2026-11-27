@@ -1105,14 +1105,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "match Valorant (pas GTA 6), replay du killfeed illisible en 2 s, faible traction",
    "taken_at_utc": "2026-11-27T03:25:52Z",
    "clip": {
     "url": "https://video.twimg.com/amplify_video/2126052419217858560/vid/avc1/1920x1080/Q0y5BWWYPN_ZevLA.mp4?tag=29",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-27T03:31:10Z"
   },
   {
    "id": "c-20261126-2314-kameto-lol-rage-coequipiers-20261126",
