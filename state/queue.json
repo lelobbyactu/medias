@@ -1060,8 +1060,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-27T03:14:14Z"
   },
   {
    "id": "c-20261126-2114-jltomy-logs-kills-gta6",
