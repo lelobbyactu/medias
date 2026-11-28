@@ -422,14 +422,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "overlay concours PS5 + GTA VI a gagner (vente flash) et passant prive moque comme PNJ",
    "taken_at_utc": "2026-11-28T03:23:04Z",
    "clip": {
     "url": "https://video.twimg.com/amplify_video/2126311451061071872/vid/avc1/1280x720/SP_HYXT-9JrreKUD.mp4",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-28T03:26:43Z"
   },
   {
    "id": "c-20261127-1515-domingo-crash-gta6-twitch",
