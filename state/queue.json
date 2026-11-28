@@ -708,14 +708,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "juge 4/10 : causerie sans moment fort (aucune image GTA 6), au-delà de 12 h",
    "taken_at_utc": "2026-11-28T10:16:57Z",
    "clip": {
     "url": "https://www.twitch.tv/domingo/clip/RefinedDeliciousArtichokeWholeWheat-jSDF_h7rUYXOueUb",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-28T10:22:20Z"
   },
   {
    "id": "c-20261128-0115-donatchottv-twitch-gta6-20261127",
