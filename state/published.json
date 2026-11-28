@@ -893,13 +893,33 @@
   },
   {
    "id": "0044-28_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "GTA VI : il tase des passants au hasard et enchaîne les réactions (plage, rue, bateaux)",
    "origin": "shady00018_",
    "source_tweet": "https://www.instagram.com/reel/DgNfIHahWHu/?evlk=MWtuZnZuaDlhODZudA==",
    "queue_id": "c-20261128-0458-inspi-23",
-   "reserved_at_utc": "2026-11-28T10:22:44Z"
+   "reserved_at_utc": "2026-11-28T10:22:44Z",
+   "choix_alix": true,
+   "note_alix": null,
+   "avertissement": "Vidéo reprise d'un autre compte (@shady00018_) avec ses filigranes ; un plan en bikini parmi les scènes",
+   "clip": {
+    "url": "https://raw.githubusercontent.com/lelobbyactu/medias/main/posts/_alix/inspi-23.mp4",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "inspi-23",
+   "expires_at_utc": "2026-12-05T04:58:34Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-28T10:26:39Z",
+   "titre": "Un *taser*|et plus personne|n'est tranquille",
+   "legende": "Cyclistes, baigneurs, plaisanciers : personne n'y échappe 😭 Quelle chute t'a le plus fait rire ?\n\nVidéo : instagram.com/shady00018_\n\n#gta6 #gtavi #gameplay #gtafunny #jeuxvideo",
+   "titres_alt": [
+    "Il a un taser|et *zéro*|raison de s'en|servir"
+   ],
+   "judge_score": "7.5/10",
+   "format": "16:9",
+   "garde_fou": "SECOURS"
   }
  ]
 }
