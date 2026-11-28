@@ -5,7 +5,8 @@
   validation.py decider <num> <action> [valeur]
         actions : ok | non (valeur = raison) | titre (valeur = nouveau titre) | annuler
   validation.py publier [--essai] [--confirmer]
-                                        -> au créneau : publie la vidéo validée la mieux notée encore fraîche
+                                        -> au créneau : publie la vidéo validée encore fraîche, choix d'Alix d'abord,
+                                           sinon la mieux notée
 
 Secrets (variables d'environnement) : TELEGRAM_BOT_TOKEN, ZERNIO_API_KEY.
 L'identifiant du chat d'Alix est demandé au Worker Cloudflare (adresse : state/worker.json), jamais écrit dans le dépôt.
@@ -154,7 +155,12 @@ def legende_message(x):
             if x.get("urgent") else f"🎬 #{num(x)} · à valider avant le {hm(x['expires_at_utc'])} (Taipei)")
     if x.get("immediat"): tete = f"⚡ #{num(x)} · part dès que tu cliques « Poster »"
     reseaux = " + ".join("Instagram" if p == "instagram" else "TikTok" for p in plat_list(x))
-    txt = f"{tete}\n\n{titre}\nJuge : {x['judge_score']} · {x['format']} · {reseaux}\n\n{x['legende']}"
+    notes = f"Juge : {x['judge_score']}"
+    if x.get("choix_alix"):
+        tete = f"⭐ TON CHOIX · {tete}"
+        if x.get("note_alix") is not None: notes = f"Ta note : {x['note_alix']:g}/10 · {notes}"
+        if x.get("avertissement"): notes += f"\n⚠️ {x['avertissement']}"
+    txt = f"{tete}\n\n{titre}\n{notes} · {x['format']} · {reseaux}\n\n{x['legende']}"
     return txt[:1024]
 
 def clavier(x):
@@ -274,7 +280,9 @@ def decider(n, action, valeur=""):
             say(f"✅ #{n} validé, publication immédiate en cours.")
             publier(cible=pid)
         else:
-            say(f"✅ #{n} validé. Il partira à un créneau selon sa note ({x['judge_score']}), avant le {hm(x['expires_at_utc'])} (Taipei).")
+            quand = ("au prochain créneau libre, avant les autres (ton choix)" if x.get("choix_alix")
+                     else f"à un créneau selon sa note ({x['judge_score']})")
+            say(f"✅ #{n} validé. Il partira {quand}, avant le {hm(x['expires_at_utc'])} (Taipei).")
     elif action in ("non", "annuler"):
         if st == "programme":
             code, j = zr("DELETE", f"/posts/{x['zernio_post_id']}")
@@ -389,6 +397,11 @@ def appliquer_retouche(n, x, choix):
         clear_buttons(x); time.sleep(0 if os.environ.get("LOBBY_NOCHECK") else 20); envoyer()
 
 # ---------- publier ----------
+def ordre(x):
+    """Ordre de départ : les choix d'Alix d'abord (sa note prime sur celle du juge), puis la meilleure note du juge."""
+    if x.get("choix_alix"): return (0, -L.note_choix(x), x["expires_at_utc"])
+    return (1, -score(x), x["expires_at_utc"])
+
 def streamer(x):
     """Identifiant stable du streamer (DomingoTV, Domingo et domingo = le même)."""
     o = x.get("origin") or ""
@@ -430,7 +443,7 @@ def publier(essai=False, confirmer=False, cible=None):
     if confirmer: return print("passage de contrôle : rien à publier")
     c = L.cfg(); posts = L.pload()["posts"]; n, last = L.today_stats(posts)
     valides = sorted([x for x in posts if x["status"] == "valide" and L.parse(x["expires_at_utc"]) > t],
-                     key=lambda x: (-score(x), x["expires_at_utc"]))
+                     key=ordre)
     if cible: valides = [x for x in valides if x["id"] == cible]
     if not valides: return print("aucune vidéo validée")
     bloque = streamer_bloque(posts)

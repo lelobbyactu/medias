@@ -18,6 +18,15 @@ Dans les deux cas : pas de crédit ni de nombre de vues à l'écran (crédit dan
 6. Après un OK ou un SPONSOR, si la chaîne n'est pas encore dans `config.json` → `tiktok_layouts` : `python3 scripts/make_reel_916.py --video /tmp/clip.mp4 --post <nom> --channel <chaîne> --check-only --save-layout --out-dir /tmp/chk 2>&1 | grep -v WARN` (mémorise la webcam ; `config.json` part avec le push du post).
 7. Vérifier la durée, le son (`has_audio`), la taille (< 100 Mo). `_planche.jpg` et `_fond.png` restent dans le dossier du post (archive), jamais publiés.
 
+## 7ter. Reprise d'un post choisi par Alix (`reprise: true`)
+Pas de clip Twitch brut : la source est la vidéo du post (déjà recadrée si besoin ; `take` la télécharge).
+- Toujours `make_reel.py` (jamais `make_reel_916.py`) : `python3 scripts/make_reel.py --video /tmp/clip.mp4 --post <nom> --title "…" [--start S --end E]`. Vertical → plein écran avec titre ; sinon cadre sous le titre. Format noté 16:9 → **Instagram seul** (une vidéo reprise est le cas « non original » que TikTok pénalise).
+- **Filigranes et signatures du compte d'origine : jamais rognés, floutés ni couverts.** Couper seulement un écran de fin ou les temps morts.
+- Plus de 60 s : garder les 20 à 60 meilleures secondes (90 maximum).
+- Notre titre en français, jamais celui du post mot pour mot (reprendre l'idée ou l'humour qu'Alix a aimé : champ `angle`). Sous-titres seulement si quelqu'un parle (`--no-subs` sinon, ou si c'est une musique).
+- Légende : texte + question, puis `Vidéo : <credit>`, puis hashtags.
+- Fiche sans `garde_fou`. Qualité ou cadrage limite : le clip part quand même, Alix juge sur Telegram (le signaler dans le rapport).
+
 ## 8. Envoi en validation (Claude ne publie jamais)
 1. **Réserver** : fait par `lobby.py reserve`.
 2. Pousser : `python3 scripts/lobby.py push "post <nom>" posts/<nom> config.json`.

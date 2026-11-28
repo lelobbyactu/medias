@@ -22,8 +22,10 @@
   "drama": 12,
   "evenement": 12,
   "gameplay": 48,
+  "alix": 168,
   "defaut": 12
  },
+ "alix_min_side_px": 720,
  "queue_min_score": 5,
  "judge_threshold": 7,
  "apify_max_items": 300,

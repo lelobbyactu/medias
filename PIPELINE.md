@@ -6,6 +6,9 @@ Ce fichier est le NOYAU, volontairement court. Les détails sont dans `docs/` : 
 ## Publication : jamais par Claude
 Claude monte, puis envoie en validation (`lobby.py proposer`). La publication, le choix TikTok (16:9 = Instagram seul, pause `config.json` → `tiktok_pause_until`) et le journal sont faits par GitHub Actions (`scripts/validation.py`) et le Worker Cloudflare (`worker/`). Ne jamais appeler Zernio.
 
+## Choix d'Alix (règle du 28 nov. 2026, prime sur tout)
+Un clip vidéo qu'Alix envoie par « Lobby inspi », téléchargeable et d'assez bonne qualité, **passe toujours en production**, avant les autres, quels que soient la note du juge, le streamer, la fraîcheur ou le format ; sa note prime. À défaut de clip Twitch brut, on reprend la vidéo du post avec crédit (`docs/montage.md` §7ter). Elle tranche sur Telegram. Détails : `docs/inspi.md`.
+
 ## Ligne éditoriale (résumé)
 - **On ne publie que des clips vidéo** : moment de jeu vidéo en stream (cœur : moments choquants de gros streamers FR sur GTA 6), clip Just Chatting (drama, histoire, annonce qui buzze), moment fort d'un événement (ZEvent, GP Explorer, gros live). **Jamais** de carrousel, d'image, de reel d'actu, de trailer, de voix IA ni de musique ajoutée.
 - **Sources : X (veille Apify), API Twitch, Reddit (r/LivestreamFail).** Sur X, les comptes d'éditeurs, de médias et d'insiders servent au contexte et à repérer les événements, jamais de post à eux seuls. Meilleure version du clip (Twitch d'origine si possible). Crédit = créateur d'origine, dans la légende, jamais le relais.
@@ -26,7 +29,7 @@ Claude monte, puis envoie en validation (`lobby.py proposer`). La publication, l
 | **Production** (11 h et 20 h Taipei) | `lobby.py lot` → 4 clips max → un juge pour le lot → montage → garde-fou → `proposer` | ce fichier + `docs/production.md` + `docs/clips.md` + `docs/juge.md` + `docs/montage.md` |
 | **Publication immédiate** (déclenchée par la veille) | monte le drama brûlant `hot` et l'envoie avec `proposer --urgent` (part à +20 min sauf « Annuler ») | + `docs/brulante.md` |
 | **Validation et publication** (GitHub Actions + Worker, sans IA) | boutons Telegram ; à chaque créneau, publie la vidéo validée la mieux notée encore fraîche | — |
-| **Inspirations** (1×/jour) | reels envoyés par Alix (« Lobby inspi ») → fiches d'exemples pour le juge (`juge/inspirations.md`) + calibrage sur la note /10 d'Alix ; les 2 meilleurs : clip Twitch brut retrouvé (`inspi.py locate`) puis mis en file avec la note du juge (`inspi.py queue`), publié seulement si rien de mieux | ce fichier + `docs/inspi.md` |
+| **Inspirations** (1×/jour) | posts envoyés par Alix (« Lobby inspi ») → tous les clips vidéo mis en production en priorité (`inspi.py alix` : clip Twitch brut si retrouvé, sinon la vidéo du post) ; juge pour information, fiches (`juge/inspirations.md`) et calibrage | ce fichier + `docs/inspi.md` |
 
 ## Rythme (valeurs dans config.json)
 2 sessions de production (4 vidéos max chacune, seulement ce qui manque pour un stock de 5 vidéos à valider ou validées), 4 créneaux de publication par jour (8 h, 12 h, 18 h, 21 h Paris), un post par créneau, plafond 7/jour avec les urgences. Expiration selon `nature` : drama et événement 12 h après le moment, gameplay 48 h. Une vidéo montée sort de la file ; le journal `state/published.json` suit son statut (a_valider, valide, programme, publie, refuse, expire, echec).

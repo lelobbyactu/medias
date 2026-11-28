@@ -6,19 +6,19 @@ Les tâches Claude ne font plus ces calculs à la main : elles appellent ces com
   lobby.py sources [-n 20]      -> clips hors X (Twitch, Reddit) apparus depuis la
                                    dernière veille (state/sources.json, collecté par GitHub Actions) ; à lancer AVANT `add`
   lobby.py add [fichier.json]   -> ajoute/fusionne des sujets dans la file (stdin si pas de fichier), ménage, commit, push
-  lobby.py lot                  -> session de production : 4 vidéos max, meilleurs candidats encore frais
+  lobby.py lot                  -> session de production : les choix d'Alix d'abord (tous), puis les meilleurs candidats
   lobby.py proposer <post> <fiche.json> [--urgent] -> envoi en validation Telegram, sujet retiré de la file
   lobby.py slot [--hot]         -> contrôles (réseau, plafond, 45 min) + 3 meilleurs candidats (JSON court)
   lobby.py take <id>            -> passe le sujet en 'pris' + télécharge le clip dans /tmp/clip.mp4
                                    (+ remplace par la version Twitch 1080p60 si trouvée, champ "twitch" ; --no-twitch pour l'éviter)
   lobby.py reserve <id> reel Clips  -> réserve le numéro de post, journal 'en_cours'
   lobby.py done <post> [--ig U --tiktok U --zernio ID --judge 8/10 --slot 12h | --hot drama --note T]
-  lobby.py fail <post> <raison>  | lobby.py drop <id> <raison>
+  lobby.py fail <post> <raison>  | lobby.py drop <id> <raison> [--technique, obligatoire pour un choix d'Alix]
   lobby.py push "<message>" <chemins...>  -> commit + push de fichiers (posts/…)
   lobby.py status               -> compte rapide
 Variable LOBBY_NOPUSH=1 : n'écrit que localement (tests).
 """
-import argparse, datetime as dt, json, os, re, subprocess, sys
+import argparse, datetime as dt, json, os, re, shutil, subprocess, sys
 from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,6 +31,17 @@ CLOSED = ("publie", "expire", "ecarte")
 # (ou programme : drama urgent daté par Zernio) ; fins possibles : refuse, expire, echec
 PRIS = ("en_cours", "retouche", "a_valider", "valide", "publication", "programme", "publie", "refuse", "expire")  # sujet déjà traité
 PARTI = ("publication", "programme", "publie")   # compte dans le plafond du jour et l'espacement
+
+
+# Clips « choix d'Alix » (règle du 28 nov. 2026) : envoyés par elle via « Lobby inspi ». Ils passent toujours en
+# production, avant tous les autres, quelle que soit la note du juge ; Alix tranche sur Telegram (jamais de départ auto).
+RAW = "https://raw.githubusercontent.com/lelobbyactu/medias/main"
+ALIX_DIR = "posts/_alix"   # vidéos sources des reels choisis (hors du clone léger : `take` les reprend par leur URL)
+ACTIF = ("en_cours", "retouche", "a_valider", "valide", "publication", "programme", "publie")
+
+def note_choix(x):
+    """Ordre entre les choix d'Alix : sa note /10, sinon 10 (elle l'a choisi sans le noter)."""
+    n = x.get("note_alix"); return 10.0 if n is None else float(n)
 
 
 # ---------- utilitaires ----------
@@ -129,8 +140,9 @@ def ménage(q, p):
     return n_exp, n_del
 
 def covered(e, posts):
+    pris = ACTIF if e.get("choix_alix") else PRIS   # un choix d'Alix renvoyé après un refus ou une expiration repasse
     for x in posts:
-        if x.get("status") in PRIS:
+        if x.get("status") in pris:
             if e.get("topic_key") and e["topic_key"] == x.get("topic_key"): return True
             if e.get("source_tweet") and e["source_tweet"] == x.get("source_tweet"): return True
             if e.get("id") and e["id"] == x.get("queue_id"): return True
@@ -169,30 +181,49 @@ def cmd_add(a):
         n_exp, n_del = ménage(q, p)
         for it in items:
             if not it.get("source_tweet") and it.get("source_url"): it["source_tweet"] = it["source_url"]
-            if not all(it.get(k) for k in ("type", "topic", "topic_key", "origin", "source_tweet", "source_time_utc", "score")):
+            if it.get("score") is None or not all(it.get(k) for k in ("type", "topic", "topic_key", "origin", "source_tweet", "source_time_utc")):
                 res["ignores"].append((it.get("topic_key"), "champs manquants")); continue
+            alix = bool(it.get("choix_alix"))
             if any(x.get("source_tweet") == it["source_tweet"] or x.get("topic_key") == it["topic_key"]
-                   for x in p["posts"] if x.get("status") in PRIS):
+                   for x in p["posts"] if x.get("status") in (ACTIF if alix else PRIS)):
                 res["ignores"].append((it["topic_key"], "déjà monté ou publié")); continue
             ex = next((e for e in q["candidates"] if e.get("topic_key") == it["topic_key"] or e.get("source_tweet") == it["source_tweet"]), None)
+            ttl_h = c["ttl_hours"]
             if ex:
-                if ex["status"] in CLOSED: res["ignores"].append((it["topic_key"], f"déjà {ex['status']}")); continue
+                if ex["status"] in CLOSED and (not alix or ex["status"] == "publie"):
+                    res["ignores"].append((it["topic_key"], f"déjà {ex['status']}")); continue
+                if alix:   # son choix passe avant tout : le sujet est marqué, rouvert s'il avait été écarté ou expiré
+                    if ex["status"] in CLOSED: ex["status"] = "en_attente"; ex.pop("closed_at_utc", None)
+                    ex.update({"choix_alix": True, "note_alix": it.get("note_alix"), "expires_at_utc": iso(t + dt.timedelta(hours=ttl_h.get("alix", 168)))})
+                    for k in ("avertissement", "angle", "note", "reprise", "credit", "media_url"):
+                        if it.get(k): ex[k] = it[k]
                 ex["mentions"] = sorted(set(ex.get("mentions", [])) | set(it.get("mentions", [it["origin"]])))
                 ex["score"] = max(ex["score"], it["score"]); res["fusionnes"].append(ex["id"]); e = ex
             else:
                 src = parse(it["source_time_utc"])
-                ttl_h = c["ttl_hours"]; ttl = ttl_h.get(it.get("nature") or "defaut", ttl_h.get("defaut", 12))
+                ttl = ttl_h.get("alix", 168) if alix else ttl_h.get(it.get("nature") or "defaut", ttl_h.get("defaut", 12))
+                if alix: src_exp = t          # pas de règle de fraîcheur : le délai court à partir de son envoi en file
+                else: src_exp = src
                 sid = re.sub(r"[^a-z0-9]+", "-", it["topic_key"].lower())[:40].strip("-")
                 e = {"id": f"c-{t.strftime('%Y%m%d-%H%M')}-{sid}", "added_at_utc": iso(t),
                      "found_by": it.get("found_by", "veille"), "type": it["type"], "nature": it.get("nature", ""), "topic": it["topic"],
                      "topic_key": it["topic_key"], "origin": it["origin"], "source_tweet": it["source_tweet"],
                      "primary_source": it.get("primary_source", it["source_tweet"]), "source_time_utc": it["source_time_utc"],
-                     "expires_at_utc": iso(src + dt.timedelta(hours=ttl)), "fiabilite": it.get("fiabilite", "🟡"),
+                     "expires_at_utc": iso(src_exp + dt.timedelta(hours=ttl)), "fiabilite": it.get("fiabilite", "🟡"),
                      "score": it["score"], "mentions": sorted(set(it.get("mentions", [it["origin"]]))),
                      "media_url": it.get("media_url", ""), "media_repo_path": "", "angle": it.get("angle", ""),
                      "titles": it.get("titles", []), "checks": it.get("checks", []),
                      "photo_needed": it.get("photo_needed", ""), "status": "en_attente", "note": it.get("note", "")}
+                if alix:
+                    e.update({"choix_alix": True, "note_alix": it.get("note_alix")})
+                    for k in ("avertissement", "reprise", "credit"):
+                        if it.get(k): e[k] = it[k]
                 q["candidates"].append(e); res["ajoutes"].append(e["id"])
+            if alix and it.get("local_file"):   # vidéo du reel choisi : rangée dans le dépôt, dans la même transaction
+                rel = f"{ALIX_DIR}/{re.sub(r'[^a-z0-9]+', '-', it['topic_key'].lower()).strip('-')}.mp4"
+                os.makedirs(f"{ROOT}/{ALIX_DIR}", exist_ok=True); shutil.copy(it["local_file"], f"{ROOT}/{rel}")
+                e["media_url"] = f"{RAW}/{rel}"; e["media_repo_path"] = rel
+                if not NOPUSH: sh(f"git add -f --sparse -- '{rel}'")
             hr = it.get("hot_reason")
             age_h = (t - parse(e["source_time_utc"])).total_seconds() / 3600
             if hr and not e.get("hot") and e["status"] == "en_attente":
@@ -204,6 +235,7 @@ def cmd_add(a):
     out(res)
 
 def rank(q, p):
+    """Les choix d'Alix d'abord (sa note), puis les autres par note + fraîcheur."""
     c = cfg(); t = now(); posts = p["posts"]
     cands = []
     for e in q["candidates"]:
@@ -211,7 +243,7 @@ def rank(q, p):
         age = (t - parse(e["source_time_utc"])).total_seconds() / 3600
         bonus = 1 if age < 2 else (0 if age < 4 else -1)
         cands.append((e["score"] + bonus, e, age))
-    cands.sort(key=lambda x: -x[0])
+    cands.sort(key=lambda x: (0, -note_choix(x[1]), x[1]["added_at_utc"]) if x[1].get("choix_alix") else (1, -x[0], ""))
     return cands
 
 def cmd_slot(a):
@@ -269,16 +301,23 @@ def cmd_lot(a):
                 "en_validation": sum(1 for x in p["posts"] if x.get("status") in ("a_valider", "valide"))})
     res["retouches"] = [{"post": x["id"], "demande": x.get("demande"), "titre": x.get("titre"), "clip": x.get("clip")}
                         for x in p["posts"] if x.get("status") == "retouche"]
+    cands = [x for x in rank(q, p) if parse(x[1]["expires_at_utc"]) > slot + dt.timedelta(minutes=5)]
+    choix = [x for x in cands if x[1].get("choix_alix")]; autres = [x for x in cands if not x[1].get("choix_alix")]
+    # les choix d'Alix passent tous, même stock plein ou plafond de session atteint ; le reste complète le manque
+    res["choix_alix"] = len(choix); res["a_produire"] = max(0, reste, len(choix))
     if not res["reseau_ok"]: res["stop"] = "réseau bloqué (video.twimg.com)"
-    elif reste <= 0: res["stop"] = (f"stock suffisant : {len(stock)} vidéos à valider ou validées (cible {c.get('stock_cible', 5)})"
+    elif reste <= 0 and not choix: res["stop"] = (f"stock suffisant : {len(stock)} vidéos à valider ou validées (cible {c.get('stock_cible', 5)})"
                                     if len(stock) >= c.get("stock_cible", 5) else f"déjà {maxi} vidéos produites pour cette session")
     if res.get("stop"): out(res); return
-    cands = [x for x in rank(q, p) if parse(x[1]["expires_at_utc"]) > slot + dt.timedelta(minutes=5)]
-    res["candidats"] = [{"id": e["id"], "score": e["score"], "nature": e.get("nature"), "age_h": round(age, 1),
+    libre = reste - len(choix)
+    retenus = choix + (autres[:libre + 2] if libre > 0 else [])
+    res["candidats"] = [{**({"choix_alix": True, "note_alix": e.get("note_alix"), "reprise": e.get("reprise", False),
+                             "credit": e.get("credit"), "avertissement": e.get("avertissement")} if e.get("choix_alix") else {}),
+                         "id": e["id"], "score": e["score"], "nature": e.get("nature"), "age_h": round(age, 1),
                          "expire_paris": parse(e["expires_at_utc"]).astimezone(PARIS).strftime("%d/%m %H:%M"),
                          "topic": e["topic"], "origin": e["origin"], "mentions": len(e["mentions"]), "angle": e["angle"],
                          "titles": e["titles"], "checks": e["checks"], "source_tweet": e["source_tweet"]}
-                        for s, e, age in cands[:reste + 2]]
+                        for s, e, age in retenus]
     res["en_attente_total"] = len(cands)
     out(res)
 
@@ -294,9 +333,14 @@ def cmd_proposer(a):
     def apply():
         q, p = qload(), pload(); x = next(i for i in p["posts"] if i["id"] == a.post); t = now(); c = cfg()
         if x["status"] != "en_cours": raise SystemExit(f"{a.post} est {x['status']}")
-        if not a.urgent and len(produits_session(p["posts"], t)) >= c.get("lot_max", 4):
-            raise SystemExit(f"plafond de {c.get('lot_max', 4)} vidéos par session atteint")
         e = next((i for i in q["candidates"] if i["id"] == x.get("queue_id")), None)
+        alix = bool(e and e.get("choix_alix"))
+        if a.urgent and alix: raise SystemExit("choix d'Alix : jamais en urgence, elle valide elle-même sur Telegram")
+        if not a.urgent and not alix and len(produits_session(p["posts"], t)) >= c.get("lot_max", 4):
+            raise SystemExit(f"plafond de {c.get('lot_max', 4)} vidéos par session atteint")
+        if alix:
+            x.update({"choix_alix": True, "note_alix": e.get("note_alix")})
+            if e.get("avertissement"): x["avertissement"] = e["avertissement"]
         if e and e.get("clip"): x["clip"] = e["clip"]
         if e: x["topic_key"] = e["topic_key"]; x["expires_at_utc"] = e["expires_at_utc"]; x["nature"] = e.get("nature", "")
         x.setdefault("expires_at_utc", iso(t + dt.timedelta(hours=12)))
@@ -368,7 +412,7 @@ def cmd_take(a):
             sh(f"ffmpeg -v error -y -i /tmp/rv.mp4 {amap} -c:v libx264 -preset veryfast -crf 17 -pix_fmt yuv420p /tmp/clip.mp4")
         else: sh(f"curl -sSfL --retry 3 -A 'Mozilla/5.0' -o /tmp/clip.mp4 '{mu}'")
         # source d'origine Twitch (1080p60 + version verticale) si le même moment existe en clip Twitch ; sinon on garde X
-        if not tw.get("found") and e.get("source_time_utc") and not getattr(a, "no_twitch", False) and "x.com" in (e.get("source_tweet") or "") + (e.get("primary_source") or ""):
+        if not tw.get("found") and not e.get("reprise") and e.get("source_time_utc") and not getattr(a, "no_twitch", False) and "x.com" in (e.get("source_tweet") or "") + (e.get("primary_source") or ""):
             r = subprocess.run([sys.executable, f"{ROOT}/scripts/twitch_source.py", "upgrade", "--clip", "/tmp/clip.mp4",
                                 "--origin", e.get("origin", ""), "--time", e["source_time_utc"]],
                                capture_output=True, text=True, timeout=900)
@@ -429,6 +473,9 @@ def cmd_fail(a):
 def cmd_drop(a):
     def apply():
         q = qload(); e = next(i for i in q["candidates"] if i["id"] == a.id)
+        if e.get("choix_alix") and not a.technique:
+            raise SystemExit(f"{a.id} est un choix d'Alix : à produire quelle que soit la note. "
+                             "Impossibilité technique ou contenu interdit seulement : --technique, et le lui dire dans le rapport.")
         e["status"] = "ecarte"; e["note"] = a.raison; e["closed_at_utc"] = iso(now()); save(Q, q)
     transact(apply, f"queue: écarté {a.id}"); out({"ok": a.id})
 
@@ -454,7 +501,7 @@ if __name__ == "__main__":
     s = sp.add_parser("done"); s.add_argument("post")
     for k in ("ig", "tiktok", "zernio", "judge", "slot", "hot", "note"): s.add_argument(f"--{k}")
     s = sp.add_parser("fail"); s.add_argument("post"); s.add_argument("raison")
-    s = sp.add_parser("drop"); s.add_argument("id"); s.add_argument("raison")
+    s = sp.add_parser("drop"); s.add_argument("id"); s.add_argument("raison"); s.add_argument("--technique", action="store_true")
     s = sp.add_parser("renvoyer"); s.add_argument("post")
     s = sp.add_parser("push"); s.add_argument("message"); s.add_argument("paths", nargs="+")
     a = ap.parse_args(); globals()["cmd_" + a.cmd](a)
