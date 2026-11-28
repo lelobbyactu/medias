@@ -805,13 +805,30 @@
   },
   {
    "id": "0041-28_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Domingo découvre qui est le fils de Michael dans GTA V",
    "origin": "DomingoTV",
    "source_tweet": "https://x.com/DomingoTV/status/2126321011758977287",
    "queue_id": "c-20261127-1515-domingo-fils-michael-gta-v",
-   "reserved_at_utc": "2026-11-28T03:27:13Z"
+   "reserved_at_utc": "2026-11-28T03:27:13Z",
+   "clip": {
+    "url": "https://www.twitch.tv/domingo/clip/GoldenRamshackleAlpacaPhilosoraptor-Aupw9bWGNPcK3VcK",
+    "offset": 0.0,
+    "dur": 56.213
+   },
+   "topic_key": "domingo-fils-michael-gta-v",
+   "expires_at_utc": "2026-11-29T14:23:28Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-28T03:36:16Z",
+   "titre": "Domingo croise|le *fils de Michael*|dans GTA 6",
+   "legende": "Un revenant de GTA V s'invite en boîte et réclame sa table. Tu l'avais reconnu tout de suite, toi ?\n\nClip : twitch.tv/domingo\n\n#gta6 #gtavi #domingo #twitchfr #jeuxvideo",
+   "titres_alt": [
+    "Domingo met du|temps à reconnaître|ce *revenant*|de GTA V"
+   ],
+   "judge_score": "7.5/10",
+   "format": "9:16",
+   "garde_fou": "OK"
   },
   {
    "id": "0042-28_11_2026-Clips",

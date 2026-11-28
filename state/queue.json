@@ -360,43 +360,6 @@
    "closed_at_utc": "2026-11-27T12:16:20Z"
   },
   {
-   "id": "c-20261127-1515-domingo-fils-michael-gta-v",
-   "added_at_utc": "2026-11-27T15:15:28Z",
-   "found_by": "veille",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Domingo découvre qui est le fils de Michael dans GTA V",
-   "topic_key": "domingo-fils-michael-gta-v",
-   "origin": "DomingoTV",
-   "source_tweet": "https://x.com/DomingoTV/status/2126321011758977287",
-   "primary_source": "https://x.com/DomingoTV/status/2126321011758977287",
-   "source_time_utc": "2026-11-27T14:23:28Z",
-   "expires_at_utc": "2026-11-29T14:23:28Z",
-   "fiabilite": "moyenne : vidéo native du compte d'origine ; contexte stream à vérifier au montage",
-   "score": 6,
-   "mentions": [
-    "DomingoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2126320896075857920/vid/avc1/1280x720/RrO9g9aCCKSmN-RL.mp4",
-   "media_repo_path": "",
-   "angle": "Réaction drôle sur un détail de l'histoire de GTA V, en pleine vague GTA 6 ; la référence se comprend pour les fans.",
-   "titles": [
-    "Il n'avait pas capté que c'était le fils de Michael dans GTA V",
-    "Domingo réalise qui est le fils de Michael dans GTA V"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-28T03:15:12Z",
-   "clip": {
-    "url": "https://www.twitch.tv/domingo/clip/GoldenRamshackleAlpacaPhilosoraptor-Aupw9bWGNPcK3VcK",
-    "offset": 0.0,
-    "dur": 56.213
-   },
-   "post_id": "0041-28_11_2026-Clips"
-  },
-  {
    "id": "c-20261127-1515-jltomy-diversite-pnj-gta6",
    "added_at_utc": "2026-11-27T15:15:28Z",
    "found_by": "veille",
