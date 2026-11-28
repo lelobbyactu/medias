@@ -235,20 +235,6 @@
    "clip_brut": null
   },
   {
-   "n": 22,
-   "url": "https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs",
-   "traite_utc": "2026-11-28T02:55:41Z",
-   "verdict": "ecarte",
-   "score": 8.0,
-   "format": "hors-ligne",
-   "recette": "Clip GTA 6 d'un streamer FR de 10-20 s qui démarre en pleine bagarre, Lucia ou un PNJ réglant l'affaire à sa place ; titre drôle qui raconte la chute (seulement si le clip la montre).",
-   "queue_id": null,
-   "note": "avis Alix : Top (sans /10) - même si pas de streamer, titre très marrant et action impressionnante directe",
-   "note_alix": null,
-   "pourquoi": "Marche : action dès la 1re image, titre drôle, chute portée par Lucia, 10 s. Écarté par le format : aucun streamer ni webcam, image très dégradée, titre mème usé.",
-   "clip_brut": null
-  },
-  {
    "n": 23,
    "url": "https://www.instagram.com/reel/DgNfIHahWHu/?evlk=MWtuZnZuaDlhODZudA==",
    "traite_utc": "2026-11-28T02:55:46Z",
@@ -260,6 +246,20 @@
    "note": "avis Alix : Top (sans /10) - même sans streamer, contenu choc / marrant qui donne envie de regarder",
    "note_alix": null,
    "pourquoi": "Marche : réactions et chutes qui donnent envie de voir la suivante. Écarté : aucun streamer, 106 s (max 90), sans titre, répétitif, 1er impact tardif.",
+   "clip_brut": null
+  },
+  {
+   "n": 22,
+   "url": "https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs",
+   "traite_utc": "2026-11-28T04:58:49Z",
+   "verdict": "garde",
+   "score": 8.0,
+   "format": "clip-jv",
+   "recette": "Action de GTA VI dès la 1re image, 10 s, un titre drôle qui donne la chute (Lucia règle la bagarre) ; fonctionne même sans streamer.",
+   "queue_id": "c-20261128-0455-inspi-22",
+   "note": "avis Alix : Top (sans /10) - même si pas de streamer, titre très marrant et action impressionnante directe",
+   "note_alix": null,
+   "pourquoi": "Marche : action immédiate, titre drôle, chute portée par Lucia. Faible : image floue sur les mouvements rapides, aucun streamer. Gardé : choix d'Alix.",
    "clip_brut": null
   }
  ]

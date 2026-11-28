@@ -2,6 +2,10 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #22 · clip-jv · 8.0/10 · 28/11/2026
+Action de GTA VI dès la 1re image, 10 s, un titre drôle qui donne la chute (Lucia règle la bagarre) ; fonctionne même sans streamer.
+Source : https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs · en file : `c-20261128-0455-inspi-22`
+
 ## #14 · clip-jv · 8.0/10 · 25/11/2026
 Streamer FR connu sur le jeu du moment face à un choix : question en titre dès la 1re seconde, webcam en haut, jeu en bas, sous-titres surlignés ; couper juste après la réaction (20-25 s) et créditer la chaîne.
 Source : https://www.instagram.com/reel/DgH_asyAkvG/?hvrq=czUzMzF2MGtkc21i
