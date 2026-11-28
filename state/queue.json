@@ -622,43 +622,6 @@
    "note": ""
   },
   {
-   "id": "c-20261128-0115-kameto-boule-de-feu-20261127",
-   "added_at_utc": "2026-11-28T01:15:35Z",
-   "found_by": "veille",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Kameto face à une boule de feu",
-   "topic_key": "kameto-boule-de-feu-20261127",
-   "origin": "KametoTV",
-   "source_tweet": "https://x.com/KametoTV/status/2126455504654483826",
-   "primary_source": "https://x.com/KametoTV/status/2126455504654483826",
-   "source_time_utc": "2026-11-27T23:17:54Z",
-   "expires_at_utc": "2026-11-29T23:17:54Z",
-   "fiabilite": "🟢",
-   "score": 6,
-   "mentions": [
-    "KametoTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2126455386689437696/vid/avc1/1280x720/9dPFdAeGZ-g1PWPV.mp4?tag=14",
-   "media_repo_path": "",
-   "angle": "Clip court posté par le streamer lui-même ; contexte pauvre (texte « boule de feu »), à vérifier en regardant la vidéo.",
-   "titles": [
-    "Kameto face à une *boule de feu*",
-    "Kameto : la *boule de feu* en plein stream"
-   ],
-   "checks": [],
-   "photo_needed": "",
-   "status": "pris",
-   "note": "",
-   "taken_at_utc": "2026-11-28T03:10:37Z",
-   "clip": {
-    "url": "https://video.twimg.com/amplify_video/2126455386689437696/vid/avc1/1280x720/9dPFdAeGZ-g1PWPV.mp4?tag=14",
-    "offset": 0,
-    "dur": null
-   },
-   "post_id": "0042-28_11_2026-Clips"
-  },
-  {
    "id": "c-20261128-0115-jltomy-miami-napoleon-20261127",
    "added_at_utc": "2026-11-28T01:15:35Z",
    "found_by": "veille",

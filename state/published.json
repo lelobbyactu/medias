@@ -832,13 +832,28 @@
   },
   {
    "id": "0042-28_11_2026-Clips",
-   "status": "en_cours",
+   "status": "a_valider",
    "type": "reel",
    "topic": "Kameto face à une boule de feu",
    "origin": "KametoTV",
    "source_tweet": "https://x.com/KametoTV/status/2126455504654483826",
    "queue_id": "c-20261128-0115-kameto-boule-de-feu-20261127",
-   "reserved_at_utc": "2026-11-28T03:27:16Z"
+   "reserved_at_utc": "2026-11-28T03:27:16Z",
+   "clip": {
+    "url": "https://video.twimg.com/amplify_video/2126455386689437696/vid/avc1/1280x720/9dPFdAeGZ-g1PWPV.mp4?tag=14",
+    "offset": 0,
+    "dur": null
+   },
+   "topic_key": "kameto-boule-de-feu-20261127",
+   "expires_at_utc": "2026-11-29T23:17:54Z",
+   "nature": "gameplay",
+   "proposed_at_utc": "2026-11-28T03:36:22Z",
+   "titre": "Kameto tue avec|sa *boule de feu*|et meurt dans|la foulée",
+   "legende": "Il n'a même pas eu le temps de savourer son sort. Toi aussi tu paniques quand le loup approche ?\n\nClip : x.com/KametoTV\n\n#kameto #loupgarou #twitchfr #jeuxvideo #gaming",
+   "titres_alt": [],
+   "judge_score": "7/10",
+   "format": "9:16",
+   "garde_fou": "OK"
   }
  ]
 }
