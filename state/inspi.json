@@ -235,20 +235,6 @@
    "clip_brut": null
   },
   {
-   "n": 23,
-   "url": "https://www.instagram.com/reel/DgNfIHahWHu/?evlk=MWtuZnZuaDlhODZudA==",
-   "traite_utc": "2026-11-28T02:55:46Z",
-   "verdict": "ecarte",
-   "score": 6.0,
-   "format": "hors-ligne",
-   "recette": "Clip GTA 6 d'un streamer FR qui tase des PNJ au hasard : 3 à 5 réactions en 20-30 s, la meilleure en premier, avec webcam et sous-titres.",
-   "queue_id": null,
-   "note": "avis Alix : Top (sans /10) - même sans streamer, contenu choc / marrant qui donne envie de regarder",
-   "note_alix": null,
-   "pourquoi": "Marche : réactions et chutes qui donnent envie de voir la suivante. Écarté : aucun streamer, 106 s (max 90), sans titre, répétitif, 1er impact tardif.",
-   "clip_brut": null
-  },
-  {
    "n": 22,
    "url": "https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs",
    "traite_utc": "2026-11-28T04:58:49Z",
@@ -260,6 +246,20 @@
    "note": "avis Alix : Top (sans /10) - même si pas de streamer, titre très marrant et action impressionnante directe",
    "note_alix": null,
    "pourquoi": "Marche : action immédiate, titre drôle, chute portée par Lucia. Faible : image floue sur les mouvements rapides, aucun streamer. Gardé : choix d'Alix.",
+   "clip_brut": null
+  },
+  {
+   "n": 23,
+   "url": "https://www.instagram.com/reel/DgNfIHahWHu/?evlk=MWtuZnZuaDlhODZudA==",
+   "traite_utc": "2026-11-28T04:58:53Z",
+   "verdict": "garde",
+   "score": 6.0,
+   "format": "clip-jv",
+   "recette": "Enchaînement de réactions choc et drôles dans GTA VI (taser sur des passants), 30-60 s, la meilleure en premier ; fonctionne même sans streamer.",
+   "queue_id": "c-20261128-0458-inspi-23",
+   "note": "avis Alix : Top (sans /10) - même sans streamer, contenu choc / marrant qui donne envie de regarder",
+   "note_alix": null,
+   "pourquoi": "Marche : contenu choc/marrant, on veut voir la suivante. Faible : 106 s, répétitif, sans titre. Gardé : choix d'Alix.",
    "clip_brut": null
   }
  ]

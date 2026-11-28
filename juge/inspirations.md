@@ -2,6 +2,10 @@
 
 Posts d'autres comptes envoyés par Alix et gardés par l'analyse quotidienne. On en reprend la RECETTE (sujet, accroche, structure, format), jamais le contenu : chaque post du Lobby est refait avec nos sources, nos visuels et notre DA. Les plus récentes en haut ; 60 fiches max.
 
+## #23 · clip-jv · 6.0/10 · 28/11/2026
+Enchaînement de réactions choc et drôles dans GTA VI (taser sur des passants), 30-60 s, la meilleure en premier ; fonctionne même sans streamer.
+Source : https://www.instagram.com/reel/DgNfIHahWHu/?evlk=MWtuZnZuaDlhODZudA== · en file : `c-20261128-0458-inspi-23`
+
 ## #22 · clip-jv · 8.0/10 · 28/11/2026
 Action de GTA VI dès la 1re image, 10 s, un titre drôle qui donne la chute (Lucia règle la bagarre) ; fonctionne même sans streamer.
 Source : https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs · en file : `c-20261128-0455-inspi-22`
