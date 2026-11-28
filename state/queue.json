@@ -2,40 +2,6 @@
  "_doc": "File d'attente du Lobby (voir PIPELINE.md §2bis). Les tâches de veille AJOUTENT ici les sujets repérés (clips et actus) au lieu de les perdre ; les tâches « créneau » (8 h, 12 h, 18 h, 21 h Paris) prennent le meilleur sujet encore valable et le publient. Statuts : en_attente | pris (montage en cours) | publie | expire | ecarte. Les entrées closes (publie, expire, ecarte) de plus de 48 h sont supprimées, ainsi que leurs médias dans queue/.",
  "candidates": [
   {
-   "id": "c-20261126-1223-gotaga-carjacking-sms-gta6-2511",
-   "added_at_utc": "2026-11-26T12:23:39Z",
-   "found_by": "secours X",
-   "type": "clip",
-   "nature": "gameplay",
-   "topic": "Gotaga se fait braquer sa voiture en plein SMS sur GTA 6",
-   "topic_key": "gotaga-carjacking-sms-gta6-2511",
-   "origin": "GotagaTV",
-   "source_tweet": "https://x.com/GotagaTV/status/2125590772045254791",
-   "primary_source": "https://x.com/GotagaTV/status/2125590772045254791",
-   "source_time_utc": "2026-11-25T14:01:46Z",
-   "expires_at_utc": "2026-11-27T14:01:46Z",
-   "fiabilite": "🟡",
-   "score": 6,
-   "mentions": [
-    "GotagaTV"
-   ],
-   "media_url": "https://video.twimg.com/amplify_video/2125590504494526464/vid/avc1/2560x1440/N9rjnn8O-K_UJ1yr.mp4?tag=29",
-   "media_repo_path": "",
-   "angle": "Un inconnu veut sa voiture, Lucia le met au tapis",
-   "titles": [],
-   "checks": [],
-   "photo_needed": "",
-   "status": "ecarte",
-   "note": "doublon : même clip Twitch que 0029-26_11_2026-Clips, publié le 26/11",
-   "taken_at_utc": "2026-11-26T12:33:07Z",
-   "clip": {
-    "url": "https://www.twitch.tv/gotaga/clip/UninterestedAssiduousAniseNerfRedBlaster-pe50d8a_qlsCiXjK",
-    "offset": 0.0,
-    "dur": 16.64
-   },
-   "closed_at_utc": "2026-11-26T12:35:36Z"
-  },
-  {
    "id": "c-20261126-1315-jltomy-pete-les-plombs-2026-11-26",
    "added_at_utc": "2026-11-26T13:15:41Z",
    "found_by": "veille",
