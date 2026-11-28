@@ -1,0 +1,194 @@
+[
+{
+"debut": 0.94,
+"fin": 1.4,
+"mot": "Ah,",
+"confiance": 0.55
+},
+{
+"debut": 1.52,
+"fin": 1.68,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 1.68,
+"fin": 1.94,
+"mot": "Jimmy",
+"confiance": 0.98
+},
+{
+"debut": 1.94,
+"fin": 2.16,
+"mot": "en",
+"confiance": 0.97
+},
+{
+"debut": 2.16,
+"fin": 3.24,
+"mot": "mode...",
+"confiance": 0.88
+},
+{
+"debut": 4.18,
+"fin": 4.5,
+"mot": "Ah,",
+"confiance": 0.93
+},
+{
+"debut": 4.58,
+"fin": 4.66,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 4.66,
+"fin": 4.76,
+"mot": "le",
+"confiance": 1.0
+},
+{
+"debut": 4.76,
+"fin": 4.98,
+"mot": "fils",
+"confiance": 1.0
+},
+{
+"debut": 4.98,
+"fin": 5.1,
+"mot": "de",
+"confiance": 1.0
+},
+{
+"debut": 5.1,
+"fin": 5.68,
+"mot": "Michael ?",
+"confiance": 0.58
+},
+{
+"debut": 5.68,
+"fin": 7.44,
+"mot": "C'est",
+"confiance": 0.99
+},
+{
+"debut": 7.44,
+"fin": 8.04,
+"mot": "ça ?",
+"confiance": 0.99
+},
+{
+"debut": 13.52,
+"fin": 13.84,
+"mot": "Jimmy",
+"confiance": 0.99
+},
+{
+"debut": 13.84,
+"fin": 14.0,
+"mot": "de",
+"confiance": 0.99
+},
+{
+"debut": 14.0,
+"fin": 14.36,
+"mot": "Santa.",
+"confiance": 0.99
+},
+{
+"debut": 17.64,
+"fin": 17.96,
+"mot": "Ah,",
+"confiance": 0.98
+},
+{
+"debut": 18.02,
+"fin": 18.16,
+"mot": "c'est",
+"confiance": 1.0
+},
+{
+"debut": 18.16,
+"fin": 18.94,
+"mot": "exceptionnel !",
+"confiance": 0.82
+},
+{
+"debut": 20.12,
+"fin": 20.44,
+"mot": "Oh,",
+"confiance": 0.41
+},
+{
+"debut": 20.5,
+"fin": 20.7,
+"mot": "vas-y,",
+"confiance": 1.0
+},
+{
+"debut": 20.74,
+"fin": 20.8,
+"mot": "je",
+"confiance": 0.97
+},
+{
+"debut": 20.8,
+"fin": 20.88,
+"mot": "te",
+"confiance": 1.0
+},
+{
+"debut": 20.88,
+"fin": 21.04,
+"mot": "file",
+"confiance": 0.99
+},
+{
+"debut": 21.04,
+"fin": 21.2,
+"mot": "une",
+"confiance": 1.0
+},
+{
+"debut": 21.2,
+"fin": 21.4,
+"mot": "table.",
+"confiance": 1.0
+},
+{
+"debut": 22.26,
+"fin": 22.58,
+"mot": "Je",
+"confiance": 1.0
+},
+{
+"debut": 22.58,
+"fin": 22.88,
+"mot": "te",
+"confiance": 1.0
+},
+{
+"debut": 22.88,
+"fin": 23.06,
+"mot": "file",
+"confiance": 1.0
+},
+{
+"debut": 23.06,
+"fin": 23.2,
+"mot": "une",
+"confiance": 1.0
+},
+{
+"debut": 23.2,
+"fin": 23.38,
+"mot": "table,",
+"confiance": 1.0
+},
+{
+"debut": 23.48,
+"fin": 23.56,
+"mot": "toi.",
+"confiance": 1.0
+}
+]
