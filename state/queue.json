@@ -782,13 +782,14 @@
    "titles": [],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
+   "status": "pris",
    "note": "choix d'Alix (inspi #23) : vidéo du post reprise, montage make_reel.py (docs/montage.md §7ter)",
    "choix_alix": true,
    "note_alix": null,
    "avertissement": "Vidéo reprise d'un autre compte (@shady00018_) avec ses filigranes ; un plan en bikini parmi les scènes",
    "reprise": true,
-   "credit": "instagram.com/shady00018_"
+   "credit": "instagram.com/shady00018_",
+   "taken_at_utc": "2026-11-28T10:12:45Z"
   }
  ]
 }
