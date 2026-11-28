@@ -1,0 +1,54 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Unbounded ExtraBold,58,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,4,2,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.36,0:00:00.46,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QUI{\c&HFFFFFF&} LE LOUP ?
+Dialogue: 0,0:00:00.46,0:00:00.58,Sub,,0,0,0,,{\pos(540,940)}QUI {\c&H3DFFF2&}LE{\c&HFFFFFF&} LOUP ?
+Dialogue: 0,0:00:00.58,0:00:01.24,Sub,,0,0,0,,{\pos(540,940)}QUI LE {\c&H3DFFF2&}LOUP ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.24,0:00:01.44,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LES{\c&HFFFFFF&} GARS Y'A LE LOUP,
+Dialogue: 0,0:00:01.44,0:00:01.56,Sub,,0,0,0,,{\pos(540,940)}LES {\c&H3DFFF2&}GARS{\c&HFFFFFF&} Y'A LE LOUP,
+Dialogue: 0,0:00:01.56,0:00:01.74,Sub,,0,0,0,,{\pos(540,940)}LES GARS {\c&H3DFFF2&}Y'A{\c&HFFFFFF&} LE LOUP,
+Dialogue: 0,0:00:01.74,0:00:01.78,Sub,,0,0,0,,{\pos(540,940)}LES GARS Y'A {\c&H3DFFF2&}LE{\c&HFFFFFF&} LOUP,
+Dialogue: 0,0:00:01.78,0:00:01.94,Sub,,0,0,0,,{\pos(540,940)}LES GARS Y'A LE {\c&H3DFFF2&}LOUP,{\c&HFFFFFF&}
+Dialogue: 0,0:00:01.94,0:00:02.06,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}Y'A{\c&HFFFFFF&} LE LOUP, Y'A
+Dialogue: 0,0:00:02.06,0:00:02.12,Sub,,0,0,0,,{\pos(540,940)}Y'A {\c&H3DFFF2&}LE{\c&HFFFFFF&} LOUP, Y'A
+Dialogue: 0,0:00:02.12,0:00:02.24,Sub,,0,0,0,,{\pos(540,940)}Y'A LE {\c&H3DFFF2&}LOUP,{\c&HFFFFFF&} Y'A
+Dialogue: 0,0:00:02.24,0:00:02.38,Sub,,0,0,0,,{\pos(540,940)}Y'A LE LOUP, {\c&H3DFFF2&}Y'A{\c&HFFFFFF&}
+Dialogue: 0,0:00:02.38,0:00:02.42,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LE{\c&HFFFFFF&} LOUP, FAITES GAFFE !
+Dialogue: 0,0:00:02.42,0:00:02.54,Sub,,0,0,0,,{\pos(540,940)}LE {\c&H3DFFF2&}LOUP,{\c&HFFFFFF&} FAITES GAFFE !
+Dialogue: 0,0:00:02.54,0:00:02.62,Sub,,0,0,0,,{\pos(540,940)}LE LOUP, {\c&H3DFFF2&}FAITES{\c&HFFFFFF&} GAFFE !
+Dialogue: 0,0:00:02.62,0:00:03.00,Sub,,0,0,0,,{\pos(540,940)}LE LOUP, FAITES {\c&H3DFFF2&}GAFFE !{\c&HFFFFFF&}
+Dialogue: 0,0:00:03.00,0:00:03.22,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} QUI ?
+Dialogue: 0,0:00:03.22,0:00:04.30,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}QUI ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:04.46,0:00:04.72,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}JE CROIS{\c&HFFFFFF&} C'EST BETROUNI,
+Dialogue: 0,0:00:04.72,0:00:04.74,Sub,,0,0,0,,{\pos(540,940)}JE CROIS {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} BETROUNI,
+Dialogue: 0,0:00:04.74,0:00:05.70,Sub,,0,0,0,,{\pos(540,940)}JE CROIS C'EST {\c&H3DFFF2&}BETROUNI,{\c&HFFFFFF&}
+Dialogue: 0,0:00:05.90,0:00:06.14,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}GARS,{\c&HFFFFFF&} LES GARS,
+Dialogue: 0,0:00:06.14,0:00:06.24,Sub,,0,0,0,,{\pos(540,940)}GARS, {\c&H3DFFF2&}LES{\c&HFFFFFF&} GARS,
+Dialogue: 0,0:00:06.24,0:00:06.50,Sub,,0,0,0,,{\pos(540,940)}GARS, LES {\c&H3DFFF2&}GARS,{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.50,0:00:06.52,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}LES{\c&HFFFFFF&} GARS !
+Dialogue: 0,0:00:06.52,0:00:06.66,Sub,,0,0,0,,{\pos(540,940)}LES {\c&H3DFFF2&}GARS !{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.66,0:00:06.88,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}C'EST{\c&HFFFFFF&} EN TRAIN
+Dialogue: 0,0:00:06.88,0:00:06.92,Sub,,0,0,0,,{\pos(540,940)}C'EST {\c&H3DFFF2&}EN{\c&HFFFFFF&} TRAIN
+Dialogue: 0,0:00:06.92,0:00:06.98,Sub,,0,0,0,,{\pos(540,940)}C'EST EN {\c&H3DFFF2&}TRAIN{\c&HFFFFFF&}
+Dialogue: 0,0:00:06.98,0:00:07.06,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}DE{\c&HFFFFFF&} CHARCLER, C'EST
+Dialogue: 0,0:00:07.06,0:00:07.38,Sub,,0,0,0,,{\pos(540,940)}DE {\c&H3DFFF2&}CHARCLER,{\c&HFFFFFF&} C'EST
+Dialogue: 0,0:00:07.38,0:00:07.50,Sub,,0,0,0,,{\pos(540,940)}DE CHARCLER, {\c&H3DFFF2&}C'EST{\c&HFFFFFF&}
+Dialogue: 0,0:00:07.50,0:00:07.58,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}EN{\c&HFFFFFF&} TRAIN DE CHARCLER !
+Dialogue: 0,0:00:07.58,0:00:07.64,Sub,,0,0,0,,{\pos(540,940)}EN {\c&H3DFFF2&}TRAIN{\c&HFFFFFF&} DE CHARCLER !
+Dialogue: 0,0:00:07.64,0:00:07.76,Sub,,0,0,0,,{\pos(540,940)}EN TRAIN {\c&H3DFFF2&}DE{\c&HFFFFFF&} CHARCLER !
+Dialogue: 0,0:00:07.76,0:00:08.98,Sub,,0,0,0,,{\pos(540,940)}EN TRAIN DE {\c&H3DFFF2&}CHARCLER !{\c&HFFFFFF&}
+Dialogue: 0,0:00:11.44,0:00:12.52,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}QUOI ?{\c&HFFFFFF&}
+Dialogue: 0,0:00:12.74,0:00:12.80,Sub,,0,0,0,,{\pos(540,940)}{\fscx88\fscy88\t(0,90,\fscx100\fscy100)}{\c&H3DFFF2&}AH{\c&HFFFFFF&} C'EST PAS GRAVE !
+Dialogue: 0,0:00:12.80,0:00:12.94,Sub,,0,0,0,,{\pos(540,940)}AH {\c&H3DFFF2&}C'EST{\c&HFFFFFF&} PAS GRAVE !
+Dialogue: 0,0:00:12.94,0:00:13.06,Sub,,0,0,0,,{\pos(540,940)}AH C'EST {\c&H3DFFF2&}PAS{\c&HFFFFFF&} GRAVE !
+Dialogue: 0,0:00:13.06,0:00:14.20,Sub,,0,0,0,,{\pos(540,940)}AH C'EST PAS {\c&H3DFFF2&}GRAVE !{\c&HFFFFFF&}
