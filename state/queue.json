@@ -863,6 +863,126 @@
    "photo_needed": "",
    "status": "en_attente",
    "note": ""
+  },
+  {
+   "id": "c-20261128-0115-kameto-boule-de-feu-20261127",
+   "added_at_utc": "2026-11-28T01:15:35Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Kameto face à une boule de feu",
+   "topic_key": "kameto-boule-de-feu-20261127",
+   "origin": "KametoTV",
+   "source_tweet": "https://x.com/KametoTV/status/2126455504654483826",
+   "primary_source": "https://x.com/KametoTV/status/2126455504654483826",
+   "source_time_utc": "2026-11-27T23:17:54Z",
+   "expires_at_utc": "2026-11-29T23:17:54Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "KametoTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126455386689437696/vid/avc1/1280x720/9dPFdAeGZ-g1PWPV.mp4?tag=14",
+   "media_repo_path": "",
+   "angle": "Clip court posté par le streamer lui-même ; contexte pauvre (texte « boule de feu »), à vérifier en regardant la vidéo.",
+   "titles": [
+    "Kameto face à une *boule de feu*",
+    "Kameto : la *boule de feu* en plein stream"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261128-0115-jltomy-miami-napoleon-20261127",
+   "added_at_utc": "2026-11-28T01:15:35Z",
+   "found_by": "veille",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "JLTomy annexe Miami",
+   "topic_key": "jltomy-miami-napoleon-20261127",
+   "origin": "JLTomyTV",
+   "source_tweet": "https://x.com/JLTomyTV/status/2126456250481393719",
+   "primary_source": "https://x.com/JLTomyTV/status/2126456250481393719",
+   "source_time_utc": "2026-11-27T23:20:52Z",
+   "expires_at_utc": "2026-11-29T23:20:52Z",
+   "fiabilite": "🟢",
+   "score": 6,
+   "mentions": [
+    "JLTomyTV"
+   ],
+   "media_url": "https://video.twimg.com/amplify_video/2126455991386468352/vid/avc1/1280x720/Ed7ihc6FnsJ6bE85.mp4?tag=29",
+   "media_repo_path": "",
+   "angle": "Il marque toute la ville comme son territoire, punchline « ça va le rename Napoléon » ; série #JLMiami (subathon 240 h) en cours.",
+   "titles": [
+    "JLTomy annexe *Miami* en plein stream",
+    "JLTomy se prend pour *Napoléon* à Miami"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261128-0115-domingo-twitch-gta6-20261127",
+   "added_at_utc": "2026-11-28T01:15:35Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Domingo sur GTA 6 (clip Twitch)",
+   "topic_key": "domingo-twitch-gta6-20261127",
+   "origin": "domingo",
+   "source_tweet": "https://www.twitch.tv/domingo/clip/RefinedDeliciousArtichokeWholeWheat-jSDF_h7rUYXOueUb",
+   "primary_source": "https://www.twitch.tv/domingo/clip/RefinedDeliciousArtichokeWholeWheat-jSDF_h7rUYXOueUb",
+   "source_time_utc": "2026-11-27T12:27:47Z",
+   "expires_at_utc": "2026-11-29T12:27:47Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/domingo/clip/RefinedDeliciousArtichokeWholeWheat-jSDF_h7rUYXOueUb",
+   "media_repo_path": "",
+   "angle": "Clip de 33 s sur GTA VI, titre Twitch vague et traction faible (354 vues) ; score plafonné car contenu non vérifié, titres provisoires à réécrire après visionnage.",
+   "titles": [
+    "Domingo sur *GTA 6* : le clip du moment",
+    "Domingo et un *moment* GTA 6 à revoir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
+  },
+  {
+   "id": "c-20261128-0115-donatchottv-twitch-gta6-20261127",
+   "added_at_utc": "2026-11-28T01:15:35Z",
+   "found_by": "sources:twitch_clip",
+   "type": "clip",
+   "nature": "gameplay",
+   "topic": "Donatcho en fou rire sur GTA 6 (clip Twitch)",
+   "topic_key": "donatchottv-twitch-gta6-20261127",
+   "origin": "donatchottv",
+   "source_tweet": "https://www.twitch.tv/donatchottv/clip/UnsightlyHeadstrongOstrichPermaSmug-j-EQd1bO9AwhTbhZ",
+   "primary_source": "https://www.twitch.tv/donatchottv/clip/UnsightlyHeadstrongOstrichPermaSmug-j-EQd1bO9AwhTbhZ",
+   "source_time_utc": "2026-11-27T18:10:38Z",
+   "expires_at_utc": "2026-11-29T18:10:38Z",
+   "fiabilite": "🟡",
+   "score": 5,
+   "mentions": [
+    "twitch"
+   ],
+   "media_url": "https://www.twitch.tv/donatchottv/clip/UnsightlyHeadstrongOstrichPermaSmug-j-EQd1bO9AwhTbhZ",
+   "media_repo_path": "",
+   "angle": "Streamer hors liste blanche et peu connu : score plafonné à 5 ; traction forte (1 758 vues en 7 h) ; titre Twitch « ahhahahah », à vérifier.",
+   "titles": [
+    "Donatcho part en *fou rire* sur GTA 6",
+    "Donatcho et un *fou rire* qui fait réagir"
+   ],
+   "checks": [],
+   "photo_needed": "",
+   "status": "en_attente",
+   "note": ""
   }
  ]
 }
