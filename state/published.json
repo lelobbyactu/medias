@@ -897,7 +897,7 @@
   },
   {
    "id": "0044-28_11_2026-Clips",
-   "status": "a_valider",
+   "status": "valide",
    "type": "reel",
    "topic": "GTA VI : il tase des passants au hasard et enchaîne les réactions (plage, rue, bateaux)",
    "origin": "shady00018_",
@@ -922,7 +922,8 @@
    "judge_score": "7.5/10",
    "format": "16:9",
    "garde_fou": "SECOURS",
-   "telegram_msg": 85
+   "telegram_msg": 85,
+   "validated_at_utc": "2026-11-28T12:17:42Z"
   }
  ]
 }
