@@ -665,7 +665,12 @@
    "photo_needed": "",
    "status": "pris",
    "note": "",
-   "taken_at_utc": "2026-11-28T03:10:37Z"
+   "taken_at_utc": "2026-11-28T03:10:37Z",
+   "clip": {
+    "url": "https://video.twimg.com/amplify_video/2126455386689437696/vid/avc1/1280x720/9dPFdAeGZ-g1PWPV.mp4?tag=14",
+    "offset": 0,
+    "dur": null
+   }
   },
   {
    "id": "c-20261128-0115-jltomy-miami-napoleon-20261127",
