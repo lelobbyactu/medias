@@ -596,8 +596,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "pris",
+   "note": "",
+   "taken_at_utc": "2026-11-28T03:09:53Z"
   },
   {
    "id": "c-20261127-2115-gta6-avion-ecrase-joueur",
