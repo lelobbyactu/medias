@@ -459,14 +459,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "juge 6.5/10 : encore un accident de Domingo sur GTA 6, sujet deja refuse par Alix",
    "taken_at_utc": "2026-11-28T03:23:45Z",
    "clip": {
     "url": "https://www.twitch.tv/domingo/clip/PoisedAstuteShallotGingerPower-j2C6M9ZMf53CE7Tk",
     "offset": 0,
     "dur": null
-   }
+   },
+   "closed_at_utc": "2026-11-28T03:27:11Z"
   },
   {
    "id": "c-20261127-1715-jltomy-jlmiami-esquive-2026-11-27",
