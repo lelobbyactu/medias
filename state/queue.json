@@ -527,14 +527,15 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "pris",
-   "note": "",
+   "status": "ecarte",
+   "note": "overlay « Collaboration commerciale » (QR Supercell Store) : placement présenté par le streamer, exclusion docs/clips.md §4",
    "taken_at_utc": "2026-11-28T10:13:48Z",
    "clip": {
     "url": "https://www.twitch.tv/domingo/clip/MushyBlindingSoybeanWTRuck-Dvv1IUpiK_Ms7e-c",
     "offset": 0.0,
     "dur": 46.293
-   }
+   },
+   "closed_at_utc": "2026-11-28T10:16:10Z"
   },
   {
    "id": "c-20261127-1915-michou-3e-booster-2026-11-26",
