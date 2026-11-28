@@ -789,7 +789,12 @@
    "avertissement": "Vidéo reprise d'un autre compte (@shady00018_) avec ses filigranes ; un plan en bikini parmi les scènes",
    "reprise": true,
    "credit": "instagram.com/shady00018_",
-   "taken_at_utc": "2026-11-28T10:12:45Z"
+   "taken_at_utc": "2026-11-28T10:12:45Z",
+   "clip": {
+    "url": "https://raw.githubusercontent.com/lelobbyactu/medias/main/posts/_alix/inspi-23.mp4",
+    "offset": 0,
+    "dur": null
+   }
   }
  ]
 }
