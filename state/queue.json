@@ -460,8 +460,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-28T05:14:03Z"
   },
   {
    "id": "c-20261127-1715-domingo-accident-gta6-twitch",
@@ -618,8 +619,9 @@
    ],
    "checks": [],
    "photo_needed": "",
-   "status": "en_attente",
-   "note": ""
+   "status": "expire",
+   "note": "",
+   "closed_at_utc": "2026-11-28T05:14:03Z"
   },
   {
    "id": "c-20261128-0115-jltomy-miami-napoleon-20261127",
