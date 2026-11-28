@@ -858,6 +858,16 @@
    "garde_fou": "OK",
    "telegram_msg": 71,
    "refus": "Clip"
+  },
+  {
+   "id": "0043-28_11_2026-Clips",
+   "status": "en_cours",
+   "type": "reel",
+   "topic": "GTA VI : sur la plage, Lucia s'en mêle quand une bagarre éclate",
+   "origin": "wasted",
+   "source_tweet": "https://www.instagram.com/reel/DgN5i_NB-9N/?bqrl=ZDh0NXVxd3NidDZs",
+   "queue_id": "c-20261128-0455-inspi-22",
+   "reserved_at_utc": "2026-11-28T10:22:42Z"
   }
  ]
 }
